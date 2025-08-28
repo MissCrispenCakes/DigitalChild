@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.LittleRainbow/
+.venv/
+venv/
+env/
+
+# Logs
+logs/
+*.log
+
+# Data outputs
+data/raw/
+data/processed/
+data/exports/
+
+# Metadata
+data/metadata/metadata.json
+
+# Coverage & testing
+htmlcov/
+.coverage
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+/.LittleRainbow
+/.LittleRainbow

@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "ChildRights": [
+      "child",
+      "children",
+      "youth",
+      "minor",
+      "adolescent"
+    ],
+    "LGBTQ": [
+      "lgbt",
+      "lgbti",
+      "lgbtq",
+      "sexual orientation",
+      "gender identity",
+      "queer"
+    ],
+    "AI": [
+      "artificial intelligence",
+      "\\bAI\\b",
+      "machine learning",
+      "automated decision",
+      "algorithm"
+    ],
+    "Privacy": [
+      "privacy",
+      "data protection",
+      "personal data",
+      "cyber security",
+      "information security"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# requirements placeholder
+
+# Core scraping + processing
+requests
+PyPDF2
+python-docx
+beautifulsoup4
+
+# Development + testing
+pytest
+pytest-cov
+pandoc
+
+# Docs + formatting
+markdown-link-checker
+mdformat
+pre-commit
+
