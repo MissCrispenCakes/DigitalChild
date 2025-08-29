@@ -26,7 +26,7 @@ Exports will appear under `data/exports/`.
 ## 🛠 Troubleshooting
 
 If you hit issues during setup or first run, see the:
-[First Run Error Checklist](docs/FIRST_RUN_ERRORS.md).
+[First Run Error Checklist](docs/runs/FIRST_RUN_ERRORS.md).
 
 ---
 
