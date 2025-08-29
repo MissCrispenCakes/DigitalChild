@@ -2,10 +2,25 @@
 import re
 import pytest
 
-def extract_year(filename: str):
-    """Extract a year (1900–2099) from a filename using regex."""
-    match = re.search(r"(19|20)\d{2}", filename)
-    return int(match.group()) if match else None
+
+def extract_year(filename, txt_path, logger):
+    # 1. From filename (all matches, prefer first)
+    matches = re.findall(r"\b(19|20)\d{2}\b", filename)
+    if matches:
+        return int(matches[0]), "filename"
+
+    # 2. From text (first 1000 chars)
+    try:
+        with open(txt_path, "r", encoding="utf-8") as f:
+            text = f.read(1000)
+            matches = re.findall(r"\b(19|20)\d{2}\b", text)
+            if matches:
+                return int(matches[0]), "first_page"
+    except Exception as e:
+        logger.warning(f"Error scanning text for year in {filename}: {e}")
+
+    return None, "unknown"
+
 
 
 @pytest.mark.parametrize("filename,expected", [

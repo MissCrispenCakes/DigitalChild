@@ -14,7 +14,7 @@ dirs = [
     "processors",
     "configs/filters",
     "data/raw/au_policy",
-    "data/raw/ohchr_tb",
+    "data/raw/ohchr",
     "data/raw/upr",
     "data/raw/unicef",
     "data/raw/acerwc",

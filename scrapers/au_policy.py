@@ -10,6 +10,7 @@ import requests
 from processors.logger import get_logger
 
 RAW_DIR = "data/raw/au_policy"
+
 logger = get_logger("au_policy")
 
 URLS = {

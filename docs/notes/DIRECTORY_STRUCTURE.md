@@ -16,7 +16,7 @@ This document explains the purpose of each folder and subfolder.
 
 - `scrapers/` → Code for fetching raw documents from sources.
   - `au_policy.py` → AU PDFs.
-  - `ohchr_tb.py`, `upr.py`, etc. → placeholders for other treaty bodies.
+  - `ohchr.py`, `upr.py`, etc. → placeholders for other treaty bodies.
 
 ---
 

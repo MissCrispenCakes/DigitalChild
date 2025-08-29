@@ -1,7 +1,7 @@
 """
 Universal Periodic Review Scraper
 ---------------------------------
-Fetches UPR documents (placeholder demo for one country).
+Fetches UPR (Universal Periodic Review) documents from OHCHR.
 """
 
 import os
@@ -11,21 +11,30 @@ from urllib.parse import urljoin
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
+DEFAULT_URL = "https://www.ohchr.org/en/hr-bodies/upr"
 RAW_DIR = "data/raw/upr"
-BASE_URL = "https://www.ohchr.org/en/hr-bodies/upr"
 
 logger = get_logger("upr")
 
 
-def scrape(country="kenya"):
+def scrape(base_url=DEFAULT_URL, country=None):
+    """
+    Scrape UPR documents.
+    - base_url: starting URL (default = OHCHR UPR main page)
+    - country: if provided, scrape that country's subpage (e.g., 'kenya')
+    """
+
     os.makedirs(RAW_DIR, exist_ok=True)
 
-    url = f"{BASE_URL}/{country}"
+    target_url = base_url
+    if country:
+        target_url = f"{base_url}/{country}"
+
     try:
-        resp = requests.get(url, timeout=30)
+        resp = requests.get(target_url, timeout=30)
         resp.raise_for_status()
     except Exception as e:
-        logger.error(f"Failed to fetch UPR page for {country}: {e}")
+        logger.error(f"Failed to fetch UPR page: {e}")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -35,12 +44,14 @@ def scrape(country="kenya"):
     for link in links:
         href = link["href"]
         if href.lower().endswith(".pdf"):
-            file_url = urljoin(BASE_URL, href)
+            file_url = urljoin(target_url, href)
             name = os.path.basename(href)
-            dest_path = os.path.join(RAW_DIR, f"{country}_{name}")
+            if country:
+                name = f"{country}_{name}"
+            dest_path = os.path.join(RAW_DIR, name)
             if download_file(file_url, dest_path):
                 downloaded.append(dest_path)
 
     if not downloaded:
-        logger.warning(f"No PDFs found for UPR scrape ({country}).")
+        logger.warning(f"No PDFs found for UPR scrape (url={target_url}).")
     return downloaded

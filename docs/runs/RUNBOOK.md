@@ -49,10 +49,18 @@ python pipeline_runner.py --source au_policy --tags-version latest
 python pipeline_runner.py --source au_policy --tags-version v1 --no-module-logs
 python pipeline_runner.py --source au_policy --tags-version latest
 
-python pipeline_runner.py --source ohchr_tb
+python pipeline_runner.py --source ohchr
 python pipeline_runner.py --source upr
 python pipeline_runner.py --source unicef
 
+python pipeline_runner.py --source acerwc
+python pipeline_runner.py --source acerwc --base-url https://au.int/en/documents/acerwc-42-session
+python pipeline_runner.py --source achpr --base-url https://www.achpr.org/communications
+
+python pipeline_runner.py --source unicef --base-url https://www.unicef.org/digital-reports
+
+python pipeline_runner.py --source upr --country kenya
+python pipeline_runner.py --source upr --base-url https://www.ohchr.org/en/hr-bodies/upr --country kenya
 ```
 
 ---

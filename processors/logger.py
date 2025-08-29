@@ -28,6 +28,9 @@ def set_run_logfile(name="pipeline", module_logs=True):
     RUN_TIMESTAMP = datetime.utcnow().strftime("%Y-%m-%d_%H-%M-%S")
     RUN_LOGFILE = os.path.join(LOG_DIR, f"{RUN_TIMESTAMP}_{name}.log")
     MODULE_LOGS_ENABLED = module_logs
+
+    # Clear existing root handlers so old ones don’t persist
+    logging.getLogger().handlers.clear()
     return RUN_LOGFILE
 
 

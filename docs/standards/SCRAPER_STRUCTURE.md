@@ -9,7 +9,7 @@ This document defines how scrapers are organized in `scrapers/`.
 - All scrapers live in `scrapers/`.
 - Each source has its own file, e.g.:
   - `au_policy.py`
-  - `ohchr_tb.py`
+  - `ohchr.py`
   - `upr.py`
   - `unicef.py`
   - `acerwc.py`

@@ -30,7 +30,7 @@ If you hit issues during setup or first run, see the:
 
 ---
 
-## 🧑‍💻 Developer Setup
+## 🐈🐱🐈💻 Developer Setup
 
 Install pre-commit to catch formatting and docs issues before pushing:
 

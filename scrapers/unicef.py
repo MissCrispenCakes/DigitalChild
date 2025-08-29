@@ -11,17 +11,17 @@ from urllib.parse import urljoin
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
+DEFAULT_URL = "https://www.unicef.org/reports"
 RAW_DIR = "data/raw/unicef"
-BASE_URL = "https://www.unicef.org/reports"
 
 logger = get_logger("unicef")
 
 
-def scrape():
+def scrape(base_url=DEFAULT_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
     try:
-        resp = requests.get(BASE_URL, timeout=30)
+        resp = requests.get(base_url, timeout=30)
         resp.raise_for_status()
     except Exception as e:
         logger.error(f"Failed to fetch UNICEF reports page: {e}")

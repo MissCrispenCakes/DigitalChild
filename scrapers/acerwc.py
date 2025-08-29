@@ -1,32 +1,46 @@
 """
 ACERWC Scraper
 --------------
-Scrapes African Committee of Experts on the Rights and Welfare of the Child (ACERWC) reports (placeholder).
+African Committee of Experts on the Rights and Welfare of the Child (ACERWC).
+Fetches reports and recommendations from ACERWC AU site.
 """
 
 import os
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
+DEFAULT_URL = "https://au.int/en/acerwc"
 RAW_DIR = "data/raw/acerwc"
+
 logger = get_logger("acerwc")
 
-# Placeholder: fill with actual URLs later
-URLS = {
-    # "ACERWC_Report_2022": "https://example.org/acerwc_report_2022.pdf"
-}
 
-
-def scrape():
+def scrape(base_url=DEFAULT_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
-    if not URLS:
-        logger.warning("No URLs defined for ACERWC scraper. Place documents manually in data/raw/acerwc/")
+
+    try:
+        resp = requests.get(base_url, timeout=30)
+        resp.raise_for_status()
+    except Exception as e:
+        logger.error(f"Failed to fetch ACERWC page: {e}")
         return []
 
-    downloaded = []
-    for name, url in URLS.items():
-        dest_path = os.path.join(RAW_DIR, f"{name}.pdf")
-        if download_file(url, dest_path):
-            downloaded.append(dest_path)
+    soup = BeautifulSoup(resp.text, "html.parser")
+    links = soup.find_all("a", href=True)
 
+    downloaded = []
+    for link in links:
+        href = link["href"]
+        if href.lower().endswith(".pdf"):
+            file_url = urljoin(base_url, href)
+            name = os.path.basename(href)
+            dest_path = os.path.join(RAW_DIR, name)
+            if download_file(file_url, dest_path):
+                downloaded.append(dest_path)
+
+    if not downloaded:
+        logger.warning("No PDFs found for ACERWC scrape.")
     return downloaded

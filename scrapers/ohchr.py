@@ -11,21 +11,20 @@ from urllib.parse import urljoin
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
+DEFAULT_URL = "https://tbinternet.ohchr.org/"
 RAW_DIR = "data/raw/ohchr"
-BASE_URL = "https://tbinternet.ohchr.org/"
 
 logger = get_logger("ohchr")
 
 
-def scrape():
+def scrape(base_url=DEFAULT_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
-    start_url = urljoin(BASE_URL, "Treaties/CRC/Shared%20Documents/")
     try:
-        resp = requests.get(start_url, timeout=30)
+        resp = requests.get(base_url, timeout=30)
         resp.raise_for_status()
     except Exception as e:
-        logger.error(f"Failed to fetch OHCHR TB start page: {e}")
+        logger.error(f"Failed to fetch OHCHR TB page: {e}")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -35,12 +34,13 @@ def scrape():
     for link in links:
         href = link["href"]
         if href.lower().endswith(".pdf"):
-            url = urljoin(BASE_URL, href)
+            file_url = urljoin(base_url, href)
             name = os.path.basename(href)
             dest_path = os.path.join(RAW_DIR, name)
-            if download_file(url, dest_path):
+            if download_file(file_url, dest_path):
                 downloaded.append(dest_path)
 
     if not downloaded:
         logger.warning("No PDFs found for OHCHR TB scrape.")
     return downloaded
+
