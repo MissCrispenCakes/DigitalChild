@@ -12,8 +12,13 @@ import argparse
 from datetime import datetime
 
 from scrapers import au_policy  # later add ohchr_tb, upr, etc.
+from scrapers import country_utils, region_utils
+
+
 from processors import pdf_to_text, tagger, tags_summary
-from processors.logger import set_run_logfile, get_logger
+from processors import tags_timeline, tags_timeline_region, tags_timeline_country
+from processors import recommendations
+
 
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
@@ -32,9 +37,15 @@ def save_metadata(metadata):
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 
 
-def update_metadata(doc_id, source, country, region, year, year_extracted_from, tags, tag_version="tags_v1", doc_type="Unknown"):
+def update_metadata(doc_id, source, country_raw, region_raw, year, year_extracted_from,
+                    tags, tag_version="tags_v1", doc_type="Unknown",
+                    recommendations_list=None, recs_version="recs_v1"):
     metadata = load_metadata()
     now = datetime.utcnow().isoformat() + "Z"
+
+    # Normalize country + region
+    c_raw, country, country_iso = country_utils.normalize_country(country_raw)
+    r_raw, region = region_utils.normalize_region(region_raw)
 
     existing = next((d for d in metadata["documents"] if d["id"] == doc_id), None)
 
@@ -43,7 +54,10 @@ def update_metadata(doc_id, source, country, region, year, year_extracted_from, 
             "id": doc_id,
             "source": source,
             "country": country,
+            "country_raw": c_raw,
+            "country_iso": country_iso,
             "region": region,
+            "region_raw": r_raw,
             "year": year,
             "year_extracted_from": year_extracted_from,
             "doc_type": doc_type,
@@ -58,11 +72,24 @@ def update_metadata(doc_id, source, country, region, year, year_extracted_from, 
     existing["year"] = year
     existing["year_extracted_from"] = year_extracted_from
     existing["doc_type"] = doc_type
+    existing["country"] = country
+    existing["country_raw"] = c_raw
+    existing["country_iso"] = country_iso
+    existing["region"] = region
+    existing["region_raw"] = r_raw
+
     existing["tags_history"].append({
         "tags": tags,
         "version": tag_version,
         "timestamp": now
     })
+
+    if recommendations_list is not None:
+        existing["recommendations_history"].append({
+            "recommendations": recommendations_list,
+            "version": recs_version,
+            "timestamp": now
+        })
 
     save_metadata(metadata)
 
@@ -139,7 +166,8 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
                 with open(txt_path, "r", encoding="utf-8") as f:
                     text = f.read()
                 tags = tagger.apply_tags(text, tags_config)
-                docs.append({"id": filename, "tags": tags})
+                recs = recommendations.apply_recommendations(text, "configs/recs_v1.json")
+                docs.append({"id": filename, "tags": tags, "recs": recs})
 
                 # Extract year
                 year, year_src = extract_year(filename, txt_path, logger)
@@ -152,19 +180,29 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
                 update_metadata(
                     doc_id=filename,
                     source=source,
-                    country=country,
-                    region=region,
+                    country_raw=country,
+                    region_raw=region,
                     year=year,
                     year_extracted_from=year_src,
                     tags=tags,
                     tag_version=tags_version,
-                    doc_type=doc_type
+                    doc_type=doc_type,
+                    recommendations_list=recs,
+                    recs_version="recs_v1"
                 )
+
 
 
     # Export tags summary
     tags_summary.export(docs)
-    logger.info(f"Pipeline complete for {source}.")
+
+    # Export timelines
+    tags_timeline.export()
+    tags_timeline_region.export()
+    tags_timeline_country.export()
+
+    logger.info(f"Pipeline complete for {source}. Exports generated in data/exports/.")
+
 
 
 if __name__ == "__main__":

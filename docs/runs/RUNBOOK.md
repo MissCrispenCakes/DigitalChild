@@ -36,12 +36,23 @@ Default (unified + module logs):
 python utils/pipeline_runner_DEMO.py
 ```
 
-Sample runs varied logs:
+---
+
+## 🟢 Run Pipeline
+
+Sample runs varied inputs:
 
 ``` bash
 python pipeline_runner.py --no-module-logs
+
 python pipeline_runner.py --source au_policy --tags-version latest
 python pipeline_runner.py --source au_policy --tags-version v1 --no-module-logs
+python pipeline_runner.py --source au_policy --tags-version latest
+
+python pipeline_runner.py --source ohchr_tb
+python pipeline_runner.py --source upr
+python pipeline_runner.py --source unicef
+
 ```
 
 ---
