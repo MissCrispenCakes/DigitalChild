@@ -1,0 +1,9 @@
+{
+  "versions": {
+    "v1": "tags_v1.json",
+    "digital": "tags_digital.json",
+    "v2": "tags_v2.json",
+    "v3": "tags_main.json"
+  },
+  "notes": "tags_main.json tracks multiple tag sets for comparison or reruns."
+}

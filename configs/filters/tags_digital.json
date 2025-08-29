@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "AI": [
+      "artificial intelligence",
+      "\\bAI\\b",
+      "machine learning",
+      "neural network",
+      "deep learning",
+      "automated decision"
+    ],
+    "DigitalHarms": [
+      "digital harm",
+      "online abuse",
+      "cyberbullying",
+      "exploitation",
+      "online grooming",
+      "harassment"
+    ],
+    "Surveillance": [
+      "surveillance",
+      "monitoring",
+      "facial recognition",
+      "tracking",
+      "profiling",
+      "biometric"
+    ],
+    "Privacy": [
+      "privacy",
+      "data protection",
+      "personal data",
+      "information security",
+      "cyber security"
+    ]
+  }
+}

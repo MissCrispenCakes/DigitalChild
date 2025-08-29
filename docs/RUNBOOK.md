@@ -33,13 +33,15 @@ pip install -r requirements.txt
 Default (unified + module logs):
 
 ``` bash
-python pipeline_runner.py
+python utils/pipeline_runner_DEMO.py
 ```
 
-Unified log only:
+Sample runs varied logs:
 
 ``` bash
 python pipeline_runner.py --no-module-logs
+python pipeline_runner.py --source au_policy --tags-version latest
+python pipeline_runner.py --source au_policy --tags-version v1 --no-module-logs
 ```
 
 ---

@@ -1,0 +1,124 @@
+.
+├── pipeline_runner.py
+├── requirements.txt
+│
+├── scrapers/
+│   ├── au_policy.py
+│   ├── ohchr_tb.py
+│   ├── upr.py
+│   ├── unicef.py
+│   ├── acerwc.py
+│   ├── achpr.py
+│   ├── utils.py
+│   ├── country_utils.py
+│   └── region_utils.py
+│
+├── processors/
+│   ├── pdf_to_text.py
+│   ├── docx_to_text.py
+│   ├── html_to_text.py
+│   ├── fallback_handler.py
+│   ├── json_normalizer.py
+│   ├── tagger.py
+│   ├── recommendations.py
+│   ├── comparison.py
+│   ├── tags_summary.py
+│   ├── tags_timeline.py
+│   ├── tags_timeline_region.py
+│   ├── tags_timeline_country.py
+│   └── logger.py
+│
+├── configs/
+│   ├── tags_v1.json
+│   ├── tags_v2.json
+│   ├── tags_v3.json
+│   ├── tags_digital.json
+│   ├── tags_master.json
+│   ├── recs_v1.json
+│   ├── comparison.json
+│   └── filters/
+│       ├── default.json
+│       ├── africa_groups.json
+│       └── filters_config_format.md
+│
+├── data/
+│   ├── raw/
+│   │   ├── au_policy/
+│   │   ├── ohchr_tb/
+│   │   ├── upr/
+│   │   ├── unicef/
+│   │   ├── acerwc/
+│   │   ├── achpr/
+│   │   └── manual/
+│   │
+│   ├── processed/
+│   │   ├── Africa/
+│   │   │   ├── African_Union/
+│   │   │   │   ├── text/
+│   │   │   │   ├── json/
+│   │   │   │   └── ocr/
+│   │   │   ├── Kenya/
+│   │   │   │   ├── text/
+│   │   │   │   ├── json/
+│   │   │   │   └── ocr/
+│   │   │   ├── Nigeria/
+│   │   │   │   ├── text/
+│   │   │   │   ├── json/
+│   │   │   │   └── ocr/
+│   │   │   └── South_Africa/
+│   │   │       ├── text/
+│   │   │       ├── json/
+│   │   │       └── ocr/
+│   │   ├── Europe/
+│   │   ├── Asia/
+│   │   └── Americas/
+│   │
+│   ├── metadata/
+│   │   └── metadata.json
+│   │
+│   └── exports/
+│       ├── tags_summary.csv             (pipeline output)
+│       ├── comparison_export.csv
+│       ├── tags_timeline.csv
+│       ├── tags_timeline_region.csv
+│       └── tags_timeline_country.csv
+│
+├── logs/
+│   └── (created at runtime)
+│
+├── docs/
+│   ├── README.md
+│   ├── FIRST_RUN_ERRORS.md
+│   ├── DIRECTORY_STRUCTURE.md
+│   ├── FILE_NAMING_STANDARDS.md
+│   ├── DOC_TYPE_STANDARDS.md
+│   ├── ISO_MAPPING.md
+│   ├── METADATA_SCHEMA.md
+│   ├── SCRAPER_STRUCTURE.md
+│   ├── PIPELINE_LOGGING.md
+│   ├── PIPELINE_FLOW.md
+│   ├── RUNBOOK.md
+│   ├── PROCESSOR_TEST_RUN.md
+│   ├── TAGS_CONFIG_FORMAT.md
+│   ├── RECOMMENDATIONS_CONFIG_FORMAT.md
+│   ├── COMPARISON_CONFIG_FORMAT.md
+│   ├── COMPARISON_EXPORT_NOTES.md
+│   ├── TAGS_MASTER_NOTES.md
+│   ├── TAGS_EXPORT_NOTES.md
+│   ├── TAGS_VISUALIZATION_PLAN.md
+│   ├── ROADMAP.md
+│   ├── SOURCE_FEASIBILITY_CHECKLIST.md
+│   └── DOCS_INDEX.md
+│
+├── tests/
+│   ├── test_year_extraction.py
+│   ├── test_csv_footer.py
+│   ├── test_logging.py
+│   ├── test_tagger.py
+│   ├── test_fallback_handler.py
+│   ├── test_metadata.py
+│   └── test_comparison.py
+│
+└── .github/
+    └── workflows/
+        └── ci.yml

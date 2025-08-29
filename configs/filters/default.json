@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "region": null,
+    "country": null,
+    "tags": null
+  },
+  "notes": "Default filter: no restrictions, processes all documents."
+}

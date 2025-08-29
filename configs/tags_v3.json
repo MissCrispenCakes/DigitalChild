@@ -1,0 +1,91 @@
+{
+  "rules": {
+    "ChildRights": [
+      "child",
+      "children",
+      "youth",
+      "minor",
+      "adolescent"
+    ],
+    "LGBTQ": [
+      "lgbt",
+      "lgbti",
+      "lgbtq",
+      "sexual orientation",
+      "gender identity",
+      "queer",
+      "homosexual",
+      "trans",
+      "transgender",
+      "transsexual"
+    ],
+    "AI": [
+      "artificial intelligence",
+      "\\bAI\\b",
+      "machine learning",
+      "automated decision",
+      "algorithm",
+      "neural network",
+      "deep learning"
+    ],
+    "Privacy": [
+      "privacy",
+      "data protection",
+      "personal data",
+      "cyber security",
+      "information security"
+    ],
+    "LawPolicy": [
+      "law",
+      "laws",
+      "by-laws",
+      "reform",
+      "policy",
+      "legislation",
+      "enacted",
+      "strategy",
+      "legal framework",
+      "regulation",
+      "governance"
+    ],
+    "StateActors": [
+      "state",
+      "state actor",
+      "state actors",
+      "regional",
+      "region",
+      "regions",
+      "country",
+      "country-specific"
+    ],
+    "DigitalPolicy": [
+      "digital policy",
+      "AI policy",
+      "national AI strategy",
+      "digital transformation",
+      "ICT policy",
+      "cyber policy",
+      "data policy",
+      "technology policy"
+    ],
+    "OnlineHarms": [
+      "online harms",
+      "online risks",
+      "cyber harm",
+      "digital risk",
+      "internet safety",
+      "online abuse",
+      "child sexual abuse material",
+      "harmful content",
+      "exposure to risk"
+    ],
+    "OnlineRights": [
+      "online rights",
+      "digital rights",
+      "child online safety",
+      "internet freedom",
+      "right to privacy online",
+      "right to be forgotten"
+    ]
+  }
+}
