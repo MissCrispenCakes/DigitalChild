@@ -12,7 +12,7 @@ from processors.logger import get_logger
 logger = get_logger("tags_summary")
 
 
-def export(docs, output_file="../data/exports/tags_summary.csv"):
+def export(docs, output_file="data/exports/tags_summary.csv"):
     """
     Takes a list of docs like:
     [

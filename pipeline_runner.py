@@ -85,7 +85,7 @@ def run_demo(no_module_logs=False):
                 docs.append({"id": filename, "tags": tags})
 
                 # Extract year from filename
-                match = re.search(r"\b\d{4}\b", filename)
+                match = re.search(r"(19|20)\d{2}", filename)
                 year = int(match.group()) if match else None
                 if not year:
                     logger.warning(f"No valid year found in filename: {filename}")
