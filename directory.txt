@@ -33,7 +33,7 @@
 │   ├── tags_v2.json
 │   ├── tags_v3.json
 │   ├── tags_digital.json
-│   ├── tags_master.json
+│   ├── tags_main.json
 │   ├── recs_v1.json
 │   ├── comparison.json
 │   └── filters/

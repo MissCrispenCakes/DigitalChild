@@ -1,0 +1,10 @@
+{
+  "versions": ["v1", "v3"],
+  "order": "tags_first",
+  "output": "data/exports/comparison_export.csv",
+  "filters": {
+    "region": "Africa",
+    "tags": ["ChildRights", "LGBTQ"]
+  },
+  "notes": "Compares tagging and recommendations between versions v1 and v3 for African region."
+}

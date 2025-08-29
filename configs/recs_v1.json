@@ -1,0 +1,13 @@
+{
+  "version": "recs_v1",
+  "strategy": "regex",
+  "rules": [
+    "The Committee recommends",
+    "should adopt",
+    "urges the State Party",
+    "calls upon the Government",
+    "is encouraged to",
+    "invites the State to"
+  ],
+  "notes": "Regex patterns for extracting recommendations from treaty body and policy documents."
+}

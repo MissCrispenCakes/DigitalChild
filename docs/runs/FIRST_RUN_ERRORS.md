@@ -8,8 +8,10 @@ This file documents common issues when running the pipeline for the first time.
 
 **Error:** `ModuleNotFoundError: No module named 'requests'`  
 **Fix:** Install requirements.  
-(bash)
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
@@ -18,8 +20,10 @@ pip install -r requirements.txt
 **Error:** `pdflatex not found`  
 **Cause:** Pandoc tries to use LaTeX to generate PDFs.  
 **Fix:** The pipeline does not require Pandoc. Use ReportLab for generating test PDFs.  
-(bash)
+
+```bash
 pip install reportlab
+```
 
 ---
 
@@ -34,8 +38,10 @@ pip install reportlab
 
 **Symptom:** No logs appear in `logs/`  
 **Fix:** Ensure `pipeline_runner.py` is invoked from project root.  
-(bash)
+
+```bash
 python pipeline_runner.py --source au_policy
+```
 
 ---
 
@@ -43,5 +49,7 @@ python pipeline_runner.py --source au_policy
 
 **Error:** `ModuleNotFoundError: No module named 'processors'`  
 **Fix:** Run commands from project root.  
-(bash)
+
+```bash
 pytest tests/ -v
+```
