@@ -30,7 +30,11 @@ pip install reportlab
 ## 🟢 Metadata Errors
 
 **Error:** `FileNotFoundError: data/metadata/metadata.json`  
-**Fix:** Run `python init_project.py` to create scaffolding.
+**Fix:** Run `init_project.py` to create scaffolding.
+
+```bash
+python init_project.py
+```
 
 ---
 
