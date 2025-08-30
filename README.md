@@ -3,11 +3,11 @@
 ## GRIMdata / LittleRainbowRights / ALLRainbowRights Pipeline
 
 [![CI Pipeline](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml)
-[![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/FIRST_RUN_ERRORS.md)
+[![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/runs/FIRST_RUN_ERRORS.md)
 ![Coverage Status](https://img.shields.io/badge/coverage-auto--generated-lightgrey)
 
-Pipeline for scraping, processing, and analyzing human rights documents,
-policies, and reports with a focus on child and LGBTQ+ digital protection.
+Pipeline for scraping, processing, and analyzing, human rights documents,
+policies, and reports, with a focus on child and LGBTQ+ digital protection.
 
 ---
 
@@ -45,3 +45,4 @@ Now, whenever you commit, pre-commit will:
 - Check YAML syntax
 - Fix trailing whitespace
 - Validate Markdown links (with markdown-link-checker)
+
