@@ -2,7 +2,7 @@
 
 ## GRIMdata / LittleRainbowRights / ALLRainbowRights Pipeline
 
-[![CI Pipeline](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
 [![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/runs/FIRST_RUN_ERRORS.md)
 ![Coverage Status](https://img.shields.io/badge/coverage-auto--generated-lightgrey)
 
@@ -45,4 +45,5 @@ Now, whenever you commit, pre-commit will:
 - Check YAML syntax
 - Fix trailing whitespace
 - Validate Markdown links (with markdown-link-checker)
+
 
