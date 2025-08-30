@@ -11,12 +11,26 @@ import os
 import re
 from datetime import datetime
 
-from processors import (pdf_to_text, recommendations, tagger, tags_summary,
-                        tags_timeline, tags_timeline_country,
-                        tags_timeline_region)
+from processors import (
+    pdf_to_text,
+    recommendations,
+    tagger,
+    tags_summary,
+    tags_timeline,
+    tags_timeline_country,
+    tags_timeline_region,
+)
 from processors.logger import get_logger, set_run_logfile
-from scrapers import (acerwc, achpr, au_policy, country_utils, ohchr,
-                      region_utils, unicef, upr)
+from scrapers import (
+    acerwc,
+    achpr,
+    au_policy,
+    country_utils,
+    ohchr,
+    region_utils,
+    unicef,
+    upr,
+)
 
 SCRAPER_MAP = {
     "au_policy": (

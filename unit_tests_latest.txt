@@ -1,39 +1,41 @@
-(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pytest tests/ -v
-=================================================================================================================================== test session starts ====================================================================================================================================platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /mnt/h/DigitalChild/.LittleRainbow/bin/python3
-cachedir: .pytest_cache
-rootdir: /mnt/h/DigitalChild
-plugins: cov-6.2.1
-collected 18 items
 
-tests/test_comparison.py::test_comparison_export PASSED                                                                                                                                                                                                                              [  5%]
-tests/test_csv_footer.py::test_csv_footer PASSED                                                                                                                                                                                                                                     [ 11%]
-tests/test_fallback_handler.py::test_fallback_pdf PASSED                                                                                                                                                                                                                             [ 16%]
-tests/test_fallback_handler.py::test_fallback_docx PASSED                                                                                                                                                                                                                            [ 22%]
-tests/test_fallback_handler.py::test_fallback_html PASSED                                                                                                                                                                                                                            [ 27%]
-tests/test_logging.py::test_pipeline_creates_logs[args0-True] PASSED                                                                                                                                                                                                                 [ 33%]
-tests/test_logging.py::test_pipeline_creates_logs[args1-False] PASSED                                                                                                                                                                                                                [ 38%]
-tests/test_metadata.py::test_metadata_updates PASSED                                                                                                                                                                                                                                 [ 44%]
-tests/test_recommendations.py::test_recommendations_regex PASSED                                                                                                                                                                                                                     [ 50%]
-tests/test_tagger.py::test_apply_tags_default_config PASSED                                                                                                                                                                                                                          [ 55%]
-tests/test_tagger.py::test_no_tags_match PASSED                                                                                                                                                                                                                                      [ 61%]
-tests/test_year_extraction.py::test_extract_year[AU_AI_Strategy_2024.pdf-2024] PASSED                                                                                                                                                                                                [ 66%]
-tests/test_year_extraction.py::test_extract_year[African_Union_Policy_1999.pdf-1999] PASSED                                                                                                                                                                                          [ 72%]
-tests/test_year_extraction.py::test_extract_year[ChildRights_NoYear.pdf-None] PASSED                                                                                                                                                                                                 [ 77%]
-tests/test_year_extraction.py::test_extract_year[AI_Strategy_2023_Final_2024.pdf-2023] PASSED                                                                                                                                                                                        [ 83%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_20x4.pdf-None] PASSED                                                                                                                                                                                                     [ 88%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_203.pdf-None] PASSED                                                                                                                                                                                                      [ 94%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_20245.pdf-None] PASSED                                                                                                                                                                                                    [100%]
 
-===================================================================================================================================== warnings summary =====================================================================================================================================.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21
-  /mnt/h/DigitalChild/.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21: DeprecationWarning: PyPDF2 is deprecated. Please move to the pypdf library instead.
-    warnings.warn(
 
-tests/test_metadata.py::test_metadata_updates
-  /mnt/h/DigitalChild/pipeline_runner.py:100: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-    now = datetime.utcnow().isoformat() + "Z"
 
--- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-============================================================================================================================= 18 passed, 2 warnings in 37.07s ==============================================================================================================================(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pre-commit run --all-files
+(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pre-commit autoupdate
+
+[https://github.com/pre-commit/pre-commit-hooks] updating v4.5.0 -> v6.0.0
+[https://github.com/psf/black] updating 23.12.1 -> 25.1.0
+[https://github.com/PyCQA/isort] updating 5.12.0 -> 6.0.1
+[https://github.com/pycqa/flake8] updating 6.1.0 -> 7.3.0
+[https://github.com/igorshubovych/markdownlint-cli] updating v0.39.0 -> v0.45.0
+
+
+
+
+(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pre-commit run --all-files
+
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Initializing environment for https://github.com/psf/black.
+[INFO] Initializing environment for https://github.com/PyCQA/isort.
+[INFO] Initializing environment for https://github.com/pycqa/flake8.
+[INFO] Initializing environment for https://github.com/pycqa/flake8:flake8-bugbear.
+[INFO] Initializing environment for https://github.com/igorshubovych/markdownlint-cli.
+[INFO] Installing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/psf/black.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/PyCQA/isort.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/pycqa/flake8.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/igorshubovych/markdownlint-cli.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
 trim trailing whitespace.................................................Passed
 fix end of files.........................................................Passed
 check yaml...............................................................Passed
@@ -41,20 +43,52 @@ check json...............................................................Passed
 check toml...........................................(no files to check)Skipped
 check for added large files..............................................Passed
 detect private key.......................................................Passed
-black....................................................................Failed
-- hook id: black
-- files were modified by this hook
-
-reformatted pipeline_runner.py
-
-All done! ✨ 🍰 ✨
-1 file reformatted, 35 files left unchanged.
-
-isort....................................................................Failed
-- hook id: isort
-- files were modified by this hook
-
-Fixing /mnt/h/DigitalChild/pipeline_runner.py
-
+black....................................................................Passed
+isort....................................................................Passed
 flake8...................................................................Passed
 markdownlint.............................................................Passed
+
+
+
+
+(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pytest tests/ -v
+
+============================================================================= test session starts =============================================================================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /mnt/h/DigitalChild/.LittleRainbow/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/h/DigitalChild
+plugins: cov-6.2.1
+collected 18 items
+
+tests/test_comparison.py::test_comparison_export PASSED                                                                                                                  [  5%]
+tests/test_csv_footer.py::test_csv_footer PASSED                                                                                                                         [ 11%]
+tests/test_fallback_handler.py::test_fallback_pdf PASSED                                                                                                                 [ 16%]
+tests/test_fallback_handler.py::test_fallback_docx PASSED                                                                                                                [ 22%]
+tests/test_fallback_handler.py::test_fallback_html PASSED                                                                                                                [ 27%]
+tests/test_logging.py::test_pipeline_creates_logs[args0-True] PASSED                                                                                                     [ 33%]
+tests/test_logging.py::test_pipeline_creates_logs[args1-False] PASSED                                                                                                    [ 38%]
+tests/test_metadata.py::test_metadata_updates PASSED                                                                                                                     [ 44%]
+tests/test_recommendations.py::test_recommendations_regex PASSED                                                                                                         [ 50%]
+tests/test_tagger.py::test_apply_tags_default_config PASSED                                                                                                              [ 55%]
+tests/test_tagger.py::test_no_tags_match PASSED                                                                                                                          [ 61%]
+tests/test_year_extraction.py::test_extract_year[AU_AI_Strategy_2024.pdf-2024] PASSED                                                                                    [ 66%]
+tests/test_year_extraction.py::test_extract_year[African_Union_Policy_1999.pdf-1999] PASSED                                                                              [ 72%]
+tests/test_year_extraction.py::test_extract_year[ChildRights_NoYear.pdf-None] PASSED                                                                                     [ 77%]
+tests/test_year_extraction.py::test_extract_year[AI_Strategy_2023_Final_2024.pdf-2023] PASSED                                                                            [ 83%]
+tests/test_year_extraction.py::test_extract_year[AU_Policy_20x4.pdf-None] PASSED                                                                                         [ 88%]
+tests/test_year_extraction.py::test_extract_year[AU_Policy_203.pdf-None] PASSED                                                                                          [ 94%]
+tests/test_year_extraction.py::test_extract_year[AU_Policy_20245.pdf-None] PASSED                                                                                        [100%]
+
+============================================================================== warnings summary ===============================================================================
+.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21
+  /mnt/h/DigitalChild/.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21: DeprecationWarning: PyPDF2 is deprecated. Please move to the pypdf library instead.
+    warnings.warn(
+
+tests/test_metadata.py::test_metadata_updates
+  /mnt/h/DigitalChild/pipeline_runner.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version.
+    Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = datetime.utcnow().isoformat() + "Z"
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+======================================================================== 18 passed, 2 warnings in 37.77s ======================================================================
