@@ -1,59 +1,88 @@
 """
 Universal Periodic Review Scraper
 ---------------------------------
-Fetches UPR (Universal Periodic Review) documents from OHCHR.
+Fetches UPR documents from OHCHR:
+- Main index: https://www.ohchr.org/en/hr-bodies/upr/documentation
+- Country pages: e.g. https://www.ohchr.org/en/hr-bodies/upr/af-index
 """
 
 import os
-from urllib.parse import urljoin
-
 import requests
 from bs4 import BeautifulSoup
-
+from urllib.parse import urljoin
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://www.ohchr.org/en/hr-bodies/upr/documentation"
+BASE_INDEX = "https://www.ohchr.org/en/hr-bodies/upr/documentation"
 RAW_DIR = "data/raw/upr"
 
 logger = get_logger("upr")
 
 
-def scrape(base_url=DEFAULT_URL, country=None):
+def scrape(base_url=BASE_INDEX, countries=None):
     """
-    Scrape UPR documents.
-    - base_url: starting URL (default = OHCHR UPR main page)
-    - country: if provided, scrape that country's subpage (e.g., 'kenya')
+    Scrape UPR documentation.
+    - base_url: UPR index or alternate index page
+    - countries: list of country codes/paths to scrape (default: all)
     """
 
     os.makedirs(RAW_DIR, exist_ok=True)
 
-    target_url = base_url
-    if country:
-        target_url = f"{base_url}/{country}"
-
+    # 1. Fetch index page
     try:
-        resp = requests.get(target_url, timeout=30)
+        resp = requests.get(base_url, timeout=30)
         resp.raise_for_status()
     except Exception as e:
-        logger.error(f"Failed to fetch UPR page: {e}")
+        logger.error(f"Failed to fetch UPR index page: {e}")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    links = soup.find_all("a", href=True)
 
-    downloaded = []
-    for link in links:
-        href = link["href"]
-        if href.lower().endswith(".pdf"):
-            file_url = urljoin(target_url, href)
-            name = os.path.basename(href)
-            if country:
-                name = f"{country}_{name}"
-            dest_path = os.path.join(RAW_DIR, name)
-            if download_file(file_url, dest_path):
-                downloaded.append(dest_path)
+    # Extract all country links from the index page
+    country_links = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "/hr-bodies/upr/" in href and href.endswith("-index"):
+            country_name = a.get_text(strip=True)
+            full_url = urljoin("https://www.ohchr.org", href)
+            country_links.append((country_name, full_url))
 
-    if not downloaded:
-        logger.warning(f"No PDFs found for UPR scrape (url={target_url}).")
-    return downloaded
+    if countries:
+        # filter to only requested countries
+        country_links = [c for c in country_links if c[0].lower() in [x.lower() for x in countries]]
+
+    if not country_links:
+        logger.warning("No country links found on UPR index page")
+        return []
+
+    all_downloaded = []
+
+    # 2. Visit each country page
+    for country_name, country_url in country_links:
+        logger.info(f"Fetching UPR docs for {country_name} → {country_url}")
+        country_dir = os.path.join(RAW_DIR, country_name.replace(" ", "_"))
+        os.makedirs(country_dir, exist_ok=True)
+
+        try:
+            resp = requests.get(country_url, timeout=30)
+            resp.raise_for_status()
+        except Exception as e:
+            logger.error(f"Failed to fetch country page {country_url}: {e}")
+            continue
+
+        csoup = BeautifulSoup(resp.text, "html.parser")
+        links = csoup.find_all("a", href=True)
+
+        for link in links:
+            href = link["href"]
+            if href.lower().endswith((".pdf", ".doc", ".docx")):
+                file_url = urljoin("https://www.ohchr.org", href)
+                filename = os.path.basename(href)
+                dest_path = os.path.join(country_dir, f"{country_name}_{filename}")
+
+                if download_file(file_url, dest_path):
+                    all_downloaded.append(dest_path)
+
+    if not all_downloaded:
+        logger.warning("No UPR documents downloaded")
+    return all_downloaded
