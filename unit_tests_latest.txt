@@ -16,21 +16,45 @@ tests/test_metadata.py::test_metadata_updates PASSED                            
 tests/test_recommendations.py::test_recommendations_regex PASSED                                                                                                                                                                                                                     [ 50%]
 tests/test_tagger.py::test_apply_tags_default_config PASSED                                                                                                                                                                                                                          [ 55%]
 tests/test_tagger.py::test_no_tags_match PASSED                                                                                                                                                                                                                                      [ 61%]
-tests/test_year_extraction.py::test_extract_year[AU_AI_Strategy_2024.pdf-2024] PASSED                                                                                                                                                                                                [ 66%]
-tests/test_year_extraction.py::test_extract_year[African_Union_Policy_1999.pdf-1999] PASSED                                                                                                                                                                                          [ 72%]
-tests/test_year_extraction.py::test_extract_year[ChildRights_NoYear.pdf-None] PASSED                                                                                                                                                                                                 [ 77%]
-tests/test_year_extraction.py::test_extract_year[AI_Strategy_2023_Final_2024.pdf-2023] PASSED                                                                                                                                                                                        [ 83%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_20x4.pdf-None] PASSED                                                                                                                                                                                                     [ 88%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_203.pdf-None] PASSED                                                                                                                                                                                                      [ 94%]
-tests/test_year_extraction.py::test_extract_year[AU_Policy_20245.pdf-None] PASSED                                                                                                                                                                                                    [100%]
+tests/test_year_extraction.py::test_extract_year[AU_AI_Strategy_2024.pdf-2024] PASSED                                                                                                                                                                                                [ 66%] 
+tests/test_year_extraction.py::test_extract_year[African_Union_Policy_1999.pdf-1999] PASSED                                                                                                                                                                                          [ 72%] 
+tests/test_year_extraction.py::test_extract_year[ChildRights_NoYear.pdf-None] PASSED                                                                                                                                                                                                 [ 77%] 
+tests/test_year_extraction.py::test_extract_year[AI_Strategy_2023_Final_2024.pdf-2023] PASSED                                                                                                                                                                                        [ 83%] 
+tests/test_year_extraction.py::test_extract_year[AU_Policy_20x4.pdf-None] PASSED                                                                                                                                                                                                     [ 88%] 
+tests/test_year_extraction.py::test_extract_year[AU_Policy_203.pdf-None] PASSED                                                                                                                                                                                                      [ 94%] 
+tests/test_year_extraction.py::test_extract_year[AU_Policy_20245.pdf-None] PASSED                                                                                                                                                                                                    [100%] 
 
 ===================================================================================================================================== warnings summary =====================================================================================================================================.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21
   /mnt/h/DigitalChild/.LittleRainbow/lib/python3.12/site-packages/PyPDF2/__init__.py:21: DeprecationWarning: PyPDF2 is deprecated. Please move to the pypdf library instead.
     warnings.warn(
 
 tests/test_metadata.py::test_metadata_updates
-  /mnt/h/DigitalChild/pipeline_runner.py:59: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  /mnt/h/DigitalChild/pipeline_runner.py:100: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
     now = datetime.utcnow().isoformat() + "Z"
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-============================================================================================================================= 18 passed, 2 warnings in 35.02s ==============================================================================================================================(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild#
+============================================================================================================================= 18 passed, 2 warnings in 37.07s ==============================================================================================================================(.LittleRainbow) root@DESKTOP-905EU69:/mnt/h/DigitalChild# pre-commit run --all-files
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+check json...............................................................Passed
+check toml...........................................(no files to check)Skipped
+check for added large files..............................................Passed
+detect private key.......................................................Passed
+black....................................................................Failed
+- hook id: black
+- files were modified by this hook
+
+reformatted pipeline_runner.py
+
+All done! ✨ 🍰 ✨
+1 file reformatted, 35 files left unchanged.
+
+isort....................................................................Failed
+- hook id: isort
+- files were modified by this hook
+
+Fixing /mnt/h/DigitalChild/pipeline_runner.py
+
+flake8...................................................................Passed
+markdownlint.............................................................Passed
