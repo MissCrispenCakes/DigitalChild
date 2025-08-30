@@ -17,7 +17,6 @@ from processors import (pdf_to_text, recommendations, tagger, tags_summary,
 from processors.logger import get_logger, set_run_logfile
 from scrapers import (acerwc, achpr, au_policy, country_utils, ohchr,
                       region_utils, unicef, upr)
-from scrapers import utils as scraper_utils  # noqa: F401
 
 SCRAPER_MAP = {
     "au_policy": (
