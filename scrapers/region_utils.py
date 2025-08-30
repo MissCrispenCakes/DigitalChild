@@ -4,6 +4,14 @@ Region Utilities
 Helpers for normalizing region names (Africa, MENA, etc.).
 """
 
+import json
+import re
+
+# Minimal ISO 3166-1 alpha-2 mapping (extend as needed)
+REGION_FILE = "configs/filters/countries/regions_iso2.json"
+with open(COUNTRY_FILE, "r", encoding="utf-8") as f:
+    ISO_MAP = json.load(f)
+
 # Example normalization dictionary
 REGION_NORMALIZATION = {
     "Sub-Saharan Africa": "Africa",

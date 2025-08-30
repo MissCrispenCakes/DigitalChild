@@ -4,17 +4,22 @@ Country Utilities
 Helpers for normalizing country names and mapping to ISO codes.
 """
 
+import json
 import re
 
 # Minimal ISO 3166-1 alpha-2 mapping (extend as needed)
-ISO_MAP = {
-    "Kenya": "KE",
-    "Nigeria": "NG",
-    "South Africa": "ZA",
-    "Uganda": "UG",
-    "Ghana": "GH",
-    "African Union": "AU",
-}
+COUNTRY_FILE = "configs/filters/countries/countries_iso2.json"
+with open(COUNTRY_FILE, "r", encoding="utf-8") as f:
+    ISO_MAP = json.load(f)
+
+# ISO_MAP = {
+#     "Kenya": "KE",
+#     "Nigeria": "NG",
+#     "South Africa": "ZA",
+#     "Uganda": "UG",
+#     "Ghana": "GH",
+#     "African Union": "AU",
+# }
 
 
 def normalize_country(country_raw):

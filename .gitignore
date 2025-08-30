@@ -18,6 +18,7 @@ logs/
 data/raw/
 data/processed/
 data/exports/
+data/try_sel/
 
 # Metadata
 data/metadata/metadata.json

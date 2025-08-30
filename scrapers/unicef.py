@@ -13,20 +13,33 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://www.unicef.org/reports"
 RAW_DIR = "data/raw/unicef"
+BASE_URL = "data.unicef.org/wp-content/uploads/2025/03/ICVAC-Tecnical-Brief-3_17.pdf"
+# BASE_URL = "https://www.unicef.org/reports"
 
 logger = get_logger("unicef")
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Referer": "https://www.unicef.org/",
+    "Connection": "keep-alive",
+}
 
-def scrape(base_url=DEFAULT_URL):
+
+def scrape(base_url=BASE_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
     try:
-        resp = requests.get(base_url, timeout=30)
+        resp = requests.get(base_url, headers=HEADERS, timeout=300)
         resp.raise_for_status()
     except Exception as e:
-        logger.error(f"Failed to fetch UNICEF reports page: {e}")
+        logger.error(f"Failed to fetch UNICEF page: {e}")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")

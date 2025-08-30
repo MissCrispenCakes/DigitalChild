@@ -1,15 +1,21 @@
 # requirements placeholder
 
-# Core scraping + processing
-requests
-PyPDF2
-python-docx
+# Core scraping
 beautifulsoup4
+selenium
+requests
+pycountry
+
+# Core processing
+PyPDF2
+reportlab
+python-docx
 
 # Development + testing
 pytest
 pytest-cov
 pandoc
+logging
 
 # Docs + formatting
 markdown-link-checker
