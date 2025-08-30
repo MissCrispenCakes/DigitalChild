@@ -5,9 +5,11 @@ Fetches UNICEF policy and research reports.
 """
 
 import os
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
@@ -34,7 +36,7 @@ def scrape(base_url=DEFAULT_URL):
     for link in links:
         href = link["href"]
         if href.lower().endswith(".pdf"):
-            file_url = urljoin(BASE_URL, href)
+            file_url = urljoin(base_url, href)
             name = os.path.basename(href)
             dest_path = os.path.join(RAW_DIR, name)
             if download_file(file_url, dest_path):

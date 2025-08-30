@@ -6,8 +6,8 @@ Unified + per-module logging.
 - Optional per-module log file (toggle via pipeline_runner)
 """
 
-import os
 import logging
+import os
 from datetime import datetime
 
 LOG_DIR = "logs"
@@ -56,7 +56,9 @@ def get_logger(name="pipeline"):
     if RUN_LOGFILE:
         fh_shared = logging.FileHandler(RUN_LOGFILE, encoding="utf-8")
         fh_shared.setLevel(logging.DEBUG)
-        fh_shared.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] [%(name)s] %(message)s"))
+        fh_shared.setFormatter(
+            logging.Formatter("%(asctime)s [%(levelname)s] [%(name)s] %(message)s")
+        )
         logger.addHandler(fh_shared)
 
     # Module-specific log handler (optional, consistent run timestamp)
@@ -64,7 +66,9 @@ def get_logger(name="pipeline"):
         logfile = os.path.join(LOG_DIR, f"{RUN_TIMESTAMP}_{name}.log")
         fh_module = logging.FileHandler(logfile, encoding="utf-8")
         fh_module.setLevel(logging.DEBUG)
-        fh_module.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] [%(name)s] %(message)s"))
+        fh_module.setFormatter(
+            logging.Formatter("%(asctime)s [%(levelname)s] [%(name)s] %(message)s")
+        )
         logger.addHandler(fh_module)
 
     return logger

@@ -5,15 +5,15 @@ End-to-end run for AU policies → PDF → text → tags → export summary.
 Now also updates metadata.json with tags and last_processed.
 """
 
+import argparse
+import json
 import os
 import re
-import json
-import argparse
 from datetime import datetime
 
-from scrapers import au_policy
 from processors import pdf_to_text, tagger, tags_summary
-from processors.logger import set_run_logfile, get_logger
+from processors.logger import get_logger, set_run_logfile
+from scrapers import au_policy
 
 METADATA_FILE = "data/metadata/metadata.json"
 
@@ -47,16 +47,14 @@ def update_metadata(doc_id, source, country, region, year, tags, tag_version="ta
             "ingestion_method": "scraper",
             "tags_history": [],
             "recommendations_history": [],
-            "last_processed": now
+            "last_processed": now,
         }
         metadata["documents"].append(existing)
 
     existing["last_processed"] = now
-    existing["tags_history"].append({
-        "tags": tags,
-        "version": tag_version,
-        "timestamp": now
-    })
+    existing["tags_history"].append(
+        {"tags": tags, "version": tag_version, "timestamp": now}
+    )
 
     save_metadata(metadata)
 
@@ -100,7 +98,7 @@ def run_demo(no_module_logs=False):
                     region="Africa",
                     year=year,
                     tags=tags,
-                    tag_version="tags_v1"
+                    tag_version="tags_v1",
                 )
 
     # Step 3: Export tags summary
@@ -110,8 +108,11 @@ def run_demo(no_module_logs=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run AU Policy demo pipeline")
-    parser.add_argument("--no-module-logs", action="store_true",
-                        help="Disable per-module logs; use unified run log only")
+    parser.add_argument(
+        "--no-module-logs",
+        action="store_true",
+        help="Disable per-module logs; use unified run log only",
+    )
     args = parser.parse_args()
 
     run_demo(no_module_logs=args.no_module_logs)

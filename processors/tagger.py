@@ -7,6 +7,7 @@ Simple regex-based tagging using external config.
 
 import json
 import re
+
 from processors.logger import get_logger
 
 logger = get_logger("tagger")

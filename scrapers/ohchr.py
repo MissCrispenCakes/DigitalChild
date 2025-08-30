@@ -5,9 +5,11 @@ Fetches documents from the OHCHR Treaty Body Database.
 """
 
 import os
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
@@ -43,4 +45,3 @@ def scrape(base_url=DEFAULT_URL):
     if not downloaded:
         logger.warning("No PDFs found for OHCHR TB scrape.")
     return downloaded
-

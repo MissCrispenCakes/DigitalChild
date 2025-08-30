@@ -52,8 +52,8 @@ files = {
     "processors/tagger.py": "# Tagger placeholder\n",
     "processors/tags_summary.py": "# Tags summary exporter placeholder\n",
     "processors/logger.py": "# Logger placeholder\n",
-    "configs/tags_v1.json": "{\n  \"rules\": {}\n}\n",
-    "data/metadata/metadata.json": "{\n  \"documents\": []\n}\n",
+    "configs/tags_v1.json": '{\n  "rules": {}\n}\n',
+    "data/metadata/metadata.json": '{\n  "documents": []\n}\n',
     "docs/README.md": "# Project README\n",
     "docs/FIRST_RUN_ERRORS.md": "# First Run Errors Guide\n",
     "tests/test_year_extraction.py": "# Year extraction test placeholder\n",
@@ -62,15 +62,18 @@ files = {
     ".github/workflows/ci.yml": "# CI workflow placeholder\n",
 }
 
+
 def ensure_dirs():
     for d in dirs:
         os.makedirs(d, exist_ok=True)
+
 
 def ensure_files():
     for path, content in files.items():
         if not os.path.exists(path):
             with open(path, "w", encoding="utf-8") as f:
                 f.write(content)
+
 
 if __name__ == "__main__":
     ensure_dirs()

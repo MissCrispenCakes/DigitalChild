@@ -6,7 +6,9 @@ Converts PDFs to plain text for further processing.
 """
 
 import os
+
 from PyPDF2 import PdfReader
+
 from processors.logger import get_logger
 
 logger = get_logger("pdf_to_text")
@@ -26,7 +28,9 @@ def convert(pdf_path, output_dir):
         return None
 
     os.makedirs(output_dir, exist_ok=True)
-    txt_path = os.path.join(output_dir, os.path.basename(pdf_path).replace(".pdf", ".txt"))
+    txt_path = os.path.join(
+        output_dir, os.path.basename(pdf_path).replace(".pdf", ".txt")
+    )
     try:
         with open(txt_path, "w", encoding="utf-8") as f:
             f.write(text)

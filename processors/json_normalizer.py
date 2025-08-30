@@ -6,6 +6,7 @@ Preserves _raw fields alongside normalized ones.
 """
 
 import re
+
 from processors.logger import get_logger
 
 logger = get_logger("json_normalizer")
@@ -15,8 +16,9 @@ REGION_NORMALIZATION = {
     "Sub-Saharan Africa": "Africa",
     "SSA": "Africa",
     "Middle East and North Africa": "MENA",
-    "North Africa": "Africa"
+    "North Africa": "Africa",
 }
+
 
 def normalize_region(region_raw):
     """Normalize region names but preserve the raw value too."""
@@ -27,6 +29,7 @@ def normalize_region(region_raw):
             return region_raw, val
     return region_raw, region_raw  # if no mapping, keep as-is
 
+
 def normalize_country(country_raw):
     """Basic country name normalization (placeholder)."""
     if not country_raw:
@@ -34,6 +37,7 @@ def normalize_country(country_raw):
     # Example: strip extra spaces, unify case
     cleaned = re.sub(r"\s+", " ", country_raw).strip()
     return country_raw, cleaned
+
 
 def normalize_document(doc):
     """

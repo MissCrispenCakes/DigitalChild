@@ -5,7 +5,9 @@ Converts HTML documents to plain text by stripping tags.
 """
 
 import os
+
 from bs4 import BeautifulSoup
+
 from processors.logger import get_logger
 
 logger = get_logger("html_to_text")
@@ -26,7 +28,9 @@ def convert(html_path, output_dir):
         return None
 
     os.makedirs(output_dir, exist_ok=True)
-    txt_path = os.path.join(output_dir, os.path.basename(html_path).replace(".html", ".txt"))
+    txt_path = os.path.join(
+        output_dir, os.path.basename(html_path).replace(".html", ".txt")
+    )
     try:
         with open(txt_path, "w", encoding="utf-8") as f:
             f.write(text)

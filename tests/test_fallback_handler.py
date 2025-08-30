@@ -1,6 +1,9 @@
 import os
 import tempfile
-from processors import fallback_handler, pdf_to_text, docx_to_text, html_to_text
+
+from processors import (docx_to_text, fallback_handler, html_to_text,
+                        pdf_to_text)
+
 
 def test_fallback_pdf(tmp_path):
     # Create fake PDF file
@@ -10,6 +13,7 @@ def test_fallback_pdf(tmp_path):
     result = fallback_handler.process_with_fallback(str(pdf_file), str(tmp_path))
     assert result is None or os.path.exists(result)
 
+
 def test_fallback_docx(tmp_path):
     # Create fake DOCX (actually plain text to simulate wrong extension)
     docx_file = tmp_path / "file.docx"
@@ -17,6 +21,7 @@ def test_fallback_docx(tmp_path):
 
     result = fallback_handler.process_with_fallback(str(docx_file), str(tmp_path))
     assert result is None or os.path.exists(result)
+
 
 def test_fallback_html(tmp_path):
     html_file = tmp_path / "file.html"

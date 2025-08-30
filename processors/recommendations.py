@@ -5,8 +5,9 @@ Extracts recommendations from documents using config-driven rules.
 Supports regex or keyword strategies (initially regex/keywords).
 """
 
-import re
 import json
+import re
+
 from processors.logger import get_logger
 
 logger = get_logger("recommendations")

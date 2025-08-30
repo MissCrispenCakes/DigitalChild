@@ -1,7 +1,9 @@
 # Recommendations extraction test
-import os
 import json
+import os
+
 from processors import recommendations
+
 
 def test_recommendations_regex(tmp_path):
     # Create a temporary recommendations config
@@ -9,11 +11,7 @@ def test_recommendations_regex(tmp_path):
     config = {
         "version": "recs_v1",
         "strategy": "regex",
-        "rules": [
-            "The Committee recommends",
-            "should adopt",
-            "urges the State Party"
-        ]
+        "rules": ["The Committee recommends", "should adopt", "urges the State Party"],
     }
     with open(recs_config, "w", encoding="utf-8") as f:
         json.dump(config, f)
