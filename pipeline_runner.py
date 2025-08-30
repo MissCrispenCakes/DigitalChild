@@ -25,7 +25,6 @@ METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
 
 
-
 def load_metadata():
     if not os.path.exists(METADATA_FILE):
         return {"documents": []}
@@ -112,26 +111,40 @@ def update_metadata(doc_id, source, country_raw=None, region_raw=None, year=None
 
 
 
-def extract_year(filename, txt_path, logger):
+def extract_year(filename, txt_path=None, logger=None):
+    """
+    Extract year from filename and/or text file.
+    Always returns (year or None, source).
+    """
+
+    YEAR_PATTERN = r"(19|20)\d{2}"
+
     # 1. From filename
-    match = re.search(r"\b(19|20)\d{2}\b", filename)
-    if match:
-        return int(match.group()), "filename"
+    matches = re.finditer(YEAR_PATTERN, filename)
+    for m in matches:
+        year_str = m.group(0)
+        # Reject if part of a longer number (look before and after)
+        start, end = m.span()
+        if (start > 0 and filename[start-1].isdigit()) or (end < len(filename) and filename[end].isdigit()):
+            continue
+        return int(year_str), "filename"
 
-    # 2. From first 1000 chars of text
-    try:
-        with open(txt_path, "r", encoding="utf-8") as f:
-            text = f.read(1000)
-            match = re.search(r"(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)\s+(19|20)\d{2}", text, re.IGNORECASE)
-            if match:
-                return int(match.group(2)), "first_page"
-            match = re.search(r"\b(19|20)\d{2}\b", text)
-            if match:
-                return int(match.group()), "first_page"
-    except Exception as e:
-        logger.warning(f"Error scanning text for year in {filename}: {e}")
+    # 2. From text
+    if txt_path:
+        try:
+            with open(txt_path, "r", encoding="utf-8") as f:
+                text = f.read(1000)
+                matches = re.finditer(YEAR_PATTERN, text)
+                for m in matches:
+                    year_str = m.group(0)
+                    start, end = m.span()
+                    if (start > 0 and text[start-1].isdigit()) or (end < len(text) and text[end].isdigit()):
+                        continue
+                    return int(year_str), "first_page"
+        except Exception as e:
+            if logger:
+                logger.warning(f"Error scanning text for year in {filename}: {e}")
 
-    # 3. Unknown
     return None, "unknown"
 
 
