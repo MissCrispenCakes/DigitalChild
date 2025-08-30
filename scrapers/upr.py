@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://www.ohchr.org/en/hr-bodies/upr"
+DEFAULT_URL = "https://www.ohchr.org/en/hr-bodies/upr/documentation"
 RAW_DIR = "data/raw/upr"
 
 logger = get_logger("upr")
