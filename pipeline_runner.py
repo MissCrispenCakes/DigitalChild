@@ -15,12 +15,47 @@ from processors import (pdf_to_text, recommendations, tagger, tags_summary,
                         tags_timeline, tags_timeline_country,
                         tags_timeline_region)
 from processors.logger import get_logger, set_run_logfile
-from scrapers import country_utils, region_utils
-from scrapers import au_policy
-#from scrapers import acerwc, achpr, ohchr, unicef, upr
+from scrapers import (acerwc, achpr, au_policy, country_utils, ohchr,
+                      region_utils, unicef, upr)
+from scrapers import utils as scraper_utils  # noqa: F401
+
+SCRAPER_MAP = {
+    "au_policy": (
+        au_policy,
+        "Africa/African_Union/text",
+        "African_Union",
+        "Africa",
+        "Policy",
+    ),
+    "ohchr": (
+        ohchr,
+        "Africa/OHCHR/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+    "upr": (upr, "Africa/UPR/text", "African_Union", "Africa", "UPR"),
+    "unicef": (unicef, "Global/UNICEF/text", "Global", "Global", "Report"),
+    "acerwc": (
+        acerwc,
+        "Africa/ACERWC/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+    "achpr": (
+        achpr,
+        "Africa/ACHPR/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+}
+
 
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
+
 
 def load_metadata():
     if not os.path.exists(METADATA_FILE):
@@ -173,6 +208,14 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
     # Setup logging
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
+
+    if source not in SCRAPER_MAP:
+        logger.error(f"Unknown source: {source}")
+        return
+
+    scraper, proc_subdir, country, region, doc_type = SCRAPER_MAP[source]
+    raw_dir = f"data/raw/{source}"
+    proc_dir = f"data/processed/{proc_subdir}"
 
     # Choose scraper
     if source == "au_policy":

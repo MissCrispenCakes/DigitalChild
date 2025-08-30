@@ -5,7 +5,6 @@ Compares tagging or recommendations across versions.
 Outputs a CSV with per-document differences.
 """
 
-import argparse  # noqa: F041
 import csv
 import json
 import os
