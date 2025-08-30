@@ -5,7 +5,9 @@ Converts Word documents (.docx) to plain text.
 """
 
 import os
+
 from docx import Document
+
 from processors.logger import get_logger
 
 logger = get_logger("docx_to_text")
@@ -25,7 +27,9 @@ def convert(docx_path, output_dir):
         return None
 
     os.makedirs(output_dir, exist_ok=True)
-    txt_path = os.path.join(output_dir, os.path.basename(docx_path).replace(".docx", ".txt"))
+    txt_path = os.path.join(
+        output_dir, os.path.basename(docx_path).replace(".docx", ".txt")
+    )
     try:
         with open(txt_path, "w", encoding="utf-8") as f:
             f.write(text)

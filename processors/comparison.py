@@ -5,10 +5,11 @@ Compares tagging or recommendations across versions.
 Outputs a CSV with per-document differences.
 """
 
-import os
+import argparse
 import csv
 import json
-import argparse
+import os
+
 from processors.logger import get_logger
 
 logger = get_logger("comparison")
@@ -19,7 +20,9 @@ def load_metadata(metadata_file="data/metadata/metadata.json"):
         return json.load(f)
 
 
-def run_comparison(config_file="configs/comparison.json", metadata_file="data/metadata/metadata.json"):
+def run_comparison(
+    config_file="configs/comparison.json", metadata_file="data/metadata/metadata.json"
+):
     with open(config_file, "r", encoding="utf-8") as f:
         config = json.load(f)
 

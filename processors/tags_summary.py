@@ -7,6 +7,7 @@ Counts tagged documents and outputs summary CSV.
 
 import csv
 import os
+
 from processors.logger import get_logger
 
 logger = get_logger("tags_summary")
@@ -37,9 +38,15 @@ def export(docs, output_file="data/exports/tags_summary.csv"):
             writer.writerow([tag, count, pct])
 
         # Branding footer
-        csvfile.write("\n# Project: GRIMdata / ALLRainbowRights / LittleRainbowRights\n")
-        csvfile.write("# Domains: https://GRIMdata.org | https://ALLRainbowRights.com | https://LittleRainbowRights.com\n")
-        csvfile.write("# Note: This dataset is part of the pipeline for analyzing child & LGBTQ+ digital protections.\n")
+        csvfile.write(
+            "\n# Project: GRIMdata / ALLRainbowRights / LittleRainbowRights\n"
+        )
+        csvfile.write(
+            "# Domains: https://GRIMdata.org | https://ALLRainbowRights.com | https://LittleRainbowRights.com\n"
+        )
+        csvfile.write(
+            "# Note: This dataset is part of the pipeline for analyzing child & LGBTQ+ digital protections.\n"
+        )
         csvfile.write("# ----------------------------------------\n")
 
     logger.info(f"Exported summary → {output_file}")

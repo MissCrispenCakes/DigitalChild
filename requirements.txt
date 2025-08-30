@@ -15,4 +15,3 @@ pandoc
 markdown-link-checker
 mdformat
 pre-commit
-

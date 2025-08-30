@@ -1,8 +1,10 @@
 # Comparison export test
-import os
 import csv
 import json
+import os
+
 from processors import comparison
+
 
 def test_comparison_export(tmp_path):
     # Create dummy metadata
@@ -13,12 +15,24 @@ def test_comparison_export(tmp_path):
                 "id": "doc1.pdf",
                 "source": "au_policy",
                 "tags_history": [
-                    {"tags": ["AI", "ChildRights"], "version": "v1", "timestamp": "2025-08-28T00:00:00Z"},
-                    {"tags": ["AI", "ChildRights", "DigitalPolicy"], "version": "v3", "timestamp": "2025-08-28T01:00:00Z"}
+                    {
+                        "tags": ["AI", "ChildRights"],
+                        "version": "v1",
+                        "timestamp": "2025-08-28T00:00:00Z",
+                    },
+                    {
+                        "tags": ["AI", "ChildRights", "DigitalPolicy"],
+                        "version": "v3",
+                        "timestamp": "2025-08-28T01:00:00Z",
+                    },
                 ],
                 "recommendations_history": [
-                    {"recommendations": ["The Committee recommends"], "version": "recs_v1", "timestamp": "2025-08-28T00:30:00Z"}
-                ]
+                    {
+                        "recommendations": ["The Committee recommends"],
+                        "version": "recs_v1",
+                        "timestamp": "2025-08-28T00:30:00Z",
+                    }
+                ],
             }
         ]
     }
@@ -31,7 +45,7 @@ def test_comparison_export(tmp_path):
         "versions": ["v1", "v3"],
         "order": "tags_first",
         "output": str(tmp_path / "comparison_export.csv"),
-        "filters": {"region": "Africa"}
+        "filters": {"region": "Africa"},
     }
     with open(config_file, "w", encoding="utf-8") as f:
         json.dump(config, f, indent=2)

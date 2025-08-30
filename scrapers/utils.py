@@ -5,7 +5,9 @@ Helper functions for all scrapers (HTTP requests, saving files, etc.).
 """
 
 import os
+
 import requests
+
 from processors.logger import get_logger
 
 logger = get_logger("scraper_utils")

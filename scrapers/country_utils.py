@@ -13,7 +13,7 @@ ISO_MAP = {
     "South Africa": "ZA",
     "Uganda": "UG",
     "Ghana": "GH",
-    "African Union": "AU"
+    "African Union": "AU",
 }
 
 

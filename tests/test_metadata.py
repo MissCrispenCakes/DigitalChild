@@ -1,9 +1,11 @@
-import os
 import json
+import os
+
+from pipeline_runner import load_metadata, save_metadata, update_metadata
 from processors import tagger
-from pipeline_runner import update_metadata, load_metadata, save_metadata
 
 METADATA_FILE = "data/metadata/metadata.json"
+
 
 def test_metadata_updates(tmp_path):
     test_id = "TestDoc.pdf"
@@ -24,7 +26,7 @@ def test_metadata_updates(tmp_path):
         region="TestRegion",
         year=2025,
         tags=tags,
-        tag_version="tags_v1"
+        tag_version="tags_v1",
     )
 
     metadata = load_metadata()

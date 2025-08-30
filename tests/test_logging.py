@@ -1,16 +1,21 @@
 # Logging test
-import os
 import glob
+import os
 import subprocess
 import sys
+
 import pytest
 
 LOG_DIR = "logs"
 
-@pytest.mark.parametrize("args,expect_module_logs", [
-    ([], True),                     # default → unified + per-module logs
-    (["--no-module-logs"], False),  # unified only
-])
+
+@pytest.mark.parametrize(
+    "args,expect_module_logs",
+    [
+        ([], True),  # default → unified + per-module logs
+        (["--no-module-logs"], False),  # unified only
+    ],
+)
 def test_pipeline_creates_logs(args, expect_module_logs):
     os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -18,7 +23,14 @@ def test_pipeline_creates_logs(args, expect_module_logs):
     before = set(glob.glob(os.path.join(LOG_DIR, "*.log")))
 
     # Run pipeline_runner.py as subprocess
-    cmd = [sys.executable, "pipeline_runner.py", "--source", "au_policy", "--tags-version", "v1"] + args
+    cmd = [
+        sys.executable,
+        "pipeline_runner.py",
+        "--source",
+        "au_policy",
+        "--tags-version",
+        "v1",
+    ] + args
     result = subprocess.run(cmd, capture_output=True, text=True)
 
     # Ensure pipeline executed successfully
@@ -41,4 +53,3 @@ def test_pipeline_creates_logs(args, expect_module_logs):
     else:
         module_logs = [f for f in new_logs if not f.endswith(f"_run.log")]
         assert not module_logs, f"Module logs found unexpectedly: {module_logs}"
-

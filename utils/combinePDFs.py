@@ -10,6 +10,7 @@ python utils/combinePDFs.py combined.pdf data/raw/au_policy/AU_AI_Strategy_2024.
 """
 
 import sys
+
 from PyPDF2 import PdfMerger
 
 

@@ -5,9 +5,10 @@ Aggregates tags per year grouped by region.
 Outputs CSV with counts per year per region.
 """
 
-import os
 import csv
 import json
+import os
+
 from processors.logger import get_logger
 
 logger = get_logger("tags_timeline_region")
@@ -18,7 +19,10 @@ def load_metadata(metadata_file="data/metadata/metadata.json"):
         return json.load(f)
 
 
-def export(metadata_file="data/metadata/metadata.json", output_file="data/exports/tags_timeline_region.csv"):
+def export(
+    metadata_file="data/metadata/metadata.json",
+    output_file="data/exports/tags_timeline_region.csv",
+):
     metadata = load_metadata(metadata_file)
     docs = metadata.get("documents", [])
 

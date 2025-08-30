@@ -1,12 +1,14 @@
 # CSV footer test placeholder
-import os
 import csv
+import os
+
 from processors import tags_summary
+
 
 def test_csv_footer(tmp_path):
     docs = [
         {"id": "file1.pdf", "tags": ["AI", "Privacy"]},
-        {"id": "file2.pdf", "tags": ["ChildRights"]}
+        {"id": "file2.pdf", "tags": ["ChildRights"]},
     ]
     output_file = tmp_path / "tags_summary.csv"
 
@@ -20,4 +22,6 @@ def test_csv_footer(tmp_path):
 
     # Ensure footer branding present
     assert any("GRIMdata" in line for line in lines), "Footer missing project identity"
-    assert any("LittleRainbowRights" in line for line in lines), "Footer missing LittleRainbowRights domain"
+    assert any(
+        "LittleRainbowRights" in line for line in lines
+    ), "Footer missing LittleRainbowRights domain"

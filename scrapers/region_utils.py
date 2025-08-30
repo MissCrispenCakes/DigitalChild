@@ -11,7 +11,7 @@ REGION_NORMALIZATION = {
     "North Africa": "Africa",
     "Middle East and North Africa": "MENA",
     "Latin America and the Caribbean": "Americas",
-    "European Union": "Europe"
+    "European Union": "Europe",
 }
 
 

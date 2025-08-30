@@ -5,9 +5,11 @@ Fetches UPR (Universal Periodic Review) documents from OHCHR.
 """
 
 import os
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
