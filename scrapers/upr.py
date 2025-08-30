@@ -7,9 +7,11 @@ Fetches UPR documents from OHCHR:
 """
 
 import os
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
@@ -18,19 +20,31 @@ RAW_DIR = "data/raw/upr"
 
 logger = get_logger("upr")
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Referer": "https://www.ohchr.org/en/hr-bodies/upr/upr-home",
+    "Connection": "keep-alive",
+}
+
 
 def scrape(base_url=BASE_INDEX, countries=None):
     """
     Scrape UPR documentation.
     - base_url: UPR index or alternate index page
-    - countries: list of country codes/paths to scrape (default: all)
+    - countries: list of country names to scrape (default: all)
     """
 
     os.makedirs(RAW_DIR, exist_ok=True)
 
     # 1. Fetch index page
     try:
-        resp = requests.get(base_url, timeout=30)
+        resp = requests.get(base_url, headers=HEADERS, timeout=300)
         resp.raise_for_status()
     except Exception as e:
         logger.error(f"Failed to fetch UPR index page: {e}")
@@ -48,8 +62,8 @@ def scrape(base_url=BASE_INDEX, countries=None):
             country_links.append((country_name, full_url))
 
     if countries:
-        # filter to only requested countries
-        country_links = [c for c in country_links if c[0].lower() in [x.lower() for x in countries]]
+        wanted = [x.lower() for x in countries]
+        country_links = [c for c in country_links if c[0].lower() in wanted]
 
     if not country_links:
         logger.warning("No country links found on UPR index page")
@@ -64,7 +78,7 @@ def scrape(base_url=BASE_INDEX, countries=None):
         os.makedirs(country_dir, exist_ok=True)
 
         try:
-            resp = requests.get(country_url, timeout=30)
+            resp = requests.get(country_url, headers=HEADERS, timeout=30)
             resp.raise_for_status()
         except Exception as e:
             logger.error(f"Failed to fetch country page {country_url}: {e}")

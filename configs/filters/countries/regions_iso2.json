@@ -1,0 +1,144 @@
+{
+  "GLOBAL": {
+    "region_code": "XX",
+    "region_name": "Global",
+    "countries": [
+      "AF","AL","DZ","AD","AO","AG","AR","AM","AU","AT","AZ",
+      "BS","BH","BD","BB","BY","BE","BZ","BJ","BT","BO","BA","BW","BR","BN","BG","BF","BI",
+      "CV","KH","CM","CA","CF","TD","CL","CN","CO","KM","CG","CD","CR","CI","HR","CU","CY","CZ",
+      "DK","DJ","DM","DO",
+      "EC","EG","SV","GQ","ER","EE","SZ","ET",
+      "FJ","FI","FR",
+      "GA","GM","GE","DE","GH","GR","GD","GT","GN","GW","GY",
+      "HT","HN","HU",
+      "IS","IN","ID","IR","IQ","IE","IL","IT",
+      "JM","JP","JO",
+      "KZ","KE","KI","KW","KG",
+      "LA","LV","LB","LS","LR","LY","LI","LT","LU",
+      "MG","MW","MY","MV","ML","MT","MH","MR","MU","MX","FM","MC","MN","ME","MA","MZ","MM",
+      "NA","NR","NP","NL","NZ","NI","NE","NG","MK","NO",
+      "OM",
+      "PK","PW","PA","PG","PY","PE","PH","PL","PT",
+      "QA",
+      "KR","MD","RO","RU","RW",
+      "KN","LC","VC","WS","SM","ST","SA","SN","RS","SC","SL","SG","SK","SI","SB","SO","ZA","SS","ES","LK","SD","SR","SE","CH","SY",
+      "TJ","TH","TL","TG","TO","TT","TN","TR","TM","TV",
+      "UG","UA","AE","GB","TZ","US","UY","UZ",
+      "VU","VE","VN",
+      "YE",
+      "ZM","ZW"
+    ]
+  },
+  "SADC": {
+    "region_code": "SADC",
+    "region_name": "Southern African Development Community",
+    "countries": ["AO", "BW", "CD", "KM", "LS", "MG", "MW", "MU", "MZ", "NA", "SC", "ZA", "SZ", "TZ", "ZM", "ZW"]
+  },
+  "ECOWAS": {
+    "region_code": "ECOWAS",
+    "region_name": "Economic Community of West African States",
+    "countries": ["BJ", "BF", "CV", "CI", "GM", "GH", "GN", "GW", "LR", "ML", "NE", "NG", "SN", "SL", "TG"]
+  },
+  "EAC": {
+    "region_code": "EAC",
+    "region_name": "East African Community",
+    "countries": ["BI", "CD", "KE", "RW", "SS", "TZ", "UG"]
+  },
+  "MENA": {
+    "region_code": "MENA",
+    "region_name": "Middle East and North Africa",
+    "countries": ["BH", "DZ", "EG", "IQ", "IL", "JO", "KW", "LB", "LY", "MA", "OM", "QA", "SA", "SY", "TN", "AE", "YE"]
+  },
+  "AFU": {
+    "region_code": "AFU",
+    "region_name": "African Union",
+    "countries": [
+      "DZ","AO","BJ","BW","BF","BI","CM","CV","CF","TD","KM","CG","CD","DJ","EG",
+      "GQ","ER","SZ","ET","GA","GM","GH","GN","GW","CI","KE","LS","LR","LY","MG",
+      "MW","ML","MR","MU","MA","MZ","NA","NE","NG","RW","ST","SN","SC","SL","SO",
+      "ZA","SS","SD","TZ","TG","TN","UG","ZM","ZW"
+    ]
+  },
+  "EUN": {
+    "region_code": "EUN",
+    "region_name": "European Union",
+    "countries": [
+      "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
+      "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE"
+    ]
+  },
+  "EUR": {
+    "region_code": "EUR",
+    "region_name": "Europe (region)",
+    "countries": [
+      "AL","AD","AM","AT","AZ","BY","BE","BA","BG","HR","CY","CZ","DK","EE","FI",
+      "FR","GE","DE","GR","HU","IS","IE","IT","KZ","XK","LV","LI","LT","LU","MT",
+      "MD","MC","ME","NL","NO","PL","PT","RO","RU","SM","RS","SK","SI","ES","SE",
+      "CH","TR","UA","GB"
+    ]
+  },
+  "NAFTA": {
+    "region_code": "NAFTA",
+    "region_name": "North American Free Trade Agreement (now USMCA)",
+    "countries": ["CA", "MX", "US"]
+  },
+  "NAM": {
+    "region_code": "NAM",
+    "region_name": "North America (region)",
+    "countries": ["BM","CA","GL","MX","US"]
+  },
+  "ASEAN": {
+    "region_code": "ASEAN",
+    "region_name": "Association of Southeast Asian Nations",
+    "countries": ["BN","KH","ID","LA","MY","MM","PH","SG","TH","VN"]
+  },
+  "APA": {
+    "region_code": "APA",
+    "region_name": "Asia-Pacific",
+    "countries": [
+      "AF","AM","AZ","BD","BT","BN","KH","CN","FJ","GE","IN","ID","JP","KZ","KI",
+      "KR","KG","LA","MY","MV","MN","MM","NP","NR","PK","PW","PG","PH","WS","SG",
+      "LK","TH","TJ","TO","TM","TV","UZ","VU","VN"
+    ]
+  },
+  "MERCOSUR": {
+    "region_code": "MERCOSUR",
+    "region_name": "Mercado Común del Sur",
+    "countries": ["AR","BR","PY","UY","VE"]
+  },
+  "LAC": {
+    "region_code": "LAC",
+    "region_name": "Latin America and the Caribbean",
+    "countries": [
+      "AG","AR","BS","BB","BZ","BO","BR","CL","CO","CR","CU","DM","DO","EC","SV",
+      "GD","GT","GY","HT","HN","JM","MX","NI","PA","PY","PE","KN","LC","VC","SR",
+      "TT","UY","VE"
+    ]
+  },
+  "UNICEF": {
+    "region_code": "UNICEF",
+    "region_name": "UNICEF Regions",
+    "ref": "GLOBAL"
+  },
+  "OHCHR": {
+    "region_code": "OHCHR",
+    "region_name": "Office of the High Commissioner for Human Rights",
+    "ref": "GLOBAL"
+  },
+  "UPR": {
+    "region_code": "UPR",
+    "region_name": "Universal Periodic Review",
+    "ref": "GLOBAL"
+  },
+  "ACERWC": {
+    "region_code": "ACERWC",
+    "region_name": "African Committee of Experts on the Rights and Welfare of the Child",
+    "ref": "AFU"
+  },
+  "ACHPR": {
+    "region_code": "ACHPR",
+    "region_name": "African Commission on Human and Peoples' Rights",
+    "ref": "AFU"
+  }
+}
+

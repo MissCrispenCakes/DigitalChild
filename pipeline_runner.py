@@ -23,13 +23,21 @@ from processors import (
 from processors.logger import get_logger, set_run_logfile
 from scrapers import (
     acerwc,
+    acerwc_sel,
     achpr,
+    achpr_sel,
     au_policy,
+    au_policy_sel,
     country_utils,
     ohchr,
+    ohchr_sel,
     region_utils,
+    selenium_setup,
     unicef,
+    unicef_sel,
     upr,
+    upr_sel,
+    utils,
 )
 
 SCRAPER_MAP = {
@@ -57,6 +65,36 @@ SCRAPER_MAP = {
         "TreatyBodyReport",
     ),
     "achpr": (
+        achpr,
+        "Africa/ACHPR/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+    "au_policy_sel": (
+        au_policy,
+        "Africa/African_Union/text",
+        "African_Union",
+        "Africa",
+        "Policy",
+    ),
+    "ohchr_sel": (
+        ohchr,
+        "Africa/OHCHR/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+    "upr_sel": (upr, "Africa/UPR/text", "African_Union", "Africa", "UPR"),
+    "unicef_sel": (unicef, "Global/UNICEF/text", "Global", "Global", "Report"),
+    "acerwc_sel": (
+        acerwc,
+        "Africa/ACERWC/text",
+        "African_Union",
+        "Africa",
+        "TreatyBodyReport",
+    ),
+    "achpr_sel": (
         achpr,
         "Africa/ACHPR/text",
         "African_Union",
@@ -231,49 +269,61 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
     proc_dir = f"data/processed/{proc_subdir}"
 
     # Choose scraper
-    if source == "au_policy":
-        from scrapers import au_policy as scraper
-
+    if source in ("au_policy", "au_policy_sel"):
+        if source == "au_policy_sel":
+            from scrapers import au_policy_sel as scraper
+        else:
+            from scrapers import au_policy as scraper
         raw_dir = "data/raw/au_policy"
         proc_dir = "data/processed/Africa/African_Union/text"
         country = "African_Union"
         region = "Africa"
         doc_type = "Policy"
-    elif source == "ohchr":
-        from scrapers import ohchr as scraper
-
+    elif source in ("ohchr", "ohchr_sel"):
+        if source == "ohchr_sel":
+            from scrapers import ohchr_sel as scraper
+        else:
+            from scrapers import ohchr as scraper
         raw_dir = "data/raw/ohchr"
         proc_dir = "data/processed/Africa/OHCHR/text"
         country = "African_Union"
         region = "Africa"
         doc_type = "TreatyBodyReport"
-    elif source == "upr":
-        from scrapers import upr as scraper
-
+    elif source in ("upr", "upr_sel"):
+        if source == "upr_sel":
+            from scrapers import upr_sel as scraper
+        else:
+            from scrapers import upr as scraper
         raw_dir = "data/raw/upr"
         proc_dir = "data/processed/Africa/UPR/text"
         country = "African_Union"
         region = "Africa"
         doc_type = "UPR"
-    elif source == "unicef":
-        from scrapers import unicef as scraper
-
+    elif source in ("unicef", "unicef_sel"):
+        if source == "unicef_sel":
+            from scrapers import unicef_sel as scraper
+        else:
+            from scrapers import unicef as scraper
         raw_dir = "data/raw/unicef"
         proc_dir = "data/processed/Global/UNICEF/text"
         country = "Global"
         region = "Global"
         doc_type = "Report"
-    elif source == "acerwc":
-        from scrapers import acerwc as scraper
-
+    elif source in ("acerwc", "acerwc_sel"):
+        if source == "acerwc_sel":
+            from scrapers import acerwc_sel as scraper
+        else:
+            from scrapers import acerwc as scraper
         raw_dir = "data/raw/acerwc"
         proc_dir = "data/processed/Africa/ACERWC/text"
         country = "African_Union"
         region = "Africa"
         doc_type = "TreatyBodyReport"
-    elif source == "achpr":
-        from scrapers import achpr as scraper
-
+    elif source in ("achpr", "achpr_sel"):
+        if source == "achpr_sel":
+            from scrapers import achpr_sel as scraper
+        else:
+            from scrapers import achpr as scraper
         raw_dir = "data/raw/achpr"
         proc_dir = "data/processed/Africa/ACHPR/text"
         country = "African_Union"
