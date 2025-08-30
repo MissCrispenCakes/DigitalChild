@@ -44,12 +44,12 @@ def test_pipeline_creates_logs(args, expect_module_logs):
     assert new_logs, "No new log files created"
 
     # Unified log should always exist
-    unified_logs = [f for f in new_logs if f.endswith(f"_run.log")]
+    unified_logs = [f for f in new_logs if f.endswith("_run.log")]
     assert unified_logs, "Unified run log missing"
 
     if expect_module_logs:
-        module_logs = [f for f in new_logs if not f.endswith(f"_run.log")]
+        module_logs = [f for f in new_logs if not f.endswith("_run.log")]
         assert module_logs, "Module logs expected but not found"
     else:
-        module_logs = [f for f in new_logs if not f.endswith(f"_run.log")]
+        module_logs = [f for f in new_logs if not f.endswith("_run.log")]
         assert not module_logs, f"Module logs found unexpectedly: {module_logs}"

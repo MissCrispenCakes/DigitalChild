@@ -1,6 +1,6 @@
 # Recommendations extraction test
 import json
-import os
+import os  # noqa: F401
 
 from processors import recommendations
 

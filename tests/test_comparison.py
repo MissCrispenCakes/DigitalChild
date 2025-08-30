@@ -1,7 +1,7 @@
 # Comparison export test
-import csv
+import csv  # noqa: F401
 import json
-import os
+import os  # noqa: F401
 
 from processors import comparison
 

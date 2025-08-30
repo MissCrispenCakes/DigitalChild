@@ -1,8 +1,8 @@
 import os
-import tempfile
+import tempfile  # noqa: F401
 
-from processors import (docx_to_text, fallback_handler, html_to_text,
-                        pdf_to_text)
+from processors import fallback_handler  # noqa: F401
+from processors import docx_to_text, html_to_text, pdf_to_text  # noqa: F401
 
 
 def test_fallback_pdf(tmp_path):

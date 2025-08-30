@@ -5,7 +5,7 @@ Compares tagging or recommendations across versions.
 Outputs a CSV with per-document differences.
 """
 
-import argparse
+import argparse  # noqa: F041
 import csv
 import json
 import os
@@ -28,7 +28,7 @@ def run_comparison(
 
     versions = config.get("versions", [])
     output_file = config.get("output", "data/exports/comparison_export.csv")
-    order = config.get("order", "tags_first")
+    order = config.get("order", "tags_first")  # noqa: F841
 
     metadata = load_metadata(metadata_file)
     docs = metadata.get("documents", [])

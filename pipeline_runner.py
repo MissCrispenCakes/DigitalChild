@@ -15,12 +15,12 @@ from processors import (pdf_to_text, recommendations, tagger, tags_summary,
                         tags_timeline, tags_timeline_country,
                         tags_timeline_region)
 from processors.logger import get_logger, set_run_logfile
-from scrapers import au_policy, ohchr, upr, unicef, acerwc, achpr
 from scrapers import country_utils, region_utils
+from scrapers import au_policy
+#from scrapers import acerwc, achpr, ohchr, unicef, upr
 
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
-
 
 def load_metadata():
     if not os.path.exists(METADATA_FILE):
