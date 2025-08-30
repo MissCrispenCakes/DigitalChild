@@ -3,21 +3,39 @@ import re
 import pytest
 
 
-def extract_year(filename, txt_path, logger):
-    # 1. From filename (all matches, prefer first)
-    matches = re.findall(r"\b(19|20)\d{2}\b", filename)
-    if matches:
-        return int(matches[0]), "filename"
+def extract_year(filename, txt_path=None, logger=None):
+    """
+    Extract year from filename and/or text file.
+    Always returns (year or None, source).
+    """
 
-    # 2. From text (first 1000 chars)
-    try:
-        with open(txt_path, "r", encoding="utf-8") as f:
-            text = f.read(1000)
-            matches = re.findall(r"\b(19|20)\d{2}\b", text)
-            if matches:
-                return int(matches[0]), "first_page"
-    except Exception as e:
-        logger.warning(f"Error scanning text for year in {filename}: {e}")
+    YEAR_PATTERN = r"(19|20)\d{2}"
+
+    # 1. From filename
+    matches = re.finditer(YEAR_PATTERN, filename)
+    for m in matches:
+        year_str = m.group(0)
+        # Reject if part of a longer number (look before and after)
+        start, end = m.span()
+        if (start > 0 and filename[start-1].isdigit()) or (end < len(filename) and filename[end].isdigit()):
+            continue
+        return int(year_str), "filename"
+
+    # 2. From text
+    if txt_path:
+        try:
+            with open(txt_path, "r", encoding="utf-8") as f:
+                text = f.read(1000)
+                matches = re.finditer(YEAR_PATTERN, text)
+                for m in matches:
+                    year_str = m.group(0)
+                    start, end = m.span()
+                    if (start > 0 and text[start-1].isdigit()) or (end < len(text) and text[end].isdigit()):
+                        continue
+                    return int(year_str), "first_page"
+        except Exception as e:
+            if logger:
+                logger.warning(f"Error scanning text for year in {filename}: {e}")
 
     return None, "unknown"
 
@@ -32,5 +50,12 @@ def extract_year(filename, txt_path, logger):
     ("AU_Policy_203.pdf", None),                 # incomplete year
     ("AU_Policy_20245.pdf", None),               # 5-digit → invalid
 ])
+
+# def test_extract_year(filename, expected):
+#     year, _ = extract_year(filename)  # ignore source
+#     assert year == expected
+
 def test_extract_year(filename, expected):
-    assert extract_year(filename) == expected
+    result = extract_year(filename)
+    assert isinstance(result, tuple)
+    assert result[0] == expected
