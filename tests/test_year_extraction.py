@@ -57,13 +57,12 @@ def extract_year(filename, txt_path=None, logger=None):
         ("AU_Policy_20245.pdf", None),  # 5-digit → invalid
     ],
 )
-
-# def test_extract_year(filename, expected):
-#     year, _ = extract_year(filename)  # ignore source
-#     assert year == expected
-
-
 def test_extract_year(filename, expected):
     result = extract_year(filename)
     assert isinstance(result, tuple)
     assert result[0] == expected
+
+
+# def test_extract_year(filename, expected):
+#     year, _ = extract_year(filename)  # ignore source
+#     assert year == expected

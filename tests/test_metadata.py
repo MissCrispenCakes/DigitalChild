@@ -2,7 +2,7 @@ import json
 import os
 
 from pipeline_runner import load_metadata, save_metadata, update_metadata
-from processors import tagger
+from processors import tagger  # noqa: F401
 
 METADATA_FILE = "data/metadata/metadata.json"
 

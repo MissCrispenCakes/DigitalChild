@@ -1,6 +1,6 @@
 # CSV footer test placeholder
-import csv
-import os
+import csv  # noqa: F401
+import os  # noqa: F401
 
 from processors import tags_summary
 
