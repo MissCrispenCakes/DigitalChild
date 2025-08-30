@@ -284,12 +284,15 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
         return
 
     # Scrape
-    logger.info(f"Starting scrape for {source}...")
     scrape_kwargs = {}
     if args.base_url:
         scrape_kwargs["base_url"] = args.base_url
-    if args.country:
-        scrape_kwargs["country"] = args.country
+    if args.countries_file:
+        with open(args.countries_file, "r", encoding="utf-8") as f:
+            scrape_kwargs["countries"] = [line.strip() for line in f if line.strip()]
+    elif args.country:
+        # fallback single country (legacy)
+        scrape_kwargs["countries"] = [args.country]
 
     scraper.scrape(**scrape_kwargs)
 
@@ -367,13 +370,21 @@ if __name__ == "__main__":
         help="Disable per-module logs; use unified run log only",
     )
     parser.add_argument(
-        "--base-url", default=None, help="Optional base URL override for the scraper"
+        "--base-url",
+        default=None,
+        help="Optional base URL override for the scraper",
     )
     parser.add_argument(
         "--country",
         default=None,
         help="Optional optional country parameter for the scraper",
     )
+    parser.add_argument(
+        "--countries-file",
+        default=None,
+        help="Optional file with list of countries to scrape (UPR only)",
+    )
+
     args = parser.parse_args()
 
     run_pipeline(

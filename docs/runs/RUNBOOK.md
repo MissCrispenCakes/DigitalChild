@@ -61,6 +61,9 @@ python pipeline_runner.py --source unicef --base-url https://www.unicef.org/digi
 
 python pipeline_runner.py --source upr --country kenya
 python pipeline_runner.py --source upr --base-url https://www.ohchr.org/en/hr-bodies/upr --country kenya
+
+python pipeline_runner.py --source upr --countries-file configs/countries/upr_countries.txt
+
 ```
 
 ---
