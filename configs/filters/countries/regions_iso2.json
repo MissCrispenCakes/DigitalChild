@@ -139,6 +139,177 @@
     "region_code": "ACHPR",
     "region_name": "African Commission on Human and Peoples' Rights",
     "ref": "AFU"
+  },
+  "COMESA": {
+    "region_code": "COMESA",
+    "region_name": "Common Market for Eastern and Southern Africa",
+    "countries": ["BI","KM","CD","DJ","EG","ER","ET","KE","LY","MG","MW","MU","RW","SC","SD","SS","SZ","TZ","UG","ZM","ZW"]
+  },
+  "IGAD": {
+    "region_code": "IGAD",
+    "region_name": "Intergovernmental Authority on Development",
+    "countries": ["DJ","ER","ET","KE","SO","SS","SD","UG"]
+  },
+  "CEMAC": {
+    "region_code": "CEMAC",
+    "region_name": "Central African Economic and Monetary Community",
+    "countries": ["CM","CF","TD","CG","GQ","GA"]
+  },
+  "UMA": {
+    "region_code": "UMA",
+    "region_name": "Arab Maghreb Union",
+    "countries": ["DZ","LY","MR","MA","TN"]
+  },
+  "OAS": {
+    "region_code": "OAS",
+    "region_name": "Organization of American States",
+    "countries": ["AG","AR","BS","BB","BZ","BO","BR","CA","CL","CO","CR","CU","DM","DO","EC","SV","GD","GT","GY","HT","HN","JM","MX","NI","PA","PY","PE","KN","LC","VC","SR","TT","US","UY","VE"]
+  },
+  "CARICOM": {
+    "region_code": "CARICOM",
+    "region_name": "Caribbean Community",
+    "countries": ["AG","BS","BB","BZ","DM","GD","GY","HT","JM","KN","LC","VC","SR","TT"]
+  },
+  "CELAC": {
+    "region_code": "CELAC",
+    "region_name": "Community of Latin American and Caribbean States",
+    "countries": ["AG","AR","BS","BB","BZ","BO","BR","CL","CO","CR","CU","DM","DO","EC","SV","GD","GT","GY","HT","HN","JM","MX","NI","PA","PY","PE","KN","LC","VC","SR","TT","UY","VE"]
+  },
+  "COE": {
+    "region_code": "COE",
+    "region_name": "Council of Europe",
+    "countries": ["AL","AD","AM","AT","AZ","BE","BA","BG","HR","CY","CZ","DK","EE","FI","FR","GE","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","MC","ME","NL","MK","NO","PL","PT","RO","RU","SM","RS","SK","SI","ES","SE","CH","TR","UA","GB"]
+  },
+  "OSCE": {
+    "region_code": "OSCE",
+    "region_name": "Organization for Security and Cooperation in Europe",
+    "countries": ["AL","AD","AM","AT","AZ","BE","BA","BG","BY","CA","HR","CY","CZ","DK","EE","FI","FR","GE","DE","GR","HU","IS","IE","IT","KZ","KG","LV","LI","LT","LU","MT","MC","ME","NL","MK","NO","PL","PT","RO","RU","SM","RS","SK","SI","ES","SE","CH","TJ","TR","TM","UA","GB","US","UZ"]
+  },
+  "SAARC": {
+    "region_code": "SAARC",
+    "region_name": "South Asian Association for Regional Cooperation",
+    "countries": ["AF","BD","BT","IN","MV","NP","PK","LK"]
+  },
+  "GCC": {
+    "region_code": "GCC",
+    "region_name": "Gulf Cooperation Council",
+    "countries": ["BH","KW","OM","QA","SA","AE"]
+  },
+  "SCO": {
+    "region_code": "SCO",
+    "region_name": "Shanghai Cooperation Organisation",
+    "countries": ["CN","IN","KZ","KG","PK","RU","TJ","UZ"]
+  },
+  "PIF": {
+    "region_code": "PIF",
+    "region_name": "Pacific Islands Forum",
+    "countries": ["AU","FJ","KI","MH","FM","NR","NZ","PW","PG","WS","SB","TO","TV","VU"]
+  },
+  "APEC": {
+    "region_code": "APEC",
+    "region_name": "Asia-Pacific Economic Cooperation",
+    "countries": ["AU","BN","CA","CL","CN","HK","ID","JP","KR","MY","MX","NZ","PG","PE","PH","RU","SG","TW","TH","US","VN"]
+  },
+  "OIC": {
+    "region_code": "OIC",
+    "region_name": "Organisation of Islamic Cooperation",
+    "countries": ["AF","AL","AZ","BH","BD","BJ","BN","BF","CM","TD","KM","CI","DJ","EG","GQ","GM","GN","GW","GY","ID","IR","IQ","JO","KZ","KW","KG","LB","LY","MY","MV","ML","MR","MA","MZ","NE","NG","OM","PK","PS","QA","SA","SN","SL","SO","SD","SR","SY","TJ","TG","TN","TR","TM","UG","AE","UZ","YE"]
+  },
+  "COMMONWEALTH": {
+    "region_code": "COMMONWEALTH",
+    "region_name": "Commonwealth of Nations",
+    "countries": ["AG","AU","BS","BD","BB","BZ","BW","CM","CA","CY","DM","FJ","GM","GH","GD","GY","IN","JM","KE","KI","LS","MW","MY","MV","MT","MU","NA","NR","NZ","NG","PK","PG","RW","KN","LC","VC","WS","SC","SL","SG","SB","ZA","TZ","TO","TT","TV","UG","GB","VU","ZM"]
+  },
+  "G20": {
+    "region_code": "G20",
+    "region_name": "Group of 20",
+    "countries": ["AR","AU","BR","CA","CN","FR","DE","IN","ID","IT","JP","KR","MX","RU","SA","ZA","TR","GB","US","EU"]
+  },
+  "G7": {
+    "region_code": "G7",
+    "region_name": "Group of Seven",
+    "countries": ["CA","FR","DE","IT","JP","GB","US","EU"]
+  },
+  "BRICS": {
+    "region_code": "BRICS",
+    "region_name": "BRICS (expanded 2023)",
+    "countries": ["BR","RU","IN","CN","ZA","EG","ET","IR","SA","AE"]
+  },
+  "OCEANIA": {
+    "region_code": "OCEANIA",
+    "region_name": "Oceania (continent)",
+    "countries": ["AU","NZ","FJ","PG","SB","VU","WS","TO","TV","KI","NR","FM","MH","PW"]
+  },
+  "OECD": {
+    "region_code": "OECD",
+    "region_name": "Organisation for Economic Co-operation and Development",
+    "countries": [
+      "AU","AT","BE","CA","CL","CO","CR","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IL","IT",
+      "JP","KR","LV","LT","LU","MX","NL","NZ","NO","PL","PT","SK","SI","ES","SE","CH","TR","GB","US"
+      ]
+  },
+  "G77": {
+    "region_code": "G77",
+    "region_name": "Group of 77 (plus China)",
+    "countries": [
+      "AF","DZ","AO","AG","AR","AM","AZ","BS","BH","BD","BB","BY","BZ","BJ","BT","BO","BA","BW","BR",
+      "BN","BG","BF","BI","KH","CM","CV","CF","TD","CL","CN","CO","KM","CG","CD","CR","CU","CY","DJ",
+      "DM","DO","EC","EG","SV","GQ","ER","ET","FJ","GA","GM","GE","GH","GD","GT","GN","GW","GY","HT",
+      "HN","IN","ID","IR","IQ","JM","JO","KE","KI","KW","KG","LA","LB","LS","LR","LY","MG","MW","MY",
+      "MV","ML","MT","MH","MR","MU","FM","MN","MA","MZ","MM","NA","NP","NI","NE","NG","OM","PK","PW",
+      "PA","PG","PY","PE","PH","QA","RW","KN","LC","VC","WS","SM","ST","SA","SN","SC","SL","SG","SB",
+      "SO","ZA","SS","LK","SD","SR","SY","TJ","TH","TG","TO","TT","TN","TR","TM","TV","UG","UA","AE",
+      "TZ","UY","UZ","VU","VE","VN","YE","ZM","ZW"
+    ]
+  },
+  "CRC": {
+    "region_code": "CRC",
+    "region_name": "Committee on the Rights of the Child",
+    "ref": "GLOBAL"
+  },
+  "CCPR": {
+    "region_code": "CCPR",
+    "region_name": "Human Rights Committee (ICCPR)",
+    "ref": "GLOBAL"
+  },
+  "CESCR": {
+    "region_code": "CESCR",
+    "region_name": "Committee on Economic, Social and Cultural Rights",
+    "ref": "GLOBAL"
+  },
+  "CEDAW": {
+    "region_code": "CEDAW",
+    "region_name": "Committee on the Elimination of Discrimination against Women",
+    "ref": "GLOBAL"
+  },
+  "CAT": {
+    "region_code": "CAT",
+    "region_name": "Committee against Torture",
+    "ref": "GLOBAL"
+  },
+  "CERD": {
+    "region_code": "CERD",
+    "region_name": "Committee on the Elimination of Racial Discrimination",
+    "ref": "GLOBAL"
+  },
+  "CRPD": {
+    "region_code": "CRPD",
+    "region_name": "Committee on the Rights of Persons with Disabilities",
+    "ref": "GLOBAL"
+  },
+  "CED": {
+    "region_code": "CED",
+    "region_name": "Committee on Enforced Disappearances",
+    "ref": "GLOBAL"
+  },
+  "CMW": {
+    "region_code": "CMW",
+    "region_name": "Committee on Migrant Workers",
+    "ref": "GLOBAL"
+  },
+  "SPT": {
+    "region_code": "SPT",
+    "region_name": "Subcommittee on Prevention of Torture (OPCAT)",
+    "ref": "GLOBAL"
   }
 }
-

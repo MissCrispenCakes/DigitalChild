@@ -45,4 +45,3 @@ Now, whenever you commit, pre-commit will:
 - Check YAML syntax
 - Fix trailing whitespace
 - Validate Markdown links (with markdown-link-checker)
-

@@ -1,0 +1,33 @@
+{
+  "scope": "Queer AI for the Digital Child",
+  "regions": [
+    "AFU",
+    "SADC", "ECOWAS",
+    "GLOBAL"
+  ],
+  "mechanisms": [
+    "UPR",
+    "UNICEF",
+    "CRC",
+    "OHCHR",
+    "ACHPR",
+    "ACERWC"
+  ],
+  "themes": [
+    "LGBTQ+",
+    "Children",
+    "AI",
+    "Digital",
+    "Data Privacy",
+    "Consumer Protection"
+  ],
+  "exclude": [
+    "Trade-only docs",
+    "Generic economic agreements",
+    "Non-digital child protection unrelated to AI/tech"
+  ],
+  "output": {
+    "processed_dir": "data/processed/queer_ai_child",
+    "metadata_tags": ["conference:QueerAI2025", "track:AI_digital_harms", "focus:LGBTQ+_children"]
+  }
+}

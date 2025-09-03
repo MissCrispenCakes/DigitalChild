@@ -12,6 +12,7 @@ import re
 from datetime import datetime
 
 from processors import (
+    json_normalizer,
     pdf_to_text,
     recommendations,
     tagger,
@@ -39,70 +40,23 @@ from scrapers import (
     upr_sel,
     utils,
 )
+from utils.detectors import detect_country_region
 
 SCRAPER_MAP = {
-    "au_policy": (
-        au_policy,
-        "Africa/African_Union/text",
-        "African_Union",
-        "Africa",
-        "Policy",
-    ),
-    "ohchr": (
-        ohchr,
-        "Africa/OHCHR/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
-    "upr": (upr, "Africa/UPR/text", "African_Union", "Africa", "UPR"),
-    "unicef": (unicef, "Global/UNICEF/text", "Global", "Global", "Report"),
-    "acerwc": (
-        acerwc,
-        "Africa/ACERWC/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
-    "achpr": (
-        achpr,
-        "Africa/ACHPR/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
-    "au_policy_sel": (
-        au_policy,
-        "Africa/African_Union/text",
-        "African_Union",
-        "Africa",
-        "Policy",
-    ),
-    "ohchr_sel": (
-        ohchr,
-        "Africa/OHCHR/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
-    "upr_sel": (upr, "Africa/UPR/text", "African_Union", "Africa", "UPR"),
-    "unicef_sel": (unicef, "Global/UNICEF/text", "Global", "Global", "Report"),
-    "acerwc_sel": (
-        acerwc,
-        "Africa/ACERWC/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
-    "achpr_sel": (
-        achpr,
-        "Africa/ACHPR/text",
-        "African_Union",
-        "Africa",
-        "TreatyBodyReport",
-    ),
+    "au_policy": (au_policy, "Africa/African_Union/text", "Policy"),
+    "ohchr": (ohchr, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr": (upr, "Global/UPR/text", "UPR"),
+    "unicef": (unicef, "Global/UNICEF/text", "Report"),
+    "acerwc": (acerwc, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr": (achpr, "Africa/ACHPR/text", "TreatyBodyReport"),
+    # Selenium variants point to selenium scrapers directly
+    "au_policy_sel": (au_policy_sel, "Africa/African_Union/text", "Policy"),
+    "ohchr_sel": (ohchr_sel, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr_sel": (upr_sel, "Global/UPR/text", "UPR"),
+    "unicef_sel": (unicef_sel, "Global/UNICEF/text", "Report"),
+    "acerwc_sel": (acerwc_sel, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr_sel": (achpr_sel, "Africa/ACHPR/text", "TreatyBodyReport"),
 }
-
 
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
@@ -135,13 +89,8 @@ def update_metadata(
     recs_version="recs_v1",
     country=None,
     region=None,
-):  # legacy args supported
-    """
-    Update metadata.json with normalized fields.
-    Accepts both new (country_raw, region_raw) and legacy (country, region).
-    """
-
-    # Handle legacy args for backward compatibility
+):
+    """Update metadata.json with normalized fields."""
     if country and not country_raw:
         country_raw = country
     if region and not region_raw:
@@ -150,21 +99,13 @@ def update_metadata(
     metadata = load_metadata()
     now = datetime.utcnow().isoformat() + "Z"
 
-    # Normalize country + region
-    c_raw, country_norm, country_iso = country_utils.normalize_country(country_raw)
-    r_raw, region_norm = region_utils.normalize_region(region_raw)
-
     existing = next((d for d in metadata["documents"] if d["id"] == doc_id), None)
-
     if not existing:
         existing = {
             "id": doc_id,
             "source": source,
-            "country": country_norm,
-            "country_raw": c_raw,
-            "country_iso": country_iso,
-            "region": region_norm,
-            "region_raw": r_raw,
+            "country_raw": country_raw,
+            "region_raw": region_raw,
             "year": year,
             "year_extracted_from": year_extracted_from,
             "doc_type": doc_type,
@@ -175,21 +116,18 @@ def update_metadata(
         }
         metadata["documents"].append(existing)
 
+    # Always update values
     existing["last_processed"] = now
     existing["year"] = year
     existing["year_extracted_from"] = year_extracted_from
     existing["doc_type"] = doc_type
-    existing["country"] = country_norm
-    existing["country_raw"] = c_raw
-    existing["country_iso"] = country_iso
-    existing["region"] = region_norm
-    existing["region_raw"] = r_raw
+    existing["country_raw"] = country_raw
+    existing["region_raw"] = region_raw
 
     if tags is not None:
         existing["tags_history"].append(
             {"tags": tags, "version": tag_version, "timestamp": now}
         )
-
     if recommendations_list is not None:
         existing["recommendations_history"].append(
             {
@@ -199,22 +137,19 @@ def update_metadata(
             }
         )
 
+    # Normalize consistently
+    existing = json_normalizer.normalize_document(existing)
+
     save_metadata(metadata)
 
 
 def extract_year(filename, txt_path=None, logger=None):
-    """
-    Extract year from filename and/or text file.
-    Always returns (year or None, source).
-    """
-
     YEAR_PATTERN = r"(19|20)\d{2}"
 
     # 1. From filename
     matches = re.finditer(YEAR_PATTERN, filename)
     for m in matches:
         year_str = m.group(0)
-        # Reject if part of a longer number (look before and after)
         start, end = m.span()
         if (start > 0 and filename[start - 1].isdigit()) or (
             end < len(filename) and filename[end].isdigit()
@@ -256,7 +191,6 @@ def resolve_tags_config(version):
 
 
 def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False):
-    # Setup logging
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
 
@@ -264,74 +198,12 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
         logger.error(f"Unknown source: {source}")
         return
 
-    scraper, proc_subdir, country, region, doc_type = SCRAPER_MAP[source]
-    raw_dir = f"data/raw/{source}"
-    proc_dir = f"data/processed/{proc_subdir}"
+    scraper, proc_subdir, doc_type = SCRAPER_MAP[source]
 
-    # Choose scraper
-    if source in ("au_policy", "au_policy_sel"):
-        if source == "au_policy_sel":
-            from scrapers import au_policy_sel as scraper
-        else:
-            from scrapers import au_policy as scraper
-        raw_dir = "data/raw/au_policy"
-        proc_dir = "data/processed/Africa/African_Union/text"
-        country = "African_Union"
-        region = "Africa"
-        doc_type = "Policy"
-    elif source in ("ohchr", "ohchr_sel"):
-        if source == "ohchr_sel":
-            from scrapers import ohchr_sel as scraper
-        else:
-            from scrapers import ohchr as scraper
-        raw_dir = "data/raw/ohchr"
-        proc_dir = "data/processed/Africa/OHCHR/text"
-        country = "African_Union"
-        region = "Africa"
-        doc_type = "TreatyBodyReport"
-    elif source in ("upr", "upr_sel"):
-        if source == "upr_sel":
-            from scrapers import upr_sel as scraper
-        else:
-            from scrapers import upr as scraper
-        raw_dir = "data/raw/upr"
-        proc_dir = "data/processed/Africa/UPR/text"
-        country = "African_Union"
-        region = "Africa"
-        doc_type = "UPR"
-    elif source in ("unicef", "unicef_sel"):
-        if source == "unicef_sel":
-            from scrapers import unicef_sel as scraper
-        else:
-            from scrapers import unicef as scraper
-        raw_dir = "data/raw/unicef"
-        proc_dir = "data/processed/Global/UNICEF/text"
-        country = "Global"
-        region = "Global"
-        doc_type = "Report"
-    elif source in ("acerwc", "acerwc_sel"):
-        if source == "acerwc_sel":
-            from scrapers import acerwc_sel as scraper
-        else:
-            from scrapers import acerwc as scraper
-        raw_dir = "data/raw/acerwc"
-        proc_dir = "data/processed/Africa/ACERWC/text"
-        country = "African_Union"
-        region = "Africa"
-        doc_type = "TreatyBodyReport"
-    elif source in ("achpr", "achpr_sel"):
-        if source == "achpr_sel":
-            from scrapers import achpr_sel as scraper
-        else:
-            from scrapers import achpr as scraper
-        raw_dir = "data/raw/achpr"
-        proc_dir = "data/processed/Africa/ACHPR/text"
-        country = "African_Union"
-        region = "Africa"
-        doc_type = "TreatyBodyReport"
-    else:
-        logger.error(f"Unknown source: {source}")
-        return
+    # Normalize raw_dir for _sel sources
+    base_source = source.replace("_sel", "")
+    raw_dir = f"data/raw/{base_source}"
+    proc_dir = f"data/processed/{proc_subdir}"
 
     # Scrape
     scrape_kwargs = {}
@@ -341,7 +213,6 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
         with open(args.countries_file, "r", encoding="utf-8") as f:
             scrape_kwargs["countries"] = [line.strip() for line in f if line.strip()]
     elif args.country:
-        # fallback single country (legacy)
         scrape_kwargs["countries"] = [args.country]
 
     scraper.scrape(**scrape_kwargs)
@@ -350,7 +221,6 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
     tags_config = resolve_tags_config(tags_version)
     logger.info(f"Using tags config: {tags_config}")
 
-    # Process each file
     docs = []
     for filename in os.listdir(raw_dir):
         if filename.endswith(".pdf"):
@@ -359,29 +229,28 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
             if txt_path:
                 with open(txt_path, "r", encoding="utf-8") as f:
                     text = f.read()
+
+                # Apply tags & recs
                 tags = tagger.apply_tags(text, tags_config)
                 recs = recommendations.apply_recommendations(
                     text, "configs/recs_v1.json"
                 )
                 docs.append({"id": filename, "tags": tags, "recs": recs})
 
-                # Extract year
+                # Year
                 year, year_src = extract_year(filename, txt_path, logger)
-                if not year:
-                    logger.warning(
-                        f"No valid year found in {filename} (source={year_src})"
-                    )
-                else:
-                    logger.info(
-                        f"Detected year {year} for {filename} (source={year_src})"
-                    )
 
-                # Update metadata.json
+                # Detect country/region
+                country_name, country_iso, regions_list = detect_country_region(
+                    filename=filename,
+                    text=text[:2000],
+                )
+
                 update_metadata(
                     doc_id=filename,
                     source=source,
-                    country_raw=country,
-                    region_raw=region,
+                    country_raw=country_name,
+                    region_raw=None,
                     year=year,
                     year_extracted_from=year_src,
                     tags=tags,
@@ -391,10 +260,7 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
                     recs_version="recs_v1",
                 )
 
-    # Export tags summary
     tags_summary.export(docs)
-
-    # Export timelines
     tags_timeline.export()
     tags_timeline_region.export()
     tags_timeline_country.export()
@@ -404,39 +270,18 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run pipeline")
+    parser.add_argument("--source", default="au_policy", help="Source scraper to run")
+    parser.add_argument("--tags-version", default="latest", help="Tags config version")
     parser.add_argument(
-        "--source",
-        default="au_policy",
-        help="Which source scraper to run (e.g., au_policy)",
+        "--no-module-logs", action="store_true", help="Disable module logs"
     )
+    parser.add_argument("--base-url", default=None, help="Optional base URL override")
+    parser.add_argument("--country", default=None, help="Single country (legacy)")
     parser.add_argument(
-        "--tags-version",
-        default="latest",
-        help="Which tags version to use (e.g., v1, v2, v3, digital, latest)",
-    )
-    parser.add_argument(
-        "--no-module-logs",
-        action="store_true",
-        help="Disable per-module logs; use unified run log only",
-    )
-    parser.add_argument(
-        "--base-url",
-        default=None,
-        help="Optional base URL override for the scraper",
-    )
-    parser.add_argument(
-        "--country",
-        default=None,
-        help="Optional optional country parameter for the scraper",
-    )
-    parser.add_argument(
-        "--countries-file",
-        default=None,
-        help="Optional file with list of countries to scrape (UPR only)",
+        "--countries-file", default=None, help="File with countries list (UPR only)"
     )
 
     args = parser.parse_args()
-
     run_pipeline(
         source=args.source,
         tags_version=args.tags_version,

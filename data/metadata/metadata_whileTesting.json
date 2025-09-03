@@ -1,0 +1,7361 @@
+{
+  "project_identity": {
+    "name": "GRIMdata / ALLRainbowRights / LittleRainbowRights",
+    "domains": [
+      "https://GRIMdata.org",
+      "https://ALLRainbowRights.com",
+      "https://LittleRainbowRights.com"
+    ],
+    "note": "Pipeline for analyzing child & LGBTQ+ digital protections in Africa and globally."
+  },
+  "documents": [
+    {
+      "id": "AU_AI_Strategy_2024.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2024,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T16:22:40.088276Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:13:03.526394Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:22:10.672080Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:24:16.383350Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:36.695074Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:01:52.145617Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:45.319421Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:01.429292Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:32.866125Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:47.969403Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:29.580038Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:47.816845Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:41.373088Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:59.613176Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:21.668002Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:39.708235Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:00.797186Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:18.121548Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:29.959637Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:46.085836Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:53:55.508073Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:11.181639Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:32.419863Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:48.713711Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:54:57.984882Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:13.291323Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:12.070279Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:28.017066Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:00.896083Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:16.809234Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:30.291752Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:45.563808Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:43.732033Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:00.328315Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:48.817407Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:37.819764Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:54.906244Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:06.804111Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:04.830218Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:45.319421Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:01.429292Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:32.866125Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:47.969403Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:29.580038Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:47.816845Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:41.373088Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:59.613176Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:21.668002Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:39.708235Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:00.797186Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:18.121548Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:29.959637Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:46.085836Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:53:55.508073Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:11.181639Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:32.419863Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:48.713711Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:54:57.984882Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:13.291323Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:12.070279Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:28.017066Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:00.896083Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:16.809234Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:30.291752Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:45.563808Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:43.732033Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:00.328315Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:48.817407Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:37.819764Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:54.906244Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:06.804111Z"
+        },
+        {
+          "recommendations": [
+            "should adopt"
+          ],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:04.830218Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:04.830218Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Child_Online_Safety_2024.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2024,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T16:22:40.806713Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:13:04.495896Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:22:11.433072Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:24:17.137398Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:37.437689Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:01:52.888114Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:46.236308Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:02.182297Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:33.576826Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:48.688882Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:30.302571Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:48.632807Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:42.129133Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:00.303233Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:22.422915Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:40.454504Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:01.501741Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:18.821494Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:30.690738Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:46.824153Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:53:56.246453Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:11.884358Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:33.134862Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:49.507600Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:54:58.704181Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:14.076504Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:12.811451Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:28.886916Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:01.614582Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:17.497011Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:31.043767Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:46.290607Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:44.440195Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:01.074205Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:49.538481Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:38.647598Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:55.649831Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:07.767335Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineHarms",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:05.590284Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:46.236308Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:02.182297Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:33.576826Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:48.688882Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:30.302571Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:48.632807Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:42.129133Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:00.303233Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:22.422915Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:40.454504Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:01.501741Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:18.821494Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:30.690738Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:46.824153Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:53:56.246453Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:11.884358Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:33.134862Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:49.507600Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:54:58.704181Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:14.076504Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:12.811451Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:28.886916Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:01.614582Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:17.497011Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:31.043767Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:46.290607Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:44.440195Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:01.074205Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:49.538481Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:38.647598Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:55.649831Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:07.767335Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:05.590284Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:05.590284Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Digital_Compact.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T16:22:41.162216Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:13:06.548991Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:22:13.352335Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:24:19.161130Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:44.239758Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:04.844671Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:04.844671Z"
+    },
+    {
+      "id": "AU_Cybersecurity_Data_Protection_Strategy.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:40.525467Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:01:56.059474Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:01:56.059474Z"
+    },
+    {
+      "id": "AU_Data_Policy.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:42.233562Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:01.068727Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:01.068727Z"
+    },
+    {
+      "id": "AU_Digital_Economy.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:44.527916Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:04.817368Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:04.817368Z"
+    },
+    {
+      "id": "AU_Digital_ID.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:46.186796Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:06.959448Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:06.959448Z"
+    },
+    {
+      "id": "AU_Digtial_Transformation_Strategy.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:47.019860Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:09.475206Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:09.475206Z"
+    },
+    {
+      "id": "AU_Free_Trade.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": null,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T20:46:49.100659Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:12.460602Z"
+        }
+      ],
+      "recommendations_history": [],
+      "last_processed": "2025-08-28T21:02:12.460602Z"
+    },
+    {
+      "id": "AU_AI_Africa_2021.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2021,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:01:50.537308Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:43.783873Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:59.979875Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:31.272363Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:46.379026Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:27.972943Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:46.143916Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:39.640106Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:58.090913Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:20.117512Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:38.064701Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:50:59.195823Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:16.595486Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:28.372085Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:44.556282Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:53:53.920298Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:09.529744Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:30.863955Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:47.150638Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:54:56.413198Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:11.676878Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:10.531735Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:26.484631Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:35:59.400136Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:15.321088Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:28.727549Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:44.016693Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:42.176872Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:58.809862Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:47.279574Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:36.250796Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:53.320370Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:06.737713Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:03.201495Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:43.783873Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:59.979875Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:31.272363Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:46.379026Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:27.972943Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:46.143916Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:39.640106Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:58.090913Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:20.117512Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:38.064701Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:50:59.195823Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:16.595486Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:28.372085Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:44.556282Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:53:53.920298Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:09.529744Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:30.863955Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:47.150638Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:54:56.413198Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:11.676878Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:10.531735Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:26.484631Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:35:59.400136Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:15.321088Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:28.727549Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:44.016693Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:42.176872Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:58.809862Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:47.279574Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:36.250796Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:53.320370Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:06.737713Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:03.201495Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:03.201495Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Cybersecurity_Data_Protection_Strategy_2014.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2014,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:01:59.305197Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:49.167076Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:05.115665Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:36.569976Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:51.863115Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:33.460874Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:51.848841Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:45.209215Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:02.254094Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:25.699111Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:43.673388Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:04.473971Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:22.043086Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:33.817237Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:49.987723Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:53:58.260783Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:15.012863Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:36.191335Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:52.725144Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:01.667263Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:17.308271Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:15.795116Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:31.903710Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:04.816105Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:18.974896Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:34.051013Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:49.337840Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:47.482590Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:04.149768Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:52.578299Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:41.822336Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:58.843612Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:10.963912Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:08.644062Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:49.167076Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:05.115665Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:36.569976Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:51.863115Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:33.460874Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:51.848841Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:45.209215Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:02.254094Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:25.699111Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:43.673388Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:04.473971Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:22.043086Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:33.817237Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:49.987723Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:53:58.260783Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:15.012863Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:36.191335Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:52.725144Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:01.667263Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:17.308271Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:15.795116Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:31.903710Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:04.816105Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:18.974896Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:34.051013Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:49.337840Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:47.482590Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:04.149768Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:52.578299Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:41.822336Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:58.843612Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:10.963912Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:08.644062Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:08.644062Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Data_Policy_2022.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2022,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:02.848662Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:50.751590Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:06.683583Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:38.240905Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:53.561648Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:35.084351Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:53.541662Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:46.887050Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:03.939740Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:27.402839Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:45.379493Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:06.101380Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:22.577101Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:35.444499Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:51.618617Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:53:59.884967Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:16.669011Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:37.782096Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:54.381437Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:03.361123Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:19.024437Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:17.393145Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:32.143109Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:06.421597Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:20.618246Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:35.705018Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:50.959126Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:49.144743Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:05.783085Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:54.210004Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:43.494202Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:58.588173Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:12.732549Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:10.338138Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:50.751590Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:06.683583Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:38.240905Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:53.561648Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:35.084351Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:53.541662Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:46.887050Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:03.939740Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:27.402839Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:45.379493Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:06.101380Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:22.577101Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:35.444499Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:51.618617Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:53:59.884967Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:16.669011Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:37.782096Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:54.381437Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:03.361123Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:19.024437Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:17.393145Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:32.143109Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:06.421597Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:20.618246Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:35.705018Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:50.959126Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:49.144743Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:05.783085Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:54.210004Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:43.494202Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:58.588173Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:12.732549Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:10.338138Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:10.338138Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Digital_Compact_2024.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2024,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:04.504006Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:52.605807Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:08.566776Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:40.171433Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:55.459513Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:37.058493Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:55.442300Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:48.773040Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:05.850939Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:29.357454Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:47.390790Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:08.022861Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:24.444999Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:37.442541Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:53.535674Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:01.915493Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:18.520567Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:39.703008Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:56.358688Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:04.113276Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:20.989116Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:19.304369Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:34.051141Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:08.321173Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:22.589257Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:37.744006Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:52.882765Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:51.134835Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:07.732714Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:56.086233Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:45.457501Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:40:00.583596Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:14.708847Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:12.259811Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:52.605807Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:08.566776Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:40.171433Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:55.459513Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:37.058493Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:55.442300Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:48.773040Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:05.850939Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:29.357454Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:47.390790Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:08.022861Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:24.444999Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:37.442541Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:53.535674Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:01.915493Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:18.520567Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:39.703008Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:56.358688Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:04.113276Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:20.989116Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:19.304369Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:34.051141Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:08.321173Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:22.589257Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:37.744006Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:52.882765Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:51.134835Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:07.732714Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:56.086233Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:45.457501Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:40:00.583596Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:14.708847Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:12.259811Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:12.259811Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Digital_Economy_2021.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2021,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:05.143370Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:52.945744Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:07.953897Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:40.460079Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:55.770329Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:37.374756Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:55.742484Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:49.113398Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:06.145485Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:29.690899Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:47.711211Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:08.355952Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:24.786357Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:37.760780Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:53.836616Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:02.246606Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:18.837746Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:40.031890Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:56.651538Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:04.426175Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:21.304348Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:19.614221Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:34.374905Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:08.626980Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:22.906665Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:38.068709Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:53.191512Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:51.437817Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:08.036680Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:56.411304Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:45.765703Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:40:00.883730Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:15.075530Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:12.579562Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:52.945744Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:07.953897Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:40.460079Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:55.770329Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:37.374756Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:55.742484Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:49.113398Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:06.145485Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:29.690899Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:47.711211Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:08.355952Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:24.786357Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:37.760780Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:53.836616Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:02.246606Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:18.837746Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:40.031890Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:56.651538Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:04.426175Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:21.304348Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:19.614221Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:34.374905Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:08.626980Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:22.906665Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:38.068709Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:53.191512Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:51.437817Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:08.036680Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:56.411304Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:45.765703Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:40:00.883730Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:15.075530Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:12.579562Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:12.579562Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Digital_ID_2022.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2022,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:08.673637Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:54.526862Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:09.550152Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:42.060066Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:57.404456Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:39.052827Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:57.443058Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:50.804147Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:07.697405Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:31.380720Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:49.405799Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:09.988246Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:26.382255Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:39.420019Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:55.493566Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:03.950120Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:20.436335Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:41.681773Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:58.257454Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:06.019717Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:23.019730Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:21.273503Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:35.976527Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:10.208636Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:24.540859Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:39.962312Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:54.863632Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:53.094226Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:09.699151Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:58.098234Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:47.487867Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:40:02.685977Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:16.783216Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:14.294973Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:54.526862Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:09.550152Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:42.060066Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:57.404456Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:39.052827Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:57.443058Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:50.804147Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:07.697405Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:31.380720Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:49.405799Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:09.988246Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:26.382255Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:39.420019Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:55.493566Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:03.950120Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:20.436335Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:41.681773Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:58.257454Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:06.019717Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:23.019730Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:21.273503Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:35.976527Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:10.208636Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:24.540859Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:39.962312Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:54.863632Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:53.094226Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:09.699151Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:58.098234Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:47.487867Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:40:02.685977Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:16.783216Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:14.294973Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:14.294973Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Digtial_Transformation_Strategy_2020.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2020,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:10.326125Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:55.347454Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:10.388356Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:41.897114Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:58.214864Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:39.867129Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:58.237395Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:51.645569Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:08.451702Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:32.209375Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:50.230848Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:10.800534Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:27.171738Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:40.221324Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:55.228683Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:04.790319Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:21.223258Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:42.477564Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:59.048539Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:06.838936Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:23.827731Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:22.063881Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:36.770579Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:11.003032Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:25.319772Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:38.978906Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:55.671492Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:53.877370Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:10.511074Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:22:58.883907Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:48.278526Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "AI",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:40:03.541626Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:17.717430Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "AI",
+            "Privacy",
+            "LawPolicy",
+            "StateActors",
+            "DigitalPolicy",
+            "OnlineRights"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:15.151922Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:55.347454Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:10.388356Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:41.897114Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:58.214864Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:39.867129Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:58.237395Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:51.645569Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:08.451702Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:32.209375Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:50.230848Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:10.800534Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:27.171738Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:40.221324Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:55.228683Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:04.790319Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:21.223258Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:42.477564Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:59.048539Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:06.838936Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:23.827731Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:22.063881Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:36.770579Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:11.003032Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:25.319772Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:38.978906Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:55.671492Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:53.877370Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:10.511074Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:22:58.883907Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:48.278526Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:40:03.541626Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:17.717430Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:15.151922Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:15.151922Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "AU_Free_Trade_2012.pdf",
+      "source": "au_policy",
+      "country": "African_Union",
+      "region": "Africa",
+      "year": 2012,
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "tags_v1",
+          "timestamp": "2025-08-28T21:02:14.582294Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:54:57.418121Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T21:55:12.478837Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:08:43.946978Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:09:00.348022Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:41.999633Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:27:59.326495Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:28:53.719031Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:29:10.463071Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:34.472033Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:44:52.293848Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:12.781307Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:51:29.140959Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:42.348410Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:52:57.299959Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:06.924377Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T22:54:23.258991Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:53:44.507693Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:54:01.015931Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:09.024712Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-29T23:55:25.896055Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:24.090877Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T00:10:38.735054Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:13.002631Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T01:36:27.360863Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:41.108104Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:43:57.677872Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:44:55.941245Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T02:45:10.803903Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T03:23:00.967581Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:39:50.420093Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy"
+          ],
+          "version": "v1",
+          "timestamp": "2025-08-30T03:40:05.621978Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:24:19.897560Z"
+        },
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:17.260547Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:54:57.418121Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T21:55:12.478837Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:08:43.946978Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:09:00.348022Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:41.999633Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:27:59.326495Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:28:53.719031Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:29:10.463071Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:34.472033Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:44:52.293848Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:12.781307Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:51:29.140959Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:42.348410Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:52:57.299959Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:06.924377Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T22:54:23.258991Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:53:44.507693Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:54:01.015931Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:09.024712Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-29T23:55:25.896055Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:24.090877Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T00:10:38.735054Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:13.002631Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T01:36:27.360863Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:41.108104Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:43:57.677872Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:44:55.941245Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T02:45:10.803903Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:23:00.967581Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:39:50.420093Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T03:40:05.621978Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:24:19.897560Z"
+        },
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:17.260547Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:17.260547Z",
+      "year_extracted_from": "filename",
+      "doc_type": "Policy",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region_raw": "Africa"
+    },
+    {
+      "id": "29560-sl-AFRICAN_UNION_CONVENTION_ON_CYBER_SECURITY_AND_PERSONAL_DATA_PROTECTION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:57.546830Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:57.546830Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:57.546830Z"
+    },
+    {
+      "id": "32542-sl-statute_of_the_africa_sports_council_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:57.652524Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:57.652524Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:57.652524Z"
+    },
+    {
+      "id": "32544-sl-STATUTE_OF_THE_AFRICAN_MINERALS_DEVELOPMENT_CENTRE.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:57.736792Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:57.736792Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:57.736792Z"
+    },
+    {
+      "id": "32545-sl-statute_of_the_african_observatory_in_science_technology_and_innovation_.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:57.854097Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:57.854097Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:57.854097Z"
+    },
+    {
+      "id": "32546-sl-statute_of_the_african_science_research_and_innovation_council_asric_.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:57.945562Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:57.945562Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:57.945562Z"
+    },
+    {
+      "id": "32549-sl-STATUTE_OF_THE_PAN_AFRICAN_INTELLECTUAL_PROPERTY_ORGANIZATION_PAIPO_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.033268Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.033268Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.033268Z"
+    },
+    {
+      "id": "33127-sl-amended_statute_of_the_pan_african_university_pau_-.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.142936Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.142936Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.142936Z"
+    },
+    {
+      "id": "35423-sl-PROTOCOL%20ON%20THE%20AMENDMENTS%20TO%20THE%20CONSTITUTIVE%20ACT%20OF%20THE%20AFRICAN%20UNION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.250249Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.250249Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.250249Z"
+    },
+    {
+      "id": "36301-sl-Protocol%20to%20the%20Treaty%20Establishing%20the%20African%20Economic%20Community%20Relating%20to%20the%20Pan-African%20Parliament.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.337433Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.337433Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.337433Z"
+    },
+    {
+      "id": "36382-sl-AFRICAN_UNION_CONVENTION_ON_PREVENTING_AND_COMBATING_CORRUPTION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.433339Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.433339Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.433339Z"
+    },
+    {
+      "id": "36384-sl-AFRICAN_CHARTER_ON_DEMOCRACY_ELECTIONS_AND_GOVERNANCE.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.517040Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.517040Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.517040Z"
+    },
+    {
+      "id": "36386-sl-AFRICAN_CHARTER_ON_THE_VALUES_AND_PRINCIPLES_OF_PUBLIC_SERVICE_AND_ADMINISTRATION_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.620992Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.620992Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.620992Z"
+    },
+    {
+      "id": "36387-sl-AFRICAN_CHARTER_ON_THE_VALUES_AND_PRINCIPLES_OF_DECENTRALISATION_LOCAL_GOVERNANCE_AND_LOCAL_DEVELOPMENT.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2022,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.717627Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.717627Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.717627Z"
+    },
+    {
+      "id": "36388-sl-statute_of_the_african_union_commission_on_international_law_aucil_-.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.813977Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.813977Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.813977Z"
+    },
+    {
+      "id": "36390-sl-african_charter_on_human_and_peoples_rights_2.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.915846Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.915846Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.915846Z"
+    },
+    {
+      "id": "36391-sl-AFRICAN%20REHABILITATION%20INSTITUTE%20%28ARI%29.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2020,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.006901Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.006901Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.006901Z"
+    },
+    {
+      "id": "36393-sl-PROTOCOL_TO_THE_AFRICAN_CHARTER_ON_HUMAN_AND_PEOPLESRIGHTS_ON_THE_ESTABLISHMENT_OF_AN_AFRICAN_COURT_ON_HUMAN_AND_PEOPLES_RIGHTS_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.104644Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.104644Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.104644Z"
+    },
+    {
+      "id": "36395-sl-PROTOCOL%20OF%20THE%20COURT%20OF%20JUSTICE%20OF%20THE%20AFRICAN%20UNION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2020,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.190902Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.190902Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.190902Z"
+    },
+    {
+      "id": "36396-sl-PROTOCOL%20ON%20THE%20STATUTE%20OF%20THE%20AFRICAN%20COURT%20OF%20JUSTICE%20AND%20HUMAN%20RIGHTS.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2020,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.298725Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.298725Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.298725Z"
+    },
+    {
+      "id": "36398-sl-PROTOCOL%20ON%20AMENDMENTS%20TO%20THE%20PROTOCOL%20ON%20THE%20STATUTE%20OF%20THE%20AFRICAN%20COURT%20OF%20JUSTICE%20AND%20HUMAN%20RIGHTS.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.389020Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.389020Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.389020Z"
+    },
+    {
+      "id": "36400-sl-OAU%20Convention%20Governing%20the%20Specific%20Aspects%20of%20Refugee%20Problems%20in%20Africa.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.486255Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.486255Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.486255Z"
+    },
+    {
+      "id": "36403-sl-PROTOCOL_TO_THE_TREATY_ESTABLISHING_THE_AFRICAN_ECONOMIC_COMMUNITY_RELATING_TO_FREE_MOVEMENT_OF_PERSONS-1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.583720Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.583720Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.583720Z"
+    },
+    {
+      "id": "36408-sl-inter-african_convention_establishing_an_african_technical_co-operation_.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.686829Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.686829Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.686829Z"
+    },
+    {
+      "id": "36409-sl-CONSTITUTION-1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.788600Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.788600Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.788600Z"
+    },
+    {
+      "id": "36412-sl-AFRICAN_CHARTER_ON_STATISTICS_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.886025Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.886025Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.886025Z"
+    },
+    {
+      "id": "36414-sl-Protocol%20on%20the%20African%20Investment%20Bank.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.000518Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.000518Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.000518Z"
+    },
+    {
+      "id": "36416-sl-AFRICAN_UNION_CONVENTION_ON_CROSS-BORDER_COOPERATION_NIAMEY_CONVENTION_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LGBTQ",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.107649Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.107649Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.107649Z"
+    },
+    {
+      "id": "36417-sl-PROTOCOL%20ON%20THE%20ESTABLISHMENT%20OF%20THE%20AFRICAN%20MONETARY%20FUND.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.233151Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.233151Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.233151Z"
+    },
+    {
+      "id": "36437-sl-AGREEMENT_ESTABLISHING_THE_AFRICAN_CONTINENTAL_FREE_TRADE_AREA_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.683706Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.683706Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.683706Z"
+    },
+    {
+      "id": "36438-sl-PROTOCOL_TO_THE_AFRICAN_CHARTER_ON_HUMAN_AND_PEOPLES_RIGHTS_ON_THE_RIGHTS_OF_OLDER_PERSONS_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.809283Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.809283Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.809283Z"
+    },
+    {
+      "id": "36440-sl-PROTOCOL_TO_THE_AFRICAN_CHARTER_ON_HUMAN_AND_PEOPLES_RIGHTS_ON_THE_RIGHTS_OF_PERSONS_WITH_DISABILITIES_IN_AFRICA_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:58.912584Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:58.912584Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:58.912584Z"
+    },
+    {
+      "id": "36804-sl-AFRICAN_CHARTER_ON_THE_RIGHTS_AND_WELFARE_OF_THE_CHILD.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "Privacy",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.033352Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.033352Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.033352Z"
+    },
+    {
+      "id": "36846-sl-AFRICAN_UNION_CONVENTION_FOR_THE_PROTECTION_AND_ASSISTANCE_OF_INTERNALLY_DISPLACED_PERSONS_IN_AFRICA_KAMPALA_CONVENTION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.126268Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.126268Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.126268Z"
+    },
+    {
+      "id": "36892-sl-TREATY_FOR_THE_ESTABLISHMENT_OF_THE_AFRICAN_MEDICINES_AGENCY.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.216599Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.216599Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.216599Z"
+    },
+    {
+      "id": "37077-sl-PROTOCOL_TO_THE_AFRICAN_CHARTER_ON_HUMAN_AND_PEOPLES_RIGHTS_ON_THE_RIGHTS_OF_WOMEN_IN_AFRICA.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "LGBTQ",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.310483Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.310483Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.310483Z"
+    },
+    {
+      "id": "37286-sl-AFRICAN_CHARTER_ON_MARITIME_SECURITY_AND_SAFETY_AND_DEVELOPMENT_IN_AFRICA_LOME_CHARTER.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2022,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.412995Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.412995Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.412995Z"
+    },
+    {
+      "id": "37287-sl-oau_convention_for_the_elimination_of_mercenarism_in_africa_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.532467Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.532467Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.532467Z"
+    },
+    {
+      "id": "37288-sl-THE_AFRICAN_NUCLEAR-WEAPON-FREE_ZONE_TREATY_THE_TREATY_OF_PELINDABA_2.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2022,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.629528Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.629528Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.629528Z"
+    },
+    {
+      "id": "37289-sl-oau_convention_on_the_prevention_and_combating_of_terrorism_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.715980Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.715980Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.715980Z"
+    },
+    {
+      "id": "37290-sl-statute_of_the_african_union_mechanism_for_police_cooperation_afripol_.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.822618Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.822618Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.822618Z"
+    },
+    {
+      "id": "37291-sl-protocol_to_the_oau_convention_on_the_prevention_and_combating_of_terror.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:41:59.941477Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:41:59.941477Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:41:59.941477Z"
+    },
+    {
+      "id": "37292-sl-african_union_non-aggression_and_common_defence_pact.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.038519Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.038519Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.038519Z"
+    },
+    {
+      "id": "37293-sl-PROTOCOL_RELATING_TO_THE_ESTABLISHMENT_OF_THE_PEACE_AND_SECURITY_COUNCIL_OF_THE_AFRICAN_UNION_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2022,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.127093Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.127093Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.127093Z"
+    },
+    {
+      "id": "37304-sl-CONSTITUTION_FOR_THE_AFRICAN_CIVIL_AVIATION_COMMISSION_-_AFCAC_REVISED_VERSION_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.225114Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.225114Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.225114Z"
+    },
+    {
+      "id": "37305-sl-CHARTER_FOR_AFRICAN_CULTURAL_RENAISSANCE_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.319189Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.319189Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.319189Z"
+    },
+    {
+      "id": "37306-sl-african_maritime_transport_charter_2.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LGBTQ",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.415663Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.415663Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.415663Z"
+    },
+    {
+      "id": "37309-sl-ROAD_SAFETY_CHARTER_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.494277Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.494277Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.494277Z"
+    },
+    {
+      "id": "37310-sl-convention_of_the_african_energy_commission.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2019,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.582791Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.582791Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.582791Z"
+    },
+    {
+      "id": "37636-sl-TREATY_ESTABLISHING_THE_AFRICAN_ECONOMIC_COMMUNITY.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.695309Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.695309Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.695309Z"
+    },
+    {
+      "id": "37696-sl-CONSTITUTION%20FOR%20THE%20AFRICAN%20CIVIL%20AVIATION%20COMMISSION%20%E2%80%93%20AFCAC%20%28REVISED%20VERSION%29.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2020,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.792369Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.792369Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.792369Z"
+    },
+    {
+      "id": "41550-sl-REVISED_AFRICAN_CONVENTION_ON_THE_CONSERVATION_OF_NATURE_AND_NATURAL_RESOURCES.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.878655Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.878655Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.878655Z"
+    },
+    {
+      "id": "42517-sl-statute_of_the_african_cdc_and_its_framework_of_operation_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:00.963019Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:00.963019Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:00.963019Z"
+    },
+    {
+      "id": "42736-sl-PROTOCOL_TO_THE_AFRICAN_CHARTER_ON_HUMAN_AND_PEOPLES_RIGHTS_ON_THE_RIGHTS_OF_CITIZENS_TO_SOCIAL_PROTECTION_AND_SOCIAL_SECURITY.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.057015Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.057015Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.057015Z"
+    },
+    {
+      "id": "42737-sl-STATUTE_OF_THE_AFRICAN_AUDIO_VISUAL_AND_CINEMA_COMMISSION.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.169562Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.169562Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.169562Z"
+    },
+    {
+      "id": "42738-sl-ADDITIONAL_PROTOCOL_TO_THE_OAU_GENERAL_CONVENTION_ON_PRIVILEGES_AND_IMMUNITIES_.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.283382Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.283382Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.283382Z"
+    },
+    {
+      "id": "7758-sl-constitutive_act_of_the_african_union_2.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.367821Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.367821Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.367821Z"
+    },
+    {
+      "id": "7760-sl-GENERAL_CONVENTION_ON_THE_PRIVILEGES_AND_IMMUNITIES_OF_THE_OAU.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.485322Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.485322Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.485322Z"
+    },
+    {
+      "id": "7762-sl-phyto-sanitary_convention_for_africa_-_1.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2017,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.591875Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.591875Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.591875Z"
+    },
+    {
+      "id": "7769-sl-CULTURAL%20CHARTER%20FOR%20AFRICA%20%20%28%2A%29.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2020,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.711223Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.711223Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.711223Z"
+    },
+    {
+      "id": "7772-sl-CONVENTION_FOR_THE_ESTABLISHMENT_OF_THE_AFRICAN_CENTRE_FOR_FERTILIZER_DEVELOPMENT.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.844403Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.844403Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.844403Z"
+    },
+    {
+      "id": "7774-sl-BAMAKO_CONVENTION_ON_THE_BAN_OF_THE_IMPORT_INTO_AFRICA_AND_THE_CONTROL_OF_TRANSBOUNDARY_MOVEMENT_AND_MANAGEMENT_OF_HAZARDOUS_WASTES_WITHIN_AFRICA.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LGBTQ",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:01.941509Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:01.941509Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:01.941509Z"
+    },
+    {
+      "id": "7789-sl-AFRICAN_YOUTH_CHARTER_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "ChildRights",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:02.033932Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:02.033932Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:02.033932Z"
+    },
+    {
+      "id": "7797-sl-REVISED_AFRICAN_MARITIME_TRANSPORT_CHARTER.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2022,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LGBTQ",
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:02.127823Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:02.127823Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:02.127823Z"
+    },
+    {
+      "id": "7800-sl-AGREEMENT_FOR_THE_ESTABLISHMENT_OF_THE_AFRICAN_RISK_CAPACITY_ARC_AGENCY.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2024,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:02.206067Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:02.206067Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:02.206067Z"
+    },
+    {
+      "id": "7806-sl-PROTOCOL_TO_THE_CONSTITUTIVE_ACT_OF_THE_AFRICAN_UNION_RELATING_TO_THE_PAN-AFRICAN_PARLIAMENT_0.pdf",
+      "source": "au_policy_sel",
+      "country": "African_Union",
+      "country_raw": "African_Union",
+      "country_iso": null,
+      "region": "Africa",
+      "region_raw": "Africa",
+      "year": 2023,
+      "year_extracted_from": "first_page",
+      "doc_type": "Policy",
+      "ingestion_method": "scraper",
+      "tags_history": [
+        {
+          "tags": [
+            "LawPolicy",
+            "StateActors"
+          ],
+          "version": "v3",
+          "timestamp": "2025-08-30T19:42:02.304534Z"
+        }
+      ],
+      "recommendations_history": [
+        {
+          "recommendations": [],
+          "version": "recs_v1",
+          "timestamp": "2025-08-30T19:42:02.304534Z"
+        }
+      ],
+      "last_processed": "2025-08-30T19:42:02.304534Z"
+    }
+  ],
+  "last_updated": null
+}

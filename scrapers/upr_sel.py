@@ -5,15 +5,16 @@ Fetches UPR documents from OHCHR with country-aware folders.
 Logs all discovered document links into a separate file.
 """
 
-import os
 import logging
+import os
 from urllib.parse import urljoin
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-from scrapers.utils import download_file
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 from scrapers.selenium_setup import init_driver
+from scrapers.utils import download_file
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("upr_selenium")
