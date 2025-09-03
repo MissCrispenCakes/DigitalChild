@@ -2,56 +2,57 @@
 JSON Normalizer
 ---------------
 Normalizes metadata and processed document JSON records.
-Preserves _raw fields alongside normalized ones.
+Uses country_utils and region_utils for consistency.
 """
 
-import re
-
 from processors.logger import get_logger
+from scrapers import country_utils, region_utils
 
 logger = get_logger("json_normalizer")
 
-# Example mapping for region names
-REGION_NORMALIZATION = {
-    "Sub-Saharan Africa": "Africa",
-    "SSA": "Africa",
-    "Middle East and North Africa": "MENA",
-    "North Africa": "Africa",
-}
-
 
 def normalize_region(region_raw):
-    """Normalize region names but preserve the raw value too."""
+    """
+    Normalize region names using region_utils.
+    Returns (region_raw, normalized_region_code).
+    """
     if not region_raw:
         return None, None
-    for key, val in REGION_NORMALIZATION.items():
-        if region_raw.strip().lower() == key.lower():
-            return region_raw, val
-    return region_raw, region_raw  # if no mapping, keep as-is
+    r_raw, region_norm, _ = region_utils.normalize_region(region_raw)
+    return r_raw, region_norm
 
 
 def normalize_country(country_raw):
-    """Basic country name normalization (placeholder)."""
+    """
+    Normalize country names using country_utils.
+    Returns (country_raw, normalized_name, iso_code).
+    """
     if not country_raw:
-        return None, None
-    # Example: strip extra spaces, unify case
-    cleaned = re.sub(r"\s+", " ", country_raw).strip()
-    return country_raw, cleaned
+        return None, None, None
+    c_raw, country_norm, iso = country_utils.normalize_country(country_raw)
+    return c_raw, country_norm, iso
 
 
 def normalize_document(doc):
     """
-    Takes a document dict, normalizes fields while keeping _raw.
-    Example:
-      input: {"country": "Sub-Saharan Africa", ...}
-      output: {
-        "country_raw": "Sub-Saharan Africa",
-        "country": "Africa",
-        ...
-      }
+    Normalize a document dict in-place.
+    Ensures:
+      - country_raw, country, country_iso, country_display
+      - region_raw, region, regions_memberships
     """
     if "region" in doc:
         doc["region_raw"], doc["region"] = normalize_region(doc["region"])
+
     if "country" in doc:
-        doc["country_raw"], doc["country"] = normalize_country(doc["country"])
+        c_raw, country_norm, iso = normalize_country(doc["country"])
+        doc["country_raw"] = c_raw
+        doc["country"] = country_norm
+        doc["country_iso"] = iso
+        doc["country_display"] = (
+            country_utils.get_country_from_iso(iso) if iso else None
+        )
+        doc["regions_memberships"] = (
+            region_utils.get_regions_for_country(iso) if iso else []
+        )
+
     return doc

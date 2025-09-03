@@ -4,16 +4,17 @@ AU Policy Scraper - Selenium Version
 Fetches AU policy PDFs from predefined URLs and saves to /data/raw/au_policy/.
 """
 
-import os
 import logging
+import os
 from urllib.parse import urljoin
+
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from processors.logger import get_logger
-from scrapers.utils import download_file
 from scrapers.selenium_setup import init_driver
+from scrapers.utils import download_file
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("au_policy_selenium")
@@ -57,7 +58,9 @@ def scrape(base_url=BASE_URL):
                 # Try to normalize & download PDFs
                 file_url = urljoin(base_url, href)
                 if file_url.lower().endswith(".pdf"):
-                    name = os.path.basename(file_url.split("?")[0])  # strip query params
+                    name = os.path.basename(
+                        file_url.split("?")[0]
+                    )  # strip query params
                     dest_path = os.path.join(RAW_DIR, name)
                     if download_file(file_url, dest_path):
                         downloaded.append(dest_path)

@@ -2,7 +2,6 @@ import json
 import os
 
 from pipeline_runner import load_metadata, save_metadata, update_metadata
-from processors import tagger  # noqa: F401
 
 METADATA_FILE = "data/metadata/metadata.json"
 
@@ -22,8 +21,8 @@ def test_metadata_updates(tmp_path):
     update_metadata(
         doc_id=test_id,
         source="test_source",
-        country="TestCountry",
-        region="TestRegion",
+        country="Kenya",
+        region="Africa",
         year=2025,
         tags=tags,
         tag_version="tags_v1",
@@ -34,6 +33,11 @@ def test_metadata_updates(tmp_path):
     assert doc is not None
     assert "tags_history" in doc
     assert tags == doc["tags_history"][-1]["tags"]
+
+    # ✅ new assertions
+    assert doc["country_iso"] == "KE"
+    assert doc["country_display"] == "Kenya"
+    assert "AFU" in doc["regions_memberships"]
 
     # Restore metadata.json
     save_metadata(original)
