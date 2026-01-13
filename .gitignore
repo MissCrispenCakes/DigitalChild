@@ -22,6 +22,7 @@ data/try_sel/
 
 # Metadata
 data/metadata/metadata.json
+sample_scorecard_data/
 
 # Coverage & testing
 htmlcov/
