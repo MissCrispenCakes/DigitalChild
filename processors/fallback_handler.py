@@ -4,8 +4,6 @@ Fallback Handler
 Tries different processors if a file is mislabeled or format detection fails.
 """
 
-import os
-
 from processors import docx_to_text, html_to_text, pdf_to_text
 from processors.logger import get_logger
 
