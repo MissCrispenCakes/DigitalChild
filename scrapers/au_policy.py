@@ -18,7 +18,7 @@ URLS = {
     "AU_Child_Online_Safety_2024": "https://au.int/sites/default/files/documents/43798-doc-African_Union_Child_Online_Safety_and_Empowerment_Policy_Feb_2024.pdf",
     "AU_AI_Strategy_2024": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf",
     "AU_Digital_Compact_2024": "https://au.int/sites/default/files/documents/44005-doc-AU_Digital_Compact_V4.pdf",
-    "AU_Digtial_Transformation_Strategy_2020": "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf",
+    "AU_Digital_Transformation_Strategy_2020": "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf",
     "AU_Cybersecurity_Data_Protection_Strategy_2014": "https://dataprotection.org.gh/wp-content/uploads/2025/05/Malabo-Convention.pdf",
     "AU_Digital_ID_2022": "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf",
     "AU_Data_Policy_2022": "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf",
