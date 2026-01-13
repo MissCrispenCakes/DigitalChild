@@ -183,6 +183,10 @@ def resolve_tags_config(version):
     elif os.path.exists(version):  # direct file path
         return version
     else:
+        # Try treating it as a filename in configs/
+        config_path = os.path.join("configs", f"{version}.json")
+        if os.path.exists(config_path):
+            return config_path
         raise ValueError(f"Unknown tags version: {version}")
 
 
