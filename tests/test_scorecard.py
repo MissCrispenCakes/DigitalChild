@@ -5,6 +5,7 @@ Tests for scorecard loading, validation, enrichment, diff checking, and export.
 """
 
 import os
+from unittest.mock import Mock, patch
 
 import pytest
 
@@ -161,42 +162,46 @@ class TestScorecardExport:
 class TestScorecardValidator:
     """Tests for scorecard_validator.py module."""
 
-    @pytest.mark.skipif(
-        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
-        reason="Network test skipped in CI/sandboxed environment",
-    )
-    def test_validate_url_success(self):
+    @patch("processors.scorecard_validator.requests.head")
+    def test_validate_url_success(self, mock_head):
         """Test validating a URL that works."""
         from processors.scorecard_validator import validate_url
 
+        # Mock successful response
+        mock_response = Mock()
+        mock_response.status_code = 200
+        mock_response.url = "https://www.google.com"
+        mock_head.return_value = mock_response
+
         result = validate_url("https://www.google.com")
         assert result["ok"] is True
-        assert result["status_code"] in [200, 301, 302]
+        assert result["status_code"] == 200
 
-    @pytest.mark.skipif(
-        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
-        reason="Network test skipped in CI/sandboxed environment",
-    )
-    def test_validate_url_broken(self):
+    @patch("processors.scorecard_validator.requests.head")
+    def test_validate_url_broken(self, mock_head):
         """Test validating a URL that doesn't exist."""
         from processors.scorecard_validator import validate_url
+        import requests
+
+        # Mock connection error
+        mock_head.side_effect = requests.exceptions.ConnectionError("Name or service not known")
 
         result = validate_url("https://thisdomaindoesnotexist12345.com")
         assert result["ok"] is False
         assert result["error"] is not None
 
-    @pytest.mark.skipif(
-        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
-        reason="Network test skipped in CI/sandboxed environment",
-    )
-    def test_validate_url_timeout(self):
+    @patch("processors.scorecard_validator.requests.head")
+    def test_validate_url_timeout(self, mock_head):
         """Test validating with very short timeout."""
         from processors.scorecard_validator import validate_url
+        import requests
 
-        # Use a very short timeout to trigger timeout error
+        # Mock timeout error
+        mock_head.side_effect = requests.exceptions.Timeout("Request timed out")
+
         result = validate_url("https://www.google.com", timeout=0.001)
-        # May succeed or timeout depending on network
         assert "url" in result
+        assert result["error"] == "Timeout"
 
 
 class TestScorecardDiff:
