@@ -20,6 +20,53 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Pre-download test data files
+        run: |
+          # Create directories for test data
+          mkdir -p data/raw/au_policy
+          
+          # Download AU policy files needed for tests with proper error handling
+          # Using --fail to return error on HTTP errors (4xx, 5xx)
+          # Using --show-error to show error message on silent failures
+          # Using --retry for transient network issues
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Child_Online_Safety_2024.pdf \
+            "https://au.int/sites/default/files/documents/43798-doc-African_Union_Child_Online_Safety_and_Empowerment_Policy_Feb_2024.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_AI_Strategy_2024.pdf \
+            "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Digital_Compact_2024.pdf \
+            "https://au.int/sites/default/files/documents/44005-doc-AU_Digital_Compact_V4.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Digital_Transformation_Strategy_2020.pdf \
+            "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Cybersecurity_Data_Protection_Strategy_2014.pdf \
+            "https://dataprotection.org.gh/wp-content/uploads/2025/05/Malabo-Convention.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Digital_ID_2022.pdf \
+            "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Data_Policy_2022.pdf \
+            "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Digital_Economy_2021.pdf \
+            "https://africaportal.org/wp-content/uploads/2023/06/Building-an-Enabling-Environment-for-Inclusive-Digital-Transformation-Africa-R_DQzy95E.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_Free_Trade_2012.pdf \
+            "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf"
+          curl --fail --show-error --retry 3 --retry-delay 5 -L -o data/raw/au_policy/AU_AI_Africa_2021.pdf \
+            "https://smartafrica.org/wp-content/uploads/2023/11/70029-eng_ai-for-africa-blueprint-min.pdf"
+          
+          # Validate downloaded files have reasonable sizes (PDFs should be > 1KB)
+          echo "Validating downloaded files..."
+          for file in data/raw/au_policy/*.pdf; do
+            if [ -f "$file" ]; then
+              size=$(stat -c%s "$file" 2>/dev/null || echo 0)
+              if [ "$size" -lt 1024 ]; then
+                echo "ERROR: $file is too small ($size bytes) - likely an error page"
+                exit 1
+              else
+                echo "✓ $file: ${size} bytes"
+              fi
+            fi
+          done
+          
+          echo "Pre-downloaded test data files successfully validated"
+          ls -lh data/raw/au_policy/
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
