@@ -20,21 +20,21 @@ def process_with_fallback(filepath, output_dir):
     """
 
     # 1. Try PDF
-    if pdf_to_text.convert(filepath, output_dir):
-        base_name = os.path.splitext(os.path.basename(filepath))[0]
-        return os.path.join(output_dir, f"{base_name}.txt")
+    result = pdf_to_text.convert(filepath, output_dir)
+    if result:
+        return result
 
     # 2. Try DOCX
     if docx_to_text.validate_format(filepath) or filepath.lower().endswith(".pdf"):
-        if docx_to_text.convert(filepath, output_dir):
-            base_name = os.path.splitext(os.path.basename(filepath))[0]
-            return os.path.join(output_dir, f"{base_name}.txt")
+        result = docx_to_text.convert(filepath, output_dir)
+        if result:
+            return result
 
     # 3. Try HTML
     if html_to_text.validate_format(filepath) or filepath.lower().endswith(".pdf"):
-        if html_to_text.convert(filepath, output_dir):
-            base_name = os.path.splitext(os.path.basename(filepath))[0]
-            return os.path.join(output_dir, f"{base_name}.txt")
+        result = html_to_text.convert(filepath, output_dir)
+        if result:
+            return result
 
     logger.error(f"All fallback processors failed for {filepath}")
     return None
