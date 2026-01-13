@@ -11,6 +11,10 @@ PyPDF2
 reportlab
 python-docx
 
+# Scorecard processing
+pandas
+openpyxl
+
 # Development + testing
 pytest
 pytest-cov
