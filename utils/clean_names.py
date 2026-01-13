@@ -52,9 +52,10 @@ def build_url_dict(label, filepath):
             if any(p in url for p in EXCLUDE_PATTERNS):
                 continue
             # Try to build key from any pre-text before URL
-            pre_text = (
-                line[: line.find("http")].strip(" -→\u2192") if "http" in line else ""
-            )
+            if "http" in line:
+                pre_text = line[: line.find("http")].strip().strip("-").strip("→").strip("\u2192").strip()
+            else:
+                pre_text = ""
             key_base = None
             if pre_text and not pre_text.lower().startswith("[no text]"):
                 key_base = slugify(pre_text)

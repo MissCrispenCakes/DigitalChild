@@ -12,7 +12,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from processors.logger import get_logger
 from scrapers.selenium_setup import init_driver
 from scrapers.utils import download_file
 
