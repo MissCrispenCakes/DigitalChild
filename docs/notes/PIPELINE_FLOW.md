@@ -1,31 +1,36 @@
----
+______________________________________________________________________
+
 🌍 Project Domains:
+
 - https://GRIMdata.org
 - https://ALLRainbowRights.com
 - https://LittleRainbowRights.com
----
+
+______________________________________________________________________
 
 # PIPELINE FLOW
 
 This document explains the flow of data through the pipeline.
 
----
+______________________________________________________________________
 
 ## 1. Input Sources
 
 - **Scrapers** pull content from:
+
   - AU policy PDFs (demo implemented)
   - OHCHR Treaty Body Database (planned)
   - UPR, UNICEF, ACERWC, ACHPR (planned)
 
 - **Manual files** can be dropped into `data/raw/manual/`.
 
----
+______________________________________________________________________
 
 ## 2. Processing
 
 - **File type detection**
   Attempt to process based on extension.
+
   - `.pdf` → `pdf_to_text.py`
   - `.docx` → `docx_to_text.py`
   - `.html` → `html_to_text.py`
@@ -42,7 +47,7 @@ This document explains the flow of data through the pipeline.
 - **Recommendations**
   (future) Config-driven extraction of recommendations.
 
----
+______________________________________________________________________
 
 ## 3. Metadata
 
@@ -53,7 +58,7 @@ This document explains the flow of data through the pipeline.
   - Recommendations history (with versions)
   - Last processed timestamp
 
----
+______________________________________________________________________
 
 ## 4. Exports
 
@@ -61,7 +66,7 @@ This document explains the flow of data through the pipeline.
 - `tags_timeline*.py` → (future) timeline exports
 - `comparison.py` → (future) compare tagging/recommendations across versions
 
----
+______________________________________________________________________
 
 ## 5. Logging
 
@@ -69,7 +74,7 @@ This document explains the flow of data through the pipeline.
 - Controlled via `--no-module-logs` flag in `pipeline_runner.py`
 - Logs written to `logs/` directory
 
----
+______________________________________________________________________
 
 ## 6. Review
 

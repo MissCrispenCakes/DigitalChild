@@ -2,7 +2,7 @@
 
 This document describes the logging system for the pipeline.
 
----
+______________________________________________________________________
 
 ## Logger Design
 
@@ -12,21 +12,21 @@ This document describes the logging system for the pipeline.
   - Unified run log file
   - Optional per-module log files
 
----
+______________________________________________________________________
 
 ## Unified Run Log
 
 - Named as `<timestamp>_<pipeline>.log`
 - Example: `2025-08-28_12-22-40_au_policy_run.log`
 
----
+______________________________________________________________________
 
 ## Module Logs
 
 - Each module (scraper, processor) may also have its own log file.
 - Controlled by `--no-module-logs` flag in `pipeline_runner.py`.
 
----
+______________________________________________________________________
 
 ## Levels
 
@@ -34,7 +34,7 @@ This document describes the logging system for the pipeline.
 - `WARNING` → recoverable issues (year not found, missing tag matches)
 - `ERROR` → non-recoverable (download failure, unreadable PDF)
 
----
+______________________________________________________________________
 
 ## Best Practices
 

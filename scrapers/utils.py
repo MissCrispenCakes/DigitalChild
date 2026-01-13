@@ -36,11 +36,14 @@ def download_file(url, dest_path, timeout=300):
         logger.error(f"Failed to download {url}: {e}")
         return False
 
-    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    dest_dir = os.path.dirname(dest_path)
+    if dest_dir:  # Only create if there's a directory component
+        os.makedirs(dest_dir, exist_ok=True)
     try:
         with open(dest_path, "wb") as f:
             for chunk in resp.iter_content(1024):
-                f.write(chunk)
+                if chunk:  # Filter out keep-alive chunks
+                    f.write(chunk)
         logger.info(f"Downloaded: {dest_path}")
         return True
     except Exception as e:

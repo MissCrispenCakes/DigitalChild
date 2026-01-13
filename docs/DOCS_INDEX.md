@@ -2,14 +2,14 @@
 
 This index lists all documentation files in `docs/` with their purpose.
 
----
+______________________________________________________________________
 
 ## Setup & Errors
 
 - `../README.md` → Quickstart, badges, troubleshooting link.
 - `runs/FIRST_RUN_ERRORS.md` → Common first-run errors and fixes.
 
----
+______________________________________________________________________
 
 ## Structure & Standards
 
@@ -18,7 +18,7 @@ This index lists all documentation files in `docs/` with their purpose.
 - `standards/DOC_TYPE_STANDARDS.md` → How document types are categorized.
 - `standards/ISO_MAPPING.md` → Normalization of country/region names.
 
----
+______________________________________________________________________
 
 ## Pipeline
 
@@ -27,7 +27,7 @@ This index lists all documentation files in `docs/` with their purpose.
 - `runs/PROCESSOR_TEST_RUN.md` → Commands to test processors independently.
 - `runs/RUNBOOK.md` → Run commands for pipeline and tests.
 
----
+______________________________________________________________________
 
 ## Tagging & Recommendations
 
@@ -37,14 +37,14 @@ This index lists all documentation files in `docs/` with their purpose.
 - `TAGS_VISUALIZATION_PLAN.md` → Visualization ideas for tags.
 - `standards/RECOMMENDATIONS_CONFIG_FORMAT.md` → Structure of recommendations configs.
 
----
+______________________________________________________________________
 
 ## Comparison
 
 - `standards/COMPARISON_CONFIG_FORMAT.md` → Format for comparison configs.
 - `notes/COMPARISON_EXPORT_NOTES.md` → How to interpret comparison exports.
 
----
+______________________________________________________________________
 
 ## Development Notes
 
@@ -53,7 +53,7 @@ This index lists all documentation files in `docs/` with their purpose.
 - `SOURCE_FEASIBILITY_CHECKLIST.md` → Checklist for deciding source feasibility.
 - `DOCS_INDEX.md` → This index.
 
----
+______________________________________________________________________
 
 ## Notes
 

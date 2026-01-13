@@ -2,7 +2,7 @@
 
 This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipeline.
 
----
+______________________________________________________________________
 
 ## Phase 1: Core Pipeline (✅ in progress)
 
@@ -15,7 +15,7 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 - [x] Tests for processors, tagging, logging, metadata
 - [x] Docs (setup, structure, standards, pipeline flow)
 
----
+______________________________________________________________________
 
 ## Phase 2: Expanded Sources (⏳ next)
 
@@ -26,7 +26,7 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 - [ ] ACHPR reports
 - [ ] Manual upload ingestion
 
----
+______________________________________________________________________
 
 ## Phase 3: Advanced Processing
 
@@ -36,7 +36,7 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 - [ ] Normalization of country/region to ISO codes
 - [ ] Doc type classification (Policy, Law, TreatyBody, etc.)
 
----
+______________________________________________________________________
 
 ## Phase 4: Research Dashboard
 
@@ -45,7 +45,7 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 - [ ] Interactive filters (region, country, tags, year)
 - [ ] Export/download UI for datasets
 
----
+______________________________________________________________________
 
 ## Phase 5: Global Expansion
 
@@ -53,7 +53,7 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 - [ ] Merge African + global content
 - [ ] Global comparative analysis
 
----
+______________________________________________________________________
 
 ## Notes
 

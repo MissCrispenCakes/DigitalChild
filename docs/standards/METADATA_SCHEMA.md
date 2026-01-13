@@ -2,7 +2,7 @@
 
 This document defines the schema for `data/metadata/metadata.json`.
 
----
+______________________________________________________________________
 
 ## Project Identity
 
