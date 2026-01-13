@@ -9,6 +9,10 @@ import pytest
 LOG_DIR = "logs"
 
 
+@pytest.mark.skipif(
+    "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
+    reason="Network test skipped in CI/sandboxed environment (requires downloading files)",
+)
 @pytest.mark.parametrize(
     "args,expect_module_logs",
     [
