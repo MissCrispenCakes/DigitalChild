@@ -2,10 +2,10 @@ import glob
 import os
 import subprocess
 import sys
-
 import pytest
 
-LOG_DIR = "logs"
+# ✅ logs now go into logs/tests/ under pytest
+LOG_DIR = os.path.join("logs", "tests")
 
 
 @pytest.mark.parametrize(
@@ -28,7 +28,7 @@ def test_pipeline_creates_logs(args, expect_module_logs):
         "--source",
         "au_policy",
         "--tags-version",
-        "tags_v1",  # ✅ must match configs/tags_main.json
+        "queerai",  # ✅ must match configs/tags_main.json
     ] + args
     result = subprocess.run(cmd, capture_output=True, text=True)
 
@@ -36,11 +36,13 @@ def test_pipeline_creates_logs(args, expect_module_logs):
 
     after = set(glob.glob(os.path.join(LOG_DIR, "*.log")))
     new_logs = after - before
-    assert new_logs, "No new log files created"
+    assert new_logs, f"No new log files created in {LOG_DIR}"
 
+    # Unified log always ends with "_run.log"
     unified_logs = [f for f in new_logs if f.endswith("_run.log")]
     assert unified_logs, "Unified run log missing"
 
+    # Module logs may or may not exist depending on flag
     module_logs = [f for f in new_logs if not f.endswith("_run.log")]
     if expect_module_logs:
         assert module_logs, "Module logs expected but not found"

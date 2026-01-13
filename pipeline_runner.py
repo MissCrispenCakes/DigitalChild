@@ -1,18 +1,20 @@
 """
-Pipeline Runner (Full Version with Metadata + Logging)
-------------------------------------------------------
-End-to-end run: scrape → process → tag → export summary → metadata update.
-Supports multiple sources and tag versions.
+Pipeline Runner
+---------------
+Scrapes, processes, tags, and updates metadata for human rights + digital child docs.
+Supports both live scrapers and static url_dict JSONs.
 """
 
 import argparse
 import json
 import os
 import re
-from datetime import datetime
+import requests
+from urllib.parse import urlparse
+from datetime import datetime, timezone
 
+from utils.detectors import detect_country_region
 from processors import (
-    json_normalizer,
     pdf_to_text,
     recommendations,
     tagger,
@@ -22,46 +24,80 @@ from processors import (
     tags_timeline_region,
 )
 from processors.logger import get_logger, set_run_logfile
+from processors import json_normalizer
 from scrapers import (
     acerwc,
-    acerwc_sel,
     achpr,
-    achpr_sel,
     au_policy,
-    au_policy_sel,
-    country_utils,
     ohchr,
-    ohchr_sel,
-    region_utils,
-    selenium_setup,
     unicef,
-    unicef_sel,
     upr,
+    acerwc_sel,
+    achpr_sel,
+    au_policy_sel,
+    ohchr_sel,
+    unicef_sel,
     upr_sel,
-    utils,
 )
-from utils.detectors import detect_country_region
 
-SCRAPER_MAP = {
-    "au_policy": (au_policy, "Africa/African_Union/text", "Policy"),
-    "ohchr": (ohchr, "Global/OHCHR/text", "TreatyBodyReport"),
-    "upr": (upr, "Global/UPR/text", "UPR"),
-    "unicef": (unicef, "Global/UNICEF/text", "Report"),
-    "acerwc": (acerwc, "Africa/ACERWC/text", "TreatyBodyReport"),
-    "achpr": (achpr, "Africa/ACHPR/text", "TreatyBodyReport"),
-    # Selenium variants point to selenium scrapers directly
-    "au_policy_sel": (au_policy_sel, "Africa/African_Union/text", "Policy"),
-    "ohchr_sel": (ohchr_sel, "Global/OHCHR/text", "TreatyBodyReport"),
-    "upr_sel": (upr_sel, "Global/UPR/text", "UPR"),
-    "unicef_sel": (unicef_sel, "Global/UNICEF/text", "Report"),
-    "acerwc_sel": (acerwc_sel, "Africa/ACERWC/text", "TreatyBodyReport"),
-    "achpr_sel": (achpr_sel, "Africa/ACHPR/text", "TreatyBodyReport"),
-}
-
+# Constants
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
+URL_DICT_DIR = os.path.join("configs", "url_dict")
+
+# Doc type mapping
+DOC_TYPES = {
+    "au_policy": "Policy",
+    "ohchr": "TreatyBodyReport",
+    "upr": "UPR",
+    "unicef": "Report",
+    "acerwc": "TreatyBodyReport",
+    "achpr": "TreatyBodyReport",
+}
 
 
+# -------------------------
+# Shared Helper: Conversion
+# -------------------------
+def convert_to_text(raw_path, proc_dir, logger):
+    """
+    Convert a document (PDF, DOCX, HTML, etc.) to text using the right processor.
+    Returns (txt_path, file_type) or (None, None) if failed.
+    """
+    from processors import fallback_handler
+
+    ext = os.path.splitext(raw_path)[1].lower()
+    txt_path, file_type = None, None
+
+    try:
+        if ext == ".pdf":
+            txt_path = pdf_to_text.convert(raw_path, proc_dir)
+            file_type = "PDF"
+        elif ext in (".doc", ".docx"):
+            from processors import docx_to_text
+            txt_path = docx_to_text.convert(raw_path, proc_dir)
+            file_type = "Word"
+        elif ext in (".htm", ".html"):
+            from processors import html_to_text
+            txt_path = html_to_text.convert(raw_path, proc_dir)
+            file_type = "HTML"
+        else:
+            txt_path = fallback_handler.convert(raw_path, proc_dir)
+            file_type = "Other"
+    except Exception as e:
+        logger.error(f"Failed to convert {raw_path}: {e}")
+        return None, None
+
+    if not txt_path:
+        logger.warning(f"No text extracted from {raw_path}")
+        return None, None
+
+    return txt_path, file_type
+
+
+# -------------------------
+# Metadata Helpers
+# -------------------------
 def load_metadata():
     if not os.path.exists(METADATA_FILE):
         return {"documents": []}
@@ -89,6 +125,7 @@ def update_metadata(
     recs_version="recs_v1",
     country=None,
     region=None,
+    file_type=None,
 ):
     """Update metadata.json with normalized fields."""
     if country and not country_raw:
@@ -97,7 +134,7 @@ def update_metadata(
         region_raw = region
 
     metadata = load_metadata()
-    now = datetime.utcnow().isoformat() + "Z"
+    now = datetime.now(timezone.utc).isoformat()
 
     existing = next((d for d in metadata["documents"] if d["id"] == doc_id), None)
     if not existing:
@@ -109,6 +146,7 @@ def update_metadata(
             "year": year,
             "year_extracted_from": year_extracted_from,
             "doc_type": doc_type,
+            "file_type": file_type,
             "ingestion_method": "scraper",
             "tags_history": [],
             "recommendations_history": [],
@@ -121,6 +159,7 @@ def update_metadata(
     existing["year"] = year
     existing["year_extracted_from"] = year_extracted_from
     existing["doc_type"] = doc_type
+    existing["file_type"] = file_type
     existing["country_raw"] = country_raw
     existing["region_raw"] = region_raw
 
@@ -130,19 +169,22 @@ def update_metadata(
         )
     if recommendations_list is not None:
         existing["recommendations_history"].append(
-            {
-                "recommendations": recommendations_list,
-                "version": recs_version,
-                "timestamp": now,
-            }
+            {"recommendations": recommendations_list, "version": recs_version, "timestamp": now}
         )
 
-    # Normalize consistently
-    existing = json_normalizer.normalize_document(existing)
+    # Ensure json_normalizer sees normalized fields
+    if country_raw:
+        existing["country"] = country_raw
+    if region_raw:
+        existing["region"] = region_raw
 
+    existing = json_normalizer.normalize_document(existing)
     save_metadata(metadata)
 
 
+# -------------------------
+# Year Extraction
+# -------------------------
 def extract_year(filename, txt_path=None, logger=None):
     YEAR_PATTERN = r"(19|20)\d{2}"
 
@@ -178,6 +220,9 @@ def extract_year(filename, txt_path=None, logger=None):
     return None, "unknown"
 
 
+# -------------------------
+# Tags Config
+# -------------------------
 def resolve_tags_config(version):
     with open(MAIN_TAGS_FILE, "r", encoding="utf-8") as f:
         main = json.load(f)
@@ -190,6 +235,28 @@ def resolve_tags_config(version):
         raise ValueError(f"Unknown tags version: {version}")
 
 
+# -------------------------
+# Scraper Map
+# -------------------------
+SCRAPER_MAP = {
+    "au_policy": (au_policy, "Africa/African_Union/text", "Policy"),
+    "ohchr": (ohchr, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr": (upr, "Global/UPR/text", "UPR"),
+    "unicef": (unicef, "Global/UNICEF/text", "Report"),
+    "acerwc": (acerwc, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr": (achpr, "Africa/ACHPR/text", "TreatyBodyReport"),
+    "au_policy_sel": (au_policy_sel, "Africa/African_Union/text", "Policy"),
+    "ohchr_sel": (ohchr_sel, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr_sel": (upr_sel, "Global/UPR/text", "UPR"),
+    "unicef_sel": (unicef_sel, "Global/UNICEF/text", "Report"),
+    "acerwc_sel": (acerwc_sel, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr_sel": (achpr_sel, "Africa/ACHPR/text", "TreatyBodyReport"),
+}
+
+
+# -------------------------
+# Scraper Mode
+# -------------------------
 def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False):
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
@@ -199,13 +266,10 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
         return
 
     scraper, proc_subdir, doc_type = SCRAPER_MAP[source]
-
-    # Normalize raw_dir for _sel sources
     base_source = source.replace("_sel", "")
-    raw_dir = f"data/raw/{base_source}"
-    proc_dir = f"data/processed/{proc_subdir}"
+    raw_dir = os.path.join("data", "raw", base_source)
+    proc_dir = os.path.join("data", "processed", proc_subdir)
 
-    # Scrape
     scrape_kwargs = {}
     if args.base_url:
         scrape_kwargs["base_url"] = args.base_url
@@ -216,58 +280,141 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
         scrape_kwargs["countries"] = [args.country]
 
     scraper.scrape(**scrape_kwargs)
-
-    # Resolve tags config
     tags_config = resolve_tags_config(tags_version)
     logger.info(f"Using tags config: {tags_config}")
 
     docs = []
     for filename in os.listdir(raw_dir):
-        if filename.endswith(".pdf"):
-            pdf_path = os.path.join(raw_dir, filename)
-            txt_path = pdf_to_text.convert(pdf_path, proc_dir)
-            if txt_path:
-                with open(txt_path, "r", encoding="utf-8") as f:
-                    text = f.read()
+        raw_path = os.path.join(raw_dir, filename)
+        txt_path, file_type = convert_to_text(raw_path, proc_dir, logger)
+        if not txt_path:
+            continue
 
-                # Apply tags & recs
-                tags = tagger.apply_tags(text, tags_config)
-                recs = recommendations.apply_recommendations(
-                    text, "configs/recs_v1.json"
-                )
-                docs.append({"id": filename, "tags": tags, "recs": recs})
+        with open(txt_path, "r", encoding="utf-8") as f:
+            text = f.read()
 
-                # Year
-                year, year_src = extract_year(filename, txt_path, logger)
+        tags = tagger.apply_tags(text, tags_config)
+        recs = recommendations.apply_recommendations(text, "configs/recs_v1.json")
+        docs.append({"id": filename, "tags": tags, "recs": recs})
 
-                # Detect country/region
-                country_name, country_iso, regions_list = detect_country_region(
-                    filename=filename,
-                    text=text[:2000],
-                )
+        year, year_src = extract_year(filename, txt_path, logger)
 
-                update_metadata(
-                    doc_id=filename,
-                    source=source,
-                    country_raw=country_name,
-                    region_raw=None,
-                    year=year,
-                    year_extracted_from=year_src,
-                    tags=tags,
-                    tag_version=tags_version,
-                    doc_type=doc_type,
-                    recommendations_list=recs,
-                    recs_version="recs_v1",
-                )
+        country_name, country_iso, regions_list = detect_country_region(
+            filename=filename, text=text[:2000]
+        )
+
+        update_metadata(
+            doc_id=filename,
+            source=source,
+            country_raw=country_name,
+            region_raw=None,
+            year=year,
+            year_extracted_from=year_src,
+            tags=tags,
+            tag_version=tags_version,
+            doc_type=doc_type,
+            file_type=file_type,
+            recommendations_list=recs,
+            recs_version="recs_v1",
+        )
 
     tags_summary.export(docs)
     tags_timeline.export()
     tags_timeline_region.export()
     tags_timeline_country.export()
+    logger.info(f"Pipeline complete for {source}. Exports in data/exports/.")
 
-    logger.info(f"Pipeline complete for {source}. Exports generated in data/exports/.")
+
+# -------------------------
+# URL Dict Mode
+# -------------------------
+def download_file(url, dest_path, logger):
+    try:
+        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+        r = requests.get(url, timeout=60)
+        r.raise_for_status()
+        with open(dest_path, "wb") as f:
+            f.write(r.content)
+        logger.info(f"Downloaded {url} -> {dest_path}")
+        return True
+    except Exception as e:
+        logger.error(f"Failed to download {url}: {e}")
+        return False
 
 
+def run_from_url_dicts(tags_version="latest", no_module_logs=False):
+    set_run_logfile("url_dicts_run", module_logs=not no_module_logs)
+    logger = get_logger("pipeline_runner")
+
+    for fname in os.listdir(URL_DICT_DIR):
+        if not (fname.startswith("urls_dict_") and fname.endswith(".json")):
+            continue
+        source = fname.replace("urls_dict_", "").replace(".json", "")
+        url_dict_file = os.path.join(URL_DICT_DIR, fname)
+        doc_type = DOC_TYPES.get(source, "Report")
+
+        logger.info(f"=== Processing {fname} ({source}) ===")
+        with open(url_dict_file, "r", encoding="utf-8") as f:
+            urls_dict = json.load(f)
+
+        raw_dir = os.path.join("data", "raw", source)
+        proc_dir = os.path.join("data", "processed", source)
+        tags_config = resolve_tags_config(tags_version)
+
+        docs = []
+        for name, url in urls_dict.items():
+            filename = os.path.basename(urlparse(url).path) or f"{name}.pdf"
+            raw_path = os.path.join(raw_dir, filename)
+
+            if not os.path.exists(raw_path):
+                ok = download_file(url, raw_path, logger)
+                if not ok:
+                    continue
+            else:
+                logger.info(f"Skipping (already exists): {raw_path}")
+
+            txt_path, file_type = convert_to_text(raw_path, proc_dir, logger)
+            if not txt_path:
+                continue
+
+            with open(txt_path, "r", encoding="utf-8") as f:
+                text = f.read()
+
+            tags = tagger.apply_tags(text, tags_config)
+            recs = recommendations.apply_recommendations(text, "configs/recs_v1.json")
+            docs.append({"id": filename, "tags": tags, "recs": recs})
+
+            year, year_src = extract_year(filename, txt_path, logger)
+
+            country_name, country_iso, regions_list = detect_country_region(
+                filename=filename, url_key=name, text=text[:2000]
+            )
+
+            update_metadata(
+                doc_id=filename,
+                source=source,
+                country_raw=country_name,
+                region_raw=None,
+                year=year,
+                year_extracted_from=year_src,
+                tags=tags,
+                tag_version=tags_version,
+                doc_type=doc_type,
+                file_type=file_type,
+                recommendations_list=recs,
+                recs_version="recs_v1",
+            )
+
+        tags_summary.export(docs)
+        tags_timeline.export()
+        tags_timeline_region.export()
+        tags_timeline_country.export()
+        logger.info(f"Finished processing {len(docs)} docs from {fname}")
+
+
+# -------------------------
+# CLI Entrypoint
+# -------------------------
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run pipeline")
     parser.add_argument("--source", default="au_policy", help="Source scraper to run")
@@ -280,10 +427,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "--countries-file", default=None, help="File with countries list (UPR only)"
     )
-
-    args = parser.parse_args()
-    run_pipeline(
-        source=args.source,
-        tags_version=args.tags_version,
-        no_module_logs=args.no_module_logs,
+    parser.add_argument(
+        "--mode", choices=["scraper", "urls"], default="scraper",
+        help="Pipeline mode: scraper (default) or urls (process url_dicts)"
     )
+    args = parser.parse_args()
+
+    if args.mode == "scraper":
+        run_pipeline(
+            source=args.source,
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+        )
+    else:
+        run_from_url_dicts(
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+        )
