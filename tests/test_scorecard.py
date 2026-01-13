@@ -173,6 +173,10 @@ class TestScorecardValidator:
         assert result["ok"] is True
         assert result["status_code"] in [200, 301, 302]
 
+    @pytest.mark.skipif(
+        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
+        reason="Network test skipped in CI/sandboxed environment",
+    )
     def test_validate_url_broken(self):
         """Test validating a URL that doesn't exist."""
         from processors.scorecard_validator import validate_url
@@ -181,6 +185,10 @@ class TestScorecardValidator:
         assert result["ok"] is False
         assert result["error"] is not None
 
+    @pytest.mark.skipif(
+        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
+        reason="Network test skipped in CI/sandboxed environment",
+    )
     def test_validate_url_timeout(self):
         """Test validating with very short timeout."""
         from processors.scorecard_validator import validate_url
