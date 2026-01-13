@@ -32,7 +32,7 @@ jobs:
             "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf" || true
           curl -L -o data/raw/au_policy/AU_Digital_Compact_2024.pdf \
             "https://au.int/sites/default/files/documents/44005-doc-AU_Digital_Compact_V4.pdf" || true
-          curl -L -o data/raw/au_policy/AU_Digtial_Transformation_Strategy_2020.pdf \
+          curl -L -o data/raw/au_policy/AU_Digital_Transformation_Strategy_2020.pdf \
             "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf" || true
           curl -L -o data/raw/au_policy/AU_Cybersecurity_Data_Protection_Strategy_2014.pdf \
             "https://dataprotection.org.gh/wp-content/uploads/2025/05/Malabo-Convention.pdf" || true
