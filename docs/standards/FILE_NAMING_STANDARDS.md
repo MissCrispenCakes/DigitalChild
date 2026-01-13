@@ -2,7 +2,7 @@
 
 Consistent file naming helps downstream processing and filtering.
 
----
+______________________________________________________________________
 
 ## General Rules
 
@@ -11,7 +11,7 @@ Consistent file naming helps downstream processing and filtering.
 - Use PascalCase or underscores for multi-word titles.
 - Avoid ambiguous suffixes like `final2`.
 
----
+______________________________________________________________________
 
 ## Examples
 
@@ -27,7 +27,7 @@ Consistent file naming helps downstream processing and filtering.
 - `Kenya report.doc`
 - `doc1.pdf`
 
----
+______________________________________________________________________
 
 ## Processing Notes
 

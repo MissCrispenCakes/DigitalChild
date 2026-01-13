@@ -3,7 +3,7 @@
 This document explains the format for configuration files that drive
 recommendations extraction from documents.
 
----
+______________________________________________________________________
 
 ## Purpose
 
@@ -15,7 +15,7 @@ Recommendations may be extracted using multiple strategies:
 
 Configs define which strategy to use and how to apply it.
 
----
+______________________________________________________________________
 
 ## Fields
 
@@ -24,7 +24,7 @@ Configs define which strategy to use and how to apply it.
 - `strategy`: method used (`regex`, `keywords`, `nlp`)
 - `notes`: optional description
 
----
+______________________________________________________________________
 
 ## Example (Regex Strategy)
 

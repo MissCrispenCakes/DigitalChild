@@ -35,12 +35,30 @@ from scrapers import (
     acerwc_sel,
     achpr_sel,
     au_policy_sel,
+    ohchr,
     ohchr_sel,
+    unicef,
     unicef_sel,
     upr_sel,
 )
+from utils.detectors import detect_country_region
 
-# Constants
+SCRAPER_MAP = {
+    "au_policy": (au_policy, "Africa/African_Union/text", "Policy"),
+    "ohchr": (ohchr, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr": (upr, "Global/UPR/text", "UPR"),
+    "unicef": (unicef, "Global/UNICEF/text", "Report"),
+    "acerwc": (acerwc, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr": (achpr, "Africa/ACHPR/text", "TreatyBodyReport"),
+    # Selenium variants point to selenium scrapers directly
+    "au_policy_sel": (au_policy_sel, "Africa/African_Union/text", "Policy"),
+    "ohchr_sel": (ohchr_sel, "Global/OHCHR/text", "TreatyBodyReport"),
+    "upr_sel": (upr_sel, "Global/UPR/text", "UPR"),
+    "unicef_sel": (unicef_sel, "Global/UNICEF/text", "Report"),
+    "acerwc_sel": (acerwc_sel, "Africa/ACERWC/text", "TreatyBodyReport"),
+    "achpr_sel": (achpr_sel, "Africa/ACHPR/text", "TreatyBodyReport"),
+}
+
 METADATA_FILE = "data/metadata/metadata.json"
 MAIN_TAGS_FILE = "configs/tags_main.json"
 URL_DICT_DIR = os.path.join("configs", "url_dict")
@@ -232,32 +250,16 @@ def resolve_tags_config(version):
     elif os.path.exists(version):  # direct file path
         return version
     else:
+        # Try treating it as a filename in configs/
+        config_path = os.path.join("configs", f"{version}.json")
+        if os.path.exists(config_path):
+            return config_path
         raise ValueError(f"Unknown tags version: {version}")
 
 
-# -------------------------
-# Scraper Map
-# -------------------------
-SCRAPER_MAP = {
-    "au_policy": (au_policy, "Africa/African_Union/text", "Policy"),
-    "ohchr": (ohchr, "Global/OHCHR/text", "TreatyBodyReport"),
-    "upr": (upr, "Global/UPR/text", "UPR"),
-    "unicef": (unicef, "Global/UNICEF/text", "Report"),
-    "acerwc": (acerwc, "Africa/ACERWC/text", "TreatyBodyReport"),
-    "achpr": (achpr, "Africa/ACHPR/text", "TreatyBodyReport"),
-    "au_policy_sel": (au_policy_sel, "Africa/African_Union/text", "Policy"),
-    "ohchr_sel": (ohchr_sel, "Global/OHCHR/text", "TreatyBodyReport"),
-    "upr_sel": (upr_sel, "Global/UPR/text", "UPR"),
-    "unicef_sel": (unicef_sel, "Global/UNICEF/text", "Report"),
-    "acerwc_sel": (acerwc_sel, "Africa/ACERWC/text", "TreatyBodyReport"),
-    "achpr_sel": (achpr_sel, "Africa/ACHPR/text", "TreatyBodyReport"),
-}
-
-
-# -------------------------
-# Scraper Mode
-# -------------------------
-def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False):
+def run_pipeline(
+    source="au_policy", tags_version="latest", no_module_logs=False, args=None
+):
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
 
@@ -271,12 +273,12 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
     proc_dir = os.path.join("data", "processed", proc_subdir)
 
     scrape_kwargs = {}
-    if args.base_url:
+    if args and args.base_url:
         scrape_kwargs["base_url"] = args.base_url
-    if args.countries_file:
+    if args and args.countries_file:
         with open(args.countries_file, "r", encoding="utf-8") as f:
             scrape_kwargs["countries"] = [line.strip() for line in f if line.strip()]
-    elif args.country:
+    elif args and args.country:
         scrape_kwargs["countries"] = [args.country]
 
     scraper.scrape(**scrape_kwargs)
@@ -432,15 +434,9 @@ if __name__ == "__main__":
         help="Pipeline mode: scraper (default) or urls (process url_dicts)"
     )
     args = parser.parse_args()
-
-    if args.mode == "scraper":
-        run_pipeline(
-            source=args.source,
-            tags_version=args.tags_version,
-            no_module_logs=args.no_module_logs,
-        )
-    else:
-        run_from_url_dicts(
-            tags_version=args.tags_version,
-            no_module_logs=args.no_module_logs,
-        )
+    run_pipeline(
+        source=args.source,
+        tags_version=args.tags_version,
+        no_module_logs=args.no_module_logs,
+        args=args,
+    )

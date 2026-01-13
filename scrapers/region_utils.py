@@ -69,7 +69,7 @@ def get_regions_for_country(iso_code: str):
     iso = iso_code.upper()
     matched = []
 
-    for region_code, entry in REGIONS.items():
+    for region_code, _entry in REGIONS.items():
         countries = get_countries_for_region(region_code)
         if iso in countries:
             matched.append(region_code)

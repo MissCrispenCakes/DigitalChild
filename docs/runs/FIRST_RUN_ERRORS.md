@@ -2,7 +2,7 @@
 
 This file documents common issues when running the pipeline for the first time.
 
----
+______________________________________________________________________
 
 ## 🟢 Missing Dependencies
 
@@ -13,7 +13,7 @@ This file documents common issues when running the pipeline for the first time.
 pip install -r requirements.txt
 ```
 
----
+______________________________________________________________________
 
 ## 🟢 Pandoc / PDF Generation
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 pip install reportlab
 ```
 
----
+______________________________________________________________________
 
 ## 🟢 Metadata Errors
 
@@ -36,7 +36,7 @@ pip install reportlab
 python init_project.py
 ```
 
----
+______________________________________________________________________
 
 ## 🟢 Logging Issues
 
@@ -47,7 +47,7 @@ python init_project.py
 python pipeline_runner.py --source au_policy
 ```
 
----
+______________________________________________________________________
 
 ## 🟢 Import Errors
 

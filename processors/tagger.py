@@ -13,11 +13,13 @@ from processors.logger import get_logger
 logger = get_logger("tagger")
 
 
-def load_tags(config_file="../configs/tags_v1.json"):
+def load_tags(config_file=None):
     """
     Load tag rules from a JSON config file.
     Returns dict with { "rules": {tag: [patterns...] } }
     """
+    if config_file is None:
+        config_file = "configs/tags_v1.json"
     try:
         with open(config_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -26,11 +28,13 @@ def load_tags(config_file="../configs/tags_v1.json"):
         return {"rules": {}}
 
 
-def apply_tags(text, config_file="../configs/tags_v1.json"):
+def apply_tags(text, config_file=None):
     """
     Apply regex-based tag rules to text.
     Returns a list of tags matched.
     """
+    if config_file is None:
+        config_file = "configs/tags_v1.json"
     tags = []
     config = load_tags(config_file)
     for tag, patterns in config.get("rules", {}).items():
