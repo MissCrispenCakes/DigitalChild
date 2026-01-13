@@ -224,3 +224,15 @@ def export_scorecard_summary(filepath: str = None) -> str:
     """Export scorecard summary CSV."""
     exporter = ScorecardExporter()
     return exporter.export_summary_csv(filepath)
+
+
+def export_summary_csv(filepath: str = None) -> str:
+    """Export scorecard summary CSV (wrapper for tests)."""
+    exporter = ScorecardExporter()
+    return exporter.export_summary_csv(filepath)
+
+
+def export_sources_csv(filepath: str = None) -> str:
+    """Export scorecard sources CSV (wrapper for tests)."""
+    exporter = ScorecardExporter()
+    return exporter.export_sources_csv(filepath)

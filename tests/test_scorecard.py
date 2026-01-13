@@ -6,6 +6,8 @@ Tests for scorecard loading, validation, enrichment, diff checking, and export.
 
 import os
 
+import pytest
+
 # Test imports
 from processors.scorecard import (
     INDICATOR_COLUMNS,
@@ -107,7 +109,7 @@ class TestScorecardEnricher:
         enriched = enrich_document(doc)
 
         assert "scorecard" in enriched
-        assert enriched["scorecard"]["matched_country"] == "Albania"
+        assert enriched["scorecard"]["country_matched"] == "Albania"
 
     def test_enrich_document_without_country(self):
         """Test enriching a document without a country field."""
@@ -159,6 +161,10 @@ class TestScorecardExport:
 class TestScorecardValidator:
     """Tests for scorecard_validator.py module."""
 
+    @pytest.mark.skipif(
+        "CI" in os.environ or os.environ.get("SKIP_NETWORK_TESTS"),
+        reason="Network test skipped in CI/sandboxed environment",
+    )
     def test_validate_url_success(self):
         """Test validating a URL that works."""
         from processors.scorecard_validator import validate_url
