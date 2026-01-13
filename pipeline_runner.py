@@ -11,35 +11,14 @@ import os
 import re
 from datetime import datetime
 
-from processors import (
-    json_normalizer,
-    pdf_to_text,
-    recommendations,
-    tagger,
-    tags_summary,
-    tags_timeline,
-    tags_timeline_country,
-    tags_timeline_region,
-)
+from processors import (json_normalizer, pdf_to_text, recommendations, tagger,
+                        tags_summary, tags_timeline, tags_timeline_country,
+                        tags_timeline_region)
 from processors.logger import get_logger, set_run_logfile
-from scrapers import (
-    acerwc,
-    acerwc_sel,
-    achpr,
-    achpr_sel,
-    au_policy,
-    au_policy_sel,
-    country_utils,
-    ohchr,
-    ohchr_sel,
-    region_utils,
-    selenium_setup,
-    unicef,
-    unicef_sel,
-    upr,
-    upr_sel,
-    utils,
-)
+from scrapers import (acerwc, acerwc_sel, achpr, achpr_sel, au_policy,
+                      au_policy_sel, country_utils, ohchr, ohchr_sel,
+                      region_utils, selenium_setup, unicef, unicef_sel, upr,
+                      upr_sel, utils)
 from utils.detectors import detect_country_region
 
 SCRAPER_MAP = {
@@ -190,7 +169,9 @@ def resolve_tags_config(version):
         raise ValueError(f"Unknown tags version: {version}")
 
 
-def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False, args=None):
+def run_pipeline(
+    source="au_policy", tags_version="latest", no_module_logs=False, args=None
+):
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
 
