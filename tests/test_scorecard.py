@@ -192,16 +192,22 @@ class TestScorecardValidator:
 
     @patch("processors.scorecard_validator.requests.head")
     def test_validate_url_timeout(self, mock_head):
-        """Test validating with very short timeout."""
+        """Test validating with timeout."""
         from processors.scorecard_validator import validate_url
         import requests
 
-        # Mock timeout error
+        # Mock timeout error to test timeout handling (will retry twice)
         mock_head.side_effect = requests.exceptions.Timeout("Request timed out")
 
-        result = validate_url("https://www.google.com", timeout=0.001)
+        result = validate_url("https://www.example.com", timeout=0.001)
         assert "url" in result
         assert result["error"] == "Timeout"
+        assert result["ok"] is False
+        
+        # Verify timeout was passed to requests.head (called twice due to retry logic)
+        assert mock_head.call_count == 2
+        for call in mock_head.call_args_list:
+            assert call[1]["timeout"] == 0.001
 
 
 class TestScorecardDiff:
