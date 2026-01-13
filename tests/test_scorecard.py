@@ -138,11 +138,12 @@ class TestScorecardExport:
 
     def test_export_summary_csv(self, tmp_path):
         """Test exporting scorecard summary to CSV."""
-        from processors.scorecard_export import export_summary_csv
-
+        from processors.scorecard_export import ScorecardExporter
+        
         filepath = str(tmp_path / "test_summary.csv")
-        result = export_summary_csv(filepath)
-
+        exporter = ScorecardExporter()
+        result = exporter.export_summary_csv(filepath)
+        
         assert os.path.exists(result)
         # Check file has content
         with open(result, "r") as f:
@@ -151,11 +152,17 @@ class TestScorecardExport:
 
     def test_export_sources_csv(self, tmp_path):
         """Test exporting source URLs to CSV."""
-        from processors.scorecard_export import export_sources_csv
-
+        from processors.scorecard_export import ScorecardExporter
+        
         filepath = str(tmp_path / "test_sources.csv")
-        result = export_sources_csv(filepath)
-
+        exporter = ScorecardExporter()
+        result = exporter.export_sources_csv(filepath)
+        
+        filepath = str(tmp_path / "test_sources.csv")
+        exporter = ScorecardExporter()
+        result = exporter.export_sources_csv(filepath)
+        
+>>>>>>> temp/add-scorecard
         assert os.path.exists(result)
 
 

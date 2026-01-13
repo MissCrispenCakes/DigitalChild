@@ -57,7 +57,7 @@ def enrich_document(doc: Dict[str, Any]) -> Dict[str, Any]:
 
     # Add scorecard data
     doc["scorecard"] = {
-        "country_matched": country,
+        "matched_country": country,
         "enriched_at": datetime.now(timezone.utc).isoformat(),
         "indicators": indicators,
     }
@@ -95,7 +95,7 @@ def enrich_all_metadata(save: bool = True) -> Dict[str, Any]:
         indicators = get_all_indicators(country)
         if indicators:
             doc["scorecard"] = {
-                "country_matched": country,
+                "matched_country": country,
                 "enriched_at": datetime.now(timezone.utc).isoformat(),
                 "indicators": indicators,
             }
