@@ -84,6 +84,11 @@ def compute_content_hash(content: str) -> str:
     return hashlib.md5(content.encode("utf-8")).hexdigest()
 
 
+def hash_content(content: str) -> str:
+    """Alias for compute_content_hash (for test compatibility)."""
+    return compute_content_hash(content)
+
+
 def load_cached_hash(source_key: str) -> Optional[str]:
     """Load previously cached content hash."""
     cache_file = os.path.join(CACHE_DIR, f"{source_key}.json")
