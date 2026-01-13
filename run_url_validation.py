@@ -9,9 +9,9 @@ print('This will take 5-10 minutes. Running in parallel with 10 workers...\n')
 
 summary = validate_scorecard_urls(save=True)
 
-print(f'\n✓ Validation complete!')
+print('\n✓ Validation complete!')
 print(f'  Total URLs: {summary["total"]}')
 print(f'  Working: {summary["ok"]} ({summary["ok"]/summary["total"]*100:.1f}%)')
 print(f'  Broken: {summary["broken"]} ({summary["broken"]/summary["total"]*100:.1f}%)')
 print(f'  Redirected: {summary["redirected"]} ({summary["redirected"]/summary["total"]*100:.1f}%)')
-print(f'\nResults saved to: data/exports/scorecard_url_validation.json')
+print('\nResults saved to: data/exports/scorecard_url_validation.json')

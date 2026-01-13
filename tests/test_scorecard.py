@@ -7,8 +7,6 @@ Tests for scorecard loading, validation, enrichment, diff checking, and export.
 import os
 from unittest.mock import Mock, patch
 
-import pytest
-
 # Test imports
 from processors.scorecard import (
     INDICATOR_COLUMNS,

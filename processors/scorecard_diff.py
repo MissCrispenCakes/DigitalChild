@@ -55,9 +55,9 @@ USER_AGENT = "Mozilla/5.0 (compatible; DigitalChild-DiffChecker/1.0)"
 
 
 def hash_content(content: str) -> str:
-    \"\"\"Generate hash of content for change detection.\"\"\"
+    """Generate hash of content for change detection."""
     # Normalize whitespace and lowercase
-    normalized = re.sub(r\"\\s+\", \"\", content.lower())
+    normalized = re.sub(r"\s+", "", content.lower())
     return hashlib.sha256(normalized.encode()).hexdigest()[:16]
 
 
@@ -89,11 +89,6 @@ def fetch_page_content(url: str) -> Optional[str]:
 def compute_content_hash(content: str) -> str:
     \"\"\"Compute MD5 hash of content for change detection.\"\"\"
     return hashlib.md5(content.encode(\"utf-8\")).hexdigest()
-
-
-def hash_content(content: str) -> str:
-    """Alias for compute_content_hash (for test compatibility)."""
-    return compute_content_hash(content)
 
 
 def load_cached_hash(source_key: str) -> Optional[str]:
