@@ -2,10 +2,11 @@ import glob
 import os
 import subprocess
 import sys
+
 import pytest
 
-# ✅ logs now go into logs/tests/ under pytest
-LOG_DIR = os.path.join("logs", "tests")
+# ✅ Pipeline runs as subprocess, so logs go to main logs/ directory
+LOG_DIR = "logs"
 
 
 @pytest.mark.parametrize(
