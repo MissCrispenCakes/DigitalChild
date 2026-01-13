@@ -9,12 +9,13 @@ import argparse
 import json
 import os
 import re
-import requests
-from urllib.parse import urlparse
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
-from utils.detectors import detect_country_region
+import requests
+
 from processors import (
+    json_normalizer,
     pdf_to_text,
     recommendations,
     tagger,
@@ -24,21 +25,20 @@ from processors import (
     tags_timeline_region,
 )
 from processors.logger import get_logger, set_run_logfile
-from processors import json_normalizer
+from processors.scorecard_enricher import enrich_document
+from processors.scorecard_export import export_scorecard
 from scrapers import (
     acerwc,
-    achpr,
-    au_policy,
-    ohchr,
-    unicef,
-    upr,
     acerwc_sel,
+    achpr,
     achpr_sel,
+    au_policy,
     au_policy_sel,
     ohchr,
     ohchr_sel,
     unicef,
     unicef_sel,
+    upr,
     upr_sel,
 )
 from utils.detectors import detect_country_region
@@ -93,10 +93,12 @@ def convert_to_text(raw_path, proc_dir, logger):
             file_type = "PDF"
         elif ext in (".doc", ".docx"):
             from processors import docx_to_text
+
             txt_path = docx_to_text.convert(raw_path, proc_dir)
             file_type = "Word"
         elif ext in (".htm", ".html"):
             from processors import html_to_text
+
             txt_path = html_to_text.convert(raw_path, proc_dir)
             file_type = "HTML"
         else:
@@ -187,7 +189,11 @@ def update_metadata(
         )
     if recommendations_list is not None:
         existing["recommendations_history"].append(
-            {"recommendations": recommendations_list, "version": recs_version, "timestamp": now}
+            {
+                "recommendations": recommendations_list,
+                "version": recs_version,
+                "timestamp": now,
+            }
         )
 
     # Ensure json_normalizer sees normalized fields
@@ -320,10 +326,25 @@ def run_pipeline(
             recs_version="recs_v1",
         )
 
+    # Enrich metadata with scorecard indicators
+    logger.info("Enriching documents with scorecard data...")
+    metadata = load_metadata()
+    for doc in metadata.get("documents", []):
+        enrich_document(doc)
+    save_metadata(metadata)
+
     tags_summary.export(docs)
     tags_timeline.export()
     tags_timeline_region.export()
     tags_timeline_country.export()
+
+    # Export scorecard summary
+    try:
+        export_scorecard()
+        logger.info("Scorecard exports complete.")
+    except Exception as e:
+        logger.warning(f"Scorecard export failed: {e}")
+
     logger.info(f"Pipeline complete for {source}. Exports in data/exports/.")
 
 
@@ -413,6 +434,20 @@ def run_from_url_dicts(tags_version="latest", no_module_logs=False):
         tags_timeline_country.export()
         logger.info(f"Finished processing {len(docs)} docs from {fname}")
 
+    # Enrich all metadata with scorecard indicators
+    logger.info("Enriching documents with scorecard data...")
+    metadata = load_metadata()
+    for doc in metadata.get("documents", []):
+        enrich_document(doc)
+    save_metadata(metadata)
+
+    # Export scorecard summary
+    try:
+        export_scorecard()
+        logger.info("Scorecard exports complete.")
+    except Exception as e:
+        logger.warning(f"Scorecard export failed: {e}")
+
 
 # -------------------------
 # CLI Entrypoint
@@ -430,13 +465,58 @@ if __name__ == "__main__":
         "--countries-file", default=None, help="File with countries list (UPR only)"
     )
     parser.add_argument(
-        "--mode", choices=["scraper", "urls"], default="scraper",
-        help="Pipeline mode: scraper (default) or urls (process url_dicts)"
+        "--mode",
+        choices=["scraper", "urls", "scorecard"],
+        default="scraper",
+        help="Pipeline mode: scraper (default), urls (process url_dicts), or scorecard (enrich/export/validate)",
+    )
+    parser.add_argument(
+        "--scorecard-action",
+        choices=["enrich", "export", "validate", "diff", "all"],
+        default="all",
+        help="Scorecard action (used with --mode scorecard)",
     )
     args = parser.parse_args()
-    run_pipeline(
-        source=args.source,
-        tags_version=args.tags_version,
-        no_module_logs=args.no_module_logs,
-        args=args,
-    )
+
+    if args.mode == "scorecard":
+        # Scorecard-only mode
+        from processors.scorecard_diff import check_for_updates
+        from processors.scorecard_enricher import enrich_metadata
+        from processors.scorecard_validator import validate_scorecard_urls
+
+        set_run_logfile("scorecard_run", module_logs=not args.no_module_logs)
+        logger = get_logger("pipeline_runner")
+
+        if args.scorecard_action in ("enrich", "all"):
+            logger.info("Enriching metadata with scorecard...")
+            stats = enrich_metadata()
+            logger.info(f"Enrichment stats: {stats}")
+
+        if args.scorecard_action in ("export", "all"):
+            logger.info("Exporting scorecard...")
+            exports = export_scorecard()
+            logger.info(f"Scorecard exports: {exports}")
+
+        if args.scorecard_action in ("validate", "all"):
+            logger.info("Validating scorecard URLs...")
+            summary = validate_scorecard_urls()
+            logger.info(f"URL validation: {summary}")
+
+        if args.scorecard_action in ("diff", "all"):
+            logger.info("Checking for scorecard source updates...")
+            summary = check_for_updates()
+            logger.info(f"Diff check: {summary}")
+
+        logger.info("Scorecard operations complete.")
+    elif args.mode == "urls":
+        run_from_url_dicts(
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+        )
+    else:
+        run_pipeline(
+            source=args.source,
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+            args=args,
+        )
