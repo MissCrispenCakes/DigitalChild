@@ -40,10 +40,14 @@ def normalize_document(doc):
       - country_raw, country, country_iso, country_display
       - region_raw, region, regions_memberships
     """
-    if "region" in doc:
+    if "region_raw" in doc:
+        doc["region_raw"], doc["region"] = normalize_region(doc["region_raw"])
+    elif "region" in doc:
         doc["region_raw"], doc["region"] = normalize_region(doc["region"])
 
-    if "country" in doc:
+    if "country_raw" in doc:
+        c_raw, country_norm, iso = normalize_country(doc["country_raw"])
+    elif "country" in doc:
         c_raw, country_norm, iso = normalize_country(doc["country"])
         doc["country_raw"] = c_raw
         doc["country"] = country_norm
