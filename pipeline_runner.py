@@ -25,6 +25,8 @@ from processors import (
 )
 from processors.logger import get_logger, set_run_logfile
 from processors import json_normalizer
+from processors.scorecard_enricher import enrich_document
+from processors.scorecard_export import export_scorecard
 from scrapers import (
     acerwc,
     achpr,
@@ -320,10 +322,25 @@ def run_pipeline(
             recs_version="recs_v1",
         )
 
+    # Enrich metadata with scorecard indicators
+    logger.info("Enriching documents with scorecard data...")
+    metadata = load_metadata()
+    for doc in metadata.get("documents", []):
+        enrich_document(doc)
+    save_metadata(metadata)
+
     tags_summary.export(docs)
     tags_timeline.export()
     tags_timeline_region.export()
     tags_timeline_country.export()
+    
+    # Export scorecard summary
+    try:
+        export_scorecard()
+        logger.info("Scorecard exports complete.")
+    except Exception as e:
+        logger.warning(f"Scorecard export failed: {e}")
+    
     logger.info(f"Pipeline complete for {source}. Exports in data/exports/.")
 
 
@@ -413,6 +430,20 @@ def run_from_url_dicts(tags_version="latest", no_module_logs=False):
         tags_timeline_country.export()
         logger.info(f"Finished processing {len(docs)} docs from {fname}")
 
+    # Enrich all metadata with scorecard indicators
+    logger.info("Enriching documents with scorecard data...")
+    metadata = load_metadata()
+    for doc in metadata.get("documents", []):
+        enrich_document(doc)
+    save_metadata(metadata)
+
+    # Export scorecard summary
+    try:
+        export_scorecard()
+        logger.info("Scorecard exports complete.")
+    except Exception as e:
+        logger.warning(f"Scorecard export failed: {e}")
+
 
 # -------------------------
 # CLI Entrypoint
@@ -430,13 +461,55 @@ if __name__ == "__main__":
         "--countries-file", default=None, help="File with countries list (UPR only)"
     )
     parser.add_argument(
-        "--mode", choices=["scraper", "urls"], default="scraper",
-        help="Pipeline mode: scraper (default) or urls (process url_dicts)"
+        "--mode", choices=["scraper", "urls", "scorecard"], default="scraper",
+        help="Pipeline mode: scraper (default), urls (process url_dicts), or scorecard (enrich/export/validate)"
+    )
+    parser.add_argument(
+        "--scorecard-action", choices=["enrich", "export", "validate", "diff", "all"],
+        default="all", help="Scorecard action (used with --mode scorecard)"
     )
     args = parser.parse_args()
-    run_pipeline(
-        source=args.source,
-        tags_version=args.tags_version,
-        no_module_logs=args.no_module_logs,
-        args=args,
-    )
+    
+    if args.mode == "scorecard":
+        # Scorecard-only mode
+        from processors.scorecard_enricher import enrich_metadata
+        from processors.scorecard_export import export_scorecard
+        from processors.scorecard_validator import validate_scorecard_urls
+        from processors.scorecard_diff import check_for_updates
+        
+        set_run_logfile("scorecard_run", module_logs=not args.no_module_logs)
+        logger = get_logger("pipeline_runner")
+        
+        if args.scorecard_action in ("enrich", "all"):
+            logger.info("Enriching metadata with scorecard...")
+            stats = enrich_metadata()
+            logger.info(f"Enrichment stats: {stats}")
+        
+        if args.scorecard_action in ("export", "all"):
+            logger.info("Exporting scorecard...")
+            exports = export_scorecard()
+            logger.info(f"Scorecard exports: {exports}")
+        
+        if args.scorecard_action in ("validate", "all"):
+            logger.info("Validating scorecard URLs...")
+            summary = validate_scorecard_urls()
+            logger.info(f"URL validation: {summary}")
+        
+        if args.scorecard_action in ("diff", "all"):
+            logger.info("Checking for scorecard source updates...")
+            summary = check_for_updates()
+            logger.info(f"Diff check: {summary}")
+        
+        logger.info("Scorecard operations complete.")
+    elif args.mode == "urls":
+        run_from_url_dicts(
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+        )
+    else:
+        run_pipeline(
+            source=args.source,
+            tags_version=args.tags_version,
+            no_module_logs=args.no_module_logs,
+            args=args,
+        )
