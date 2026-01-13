@@ -109,7 +109,7 @@ class TestScorecardEnricher:
         enriched = enrich_document(doc)
         
         assert "scorecard" in enriched
-        assert enriched["scorecard"]["matched_country"] == "Albania"
+        assert enriched["scorecard"]["country_matched"] == "Albania"
 
     def test_enrich_document_without_country(self):
         """Test enriching a document without a country field."""
@@ -137,10 +137,11 @@ class TestScorecardExport:
 
     def test_export_summary_csv(self, tmp_path):
         """Test exporting scorecard summary to CSV."""
-        from processors.scorecard_export import export_summary_csv
+        from processors.scorecard_export import ScorecardExporter
         
         filepath = str(tmp_path / "test_summary.csv")
-        result = export_summary_csv(filepath)
+        exporter = ScorecardExporter()
+        result = exporter.export_summary_csv(filepath)
         
         assert os.path.exists(result)
         # Check file has content
@@ -150,10 +151,11 @@ class TestScorecardExport:
 
     def test_export_sources_csv(self, tmp_path):
         """Test exporting source URLs to CSV."""
-        from processors.scorecard_export import export_sources_csv
+        from processors.scorecard_export import ScorecardExporter
         
         filepath = str(tmp_path / "test_sources.csv")
-        result = export_sources_csv(filepath)
+        exporter = ScorecardExporter()
+        result = exporter.export_sources_csv(filepath)
         
         assert os.path.exists(result)
 
