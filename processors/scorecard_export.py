@@ -4,19 +4,18 @@ Scorecard Export
 Export scorecard data to CSV format for analysis and visualization.
 """
 
-import os
 import csv
-from datetime import datetime, timezone
-from typing import Dict, List, Optional
+import os
+from typing import Dict
 
 import pandas as pd
 
-from processors.scorecard import (
-    load_scorecard,
-    extract_all_source_urls,
-    INDICATOR_COLUMNS,
-)
 from processors.logger import get_logger
+from processors.scorecard import (
+    INDICATOR_COLUMNS,
+    extract_all_source_urls,
+    load_scorecard,
+)
 
 EXPORT_DIR = os.path.join("data", "exports")
 
@@ -88,11 +87,19 @@ class ScorecardExporter:
         if indicator not in INDICATOR_COLS:
             raise ValueError(f"Unknown indicator: {indicator}")
 
-        filepath = filepath or os.path.join(EXPORT_DIR, f"scorecard_{indicator.lower()}.csv")
+        filepath = filepath or os.path.join(
+            EXPORT_DIR, f"scorecard_{indicator.lower()}.csv"
+        )
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
         df = self.to_dataframe()
-        cols = ["Country", "Region - Broad", "Region - Specific", indicator, f"{indicator}_Source"]
+        cols = [
+            "Country",
+            "Region - Broad",
+            "Region - Specific",
+            indicator,
+            f"{indicator}_Source",
+        ]
         export_df = df[[c for c in cols if c in df.columns]].copy()
 
         export_df.to_csv(filepath, index=False, encoding="utf-8")
@@ -103,15 +110,16 @@ class ScorecardExporter:
         """
         Export scorecard for specific region.
         """
-        filepath = filepath or os.path.join(EXPORT_DIR, f"scorecard_{region.lower().replace(' ', '_')}.csv")
+        filepath = filepath or os.path.join(
+            EXPORT_DIR, f"scorecard_{region.lower().replace(' ', '_')}.csv"
+        )
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
         df = self.to_dataframe()
 
         # Filter by region (broad or specific)
-        mask = (
-            (df["Region - Broad"].str.lower() == region.lower()) |
-            (df["Region - Specific"].str.lower() == region.lower())
+        mask = (df["Region - Broad"].str.lower() == region.lower()) | (
+            df["Region - Specific"].str.lower() == region.lower()
         )
         export_df = df[mask].copy()
 
@@ -123,7 +131,9 @@ class ScorecardExporter:
         export_df = export_df[[c for c in cols if c in df.columns]]
 
         export_df.to_csv(filepath, index=False, encoding="utf-8")
-        self.logger.info(f"Exported {len(export_df)} countries for region {region} to {filepath}")
+        self.logger.info(
+            f"Exported {len(export_df)} countries for region {region} to {filepath}"
+        )
         return filepath
 
     def export_indicator_counts(self, filepath: str = None) -> str:
@@ -131,7 +141,9 @@ class ScorecardExporter:
         Export counts/distribution for each indicator.
         Useful for charts and visualization.
         """
-        filepath = filepath or os.path.join(EXPORT_DIR, "scorecard_indicator_counts.csv")
+        filepath = filepath or os.path.join(
+            EXPORT_DIR, "scorecard_indicator_counts.csv"
+        )
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
         df = self.to_dataframe()
@@ -146,11 +158,13 @@ class ScorecardExporter:
             counts = values.value_counts().to_dict()
 
             for status, count in counts.items():
-                rows.append({
-                    "indicator": indicator,
-                    "status": status,
-                    "count": count,
-                })
+                rows.append(
+                    {
+                        "indicator": indicator,
+                        "status": status,
+                        "count": count,
+                    }
+                )
 
         result_df = pd.DataFrame(rows)
         result_df.to_csv(filepath, index=False, encoding="utf-8")
@@ -164,9 +178,20 @@ class ScorecardExporter:
         value = str(value).strip()
         # Common prefixes
         prefixes = [
-            "Legal", "Criminalized", "Partial", "None", "Yes", "No",
-            "In force", "Draft", "Independent", "Moderate", "ID mandatory",
-            "Biometric mandatory", "DPA exists", "No DPA",
+            "Legal",
+            "Criminalized",
+            "Partial",
+            "None",
+            "Yes",
+            "No",
+            "In force",
+            "Draft",
+            "Independent",
+            "Moderate",
+            "ID mandatory",
+            "Biometric mandatory",
+            "DPA exists",
+            "No DPA",
         ]
         for prefix in prefixes:
             if value.lower().startswith(prefix.lower()):

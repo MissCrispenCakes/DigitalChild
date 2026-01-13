@@ -2,9 +2,7 @@
   "editor.experimentalGpuAcceleration": "off",
   "terminal.integrated.gpuAcceleration": "on",
   "python-envs.defaultEnvManager": "ms-python.python:system",
-  "python-envs.pythonProjects": []
-  ,
-  // Force workspace-level appearance to Codespaces defaults
+  "python-envs.pythonProjects": [],
   "workbench.colorTheme": "Default Dark+",
   "workbench.preferredDarkColorTheme": "Default Dark+",
   "terminal.integrated.fontFamily": "",
