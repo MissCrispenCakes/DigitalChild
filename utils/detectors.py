@@ -4,9 +4,10 @@ Detectors
 Helpers to infer country and region codes from filenames, URLs, or text content.
 """
 
+import json
 import os
 import re
-import json
+
 from scrapers import country_utils, region_utils
 
 # Load country names and ISO2 codes
@@ -14,6 +15,7 @@ COUNTRY_FILE = os.path.join("configs", "filters", "countries", "countries_iso2.j
 with open(COUNTRY_FILE, "r", encoding="utf-8") as f:
     ISO_MAP = json.load(f)
 ISO_LOWER = {k.lower(): v for k, v in ISO_MAP.items()}
+
 
 def detect_country_region(filename=None, url_key=None, text=None):
     """

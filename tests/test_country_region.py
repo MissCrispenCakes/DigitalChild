@@ -1,7 +1,7 @@
 import pytest
 
-from scrapers import country_utils, region_utils
 from processors import json_normalizer
+from scrapers import country_utils, region_utils
 
 
 @pytest.mark.parametrize(

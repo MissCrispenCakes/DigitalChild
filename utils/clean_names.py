@@ -1,4 +1,6 @@
-import os, re, json
+import json
+import os
+import re
 
 # Input files
 input_files = {
@@ -11,15 +13,28 @@ input_files = {
 }
 
 EXCLUDE_PATTERNS = [
-    "facebook.com", "twitter.com", "linkedin.com", "instagram.com", "youtube.com",
-    "donate", "about", "contact", "careers", "privacy", "terms", "javascript:void", "#"
+    "facebook.com",
+    "twitter.com",
+    "linkedin.com",
+    "instagram.com",
+    "youtube.com",
+    "donate",
+    "about",
+    "contact",
+    "careers",
+    "privacy",
+    "terms",
+    "javascript:void",
+    "#",
 ]
+
 
 def slugify(text):
     text = text.lower()
     text = re.sub(r"[^a-z0-9]+", "_", text)
     text = text.strip("_")
     return text
+
 
 def build_url_dict(label, filepath):
     urls_dict = {}
@@ -31,13 +46,23 @@ def build_url_dict(label, filepath):
             # Extract only the URL part (strip pre-text like "[no text] → ...")
             url = None
             if "http" in line:
-                url = line[line.find("http"):].strip()
+                url = line[line.find("http") :].strip()
             if not url:
                 continue
             if any(p in url for p in EXCLUDE_PATTERNS):
                 continue
             # Try to build key from any pre-text before URL
-            pre_text = line[:line.find("http")].strip(" -→\u2192") if "http" in line else ""
+            if "http" in line:
+                pre_text = (
+                    line[: line.find("http")]
+                    .strip()
+                    .strip("-")
+                    .strip("→")
+                    .strip("\u2192")
+                    .strip()
+                )
+            else:
+                pre_text = ""
             key_base = None
             if pre_text and not pre_text.lower().startswith("[no text]"):
                 key_base = slugify(pre_text)
@@ -53,6 +78,7 @@ def build_url_dict(label, filepath):
                 key = f"{key}_{i}"
             urls_dict[key] = url
     return urls_dict
+
 
 # Build dicts and save them
 output_files = {}
