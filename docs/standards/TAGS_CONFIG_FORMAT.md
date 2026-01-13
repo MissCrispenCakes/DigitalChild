@@ -2,7 +2,7 @@
 
 This document explains how tag configuration files (e.g., tags_v1.json, tags_v2.json) are structured.
 
----
+______________________________________________________________________
 
 ## Purpose
 
@@ -10,13 +10,13 @@ This document explains how tag configuration files (e.g., tags_v1.json, tags_v2.
 - Each version expands or refines the rules.
 - Allows comparison between versions for research purposes.
 
----
+______________________________________________________________________
 
 ## Fields
 
 - `rules`: dictionary mapping tag name → list of regex/keyword patterns
 
----
+______________________________________________________________________
 
 ## Example
 

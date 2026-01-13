@@ -2,7 +2,7 @@
 
 This document explains how to interpret tag summary exports.
 
----
+______________________________________________________________________
 
 ## File Format
 
@@ -11,14 +11,14 @@ This document explains how to interpret tag summary exports.
   - `count` → number of documents matching
   - `percentage_of_documents` → % of documents with this tag
 
----
+______________________________________________________________________
 
 ## Conventions
 
 - Counts are based on unique documents, not number of mentions.
 - Percentages are relative to the number of processed documents.
 
----
+______________________________________________________________________
 
 ## Example
 
@@ -30,7 +30,7 @@ AI,2,66.67
 Privacy,1,33.33
 ```
 
----
+______________________________________________________________________
 
 ## Footer
 
