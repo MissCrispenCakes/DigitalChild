@@ -7,12 +7,12 @@ lookup functions for enriching metadata with scorecard indicators.
 
 import os
 import re
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
 import pandas as pd
 
-from scrapers.country_utils import normalize_country
 from processors.logger import get_logger
+from scrapers.country_utils import normalize_country
 
 SCORECARD_FILE = os.path.join(os.path.dirname(__file__), "..", "scorecard_main.xlsx")
 
@@ -39,36 +39,36 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
     """
     Load scorecard Excel file into a DataFrame.
     Caches result for repeated calls.
-    
+
     Args:
         filepath: Path to scorecard Excel file (default: scorecard_main.xlsx)
         force_reload: Force reload from disk even if cached
-        
+
     Returns:
         DataFrame with scorecard data
     """
     global _scorecard_cache
-    
+
     logger = get_logger("scorecard")
     filepath = filepath or SCORECARD_FILE
-    
+
     if _scorecard_cache is not None and not force_reload:
         return _scorecard_cache
-    
+
     if not os.path.exists(filepath):
         logger.error(f"Scorecard file not found: {filepath}")
         raise FileNotFoundError(f"Scorecard file not found: {filepath}")
-    
+
     logger.info(f"Loading scorecard from {filepath}")
     df = pd.read_excel(filepath, sheet_name="Sheet1")
-    
+
     # Clean column names
     df.columns = df.columns.str.strip()
-    
+
     # Drop duplicate RowNumber column if present
     if "RowNumber.1" in df.columns:
         df = df.drop(columns=["RowNumber.1"])
-    
+
     # Normalize country names
     df["Country_Normalized"] = df["Country"].apply(
         lambda x: normalize_country(str(x))[1] if pd.notna(x) else None
@@ -76,10 +76,10 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
     df["Country_ISO"] = df["Country"].apply(
         lambda x: normalize_country(str(x))[2] if pd.notna(x) else None
     )
-    
+
     _scorecard_cache = df
     _build_country_index(df)
-    
+
     logger.info(f"Loaded {len(df)} countries from scorecard")
     return df
 
@@ -88,18 +88,18 @@ def _build_country_index(df: pd.DataFrame) -> None:
     """Build lookup index by normalized country name and ISO code."""
     global _scorecard_by_country
     _scorecard_by_country = {}
-    
+
     for _, row in df.iterrows():
         record = row.to_dict()
-        
+
         # Index by original name (lowercase)
         if pd.notna(row["Country"]):
             _scorecard_by_country[row["Country"].lower()] = record
-        
+
         # Index by normalized name (lowercase)
         if pd.notna(row.get("Country_Normalized")):
             _scorecard_by_country[row["Country_Normalized"].lower()] = record
-        
+
         # Index by ISO code
         if pd.notna(row.get("Country_ISO")):
             _scorecard_by_country[row["Country_ISO"].lower()] = record
@@ -108,19 +108,19 @@ def _build_country_index(df: pd.DataFrame) -> None:
 def get_country_scorecard(country: str) -> Optional[Dict[str, Any]]:
     """
     Look up scorecard data for a country.
-    
+
     Args:
         country: Country name, normalized name, or ISO code
-        
+
     Returns:
         Dictionary with all scorecard fields, or None if not found
     """
     if not _scorecard_by_country:
         load_scorecard()
-    
+
     if not country:
         return None
-    
+
     key = country.lower().strip()
     return _scorecard_by_country.get(key)
 
@@ -128,18 +128,18 @@ def get_country_scorecard(country: str) -> Optional[Dict[str, Any]]:
 def get_indicator(country: str, indicator: str) -> Optional[Dict[str, str]]:
     """
     Get a specific indicator for a country.
-    
+
     Args:
         country: Country name or ISO code
         indicator: Indicator name (e.g., "AI_Policy_Status")
-        
+
     Returns:
         Dict with 'value' and 'source', or None
     """
     record = get_country_scorecard(country)
     if not record:
         return None
-    
+
     source_col = f"{indicator}_Source"
     if indicator in record:
         return {
@@ -152,17 +152,17 @@ def get_indicator(country: str, indicator: str) -> Optional[Dict[str, str]]:
 def get_all_indicators(country: str) -> Optional[Dict[str, Dict[str, str]]]:
     """
     Get all indicators for a country.
-    
+
     Args:
         country: Country name or ISO code
-        
+
     Returns:
         Dict mapping indicator name to {value, source}
     """
     record = get_country_scorecard(country)
     if not record:
         return None
-    
+
     indicators = {}
     for value_col, source_col in INDICATOR_COLUMNS:
         if value_col in record:
@@ -176,13 +176,13 @@ def get_all_indicators(country: str) -> Optional[Dict[str, Dict[str, str]]]:
 def extract_all_source_urls() -> List[Dict[str, Any]]:
     """
     Extract all source URLs from the scorecard for validation.
-    
+
     Returns:
         List of dicts with country, indicator, url
     """
     df = load_scorecard()
     urls = []
-    
+
     for _, row in df.iterrows():
         country = row.get("Country", "Unknown")
         for _, source_col in INDICATOR_COLUMNS:
@@ -192,12 +192,14 @@ def extract_all_source_urls() -> List[Dict[str, Any]]:
                 for url in re.split(r"[;\n]", str(source_val)):
                     url = url.strip()
                     if url.startswith("http"):
-                        urls.append({
-                            "country": country,
-                            "indicator": source_col.replace("_Source", ""),
-                            "url": url,
-                        })
-    
+                        urls.append(
+                            {
+                                "country": country,
+                                "indicator": source_col.replace("_Source", ""),
+                                "url": url,
+                            }
+                        )
+
     return urls
 
 
@@ -210,29 +212,29 @@ def get_countries_list() -> List[str]:
 def get_regions() -> Dict[str, List[str]]:
     """
     Get countries grouped by region.
-    
+
     Returns:
         Dict mapping region to list of countries
     """
     df = load_scorecard()
     regions = {}
-    
+
     for _, row in df.iterrows():
         region = row.get("Region - Broad")
         country = row.get("Country")
-        
+
         if pd.notna(region) and pd.notna(country):
             if region not in regions:
                 regions[region] = []
             regions[region].append(country)
-    
+
     return regions
 
 
 def scorecard_to_dict() -> Dict[str, Dict[str, Any]]:
     """
     Export entire scorecard as a dictionary keyed by country.
-    
+
     Returns:
         Dict mapping country name to full scorecard record
     """
