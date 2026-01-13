@@ -2,7 +2,7 @@
 
 This document explains how to interpret CSV files produced by `comparison.py`.
 
----
+______________________________________________________________________
 
 ## File Format
 
@@ -10,14 +10,14 @@ This document explains how to interpret CSV files produced by `comparison.py`.
 - Rows = documents.
 - Columns = tags or recommendations under different versions.
 
----
+______________________________________________________________________
 
 ## Conventions
 
 - **Empty cell** → no match for that version.
 - **Semicolon-separated values** → multiple tags or recommendations matched.
 
----
+______________________________________________________________________
 
 ## Example
 
@@ -27,7 +27,7 @@ AU_AI_Strategy_2024.pdf,au_policy,"ChildRights;AI","ChildRights;AI;DigitalPolicy
 AU_Digital_Compact.pdf,au_policy,,"AI;DigitalPolicy;OnlineRights"
 ```
 
----
+______________________________________________________________________
 
 ## Notes
 

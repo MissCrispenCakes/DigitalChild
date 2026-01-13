@@ -11,13 +11,31 @@ import os
 import re
 from datetime import datetime
 
-from processors import (json_normalizer, pdf_to_text, recommendations, tagger,
-                        tags_summary, tags_timeline, tags_timeline_country,
-                        tags_timeline_region)
+from processors import (
+    json_normalizer,
+    pdf_to_text,
+    recommendations,
+    tagger,
+    tags_summary,
+    tags_timeline,
+    tags_timeline_country,
+    tags_timeline_region,
+)
 from processors.logger import get_logger, set_run_logfile
-from scrapers import (acerwc, acerwc_sel, achpr, achpr_sel, au_policy,
-                      au_policy_sel, ohchr, ohchr_sel, unicef, unicef_sel,
-                      upr, upr_sel)
+from scrapers import (
+    acerwc,
+    acerwc_sel,
+    achpr,
+    achpr_sel,
+    au_policy,
+    au_policy_sel,
+    ohchr,
+    ohchr_sel,
+    unicef,
+    unicef_sel,
+    upr,
+    upr_sel,
+)
 from utils.detectors import detect_country_region
 
 SCRAPER_MAP = {

@@ -2,7 +2,7 @@
 
 This document defines how ISO codes (country and region) are mapped in the pipeline.
 
----
+______________________________________________________________________
 
 ## Countries
 
@@ -12,7 +12,7 @@ This document defines how ISO codes (country and region) are mapped in the pipel
   - Nigeria → `NG`
   - South Africa → `ZA`
 
----
+______________________________________________________________________
 
 ## Regions
 
@@ -23,7 +23,7 @@ This document defines how ISO codes (country and region) are mapped in the pipel
   - `North Africa` → `Africa`
   - `Middle East and North Africa` → `MENA`
 
----
+______________________________________________________________________
 
 ## Metadata Fields
 

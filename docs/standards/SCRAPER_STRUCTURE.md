@@ -2,7 +2,7 @@
 
 This document defines how scrapers are organized in `scrapers/`.
 
----
+______________________________________________________________________
 
 ## Location
 
@@ -15,7 +15,7 @@ This document defines how scrapers are organized in `scrapers/`.
   - `acerwc.py`
   - `achpr.py`
 
----
+______________________________________________________________________
 
 ## Structure of a Scraper
 
@@ -30,7 +30,7 @@ def scrape():
     """
 ```
 
----
+______________________________________________________________________
 
 ## Example
 
@@ -49,7 +49,7 @@ def scrape():
             f.write(resp.content)
 ```
 
----
+______________________________________________________________________
 
 ## Notes
 

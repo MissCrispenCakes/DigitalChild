@@ -2,7 +2,7 @@
 
 This document explains how `tags_main.json` manages multiple versions of tag configs.
 
----
+______________________________________________________________________
 
 ## Purpose
 
@@ -10,7 +10,7 @@ This document explains how `tags_main.json` manages multiple versions of tag con
 - Ensures reproducibility: old runs can be compared even after new configs are added.
 - Provides a `latest` alias so the pipeline can always grab the newest version.
 
----
+______________________________________________________________________
 
 ## Example
 
@@ -27,7 +27,7 @@ This document explains how `tags_main.json` manages multiple versions of tag con
 }
 ```
 
----
+______________________________________________________________________
 
 ## Notes
 

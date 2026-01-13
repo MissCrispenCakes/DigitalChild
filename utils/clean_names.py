@@ -53,7 +53,14 @@ def build_url_dict(label, filepath):
                 continue
             # Try to build key from any pre-text before URL
             if "http" in line:
-                pre_text = line[: line.find("http")].strip().strip("-").strip("→").strip("\u2192").strip()
+                pre_text = (
+                    line[: line.find("http")]
+                    .strip()
+                    .strip("-")
+                    .strip("→")
+                    .strip("\u2192")
+                    .strip()
+                )
             else:
                 pre_text = ""
             key_base = None
