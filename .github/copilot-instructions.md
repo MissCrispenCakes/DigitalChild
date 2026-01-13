@@ -26,9 +26,17 @@ Developer workflows & commands
   - Scrape a source: `python pipeline_runner.py --source ohchr`
   - Process URL dictionaries: `python pipeline_runner.py --mode urls`
   - Scorecard-only ops: `python pipeline_runner.py --mode scorecard --scorecard-action enrich`
+  - Filter by country: `python pipeline_runner.py --source upr --country "South Africa"`
+  - Custom tags version: `python pipeline_runner.py --tags-version tags_v2`
 - Tests and CI:
   - Run unit tests: `pytest tests/ --maxfail=1 --disable-warnings -q` (CI also runs coverage for `processors` and `scrapers`).
   - Pre-commit / formatting: `pre-commit run --all-files`. CI checks `mdformat --check README.md docs/`.
+  - Debug test failures: `pytest tests/test_tagger.py::test_apply_tags -v -s`
+  - Check logs: Look in `logs/` directory for run-specific logs or `logs/tests/` for test logs.
+- CI specifics:
+  - Runs on Python 3.11/3.12 across different jobs
+  - Pre-downloads test data in CI to bypass firewall blocks (see `.github/workflows/ci.yml`)
+  - Network tests use mocked `requests` calls to avoid external dependencies
 
 Project-specific conventions & patterns
 - Scraper contract: implement `scrape(**kwargs)` and write raw files to `data/raw/<source>`. Prefer deterministic filenames (used as `id` in metadata).
@@ -45,9 +53,25 @@ Integration points & external dependencies
 Examples from repo (copy/paste patterns)
 - Tag application (pipeline):
   - `tags = tagger.apply_tags(text, tags_config)`
+  - `recs = recommendations.apply_recommendations(text, "configs/recs_v1.json")`
 - Updating metadata:
   - `update_metadata(doc_id=filename, source=source, country_raw=country_name, year=year, tags=tags, tag_version=tags_version, file_type=file_type, recommendations_list=recs)`
 - Year extraction utilities: `extract_year(filename, txt_path, logger)` returns `(year, source)`; use when populating metadata.
+- Scraper implementation pattern:
+  ```python
+  def scrape(**kwargs):
+      countries = kwargs.get('countries', [])
+      raw_dir = os.path.join("data", "raw", "source_name")
+      os.makedirs(raw_dir, exist_ok=True)
+      # Download logic here
+  ```
+- Logging setup:
+  ```python
+  from processors.logger import get_logger, set_run_logfile
+  set_run_logfile("my_operation", module_logs=True)
+  logger = get_logger("my_module")
+  ```
+- Country/region detection: `country_name, country_iso, regions_list = detect_country_region(filename=filename, text=text[:2000])`
 
 What to avoid / non-obvious constraints
 - Do not assume filenames are URLs — many scrapers write local filenames; use the `id` (filename) consistently.
@@ -62,6 +86,12 @@ Where to look first when investigating a bug
 - `processors/logger.py` for run logs and set_run_logfile usage.
 - `pipeline_runner.py` for orchestration and how data flows between `scrapers/` and `processors/`.
 - `processors/json_normalizer.py`, `processors/scorecard_enricher.py`, and `processors/scorecard_export.py` for transformations affecting exports and metadata.
+- Common issues:
+  - Network timeouts in CI: Check if pre-download step in `.github/workflows/ci.yml` covers the URLs
+  - Missing metadata fields: Verify `json_normalizer.normalize_document()` is being called
+  - Test failures: Look for mocked `requests` calls vs real network calls in `tests/`
+  - Selenium issues: Ensure driver setup in `scrapers/selenium_setup.py` matches CI environment
+  - File conversion errors: Check `processors/fallback_handler.py` for unsupported file types
 
 Quick checklist for PRs
 - Run `pytest tests/` and `pre-commit run --all-files` locally.

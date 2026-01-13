@@ -55,8 +55,15 @@ REQUEST_TIMEOUT = 20
 USER_AGENT = "Mozilla/5.0 (compatible; DigitalChild-DiffChecker/1.0)"
 
 
+def hash_content(content: str) -> str:
+    \"\"\"Generate hash of content for change detection.\"\"\"
+    # Normalize whitespace and lowercase
+    normalized = re.sub(r\"\\s+\", \"\", content.lower())
+    return hashlib.sha256(normalized.encode()).hexdigest()[:16]
+
+
 def fetch_page_content(url: str) -> Optional[str]:
-    """
+    \"\"\"
     Fetch a page and return its text content.
     
     Args:
@@ -64,25 +71,25 @@ def fetch_page_content(url: str) -> Optional[str]:
         
     Returns:
         Page text content or None on error
-    """
-    logger = get_logger("scorecard_diff")
+    \"\"\"
+    logger = get_logger(\"scorecard_diff\")
     
     try:
         response = requests.get(
             url,
-            headers={"User-Agent": USER_AGENT},
+            headers={\"User-Agent\": USER_AGENT},
             timeout=REQUEST_TIMEOUT,
         )
         response.raise_for_status()
         return response.text
     except Exception as e:
-        logger.warning(f"Failed to fetch {url}: {e}")
+        logger.warning(f\"Failed to fetch {url}: {e}\")
         return None
 
 
 def compute_content_hash(content: str) -> str:
-    """Compute MD5 hash of content for change detection."""
-    return hashlib.md5(content.encode("utf-8")).hexdigest()
+    \"\"\"Compute MD5 hash of content for change detection.\"\"\"
+    return hashlib.md5(content.encode(\"utf-8\")).hexdigest()
 
 
 def load_cached_hash(source_key: str) -> Optional[str]:
