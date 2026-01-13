@@ -9,11 +9,11 @@
 Pipeline for scraping, processing, and analyzing, human rights documents,
 policies, and reports, with a focus on child and LGBTQ+ digital protection.
 
----
+______________________________________________________________________
 
 ## 🚀 Quickstart
 
-``` bash
+```bash
 python init_project.py
 pip install -r requirements.txt
 python pipeline_runner.py
@@ -21,20 +21,20 @@ python pipeline_runner.py
 
 Exports will appear under `data/exports/`.
 
----
+______________________________________________________________________
 
 ## 🛠 Troubleshooting
 
 If you hit issues during setup or first run, see the:
 [First Run Error Checklist](docs/runs/FIRST_RUN_ERRORS.md).
 
----
+______________________________________________________________________
 
 ## 🐈🐱🐈💻 Developer Setup
 
 Install pre-commit to catch formatting and docs issues before pushing:
 
-``` bash
+```bash
 pip install pre-commit
 pre-commit install
 ```

@@ -2,14 +2,14 @@
 
 This document defines how comparison configurations are structured.
 
----
+______________________________________________________________________
 
 ## Purpose
 
 Comparison configs define how two or more runs of the pipeline should
 be compared, especially across different tagging or recommendation versions.
 
----
+______________________________________________________________________
 
 ## Fields
 
@@ -18,7 +18,7 @@ be compared, especially across different tagging or recommendation versions.
 - `output`: filename of CSV export
 - `filters`: optional filter settings (region, country, tags)
 
----
+______________________________________________________________________
 
 ## Example
 

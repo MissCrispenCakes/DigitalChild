@@ -2,7 +2,7 @@
 
 This document explains the purpose of each folder and subfolder.
 
----
+______________________________________________________________________
 
 ## Top-Level
 
@@ -10,7 +10,7 @@ This document explains the purpose of each folder and subfolder.
 - `requirements.txt` → Python dependencies.
 - `.github/workflows/ci.yml` → GitHub Actions CI pipeline.
 
----
+______________________________________________________________________
 
 ## Scrapers
 
@@ -18,7 +18,7 @@ This document explains the purpose of each folder and subfolder.
   - `au_policy.py` → AU PDFs.
   - `ohchr.py`, `upr.py`, etc. → placeholders for other treaty bodies.
 
----
+______________________________________________________________________
 
 ## Processors
 
@@ -30,7 +30,7 @@ This document explains the purpose of each folder and subfolder.
   - `tagger.py` → Applies tag rules.
   - `tags_summary.py` → Produces CSV summary.
 
----
+______________________________________________________________________
 
 ## Configs
 
@@ -39,7 +39,7 @@ This document explains the purpose of each folder and subfolder.
   - `tags_master.json` → points to versions.
   - `filters/` → filter configs.
 
----
+______________________________________________________________________
 
 ## Data
 
@@ -48,19 +48,19 @@ This document explains the purpose of each folder and subfolder.
 - `data/metadata/metadata.json` → Central metadata file.
 - `data/exports/` → Output summaries, comparisons, timelines.
 
----
+______________________________________________________________________
 
 ## Logs
 
 - `logs/` → Unified and per-module logs per run.
 
----
+______________________________________________________________________
 
 ## Docs
 
 - `docs/` → Documentation files (setup, standards, notes).
 
----
+______________________________________________________________________
 
 ## Tests
 

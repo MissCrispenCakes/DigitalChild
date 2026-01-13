@@ -2,7 +2,7 @@
 
 This file defines how document types are categorized for processing.
 
----
+______________________________________________________________________
 
 ## Major Types
 
@@ -14,7 +14,7 @@ This file defines how document types are categorized for processing.
 - **Recommendations** → From committees or commissions.
 - **Research / Reports** → UNICEF, ACERWC, ACHPR publications.
 
----
+______________________________________________________________________
 
 ## Processing Implications
 
@@ -22,7 +22,7 @@ This file defines how document types are categorized for processing.
 - Metadata field `"doc_type"` should capture type (if identified).
 - Future processors may add automatic classification rules.
 
----
+______________________________________________________________________
 
 ## File Formats
 
