@@ -8,5 +8,6 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.preferredDarkColorTheme": "Default Dark+",
   "terminal.integrated.fontFamily": "",
-  "terminal.integrated.fontSize": 13
+  "terminal.integrated.fontSize": 13,
+  "chat.agent.maxRequests": 50
 }
