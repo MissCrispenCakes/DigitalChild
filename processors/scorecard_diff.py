@@ -70,8 +70,8 @@ def fetch_page_content(url: str) -> Optional[str]:
 
     Returns:
         Page text content or None on error
-    """
-    logger = get_logger("scorecard_diff")
+    \"\"\"
+    logger = get_logger(\"scorecard_diff\")
     
     try:
         response = requests.get(

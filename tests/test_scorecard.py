@@ -155,12 +155,6 @@ class TestScorecardExport:
         filepath = str(tmp_path / "test_sources.csv")
         exporter = ScorecardExporter()
         result = exporter.export_sources_csv(filepath)
-        
-        filepath = str(tmp_path / "test_sources.csv")
-        exporter = ScorecardExporter()
-        result = exporter.export_sources_csv(filepath)
-        
->>>>>>> temp/add-scorecard
         assert os.path.exists(result)
 
 
