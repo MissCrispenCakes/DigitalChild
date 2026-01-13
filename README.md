@@ -1,4 +1,4 @@
-# Project README
+# DigitalChild Project
 
 ## GRIMdata / LittleRainbowRights / ALLRainbowRights Pipeline
 

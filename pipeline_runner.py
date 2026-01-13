@@ -190,7 +190,7 @@ def resolve_tags_config(version):
         raise ValueError(f"Unknown tags version: {version}")
 
 
-def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False):
+def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False, args=None):
     set_run_logfile(f"{source}_run", module_logs=not no_module_logs)
     logger = get_logger("pipeline_runner")
 
@@ -207,12 +207,12 @@ def run_pipeline(source="au_policy", tags_version="latest", no_module_logs=False
 
     # Scrape
     scrape_kwargs = {}
-    if args.base_url:
+    if args and args.base_url:
         scrape_kwargs["base_url"] = args.base_url
-    if args.countries_file:
+    if args and args.countries_file:
         with open(args.countries_file, "r", encoding="utf-8") as f:
             scrape_kwargs["countries"] = [line.strip() for line in f if line.strip()]
-    elif args.country:
+    elif args and args.country:
         scrape_kwargs["countries"] = [args.country]
 
     scraper.scrape(**scrape_kwargs)
@@ -286,4 +286,5 @@ if __name__ == "__main__":
         source=args.source,
         tags_version=args.tags_version,
         no_module_logs=args.no_module_logs,
+        args=args,
     )
