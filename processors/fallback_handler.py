@@ -22,14 +22,18 @@ def process_with_fallback(filepath, output_dir):
     if result:
         return result
 
-    # 2. Try DOCX
-    if docx_to_text.validate_format(filepath) or filepath.lower().endswith(".pdf"):
+    # 2. Try DOCX (if format validates or has .docx/.doc extension)
+    if docx_to_text.validate_format(filepath) or filepath.lower().endswith(
+        (".docx", ".doc")
+    ):
         result = docx_to_text.convert(filepath, output_dir)
         if result:
             return result
 
-    # 3. Try HTML
-    if html_to_text.validate_format(filepath) or filepath.lower().endswith(".pdf"):
+    # 3. Try HTML (if format validates or has .html/.htm extension)
+    if html_to_text.validate_format(filepath) or filepath.lower().endswith(
+        (".html", ".htm")
+    ):
         result = html_to_text.convert(filepath, output_dir)
         if result:
             return result

@@ -69,12 +69,15 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
     if "RowNumber.1" in df.columns:
         df = df.drop(columns=["RowNumber.1"])
 
-    # Normalize country names
-    df["Country_Normalized"] = df["Country"].apply(
-        lambda x: normalize_country(str(x))[1] if pd.notna(x) else None
-    )
-    df["Country_ISO"] = df["Country"].apply(
-        lambda x: normalize_country(str(x))[2] if pd.notna(x) else None
+    # Normalize country names (compute once, unpack both values)
+    def normalize_and_unpack(country_name):
+        if pd.notna(country_name):
+            _, normalized, iso = normalize_country(str(country_name))
+            return pd.Series([normalized, iso])
+        return pd.Series([None, None])
+
+    df[["Country_Normalized", "Country_ISO"]] = df["Country"].apply(
+        normalize_and_unpack
     )
 
     _scorecard_cache = df

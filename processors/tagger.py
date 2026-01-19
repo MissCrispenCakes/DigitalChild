@@ -23,8 +23,19 @@ def load_tags(config_file=None):
     try:
         with open(config_file, "r", encoding="utf-8") as f:
             return json.load(f)
+    except FileNotFoundError:
+        logger.error(f"Tag config file not found: {config_file}")
+        return {"rules": {}}
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON in tag config {config_file}: {e}")
+        return {"rules": {}}
+    except PermissionError:
+        logger.error(f"Permission denied reading tag config: {config_file}")
+        return {"rules": {}}
     except Exception as e:
-        logger.error(f"Failed to load tag config {config_file}: {e}")
+        logger.error(
+            f"Unexpected error loading tag config {config_file}: {type(e).__name__}: {e}"
+        )
         return {"rules": {}}
 
 

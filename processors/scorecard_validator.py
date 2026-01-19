@@ -49,6 +49,16 @@ def validate_url(url: str, timeout: int = REQUEST_TIMEOUT) -> Dict[str, Any]:
         "response_time_ms": None,
     }
 
+    # Validate URL format before making request
+    if not url or not isinstance(url, str):
+        result["error"] = "Invalid URL: empty or not a string"
+        return result
+
+    url = url.strip()
+    if not url.startswith(("http://", "https://")):
+        result["error"] = "Invalid URL: must start with http:// or https://"
+        return result
+
     headers = {"User-Agent": USER_AGENT}
 
     for attempt in range(RETRY_COUNT):

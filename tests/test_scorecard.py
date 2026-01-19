@@ -108,7 +108,7 @@ class TestScorecardEnricher:
         enriched = enrich_document(doc)
 
         assert "scorecard" in enriched
-        assert enriched["scorecard"]["country_matched"] == "Albania"
+        assert enriched["scorecard"]["matched_country"] == "Albania"
 
     def test_enrich_document_without_country(self):
         """Test enriching a document without a country field."""
@@ -137,11 +137,11 @@ class TestScorecardExport:
     def test_export_summary_csv(self, tmp_path):
         """Test exporting scorecard summary to CSV."""
         from processors.scorecard_export import ScorecardExporter
-        
+
         filepath = str(tmp_path / "test_summary.csv")
         exporter = ScorecardExporter()
         result = exporter.export_summary_csv(filepath)
-        
+
         assert os.path.exists(result)
         # Check file has content
         with open(result, "r") as f:
@@ -151,7 +151,7 @@ class TestScorecardExport:
     def test_export_sources_csv(self, tmp_path):
         """Test exporting source URLs to CSV."""
         from processors.scorecard_export import ScorecardExporter
-        
+
         filepath = str(tmp_path / "test_sources.csv")
         exporter = ScorecardExporter()
         result = exporter.export_sources_csv(filepath)
@@ -179,11 +179,14 @@ class TestScorecardValidator:
     @patch("processors.scorecard_validator.requests.head")
     def test_validate_url_broken(self, mock_head):
         """Test validating a URL that doesn't exist."""
-        from processors.scorecard_validator import validate_url
         import requests
 
+        from processors.scorecard_validator import validate_url
+
         # Mock connection error
-        mock_head.side_effect = requests.exceptions.ConnectionError("Name or service not known")
+        mock_head.side_effect = requests.exceptions.ConnectionError(
+            "Name or service not known"
+        )
 
         result = validate_url("https://thisdomaindoesnotexist12345.com")
         assert result["ok"] is False
@@ -192,8 +195,9 @@ class TestScorecardValidator:
     @patch("processors.scorecard_validator.requests.head")
     def test_validate_url_timeout(self, mock_head):
         """Test validating with timeout."""
-        from processors.scorecard_validator import validate_url
         import requests
+
+        from processors.scorecard_validator import validate_url
 
         # Mock timeout error to test timeout handling (will retry twice)
         mock_head.side_effect = requests.exceptions.Timeout("Request timed out")
@@ -202,7 +206,7 @@ class TestScorecardValidator:
         assert "url" in result
         assert result["error"] == "Timeout"
         assert result["ok"] is False
-        
+
         # Verify timeout was passed to requests.head (called twice due to retry logic)
         assert mock_head.call_count == 2
         for call in mock_head.call_args_list:

@@ -35,15 +35,15 @@ def run_comparison(
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+        # Write comment line FIRST, before header
+        csvfile.write(f"# Comparison of versions: {', '.join(versions)}\n")
+
         writer = csv.writer(csvfile)
         header = ["id", "source"]
         for v in versions:
             header.append(f"{v}_tags")
             header.append(f"{v}_recs")
         writer.writerow(header)
-
-        # Insert comment line at top with version info
-        csvfile.write(f"# Comparison of versions: {', '.join(versions)}\n")
 
         for doc in docs:
             row = [doc["id"], doc["source"]]
