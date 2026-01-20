@@ -232,7 +232,7 @@ Interested in contributing to SGBV-UPR research?
 - **Visualization** - Suggest or build data visualizations
 - **Documentation** - Improve methodology documentation
 
-[Contributing Guidelines](../../../CONTRIBUTING.md){ .md-button }
+[Contributing Guidelines](CONTRIBUTING.md){ .md-button }
 
 ## Data Governance
 

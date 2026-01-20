@@ -20,7 +20,7 @@ Yes! The code is licensed under MIT (permissive, free for any use including comm
 
 ### Can I use this for my research?
 
-Absolutely! That's the intended purpose. Please cite the project using the format in [CITATION.cff](../CITATION.cff).
+Absolutely! That's the intended purpose. Please cite the project using the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
 
 ______________________________________________________________________
 
@@ -322,7 +322,7 @@ ______________________________________________________________________
 
 ### How should I cite this project?
 
-Use the format in [CITATION.cff](../CITATION.cff):
+Use the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff):
 
 ```
 GRIMdata / LittleRainbowRights. (2025). DigitalChild: Human Rights Data

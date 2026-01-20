@@ -255,7 +255,7 @@ Code includes validators for:
 - File size limits
 - Extension whitelisting
 
-See [SECURITY.md](../SECURITY.md) for vulnerability reporting.
+See [SECURITY.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md) for vulnerability reporting.
 
 ### Secure Deployment
 
@@ -321,7 +321,7 @@ PhD research using this tool may require IRB approval depending on:
 
 When publishing research using DigitalChild:
 
-- ✅ Cite the project (see [CITATION.cff](../CITATION.cff))
+- ✅ Cite the project (see [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff))
 - ✅ Describe methodology clearly
 - ✅ Acknowledge limitations
 - ✅ Share code and data where possible (within legal constraints)

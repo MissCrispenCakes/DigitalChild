@@ -7,7 +7,7 @@ This directory contains comprehensive documentation for the DigitalChild (GRIMda
 ### Getting Started
 
 - **[../README.md](../README.md)** - Project README with setup instructions and quickstart
-- **[../CLAUDE.md](../CLAUDE.md)** - Comprehensive guide for Claude Code AI assistant
+- **[https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md)** - Comprehensive guide for Claude Code AI assistant
 - **[DOCS_INDEX.md](DOCS_INDEX.md)** - Complete index of all documentation files
 - **[guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)** - Common errors and solutions for first-time users
 
@@ -139,7 +139,7 @@ Format specifications and conventions:
 1. **First-time setup issues?** → See [guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
 1. **Need to understand a feature?** → Check [DOCS_INDEX.md](DOCS_INDEX.md) for relevant docs
 1. **Want to contribute?** → Read [ROADMAP.md](ROADMAP.md) for planned features
-1. **Using Claude Code?** → See [../CLAUDE.md](../CLAUDE.md) for AI assistant guidance
+1. **Using Claude Code?** → See [https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md) for AI assistant guidance
 
 ## Documentation Maintenance
 

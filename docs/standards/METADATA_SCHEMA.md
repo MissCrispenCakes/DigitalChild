@@ -309,7 +309,7 @@ from processors.validators import validate_document_metadata
 validate_document_metadata(document)
 ```
 
-See [../VALIDATORS_USAGE.md](../VALIDATORS_USAGE.md) for complete validation guide.
+See [VALIDATORS_USAGE.md](../guides/VALIDATORS_USAGE.md) for complete validation guide.
 
 ______________________________________________________________________
 

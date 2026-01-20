@@ -590,8 +590,8 @@ GitHub Repository
 - **[PIPELINE_FLOW.md](notes/PIPELINE_FLOW.md)** - Detailed pipeline flow
 - **[DIRECTORY_STRUCTURE.md](notes/DIRECTORY_STRUCTURE.md)** - File organization
 - **[METADATA_SCHEMA.md](standards/METADATA_SCHEMA.md)** - Metadata structure
-- **[SCORECARD_WORKFLOW.md](SCORECARD_WORKFLOW.md)** - Scorecard system details
-- **[VALIDATORS_USAGE.md](VALIDATORS_USAGE.md)** - Validation framework
+- **[SCORECARD_WORKFLOW.md](guides/SCORECARD_WORKFLOW.md)** - Scorecard system details
+- **[VALIDATORS_USAGE.md](guides/VALIDATORS_USAGE.md)** - Validation framework
 
 ______________________________________________________________________
 

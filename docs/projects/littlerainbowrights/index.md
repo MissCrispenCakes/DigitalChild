@@ -196,7 +196,7 @@ Insights for:
 
   Download CSV files for your own analysis
 
-  [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md#exporting-data)
+  [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
 
 - :material-code-tags:{ .lg .middle } **Use the Pipeline**
 
@@ -217,7 +217,7 @@ Found an error in the scorecard data? Have updated information?
 1. **Provide evidence** - Include authoritative source URL
 1. **Track update** - Follow the issue for confirmation
 
-[Contributing Guidelines](../../../CONTRIBUTING.md){ .md-button }
+[Contributing Guidelines](CONTRIBUTING.md){ .md-button }
 
 ## Citing This Work
 
@@ -237,7 +237,7 @@ Or:
 
 > GRIMdata / LittleRainbowRights. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0.
 
-[Full Citation Guide](../../../CITATION.cff)
+[Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 
 ## Data Governance
 

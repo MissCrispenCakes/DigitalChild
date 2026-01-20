@@ -117,7 +117,7 @@ See [Roadmap](../ROADMAP.md) for detailed timeline.
 Want to help build the data explorer?
 
 1. Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Avisualization)
-1. Review [contribution guidelines](../../CONTRIBUTING.md)
+1. Review [contribution guidelines](CONTRIBUTING.md)
 1. Submit pull requests with visualization improvements
 
 Technologies we're considering:

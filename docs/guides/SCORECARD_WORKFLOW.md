@@ -360,6 +360,6 @@ report = validate_all_urls(max_workers=5)  # Slower but more reliable
 
 ## Related Documentation
 
-- [METADATA_SCHEMA.md](standards/METADATA_SCHEMA.md) - Document metadata structure
-- [PIPELINE_FLOW.md](notes/PIPELINE_FLOW.md) - Main pipeline workflow
-- [ISO_MAPPING.md](standards/ISO_MAPPING.md) - Country code standards
+- [METADATA_SCHEMA.md](../standards/METADATA_SCHEMA.md) - Document metadata structure
+- [PIPELINE_FLOW.md](../notes/PIPELINE_FLOW.md) - Main pipeline workflow
+- [ISO_MAPPING.md](../standards/ISO_MAPPING.md) - Country code standards

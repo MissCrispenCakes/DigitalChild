@@ -83,9 +83,9 @@ These files live in the project root, not docs/:
 - `../LICENSE` → MIT License for code
 - `../LICENSE-DATA` → CC BY 4.0 License for data/docs
 - `../CONTRIBUTING.md` → Contribution guidelines
-- `../SECURITY.md` → Security policies and vulnerability reporting
-- `../CITATION.cff` → Academic citation format
-- `../CLAUDE.md` → AI assistant context
+- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md` → Security policies and vulnerability reporting
+- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff` → Academic citation format
+- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md` → AI assistant context
 
 ______________________________________________________________________
 

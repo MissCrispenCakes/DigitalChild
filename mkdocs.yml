@@ -143,7 +143,7 @@ nav:
       - Docs Index: DOCS_INDEX.md
   - Development:
       - Roadmap: ROADMAP.md
-      - Contributing: ../CONTRIBUTING.md
+      - Contributing: CONTRIBUTING.md
       - Standards:
           - Metadata Schema: standards/METADATA_SCHEMA.md
           - File Naming: standards/FILE_NAMING_STANDARDS.md
@@ -169,11 +169,6 @@ nav:
   - Scorecard:
       - Visualization: scorecard/index.md
       - Data Explorer: scorecard/explorer.md
-  - About:
-      - License: ../LICENSE
-      - Data License: ../LICENSE-DATA
-      - Citation: ../CITATION.cff
-      - Security: ../SECURITY.md
 
 # Custom CSS
 extra_css:

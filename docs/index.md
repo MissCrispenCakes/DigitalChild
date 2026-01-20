@@ -88,7 +88,7 @@ The pipeline is designed to be:
 
   68 validator tests protect against path traversal, URL injection, and malicious input. Built-in security from the ground up.
 
-  [:octicons-arrow-right-24: Security policy](../SECURITY.md)
+  [:octicons-arrow-right-24: Security policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md)
 
 </div>
 
@@ -197,13 +197,13 @@ This ensures the pipeline is freely usable while giving credit to the research e
 1\. [Install](getting-started/installation.md) the pipeline
 2\. Review [FAQ](FAQ.md) for common questions
 3\. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
-4\. [Cite](../CITATION.cff) in your publications
+4\. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
 
 !!! example "For Contributors"
-1\. Read [Contributing Guide](../CONTRIBUTING.md)
+1\. Read [Contributing Guide](CONTRIBUTING.md)
 2\. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 3\. Submit pull requests
-4\. Improve [documentation](README.md)
+4\. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
 
 </div>
 
