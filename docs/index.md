@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 - :rainbow:{ .lg .middle } **LittleRainbowRights**
 
-  ______________________________________________________________________
+  ---
 
   Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
 
@@ -33,7 +33,7 @@ ______________________________________________________________________
 
 - :material-hand-heart:{ .lg .middle } **SGBV-UPR**
 
-  ______________________________________________________________________
+  ---
 
   Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries. Dataset updating for UPR Cycle 4.
 
@@ -79,7 +79,7 @@ The pipeline is designed to be:
 
 - :material-download:{ .lg .middle } **Automated Scraping**
 
-  ______________________________________________________________________
+  ---
 
   Collect documents from 7 international sources including AU, OHCHR, UPR, and UNICEF. Respectful, rate-limited scraping with robust error handling.
 
@@ -87,7 +87,7 @@ The pipeline is designed to be:
 
 - :material-tag-multiple:{ .lg .middle } **Intelligent Tagging**
 
-  ______________________________________________________________________
+  ---
 
   Regex-based tagging system identifies themes: child rights, LGBTQ+ rights, AI, privacy, digital policy. Versioned tags enable comparison.
 
@@ -95,7 +95,7 @@ The pipeline is designed to be:
 
 - :material-chart-bar:{ .lg .middle } **Comprehensive Scorecard**
 
-  ______________________________________________________________________
+  ---
 
   Track 10 indicators across 194 countries. 2,543 validated source URLs ensure transparency. Automated validation and change detection.
 
@@ -103,7 +103,7 @@ The pipeline is designed to be:
 
 - :material-shield-check:{ .lg .middle } **Security First**
 
-  ______________________________________________________________________
+  ---
 
   68 validator tests protect against path traversal, URL injection, and malicious input. Built-in security from the ground up.
 
@@ -131,25 +131,25 @@ ls data/exports/
 
 - :fontawesome-solid-graduation-cap:{ .middle } **Researchers**
 
-  ______________________________________________________________________
+  ---
 
   Academics studying digital rights trends, child protection policies, LGBTQ+ legal status across countries.
 
 - :fontawesome-solid-building-columns:{ .middle } **NGOs & Advocates**
 
-  ______________________________________________________________________
+  ---
 
   Human rights organizations tracking protections, building evidence for campaigns, monitoring policy changes.
 
 - :fontawesome-solid-chart-line:{ .middle } **Policy Analysts**
 
-  ______________________________________________________________________
+  ---
 
   Government and UN policy staff comparing policies across countries, identifying gaps and best practices.
 
 - :fontawesome-solid-newspaper:{ .middle } **Journalists**
 
-  ______________________________________________________________________
+  ---
 
   Investigative reporters researching digital rights stories with verified data and authoritative sources.
 
@@ -210,19 +210,25 @@ This ensures the pipeline is freely usable while giving credit to the research e
 
 ## Get Involved
 
-<div class="grid" markdown>
+<div class="grid cards" markdown>
 
-!!! tip "For Users"
-1\. [Install](getting-started/installation.md) the pipeline
-2\. Review [FAQ](FAQ.md) for common questions
-3\. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
-4\. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
+- :material-account-check:{ .lg .middle } **For Users**
 
-!!! example "For Contributors"
-1\. Read [Contributing Guide](CONTRIBUTING.md)
-2\. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-3\. Submit pull requests
-4\. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
+  ---
+
+  1. [Install](getting-started/installation.md) the pipeline
+  2. Review [FAQ](FAQ.md) for common questions
+  3. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
+  4. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
+
+- :material-source-pull:{ .lg .middle } **For Contributors**
+
+  ---
+
+  1. Read [Contributing Guide](CONTRIBUTING.md)
+  2. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+  3. Submit pull requests
+  4. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
 
 </div>
 
