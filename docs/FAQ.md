@@ -363,11 +363,13 @@ ______________________________________________________________________
 See [ROADMAP.md](ROADMAP.md) for the full roadmap. Highlights:
 
 **Recently Completed (Phase 3):**
+
 - ✅ Recommendations extraction (regex-based with versioning)
 - ✅ Timeline exports (global, by-country, by-region)
 - ✅ Comparison analytics (tags and recommendations across versions)
 
 **In Development:**
+
 - NLP-based recommendations extraction (advanced ML models)
 - Interactive research dashboard (Phase 4)
 - Global expansion (Europe, Asia, Americas)
