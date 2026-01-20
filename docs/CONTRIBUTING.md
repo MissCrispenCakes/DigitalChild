@@ -13,20 +13,20 @@ For detailed contribution guidelines, please see the [Contributing Guide](https:
 ## Ways to Contribute
 
 1. **Report Issues** - Found a bug? [Open an issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
-2. **Improve Documentation** - Help make these docs better
-3. **Fix Bugs** - Submit pull requests for bug fixes
-4. **Add Features** - Propose and implement new features
-5. **Update Data** - Report outdated scorecard information
+1. **Improve Documentation** - Help make these docs better
+1. **Fix Bugs** - Submit pull requests for bug fixes
+1. **Add Features** - Propose and implement new features
+1. **Update Data** - Report outdated scorecard information
 
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork locally
-3. Run `python init_project.py` to set up the project structure
-4. Install dependencies: `pip install -r requirements.txt`
-5. Make your changes
-6. Run tests: `pytest tests/`
-7. Run pre-commit: `pre-commit run --all-files`
-8. Submit a pull request
+1. Clone your fork locally
+1. Run `python init_project.py` to set up the project structure
+1. Install dependencies: `pip install -r requirements.txt`
+1. Make your changes
+1. Run tests: `pytest tests/`
+1. Run pre-commit: `pre-commit run --all-files`
+1. Submit a pull request
 
 For detailed instructions, see the [full Contributing Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CONTRIBUTING.md).

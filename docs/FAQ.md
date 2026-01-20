@@ -9,7 +9,7 @@
 1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
    - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
    - Tracks 10 indicators across 194 countries
-2. **SGBV-UPR** - Sexual and gender-based violence analysis
+1. **SGBV-UPR** - Sexual and gender-based violence analysis
    - Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
    - UPR recommendations analysis
 

@@ -20,21 +20,21 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
 <div class="grid cards" markdown>
 
--   :material-earth:{ .lg .middle } __194 Countries Tracked__
+- :material-earth:{ .lg .middle } __194 Countries Tracked__
 
-    Comprehensive global coverage of digital rights indicators
+  Comprehensive global coverage of digital rights indicators
 
--   :material-chart-line:{ .lg .middle } __10 Indicators__
+- :material-chart-line:{ .lg .middle } __10 Indicators__
 
-    AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
+  AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
 
--   :material-alert:{ .lg .middle } __Critical Gaps Identified__
+- :material-alert:{ .lg .middle } __Critical Gaps Identified__
 
-    Many countries lack specific child online protection frameworks
+  Many countries lack specific child online protection frameworks
 
--   :material-shield-check:{ .lg .middle } __Best Practices__
+- :material-shield-check:{ .lg .middle } __Best Practices__
 
-    Leading countries demonstrate comprehensive approaches
+  Leading countries demonstrate comprehensive approaches
 
 </div>
 
@@ -171,29 +171,29 @@ Insights for:
 
 <div class="grid cards" markdown>
 
--   :material-chart-box:{ .lg .middle } __Scorecard Visualization__
+- :material-chart-box:{ .lg .middle } __Scorecard Visualization__
 
-    Interactive charts showing indicators across countries
+  Interactive charts showing indicators across countries
 
-    [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
+  [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
 
--   :material-table-search:{ .lg .middle } __Data Explorer__
+- :material-table-search:{ .lg .middle } __Data Explorer__
 
-    Filter and search through all indicators
+  Filter and search through all indicators
 
-    [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
+  [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
 
--   :material-download:{ .lg .middle } __Export Data__
+- :material-download:{ .lg .middle } __Export Data__
 
-    Download CSV files for your own analysis
+  Download CSV files for your own analysis
 
-    [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
+  [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
 
--   :material-code-tags:{ .lg .middle } __Use the Pipeline__
+- :material-code-tags:{ .lg .middle } __Use the Pipeline__
 
-    Run the analysis yourself on your own machine
+  Run the analysis yourself on your own machine
 
-    [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
+  [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
 
 </div>
 
