@@ -18,6 +18,15 @@ This project has its own repository and codebase. It will be integrated into the
 !!! success "Published Research"
 Findings from this project have been published in an academic journal (citation details coming soon).
 
+!!! warning "Update Needed - UPR Cycle Progress"
+**Dataset requires updating:**
+
+- **UPR Cycle 3** has now completed (original research based on Cycles 1-3)
+- **UPR Cycle 4** is currently in progress with new recommendations
+- **New analytical lens available:** Pandemic and forced confinement perspectives offer rich opportunities for additional data mining, examining how COVID-19 lockdowns and related policies intersected with SGBV patterns and recommendations
+
+The repository and analysis tools are ready for expansion to incorporate this new data and analytical framework.
+
 ## Key Features
 
 <div class="grid cards" markdown>
@@ -98,6 +107,19 @@ Key insights include:
 1. **Legal Frameworks** - Criminalization, survivor protections, access to justice
 1. **Services** - Shelters, counseling, medical care for survivors
 1. **Prevention** - Education, awareness campaigns, perpetrator programs
+
+!!! info "Emerging Analytical Lens"
+**Pandemic and Forced Confinement Perspectives**
+
+The COVID-19 pandemic and associated lockdown measures created unique conditions that intersected with SGBV:
+
+- Increased domestic violence during lockdowns and quarantine measures
+- Reduced access to support services and escape routes for survivors
+- Digital SGBV and online harassment during remote work/schooling
+- Economic stressors and their relationship to SGBV rates
+- State responses to SGBV during emergency measures
+
+This lens offers rich opportunities for analyzing how UPR recommendations addressed (or failed to address) pandemic-era SGBV challenges and how countries adapted their responses during forced confinement periods.
 
 ## Data & Visualizations
 
@@ -196,11 +218,18 @@ The codebase includes:
 
 ## Future Development
 
-Planned enhancements:
+### Immediate Updates Needed
+
+- [ ] **Update dataset with UPR Cycle 4 data** - Incorporate ongoing Cycle 4 recommendations
+- [ ] **Add pandemic/forced confinement analysis lens** - Analyze SGBV recommendations through COVID-19 lockdown and confinement policy perspectives
+- [ ] **Refresh Cycle 3 complete dataset** - Ensure all finalized Cycle 3 recommendations are included
+- [ ] **Expand SGBV categories** - Add pandemic-specific SGBV themes (domestic violence during lockdowns, digital SGBV, etc.)
+
+### Long-term Enhancements
 
 - [ ] Interactive data explorer on GRIMdata.org
 - [ ] Real-time UPR recommendation tracking
-- [ ] Integration with LittleRainbowRights for intersectional analysis
+- [ ] Integration with LittleRainbowRights for intersectional analysis (LGBTQ+ youth + SGBV)
 - [ ] Expanded to other treaty body recommendations (CEDAW, CRC, etc.)
 - [ ] Machine learning for automatic SGBV recommendation identification
 
