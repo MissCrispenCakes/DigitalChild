@@ -209,13 +209,13 @@ When using LittleRainbowRights data:
   author = {Vollmer, S.C.},
   year = {2025},
   howpublished = {\url{https://grimdata.org/projects/littlerainbowrights/}},
-  note = {Licensed under CC BY 4.0}
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
 }
 ```
 
 Or:
 
-> Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0.
+> Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
 
 [Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 

@@ -246,7 +246,7 @@ The codebase includes:
   author = {Vollmer, S.C.},
   year = {2025},
   howpublished = {\url{https://grimdata.org/projects/sgbv/}},
-  note = {Licensed under CC BY 4.0}
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
 }
 ```
 
