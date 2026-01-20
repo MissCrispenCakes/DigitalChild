@@ -22,6 +22,9 @@ jobs:
 
       - name: Pre-download test data files
         run: |
+          # Continue on errors - we'll validate file count at the end
+          set +e
+
           # Create directories for test data
           mkdir -p data/raw/au_policy
 
@@ -77,6 +80,9 @@ jobs:
           done
 
           echo "Successfully validated $valid_count files"
+
+          # Re-enable exit on error for final validation
+          set -e
 
           # Require at least 5 valid files to proceed with tests
           if [ "$valid_count" -lt 5 ]; then
