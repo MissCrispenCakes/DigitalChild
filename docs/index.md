@@ -16,7 +16,9 @@ ______________________________________________________________________
 
     **Status:** Active | **Scope:** Global (194 countries)
 
-    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard. Presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
+
+    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 2025)
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
