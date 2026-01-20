@@ -34,3 +34,5 @@ htmlcov/
 Thumbs.db
 /.LittleRainbow
 .vscode/
+# MkDocs build output
+/site/

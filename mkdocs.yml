@@ -124,6 +124,9 @@ extra:
 # Navigation
 nav:
   - Home: index.md
+  - Projects:
+      - LittleRainbowRights: projects/littlerainbowrights/index.md
+      - SGBV-UPR: projects/sgbv/index.md
   - Getting Started:
       - Installation: getting-started/installation.md
       - Quick Start: getting-started/quickstart.md
@@ -134,7 +137,6 @@ nav:
       - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
       - Validators Usage: guides/VALIDATORS_USAGE.md
   - Documentation:
-      - Overview: README.md
       - Architecture: ARCHITECTURE.md
       - Glossary: GLOSSARY.md
       - Data Governance: DATA_GOVERNANCE.md

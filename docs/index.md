@@ -10,11 +10,49 @@
 
 ---
 
+## What is GRIMdata?
+
+**GRIMdata** (Global Rights Information Monitoring) is a research initiative using automated data pipelines to analyze human rights documents from international organizations. The platform hosts multiple focused projects, each examining specific human rights themes.
+
+### Our Projects
+
+<div class="grid cards" markdown>
+
+-   :rainbow:{ .lg .middle } **LittleRainbowRights**
+
+    ---
+
+    Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
+
+    [:octicons-arrow-right-24: Explore Project](projects/littlerainbowrights/index.md)
+
+-   :material-hand-heart:{ .lg .middle } **SGBV-UPR**
+
+    ---
+
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries.
+
+    [:octicons-arrow-right-24: Explore Project](projects/sgbv/index.md)
+
+</div>
+
+Each project has its own dedicated page accessible via its own domain:
+
+- **grimdata.org** - Main hub (this site)
+- **grimdata.org/projects/littlerainbowrights/** - LittleRainbowRights project
+- **grimdata.org/projects/sgbv/** - SGBV-UPR project
+- **littlerainbowrights.com** - Direct link to LittleRainbowRights (redirects to project page)
+
 ## What is DigitalChild?
 
-DigitalChild is an open-source Python pipeline that scrapes, processes, and analyzes human rights documents with a specific focus on **child and LGBTQ+ digital protection**.
+**DigitalChild** is the open-source Python pipeline powering these analyses. It scrapes, processes, and analyzes human rights documents with flexible tagging and enrichment capabilities.
 
-The project tracks **10 human rights indicators** across **194 countries**, providing researchers, advocates, and policy analysts with evidence-based data on digital rights protections worldwide.
+The pipeline is designed to be:
+
+- **Modular** - Easy to add new data sources and analysis methods
+- **Transparent** - All processing steps documented and reproducible
+- **Secure** - Input validation protects against malicious data
+- **Extensible** - Researchers can adapt for their own projects
 
 ## Key Features
 

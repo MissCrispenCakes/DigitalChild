@@ -485,7 +485,7 @@ Advanced academic degree
 
 ## Related Projects
 
-### ALLRainbowRights
+### Beyond the Rainbow
 
 Extended vision encompassing all vulnerable populations
 
