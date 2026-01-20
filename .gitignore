@@ -36,3 +36,4 @@ Thumbs.db
 .vscode/
 # MkDocs build output
 /site/
+alignmentissue_*.PNG

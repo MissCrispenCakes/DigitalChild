@@ -20,29 +20,21 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
 <div class="grid cards" markdown>
 
-- :material-earth:{ .lg .middle } **194 Countries Tracked**
+-   :material-earth:{ .lg .middle } __194 Countries Tracked__
 
-  ______________________________________________________________________
+    Comprehensive global coverage of digital rights indicators
 
-  Comprehensive global coverage of digital rights indicators
+-   :material-chart-line:{ .lg .middle } __10 Indicators__
 
-- :material-chart-line:{ .lg .middle } **10 Indicators**
+    AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
 
-  ______________________________________________________________________
+-   :material-alert:{ .lg .middle } __Critical Gaps Identified__
 
-  AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
+    Many countries lack specific child online protection frameworks
 
-- :material-alert:{ .lg .middle } **Critical Gaps Identified**
+-   :material-shield-check:{ .lg .middle } __Best Practices__
 
-  ______________________________________________________________________
-
-  Many countries lack specific child online protection frameworks
-
-- :material-shield-check:{ .lg .middle } **Best Practices**
-
-  ______________________________________________________________________
-
-  Leading countries demonstrate comprehensive approaches
+    Leading countries demonstrate comprehensive approaches
 
 </div>
 
@@ -170,37 +162,29 @@ Insights for:
 
 <div class="grid cards" markdown>
 
-- :material-chart-box:{ .lg .middle } **Scorecard Visualization**
+-   :material-chart-box:{ .lg .middle } __Scorecard Visualization__
 
-  ______________________________________________________________________
+    Interactive charts showing indicators across countries
 
-  Interactive charts showing indicators across countries
+    [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
 
-  [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
+-   :material-table-search:{ .lg .middle } __Data Explorer__
 
-- :material-table-search:{ .lg .middle } **Data Explorer**
+    Filter and search through all indicators
 
-  ______________________________________________________________________
+    [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
 
-  Filter and search through all indicators
+-   :material-download:{ .lg .middle } __Export Data__
 
-  [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
+    Download CSV files for your own analysis
 
-- :material-download:{ .lg .middle } **Export Data**
+    [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
 
-  ______________________________________________________________________
+-   :material-code-tags:{ .lg .middle } __Use the Pipeline__
 
-  Download CSV files for your own analysis
+    Run the analysis yourself on your own machine
 
-  [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
-
-- :material-code-tags:{ .lg .middle } **Use the Pipeline**
-
-  ______________________________________________________________________
-
-  Run the analysis yourself on your own machine
-
-  [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
+    [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
 
 </div>
 

@@ -31,29 +31,21 @@ The repository and analysis tools are ready for expansion to incorporate this ne
 
 <div class="grid cards" markdown>
 
-- :material-file-document:{ .lg .middle } **UPR Document Analysis**
+-   :material-file-document:{ .lg .middle } __UPR Document Analysis__
 
-  ______________________________________________________________________
+    Systematic analysis of UPR recommendations across countries
 
-  Systematic analysis of UPR recommendations across countries
+-   :material-tag-multiple:{ .lg .middle } __SGBV-Specific Tagging__
 
-- :material-tag-multiple:{ .lg .middle } **SGBV-Specific Tagging**
+    Identification of SGBV-related recommendations and themes
 
-  ______________________________________________________________________
+-   :material-chart-timeline:{ .lg .middle } __Longitudinal Tracking__
 
-  Identification of SGBV-related recommendations and themes
+    How SGBV recommendations evolve across UPR cycles
 
-- :material-chart-timeline:{ .lg .middle } **Longitudinal Tracking**
+-   :material-earth:{ .lg .middle } __Global Coverage__
 
-  ______________________________________________________________________
-
-  How SGBV recommendations evolve across UPR cycles
-
-- :material-earth:{ .lg .middle } **Global Coverage**
-
-  ______________________________________________________________________
-
-  Analysis across all UN member states
+    Analysis across all UN member states
 
 </div>
 

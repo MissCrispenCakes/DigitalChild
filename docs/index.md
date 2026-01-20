@@ -21,25 +21,21 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :rainbow:{ .lg .middle } **LittleRainbowRights**
+-   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
-  ---
+    Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
 
-  Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
+    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
 
-  **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
+    [:octicons-arrow-right-24: Explore Project](projects/littlerainbowrights/index.md)
 
-  [:octicons-arrow-right-24: Explore Project](projects/littlerainbowrights/index.md)
+-   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
-- :material-hand-heart:{ .lg .middle } **SGBV-UPR**
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries. Dataset updating for UPR Cycle 4.
 
-  ---
+    **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
 
-  Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries. Dataset updating for UPR Cycle 4.
-
-  **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
-
-  [:octicons-arrow-right-24: Explore Project](projects/sgbv/index.md)
+    [:octicons-arrow-right-24: Explore Project](projects/sgbv/index.md)
 
 </div>
 
@@ -77,37 +73,29 @@ The pipeline is designed to be:
 
 <div class="grid cards" markdown>
 
-- :material-download:{ .lg .middle } **Automated Scraping**
+-   :material-download:{ .lg .middle } __Automated Scraping__
 
-  ---
+    Collect documents from 7 international sources including AU, OHCHR, UPR, and UNICEF. Respectful, rate-limited scraping with robust error handling.
 
-  Collect documents from 7 international sources including AU, OHCHR, UPR, and UNICEF. Respectful, rate-limited scraping with robust error handling.
+    [:octicons-arrow-right-24: Learn more](guides/RUNBOOK.md)
 
-  [:octicons-arrow-right-24: Learn more](guides/RUNBOOK.md)
+-   :material-tag-multiple:{ .lg .middle } __Intelligent Tagging__
 
-- :material-tag-multiple:{ .lg .middle } **Intelligent Tagging**
+    Regex-based tagging system identifies themes: child rights, LGBTQ+ rights, AI, privacy, digital policy. Versioned tags enable comparison.
 
-  ---
+    [:octicons-arrow-right-24: See formats](standards/TAGS_CONFIG_FORMAT.md)
 
-  Regex-based tagging system identifies themes: child rights, LGBTQ+ rights, AI, privacy, digital policy. Versioned tags enable comparison.
+-   :material-chart-bar:{ .lg .middle } __Comprehensive Scorecard__
 
-  [:octicons-arrow-right-24: See formats](standards/TAGS_CONFIG_FORMAT.md)
+    Track 10 indicators across 194 countries. 2,543 validated source URLs ensure transparency. Automated validation and change detection.
 
-- :material-chart-bar:{ .lg .middle } **Comprehensive Scorecard**
+    [:octicons-arrow-right-24: View scorecard](scorecard/index.md)
 
-  ---
+-   :material-shield-check:{ .lg .middle } __Security First__
 
-  Track 10 indicators across 194 countries. 2,543 validated source URLs ensure transparency. Automated validation and change detection.
+    68 validator tests protect against path traversal, URL injection, and malicious input. Built-in security from the ground up.
 
-  [:octicons-arrow-right-24: View scorecard](scorecard/index.md)
-
-- :material-shield-check:{ .lg .middle } **Security First**
-
-  ---
-
-  68 validator tests protect against path traversal, URL injection, and malicious input. Built-in security from the ground up.
-
-  [:octicons-arrow-right-24: Security policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md)
+    [:octicons-arrow-right-24: Security policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md)
 
 </div>
 
@@ -129,29 +117,21 @@ ls data/exports/
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-graduation-cap:{ .middle } **Researchers**
+-   :fontawesome-solid-graduation-cap:{ .middle } __Researchers__
 
-  ---
+    Academics studying digital rights trends, child protection policies, LGBTQ+ legal status across countries.
 
-  Academics studying digital rights trends, child protection policies, LGBTQ+ legal status across countries.
+-   :fontawesome-solid-building-columns:{ .middle } __NGOs & Advocates__
 
-- :fontawesome-solid-building-columns:{ .middle } **NGOs & Advocates**
+    Human rights organizations tracking protections, building evidence for campaigns, monitoring policy changes.
 
-  ---
+-   :fontawesome-solid-chart-line:{ .middle } __Policy Analysts__
 
-  Human rights organizations tracking protections, building evidence for campaigns, monitoring policy changes.
+    Government and UN policy staff comparing policies across countries, identifying gaps and best practices.
 
-- :fontawesome-solid-chart-line:{ .middle } **Policy Analysts**
+-   :fontawesome-solid-newspaper:{ .middle } __Journalists__
 
-  ---
-
-  Government and UN policy staff comparing policies across countries, identifying gaps and best practices.
-
-- :fontawesome-solid-newspaper:{ .middle } **Journalists**
-
-  ---
-
-  Investigative reporters researching digital rights stories with verified data and authoritative sources.
+    Investigative reporters researching digital rights stories with verified data and authoritative sources.
 
 </div>
 
@@ -212,23 +192,19 @@ This ensures the pipeline is freely usable while giving credit to the research e
 
 <div class="grid cards" markdown>
 
-- :material-account-check:{ .lg .middle } **For Users**
+-   :material-account-check:{ .lg .middle } __For Users__
 
-  ---
+    1. [Install](getting-started/installation.md) the pipeline
+    2. Review [FAQ](FAQ.md) for common questions
+    3. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
+    4. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
 
-  1. [Install](getting-started/installation.md) the pipeline
-  2. Review [FAQ](FAQ.md) for common questions
-  3. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
-  4. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
+-   :material-source-pull:{ .lg .middle } __For Contributors__
 
-- :material-source-pull:{ .lg .middle } **For Contributors**
-
-  ---
-
-  1. Read [Contributing Guide](CONTRIBUTING.md)
-  2. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-  3. Submit pull requests
-  4. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
+    1. Read [Contributing Guide](CONTRIBUTING.md)
+    2. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+    3. Submit pull requests
+    4. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
 
 </div>
 
