@@ -87,19 +87,21 @@ Scraper → Raw Files → Processor → Text → Tagger → Metadata → Exports
 ```
 
 1. **Scrapers** (`scrapers/`) fetch documents from web sources → `data/raw/[source]/`
-2. **Processors** (`processors/`) convert PDFs/DOCX/HTML to text → `data/processed/[region]/[org]/text/`
-3. **Tagger** applies regex rules from `configs/tags_*.json`
-4. **Metadata** stored in `data/metadata/metadata.json` (tracks tags history, recommendations)
-5. **Exports** generate CSV summaries in `data/exports/`
+1. **Processors** (`processors/`) convert PDFs/DOCX/HTML to text → `data/processed/[region]/[org]/text/`
+1. **Tagger** applies regex rules from `configs/tags_*.json`
+1. **Metadata** stored in `data/metadata/metadata.json` (tracks tags history, recommendations)
+1. **Exports** generate CSV summaries in `data/exports/`
 
 ### Key Components
 
 **pipeline_runner.py** - Main entry point with three modes:
+
 - `scraper` mode: Run scrapers, process docs, tag, export
 - `urls` mode: Process from static URL dictionaries in `configs/url_dict/`
 - `scorecard` mode: Enrich/export/validate scorecard data
 
 **SCRAPER_MAP** in pipeline_runner.py:46-60 maps source names to:
+
 - Scraper module
 - Output directory path
 - Document type
@@ -107,14 +109,17 @@ Scraper → Raw Files → Processor → Text → Tagger → Metadata → Exports
 Each source has both a requests-based scraper and a Selenium variant (`_sel` suffix).
 
 **Fallback Handler** (`processors/fallback_handler.py`):
+
 - Tries processors in sequence until one succeeds
 - Used for unknown file types
 
 **Year Extraction** (pipeline_runner.py:212-244):
+
 - Pattern: `(19|20)\d{2}` with boundary checks
 - Sources: filename first, then first 1000 chars of text
 
 **Country/Region Detection** (`utils/detectors.py`):
+
 - Uses filename, URL keys, and text content
 - Normalizes via `json_normalizer.py` (preserves `_raw` fields)
 
@@ -123,10 +128,10 @@ Each source has both a requests-based scraper and a Selenium variant (`_sel` suf
 Separate workflow for country-level indicators (10 metrics per country):
 
 1. **Load**: `processors/scorecard.py` reads `scorecard_main.xlsx`
-2. **Enrich**: `processors/scorecard_enricher.py` adds indicators to document metadata
-3. **Export**: `processors/scorecard_export.py` generates CSV exports
-4. **Validate**: `processors/scorecard_validator.py` checks source URLs
-5. **Diff**: `processors/scorecard_diff.py` monitors sources for changes
+1. **Enrich**: `processors/scorecard_enricher.py` adds indicators to document metadata
+1. **Export**: `processors/scorecard_export.py` generates CSV exports
+1. **Validate**: `processors/scorecard_validator.py` checks source URLs
+1. **Diff**: `processors/scorecard_diff.py` monitors sources for changes
 
 Run scorecard workflow:
 
@@ -232,13 +237,15 @@ Disable module logs with `--no-module-logs` flag.
 GitHub Actions runs on push/PR to `main`, `homebase`, `basecamp` branches.
 
 **Job 1: test** (Python 3.12, ubuntu-latest)
+
 1. Install deps: `pip install -r requirements.txt pytest pytest-cov pre-commit`
-2. Run pre-commit: `pre-commit run --all-files --show-diff-on-failure`
-3. Run tests: `pytest tests/ --maxfail=1 --disable-warnings -q --cov=processors --cov=scrapers --cov-report=term-missing`
+1. Run pre-commit: `pre-commit run --all-files --show-diff-on-failure`
+1. Run tests: `pytest tests/ --maxfail=1 --disable-warnings -q --cov=processors --cov=scrapers --cov-report=term-missing`
 
 **Job 2: docs** (Python 3.11, ubuntu-latest)
+
 1. Install: `pip install mdformat`
-2. Check: `mdformat --check README.md docs/`
+1. Check: `mdformat --check README.md docs/`
 
 **CRITICAL**: If pre-commit fails, CI fails. Always run `pre-commit run --all-files` before pushing.
 
@@ -247,9 +254,9 @@ GitHub Actions runs on push/PR to `main`, `homebase`, `basecamp` branches.
 ### Add New Scraper
 
 1. Create `scrapers/new_source.py`
-2. Implement `scrape()` function returning list of file paths
-3. Add to `SCRAPER_MAP` in `pipeline_runner.py`
-4. Add tests in `tests/test_new_source.py`
+1. Implement `scrape()` function returning list of file paths
+1. Add to `SCRAPER_MAP` in `pipeline_runner.py`
+1. Add tests in `tests/test_new_source.py`
 
 Scraper template:
 
@@ -286,9 +293,9 @@ def scrape(base_url=None, countries=None):
 ### Add New Processor
 
 1. Create `processors/new_processor.py`
-2. Implement `convert(input_path, output_dir)` function
-3. Update `fallback_handler.py` if needed
-4. Add tests in `tests/test_new_processor.py`
+1. Implement `convert(input_path, output_dir)` function
+1. Update `fallback_handler.py` if needed
+1. Add tests in `tests/test_new_processor.py`
 
 Processor template:
 
@@ -322,17 +329,17 @@ def convert(input_path, output_dir):
 ### Modify Tags Configuration
 
 1. Edit or create `configs/tags_vX.json`
-2. Update version mapping in `configs/tags_main.json` if needed
-3. Run tests: `pytest tests/test_tagger.py -v`
-4. Test with demo: `python utils/pipeline_runner_DEMO.py`
-5. Verify exports in `data/exports/`
+1. Update version mapping in `configs/tags_main.json` if needed
+1. Run tests: `pytest tests/test_tagger.py -v`
+1. Test with demo: `python utils/pipeline_runner_DEMO.py`
+1. Verify exports in `data/exports/`
 
 ### Update Scorecard Data
 
 1. Edit `scorecard_main.xlsx` with new data
-2. Re-enrich: `python processors/scorecard_enricher.py`
-3. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
-4. Validate: `python processors/scorecard_validator.py`
+1. Re-enrich: `python processors/scorecard_enricher.py`
+1. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
+1. Validate: `python processors/scorecard_validator.py`
 
 ## File Naming Standards
 
@@ -365,6 +372,7 @@ Fix: Run commands from project root, not subdirectories
 ### Pre-commit Hook Failures
 
 Always run `pre-commit run --all-files` before committing. Common auto-fixes:
+
 - Trailing whitespace
 - Missing end-of-file newline
 - Black formatting: `pre-commit run black --all-files`

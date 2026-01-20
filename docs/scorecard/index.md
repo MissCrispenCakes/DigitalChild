@@ -293,16 +293,16 @@ When using scorecard data in publications:
 ```bibtex
 @misc{littlerainbowrights2025,
   title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {GRIMdata / LittleRainbowRights},
+  author = {Vollmer, S.C.},
   year = {2025},
   howpublished = {\url{https://github.com/MissCrispenCakes/DigitalChild}},
-  note = {Licensed under CC BY 4.0}
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
 }
 ```
 
 Or:
 
-> GRIMdata / LittleRainbowRights. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild
+> Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
 
 ## Limitations & Disclaimers
 

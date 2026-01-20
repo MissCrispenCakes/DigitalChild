@@ -132,52 +132,55 @@ extra:
 
 # Navigation
 nav:
-  - Home: index.md
+  - GRIMdata Home: index.md
   - Projects:
-      - LittleRainbowRights: projects/littlerainbowrights/index.md
-      - SGBV-UPR: projects/sgbv/index.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Quick Start: getting-started/quickstart.md
-      - First Run Errors: guides/FIRST_RUN_ERRORS.md
-      - FAQ: FAQ.md
-  - User Guides:
-      - Runbook: guides/RUNBOOK.md
-      - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
-      - Validators Usage: guides/VALIDATORS_USAGE.md
-  - Documentation:
-      - Architecture: ARCHITECTURE.md
-      - Glossary: GLOSSARY.md
-      - Data Governance: DATA_GOVERNANCE.md
-      - Docs Index: DOCS_INDEX.md
-  - Development:
-      - Roadmap: ROADMAP.md
+      - LittleRainbowRights:
+          - Project Overview: projects/littlerainbowrights/index.md
+          - Getting Started:
+              - Installation: getting-started/installation.md
+              - Quick Start: getting-started/quickstart.md
+              - First Run Errors: guides/FIRST_RUN_ERRORS.md
+              - FAQ: FAQ.md
+          - User Guides:
+              - Runbook: guides/RUNBOOK.md
+              - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
+              - Validators Usage: guides/VALIDATORS_USAGE.md
+          - Scorecard:
+              - Visualization: scorecard/index.md
+              - Data Explorer: scorecard/explorer.md
+          - Documentation:
+              - Architecture: ARCHITECTURE.md
+              - Glossary: GLOSSARY.md
+              - Data Governance: DATA_GOVERNANCE.md
+              - Docs Index: DOCS_INDEX.md
+          - Development:
+              - Roadmap: ROADMAP.md
+              - Standards:
+                  - Metadata Schema: standards/METADATA_SCHEMA.md
+                  - File Naming: standards/FILE_NAMING_STANDARDS.md
+                  - Document Types: standards/DOC_TYPE_STANDARDS.md
+                  - Scraper Structure: standards/SCRAPER_STRUCTURE.md
+                  - Tags Config: standards/TAGS_CONFIG_FORMAT.md
+                  - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
+                  - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
+                  - ISO Mapping: standards/ISO_MAPPING.md
+              - Notes:
+                  - Directory Structure: notes/DIRECTORY_STRUCTURE.md
+                  - Pipeline Flow: notes/PIPELINE_FLOW.md
+                  - Pipeline Logging: notes/PIPELINE_LOGGING.md
+                  - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
+                  - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
+                  - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
+              - Planning:
+                  - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
+                  - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
+              - Reviews:
+                  - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
+                  - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
+      - SGBV-UPR:
+          - Project Overview: projects/sgbv/index.md
+  - About:
       - Contributing: CONTRIBUTING.md
-      - Standards:
-          - Metadata Schema: standards/METADATA_SCHEMA.md
-          - File Naming: standards/FILE_NAMING_STANDARDS.md
-          - Document Types: standards/DOC_TYPE_STANDARDS.md
-          - Scraper Structure: standards/SCRAPER_STRUCTURE.md
-          - Tags Config: standards/TAGS_CONFIG_FORMAT.md
-          - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
-          - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
-          - ISO Mapping: standards/ISO_MAPPING.md
-      - Notes:
-          - Directory Structure: notes/DIRECTORY_STRUCTURE.md
-          - Pipeline Flow: notes/PIPELINE_FLOW.md
-          - Pipeline Logging: notes/PIPELINE_LOGGING.md
-          - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
-          - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
-          - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
-  - Planning:
-      - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
-      - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
-  - Reviews:
-      - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
-      - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
-  - Scorecard:
-      - Visualization: scorecard/index.md
-      - Data Explorer: scorecard/explorer.md
 
 # Custom CSS
 extra_css:

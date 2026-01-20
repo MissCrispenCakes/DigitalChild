@@ -7,11 +7,13 @@ Complete guide for deploying GRIMdata.org with GitHub Actions.
 ### 1. MkDocs Installation
 
 **Installed packages:**
+
 - `mkdocs==1.6.1` - Static site generator
 - `mkdocs-material==9.7.1` - Material Design theme
 - `pymdown-extensions==10.20` - Additional markdown features
 
 **Files created:**
+
 - `requirements-docs.txt` - Documentation dependencies
 - `.gitignore` - Excludes `site/` build directory
 
@@ -20,33 +22,39 @@ Complete guide for deploying GRIMdata.org with GitHub Actions.
 **File:** `.github/workflows/deploy-docs.yml`
 
 **Triggers:**
+
 - Automatic deployment on push to `basecamp` branch
 - Only when `docs/` or `mkdocs.yml` changes
 - Manual trigger available (workflow_dispatch)
 
 **What it does:**
+
 1. Checks out repository
-2. Sets up Python 3.12
-3. Installs MkDocs and dependencies
-4. Builds documentation
-5. Deploys to `gh-pages` branch automatically
+1. Sets up Python 3.12
+1. Installs MkDocs and dependencies
+1. Builds documentation
+1. Deploys to `gh-pages` branch automatically
 
 **Permissions:** Has `contents: write` to push to gh-pages branch
 
 ### 3. Multi-Project Structure
 
 **Projects:**
+
 1. **LittleRainbowRights** - `docs/projects/littlerainbowrights/index.md`
+
    - Child and LGBTQ+ digital rights research
    - Scorecard with 10 indicators across 194 countries
    - Comprehensive project page with all features
 
-2. **SGBV-UPR** - `docs/projects/sgbv/index.md`
+1. **SGBV-UPR** - `docs/projects/sgbv/index.md`
+
    - Sexual and gender-based violence analysis
    - Uses UPR recommendations
    - Published research project
 
 **URL Structure:**
+
 ```
 grimdata.org                                    → Homepage
 grimdata.org/projects/littlerainbowrights/      → LRR Project
@@ -62,6 +70,7 @@ grimdata.org/getting-started/installation/      → Installation guide
 **Content:** `grimdata.org`
 
 **Secondary domains:**
+
 - `littlerainbowrights.com` → Can redirect to `grimdata.org/projects/littlerainbowrights/`
 - Your SGBV domain → Can redirect to `grimdata.org/projects/sgbv/`
 
@@ -70,11 +79,11 @@ grimdata.org/getting-started/installation/      → Installation guide
 ### Step 1: Enable GitHub Pages
 
 1. Go to GitHub repository settings
-2. Navigate to **Settings → Pages**
-3. **Source:** Deploy from a branch
-4. **Branch:** `gh-pages` (will be created automatically)
-5. **Folder:** `/ (root)`
-6. Click **Save**
+1. Navigate to **Settings → Pages**
+1. **Source:** Deploy from a branch
+1. **Branch:** `gh-pages` (will be created automatically)
+1. **Folder:** `/ (root)`
+1. Click **Save**
 
 ### Step 2: Trigger First Deployment
 
@@ -95,19 +104,19 @@ The GitHub Action will run automatically and deploy within 2-3 minutes.
 **Option B: Manual Trigger**
 
 1. Go to **Actions** tab on GitHub
-2. Click **Deploy Documentation** workflow
-3. Click **Run workflow**
-4. Select `basecamp` branch
-5. Click **Run workflow**
+1. Click **Deploy Documentation** workflow
+1. Click **Run workflow**
+1. Select `basecamp` branch
+1. Click **Run workflow**
 
 ### Step 3: Verify Deployment
 
 After 2-3 minutes:
 
 1. Go to **Actions** tab
-2. Check the workflow run completed successfully (green checkmark)
-3. Visit: `https://misscrispcakes.github.io/DigitalChild/`
-4. Verify site loads correctly
+1. Check the workflow run completed successfully (green checkmark)
+1. Visit: `https://misscrispcakes.github.io/DigitalChild/`
+1. Verify site loads correctly
 
 ### Step 4: Configure Custom Domain (grimdata.org)
 
@@ -116,6 +125,7 @@ After 2-3 minutes:
 Add these DNS records:
 
 **A Records (for grimdata.org):**
+
 ```
 Type: A
 Name: @
@@ -135,6 +145,7 @@ Value: 185.199.111.153
 ```
 
 **CNAME Record (for www):**
+
 ```
 Type: CNAME
 Name: www
@@ -151,8 +162,8 @@ Value: misscrispcakes.github.io
 After DNS propagates:
 
 1. Go to **Settings → Pages** on GitHub
-2. Check **Enforce HTTPS** (checkbox will be grayed out until DNS propagates)
-3. Wait a few minutes for SSL certificate to provision
+1. Check **Enforce HTTPS** (checkbox will be grayed out until DNS propagates)
+1. Wait a few minutes for SSL certificate to provision
 
 ### Step 5: Configure Secondary Domain (littlerainbowrights.com)
 
@@ -161,10 +172,10 @@ After DNS propagates:
 Most registrars offer URL forwarding:
 
 1. Go to your domain registrar settings
-2. Find "URL Forwarding" or "Domain Forwarding"
-3. Forward `littlerainbowrights.com` to `https://grimdata.org/projects/littlerainbowrights/`
-4. Enable **301 redirect** (permanent)
-5. Optional: Enable forwarding with path (maintains subdirectories)
+1. Find "URL Forwarding" or "Domain Forwarding"
+1. Forward `littlerainbowrights.com` to `https://grimdata.org/projects/littlerainbowrights/`
+1. Enable **301 redirect** (permanent)
+1. Optional: Enable forwarding with path (maintains subdirectories)
 
 **Option B: DNS with Subdomain**
 
@@ -201,8 +212,8 @@ Navigate the site, check all links work, and verify formatting.
 ### Update Content
 
 1. Edit markdown files in `docs/`
-2. Commit and push to `basecamp`
-3. GitHub Actions deploys automatically
+1. Commit and push to `basecamp`
+1. GitHub Actions deploys automatically
 
 ```bash
 # Example: Update FAQ
@@ -239,11 +250,14 @@ nav:
 ### Add Logo and Favicon
 
 1. Create `docs/assets/` directory
-2. Add images:
+
+1. Add images:
+
    - `docs/assets/logo.png` (for header, ~200x50px recommended)
    - `docs/assets/favicon.ico` (for browser tab, 32x32px)
 
-3. Update `mkdocs.yml`:
+1. Update `mkdocs.yml`:
+
    ```yaml
    theme:
      logo: assets/logo.png
@@ -253,7 +267,7 @@ nav:
 ### Add Google Analytics (Optional)
 
 1. Get Google Analytics ID (format: `G-XXXXXXXXXX`)
-2. Update `mkdocs.yml`:
+1. Update `mkdocs.yml`:
    ```yaml
    extra:
      analytics:
@@ -266,29 +280,33 @@ nav:
 ### Check GitHub Actions
 
 1. Go to **Actions** tab
-2. View workflow runs
-3. Click on a run to see detailed logs
-4. Green checkmark = success
-5. Red X = failure (click to see error logs)
+1. View workflow runs
+1. Click on a run to see detailed logs
+1. Green checkmark = success
+1. Red X = failure (click to see error logs)
 
 ### Common Issues
 
 **Issue: Workflow doesn't trigger**
+
 - Check `.github/workflows/deploy-docs.yml` exists
 - Verify you pushed to `basecamp` branch
 - Check if paths filter matches your changes
 
 **Issue: Build fails**
+
 - Check Actions logs for error messages
 - Common: Missing file references in `mkdocs.yml`
 - Test locally first: `mkdocs build`
 
 **Issue: Site deployed but shows 404**
+
 - Verify `gh-pages` branch exists
 - Check GitHub Pages settings pointing to correct branch
 - Wait a few minutes after first deployment
 
 **Issue: Custom domain not working**
+
 - Verify DNS records are correct
 - Check DNS propagation: [whatsmydns.net](https://www.whatsmydns.net/)
 - Ensure `docs/CNAME` contains correct domain
@@ -331,15 +349,15 @@ grimdata.org/
 **Issues with deployment?**
 
 1. Check [GitHub Actions logs](https://github.com/MissCrispenCakes/DigitalChild/actions)
-2. Test locally: `mkdocs serve`
-3. Review [MkDocs documentation](https://www.mkdocs.org/)
-4. Review [Material theme docs](https://squidfunk.github.io/mkdocs-material/)
+1. Test locally: `mkdocs serve`
+1. Review [MkDocs documentation](https://www.mkdocs.org/)
+1. Review [Material theme docs](https://squidfunk.github.io/mkdocs-material/)
 
 **DNS/Domain issues?**
 
 1. Check DNS propagation: [whatsmydns.net](https://www.whatsmydns.net/)
-2. Verify records with domain registrar
-3. Contact registrar support if needed
+1. Verify records with domain registrar
+1. Contact registrar support if needed
 
 ## ✅ Checklist
 
@@ -360,12 +378,12 @@ Before going live:
 ## 🎉 Next Steps After Launch
 
 1. **Announce** - Share grimdata.org on social media, academic networks
-2. **Monitor** - Watch GitHub Actions for deployment status
-3. **Iterate** - Add content, update scorecard, improve visualizations
-4. **Analytics** - Add Google Analytics to track visitors (optional)
-5. **Feedback** - Gather user feedback via GitHub Issues/Discussions
+1. **Monitor** - Watch GitHub Actions for deployment status
+1. **Iterate** - Add content, update scorecard, improve visualizations
+1. **Analytics** - Add Google Analytics to track visitors (optional)
+1. **Feedback** - Gather user feedback via GitHub Issues/Discussions
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026
 

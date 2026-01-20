@@ -9,7 +9,7 @@
 1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
    - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
    - Tracks 10 indicators across 194 countries
-2. **SGBV-UPR** - Sexual and gender-based violence analysis
+1. **SGBV-UPR** - Sexual and gender-based violence analysis
    - Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
    - UPR recommendations analysis
 
@@ -336,9 +336,10 @@ ______________________________________________________________________
 Use the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff):
 
 ```
-GRIMdata / LittleRainbowRights. (2025). DigitalChild: Human Rights Data
-Pipeline for Child and LGBTQ+ Digital Protection.
+Vollmer, S.C. (2025). DigitalChild: Human Rights Data Pipeline for Child
+and LGBTQ+ Digital Protection.
 Available at: https://github.com/MissCrispenCakes/DigitalChild
+ORCID: 0000-0002-3359-2810
 ```
 
 ### Are there published papers using this?

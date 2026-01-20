@@ -38,9 +38,7 @@ def export(docs, output_file="data/exports/tags_summary.csv"):
             writer.writerow([tag, count, pct])
 
         # Branding footer
-        csvfile.write(
-            "\n# Project: GRIMdata / LittleRainbowRights\n"
-        )
+        csvfile.write("\n# Project: GRIMdata / LittleRainbowRights\n")
         csvfile.write(
             "# Domains: https://GRIMdata.org | https://LittleRainbowRights.com\n"
         )

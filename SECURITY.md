@@ -4,7 +4,7 @@
 
 We release patches for security vulnerabilities for the following versions:
 
-|          Version         |     Supported      |
+| Version                  | Supported          |
 | ------------------------ | ------------------ |
 | latest (basecamp branch) | :white_check_mark: |
 | < 1.0                    | :x:                |
@@ -24,6 +24,7 @@ The DigitalChild project takes security seriously. We appreciate your efforts to
 **1. Report Privately**
 
 Email security concerns to: **[YOUR-EMAIL@DOMAIN.COM]**
+
 <!-- TODO: Add your actual security contact email -->
 
 **2. Include in Your Report:**
@@ -81,21 +82,26 @@ If you're deploying or using this project, follow these security practices:
 ### For Users
 
 1. **Keep Updated:** Always use the latest version from the `basecamp` branch
-2. **Review Dependencies:** Regularly update dependencies (`pip install --upgrade -r requirements.txt`)
-3. **Validate Input:** Don't trust user-provided URLs, file paths, or data
-4. **Check Logs:** Monitor logs for suspicious activity
-5. **Secure Credentials:** Never commit API keys or credentials to the repository
+1. **Review Dependencies:** Regularly update dependencies (`pip install --upgrade -r requirements.txt`)
+1. **Validate Input:** Don't trust user-provided URLs, file paths, or data
+1. **Check Logs:** Monitor logs for suspicious activity
+1. **Secure Credentials:** Never commit API keys or credentials to the repository
 
 ### For Developers
 
 1. **Input Validation:** Always validate and sanitize user input
-2. **Use Validators:** Use the `processors/validators.py` module for:
+
+1. **Use Validators:** Use the `processors/validators.py` module for:
+
    - URL validation (blocks malicious patterns)
    - Path validation (prevents traversal attacks)
    - File validation (checks size, extension)
-3. **Avoid Eval:** Never use `eval()` or `exec()` on untrusted input
-4. **SQL Injection:** Use parameterized queries (we don't use SQL, but good practice)
-5. **Dependencies:** Regularly check for vulnerable dependencies:
+
+1. **Avoid Eval:** Never use `eval()` or `exec()` on untrusted input
+
+1. **SQL Injection:** Use parameterized queries (we don't use SQL, but good practice)
+
+1. **Dependencies:** Regularly check for vulnerable dependencies:
 
    ```bash
    pip install safety
@@ -120,10 +126,10 @@ When adding new scrapers:
 This project handles sensitive human rights data:
 
 1. **Access Control:** Limit who can access scraped documents
-2. **Transmission:** Use HTTPS for all data transfers
-3. **Storage:** Be mindful of where data is stored (especially cloud services)
-4. **Deletion:** Follow data retention policies
-5. **Privacy:** See [docs/DATA_GOVERNANCE.md](docs/DATA_GOVERNANCE.md) for detailed policies
+1. **Transmission:** Use HTTPS for all data transfers
+1. **Storage:** Be mindful of where data is stored (especially cloud services)
+1. **Deletion:** Follow data retention policies
+1. **Privacy:** See [docs/DATA_GOVERNANCE.md](docs/DATA_GOVERNANCE.md) for detailed policies
 
 ## 🔍 Known Security Considerations
 
@@ -159,8 +165,8 @@ This project handles sensitive human rights data:
 If we discover a security incident:
 
 1. We'll notify affected users immediately
-2. We'll publish a post-mortem
-3. We'll implement measures to prevent recurrence
+1. We'll publish a post-mortem
+1. We'll implement measures to prevent recurrence
 
 ## 📚 Security Resources
 
@@ -172,7 +178,7 @@ If we discover a security incident:
 
 We appreciate security researchers and users who help keep this project secure. Responsible disclosure benefits everyone in the human rights research community.
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026
 
