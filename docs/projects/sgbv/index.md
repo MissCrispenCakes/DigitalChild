@@ -243,7 +243,7 @@ The codebase includes:
 ```bibtex
 @misc{sgbvupr2025,
   title = {SGBV-UPR: Sexual and Gender-Based Violence in Universal Periodic Review Recommendations},
-  author = {GRIMdata Project},
+  author = {Vollmer, S.C.},
   year = {2025},
   howpublished = {\url{https://grimdata.org/projects/sgbv/}},
   note = {Licensed under CC BY 4.0}

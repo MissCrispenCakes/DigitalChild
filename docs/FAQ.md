@@ -336,8 +336,8 @@ ______________________________________________________________________
 Use the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff):
 
 ```
-GRIMdata / LittleRainbowRights. (2025). DigitalChild: Human Rights Data
-Pipeline for Child and LGBTQ+ Digital Protection.
+Vollmer, S.C. (2025). DigitalChild: Human Rights Data Pipeline for Child
+and LGBTQ+ Digital Protection.
 Available at: https://github.com/MissCrispenCakes/DigitalChild
 ```
 

@@ -206,7 +206,7 @@ When using LittleRainbowRights data:
 ```bibtex
 @misc{littlerainbowrights2025,
   title = {LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard},
-  author = {GRIMdata Project},
+  author = {Vollmer, S.C.},
   year = {2025},
   howpublished = {\url{https://grimdata.org/projects/littlerainbowrights/}},
   note = {Licensed under CC BY 4.0}
@@ -215,7 +215,7 @@ When using LittleRainbowRights data:
 
 Or:
 
-> GRIMdata / LittleRainbowRights. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0.
+> Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0.
 
 [Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 

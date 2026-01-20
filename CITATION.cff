@@ -4,11 +4,8 @@ type: software
 title: "DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection"
 abstract: "A Python data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection. Includes a comprehensive scorecard system tracking 10 indicators across 194 countries with 2,543 validated source URLs."
 authors:
-  - family-names: "[YOUR-LAST-NAME]"
-    given-names: "[YOUR-FIRST-NAME]"
-    affiliation: "[YOUR-UNIVERSITY]"
-    orcid: "https://orcid.org/[YOUR-ORCID]"
-    # TODO: Fill in your actual information above
+  - family-names: "Vollmer"
+    given-names: "S.C."
 repository-code: "https://github.com/MissCrispenCakes/DigitalChild"
 url: "https://grimdata.org"
 keywords:
@@ -34,8 +31,8 @@ references:
   - type: data
     title: "LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators"
     authors:
-      - family-names: "[YOUR-LAST-NAME]"
-        given-names: "[YOUR-FIRST-NAME]"
+      - family-names: "Vollmer"
+        given-names: "S.C."
     year: 2025
     license: CC-BY-4.0
     license-url: "https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA"
@@ -77,8 +74,8 @@ preferred-citation:
   type: software
   title: "DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection"
   authors:
-    - family-names: "[YOUR-LAST-NAME]"
-      given-names: "[YOUR-FIRST-NAME]"
+    - family-names: "Vollmer"
+      given-names: "S.C."
   year: 2025
   url: "https://github.com/MissCrispenCakes/DigitalChild"
   notes: "Available at: https://grimdata.org"
