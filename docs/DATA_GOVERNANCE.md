@@ -331,7 +331,7 @@ When publishing research using DigitalChild:
 
 ### Contributor Conduct
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for code of conduct.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for code of conduct.
 
 **Core values:**
 

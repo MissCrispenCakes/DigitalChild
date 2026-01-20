@@ -237,7 +237,7 @@ ______________________________________________________________________
 
 ### Can I contribute?
 
-Yes! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines. Contributions welcome:
+Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Contributions welcome:
 
 - Bug reports
 - New scrapers

@@ -217,7 +217,7 @@ Found an error in the scorecard data? Have updated information?
 1. **Provide evidence** - Include authoritative source URL
 1. **Track update** - Follow the issue for confirmation
 
-[Contributing Guidelines](CONTRIBUTING.md){ .md-button }
+[Contributing Guidelines](../../CONTRIBUTING.md){ .md-button }
 
 ## Citing This Work
 
