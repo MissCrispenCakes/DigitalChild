@@ -12,27 +12,27 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :rainbow:{ .lg .middle } __LittleRainbowRights__
+-   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
-  **Status:** Active | **Scope:** Global (194 countries)
+    **Status:** Active | **Scope:** Global (194 countries)
 
-  Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard. Presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard. Presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
 
-  **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
+    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
-  [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
-- :material-hand-heart:{ .lg .middle } __SGBV-UPR__
+-   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
-  **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
+    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
 
-  Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
 
-  **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
+    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
 
-  **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights) (SGBV analysis tools)
+    **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights) (SGBV analysis tools)
 
-  [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
+    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
 
 </div>
 
@@ -46,21 +46,21 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :material-database:{ .lg .middle } __Open Data__
+-   :material-database:{ .lg .middle } __Open Data__
 
-  All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
+    All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
-- :material-code-tags:{ .lg .middle } __Open Source Code__
+-   :material-code-tags:{ .lg .middle } __Open Source Code__
 
-  Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
+    Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
 
-- :material-book-open-variant:{ .lg .middle } __Documentation__
+-   :material-book-open-variant:{ .lg .middle } __Documentation__
 
-  Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
+    Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
 
-- :material-shield-check:{ .lg .middle } __Research Quality__
+-   :material-shield-check:{ .lg .middle } __Research Quality__
 
-  Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
+    Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
 
 </div>
 
@@ -79,30 +79,27 @@ All pipelines follow best practices for security, validation, and error handling
 The **LittleRainbowRights** project is ready for use:
 
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
-1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
-1. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
-1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
+2. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
+3. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
+4. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
 ## Use Cases
 
 **For Researchers:**
-
 - Systematic literature reviews of human rights policies
 - Cross-country comparative analysis
 - Longitudinal policy tracking
 - Data-driven advocacy campaigns
 
 **For NGOs & Advocates:**
-
 - Evidence-based policy recommendations
 - Monitor country compliance with commitments
 - Identify gaps in protections
 - Track implementation progress
 
 **For Policy Makers:**
-
 - Benchmark against peer countries
 - Identify best practices
 - Gap analysis for policy development
@@ -111,11 +108,9 @@ The **LittleRainbowRights** project is ready for use:
 ## Publications & Outputs
 
 **SGBV-UPR Research:**
-
 - Vollmer, SC and Vollmer, DT. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 **LittleRainbowRights Research:**
-
 - Vollmer, DT and Vollmer, SC. (2025). Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa. Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025.
 
 ## Open Source & Licensing
@@ -131,7 +126,7 @@ This dual licensing ensures maximum utility while giving credit to the research 
 GRIMdata is maintained by an independent researcher alongside other work. Both projects represent passion projects aimed at making human rights data more accessible and analysis more transparent.
 
 !!! warning "Maintained by PhD Student"
-This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
+    This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
 
 ## Contact & Contributing
 

@@ -19,10 +19,10 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
 - ✅ **Informed the development** of the expanded LittleRainbowRights project
 
 !!! info "Precursor to LittleRainbowRights"
-This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
+    This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
 
 !!! note "Separate Repository"
-SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
+    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
 
 ## Project Status
 
@@ -42,21 +42,21 @@ The repository and analysis tools are ready for expansion to incorporate this ne
 
 <div class="grid cards" markdown>
 
-- :material-file-document:{ .lg .middle } __UPR Document Analysis__
+-   :material-file-document:{ .lg .middle } __UPR Document Analysis__
 
-  Systematic analysis of UPR recommendations across countries
+    Systematic analysis of UPR recommendations across countries
 
-- :material-tag-multiple:{ .lg .middle } __SGBV-Specific Tagging__
+-   :material-tag-multiple:{ .lg .middle } __SGBV-Specific Tagging__
 
-  Identification of SGBV-related recommendations and themes
+    Identification of SGBV-related recommendations and themes
 
-- :material-chart-timeline:{ .lg .middle } __Longitudinal Tracking__
+-   :material-chart-timeline:{ .lg .middle } __Longitudinal Tracking__
 
-  How SGBV recommendations evolve across UPR cycles
+    How SGBV recommendations evolve across UPR cycles
 
-- :material-earth:{ .lg .middle } __Global Coverage__
+-   :material-earth:{ .lg .middle } __Global Coverage__
 
-  Analysis across all UN member states
+    Analysis across all UN member states
 
 </div>
 

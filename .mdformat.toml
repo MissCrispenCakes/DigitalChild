@@ -1,8 +1,0 @@
-# mdformat configuration
-# Preserve Material for MkDocs specific formatting
-
-# Don't wrap lines (preserves grid card structure)
-wrap = "no"
-
-# Preserve formatting in admonitions and grid cards
-[plugin.mdit_py_plugins]

@@ -123,4 +123,13 @@ jobs:
 
       - name: Check Markdown formatting
         run: |
-          mdformat --check README.md docs/
+          # Check all markdown files except those with Material for MkDocs grid cards
+          # Grid cards require specific indentation that mdformat breaks
+          find docs -name "*.md" \
+            ! -name "quickstart.md" \
+            ! -name "index.md" \
+            ! -path "*/projects/littlerainbowrights/index.md" \
+            ! -path "*/projects/sgbv/index.md" \
+            ! -path "*/scorecard/index.md" \
+            -exec mdformat --check {} + || exit 1
+          mdformat --check README.md
