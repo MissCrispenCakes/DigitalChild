@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function addRainbowEffects() {
   // Add rainbow underline to main headings
-  const mainHeadings = document.querySelectorAll('h1');
+  const mainHeadings = document.querySelectorAll('article h1:first-of-type');
   mainHeadings.forEach(heading => {
-    if (!heading.classList.contains('no-rainbow')) {
-      heading.style.borderBottom = '4px solid transparent';
-      heading.style.borderImage = 'linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #24408e, #732982) 1';
-      heading.style.paddingBottom = '0.5rem';
+    if (!heading.classList.contains('no-rainbow') && !heading.querySelector('.rainbow-underline')) {
+      // Create a separate element for the rainbow effect to avoid layout issues
+      const underline = document.createElement('div');
+      underline.className = 'rainbow-underline';
+      underline.style.cssText = 'height: 4px; background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #24408e, #732982); margin-top: 0.5rem; margin-bottom: 1rem;';
+      heading.parentNode.insertBefore(underline, heading.nextSibling);
     }
   });
 }

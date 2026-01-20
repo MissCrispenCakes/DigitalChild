@@ -39,18 +39,25 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
+    - navigation.path
     - navigation.indexes
+    - navigation.footer
     - toc.follow
+    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
     - content.action.edit
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil

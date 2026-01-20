@@ -13,10 +13,17 @@
 
 /* Custom header accent */
 .md-header {
+  position: relative;
+}
+
+.md-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
   background: var(--rainbow-gradient);
-  background-size: 100% 4px;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 /* Card grid styling */
@@ -25,6 +32,8 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .grid.cards > * {
@@ -32,12 +41,20 @@
   border-radius: 0.2rem;
   padding: 1.5rem;
   transition: all 0.2s;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .grid.cards > *:hover {
   border-color: var(--md-accent-fg-color);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transform: translateY(-2px);
+}
+
+/* Prevent grid cards from breaking layout */
+.md-content .grid.cards {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Status badges */
@@ -154,24 +171,64 @@
 }
 
 /* Table styling */
-table {
+.md-typeset table:not([class]) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
-  width: 100%;
   margin: 1rem 0;
 }
 
-table th {
+.md-typeset table:not([class]) th {
   background: var(--md-code-bg-color);
   font-weight: 600;
 }
 
-table td, table th {
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
   padding: 0.75rem;
   border: 1px solid var(--md-default-fg-color--lightest);
+  white-space: nowrap;
 }
 
-table tr:hover {
+.md-typeset table:not([class]) tr:hover {
   background: var(--md-code-bg-color);
+}
+
+/* Wrapper for table scrolling */
+.md-typeset__table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Breadcrumb navigation styling */
+.md-path {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.md-path a {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+}
+
+.md-path a:hover {
+  text-decoration: underline;
+}
+
+/* Home link in logo */
+.md-header__button.md-logo {
+  cursor: pointer;
+}
+
+.md-header__button.md-logo:hover {
+  opacity: 0.8;
+}
+
+/* Navigation footer improvements */
+.md-footer__link {
+  padding: 1rem;
 }
 
 /* Responsive adjustments */
@@ -182,6 +239,11 @@ table tr:hover {
 
   .stat-number {
     font-size: 2rem;
+  }
+
+  .md-typeset table:not([class]) td,
+  .md-typeset table:not([class]) th {
+    white-space: normal;
   }
 }
 
