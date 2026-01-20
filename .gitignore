@@ -37,3 +37,4 @@ Thumbs.db
 # MkDocs build output
 /site/
 alignmentissue_*.PNG
+docs/index.md.backup

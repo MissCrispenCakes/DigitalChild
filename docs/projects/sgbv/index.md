@@ -2,16 +2,27 @@
 
 ## Sexual and Gender-Based Violence Analysis
 
-**Analyzing UPR recommendations on sexual and gender-based violence**
+**Foundational research demonstrating automated UPR analysis at regional scale**
+
+[:octicons-mark-github-16: GitHub Repository](https://github.com/MissCrispenCakes/HumanRights){ .md-button }
+[:material-book-open-variant: Published Paper](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
 ______________________________________________________________________
 
 ## About This Project
 
-The SGBV-UPR project analyzes Universal Periodic Review (UPR) recommendations related to sexual and gender-based violence (SGBV). This research examines how countries address SGBV in their human rights commitments and implementation.
+The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analyzing Universal Periodic Review (UPR) recommendations related to sexual and gender-based violence (SGBV) in **SADC member states**. This work:
 
-!!! info "Separate Repository"
-This project has its own repository and codebase. It will be integrated into the GRIMdata website for unified access to findings.
+- ✅ **Validated the methodology** for automated human rights document analysis
+- ✅ **Published in peer-reviewed literature** (Stellenbosch Law Review, 2022)
+- ✅ **Demonstrated regional-scale analysis** as proof of concept
+- ✅ **Informed the development** of the expanded LittleRainbowRights project
+
+!!! info "Precursor to LittleRainbowRights"
+    This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
+
+!!! note "Separate Repository"
+    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
 
 ## Project Status
 

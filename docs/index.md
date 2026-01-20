@@ -2,231 +2,148 @@
 
 ## Global Rights Information Monitoring
 
-**GRIMdata.org** is a research platform hosting human rights data analysis projects using automated pipelines to analyze documents from international organizations.
+**GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries.
 
-**Currently featuring two projects:**
-
-- **LittleRainbowRights** - Child and LGBTQ+ digital rights ([DigitalChild repo](https://github.com/MissCrispenCakes/DigitalChild))
-- **SGBV-UPR** - Sexual and gender-based violence analysis ([HumanRights repo](https://github.com/MissCrispenCakes/HumanRights))
-
-[Explore Projects](#our-projects){ .md-button .md-button--primary }
-[LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button }
-[SGBV-UPR](projects/sgbv/index.md){ .md-button }
+**Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
 
 ______________________________________________________________________
 
-## Our Projects
-
-**GRIMdata.org** hosts multiple focused research projects, each examining specific human rights themes with dedicated methodologies and codebases.
+## Current Projects
 
 <div class="grid cards" markdown>
 
 -   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
-    Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
+    **Status:** Active | **Scope:** Global (194 countries)
 
-    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
 
-    [:octicons-arrow-right-24: Explore Project](projects/littlerainbowrights/index.md)
+    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
+
+    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
 -   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
-    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries. Dataset updating for UPR Cycle 4.
+    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
 
-    **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
 
-    [:octicons-arrow-right-24: Explore Project](projects/sgbv/index.md)
+    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
+
+    **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights) (SGBV analysis tools)
+
+    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
 
 </div>
 
-### Project Access
+## Research Evolution
 
-Each project has its own dedicated page on GRIMdata.org:
+**SGBV-UPR** (2019-2022) demonstrated the feasibility of automated analysis of UPR recommendations at regional scale, focusing on SADC member states and SGBV themes. This work was published in academic literature and validated the core methodology.
 
-- **grimdata.org** - Main hub (this site)
-- **grimdata.org/projects/littlerainbowrights/** - LittleRainbowRights project
-- **grimdata.org/projects/sgbv/** - SGBV-UPR project
-- **littlerainbowrights.com** - Direct link to LittleRainbowRights (redirects to project page)
+**LittleRainbowRights** (2023-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with 2,543 validated sources. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
 
-## About the Repositories
-
-### DigitalChild (LittleRainbowRights Pipeline)
-
-**DigitalChild** is the open-source Python pipeline powering the **LittleRainbowRights** project. It scrapes, processes, and analyzes human rights documents with flexible tagging and enrichment capabilities for digital rights indicators.
-
-[View DigitalChild Repository](https://github.com/MissCrispenCakes/DigitalChild){ .md-button }
-
-The pipeline is designed to be:
-
-- **Modular** - Easy to add new data sources and analysis methods
-- **Transparent** - All processing steps documented and reproducible
-- **Secure** - Input validation protects against malicious data
-- **Extensible** - Researchers can adapt for their own projects
-
-### HumanRights (SGBV-UPR Pipeline)
-
-**HumanRights** is a separate repository containing the analysis pipeline for the **SGBV-UPR** project. It includes UPR-specific scrapers, SGBV tagging rules, and longitudinal analysis tools for examining sexual and gender-based violence recommendations.
-
-[View HumanRights Repository](https://github.com/MissCrispenCakes/HumanRights){ .md-button }
-
-## Key Features
+## What GRIMdata Provides
 
 <div class="grid cards" markdown>
 
--   :material-download:{ .lg .middle } __Automated Scraping__
+-   :material-database:{ .lg .middle } __Open Data__
 
-    Collect documents from 7 international sources including AU, OHCHR, UPR, and UNICEF. Respectful, rate-limited scraping with robust error handling.
+    All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
-    [:octicons-arrow-right-24: Learn more](guides/RUNBOOK.md)
+-   :material-code-tags:{ .lg .middle } __Open Source Code__
 
--   :material-tag-multiple:{ .lg .middle } __Intelligent Tagging__
+    Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
 
-    Regex-based tagging system identifies themes: child rights, LGBTQ+ rights, AI, privacy, digital policy. Versioned tags enable comparison.
+-   :material-book-open-variant:{ .lg .middle } __Documentation__
 
-    [:octicons-arrow-right-24: See formats](standards/TAGS_CONFIG_FORMAT.md)
+    Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
 
--   :material-chart-bar:{ .lg .middle } __Comprehensive Scorecard__
+-   :material-shield-check:{ .lg .middle } __Research Quality__
 
-    Track 10 indicators across 194 countries. 2,543 validated source URLs ensure transparency. Automated validation and change detection.
-
-    [:octicons-arrow-right-24: View scorecard](scorecard/index.md)
-
--   :material-shield-check:{ .lg .middle } __Security First__
-
-    68 validator tests protect against path traversal, URL injection, and malicious input. Built-in security from the ground up.
-
-    [:octicons-arrow-right-24: Security policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md)
+    Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
 
 </div>
-
-## Quick Example
-
-```bash
-# Install and run
-python init_project.py
-pip install -r requirements.txt
-python pipeline_runner.py --source au_policy --tags-version latest
-
-# Results appear in data/exports/
-ls data/exports/
-# tags_summary.csv
-# scorecard_summary.csv
-```
-
-## Who Is This For?
-
-<div class="grid cards" markdown>
-
--   :fontawesome-solid-graduation-cap:{ .middle } __Researchers__
-
-    Academics studying digital rights trends, child protection policies, LGBTQ+ legal status across countries.
-
--   :fontawesome-solid-building-columns:{ .middle } __NGOs & Advocates__
-
-    Human rights organizations tracking protections, building evidence for campaigns, monitoring policy changes.
-
--   :fontawesome-solid-chart-line:{ .middle } __Policy Analysts__
-
-    Government and UN policy staff comparing policies across countries, identifying gaps and best practices.
-
--   :fontawesome-solid-newspaper:{ .middle } __Journalists__
-
-    Investigative reporters researching digital rights stories with verified data and authoritative sources.
-
-</div>
-
-## Project Status
-
-!!! success "Phase 1-2 Complete"
-\- ✅ Core pipeline operational (7 sources)
-\- ✅ Scorecard system live (194 countries, 10 indicators)
-\- ✅ Security framework implemented (124 tests passing)
-\- ✅ Comprehensive documentation
-
-!!! info "Phase 3 In Progress"
-\- 🔄 Recommendations extraction (NLP-based)
-\- 🔄 Timeline visualizations
-\- 🔄 Comparison analytics
-
-See [Roadmap](ROADMAP.md) for detailed development plan.
-
-## Scorecard Indicators
-
-The scorecard tracks 10 critical indicators:
-
-1. **AI Policy Status** - Published AI strategies and frameworks
-1. **Data Protection Law** - Comprehensive data protection legislation
-1. **LGBTQ+ Legal Status** - Legal recognition and protections
-1. **Child Online Protection** - Measures safeguarding children online
-1. **SIM Biometric Registration** - Biometric requirements for mobile SIM cards
-1. **Encryption Backdoors** - Government-mandated encryption weaknesses
-1. **Promotion/Propaganda Laws** - Restrictions on LGBTQ+ discussion
-1. **DPA Independence** - Data Protection Authority autonomy
-1. **Content Moderation** - Regulations on harmful content removal
-1. **Age Verification** - Requirements to verify user age
-
-Each indicator includes the current status and authoritative source URL.
-
-[Explore Scorecard Data](scorecard/index.md){ .md-button }
 
 ## Technology Stack
 
-- **Python 3.12** - Modern language features
-- **BeautifulSoup4** - HTML parsing for scrapers
-- **Selenium** - Dynamic website scraping
-- **pandas** - Data manipulation and analysis
-- **PyPDF2** - PDF text extraction
-- **pytest** - Comprehensive test suite (124 tests)
-- **MkDocs Material** - Beautiful documentation
+- **Python 3.12** - Core language
+- **BeautifulSoup4 & Selenium** - Web scraping
+- **pandas** - Data analysis
+- **pytest** - Testing framework (124+ tests)
+- **MkDocs Material** - Documentation
 
-## Open Source & Open Data
+All pipelines follow best practices for security, validation, and error handling.
 
-**Dual licensing for transparency and attribution:**
+## Getting Started with LittleRainbowRights
 
-- **Code:** MIT License - Use freely, including commercial applications
-- **Data & Documentation:** CC BY 4.0 - Attribution required
+The **LittleRainbowRights** project is ready for use:
 
-This ensures the pipeline is freely usable while giving credit to the research effort behind the scorecard compilation.
+1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
+2. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
+3. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
+4. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
-## Get Involved
+[Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
-<div class="grid cards" markdown>
+## Use Cases
 
--   :material-account-check:{ .lg .middle } __For Users__
+**For Researchers:**
+- Systematic literature reviews of human rights policies
+- Cross-country comparative analysis
+- Longitudinal policy tracking
+- Data-driven advocacy campaigns
 
-    1. [Install](getting-started/installation.md) the pipeline
-    2. Review [FAQ](FAQ.md) for common questions
-    3. Check [First Run Errors](guides/FIRST_RUN_ERRORS.md) if issues arise
-    4. [Cite](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff) in your publications
+**For NGOs & Advocates:**
+- Evidence-based policy recommendations
+- Monitor country compliance with commitments
+- Identify gaps in protections
+- Track implementation progress
 
--   :material-source-pull:{ .lg .middle } __For Contributors__
+**For Policy Makers:**
+- Benchmark against peer countries
+- Identify best practices
+- Gap analysis for policy development
+- Regional cooperation insights
 
-    1. Read [Contributing Guide](CONTRIBUTING.md)
-    2. Find [good first issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-    3. Submit pull requests
-    4. Improve [documentation](https://github.com/MissCrispenCakes/DigitalChild)
+## Publications & Outputs
 
-</div>
+**SGBV-UPR Research:**
+- Vollmer, SC and Vollmer, DT. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
-## Contact & Support
+**LittleRainbowRights Research:**
+- Publications using this data will be listed as they become available
+- Conference presentation materials forthcoming
 
-- **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Website:** [LittleRainbowRights.com](https://littlerainbowrights.com)
+## Open Source & Licensing
+
+**Code:** MIT License - Free for any use including commercial applications
+
+**Data & Documentation:** CC BY 4.0 - Attribution required
+
+This dual licensing ensures maximum utility while giving credit to the research effort.
+
+## About the Initiative
+
+GRIMdata is maintained by an independent researcher alongside other work. Both projects represent passion projects aimed at making human rights data more accessible and analysis more transparent.
 
 !!! warning "Maintained by PhD Student"
-This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
+    This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
 
-## Acknowledgments
+## Contact & Contributing
 
-This project analyzes publicly available human rights documents from:
+- **GitHub (LittleRainbowRights):** [DigitalChild Repository](https://github.com/MissCrispenCakes/DigitalChild)
+- **GitHub (SGBV-UPR):** [HumanRights Repository](https://github.com/MissCrispenCakes/HumanRights)
+- **Issues & Discussions:** Use repository issue trackers
+- **Contributing:** See [Contributing Guidelines](CONTRIBUTING.md)
 
-- United Nations (OHCHR, UPR, UNICEF)
-- African Union (AU Policy, ACERWC, ACHPR)
-- UNESCO, UNCTAD, ILGA World, and other authoritative sources
+## Support This Work
 
-All 2,543 source URLs are validated and publicly accessible for verification.
+- ⭐ Star the repositories on GitHub
+- 📢 Share with researchers and advocates in your network
+- 🐛 Report data quality issues or bugs
+- 💻 Contribute code or documentation improvements
+- 📝 Cite in your publications and presentations
 
 ______________________________________________________________________
 
-**Mission:** Support evidence-based human rights research and advocacy for vulnerable populations in the digital age.
+**Making human rights data accessible, transparent, and actionable.**
