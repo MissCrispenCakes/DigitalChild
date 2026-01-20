@@ -206,7 +206,7 @@ If you use this project in your research, please cite it:
 ```bibtex
 @software{digitalchild2025,
   title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
-  author = {Vollmer, S.C.},
+  author = {Vollmer, S.C. and Vollmer, D.T.},
   year = {2025},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
   note = {Available at: https://grimdata.org. ORCID: 0000-0002-3359-2810}
@@ -217,7 +217,7 @@ For complete citation information including the conference presentation, see [CI
 
 **For the scorecard data specifically:**
 
-> Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
+> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
 
 ______________________________________________________________________
 

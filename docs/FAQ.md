@@ -336,7 +336,7 @@ ______________________________________________________________________
 Use the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff):
 
 ```
-Vollmer, S.C. (2025). DigitalChild: Human Rights Data Pipeline for Child
+Vollmer, S.C., & Vollmer, D.T. (2025). DigitalChild: Human Rights Data Pipeline for Child
 and LGBTQ+ Digital Protection.
 Available at: https://github.com/MissCrispenCakes/DigitalChild
 ORCID: 0000-0002-3359-2810

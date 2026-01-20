@@ -7,6 +7,8 @@ authors:
   - family-names: "Vollmer"
     given-names: "S.C."
     orcid: "https://orcid.org/0000-0002-3359-2810"
+  - family-names: "Vollmer"
+    given-names: "D.T."
 repository-code: "https://github.com/MissCrispenCakes/DigitalChild"
 url: "https://grimdata.org"
 keywords:
@@ -32,6 +34,8 @@ references:
   - type: data
     title: "LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators"
     authors:
+      - family-names: "Vollmer"
+        given-names: "D.T."
       - family-names: "Vollmer"
         given-names: "S.C."
         orcid: "https://orcid.org/0000-0002-3359-2810"
@@ -93,6 +97,8 @@ preferred-citation:
     - family-names: "Vollmer"
       given-names: "S.C."
       orcid: "https://orcid.org/0000-0002-3359-2810"
+    - family-names: "Vollmer"
+      given-names: "D.T."
   year: 2025
   url: "https://github.com/MissCrispenCakes/DigitalChild"
   notes: "Available at: https://grimdata.org"
