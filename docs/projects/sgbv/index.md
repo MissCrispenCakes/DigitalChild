@@ -16,7 +16,7 @@ This project has its own repository and codebase. It will be integrated into the
 ## Project Status
 
 !!! success "Published Research"
-Findings from this project have been published in an academic journal (citation details coming soon).
+**Vollmer, SC and Vollmer, DT.** (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [https://doi.org/10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 !!! warning "Update Needed - UPR Cycle Progress"
 **Dataset requires updating:**
@@ -134,9 +134,9 @@ Interactive visualizations will include:
 
 ### Current Access
 
-For now, data is available through:
+Data and findings are available through:
 
-- **Journal publication** - Published research article
+- **Journal publication** - [Vollmer & Vollmer (2022) in Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
 - **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights)
 
 ## Integration with GRIMdata
@@ -151,19 +151,19 @@ The SGBV project will be fully integrated into the GRIMdata platform with:
 ## Publications
 
 !!! example "Published Research"
-**[Journal Article Title]**
+**Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states**
 
-```
-Authors: [Names]
+**Authors:** Vollmer, SC and Vollmer, DT
 
-Journal: [Journal Name], Year
+**Journal:** Stellenbosch Law Review, Volume 33, Issue 1, 2022
 
-DOI: [DOI Link]
+**Pages:** 8–41
 
-Abstract: [Brief abstract of findings]
+**DOI:** [10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
-[Link to full text]
-```
+**Abstract:** This research analyzes how the Universal Periodic Review (UPR) mechanism processes sexual and gender-based violence (SGBV) recommendations in Southern African Development Community (SADC) member states. The study examines patterns across UPR cycles, regional variation in SGBV recommendation frequency, and implementation challenges.
+
+[Access full article](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
 ## How to Use This Data
 
@@ -249,7 +249,29 @@ The codebase includes:
 
 ### For the Journal Article
 
-[Citation format for published article - to be added]
+**BibTeX:**
+
+```bibtex
+@article{vollmer2022sgbv,
+  title = {Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states},
+  author = {Vollmer, SC and Vollmer, DT},
+  journal = {Stellenbosch Law Review},
+  volume = {33},
+  number = {1},
+  pages = {8--41},
+  year = {2022},
+  doi = {10.47348/SLR/2022/i1a1},
+  url = {https://doi.org/10.47348/SLR/2022/i1a1}
+}
+```
+
+**APA:**
+
+> Vollmer, S. C., & Vollmer, D. T. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, *33*(1), 8–41. https://doi.org/10.47348/SLR/2022/i1a1
+
+**MLA:**
+
+> Vollmer, SC, and DT Vollmer. "Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states." *Stellenbosch Law Review*, vol. 33, no. 1, 2022, pp. 8–41, https://doi.org/10.47348/SLR/2022/i1a1.
 
 ## Contributing
 
