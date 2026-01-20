@@ -115,7 +115,7 @@ Interactive visualizations will include:
 For now, data is available through:
 
 - **Journal publication** - Published research article
-- **GitHub repository** - SGBV-UPR project repository (link coming soon)
+- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights)
 
 ## Integration with GRIMdata
 
@@ -185,15 +185,14 @@ This project builds on and complements:
 !!! info "Separate Codebase"
 The SGBV-UPR project has its own repository with specialized analysis tools.
 
-```
-Repository link: [Coming soon]
+**Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights)
 
 The codebase includes:
+
 - UPR-specific scrapers
 - SGBV tagging rules
 - Longitudinal analysis tools
 - Visualization scripts
-```
 
 ## Future Development
 
