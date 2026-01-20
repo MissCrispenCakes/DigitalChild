@@ -122,11 +122,6 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 !!! info "Research Output"
 Publications using LittleRainbowRights data will be listed here as they become available.
 
-```
-Separate PhD research is being conducted in parallel using this data.
-Findings will be published when available.
-```
-
 ## How to Use This Data
 
 ### For Researchers
