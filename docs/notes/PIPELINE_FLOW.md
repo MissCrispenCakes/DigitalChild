@@ -3,7 +3,6 @@ ______________________________________________________________________
 🌍 Project Domains:
 
 - https://GRIMdata.org
-- https://ALLRainbowRights.com
 - https://LittleRainbowRights.com
 
 ______________________________________________________________________

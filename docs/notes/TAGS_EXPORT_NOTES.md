@@ -37,7 +37,7 @@ ______________________________________________________________________
 - Every tags summary CSV ends with a branding footer:
 
 ```csv
-Project: GRIMdata / LittleRainbowRights / ALLRainbowRights
-Domains: https://GRIMdata.org | https://LittleRainbowRights.com | https://ALLRainbowRights.com
+Project: GRIMdata / LittleRainbowRights
+Domains: https://GRIMdata.org | https://LittleRainbowRights.com
 Note: This dataset is part of the pipeline for analyzing child & LGBTQ+ digital protections.
 ```

@@ -1,6 +1,6 @@
 # DigitalChild Project
 
-## GRIMdata / LittleRainbowRights / ALLRainbowRights Pipeline
+## GRIMdata / LittleRainbowRights Pipeline
 
 [![CI Pipeline](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
 [![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/runs/FIRST_RUN_ERRORS.md)
@@ -20,6 +20,21 @@ python pipeline_runner.py
 ```
 
 Exports will appear under `data/exports/`.
+
+______________________________________________________________________
+
+## 📋 Project Status
+
+**Phase 1-2 Complete:**
+
+- ✅ Core pipeline (scraping, processing, tagging) - 7 sources supported
+- ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
+- ✅ Validation & security framework - 68 validator tests, 124 total tests passing
+- ✅ Comprehensive documentation - 25 markdown files
+
+**Phase 3 In Progress:** Recommendations extraction, timeline exports, comparison analytics
+
+See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
 
 ______________________________________________________________________
 

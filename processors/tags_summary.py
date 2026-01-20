@@ -39,10 +39,10 @@ def export(docs, output_file="data/exports/tags_summary.csv"):
 
         # Branding footer
         csvfile.write(
-            "\n# Project: GRIMdata / ALLRainbowRights / LittleRainbowRights\n"
+            "\n# Project: GRIMdata / LittleRainbowRights\n"
         )
         csvfile.write(
-            "# Domains: https://GRIMdata.org | https://ALLRainbowRights.com | https://LittleRainbowRights.com\n"
+            "# Domains: https://GRIMdata.org | https://LittleRainbowRights.com\n"
         )
         csvfile.write(
             "# Note: This dataset is part of the pipeline for analyzing child & LGBTQ+ digital protections.\n"

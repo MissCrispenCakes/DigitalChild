@@ -1,9 +1,8 @@
 {
   "project_identity": {
-    "name": "GRIMdata / ALLRainbowRights / LittleRainbowRights",
+    "name": "GRIMdata / LittleRainbowRights",
     "domains": [
       "https://GRIMdata.org",
-      "https://ALLRainbowRights.com",
       "https://LittleRainbowRights.com"
     ],
     "note": "Pipeline for analyzing child & LGBTQ+ digital protections in Africa and globally."

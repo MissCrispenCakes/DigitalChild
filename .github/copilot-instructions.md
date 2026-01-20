@@ -103,7 +103,7 @@ If anything here seems incomplete or you want a deeper explanation of a specific
 
 ## Project Overview
 
-**DigitalChild** (GRIMdata / LittleRainbowRights / ALLRainbowRights) is a Python-based pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection.
+**DigitalChild** (GRIMdata / LittleRainbowRights) is a Python-based pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection.
 
 - **Size**: ~30MB, 53 Python files, 24 JSON configs, 27 Markdown docs
 - **Language**: Python 3.12
