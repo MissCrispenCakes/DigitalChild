@@ -12,17 +12,6 @@ Main presentation slides (15 slides) covering:
 - Country tiering recommendations
 - Edge cases and paradoxes
 
-### `QueerAI_Slides_Data.pdf` (346 KB)
-Detailed analytical frameworks document (20 pages) including:
-- Child digital access implications
-- Child labor in digital platforms
-- LGBTQ+ legal status frameworks
-- Biometric SIM-ID analysis
-- GDPR and global policy diffusion
-- Linguistic concentration analysis
-- Warning countries analysis
-- Edge cases and hierarchies
-
 ### `Script - QueerAI.pdf` (88 KB)
 Speaker notes with detailed explanations for each slide section.
 
@@ -36,8 +25,8 @@ Speaker notes with detailed explanations for each slide section.
 
 ## Presenters
 
-- **D.T. Vollmer** - Resilient LLP (daniel@resilientllp.com)
-- **S.C. Vollmer** - York University (workscv@yorku.ca) - ORCID: 0000-0002-3359-2810
+- **D.T. Vollmer** - Resilient LLP
+- **S.C. Vollmer** - York University
 
 ## Citation
 
