@@ -234,7 +234,7 @@ Process of adding scorecard indicator data to document metadata
 
 ### GRIMdata
 
-**Global Rights Information Monitoring**
+**Global Rights Index Monitoring**
 
 - Umbrella project name
 - Website: GRIMdata.org

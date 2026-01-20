@@ -314,7 +314,7 @@ This research benefits from:
 
 ______________________________________________________________________
 
-**SGBV-UPR** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
+**SGBV-UPR** is part of the GRIMdata (Global Rights Index Monitoring) initiative.
 
 **Mission:** Support evidence-based approaches to preventing and responding to sexual and gender-based violence worldwide.
 

@@ -262,6 +262,6 @@ This project follows strict ethical guidelines:
 
 ______________________________________________________________________
 
-**LittleRainbowRights** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
+**LittleRainbowRights** is part of the GRIMdata (Global Rights Index Monitoring) initiative.
 
 **Mission:** Protect vulnerable populations in the digital age through evidence-based research and advocacy.
