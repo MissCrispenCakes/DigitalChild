@@ -2,7 +2,7 @@
 
 ### GRIMdata / LittleRainbowRights
 
-[![CI Pipeline](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg?branch=basecamp)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
 [![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/guides/FIRST_RUN_ERRORS.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
