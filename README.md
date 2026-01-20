@@ -109,9 +109,12 @@ ______________________________________________________________________
 - ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
 - ✅ Validation & security framework - 68 validator tests, 124 total tests passing
+- ✅ Recommendations extraction system - Regex-based with versioning and history tracking
+- ✅ Timeline exports - Global, by-country, and by-region analysis over time
+- ✅ Comparison analytics - Compare tags and recommendations across versions
 - ✅ Comprehensive documentation - 25 markdown files
 
-**Phase 3 In Progress:** Recommendations extraction, timeline exports, comparison analytics
+**Phase 3 Mostly Complete (73%):** Advanced processing features operational, NLP enhancements planned
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
 

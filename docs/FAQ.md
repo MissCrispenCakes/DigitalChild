@@ -362,15 +362,19 @@ ______________________________________________________________________
 
 See [ROADMAP.md](ROADMAP.md) for the full roadmap. Highlights:
 
-- Recommendations extraction (NLP-based)
-- Timeline visualizations
-- Comparison analytics
-- Interactive research dashboard
+**Recently Completed (Phase 3):**
+- ✅ Recommendations extraction (regex-based with versioning)
+- ✅ Timeline exports (global, by-country, by-region)
+- ✅ Comparison analytics (tags and recommendations across versions)
+
+**In Development:**
+- NLP-based recommendations extraction (advanced ML models)
+- Interactive research dashboard (Phase 4)
 - Global expansion (Europe, Asia, Americas)
 
 ### When will the research dashboard be ready?
 
-Target: Late 2026. It's in Phase 4 of the roadmap. Focus right now is on completing Phase 3 (advanced processing).
+Target: Late 2026. It's in Phase 4 of the roadmap. Phase 3 (advanced processing) is now 73% complete, with core analytics features operational.
 
 ### Can I request a feature?
 

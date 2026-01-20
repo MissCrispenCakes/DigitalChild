@@ -540,11 +540,18 @@ GitHub Repository
 
 ## 🔮 Future Architecture
 
-### Phase 3: Advanced Processing
+### Phase 3: Advanced Processing (73% Complete)
 
-- Recommendations extraction (NLP-based)
-- Timeline analysis
-- Comparison across versions
+**Completed:**
+- ✅ Recommendations extraction (regex-based, versioned, with history tracking)
+- ✅ Timeline analysis (global, by-country, by-region exports)
+- ✅ Comparison across versions (tags and recommendations side-by-side)
+- ✅ Automatic document type classification
+
+**Remaining:**
+- NLP-based recommendations extraction (advanced ML models)
+- Complete ISO 3166-1 alpha-2 country code mapping
+- Source reliability scoring
 
 ### Phase 4: Research Dashboard
 
