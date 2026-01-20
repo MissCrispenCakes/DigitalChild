@@ -22,7 +22,9 @@ ______________________________________________________________________
 
 ### 📥 Data Collection
 
-- **7 data sources** - AU Policy, OHCHR, UPR, UNICEF, ACERWC, ACHPR, Manual uploads
+- **Multiple data sources** - International organizations (UN, AU), treaty bodies (OHCHR, UPR, UNICEF, ACERWC, ACHPR), government sources, NGOs, legal databases, research publications
+- **Global and regional coverage** - African, global, and country-specific sources across multiple regions
+- **Direct URL tracking** - Government postings, public notices, community organizations, business/legal sources, policy documents
 - **Multi-format support** - PDF, DOCX, HTML document processing
 - **Automated scraping** - Respectful, rate-limited web scraping with fallback handlers
 
@@ -104,7 +106,7 @@ ______________________________________________________________________
 
 **Phase 1-2 Complete:**
 
-- ✅ Core pipeline (scraping, processing, tagging) - 7 sources supported
+- ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
 - ✅ Validation & security framework - 68 validator tests, 124 total tests passing
 - ✅ Comprehensive documentation - 25 markdown files
