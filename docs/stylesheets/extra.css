@@ -265,37 +265,6 @@
   padding: 1rem;
 }
 
-/* Portrait monitor support - keep navigation visible on narrower screens */
-/* Material for MkDocs defaults to 1220px, but portrait monitors need lower threshold */
-@media screen and (min-width: 960px) {
-  /* Force navigation sidebar to show on portrait monitors (960px-1220px) */
-  .md-sidebar--primary {
-    display: block;
-  }
-
-  /* Keep navigation tabs visible */
-  .md-tabs {
-    display: flex;
-  }
-
-  /* Ensure proper layout spacing */
-  .md-content {
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 960px) and (max-width: 1220px) {
-  /* Adjust content width when sidebar is showing on narrow screens */
-  .md-grid {
-    max-width: 100%;
-  }
-
-  /* Slightly narrower sidebar on portrait monitors */
-  .md-sidebar--primary {
-    width: 12rem;
-  }
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .grid.cards {
