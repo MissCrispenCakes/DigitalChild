@@ -277,7 +277,7 @@ Module that converts documents to text
 
 Comprehensive tracking system for 10 human rights indicators across 194 countries
 
-- Stored in `scorecard_main.xlsx`
+- Stored in `data/scorecard/scorecard_main_presentation.xlsx` (canonical file)
 - 2,543 source URLs (as of January 2026)
 - Separate workflow from main pipeline
 

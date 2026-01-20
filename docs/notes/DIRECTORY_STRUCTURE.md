@@ -151,6 +151,34 @@ Example:
   - Documents list with tags_history, recommendations_history, scorecard
   - Full schema in `docs/standards/METADATA_SCHEMA.md`
 
+### Scorecard (`data/scorecard/`)
+
+Primary scorecard data files (Excel).
+
+- `scorecard_main_presentation.xlsx` → **CANONICAL FILE** - Most complete data (Sept 2025 conference)
+  - 194 countries × 44 columns
+  - Color-coded regional groups
+  - Complete source URLs for all indicators
+  - Regional analysis sheets (SADC, ECOWAS)
+- `Global_QueerAI_Child_Scorecard_MASTER.xlsx` → Visualization version
+- `_GLOBAL_Policy_Matrix_UPR_Main_FINAL.xlsx` → Source verification tool
+
+### Archive (`data/archive/`)
+
+Superseded or archived scorecard files.
+
+- `scorecard_main.xlsx` → Earlier version (Jan 2025)
+- `scorecard_main_ALL_filled_sources.xlsx` → Source URL collection (Jan 2026)
+
+### Verification Documentation (`data/`)
+
+Data quality verification and reconciliation analysis.
+
+- `VERIFICATION_RESULTS.md` → Detailed verification of 9 data conflicts between scorecard files
+- `DATA_RECONCILIATION_RECOMMENDATIONS.md` → Strategic recommendations for file consolidation
+- `REVISION_SUMMARY.md` → Major correction to understanding (file maintenance vs research quality)
+- `VERIFICATION_CHECKLIST.md` → Template for verifying high-priority conflicts
+
 ### Exports (`data/exports/`)
 
 Output summaries, comparisons, timelines, scorecard exports.
@@ -273,6 +301,31 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
+## Presentations (`presentations/`)
+
+Conference presentations and publication materials.
+
+- `QUEERAI.pdf` → Conference presentation slides (15 slides)
+- `QueerAI_Slides_Data.pdf` → Detailed analytical frameworks (20 pages)
+- `Script - QueerAI.pdf` → Presentation script
+- `README.md` → Documentation of presentation materials
+
+**Conference:** Second International Conference on Children's Rights, Stellenbosch, South Africa (Sept 9-11, 2025)
+
+______________________________________________________________________
+
+## Repository Cleaning (`repo-cleaning/`)
+
+Temporary development files used during site development.
+
+- `alignmentissue_01.PNG` through `alignmentissue_08.PNG` → Screenshots documenting layout issues
+- `__stillToFix_01.PNG` and `__stillToFix_02.PNG` → Outstanding issues
+- `README.md` → Documentation of temporary files
+
+**Note:** These files are temporary and should not be committed to repository.
+
+______________________________________________________________________
+
 ## Summary
 
 ```
@@ -280,7 +333,6 @@ DigitalChild/
 ├── pipeline_runner.py         # Main entry point
 ├── init_project.py            # Bootstrap script
 ├── requirements.txt           # Dependencies
-├── scorecard_main.xlsx        # Scorecard data
 ├── CLAUDE.md                  # AI assistant guide
 ├── README.md                  # Project quickstart
 ├── scrapers/                  # Data fetching (no __init__.py)
@@ -290,8 +342,16 @@ DigitalChild/
 │   ├── raw/                   # Source documents
 │   ├── processed/             # Converted text
 │   ├── metadata/              # Central metadata.json
+│   ├── scorecard/             # Scorecard Excel files (primary data)
+│   ├── archive/               # Archived/superseded files
 │   ├── exports/               # CSV/JSON outputs
-│   └── cache/                 # Temporary cache
+│   ├── cache/                 # Temporary cache
+│   ├── VERIFICATION_RESULTS.md           # Data conflict verification
+│   ├── DATA_RECONCILIATION_RECOMMENDATIONS.md  # Consolidation guide
+│   ├── REVISION_SUMMARY.md               # Analysis correction
+│   └── VERIFICATION_CHECKLIST.md         # Verification template
+├── presentations/             # Conference materials
+├── repo-cleaning/             # Temporary dev screenshots
 ├── logs/                      # Run logs (gitignored)
 ├── docs/                      # Documentation (24+ files)
 │   ├── notes/                 # Implementation notes

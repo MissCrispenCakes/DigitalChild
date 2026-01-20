@@ -1,8 +1,9 @@
 """
 Scorecard Loader & Processor
 ----------------------------
-Reads scorecard_main.xlsx, normalizes country names, and provides
-lookup functions for enriching metadata with scorecard indicators.
+Reads data/scorecard/scorecard_main_presentation.xlsx (canonical file),
+normalizes country names, and provides lookup functions for enriching
+metadata with scorecard indicators.
 """
 
 import os
@@ -14,7 +15,13 @@ import pandas as pd
 from processors.logger import get_logger
 from scrapers.country_utils import normalize_country
 
-SCORECARD_FILE = os.path.join(os.path.dirname(__file__), "..", "scorecard_main.xlsx")
+SCORECARD_FILE = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "data",
+    "scorecard",
+    "scorecard_main_presentation.xlsx",
+)
 
 # Indicator columns (value + source pairs)
 INDICATOR_COLUMNS = [
@@ -41,7 +48,7 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
     Caches result for repeated calls.
 
     Args:
-        filepath: Path to scorecard Excel file (default: scorecard_main.xlsx)
+        filepath: Path to scorecard Excel file (default: data/scorecard/scorecard_main_presentation.xlsx)
         force_reload: Force reload from disk even if cached
 
     Returns:
@@ -60,7 +67,7 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
         raise FileNotFoundError(f"Scorecard file not found: {filepath}")
 
     logger.info(f"Loading scorecard from {filepath}")
-    df = pd.read_excel(filepath, sheet_name="Sheet1")
+    df = pd.read_excel(filepath, sheet_name="UN_194")
 
     # Clean column names
     df.columns = df.columns.str.strip()

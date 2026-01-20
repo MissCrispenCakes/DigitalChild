@@ -220,7 +220,7 @@ ______________________________________________________________________
 
 - Scorecard is added during enrichment step
 - Only present if document has a country field AND country exists in scorecard
-- 194 countries currently tracked in `scorecard_main.xlsx`
+- 194 countries currently tracked in `data/scorecard/scorecard_main_presentation.xlsx` (canonical file)
 - 2,543 source URLs tracked and validated
 
 ______________________________________________________________________

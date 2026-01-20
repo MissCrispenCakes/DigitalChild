@@ -1,5 +1,3 @@
-# requirements placeholder
-
 # Core scraping
 beautifulsoup4
 selenium
@@ -19,7 +17,6 @@ openpyxl
 pytest
 pytest-cov
 pandoc
-logging
 
 # Docs + formatting
 markdown-link-checker

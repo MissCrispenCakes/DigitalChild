@@ -13,6 +13,7 @@ env/
 # Logs
 logs/
 *.log
+repo-cleaning/
 
 # Data outputs
 data/raw/
@@ -34,7 +35,14 @@ htmlcov/
 Thumbs.db
 /.LittleRainbow
 .vscode/
+
 # MkDocs build output
 /site/
 alignmentissue_*.PNG
 docs/index.md.backup
+
+# Helpers
+.vscode/
+.claude/
+.github/copilot-instructions.md
+CLAUDE.md

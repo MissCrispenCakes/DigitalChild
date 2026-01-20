@@ -21,10 +21,11 @@ The DigitalChild project takes security seriously. We appreciate your efforts to
 
 ### ✅ Please DO
 
-**1. Report Privately**
+**1. Report Privately via GitHub Security Advisories**
 
-Email security concerns to: **[YOUR-EMAIL@DOMAIN.COM]**
-<!-- TODO: Add your actual security contact email -->
+- Navigate to the [Security tab](https://github.com/MissCrispenCakes/DigitalChild/security)
+- Click "Report a vulnerability"
+- Fill out the private advisory form
 
 **2. Include in Your Report:**
 
@@ -175,5 +176,3 @@ We appreciate security researchers and users who help keep this project secure. 
 ---
 
 **Last updated:** January 2026
-
-**TODO:** Update the security contact email address above!

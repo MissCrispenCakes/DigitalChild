@@ -16,7 +16,11 @@ from processors.scorecard import (
     get_all_indicators,
     load_scorecard,
 )
-from processors.validators import PathValidationError, validate_output_path, validate_path
+from processors.validators import (
+    PathValidationError,
+    validate_output_path,
+    validate_path,
+)
 
 METADATA_FILE = "data/metadata/metadata.json"
 

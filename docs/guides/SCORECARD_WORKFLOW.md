@@ -6,7 +6,7 @@ This document describes the complete scorecard system for the DigitalChild proje
 
 The scorecard system provides country-level data on digital child protection policies and LGBTQ+ rights. It consists of:
 
-1. **Data Source**: `scorecard_main.xlsx` - Excel file with country indicators
+1. **Data Source**: `data/scorecard/scorecard_main_presentation.xlsx` - Canonical scorecard file (Sept 2025 conference)
 1. **Loader**: `processors/scorecard.py` - Loads and caches scorecard data
 1. **Enricher**: `processors/scorecard_enricher.py` - Adds scorecard data to document metadata
 1. **Exporter**: `processors/scorecard_export.py` - Creates CSV exports for website/analysis
@@ -49,7 +49,7 @@ metadata.json
 ### 1. Initial Scorecard Setup
 
 ```bash
-# 1. Place scorecard_main.xlsx in project root
+# 1. Scorecard file located at data/scorecard/scorecard_main_presentation.xlsx
 # 2. Test scorecard loads correctly
 python -c "from processors.scorecard import load_scorecard; print(load_scorecard())"
 
@@ -253,7 +253,7 @@ if args.enrich_scorecard:
 
 ### Update Scorecard Data
 
-1. Edit `scorecard_main.xlsx` with new data
+1. Edit `data/scorecard/scorecard_main_presentation.xlsx` with new data
 1. Force reload: `load_scorecard(force_reload=True)`
 1. Re-enrich metadata: `python processors/scorecard_enricher.py`
 1. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
@@ -273,7 +273,7 @@ pytest tests/test_scorecard.py -v
 
 ### Add New Indicator
 
-1. Add column pair to `scorecard_main.xlsx`:
+1. Add column pair to `data/scorecard/scorecard_main_presentation.xlsx`:
 
    - `New_Indicator` (value column)
    - `New_Indicator_Source` (source URL column)
@@ -291,7 +291,8 @@ pytest tests/test_scorecard.py -v
 
 ## File Locations
 
-- **Source Data**: `scorecard_main.xlsx` (project root)
+- **Source Data**: `data/scorecard/scorecard_main_presentation.xlsx` (canonical file)
+- **Archived Data**: `data/archive/` (superseded scorecard files)
 - **Exports**: `data/exports/scorecard_*.csv`
 - **Validation Reports**: `data/exports/scorecard_url_validation.json`
 - **Diff Reports**: `data/exports/scorecard_diff_report.json`

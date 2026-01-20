@@ -111,8 +111,17 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 
 ## Key Publications
 
-!!! info "Research Output"
-Publications using LittleRainbowRights data will be listed here as they become available.
+### Conference Presentations
+
+**Vollmer, D.T., & Vollmer, S.C.** (2025, September 9-11). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Paper presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa.
+
+- ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
+- Presentation materials available in `presentations/` directory
+- Research demonstrated thorough manual legal analysis across African countries
+- Identified critical gaps in digital protection frameworks for LGBTQ+ youth
+
+!!! info "Additional Publications"
+Additional publications using LittleRainbowRights data will be listed here as they become available.
 
 ## How to Use This Data
 
@@ -122,7 +131,7 @@ Publications using LittleRainbowRights data will be listed here as they become a
 # Load scorecard data
 import pandas as pd
 
-df = pd.read_excel('scorecard_main.xlsx', sheet_name='Indicators')
+df = pd.read_excel('data/scorecard/scorecard_main_presentation.xlsx', sheet_name='UN_194')
 
 # Filter for child protection analysis
 child_protection = df[['Country', 'Region', 'Child_Online_Protection', 'Age_Verification']]

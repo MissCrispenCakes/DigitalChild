@@ -36,10 +36,10 @@ Then analyze with your preferred tool:
 Scorecard data is stored in:
 
 ```
-scorecard_main.xlsx
+data/scorecard/scorecard_main_presentation.xlsx
 ```
 
-Open directly in Excel to view raw data with all 10 indicators across 194 countries.
+Open directly in Excel to view raw data with all 10 indicators across 194 countries. Use the "UN_194" sheet for the main data.
 
 ### 3. Python Analysis
 
@@ -49,7 +49,7 @@ Quick analysis with pandas:
 import pandas as pd
 
 # Load scorecard data
-df = pd.read_excel('scorecard_main.xlsx', sheet_name='Indicators')
+df = pd.read_excel('data/scorecard/scorecard_main_presentation.xlsx', sheet_name='UN_194')
 
 # Filter by region
 africa = df[df['Region'] == 'Africa']
@@ -136,7 +136,7 @@ import pandas as pd
 
 def explore_scorecard():
     """Interactive scorecard exploration."""
-    df = pd.read_excel('scorecard_main.xlsx', sheet_name='Indicators')
+    df = pd.read_excel('data/scorecard/scorecard_main_presentation.xlsx', sheet_name='UN_194')
 
     print("Available columns:")
     print(df.columns.tolist())

@@ -277,7 +277,7 @@ Detects:
 
 Found an error or have updated information?
 
-1. **Verify** - Check the source URL in `scorecard_main.xlsx`
+1. **Verify** - Check the source URL in `data/scorecard/scorecard_main_presentation.xlsx`
 1. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
    - Country name
    - Indicator

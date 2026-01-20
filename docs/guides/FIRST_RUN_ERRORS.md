@@ -115,12 +115,12 @@ ______________________________________________________________________
 
 ## 🟢 Scorecard File Not Found
 
-**Error:** `FileNotFoundError: scorecard_main.xlsx`
+**Error:** `FileNotFoundError: data/scorecard/scorecard_main_presentation.xlsx`
 **Cause:** Scorecard Excel file missing or in wrong location.
-**Fix:** Ensure `scorecard_main.xlsx` is in project root.
+**Fix:** Ensure canonical scorecard file exists at `data/scorecard/scorecard_main_presentation.xlsx`.
 
 ```bash
-ls -la scorecard_main.xlsx  # Should exist in project root
+ls -la data/scorecard/scorecard_main_presentation.xlsx  # Should exist
 ```
 
 ______________________________________________________________________

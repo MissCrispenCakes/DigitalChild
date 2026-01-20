@@ -160,7 +160,7 @@ python pipeline_runner.py --source au_policy --tags-version latest
 
 #### A. **Data Loader** (`processors/scorecard.py`)
 
-- Loads `scorecard_main.xlsx` (194 countries, 10 indicators)
+- Loads `data/scorecard/scorecard_main_presentation.xlsx` (canonical file - 194 countries, 10 indicators)
 - Provides query functions
 - Caches data in memory
 
@@ -317,7 +317,7 @@ python pipeline_runner.py --source au_policy --tags-version latest
 
 2. Enrich:
    - Load metadata.json
-   - Load scorecard_main.xlsx
+   - Load data/scorecard/scorecard_main_presentation.xlsx
    - Match documents to countries
    - Add indicators to metadata
    - Save updated metadata.json
@@ -374,7 +374,7 @@ def scrape(base_url=None, countries=None):
 
 ### Adding Scorecard Indicators
 
-1. Edit `scorecard_main.xlsx`
+1. Edit `data/scorecard/scorecard_main_presentation.xlsx`
 1. Add new column for indicator
 1. Add source URLs
 1. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`
