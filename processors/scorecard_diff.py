@@ -16,6 +16,7 @@ import requests
 
 from processors.logger import get_logger
 from processors.scorecard import extract_all_source_urls, load_scorecard
+from processors.validators import URLValidationError, validate_url
 
 # Output files
 DIFF_REPORT_FILE = "data/exports/scorecard_diff_report.json"
@@ -72,6 +73,13 @@ def fetch_page_content(url: str) -> Optional[str]:
         Page text content or None on error
     """
     logger = get_logger("scorecard_diff")
+
+    # Validate URL format before making request
+    try:
+        url = validate_url(url, allow_http=True)
+    except URLValidationError as e:
+        logger.warning(f"Invalid URL format: {url} - {e}")
+        return None
 
     try:
         response = requests.get(

@@ -16,6 +16,7 @@ from processors.scorecard import (
     extract_all_source_urls,
     load_scorecard,
 )
+from processors.validators import PathValidationError, validate_output_path
 
 EXPORT_DIR = os.path.join("data", "exports")
 
@@ -50,7 +51,13 @@ class ScorecardExporter:
         One row per country, columns for each indicator.
         """
         filepath = filepath or os.path.join(EXPORT_DIR, "scorecard_summary.csv")
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        # Validate output path
+        try:
+            filepath = validate_output_path(filepath)
+        except PathValidationError as e:
+            self.logger.error(f"Invalid export path: {e}")
+            raise
 
         df = self.to_dataframe()
 
@@ -68,7 +75,13 @@ class ScorecardExporter:
         One row per URL with country/indicator context.
         """
         filepath = filepath or os.path.join(EXPORT_DIR, "scorecard_sources.csv")
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        # Validate output path
+        try:
+            filepath = validate_output_path(filepath)
+        except PathValidationError as e:
+            self.logger.error(f"Invalid export path: {e}")
+            raise
 
         sources = self.get_all_sources()
 
@@ -90,7 +103,13 @@ class ScorecardExporter:
         filepath = filepath or os.path.join(
             EXPORT_DIR, f"scorecard_{indicator.lower()}.csv"
         )
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        # Validate output path
+        try:
+            filepath = validate_output_path(filepath)
+        except PathValidationError as e:
+            self.logger.error(f"Invalid export path: {e}")
+            raise
 
         df = self.to_dataframe()
         cols = [
@@ -113,7 +132,13 @@ class ScorecardExporter:
         filepath = filepath or os.path.join(
             EXPORT_DIR, f"scorecard_{region.lower().replace(' ', '_')}.csv"
         )
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        # Validate output path
+        try:
+            filepath = validate_output_path(filepath)
+        except PathValidationError as e:
+            self.logger.error(f"Invalid export path: {e}")
+            raise
 
         df = self.to_dataframe()
 
@@ -144,7 +169,13 @@ class ScorecardExporter:
         filepath = filepath or os.path.join(
             EXPORT_DIR, "scorecard_indicator_counts.csv"
         )
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        # Validate output path
+        try:
+            filepath = validate_output_path(filepath)
+        except PathValidationError as e:
+            self.logger.error(f"Invalid export path: {e}")
+            raise
 
         df = self.to_dataframe()
         rows = []

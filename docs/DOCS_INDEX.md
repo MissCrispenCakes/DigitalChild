@@ -25,7 +25,7 @@ ______________________________________________________________________
 - `notes/PIPELINE_FLOW.md` → End-to-end pipeline flow.
 - `notes/PIPELINE_LOGGING.md` → How logging works.
 - `runs/PROCESSOR_TEST_RUN.md` → Commands to test processors independently.
-- `runs/RUNBOOK.md` → Run commands for pipeline and tests.
+- `runs/RUNBOOK.md` → Comprehensive run commands for pipeline and tests.
 
 ______________________________________________________________________
 
@@ -55,6 +55,15 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
+## Scorecard & Validation
+
+- `SCORECARD_WORKFLOW.md` → Complete scorecard system guide.
+- `SCORECARD_REVIEW_SUMMARY.md` → Scorecard review and analysis.
+- `VALIDATORS_USAGE.md` → Using the centralized validation module.
+
+______________________________________________________________________
+
 ## Notes
 
-- Placeholder docs (with `.md` files already scaffolded) will be expanded later as features are added.
+- Documentation is actively maintained and updated as features are added.
+- All 24 documentation files are up-to-date as of January 2026.

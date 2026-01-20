@@ -16,12 +16,21 @@ from processors.scorecard import (
     get_all_indicators,
     load_scorecard,
 )
+from processors.validators import PathValidationError, validate_output_path, validate_path
 
 METADATA_FILE = "data/metadata/metadata.json"
 
 
 def load_metadata() -> Dict[str, Any]:
     """Load metadata.json."""
+    try:
+        # Validate path for security
+        validate_path(METADATA_FILE, must_exist=False, allow_relative=True)
+    except PathValidationError as e:
+        logger = get_logger("scorecard_enricher")
+        logger.warning(f"Metadata file path validation failed: {e}")
+        return {"documents": []}
+
     if not os.path.exists(METADATA_FILE):
         return {"documents": []}
     with open(METADATA_FILE, "r", encoding="utf-8") as f:
@@ -30,7 +39,14 @@ def load_metadata() -> Dict[str, Any]:
 
 def save_metadata(metadata: Dict[str, Any]) -> None:
     """Save metadata.json."""
-    os.makedirs(os.path.dirname(METADATA_FILE), exist_ok=True)
+    try:
+        # Validate and create output path
+        validate_output_path(METADATA_FILE)
+    except PathValidationError as e:
+        logger = get_logger("scorecard_enricher")
+        logger.error(f"Failed to validate metadata output path: {e}")
+        raise
+
     with open(METADATA_FILE, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 

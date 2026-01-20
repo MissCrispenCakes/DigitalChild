@@ -16,6 +16,8 @@ import requests
 
 from processors.logger import get_logger
 from processors.scorecard import extract_all_source_urls
+from processors.validators import URLValidationError
+from processors.validators import validate_url as validate_url_format
 
 # Output files
 VALIDATION_REPORT_FILE = "data/exports/scorecard_url_validation.json"
@@ -50,13 +52,10 @@ def validate_url(url: str, timeout: int = REQUEST_TIMEOUT) -> Dict[str, Any]:
     }
 
     # Validate URL format before making request
-    if not url or not isinstance(url, str):
-        result["error"] = "Invalid URL: empty or not a string"
-        return result
-
-    url = url.strip()
-    if not url.startswith(("http://", "https://")):
-        result["error"] = "Invalid URL: must start with http:// or https://"
+    try:
+        url = validate_url_format(url, allow_http=True)
+    except URLValidationError as e:
+        result["error"] = str(e)
         return result
 
     headers = {"User-Agent": USER_AGENT}

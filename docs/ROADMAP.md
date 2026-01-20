@@ -4,58 +4,243 @@ This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipe
 
 ______________________________________________________________________
 
-## Phase 1: Core Pipeline (✅ in progress)
+## Phase 1: Core Pipeline (✅ COMPLETE)
 
 - [x] Project scaffolding (`init_project.py`)
-- [x] AU Policy scraper
+- [x] AU Policy scraper (requests and Selenium variants)
 - [x] PDF → text processor
-- [x] Tagging (v1, v2, v3, digital)
-- [x] Metadata tracking
-- [x] Logging system
-- [x] Tests for processors, tagging, logging, metadata
-- [x] Docs (setup, structure, standards, pipeline flow)
+- [x] DOCX → text processor
+- [x] HTML → text processor
+- [x] Fallback handler for multi-format processing
+- [x] Tagging system (v1, v2, v3, digital versions)
+- [x] Tags version management (`tags_main.json`)
+- [x] Metadata tracking with history
+- [x] Unified logging system with per-module logs
+- [x] Comprehensive test suite (124 tests passing)
+- [x] Documentation (setup, structure, standards, pipeline flow)
+- [x] CI/CD pipeline with GitHub Actions
+- [x] Pre-commit hooks (black, isort, flake8, markdown, yaml)
 
 ______________________________________________________________________
 
-## Phase 2: Expanded Sources (⏳ next)
+## Phase 2: Data Enrichment & Validation (✅ COMPLETE)
 
-- [ ] Scrapers for OHCHR Treaty Body database
-- [ ] UPR documents
-- [ ] UNICEF reports
-- [ ] ACERWC reports
-- [ ] ACHPR reports
-- [ ] Manual upload ingestion
+### Scorecard System
+
+- [x] Scorecard data loading (194 countries, 10 indicators each)
+- [x] Scorecard metadata enrichment
+- [x] Scorecard CSV exports (summary, sources, by-indicator, by-region)
+- [x] URL validation system (parallel workers, retry logic)
+- [x] Source change detection and monitoring
+- [x] Diff checking for stale scorecard entries
+- [x] Integration with pipeline runner
+
+### Validation & Security
+
+- [x] Centralized validators module (68 tests)
+- [x] URL validation with malicious pattern blocking
+- [x] Path validation with traversal protection
+- [x] File validation (size limits, extension checks)
+- [x] String validation (length, patterns, regex)
+- [x] Config validation (JSON, tags, structure)
+- [x] Schema validation (metadata, documents)
+- [x] Security improvements across all processors
+
+### Expanded Sources
+
+- [x] OHCHR Treaty Body scraper
+- [x] UPR documents scraper
+- [x] UNICEF reports scraper
+- [x] ACERWC scraper
+- [x] ACHPR scraper
+- [x] Manual upload ingestion (via `data/raw/manual/`)
+- [x] Static URL dictionary processing
 
 ______________________________________________________________________
 
-## Phase 3: Advanced Processing
+## Phase 3: Advanced Processing (⏳ IN PROGRESS)
 
-- [ ] Recommendations extraction (regex + NLP configs)
-- [ ] Timeline exports (tags_timeline.py)
-- [ ] Comparison across tagging/recs versions
-- [ ] Normalization of country/region to ISO codes
-- [ ] Doc type classification (Policy, Law, TreatyBody, etc.)
+### Recommendations System
+
+- [ ] Recommendations extraction (regex-based)
+- [ ] Recommendations config format (`recs_v1.json`)
+- [ ] Recommendations versioning and history tracking
+- [ ] NLP-based recommendations extraction (future)
+- [ ] Recommendations export to CSV
+
+### Comparison & Analysis
+
+- [ ] Timeline exports (`tags_timeline.py`)
+- [ ] Comparison across tagging versions
+- [ ] Comparison across recommendations versions
+- [ ] Comparison export to CSV with version headers
+- [ ] Year-over-year trend analysis
+
+### Enhanced Normalization
+
+- [x] Country/region normalization with ISO codes
+- [x] Preservation of `_raw` fields for provenance
+- [ ] Complete ISO 3166-1 alpha-2 mapping
+- [ ] Automatic doc type classification (Policy, Law, TreatyBody, etc.)
+- [ ] Source reliability scoring
 
 ______________________________________________________________________
 
-## Phase 4: Research Dashboard
+## Phase 4: Research Dashboard (🔜 PLANNED)
+
+### Backend API
 
 - [ ] Flask backend for serving metadata/exports
-- [ ] Visualization frontend (tags frequency, timelines, heatmaps)
-- [ ] Interactive filters (region, country, tags, year)
+- [ ] RESTful API endpoints:
+  - [ ] `/api/documents` - list/filter documents
+  - [ ] `/api/tags` - tag frequency and filters
+  - [ ] `/api/scorecard` - country indicators
+  - [ ] `/api/timeline` - temporal analysis
+  - [ ] `/api/export` - download datasets
+- [ ] Authentication and rate limiting
+- [ ] Caching layer for performance
+
+### Visualization Frontend
+
+- [ ] Interactive dashboard (React or Vue.js)
+- [ ] Tag frequency bar charts and heatmaps
+- [ ] Timeline visualizations (D3.js or Plotly)
+- [ ] Country/region filtering
+- [ ] Scorecard indicator displays
+- [ ] Interactive filters (region, country, tags, year, source)
 - [ ] Export/download UI for datasets
+- [ ] Mobile-responsive design
+
+### Charts & Analysis
+
+- [ ] Tag frequency bar charts
+- [ ] Timeline view (tags over time)
+- [ ] Geographic heatmaps (countries × tags)
+- [ ] Comparison mode (version side-by-side)
+- [ ] Scorecard indicator visualizations
+- [ ] Gap analysis (missing data visualization)
+- [ ] Correlation analysis (tags vs indicators)
 
 ______________________________________________________________________
 
-## Phase 5: Global Expansion
+## Phase 5: Global Expansion (📅 FUTURE)
 
-- [ ] Extend scrapers to other regions (Europe, Asia, Americas)
+### Geographic Expansion
+
+- [ ] European sources (EU, Council of Europe)
+- [ ] Asian sources (ASEAN, national bodies)
+- [ ] Americas sources (OAS, IACHR)
 - [ ] Merge African + global content
-- [ ] Global comparative analysis
+- [ ] Multi-language support (translation pipeline)
+
+### Advanced Features
+
+- [ ] Machine learning for document classification
+- [ ] Automated entity extraction (organizations, people, dates)
+- [ ] Sentiment analysis on recommendations
+- [ ] Network analysis (document citations)
+- [ ] Automated report generation
+- [ ] Email alerts for new documents
+- [ ] Collaborative annotation tools
+
+### Integration & API
+
+- [ ] Public API for researchers
+- [ ] Integration with human rights databases
+- [ ] Data export to common formats (JSON-LD, RDF)
+- [ ] Citation management integration (Zotero, Mendeley)
+- [ ] SPARQL endpoint for semantic queries
+
+______________________________________________________________________
+
+## Phase 6: Sustainability & Community (📅 FUTURE)
+
+### Infrastructure
+
+- [ ] Cloud deployment (AWS/GCP/Azure)
+- [ ] Automated daily scraper runs
+- [ ] Database migration (from JSON to PostgreSQL)
+- [ ] Data versioning and snapshots
+- [ ] Disaster recovery and backups
+
+### Community & Documentation
+
+- [ ] Contributor guidelines
+- [ ] Research methodology documentation
+- [ ] User guides and tutorials
+- [ ] Video walkthroughs
+- [ ] Academic publications and citations
+- [ ] Conference presentations
+
+### Quality & Maintenance
+
+- [ ] Automated data quality checks
+- [ ] Link rot monitoring and alerts
+- [ ] Performance optimization (caching, indexing)
+- [ ] Code refactoring and technical debt reduction
+- [ ] Security audits and updates
+
+______________________________________________________________________
+
+## Current Status Summary
+
+**Completed:**
+
+- ✅ Core pipeline (scraping, processing, tagging)
+- ✅ Scorecard system (194 countries, 2543 source URLs)
+- ✅ Validation and security framework
+- ✅ 124 tests (100% passing)
+- ✅ Comprehensive documentation (24+ files)
+
+**In Progress:**
+
+- ⏳ Recommendations extraction system
+- ⏳ Timeline and comparison exports
+- ⏳ Enhanced doc type classification
+
+**Next Priority:**
+
+- 🎯 Complete recommendations system
+- 🎯 Build comparison/timeline exports
+- 🎯 Begin research dashboard prototyping
+
+______________________________________________________________________
+
+## Metrics
+
+- **Lines of Code:** ~15,000+ (Python, config, tests)
+- **Test Coverage:** 124 tests, comprehensive validation
+- **Documentation:** 24 markdown files, 1 comprehensive guide (CLAUDE.md)
+- **Data Sources:** 7 scrapers (AU, OHCHR, UPR, UNICEF, ACERWC, ACHPR, manual)
+- **Countries Tracked:** 194 (via scorecard)
+- **Indicators:** 10 per country
+- **Source URLs:** 2,543 tracked and validated
+- **Tags Versions:** 4 (v1, v2, v3, digital)
+
+______________________________________________________________________
+
+## Contributing
+
+The project is actively developed. Contributions welcome in:
+
+1. **New scrapers** for additional sources
+2. **Enhanced processors** (OCR, image extraction)
+3. **Visualization components** for dashboard
+4. **Documentation** improvements and examples
+5. **Testing** coverage expansion
+6. **Performance** optimizations
+
+See [CLAUDE.md](../CLAUDE.md) for development guide.
 
 ______________________________________________________________________
 
 ## Notes
 
-- End-to-end MVP already works with AU Policy pipeline.
-- Future work extends sources and visualizations.
+- End-to-end pipeline is production-ready for AU Policy + scorecard workflow
+- Future work focuses on expanding analytics and building research dashboard
+- All core infrastructure is stable and well-tested
+- Documentation is comprehensive and up-to-date
+
+______________________________________________________________________
+
+Last updated: January 2026

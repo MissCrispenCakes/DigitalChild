@@ -5,10 +5,14 @@ Tagger
 Simple regex-based tagging using external config.
 """
 
-import json
 import re
 
 from processors.logger import get_logger
+from processors.validators import (
+    ConfigValidationError,
+    validate_json_file,
+    validate_regex_pattern,
+)
 
 logger = get_logger("tagger")
 
@@ -21,16 +25,17 @@ def load_tags(config_file=None):
     if config_file is None:
         config_file = "configs/tags_v1.json"
     try:
-        with open(config_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        logger.error(f"Tag config file not found: {config_file}")
-        return {"rules": {}}
-    except json.JSONDecodeError as e:
-        logger.error(f"Invalid JSON in tag config {config_file}: {e}")
-        return {"rules": {}}
-    except PermissionError:
-        logger.error(f"Permission denied reading tag config: {config_file}")
+        config = validate_json_file(config_file)
+        # Validate patterns are valid regexes
+        for tag_name, patterns in config.get("rules", {}).items():
+            for i, pattern in enumerate(patterns):
+                try:
+                    validate_regex_pattern(pattern, f"tag '{tag_name}' pattern {i}")
+                except Exception as e:
+                    logger.warning(f"Invalid regex {pattern} for tag {tag_name}: {e}")
+        return config
+    except ConfigValidationError as e:
+        logger.error(f"Config validation error for {config_file}: {e}")
         return {"rules": {}}
     except Exception as e:
         logger.error(
