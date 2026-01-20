@@ -388,7 +388,7 @@ Always run `pre-commit run --all-files` before committing. Common auto-fixes:
 
 ## Documentation References
 
-- `docs/FIRST_RUN_ERRORS.md` - Troubleshooting first run
+- `docs/guides/FIRST_RUN_ERRORS.md` - Troubleshooting first run
 - `docs/PIPELINE_FLOW.md` - Detailed pipeline flow
 - `docs/SCORECARD_WORKFLOW.md` - Complete scorecard system guide
 - `docs/standards/METADATA_SCHEMA.md` - Metadata structure
