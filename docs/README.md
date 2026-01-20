@@ -1,6 +1,11 @@
 # Documentation Overview
 
-This directory contains comprehensive documentation for the DigitalChild (GRIMdata / LittleRainbowRights) project - a Python data pipeline for scraping, processing, and analyzing human rights documents with focus on child and LGBTQ+ digital protection.
+This directory contains comprehensive documentation for the **DigitalChild** pipeline - the Python codebase powering the **LittleRainbowRights** project within the **GRIMdata.org** platform.
+
+**GRIMdata** (grimdata.org) hosts multiple human rights research projects:
+
+- **LittleRainbowRights** - Child and LGBTQ+ digital rights (this repository: DigitalChild)
+- **SGBV-UPR** - Sexual and gender-based violence analysis (separate repository: HumanRights)
 
 ## Quick Navigation
 

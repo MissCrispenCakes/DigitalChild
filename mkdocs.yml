@@ -1,18 +1,20 @@
-site_name: GRIMdata / LittleRainbowRights
-site_description: Open-source data pipeline for analyzing child and LGBTQ+ digital rights in human rights documents
+site_name: GRIMdata
+site_description: Global Rights Information Monitoring - Research platform hosting human rights data analysis projects including LittleRainbowRights and SGBV-UPR
 site_author: GRIMdata Project
 site_url: https://grimdata.org
 
 # Repository
+# Note: Site is built from DigitalChild repo (LittleRainbowRights project)
+# SGBV-UPR has separate repo: github.com/MissCrispenCakes/HumanRights
 repo_name: MissCrispenCakes/DigitalChild
 repo_url: https://github.com/MissCrispenCakes/DigitalChild
 edit_uri: edit/basecamp/docs/
 
 # Copyright
 copyright: |
-  &copy; 2025 GRIMdata / LittleRainbowRights<br>
-  Code: <a href="https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE">MIT License</a> |
-  Data: <a href="https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA">CC BY 4.0</a>
+  &copy; 2025 GRIMdata<br>
+  LittleRainbowRights: <a href="https://github.com/MissCrispenCakes/DigitalChild">DigitalChild repo</a> |
+  SGBV-UPR: <a href="https://github.com/MissCrispenCakes/HumanRights">HumanRights repo</a>
 
 # Theme
 theme:

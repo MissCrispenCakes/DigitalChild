@@ -1,8 +1,8 @@
-/* Custom JavaScript for GRIMdata / LittleRainbowRights website */
+/* Custom JavaScript for GRIMdata website */
 
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('GRIMdata / LittleRainbowRights website loaded');
+  console.log('GRIMdata website loaded (grimdata.org)');
 
   // Add rainbow effect to specific elements
   addRainbowEffects();

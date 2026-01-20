@@ -1,20 +1,23 @@
-# GRIMdata / LittleRainbowRights
+# GRIMdata
 
-## Open-Source Human Rights Data Pipeline
+## Global Rights Information Monitoring
 
-**Analyze child and LGBTQ+ digital protection through automated document analysis**
+**GRIMdata.org** is a research platform hosting human rights data analysis projects using automated pipelines to analyze documents from international organizations.
 
-[Get Started](getting-started/installation.md){ .md-button .md-button--primary }
-[View Scorecard](scorecard/index.md){ .md-button }
-[GitHub](https://github.com/MissCrispenCakes/DigitalChild){ .md-button }
+**Currently featuring two projects:**
+
+- **LittleRainbowRights** - Child and LGBTQ+ digital rights ([DigitalChild repo](https://github.com/MissCrispenCakes/DigitalChild))
+- **SGBV-UPR** - Sexual and gender-based violence analysis ([HumanRights repo](https://github.com/MissCrispenCakes/HumanRights))
+
+[Explore Projects](#our-projects){ .md-button .md-button--primary }
+[LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button }
+[SGBV-UPR](projects/sgbv/index.md){ .md-button }
 
 ______________________________________________________________________
 
-## What is GRIMdata?
+## Our Projects
 
-**GRIMdata** (Global Rights Information Monitoring) is a research initiative using automated data pipelines to analyze human rights documents from international organizations. The platform hosts multiple focused projects, each examining specific human rights themes.
-
-### Our Projects
+**GRIMdata.org** hosts multiple focused research projects, each examining specific human rights themes with dedicated methodologies and codebases.
 
 <div class="grid cards" markdown>
 
@@ -24,28 +27,38 @@ ______________________________________________________________________
 
   Child and LGBTQ+ digital rights research. Tracks 10 indicators across 194 countries: AI policy, data protection, LGBTQ+ legal status, child online protection, and more.
 
+  **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
+
   [:octicons-arrow-right-24: Explore Project](projects/littlerainbowrights/index.md)
 
 - :material-hand-heart:{ .lg .middle } **SGBV-UPR**
 
   ______________________________________________________________________
 
-  Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries.
+  Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Published research examining SGBV patterns across countries. Dataset updating for UPR Cycle 4.
+
+  **Repository:** [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
 
   [:octicons-arrow-right-24: Explore Project](projects/sgbv/index.md)
 
 </div>
 
-Each project has its own dedicated page accessible via its own domain:
+### Project Access
+
+Each project has its own dedicated page on GRIMdata.org:
 
 - **grimdata.org** - Main hub (this site)
 - **grimdata.org/projects/littlerainbowrights/** - LittleRainbowRights project
 - **grimdata.org/projects/sgbv/** - SGBV-UPR project
 - **littlerainbowrights.com** - Direct link to LittleRainbowRights (redirects to project page)
 
-## What is DigitalChild?
+## About the Repositories
 
-**DigitalChild** is the open-source Python pipeline powering these analyses. It scrapes, processes, and analyzes human rights documents with flexible tagging and enrichment capabilities.
+### DigitalChild (LittleRainbowRights Pipeline)
+
+**DigitalChild** is the open-source Python pipeline powering the **LittleRainbowRights** project. It scrapes, processes, and analyzes human rights documents with flexible tagging and enrichment capabilities for digital rights indicators.
+
+[View DigitalChild Repository](https://github.com/MissCrispenCakes/DigitalChild){ .md-button }
 
 The pipeline is designed to be:
 
@@ -53,6 +66,12 @@ The pipeline is designed to be:
 - **Transparent** - All processing steps documented and reproducible
 - **Secure** - Input validation protects against malicious data
 - **Extensible** - Researchers can adapt for their own projects
+
+### HumanRights (SGBV-UPR Pipeline)
+
+**HumanRights** is a separate repository containing the analysis pipeline for the **SGBV-UPR** project. It includes UPR-specific scrapers, SGBV tagging rules, and longitudinal analysis tools for examining sexual and gender-based violence recommendations.
+
+[View HumanRights Repository](https://github.com/MissCrispenCakes/HumanRights){ .md-button }
 
 ## Key Features
 

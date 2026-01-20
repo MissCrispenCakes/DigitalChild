@@ -2,9 +2,20 @@
 
 ## General Questions
 
-### What is DigitalChild / GRIMdata / LittleRainbowRights?
+### What is GRIMdata?
 
-DigitalChild (also known as GRIMdata or LittleRainbowRights) is an open-source data pipeline for analyzing human rights documents, with a specific focus on child and LGBTQ+ digital rights. It scrapes documents from international organizations, processes them into structured data, applies automated tagging, and enriches them with country-level indicators.
+**GRIMdata** (Global Rights Information Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Currently, GRIMdata features two projects:
+
+1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
+   - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
+   - Tracks 10 indicators across 194 countries
+2. **SGBV-UPR** - Sexual and gender-based violence analysis
+   - Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights)
+   - UPR recommendations analysis
+
+### What is DigitalChild?
+
+**DigitalChild** is the open-source Python pipeline that powers the **LittleRainbowRights** project. It scrapes documents from international organizations, processes them into structured data, applies automated tagging, and enriches them with country-level indicators for digital rights analysis.
 
 ### Who is this for?
 
