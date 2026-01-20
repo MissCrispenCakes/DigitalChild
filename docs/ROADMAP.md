@@ -58,30 +58,30 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Phase 3: Advanced Processing (⏳ IN PROGRESS)
+## Phase 3: Advanced Processing (✅ MOSTLY COMPLETE - 11/15 items)
 
 ### Recommendations System
 
-- [ ] Recommendations extraction (regex-based)
-- [ ] Recommendations config format (`recs_v1.json`)
-- [ ] Recommendations versioning and history tracking
+- [x] Recommendations extraction (regex-based)
+- [x] Recommendations config format (`recs_v1.json`)
+- [x] Recommendations versioning and history tracking
 - [ ] NLP-based recommendations extraction (future)
-- [ ] Recommendations export to CSV
+- [x] Recommendations export to CSV
 
 ### Comparison & Analysis
 
-- [ ] Timeline exports (`tags_timeline.py`)
-- [ ] Comparison across tagging versions
-- [ ] Comparison across recommendations versions
-- [ ] Comparison export to CSV with version headers
-- [ ] Year-over-year trend analysis
+- [x] Timeline exports (`tags_timeline.py`, `tags_timeline_country.py`, `tags_timeline_region.py`)
+- [x] Comparison across tagging versions
+- [x] Comparison across recommendations versions
+- [x] Comparison export to CSV with version headers
+- [x] Year-over-year trend analysis
 
 ### Enhanced Normalization
 
 - [x] Country/region normalization with ISO codes
 - [x] Preservation of `_raw` fields for provenance
 - [ ] Complete ISO 3166-1 alpha-2 mapping
-- [ ] Automatic doc type classification (Policy, Law, TreatyBody, etc.)
+- [x] Automatic doc type classification (Policy, TreatyBodyReport, UPR, Report)
 - [ ] Source reliability scoring
 
 ______________________________________________________________________
@@ -189,20 +189,23 @@ ______________________________________________________________________
 - ✅ Core pipeline (scraping, processing, tagging)
 - ✅ Scorecard system (194 countries, 2543 source URLs)
 - ✅ Validation and security framework
+- ✅ Recommendations extraction system (regex-based, versioned, with history tracking)
+- ✅ Timeline and comparison exports (tags and recommendations)
+- ✅ Automatic doc type classification (Policy, TreatyBodyReport, UPR, Report)
 - ✅ 124 tests (100% passing)
 - ✅ Comprehensive documentation (24+ files)
 
-**In Progress:**
+**Remaining in Phase 3:**
 
-- ⏳ Recommendations extraction system
-- ⏳ Timeline and comparison exports
-- ⏳ Enhanced doc type classification
+- ⏳ NLP-based recommendations extraction (future enhancement)
+- ⏳ Complete ISO 3166-1 alpha-2 mapping
+- ⏳ Source reliability scoring
 
 **Next Priority:**
 
-- 🎯 Complete recommendations system
-- 🎯 Build comparison/timeline exports
-- 🎯 Begin research dashboard prototyping
+- 🎯 Begin research dashboard prototyping (Phase 4)
+- 🎯 Backend API development
+- 🎯 Visualization frontend with interactive charts
 
 ______________________________________________________________________
 
@@ -216,6 +219,9 @@ ______________________________________________________________________
 - **Indicators:** 10 per country
 - **Source URLs:** 2,543 tracked and validated
 - **Tags Versions:** 4 (v1, v2, v3, digital)
+- **Recommendations Config:** recs_v1 (6 regex patterns for treaty body recommendations)
+- **Export Files:** 7 CSV exports (tags summary, 3 timelines, scorecard summary, sources, indicator counts)
+- **Processors:** 15+ specialized processors (PDF, DOCX, HTML, tagger, recommendations, comparison, timelines, scorecard)
 
 ______________________________________________________________________
 
@@ -237,7 +243,9 @@ ______________________________________________________________________
 ## Notes
 
 - End-to-end pipeline is production-ready for AU Policy + scorecard workflow
-- Future work focuses on expanding analytics and building research dashboard
+- Phase 3 (Advanced Processing) is 73% complete (11/15 items)
+- Recommendations system, timeline exports, and comparison functionality are fully operational
+- Future work focuses on building research dashboard (Phase 4)
 - All core infrastructure is stable and well-tested
 - Documentation is comprehensive and up-to-date
 
