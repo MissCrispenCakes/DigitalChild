@@ -1,0 +1,183 @@
+site_name: GRIMdata / LittleRainbowRights
+site_description: Open-source data pipeline for analyzing child and LGBTQ+ digital rights in human rights documents
+site_author: GRIMdata Project
+site_url: https://grimdata.org
+
+# Repository
+repo_name: MissCrispenCakes/DigitalChild
+repo_url: https://github.com/MissCrispenCakes/DigitalChild
+edit_uri: edit/basecamp/docs/
+
+# Copyright
+copyright: |
+  &copy; 2025 GRIMdata / LittleRainbowRights<br>
+  Code: <a href="https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE">MIT License</a> |
+  Data: <a href="https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA">CC BY 4.0</a>
+
+# Theme
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  logo: assets/logo.png  # TODO: Add logo
+  favicon: assets/favicon.ico  # TODO: Add favicon
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MissCrispenCakes/DigitalChild
+      name: GitHub Repository
+    - icon: fontawesome/solid/globe
+      link: https://littlerainbowrights.com
+      name: LittleRainbowRights
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # TODO: Add Google Analytics ID if desired
+  alternate:
+    - name: English
+      link: /
+      lang: en
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quickstart.md
+      - First Run Errors: guides/FIRST_RUN_ERRORS.md
+      - FAQ: FAQ.md
+  - User Guides:
+      - Runbook: guides/RUNBOOK.md
+      - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
+      - Validators Usage: guides/VALIDATORS_USAGE.md
+  - Documentation:
+      - Overview: README.md
+      - Architecture: ARCHITECTURE.md
+      - Glossary: GLOSSARY.md
+      - Data Governance: DATA_GOVERNANCE.md
+      - Docs Index: DOCS_INDEX.md
+  - Development:
+      - Roadmap: ROADMAP.md
+      - Contributing: ../CONTRIBUTING.md
+      - Standards:
+          - Metadata Schema: standards/METADATA_SCHEMA.md
+          - File Naming: standards/FILE_NAMING_STANDARDS.md
+          - Document Types: standards/DOC_TYPE_STANDARDS.md
+          - Scraper Structure: standards/SCRAPER_STRUCTURE.md
+          - Tags Config: standards/TAGS_CONFIG_FORMAT.md
+          - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
+          - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
+          - ISO Mapping: standards/ISO_MAPPING.md
+      - Notes:
+          - Directory Structure: notes/DIRECTORY_STRUCTURE.md
+          - Pipeline Flow: notes/PIPELINE_FLOW.md
+          - Pipeline Logging: notes/PIPELINE_LOGGING.md
+          - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
+          - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
+          - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
+  - Planning:
+      - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
+      - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
+  - Reviews:
+      - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
+      - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
+  - Scorecard:
+      - Visualization: scorecard/index.md
+      - Data Explorer: scorecard/explorer.md
+  - About:
+      - License: ../LICENSE
+      - Data License: ../LICENSE-DATA
+      - Citation: ../CITATION.cff
+      - Security: ../SECURITY.md
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/extra.js
+  - https://cdn.plot.ly/plotly-2.27.0.min.js

@@ -1,0 +1,84 @@
+cff-version: 1.2.0
+message: "If you use this software or data in your research, please cite it as below."
+type: software
+title: "DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection"
+abstract: "A Python data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection. Includes a comprehensive scorecard system tracking 10 indicators across 194 countries with 2,543 validated source URLs."
+authors:
+  - family-names: "[YOUR-LAST-NAME]"
+    given-names: "[YOUR-FIRST-NAME]"
+    affiliation: "[YOUR-UNIVERSITY]"
+    orcid: "https://orcid.org/[YOUR-ORCID]"
+    # TODO: Fill in your actual information above
+repository-code: "https://github.com/MissCrispenCakes/DigitalChild"
+url: "https://grimdata.org"
+keywords:
+  - human rights
+  - child rights
+  - LGBTQ rights
+  - digital rights
+  - data pipeline
+  - policy analysis
+  - scorecard
+  - treaty bodies
+  - UPR
+  - OHCHR
+license: MIT
+license-url: "https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE"
+version: "0.9.0"
+date-released: "2026-01-19"
+doi: "[YOUR-DOI-IF-PUBLISHED]"
+# Uncomment and fill when you have a DOI (e.g., from Zenodo)
+
+# For the data specifically
+references:
+  - type: data
+    title: "LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators"
+    authors:
+      - family-names: "[YOUR-LAST-NAME]"
+        given-names: "[YOUR-FIRST-NAME]"
+    year: 2025
+    license: CC-BY-4.0
+    license-url: "https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA"
+    repository: "https://github.com/MissCrispenCakes/DigitalChild"
+    abstract: "Comprehensive scorecard tracking 10 human rights indicators across 194 countries, focusing on AI policy, data protection, LGBTQ+ legal status, child online protection, and digital surveillance measures."
+    keywords:
+      - scorecard
+      - indicators
+      - child protection
+      - LGBTQ+ rights
+      - digital surveillance
+      - data protection
+
+# Related publications
+# Uncomment when you publish papers using this
+# related-publications:
+#   - type: article
+#     title: "[Your paper title]"
+#     authors:
+#       - family-names: "[YOUR-LAST-NAME]"
+#         given-names: "[YOUR-FIRST-NAME]"
+#     year: 2026
+#     journal: "[Journal Name]"
+#     doi: "[Paper DOI]"
+
+identifiers:
+  - type: url
+    value: "https://github.com/MissCrispenCakes/DigitalChild"
+    description: "GitHub Repository"
+  - type: url
+    value: "https://grimdata.org"
+    description: "Project Website"
+  - type: url
+    value: "https://littlerainbowrights.com"
+    description: "LittleRainbowRights Project Page"
+
+# Recommended citation format
+preferred-citation:
+  type: software
+  title: "DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection"
+  authors:
+    - family-names: "[YOUR-LAST-NAME]"
+      given-names: "[YOUR-FIRST-NAME]"
+  year: 2025
+  url: "https://github.com/MissCrispenCakes/DigitalChild"
+  notes: "Available at: https://grimdata.org"

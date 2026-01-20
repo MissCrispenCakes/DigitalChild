@@ -9,12 +9,16 @@ This directory contains comprehensive documentation for the DigitalChild (GRIMda
 - **[../README.md](../README.md)** - Project README with setup instructions and quickstart
 - **[../CLAUDE.md](../CLAUDE.md)** - Comprehensive guide for Claude Code AI assistant
 - **[DOCS_INDEX.md](DOCS_INDEX.md)** - Complete index of all documentation files
-- **[runs/FIRST_RUN_ERRORS.md](runs/FIRST_RUN_ERRORS.md)** - Common errors and solutions for first-time users
+- **[guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)** - Common errors and solutions for first-time users
 
 ### Core Documentation
 
 #### Architecture & Standards
 
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Complete system architecture overview
+- **[FAQ.md](FAQ.md)** - Frequently asked questions
+- **[GLOSSARY.md](GLOSSARY.md)** - Definitions of key terms
+- **[DATA_GOVERNANCE.md](DATA_GOVERNANCE.md)** - Privacy, ethics, data handling
 - **[notes/DIRECTORY_STRUCTURE.md](notes/DIRECTORY_STRUCTURE.md)** - Project folder structure explained
 - **[notes/PIPELINE_FLOW.md](notes/PIPELINE_FLOW.md)** - End-to-end data flow through the pipeline
 - **[standards/METADATA_SCHEMA.md](standards/METADATA_SCHEMA.md)** - Metadata JSON structure and fields
@@ -22,27 +26,53 @@ This directory contains comprehensive documentation for the DigitalChild (GRIMda
 
 #### Processing & Features
 
-- **[VALIDATORS_USAGE.md](VALIDATORS_USAGE.md)** - Using the centralized validation module
-- **[SCORECARD_WORKFLOW.md](SCORECARD_WORKFLOW.md)** - Complete scorecard system guide
+- **[guides/VALIDATORS_USAGE.md](guides/VALIDATORS_USAGE.md)** - Using the centralized validation module
+- **[guides/SCORECARD_WORKFLOW.md](guides/SCORECARD_WORKFLOW.md)** - Complete scorecard system guide
 - **[standards/TAGS_CONFIG_FORMAT.md](standards/TAGS_CONFIG_FORMAT.md)** - Tag configuration structure
 - **[standards/SCRAPER_STRUCTURE.md](standards/SCRAPER_STRUCTURE.md)** - How to build scrapers
 
 #### Development & Testing
 
-- **[runs/RUNBOOK.md](runs/RUNBOOK.md)** - Common commands for running pipelines and tests
-- **[runs/PROCESSOR_TEST_RUN.md](runs/PROCESSOR_TEST_RUN.md)** - Testing individual processors
+- **[guides/RUNBOOK.md](guides/RUNBOOK.md)** - Common commands for running pipelines and tests
+- **[reviews/PROCESSOR_TEST_RUN.md](reviews/PROCESSOR_TEST_RUN.md)** - Testing individual processors
 - **[ROADMAP.md](ROADMAP.md)** - Project roadmap and development phases
 
 ## Documentation Organization
 
-### `/docs` (Main Documentation)
+### `/docs` (Root)
 
-Top-level guides and workflow documentation:
+Core documentation and project overview:
 
-- Setup guides and troubleshooting
-- Feature workflows (scorecard, validators, tags)
-- Project planning (roadmap, feasibility checklists)
-- Comprehensive index
+- Architecture overview
+- FAQ and glossary
+- Data governance policies
+- Project roadmap
+- Documentation index
+
+### `/docs/guides` (User Guides)
+
+Operational guides for users:
+
+- Runbook with all commands
+- First-run troubleshooting
+- Scorecard workflow guide
+- Validators usage guide
+
+### `/docs/planning` (Planning Documents)
+
+Feature planning and feasibility:
+
+- Source feasibility checklists
+- Visualization plans
+- Future feature proposals
+
+### `/docs/reviews` (Test & Review)
+
+Test results and reviews:
+
+- Processor test runs
+- Scorecard reviews
+- Analysis summaries
 
 ### `/docs/notes` (Implementation Notes)
 
@@ -52,14 +82,6 @@ Technical notes about how systems work:
 - Tags versioning and exports
 - Comparison exports
 - Directory structure
-
-### `/docs/runs` (Run Guides)
-
-Practical guides for running the pipeline:
-
-- First-run error solutions
-- Test commands
-- Pipeline execution recipes
 
 ### `/docs/standards` (Standards & Formats)
 
@@ -114,7 +136,7 @@ Format specifications and conventions:
 
 ## Getting Help
 
-1. **First-time setup issues?** → See [runs/FIRST_RUN_ERRORS.md](runs/FIRST_RUN_ERRORS.md)
+1. **First-time setup issues?** → See [guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
 2. **Need to understand a feature?** → Check [DOCS_INDEX.md](DOCS_INDEX.md) for relevant docs
 3. **Want to contribute?** → Read [ROADMAP.md](ROADMAP.md) for planned features
 4. **Using Claude Code?** → See [../CLAUDE.md](../CLAUDE.md) for AI assistant guidance

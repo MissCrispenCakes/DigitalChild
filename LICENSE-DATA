@@ -1,0 +1,44 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2025 GRIMdata / LittleRainbowRights
+
+This license applies to:
+- Scorecard data (scorecard_main.xlsx and CSV exports)
+- Documentation files (all files in docs/ directory)
+- Configuration files (configs/ directory)
+- Analysis outputs and metadata
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose,
+  even commercially
+
+Under the following terms:
+- Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any
+  reasonable manner, but not in any way that suggests the licensor
+  endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+---
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+SUGGESTED CITATION:
+GRIMdata / LittleRainbowRights. (2025). DigitalChild: Human Rights Data
+Pipeline for Child and LGBTQ+ Digital Protection.
+Available at: https://github.com/MissCrispenCakes/DigitalChild
+
+---
+
+NOTES:
+1. Scraped documents (data/raw/) are government/UN public domain documents
+   and retain their original licensing (typically public domain).
+
+2. This project compiles and analyzes data from public sources. The compilation,
+   analysis, and derived datasets are licensed under CC BY 4.0.
+
+3. When using the scorecard data, please cite both this project AND the
+   original sources (URLs provided in the data).

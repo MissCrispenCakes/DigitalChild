@@ -1,70 +1,99 @@
 # Documentation Index
 
-This index lists all documentation files in `docs/` with their purpose.
+This index lists all documentation files in `docs/` organized by category.
+
+**Total: 29 documentation files** (as of January 2026)
 
 ______________________________________________________________________
 
-## Setup & Errors
+## 📚 Core Documentation (Root)
 
-- `../README.md` → Project quickstart, badges, project status.
-- `README.md` → Documentation overview and navigation guide.
-- `runs/FIRST_RUN_ERRORS.md` → Common first-run errors and fixes.
-
-______________________________________________________________________
-
-## Structure & Standards
-
-- `notes/DIRECTORY_STRUCTURE.md` → Explanation of folders and files.
-- `standards/FILE_NAMING_STANDARDS.md` → Rules for file names.
-- `standards/DOC_TYPE_STANDARDS.md` → How document types are categorized.
-- `standards/ISO_MAPPING.md` → Normalization of country/region names.
+- `../README.md` → Project quickstart, badges, installation
+- `README.md` → Documentation overview and navigation
+- `DOCS_INDEX.md` → This index
+- `ARCHITECTURE.md` → System architecture and components
+- `FAQ.md` → Frequently asked questions
+- `GLOSSARY.md` → Definitions of key terms
+- `DATA_GOVERNANCE.md` → Privacy, ethics, data handling policies
+- `ROADMAP.md` → Project roadmap and phases
 
 ______________________________________________________________________
 
-## Pipeline
+## 📖 Guides (guides/)
 
-- `notes/PIPELINE_FLOW.md` → End-to-end pipeline flow.
-- `notes/PIPELINE_LOGGING.md` → How logging works.
-- `runs/PROCESSOR_TEST_RUN.md` → Commands to test processors independently.
-- `runs/RUNBOOK.md` → Comprehensive run commands for pipeline and tests.
+User-facing operational guides:
 
-______________________________________________________________________
-
-## Tagging & Recommendations
-
-- `standards/TAGS_CONFIG_FORMAT.md` → Structure of tag configs.
-- `notes/TAGS_MAIN_NOTES.md` → Notes on tag version management.
-- `notes/TAGS_EXPORT_NOTES.md` → How to read tag summary CSV.
-- `TAGS_VISUALIZATION_PLAN.md` → Visualization ideas for tags.
-- `standards/RECOMMENDATIONS_CONFIG_FORMAT.md` → Structure of recommendations configs.
+- `guides/RUNBOOK.md` → Comprehensive commands for all operations
+- `guides/FIRST_RUN_ERRORS.md` → Troubleshooting first-run issues
+- `guides/SCORECARD_WORKFLOW.md` → Complete scorecard system guide
+- `guides/VALIDATORS_USAGE.md` → Using the validation framework
 
 ______________________________________________________________________
 
-## Comparison
+## 📋 Planning (planning/)
 
-- `standards/COMPARISON_CONFIG_FORMAT.md` → Format for comparison configs.
-- `notes/COMPARISON_EXPORT_NOTES.md` → How to interpret comparison exports.
+Planning and feasibility documents:
 
-______________________________________________________________________
-
-## Development Notes
-
-- `standards/SCRAPER_STRUCTURE.md` → How scrapers are structured.
-- `ROADMAP.md` → Roadmap of phases.
-- `SOURCE_FEASIBILITY_CHECKLIST.md` → Checklist for deciding source feasibility.
-- `DOCS_INDEX.md` → This index.
+- `planning/SOURCE_FEASIBILITY_CHECKLIST.md` → Evaluating new data sources
+- `planning/TAGS_VISUALIZATION_PLAN.md` → Future visualization features
 
 ______________________________________________________________________
 
-## Scorecard & Validation
+## 🔍 Reviews (reviews/)
 
-- `SCORECARD_WORKFLOW.md` → Complete scorecard system guide.
-- `SCORECARD_REVIEW_SUMMARY.md` → Scorecard review and analysis.
-- `VALIDATORS_USAGE.md` → Using the centralized validation module.
+Test runs and review summaries:
+
+- `reviews/SCORECARD_REVIEW_SUMMARY.md` → Scorecard analysis and review
+- `reviews/PROCESSOR_TEST_RUN.md` → Processor testing commands and results
+
+______________________________________________________________________
+
+## 📏 Standards (standards/)
+
+Technical standards and schemas:
+
+- `standards/METADATA_SCHEMA.md` → Document metadata structure
+- `standards/FILE_NAMING_STANDARDS.md` → File naming conventions
+- `standards/DOC_TYPE_STANDARDS.md` → Document type categorization
+- `standards/ISO_MAPPING.md` → Country/region normalization
+- `standards/TAGS_CONFIG_FORMAT.md` → Tag configuration structure
+- `standards/RECOMMENDATIONS_CONFIG_FORMAT.md` → Recommendations config format
+- `standards/COMPARISON_CONFIG_FORMAT.md` → Comparison config format
+- `standards/SCRAPER_STRUCTURE.md` → Scraper implementation guide
+
+______________________________________________________________________
+
+## 📝 Notes (notes/)
+
+Internal development notes:
+
+- `notes/DIRECTORY_STRUCTURE.md` → Codebase folder organization
+- `notes/PIPELINE_FLOW.md` → End-to-end pipeline execution
+- `notes/PIPELINE_LOGGING.md` → Logging system details
+- `notes/TAGS_MAIN_NOTES.md` → Tag version management
+- `notes/TAGS_EXPORT_NOTES.md` → Tag summary CSV interpretation
+- `notes/COMPARISON_EXPORT_NOTES.md` → Comparison export format
+
+______________________________________________________________________
+
+## 🔗 Related Root Files
+
+These files live in the project root, not docs/:
+
+- `../LICENSE` → MIT License for code
+- `../LICENSE-DATA` → CC BY 4.0 License for data/docs
+- `../CONTRIBUTING.md` → Contribution guidelines
+- `../SECURITY.md` → Security policies and vulnerability reporting
+- `../CITATION.cff` → Academic citation format
+- `../CLAUDE.md` → AI assistant context
 
 ______________________________________________________________________
 
 ## Notes
 
-- Documentation is actively maintained and updated as features are added.
-- All 25 documentation files are up-to-date as of January 2026.
+- Documentation reorganized January 2026 for better navigation
+- guides/ = operational how-tos
+- planning/ = future features and feasibility
+- reviews/ = analysis and test summaries
+- standards/ = technical specifications
+- notes/ = internal development notes
