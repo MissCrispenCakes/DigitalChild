@@ -392,7 +392,7 @@ Not yet. Use GitHub Discussions for now. A community forum may be added in the f
 
 ### Who maintains this project?
 
-This is a PhD research project maintained part-time by one person. Please be patient with response times!
+This project is maintained part-time by one person. Please be patient with response times!
 
 ### How can I support the project?
 

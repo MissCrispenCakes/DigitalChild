@@ -360,7 +360,7 @@ When reporting data quality issues:
 
 **What users should NOT expect:**
 
-- 24/7 support (maintained by PhD student)
+- 24/7 support (maintained part-time)
 - Legal guarantees or warranties (MIT license)
 - Custom features on demand
 - Validation of all 2,543 source URLs in real-time

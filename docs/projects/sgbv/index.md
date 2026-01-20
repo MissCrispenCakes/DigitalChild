@@ -307,7 +307,6 @@ This research benefits from:
 
 - **OHCHR** - Universal Periodic Review database
 - **UPR Info** - Additional UPR tracking and analysis
-- **Academic advisors** - PhD supervision and guidance
 - **SGBV advocates** - Feedback on research direction
 
 ______________________________________________________________________

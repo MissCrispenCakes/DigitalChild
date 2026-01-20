@@ -238,8 +238,8 @@ This ensures the pipeline is freely usable while giving credit to the research e
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 - **Website:** [LittleRainbowRights.com](https://littlerainbowrights.com)
 
-!!! warning "Maintained by PhD Student"
-This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
+!!! warning "Part-Time Maintenance"
+This project is maintained part-time by one person. Response times may vary. Your patience is appreciated!
 
 ## Acknowledgments
 
