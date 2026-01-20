@@ -21,4 +21,6 @@ pandoc
 # Docs + formatting
 markdown-link-checker
 mdformat
+mdformat-gfm
+mdformat-tables
 pre-commit
