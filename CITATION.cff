@@ -49,16 +49,30 @@ references:
       - data protection
 
 # Related publications
-# Uncomment when you publish papers using this
-# related-publications:
-#   - type: article
-#     title: "[Your paper title]"
-#     authors:
-#       - family-names: "[YOUR-LAST-NAME]"
-#         given-names: "[YOUR-FIRST-NAME]"
-#     year: 2026
-#     journal: "[Journal Name]"
-#     doi: "[Paper DOI]"
+related-publications:
+  - type: conference-paper
+    title: "Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa"
+    authors:
+      - family-names: "Vollmer"
+        given-names: "D.T."
+      - family-names: "Vollmer"
+        given-names: "S.C."
+        orcid: "https://orcid.org/0000-0002-3359-2810"
+    year: 2025
+    month: 9
+    conference:
+      name: "Second International Conference on Children's Rights"
+      location: "Stellenbosch, South Africa"
+      date-start: 2025-09-09
+      date-end: 2025-09-11
+    abstract: "This research examines the responsiveness of human rights systems and institutional mechanisms for protecting children, particularly LGBTQ+ children, from digital harms of advanced technologies such as AI. Through analysis of international and regional human rights mechanisms, the work develops a systematic evaluation framework combining legal and computational methodologies to assess digital protection rights for LGBTQ+ children, with focus on African states."
+    keywords:
+      - LGBTQ+ children
+      - digital rights
+      - artificial intelligence
+      - human rights
+      - Africa
+      - child protection
 
 identifiers:
   - type: url

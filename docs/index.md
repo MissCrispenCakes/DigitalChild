@@ -16,7 +16,7 @@ ______________________________________________________________________
 
     **Status:** Active | **Scope:** Global (194 countries)
 
-    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard. Presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
@@ -40,7 +40,7 @@ ______________________________________________________________________
 
 **SGBV-UPR** (2019-2022) demonstrated the feasibility of automated analysis of UPR recommendations at regional scale, focusing on SADC member states and SGBV themes. This work was published in academic literature and validated the core methodology.
 
-**LittleRainbowRights** (2023-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with 2,543 validated sources. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
+**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with 2,543 validated sources. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
 
 ## What GRIMdata Provides
 
@@ -111,8 +111,7 @@ The **LittleRainbowRights** project is ready for use:
 - Vollmer, SC and Vollmer, DT. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 **LittleRainbowRights Research:**
-- Publications using this data will be listed as they become available
-- Conference presentation materials forthcoming
+- Vollmer, DT and Vollmer, SC. (2025). Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa. Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025.
 
 ## Open Source & Licensing
 
