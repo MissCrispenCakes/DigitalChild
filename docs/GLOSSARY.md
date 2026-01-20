@@ -452,14 +452,6 @@ Software with source code available for inspection, modification, and enhancemen
 - Hosted on GitHub
 - Encourages collaboration and transparency
 
-### PhD (Doctor of Philosophy)
-
-Advanced academic degree
-
-- DigitalChild is maintained by PhD student
-- Research focus: human rights and digital protection
-- Part-time project alongside studies
-
 ## Acronyms & Abbreviations
 
 - **API**: Application Programming Interface

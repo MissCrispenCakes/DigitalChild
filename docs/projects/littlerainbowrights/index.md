@@ -122,10 +122,6 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 !!! info "Research Output"
 Publications using LittleRainbowRights data will be listed here as they become available.
 
-```
-PhD research in progress - findings to be published in 2026-2027.
-```
-
 ## How to Use This Data
 
 ### For Researchers
