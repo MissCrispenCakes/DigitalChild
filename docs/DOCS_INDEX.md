@@ -6,7 +6,8 @@ ______________________________________________________________________
 
 ## Setup & Errors
 
-- `../README.md` → Quickstart, badges, troubleshooting link.
+- `../README.md` → Project quickstart, badges, project status.
+- `README.md` → Documentation overview and navigation guide.
 - `runs/FIRST_RUN_ERRORS.md` → Common first-run errors and fixes.
 
 ______________________________________________________________________
@@ -66,4 +67,4 @@ ______________________________________________________________________
 ## Notes
 
 - Documentation is actively maintained and updated as features are added.
-- All 24 documentation files are up-to-date as of January 2026.
+- All 25 documentation files are up-to-date as of January 2026.
