@@ -260,37 +260,29 @@ python pipeline_runner.py --mode urls --source upr
 
 <div class="grid cards" markdown>
 
-- :material-book-open-page-variant:{ .lg .middle } **Learn More**
+-   :material-book-open-page-variant:{ .lg .middle } **Learn More**
 
-  ______________________________________________________________________
+    Dive deeper into pipeline operations
 
-  Dive deeper into pipeline operations
+    [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
 
-  [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
+-   :material-tag-multiple:{ .lg .middle } **Customize Tags**
 
-- :material-tag-multiple:{ .lg .middle } **Customize Tags**
+    Add your own tag patterns
 
-  ______________________________________________________________________
+    [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
 
-  Add your own tag patterns
+-   :material-chart-bar:{ .lg .middle } **Explore Scorecard**
 
-  [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
+    Understand country indicators
 
-- :material-chart-bar:{ .lg .middle } **Explore Scorecard**
+    [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
 
-  ______________________________________________________________________
+-   :material-cog:{ .lg .middle } **Add Scrapers**
 
-  Understand country indicators
+    Build scrapers for new sources
 
-  [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
-
-- :material-cog:{ .lg .middle } **Add Scrapers**
-
-  ______________________________________________________________________
-
-  Build scrapers for new sources
-
-  [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
+    [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
 
 </div>
 
