@@ -501,7 +501,7 @@ Extended vision encompassing all vulnerable populations
 - Already published in academic journal
 - To be integrated into GRIMdata.org website
 
----
+______________________________________________________________________
 
 **Need a term defined?** Open an [issue](https://github.com/MissCrispenCakes/DigitalChild/issues) or [discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions) requesting the addition.
 

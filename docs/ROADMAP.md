@@ -224,11 +224,11 @@ ______________________________________________________________________
 The project is actively developed. Contributions welcome in:
 
 1. **New scrapers** for additional sources
-2. **Enhanced processors** (OCR, image extraction)
-3. **Visualization components** for dashboard
-4. **Documentation** improvements and examples
-5. **Testing** coverage expansion
-6. **Performance** optimizations
+1. **Enhanced processors** (OCR, image extraction)
+1. **Visualization components** for dashboard
+1. **Documentation** improvements and examples
+1. **Testing** coverage expansion
+1. **Performance** optimizations
 
 See [CLAUDE.md](../CLAUDE.md) for development guide.
 

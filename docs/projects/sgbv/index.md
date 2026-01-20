@@ -4,47 +4,47 @@
 
 **Analyzing UPR recommendations on sexual and gender-based violence**
 
----
+______________________________________________________________________
 
 ## About This Project
 
 The SGBV-UPR project analyzes Universal Periodic Review (UPR) recommendations related to sexual and gender-based violence (SGBV). This research examines how countries address SGBV in their human rights commitments and implementation.
 
 !!! info "Separate Repository"
-    This project has its own repository and codebase. It will be integrated into the GRIMdata website for unified access to findings.
+This project has its own repository and codebase. It will be integrated into the GRIMdata website for unified access to findings.
 
 ## Project Status
 
 !!! success "Published Research"
-    Findings from this project have been published in an academic journal (citation details coming soon).
+Findings from this project have been published in an academic journal (citation details coming soon).
 
 ## Key Features
 
 <div class="grid cards" markdown>
 
--   :material-file-document:{ .lg .middle } **UPR Document Analysis**
+- :material-file-document:{ .lg .middle } **UPR Document Analysis**
 
-    ---
+  ______________________________________________________________________
 
-    Systematic analysis of UPR recommendations across countries
+  Systematic analysis of UPR recommendations across countries
 
--   :material-tag-multiple:{ .lg .middle } **SGBV-Specific Tagging**
+- :material-tag-multiple:{ .lg .middle } **SGBV-Specific Tagging**
 
-    ---
+  ______________________________________________________________________
 
-    Identification of SGBV-related recommendations and themes
+  Identification of SGBV-related recommendations and themes
 
--   :material-chart-timeline:{ .lg .middle } **Longitudinal Tracking**
+- :material-chart-timeline:{ .lg .middle } **Longitudinal Tracking**
 
-    ---
+  ______________________________________________________________________
 
-    How SGBV recommendations evolve across UPR cycles
+  How SGBV recommendations evolve across UPR cycles
 
--   :material-earth:{ .lg .middle } **Global Coverage**
+- :material-earth:{ .lg .middle } **Global Coverage**
 
-    ---
+  ______________________________________________________________________
 
-    Analysis across all UN member states
+  Analysis across all UN member states
 
 </div>
 
@@ -53,10 +53,10 @@ The SGBV-UPR project analyzes Universal Periodic Review (UPR) recommendations re
 This project addresses:
 
 1. **Frequency:** How often do UPR recommendations address SGBV?
-2. **Patterns:** What specific SGBV issues are most commonly raised?
-3. **Implementation:** How do countries respond to SGBV recommendations?
-4. **Gaps:** Which countries receive few or no SGBV recommendations despite known issues?
-5. **Evolution:** How have SGBV recommendations changed over UPR cycles?
+1. **Patterns:** What specific SGBV issues are most commonly raised?
+1. **Implementation:** How do countries respond to SGBV recommendations?
+1. **Gaps:** Which countries receive few or no SGBV recommendations despite known issues?
+1. **Evolution:** How have SGBV recommendations changed over UPR cycles?
 
 ## Methodology
 
@@ -70,32 +70,34 @@ This project addresses:
 ### Analysis Approach
 
 1. **Text processing** - Extract and clean UPR recommendation text
-2. **Tagging** - Apply SGBV-specific tag rules
-3. **Categorization** - Group by SGBV sub-themes (domestic violence, trafficking, etc.)
-4. **Quantitative analysis** - Frequency counts, regional patterns
-5. **Qualitative analysis** - Content of recommendations, implementation status
+1. **Tagging** - Apply SGBV-specific tag rules
+1. **Categorization** - Group by SGBV sub-themes (domestic violence, trafficking, etc.)
+1. **Quantitative analysis** - Frequency counts, regional patterns
+1. **Qualitative analysis** - Content of recommendations, implementation status
 
 ## Key Findings
 
 !!! note "Summary"
-    Detailed findings are available in the published journal article.
+Detailed findings are available in the published journal article.
 
-    Key insights include:
-    - Regional variation in SGBV recommendation frequency
-    - Common themes across recommendations
-    - Implementation challenges
-    - Best practice examples
+```
+Key insights include:
+- Regional variation in SGBV recommendation frequency
+- Common themes across recommendations
+- Implementation challenges
+- Best practice examples
+```
 
 ## SGBV Categories Analyzed
 
 1. **Domestic Violence** - Intimate partner violence, family violence
-2. **Sexual Violence** - Rape, sexual assault, harassment
-3. **Trafficking** - Human trafficking, forced labor, sexual exploitation
-4. **Harmful Practices** - Female genital mutilation, child marriage, honor crimes
-5. **Conflict-Related SGBV** - Wartime sexual violence, displacement-related violence
-6. **Legal Frameworks** - Criminalization, survivor protections, access to justice
-7. **Services** - Shelters, counseling, medical care for survivors
-8. **Prevention** - Education, awareness campaigns, perpetrator programs
+1. **Sexual Violence** - Rape, sexual assault, harassment
+1. **Trafficking** - Human trafficking, forced labor, sexual exploitation
+1. **Harmful Practices** - Female genital mutilation, child marriage, honor crimes
+1. **Conflict-Related SGBV** - Wartime sexual violence, displacement-related violence
+1. **Legal Frameworks** - Criminalization, survivor protections, access to justice
+1. **Services** - Shelters, counseling, medical care for survivors
+1. **Prevention** - Education, awareness campaigns, perpetrator programs
 
 ## Data & Visualizations
 
@@ -127,17 +129,19 @@ The SGBV project will be fully integrated into the GRIMdata platform with:
 ## Publications
 
 !!! example "Published Research"
-    **[Journal Article Title]**
+**[Journal Article Title]**
 
-    Authors: [Names]
+```
+Authors: [Names]
 
-    Journal: [Journal Name], Year
+Journal: [Journal Name], Year
 
-    DOI: [DOI Link]
+DOI: [DOI Link]
 
-    Abstract: [Brief abstract of findings]
+Abstract: [Brief abstract of findings]
 
-    [Link to full text]
+[Link to full text]
+```
 
 ## How to Use This Data
 
@@ -179,15 +183,17 @@ This project builds on and complements:
 ## Repository & Code
 
 !!! info "Separate Codebase"
-    The SGBV-UPR project has its own repository with specialized analysis tools.
+The SGBV-UPR project has its own repository with specialized analysis tools.
 
-    Repository link: [Coming soon]
+```
+Repository link: [Coming soon]
 
-    The codebase includes:
-    - UPR-specific scrapers
-    - SGBV tagging rules
-    - Longitudinal analysis tools
-    - Visualization scripts
+The codebase includes:
+- UPR-specific scrapers
+- SGBV tagging rules
+- Longitudinal analysis tools
+- Visualization scripts
+```
 
 ## Future Development
 
@@ -254,12 +260,12 @@ This research benefits from:
 - **Academic advisors** - PhD supervision and guidance
 - **SGBV advocates** - Feedback on research direction
 
----
+______________________________________________________________________
 
 **SGBV-UPR** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
 
 **Mission:** Support evidence-based approaches to preventing and responding to sexual and gender-based violence worldwide.
 
----
+______________________________________________________________________
 
 _Note: This page will be updated as the SGBV project is fully integrated into the GRIMdata platform. Check back for interactive visualizations and data explorer tools._

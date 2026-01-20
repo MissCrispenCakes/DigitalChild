@@ -16,38 +16,43 @@ Scrape, process, tag, and analyze policy documents from international organizati
 📖 **Documentation:** [docs/](docs/)
 💬 **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
----
+______________________________________________________________________
 
 ## ✨ Key Features
 
 ### 📥 Data Collection
+
 - **7 data sources** - AU Policy, OHCHR, UPR, UNICEF, ACERWC, ACHPR, Manual uploads
 - **Multi-format support** - PDF, DOCX, HTML document processing
 - **Automated scraping** - Respectful, rate-limited web scraping with fallback handlers
 
 ### 🏷️ Analysis & Tagging
+
 - **Regex-based tagging** - Identify child rights, LGBTQ+, AI, privacy, and digital policy themes
 - **Versioned tags** - Compare results across different tag rule sets
 - **Tags history** - Track all tagging operations with timestamps
 
 ### 📊 Scorecard System
+
 - **194 countries** tracked with 10 human rights indicators
 - **2,543 source URLs** - Authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
 - **Automated validation** - Check source URLs for availability, detect changes
 - **CSV exports** - Summary tables, by-indicator breakdowns, regional analysis
 
 ### 🔒 Security & Validation
+
 - **68 validator tests** - Comprehensive input validation
 - **Path traversal protection** - Prevent malicious file access
 - **URL validation** - Block javascript:, file:, and other dangerous patterns
 - **File size limits** - Protect against file bombs
 
 ### 📈 Export & Research
+
 - **CSV exports** - Tags summaries, scorecard data, analysis results
 - **Metadata tracking** - Complete provenance for every document
 - **Reproducible** - Version-controlled configs and timestamps
 
----
+______________________________________________________________________
 
 ## 🚀 Quick Start
 
@@ -108,7 +113,7 @@ ______________________________________________________________________
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
 
----
+______________________________________________________________________
 
 ## 📚 Documentation
 
@@ -122,11 +127,12 @@ See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future p
 
 See [docs/DOCS_INDEX.md](docs/DOCS_INDEX.md) for full documentation index.
 
----
+______________________________________________________________________
 
 ## 🛠 Troubleshooting
 
 **Common issues:**
+
 - **Virtual environment** - Activate before installing dependencies
 - **Python version** - Must use Python 3.12 specifically
 - **Import errors** - Run commands from project root, not subdirectories
@@ -134,13 +140,14 @@ See [docs/DOCS_INDEX.md](docs/DOCS_INDEX.md) for full documentation index.
 
 See [First Run Error Checklist](docs/guides/FIRST_RUN_ERRORS.md) for detailed solutions.
 
----
+______________________________________________________________________
 
 ## 🤝 Contributing
 
 We welcome contributions from researchers, developers, and human rights advocates!
 
 **Ways to contribute:**
+
 - Report bugs and issues
 - Add new data sources (scrapers)
 - Improve documentation
@@ -148,10 +155,11 @@ We welcome contributions from researchers, developers, and human rights advocate
 - Suggest features
 
 **Getting started:**
+
 1. Read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
-2. Check [issues](https://github.com/MissCrispenCakes/DigitalChild/issues) labeled `good first issue`
-3. Fork the repo and create a feature branch
-4. Submit a pull request
+1. Check [issues](https://github.com/MissCrispenCakes/DigitalChild/issues) labeled `good first issue`
+1. Fork the repo and create a feature branch
+1. Submit a pull request
 
 **Developer setup:**
 
@@ -171,7 +179,7 @@ pre-commit run --all-files
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
----
+______________________________________________________________________
 
 ## 📄 License
 
@@ -181,6 +189,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - **Data & Documentation:** [CC BY 4.0](LICENSE-DATA) - Attribution required
 
 This means:
+
 - ✅ Use the code freely, including commercial applications
 - ✅ Use and share the scorecard data with attribution
 - ✅ Fork, modify, and redistribute
@@ -188,7 +197,7 @@ This means:
 
 See [LICENSE](LICENSE) and [LICENSE-DATA](LICENSE-DATA) for full terms.
 
----
+______________________________________________________________________
 
 ## 📖 Citation
 
@@ -210,7 +219,7 @@ Or use the format in [CITATION.cff](CITATION.cff).
 
 > GRIMdata / LittleRainbowRights. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild
 
----
+______________________________________________________________________
 
 ## 🔒 Security
 
@@ -220,7 +229,7 @@ Email: [YOUR-EMAIL@DOMAIN.COM] <!-- TODO: Add security contact -->
 
 See [SECURITY.md](SECURITY.md) for responsible disclosure policy.
 
----
+______________________________________________________________________
 
 ## 🙏 Acknowledgments
 
@@ -233,13 +242,14 @@ This project analyzes publicly available human rights documents from:
 Data sources tracked with 2,543 validated URLs ensuring transparency and verification.
 
 **Built with:**
+
 - Python 3.12, BeautifulSoup4, Selenium, pandas, PyPDF2, pytest
 - GitHub Pages for documentation
 - MkDocs Material for website
 
 **Maintained by:** PhD student as part of human rights research (please be patient with response times!)
 
----
+______________________________________________________________________
 
 ## 📞 Contact & Support
 
@@ -248,11 +258,12 @@ Data sources tracked with 2,543 validated URLs ensuring transparency and verific
 - **Website:** [GRIMdata.org](https://grimdata.org)
 
 Support the project:
+
 - ⭐ Star this repository
 - 📢 Share with researchers and advocates
 - 💻 Contribute code or documentation
 - 📝 Cite in your publications
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026

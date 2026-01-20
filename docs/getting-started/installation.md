@@ -30,27 +30,33 @@ cd DigitalChild
 
 === "Linux / macOS"
 
-    ```bash
-    python3 -m venv .LittleRainbow
-    source .LittleRainbow/bin/activate
-    ```
+````
+```bash
+python3 -m venv .LittleRainbow
+source .LittleRainbow/bin/activate
+```
+````
 
 === "Windows"
 
-    ```cmd
-    python -m venv .LittleRainbow
-    .LittleRainbow\Scripts\activate
-    ```
+````
+```cmd
+python -m venv .LittleRainbow
+.LittleRainbow\Scripts\activate
+```
+````
 
 === "conda"
 
-    ```bash
-    conda create -n digitalchild python=3.12
-    conda activate digitalchild
-    ```
+````
+```bash
+conda create -n digitalchild python=3.12
+conda activate digitalchild
+```
+````
 
 !!! tip "Why virtual environment?"
-    Virtual environments isolate project dependencies, preventing conflicts with other Python projects on your system.
+Virtual environments isolate project dependencies, preventing conflicts with other Python projects on your system.
 
 ### 3. Install Dependencies
 
@@ -83,7 +89,7 @@ This creates:
 - `logs/` - Run logs
 
 !!! success "Ready to Go!"
-    Your installation is complete. Proceed to [Quick Start](quickstart.md) to run your first pipeline.
+Your installation is complete. Proceed to [Quick Start](quickstart.md) to run your first pipeline.
 
 ## Development Installation
 
@@ -124,19 +130,25 @@ Only needed for `_sel` variant scrapers (browser automation):
 
 === "Linux"
 
-    ```bash
-    sudo apt-get install chromium-chromedriver
-    ```
+````
+```bash
+sudo apt-get install chromium-chromedriver
+```
+````
 
 === "macOS"
 
-    ```bash
-    brew install chromedriver
-    ```
+````
+```bash
+brew install chromedriver
+```
+````
 
 === "Windows"
 
-    Download from [ChromeDriver](https://chromedriver.chromium.org/) and add to PATH.
+```
+Download from [ChromeDriver](https://chromedriver.chromium.org/) and add to PATH.
+```
 
 ### 2. Verify Selenium
 
@@ -149,23 +161,27 @@ python -c "from selenium import webdriver; print('Selenium ready!')"
 ### Python Version Issues
 
 !!! failure "Error: Python 3.12 required"
-    The project uses modern Python features from 3.12. Install Python 3.12 from [python.org](https://www.python.org/downloads/).
+The project uses modern Python features from 3.12. Install Python 3.12 from [python.org](https://www.python.org/downloads/).
 
 ### Virtual Environment Not Activating
 
 === "Linux / macOS"
 
-    Check file permissions:
-    ```bash
-    chmod +x .LittleRainbow/bin/activate
-    ```
+````
+Check file permissions:
+```bash
+chmod +x .LittleRainbow/bin/activate
+```
+````
 
 === "Windows"
 
-    Enable script execution:
-    ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    ```
+````
+Enable script execution:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+````
 
 ### Dependency Installation Failures
 

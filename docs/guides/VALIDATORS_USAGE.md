@@ -272,12 +272,14 @@ except FileValidationError:
 ## Best Practices
 
 1. **Always use validators for external input**
+
    ```python
    # User input, API responses, file uploads, etc.
    url = validate_url(user_input_url)
    ```
 
-2. **Catch specific exceptions when possible**
+1. **Catch specific exceptions when possible**
+
    ```python
    try:
        validate_file(filepath)
@@ -287,7 +289,8 @@ except FileValidationError:
        logger.error(f"General validation failed: {e}")
    ```
 
-3. **Provide context in field names**
+1. **Provide context in field names**
+
    ```python
    # Good
    validate_non_empty_string(value, "username")
@@ -296,7 +299,8 @@ except FileValidationError:
    validate_non_empty_string(value, "value")
    ```
 
-4. **Validate early, fail fast**
+1. **Validate early, fail fast**
+
    ```python
    def process_document(filepath, output_dir):
        # Validate inputs immediately
@@ -307,7 +311,8 @@ except FileValidationError:
        ...
    ```
 
-5. **Use base_dir for user-controlled paths**
+1. **Use base_dir for user-controlled paths**
+
    ```python
    # Prevent directory traversal attacks
    safe_path = validate_path(
@@ -326,6 +331,7 @@ pytest tests/test_validators.py -v
 ```
 
 All 68 tests cover:
+
 - URL validation (11 tests)
 - Path validation (11 tests)
 - File validation (8 tests)
@@ -362,8 +368,8 @@ See `processors/validators.py` for complete API documentation with docstrings fo
 When adding validation to existing code:
 
 1. Import the validators
-2. Replace manual validation with validator calls
-3. Update exception handling to use specific exception types
-4. Add tests for the validated code paths
+1. Replace manual validation with validator calls
+1. Update exception handling to use specific exception types
+1. Add tests for the validated code paths
 
 See `processors/scorecard_validator.py` and `processors/tagger.py` for real examples of migration.

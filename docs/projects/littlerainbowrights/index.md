@@ -4,7 +4,7 @@
 
 **Analyzing digital protections for vulnerable populations through human rights document analysis**
 
----
+______________________________________________________________________
 
 ## About This Project
 
@@ -20,29 +20,29 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
 <div class="grid cards" markdown>
 
--   :material-earth:{ .lg .middle } **194 Countries Tracked**
+- :material-earth:{ .lg .middle } **194 Countries Tracked**
 
-    ---
+  ______________________________________________________________________
 
-    Comprehensive global coverage of digital rights indicators
+  Comprehensive global coverage of digital rights indicators
 
--   :material-chart-line:{ .lg .middle } **10 Indicators**
+- :material-chart-line:{ .lg .middle } **10 Indicators**
 
-    ---
+  ______________________________________________________________________
 
-    AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
+  AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
 
--   :material-alert:{ .lg .middle } **Critical Gaps Identified**
+- :material-alert:{ .lg .middle } **Critical Gaps Identified**
 
-    ---
+  ______________________________________________________________________
 
-    Many countries lack specific child online protection frameworks
+  Many countries lack specific child online protection frameworks
 
--   :material-shield-check:{ .lg .middle } **Best Practices**
+- :material-shield-check:{ .lg .middle } **Best Practices**
 
-    ---
+  ______________________________________________________________________
 
-    Leading countries demonstrate comprehensive approaches
+  Leading countries demonstrate comprehensive approaches
 
 </div>
 
@@ -53,21 +53,21 @@ The LittleRainbowRights scorecard tracks these key indicators:
 ### Child-Specific Indicators
 
 1. **Child Online Protection** - Legislation and policies safeguarding children in digital environments
-2. **Age Verification Requirements** - Mandatory age checks for accessing online services
+1. **Age Verification Requirements** - Mandatory age checks for accessing online services
 
 ### LGBTQ+-Specific Indicators
 
 3. **LGBTQ+ Legal Status** - Recognition and protections for LGBTQ+ individuals
-4. **Promotion/Propaganda Laws** - Restrictions on LGBTQ+ content and discussion
+1. **Promotion/Propaganda Laws** - Restrictions on LGBTQ+ content and discussion
 
 ### Universal Digital Rights
 
 5. **AI Policy Status** - National strategies addressing AI and automation
-6. **Data Protection Law** - Comprehensive data protection legislation
-7. **SIM Card Biometric Registration** - Privacy concerns with biometric requirements
-8. **Encryption Backdoors** - Government surveillance capabilities
-9. **DPA Independence** - Data Protection Authority autonomy
-10. **Content Moderation** - Regulations on harmful content removal
+1. **Data Protection Law** - Comprehensive data protection legislation
+1. **SIM Card Biometric Registration** - Privacy concerns with biometric requirements
+1. **Encryption Backdoors** - Government surveillance capabilities
+1. **DPA Independence** - Data Protection Authority autonomy
+1. **Content Moderation** - Regulations on harmful content removal
 
 [View Full Scorecard](../../scorecard/index.md){ .md-button .md-button--primary }
 
@@ -120,9 +120,11 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 ## Key Publications
 
 !!! info "Research Output"
-    Publications using LittleRainbowRights data will be listed here as they become available.
+Publications using LittleRainbowRights data will be listed here as they become available.
 
-    PhD research in progress - findings to be published in 2026-2027.
+```
+PhD research in progress - findings to be published in 2026-2027.
+```
 
 ## How to Use This Data
 
@@ -172,37 +174,37 @@ Insights for:
 
 <div class="grid cards" markdown>
 
--   :material-chart-box:{ .lg .middle } **Scorecard Visualization**
+- :material-chart-box:{ .lg .middle } **Scorecard Visualization**
 
-    ---
+  ______________________________________________________________________
 
-    Interactive charts showing indicators across countries
+  Interactive charts showing indicators across countries
 
-    [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
+  [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
 
--   :material-table-search:{ .lg .middle } **Data Explorer**
+- :material-table-search:{ .lg .middle } **Data Explorer**
 
-    ---
+  ______________________________________________________________________
 
-    Filter and search through all indicators
+  Filter and search through all indicators
 
-    [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
+  [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
 
--   :material-download:{ .lg .middle } **Export Data**
+- :material-download:{ .lg .middle } **Export Data**
 
-    ---
+  ______________________________________________________________________
 
-    Download CSV files for your own analysis
+  Download CSV files for your own analysis
 
-    [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md#exporting-data)
+  [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md#exporting-data)
 
--   :material-code-tags:{ .lg .middle } **Use the Pipeline**
+- :material-code-tags:{ .lg .middle } **Use the Pipeline**
 
-    ---
+  ______________________________________________________________________
 
-    Run the analysis yourself on your own machine
+  Run the analysis yourself on your own machine
 
-    [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
+  [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
 
 </div>
 
@@ -211,9 +213,9 @@ Insights for:
 Found an error in the scorecard data? Have updated information?
 
 1. **Check the source** - Verify the current value and source URL
-2. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with details
-3. **Provide evidence** - Include authoritative source URL
-4. **Track update** - Follow the issue for confirmation
+1. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with details
+1. **Provide evidence** - Include authoritative source URL
+1. **Track update** - Follow the issue for confirmation
 
 [Contributing Guidelines](../../../CONTRIBUTING.md){ .md-button }
 
@@ -269,7 +271,7 @@ This project follows strict ethical guidelines:
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 - **Collaboration:** Contact via GitHub
 
----
+______________________________________________________________________
 
 **LittleRainbowRights** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
 

@@ -3,12 +3,14 @@
 Interactive visualization of human rights indicators across 194 countries.
 
 !!! info "Coming Soon"
-    Interactive visualizations are currently under development. This page will feature:
+Interactive visualizations are currently under development. This page will feature:
 
-    - Country-level indicator heatmaps
-    - Regional comparison charts
-    - Time-series trend analysis
-    - Source URL verification status
+```
+- Country-level indicator heatmaps
+- Regional comparison charts
+- Time-series trend analysis
+- Source URL verification status
+```
 
 For now, you can explore the data through CSV exports or the data explorer below.
 
@@ -16,29 +18,29 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
+- :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
 
-    ---
+  ______________________________________________________________________
 
-    Comprehensive global coverage across all UN member states and territories
+  Comprehensive global coverage across all UN member states and territories
 
--   :material-chart-line:{ .lg .middle } **10 Indicators**
+- :material-chart-line:{ .lg .middle } **10 Indicators**
 
-    ---
+  ______________________________________________________________________
 
-    AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
+  AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
 
--   :material-link:{ .lg .middle } **2,543 Source URLs**
+- :material-link:{ .lg .middle } **2,543 Source URLs**
 
-    ---
+  ______________________________________________________________________
 
-    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
+  Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
 
--   :material-update:{ .lg .middle } **January 2026**
+- :material-update:{ .lg .middle } **January 2026**
 
-    ---
+  ______________________________________________________________________
 
-    Last updated with latest policy changes and new data
+  Last updated with latest policy changes and new data
 
 </div>
 
@@ -51,6 +53,7 @@ Whether a country has published an official AI strategy, framework, or comprehen
 **Sources:** UNESCO AI Policy Observatory, UNCTAD, National Government websites
 
 **Categories:**
+
 - Comprehensive AI Strategy
 - Framework or Guidelines
 - No Published Policy
@@ -64,6 +67,7 @@ Existence of comprehensive data protection legislation.
 **Examples:** GDPR (EU), POPIA (South Africa), NDPR (Nigeria)
 
 **Categories:**
+
 - Comprehensive Law
 - Draft Legislation
 - No Specific Law
@@ -75,6 +79,7 @@ Legal recognition and protections for LGBTQ+ individuals.
 **Sources:** ILGA World State-Sponsored Homophobia Report, Human Rights Watch
 
 **Categories:**
+
 - Criminalization
 - No Specific Protections
 - Some Protections
@@ -87,6 +92,7 @@ Measures to safeguard children in digital environments.
 **Sources:** UNICEF, ITU, National Legislation
 
 **Categories:**
+
 - Comprehensive Framework
 - Partial Measures
 - No Specific Policy
@@ -98,6 +104,7 @@ Requirement to provide biometric data for mobile SIM card registration.
 **Sources:** Privacy International, National Telecom Regulators, Media Reports
 
 **Categories:**
+
 - Mandatory Biometric
 - Optional or Partial
 - Not Required
@@ -109,6 +116,7 @@ Government-mandated weaknesses in encryption for surveillance.
 **Sources:** Access Now, EFF, National Legislation
 
 **Categories:**
+
 - Backdoors Mandated
 - Proposed Legislation
 - No Known Backdoors
@@ -120,6 +128,7 @@ Legislation restricting discussion or "promotion" of LGBTQ+ topics.
 **Sources:** ILGA World, Human Rights Watch
 
 **Categories:**
+
 - Criminalized "Promotion"
 - Restrictive Measures
 - No Restrictions
@@ -131,6 +140,7 @@ Independence of the national Data Protection Authority.
 **Sources:** UNCTAD, National DPA websites, Academic Research
 
 **Categories:**
+
 - Independent Authority
 - Limited Independence
 - No DPA or Dependent
@@ -142,6 +152,7 @@ Regulations governing removal of harmful online content.
 **Sources:** UNESCO, National Legislation, Academic Research
 
 **Categories:**
+
 - Comprehensive Regulation
 - Sectoral Regulations
 - No Specific Regulation
@@ -153,6 +164,7 @@ Requirements to verify user age before accessing online services.
 **Sources:** National Legislation, UNICEF, Media Reports
 
 **Categories:**
+
 - Mandatory Age Verification
 - Platform Self-Regulation
 - No Requirements
@@ -178,16 +190,16 @@ This generates:
 
 **scorecard_summary.csv:**
 
-| Country | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
-|---------|-----------------|---------------------|-------------------|-----|
-| Kenya | Framework | Comprehensive Law | No Protections | ... |
-| South Africa | Strategy | Comprehensive Law | Some Protections | ... |
+| Country      | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
+| ------------ | ---------------- | ------------------- | ------------------ | --- |
+| Kenya        | Framework        | Comprehensive Law   | No Protections     | ... |
+| South Africa | Strategy         | Comprehensive Law   | Some Protections   | ... |
 
 **scorecard_sources.csv:**
 
-| Country | Indicator | Value | Source_URL | Validated | Last_Checked |
-|---------|-----------|-------|------------|-----------|--------------|
-| Kenya | AI_Policy | Framework | https://... | ✅ | 2026-01-15 |
+| Country | Indicator | Value     | Source_URL  | Validated | Last_Checked |
+| ------- | --------- | --------- | ----------- | --------- | ------------ |
+| Kenya   | AI_Policy | Framework | https://... | ✅        | 2026-01-15   |
 
 ## Data Explorer
 
@@ -266,13 +278,13 @@ Detects:
 Found an error or have updated information?
 
 1. **Verify** - Check the source URL in `scorecard_main.xlsx`
-2. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
+1. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
    - Country name
    - Indicator
    - Current value vs. correct value
    - Authoritative source URL
-3. **Update** - Maintainer reviews and updates
-4. **Re-export** - Updated data regenerated
+1. **Update** - Maintainer reviews and updates
+1. **Re-export** - Updated data regenerated
 
 ## Citing Scorecard Data
 
@@ -295,19 +307,21 @@ Or:
 ## Limitations & Disclaimers
 
 !!! warning "Important Considerations"
-    - **Point-in-time data:** Reflects information as of January 2026
-    - **Binary categorization:** Complex policies simplified into discrete categories
-    - **Source availability:** Some countries lack accessible English-language sources
-    - **Implementation vs. policy:** Tracks official policy, not enforcement
-    - **Regional variation:** Federal systems may have state/provincial differences
+\- **Point-in-time data:** Reflects information as of January 2026
+\- **Binary categorization:** Complex policies simplified into discrete categories
+\- **Source availability:** Some countries lack accessible English-language sources
+\- **Implementation vs. policy:** Tracks official policy, not enforcement
+\- **Regional variation:** Federal systems may have state/provincial differences
 
 !!! info "Use Responsibly"
-    This scorecard is a research tool, not legal advice. Always:
+This scorecard is a research tool, not legal advice. Always:
 
-    - Verify source URLs before citing
-    - Consider local context and nuance
-    - Acknowledge limitations in publications
-    - Cross-reference with other datasets
+```
+- Verify source URLs before citing
+- Consider local context and nuance
+- Acknowledge limitations in publications
+- Cross-reference with other datasets
+```
 
 ## Future Enhancements
 
@@ -335,6 +349,6 @@ For technical documentation:
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 - **General questions:** [FAQ](../FAQ.md)
 
----
+______________________________________________________________________
 
 **Note:** Interactive visualizations are under active development. Check back for updates or [watch the repository](https://github.com/MissCrispenCakes/DigitalChild) for notifications.

@@ -140,6 +140,7 @@ Converted text, structured data, OCR results.
 Organized as: `data/processed/<region>/<org>/text/`
 
 Example:
+
 - `data/processed/Africa/AU/text/`
 - `data/processed/Global/OHCHR/text/`
 

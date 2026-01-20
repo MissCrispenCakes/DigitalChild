@@ -19,9 +19,9 @@ python pipeline_runner.py --source au_policy
 This will:
 
 1. ✅ Scrape AU policy documents (or skip if already downloaded)
-2. ✅ Process PDFs to extract text
-3. ✅ Apply tags using default tag configuration
-4. ✅ Generate exports in `data/exports/`
+1. ✅ Process PDFs to extract text
+1. ✅ Apply tags using default tag configuration
+1. ✅ Generate exports in `data/exports/`
 
 Expected output:
 
@@ -96,8 +96,8 @@ python pipeline_runner.py --mode scorecard --scorecard-action all
 This:
 
 1. Enriches metadata with country-level indicators
-2. Exports scorecard summaries
-3. Validates all 2,543 source URLs
+1. Exports scorecard summaries
+1. Validates all 2,543 source URLs
 
 Results appear in `data/exports/scorecard_*.csv`.
 
@@ -165,13 +165,13 @@ Each source has unique scraping logic for that organization's website.
 
 After running the pipeline:
 
-| Path | Contents |
-|------|----------|
-| `data/raw/au_policy/` | Downloaded PDF files |
-| `data/processed/Africa/AU/text/` | Extracted text files |
-| `data/metadata/metadata.json` | Document metadata with tags |
-| `data/exports/tags_summary.csv` | Tag analysis |
-| `logs/` | Run logs with timestamps |
+| Path                             | Contents                    |
+| -------------------------------- | --------------------------- |
+| `data/raw/au_policy/`            | Downloaded PDF files        |
+| `data/processed/Africa/AU/text/` | Extracted text files        |
+| `data/metadata/metadata.json`    | Document metadata with tags |
+| `data/exports/tags_summary.csv`  | Tag analysis                |
+| `logs/`                          | Run logs with timestamps    |
 
 ## Pipeline Modes
 
@@ -179,45 +179,51 @@ The pipeline has 3 modes:
 
 === "scraper (default)"
 
-    **Complete workflow:** Scrape → Process → Tag → Export
+````
+**Complete workflow:** Scrape → Process → Tag → Export
 
-    ```bash
-    python pipeline_runner.py --source au_policy
-    ```
+```bash
+python pipeline_runner.py --source au_policy
+```
+````
 
 === "urls"
 
-    **From static URLs:** Process from `configs/url_dict/*.json`
+````
+**From static URLs:** Process from `configs/url_dict/*.json`
 
-    ```bash
-    python pipeline_runner.py --mode urls --source upr
-    ```
+```bash
+python pipeline_runner.py --mode urls --source upr
+```
+````
 
 === "scorecard"
 
-    **Indicator workflow:** Enrich → Export → Validate
+````
+**Indicator workflow:** Enrich → Export → Validate
 
-    ```bash
-    python pipeline_runner.py --mode scorecard --scorecard-action all
-    ```
+```bash
+python pipeline_runner.py --mode scorecard --scorecard-action all
+```
+````
 
 ## Command Reference
 
 ### Required Arguments
 
-| Argument | Description | Example |
-|----------|-------------|---------|
+| Argument   | Description      | Example                     |
+| ---------- | ---------------- | --------------------------- |
 | `--source` | Data source name | `au_policy`, `upr`, `ohchr` |
 
 ### Optional Arguments
 
-| Argument | Description | Example |
-|----------|-------------|---------|
-| `--tags-version` | Tag config version | `latest`, `v3`, `v2` |
-| `--mode` | Pipeline mode | `scraper`, `urls`, `scorecard` |
-| `--country` | Filter by country | `kenya`, `south_africa` |
-| `--scorecard-action` | Scorecard action | `enrich`, `export`, `validate`, `all` |
-| `--no-module-logs` | Disable per-module logs | (flag, no value) |
+| Argument             | Description             | Example                               |
+| -------------------- | ----------------------- | ------------------------------------- |
+| `--tags-version`     | Tag config version      | `latest`, `v3`, `v2`                  |
+| `--mode`             | Pipeline mode           | `scraper`, `urls`, `scorecard`        |
+| `--country`          | Filter by country       | `kenya`, `south_africa`               |
+| `--scorecard-action` | Scorecard action        | `enrich`, `export`, `validate`, `all` |
+| `--no-module-logs`   | Disable per-module logs | (flag, no value)                      |
 
 ### Examples
 
@@ -240,83 +246,83 @@ python pipeline_runner.py --mode urls --source upr
 
 ## Supported Sources
 
-| Source | Description | Documents |
-|--------|-------------|-----------|
-| `au_policy` | African Union policy documents | ~10-15 |
-| `ohchr` | OHCHR Treaty Body database | Hundreds |
-| `upr` | Universal Periodic Review (per country) | ~50 per country |
-| `unicef` | UNICEF reports | Varies |
-| `acerwc` | African Committee on Child Rights | ~20-30 |
-| `achpr` | African Commission on Human Rights | ~30-40 |
-| `manual` | Manual uploads to `data/raw/manual/` | User-provided |
+| Source      | Description                             | Documents       |
+| ----------- | --------------------------------------- | --------------- |
+| `au_policy` | African Union policy documents          | ~10-15          |
+| `ohchr`     | OHCHR Treaty Body database              | Hundreds        |
+| `upr`       | Universal Periodic Review (per country) | ~50 per country |
+| `unicef`    | UNICEF reports                          | Varies          |
+| `acerwc`    | African Committee on Child Rights       | ~20-30          |
+| `achpr`     | African Commission on Human Rights      | ~30-40          |
+| `manual`    | Manual uploads to `data/raw/manual/`    | User-provided   |
 
 ## Next Steps
 
 <div class="grid cards" markdown>
 
--   :material-book-open-page-variant:{ .lg .middle } **Learn More**
+- :material-book-open-page-variant:{ .lg .middle } **Learn More**
 
-    ---
+  ______________________________________________________________________
 
-    Dive deeper into pipeline operations
+  Dive deeper into pipeline operations
 
-    [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
+  [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
 
--   :material-tag-multiple:{ .lg .middle } **Customize Tags**
+- :material-tag-multiple:{ .lg .middle } **Customize Tags**
 
-    ---
+  ______________________________________________________________________
 
-    Add your own tag patterns
+  Add your own tag patterns
 
-    [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
+  [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
 
--   :material-chart-bar:{ .lg .middle } **Explore Scorecard**
+- :material-chart-bar:{ .lg .middle } **Explore Scorecard**
 
-    ---
+  ______________________________________________________________________
 
-    Understand country indicators
+  Understand country indicators
 
-    [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
+  [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
 
--   :material-cog:{ .lg .middle } **Add Scrapers**
+- :material-cog:{ .lg .middle } **Add Scrapers**
 
-    ---
+  ______________________________________________________________________
 
-    Build scrapers for new sources
+  Build scrapers for new sources
 
-    [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
+  [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
 
 </div>
 
 ## Troubleshooting
 
 !!! failure "No documents found"
-    Check if documents already exist in `data/raw/<source>/`. The pipeline skips existing files. Delete to re-scrape.
+Check if documents already exist in `data/raw/<source>/`. The pipeline skips existing files. Delete to re-scrape.
 
 !!! failure "Import errors"
-    Ensure you're running from project root, not from subdirectories. Use absolute paths if needed.
+Ensure you're running from project root, not from subdirectories. Use absolute paths if needed.
 
 !!! failure "Processing failed"
-    Check `logs/` for error details. Some PDFs may be scanned images (no text layer) and will fail.
+Check `logs/` for error details. Some PDFs may be scanned images (no text layer) and will fail.
 
 !!! failure "Tags summary empty"
-    Verify documents have text content. Check `data/processed/` for .txt files.
+Verify documents have text content. Check `data/processed/` for .txt files.
 
 See [First Run Errors](../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
 
 ## Pro Tips
 
 !!! tip "Incremental Processing"
-    The pipeline skips already-downloaded files. Run again to only process new documents.
+The pipeline skips already-downloaded files. Run again to only process new documents.
 
 !!! tip "Parallel Analysis"
-    Export CSV files can be analyzed in parallel with R, Python, Excel, or Tableau.
+Export CSV files can be analyzed in parallel with R, Python, Excel, or Tableau.
 
 !!! tip "Custom Tags"
-    Edit `configs/tags_v3.json` to add your own regex patterns. Re-run with `--tags-version v3`.
+Edit `configs/tags_v3.json` to add your own regex patterns. Re-run with `--tags-version v3`.
 
 !!! tip "Version Control"
-    Tags history preserves all tagging operations. Compare results across tag versions using metadata.
+Tags history preserves all tagging operations. Compare results across tag versions using metadata.
 
 ## Getting Help
 

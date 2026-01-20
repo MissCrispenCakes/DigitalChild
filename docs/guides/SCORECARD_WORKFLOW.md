@@ -7,26 +7,26 @@ This document describes the complete scorecard system for the DigitalChild proje
 The scorecard system provides country-level data on digital child protection policies and LGBTQ+ rights. It consists of:
 
 1. **Data Source**: `scorecard_main.xlsx` - Excel file with country indicators
-2. **Loader**: `processors/scorecard.py` - Loads and caches scorecard data
-3. **Enricher**: `processors/scorecard_enricher.py` - Adds scorecard data to document metadata
-4. **Exporter**: `processors/scorecard_export.py` - Creates CSV exports for website/analysis
-5. **Validator**: `processors/scorecard_validator.py` - Checks source URLs for broken links
-6. **Diff Checker**: `processors/scorecard_diff.py` - Monitors sources for changes
+1. **Loader**: `processors/scorecard.py` - Loads and caches scorecard data
+1. **Enricher**: `processors/scorecard_enricher.py` - Adds scorecard data to document metadata
+1. **Exporter**: `processors/scorecard_export.py` - Creates CSV exports for website/analysis
+1. **Validator**: `processors/scorecard_validator.py` - Checks source URLs for broken links
+1. **Diff Checker**: `processors/scorecard_diff.py` - Monitors sources for changes
 
 ## Indicators
 
 The scorecard tracks 10 indicators (each with value + source URL):
 
 1. **AI_Policy_Status** - National AI policy/strategy status
-2. **Data_Protection_Law** - Data protection/privacy legislation
-3. **Children_Data_Safeguards** - Child-specific data protection measures
-4. **SOGI_Sensitive_Data** - Sexual orientation/gender identity data protections
-5. **DPA_Independence** - Data Protection Authority independence
-6. **DPIA_Required_High_Risk_AI** - Data protection impact assessments for AI
-7. **LGBTQ_Legal_Status** - Legal status of LGBTQ+ people
-8. **Promotion_Propaganda_Offences** - Anti-LGBTQ+ propaganda laws
-9. **COP_Strategy** - Child online protection strategy
-10. **SIM_Biometric_ID_Linkage** - SIM registration and biometric requirements
+1. **Data_Protection_Law** - Data protection/privacy legislation
+1. **Children_Data_Safeguards** - Child-specific data protection measures
+1. **SOGI_Sensitive_Data** - Sexual orientation/gender identity data protections
+1. **DPA_Independence** - Data Protection Authority independence
+1. **DPIA_Required_High_Risk_AI** - Data protection impact assessments for AI
+1. **LGBTQ_Legal_Status** - Legal status of LGBTQ+ people
+1. **Promotion_Propaganda_Offences** - Anti-LGBTQ+ propaganda laws
+1. **COP_Strategy** - Child online protection strategy
+1. **SIM_Biometric_ID_Linkage** - SIM registration and biometric requirements
 
 ## Architecture
 
@@ -130,10 +130,10 @@ exports = export_scorecard()
 **Export types:**
 
 1. **Summary CSV**: All countries with all indicators (for main table)
-2. **Sources CSV**: All source URLs (for verification/citation)
-3. **Indicator Counts**: Distribution of values per indicator (for charts)
-4. **By Indicator**: Individual CSV per indicator
-5. **By Region**: Countries filtered by region
+1. **Sources CSV**: All source URLs (for verification/citation)
+1. **Indicator Counts**: Distribution of values per indicator (for charts)
+1. **By Indicator**: Individual CSV per indicator
+1. **By Region**: Countries filtered by region
 
 **Programmatic usage:**
 
@@ -254,9 +254,9 @@ if args.enrich_scorecard:
 ### Update Scorecard Data
 
 1. Edit `scorecard_main.xlsx` with new data
-2. Force reload: `load_scorecard(force_reload=True)`
-3. Re-enrich metadata: `python processors/scorecard_enricher.py`
-4. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
+1. Force reload: `load_scorecard(force_reload=True)`
+1. Re-enrich metadata: `python processors/scorecard_enricher.py`
+1. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
 
 ### Verify Data Quality
 
@@ -274,10 +274,12 @@ pytest tests/test_scorecard.py -v
 ### Add New Indicator
 
 1. Add column pair to `scorecard_main.xlsx`:
+
    - `New_Indicator` (value column)
    - `New_Indicator_Source` (source URL column)
 
-2. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`:
+1. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`:
+
    ```python
    INDICATOR_COLUMNS = [
        # ... existing indicators
@@ -285,7 +287,7 @@ pytest tests/test_scorecard.py -v
    ]
    ```
 
-3. Re-run enrichment and exports
+1. Re-run enrichment and exports
 
 ## File Locations
 
@@ -315,6 +317,7 @@ pytest tests/test_scorecard.py --cov=processors/scorecard --cov-report=html
 **Problem**: Document country doesn't match scorecard country names
 
 **Solution**: The loader tries multiple normalization methods:
+
 - Exact match (case-insensitive)
 - ISO code lookup
 - Fuzzy matching
@@ -349,11 +352,11 @@ report = validate_all_urls(max_workers=5)  # Slower but more reliable
 ## Future Enhancements
 
 1. **Auto-update from sources**: Automatically scrape monitored sources and update scorecard
-2. **Version tracking**: Track scorecard changes over time
-3. **API endpoint**: Serve scorecard data via REST API for website
-4. **Visualization**: Generate charts/maps from scorecard data
-5. **Comparison mode**: Compare countries side-by-side
-6. **Timeline view**: Show indicator changes over time per country
+1. **Version tracking**: Track scorecard changes over time
+1. **API endpoint**: Serve scorecard data via REST API for website
+1. **Visualization**: Generate charts/maps from scorecard data
+1. **Comparison mode**: Compare countries side-by-side
+1. **Timeline view**: Show indicator changes over time per country
 
 ## Related Documentation
 

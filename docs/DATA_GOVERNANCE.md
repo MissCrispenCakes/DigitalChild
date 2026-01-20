@@ -7,10 +7,10 @@ This document outlines the data governance policies, ethical considerations, and
 DigitalChild collects, processes, and analyzes human rights documents to support research on child and LGBTQ+ digital protection. This governance framework ensures:
 
 1. **Ethical data collection** - Respecting source terms and permissions
-2. **Privacy protection** - Safeguarding any personal information
-3. **Transparency** - Clear documentation of data sources and methods
-4. **Reproducibility** - Enabling verification and replication of findings
-5. **Responsible use** - Supporting human rights research without causing harm
+1. **Privacy protection** - Safeguarding any personal information
+1. **Transparency** - Clear documentation of data sources and methods
+1. **Reproducibility** - Enabling verification and replication of findings
+1. **Responsible use** - Supporting human rights research without causing harm
 
 ## 📜 Data Collection Principles
 
@@ -262,10 +262,10 @@ See [SECURITY.md](../SECURITY.md) for vulnerability reporting.
 When deploying or using this tool:
 
 1. Keep software updated (`git pull` regularly)
-2. Review dependencies for vulnerabilities (`pip install safety && safety check`)
-3. Limit access to downloaded documents
-4. Use HTTPS for all web requests
-5. Follow your institution's security policies
+1. Review dependencies for vulnerabilities (`pip install safety && safety check`)
+1. Limit access to downloaded documents
+1. Use HTTPS for all web requests
+1. Follow your institution's security policies
 
 ## 📝 Data Retention & Deletion
 
@@ -284,10 +284,10 @@ Data persists indefinitely on user's machine unless manually deleted.
 If a document publisher requests removal:
 
 1. Verify authenticity of request
-2. Remove from future scrapes
-3. Delete from existing datasets
-4. Document removal in changelog
-5. Notify users via GitHub issue
+1. Remove from future scrapes
+1. Delete from existing datasets
+1. Document removal in changelog
+1. Notify users via GitHub issue
 
 **Note:** We cannot control what users have already downloaded.
 
@@ -473,13 +473,13 @@ Use [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discus
 All data governance decisions prioritize:
 
 1. **Human Rights First** - Support research that advances protections
-2. **Open Science** - Maximize accessibility and reproducibility
-3. **Responsible Research** - Do no harm, ensure integrity
-4. **Community Benefit** - Serve researchers, advocates, and affected communities
+1. **Open Science** - Maximize accessibility and reproducibility
+1. **Responsible Research** - Do no harm, ensure integrity
+1. **Community Benefit** - Serve researchers, advocates, and affected communities
 
 This project exists to shine light on digital rights protections (or lack thereof) for vulnerable populations. Every governance decision should serve that mission.
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026
 

@@ -1,17 +1,17 @@
 # Scorecard Implementation Review Summary
 
-**Date**: 2026-01-15  
-**Branch**: temp/add-scorecard  
+**Date**: 2026-01-15\
+**Branch**: temp/add-scorecard\
 **Reviewer**: GitHub Copilot
 
 ## Files Reviewed
 
 1. ✅ `processors/scorecard.py` (245 lines) - Scorecard loader and data access
-2. ✅ `processors/scorecard_enricher.py` (220 lines) - Metadata enrichment
-3. ✅ `processors/scorecard_export.py` (202 lines) - CSV export functionality
-4. ✅ `processors/scorecard_validator.py` (284 lines) - URL validation
-5. ✅ `processors/scorecard_diff.py` (367 lines) - Change detection
-6. ✅ `tests/test_scorecard.py` (212 lines) - Test suite
+1. ✅ `processors/scorecard_enricher.py` (220 lines) - Metadata enrichment
+1. ✅ `processors/scorecard_export.py` (202 lines) - CSV export functionality
+1. ✅ `processors/scorecard_validator.py` (284 lines) - URL validation
+1. ✅ `processors/scorecard_diff.py` (367 lines) - Change detection
+1. ✅ `tests/test_scorecard.py` (212 lines) - Test suite
 
 **Total**: 1,530 lines of scorecard code
 
@@ -19,12 +19,13 @@
 
 ### 1. Field Naming Inconsistency (scorecard_enricher.py)
 
-**Location**: Lines 65, 103  
+**Location**: Lines 65, 103\
 **Severity**: Medium (test failure)
 
 **Problem**: Used `country_matched` but tests expected `matched_country`
 
 **Before**:
+
 ```python
 doc["scorecard"] = {
     "country_matched": country,
@@ -34,6 +35,7 @@ doc["scorecard"] = {
 ```
 
 **After**:
+
 ```python
 doc["scorecard"] = {
     "matched_country": country,
@@ -46,12 +48,13 @@ doc["scorecard"] = {
 
 ### 2. Duplicate Function Definition (scorecard_diff.py)
 
-**Location**: Lines 58, 91, 96  
+**Location**: Lines 58, 91, 96\
 **Severity**: Low (confusing but tests pass)
 
 **Problem**: Both `hash_content()` function AND alias to `compute_content_hash()` created duplicate function
 
 **Before**:
+
 ```python
 def hash_content(content: str) -> str:
     # Normalize whitespace and lowercase
@@ -68,6 +71,7 @@ hash_content = compute_content_hash  # ❌ Overwrites existing function!
 ```
 
 **After**:
+
 ```python
 def hash_content(content: str) -> str:
     # Normalize whitespace and lowercase
@@ -117,29 +121,29 @@ tests/test_scorecard.py::TestScorecardDiff::test_monitored_sources_defined PASSE
 ### ✅ Strengths
 
 1. **Comprehensive test coverage**: 20 tests covering all 6 modules
-2. **Consistent error handling**: All modules use try/except with logger.warning
-3. **Good documentation**: All functions have docstrings with Args/Returns
-4. **CLI entry points**: All processor modules can run standalone
-5. **Caching**: Scorecard loader caches DataFrame to avoid repeated Excel reads
-6. **Parallel processing**: URL validator uses ThreadPoolExecutor for performance
-7. **Flexible exports**: Multiple export formats (summary, sources, by-indicator, by-region)
+1. **Consistent error handling**: All modules use try/except with logger.warning
+1. **Good documentation**: All functions have docstrings with Args/Returns
+1. **CLI entry points**: All processor modules can run standalone
+1. **Caching**: Scorecard loader caches DataFrame to avoid repeated Excel reads
+1. **Parallel processing**: URL validator uses ThreadPoolExecutor for performance
+1. **Flexible exports**: Multiple export formats (summary, sources, by-indicator, by-region)
 
 ### ⚠️ Areas for Improvement
 
 1. **Hash function confusion**: Two different hash implementations (SHA256 vs MD5) - consider standardizing
-2. **Missing type hints**: Some functions lack complete type annotations
-3. **Hard-coded paths**: METADATA_FILE, EXPORT_DIR are hard-coded constants
-4. **No versioning**: Scorecard changes not tracked over time
-5. **Limited normalization**: Country matching could be more robust with fuzzy matching
+1. **Missing type hints**: Some functions lack complete type annotations
+1. **Hard-coded paths**: METADATA_FILE, EXPORT_DIR are hard-coded constants
+1. **No versioning**: Scorecard changes not tracked over time
+1. **Limited normalization**: Country matching could be more robust with fuzzy matching
 
 ### 📋 Recommendations
 
 1. **Standardize hashing**: Choose one hash algorithm and stick with it
-2. **Add config file**: Move paths to a config file for easier customization
-3. **Version tracking**: Add scorecard versioning to track updates
-4. **Fuzzy matching**: Integrate `fuzzywuzzy` or similar for country name matching
-5. **API layer**: Create REST API endpoints for website integration
-6. **Batch exports**: Add option to export all formats at once with single command
+1. **Add config file**: Move paths to a config file for easier customization
+1. **Version tracking**: Add scorecard versioning to track updates
+1. **Fuzzy matching**: Integrate `fuzzywuzzy` or similar for country name matching
+1. **API layer**: Create REST API endpoints for website integration
+1. **Batch exports**: Add option to export all formats at once with single command
 
 ## Consistency Checks
 
@@ -194,6 +198,7 @@ logger.warning("Country not found: NotARealCountry")
 Scorecard enrichment is **NOT** integrated into `pipeline_runner.py` by default. It runs as a separate step.
 
 **Current workflow**:
+
 ```bash
 python pipeline_runner.py --source upr  # Scrape & process
 python processors/scorecard_enricher.py  # Enrich metadata
@@ -207,8 +212,8 @@ python -c "from processors.scorecard_export import export_scorecard; export_scor
 The scorecard system is ready for website integration:
 
 1. **Data exports**: CSV files in `data/exports/` can be served directly
-2. **API ready**: Functions available for REST API wrapper
-3. **JSON metadata**: Enriched metadata includes scorecard field for document pages
+1. **API ready**: Functions available for REST API wrapper
+1. **JSON metadata**: Enriched metadata includes scorecard field for document pages
 
 ## Documentation
 
@@ -235,16 +240,16 @@ Created comprehensive documentation:
 **Next steps**:
 
 1. ✅ Merge fixes to basecamp
-2. 🔄 Run full test suite to ensure no regressions
-3. 🔄 Test scorecard generation with real data
-4. 🔄 Build website integration
-5. 🔄 Deploy to LittleRainbowRights.com
+1. 🔄 Run full test suite to ensure no regressions
+1. 🔄 Test scorecard generation with real data
+1. 🔄 Build website integration
+1. 🔄 Deploy to LittleRainbowRights.com
 
 ## Files Modified
 
 1. `processors/scorecard_enricher.py` - Fixed field naming (2 instances)
-2. `processors/scorecard_diff.py` - Removed duplicate function alias
-3. `docs/SCORECARD_WORKFLOW.md` - Created comprehensive workflow guide
+1. `processors/scorecard_diff.py` - Removed duplicate function alias
+1. `docs/SCORECARD_WORKFLOW.md` - Created comprehensive workflow guide
 
 ## Git Status
 

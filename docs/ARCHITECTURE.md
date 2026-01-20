@@ -7,10 +7,10 @@ This document provides a high-level overview of the DigitalChild pipeline archit
 DigitalChild is a data pipeline that:
 
 1. **Scrapes** human rights documents from international organizations
-2. **Processes** documents into structured, analyzable text
-3. **Analyzes** content using regex-based tagging and enrichment
-4. **Enriches** with country-level indicators via scorecard system
-5. **Exports** analysis results for research use
+1. **Processes** documents into structured, analyzable text
+1. **Analyzes** content using regex-based tagging and enrichment
+1. **Enriches** with country-level indicators via scorecard system
+1. **Exports** analysis results for research use
 
 **Focus:** Child and LGBTQ+ digital rights, with particular emphasis on AI policy, data protection, and online safety.
 
@@ -136,9 +136,9 @@ python pipeline_runner.py --source au_policy --tags-version latest
 **How it works:**
 
 1. Load tag config (e.g., `configs/tags_v3.json`)
-2. Apply regex patterns to text
-3. Record matched tags
-4. Store in `metadata.json` with version and timestamp
+1. Apply regex patterns to text
+1. Record matched tags
+1. Store in `metadata.json` with version and timestamp
 
 **Tags include:**
 
@@ -194,15 +194,15 @@ python pipeline_runner.py --source au_policy --tags-version latest
 **10 Indicators Tracked:**
 
 1. AI_Policy_Status
-2. Data_Protection_Law
-3. LGBTQ_Legal_Status
-4. Child_Online_Protection
-5. SIM_Biometric
-6. Encryption_Backdoors
-7. Promotion_Propaganda
-8. DPA_Independence
-9. Content_Moderation
-10. Age_Verification
+1. Data_Protection_Law
+1. LGBTQ_Legal_Status
+1. Child_Online_Protection
+1. SIM_Biometric
+1. Encryption_Backdoors
+1. Promotion_Propaganda
+1. DPA_Independence
+1. Content_Moderation
+1. Age_Verification
 
 ### 6. Validators (`processors/validators.py`)
 
@@ -345,9 +345,9 @@ python pipeline_runner.py --source au_policy --tags-version latest
 ### Adding a New Scraper
 
 1. Create `scrapers/new_source.py`
-2. Implement `scrape()` function
-3. Add to `SCRAPER_MAP` in `pipeline_runner.py`
-4. Add tests in `tests/test_new_source.py`
+1. Implement `scrape()` function
+1. Add to `SCRAPER_MAP` in `pipeline_runner.py`
+1. Add tests in `tests/test_new_source.py`
 
 **Template:**
 
@@ -361,24 +361,24 @@ def scrape(base_url=None, countries=None):
 ### Adding a New Processor
 
 1. Create `processors/new_processor.py`
-2. Implement `convert(input_path, output_dir)` function
-3. Update `fallback_handler.py` if needed
-4. Add tests
+1. Implement `convert(input_path, output_dir)` function
+1. Update `fallback_handler.py` if needed
+1. Add tests
 
 ### Adding New Tags
 
 1. Edit `configs/tags_vX.json`
-2. Add new tag categories and regex patterns
-3. Update version in `configs/tags_main.json`
-4. Run tagging: `python pipeline_runner.py --tags-version vX`
+1. Add new tag categories and regex patterns
+1. Update version in `configs/tags_main.json`
+1. Run tagging: `python pipeline_runner.py --tags-version vX`
 
 ### Adding Scorecard Indicators
 
 1. Edit `scorecard_main.xlsx`
-2. Add new column for indicator
-3. Add source URLs
-4. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`
-5. Re-run enrichment
+1. Add new column for indicator
+1. Add source URLs
+1. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`
+1. Re-run enrichment
 
 ## 🧪 Testing Strategy
 
@@ -414,12 +414,15 @@ pytest tests/ --cov                 # With coverage
 ### Bottlenecks
 
 1. **Scraping:** Network I/O bound
+
    - Mitigated by: Timeouts, skip existing files
 
-2. **PDF Processing:** CPU bound
+1. **PDF Processing:** CPU bound
+
    - Mitigated by: Fallback handler, efficient PyPDF2 usage
 
-3. **URL Validation:** Network I/O bound
+1. **URL Validation:** Network I/O bound
+
    - Mitigated by: Parallel workers (10 concurrent), caching
 
 ### Scalability
@@ -590,6 +593,6 @@ GitHub Repository
 - **[SCORECARD_WORKFLOW.md](SCORECARD_WORKFLOW.md)** - Scorecard system details
 - **[VALIDATORS_USAGE.md](VALIDATORS_USAGE.md)** - Validation framework
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026

@@ -3,12 +3,14 @@
 Interactive exploration of scorecard data (coming soon).
 
 !!! info "Under Development"
-    The data explorer is currently under development. This page will feature:
+The data explorer is currently under development. This page will feature:
 
-    - Filter by country, region, or indicator
-    - Sort and search capabilities
-    - Export filtered results
-    - Compare multiple countries side-by-side
+```
+- Filter by country, region, or indicator
+- Sort and search capabilities
+- Export filtered results
+- Compare multiple countries side-by-side
+```
 
 ## Current Options
 
@@ -115,8 +117,8 @@ See [Roadmap](../ROADMAP.md) for detailed timeline.
 Want to help build the data explorer?
 
 1. Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Avisualization)
-2. Review [contribution guidelines](../../CONTRIBUTING.md)
-3. Submit pull requests with visualization improvements
+1. Review [contribution guidelines](../../CONTRIBUTING.md)
+1. Submit pull requests with visualization improvements
 
 Technologies we're considering:
 
@@ -191,6 +193,6 @@ python explore_scorecard.py
 - [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md)
 - [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
----
+______________________________________________________________________
 
 Check back soon for the interactive data explorer! [Watch this repo](https://github.com/MissCrispenCakes/DigitalChild) for updates.

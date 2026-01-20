@@ -206,15 +206,15 @@ ______________________________________________________________________
 **Available Indicators (10 per country):**
 
 1. **AI_Policy_Status** - National AI policy/strategy status
-2. **Data_Protection_Law** - Data protection legislation status
-3. **LGBTQ_Legal_Status** - Legal status of LGBTQ+ rights
-4. **Child_Online_Protection** - Child protection laws and policies
-5. **SIM_Biometric** - SIM card registration requirements
-6. **Encryption_Backdoors** - Government encryption/backdoor requirements
-7. **Promotion_Propaganda** - LGBTQ+ promotion/propaganda laws
-8. **DPA_Independence** - Data Protection Authority independence
-9. **Content_Moderation** - Content moderation legal framework
-10. **Age_Verification** - Age verification requirements
+1. **Data_Protection_Law** - Data protection legislation status
+1. **LGBTQ_Legal_Status** - Legal status of LGBTQ+ rights
+1. **Child_Online_Protection** - Child protection laws and policies
+1. **SIM_Biometric** - SIM card registration requirements
+1. **Encryption_Backdoors** - Government encryption/backdoor requirements
+1. **Promotion_Propaganda** - LGBTQ+ promotion/propaganda laws
+1. **DPA_Independence** - Data Protection Authority independence
+1. **Content_Moderation** - Content moderation legal framework
+1. **Age_Verification** - Age verification requirements
 
 **Notes:**
 

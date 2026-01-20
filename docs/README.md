@@ -137,17 +137,17 @@ Format specifications and conventions:
 ## Getting Help
 
 1. **First-time setup issues?** → See [guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
-2. **Need to understand a feature?** → Check [DOCS_INDEX.md](DOCS_INDEX.md) for relevant docs
-3. **Want to contribute?** → Read [ROADMAP.md](ROADMAP.md) for planned features
-4. **Using Claude Code?** → See [../CLAUDE.md](../CLAUDE.md) for AI assistant guidance
+1. **Need to understand a feature?** → Check [DOCS_INDEX.md](DOCS_INDEX.md) for relevant docs
+1. **Want to contribute?** → Read [ROADMAP.md](ROADMAP.md) for planned features
+1. **Using Claude Code?** → See [../CLAUDE.md](../CLAUDE.md) for AI assistant guidance
 
 ## Documentation Maintenance
 
 All documentation is maintained in Markdown format and version-controlled in Git. When features are added or modified:
 
 1. Update relevant documentation files
-2. Add new sections to appropriate subdirectories
-3. Update [DOCS_INDEX.md](DOCS_INDEX.md) with new files
-4. Keep examples and commands current with actual implementation
+1. Add new sections to appropriate subdirectories
+1. Update [DOCS_INDEX.md](DOCS_INDEX.md) with new files
+1. Keep examples and commands current with actual implementation
 
 Last major update: January 2026

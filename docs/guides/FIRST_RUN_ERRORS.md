@@ -128,7 +128,7 @@ ______________________________________________________________________
 ## 🟢 Selenium/Browser Driver Issues
 
 **Error:** `WebDriverException: chromedriver not found`
-**Cause:** Selenium scrapers (_sel variants) need browser drivers.
+**Cause:** Selenium scrapers (\_sel variants) need browser drivers.
 **Fix:** Use non-Selenium scrapers or install ChromeDriver.
 
 ```bash

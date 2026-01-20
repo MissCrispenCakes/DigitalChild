@@ -22,7 +22,7 @@ Yes! The code is licensed under MIT (permissive, free for any use including comm
 
 Absolutely! That's the intended purpose. Please cite the project using the format in [CITATION.cff](../CITATION.cff).
 
----
+______________________________________________________________________
 
 ## Getting Started
 
@@ -80,7 +80,7 @@ The pipeline skips already-downloaded files, so subsequent runs are faster.
 - **Exports:** `data/exports/`
 - **Logs:** `logs/`
 
----
+______________________________________________________________________
 
 ## Features & Capabilities
 
@@ -89,12 +89,12 @@ The pipeline skips already-downloaded files, so subsequent runs are faster.
 Currently supports 7 sources:
 
 1. **AU Policy** - African Union policy documents
-2. **OHCHR** - Office of the High Commissioner for Human Rights
-3. **UPR** - Universal Periodic Review documents
-4. **UNICEF** - UNICEF reports and publications
-5. **ACERWC** - African Committee on Child Rights
-6. **ACHPR** - African Commission on Human Rights
-7. **Manual** - Upload your own documents to `data/raw/manual/`
+1. **OHCHR** - Office of the High Commissioner for Human Rights
+1. **UPR** - Universal Periodic Review documents
+1. **UNICEF** - UNICEF reports and publications
+1. **ACERWC** - African Committee on Child Rights
+1. **ACHPR** - African Commission on Human Rights
+1. **Manual** - Upload your own documents to `data/raw/manual/`
 
 ### What file formats can it process?
 
@@ -109,15 +109,15 @@ The `fallback_handler` automatically tries different processors until one succee
 The scorecard tracks **10 human rights indicators** across **194 countries**:
 
 1. AI Policy Status
-2. Data Protection Law
-3. LGBTQ+ Legal Status
-4. Child Online Protection
-5. SIM Card Biometric Requirements
-6. Encryption Backdoors
-7. LGBTQ+ Promotion/Propaganda Laws
-8. Data Protection Authority Independence
-9. Content Moderation Regulations
-10. Age Verification Requirements
+1. Data Protection Law
+1. LGBTQ+ Legal Status
+1. Child Online Protection
+1. SIM Card Biometric Requirements
+1. Encryption Backdoors
+1. LGBTQ+ Promotion/Propaganda Laws
+1. Data Protection Authority Independence
+1. Content Moderation Regulations
+1. Age Verification Requirements
 
 Each indicator includes the current status and source URL for verification.
 
@@ -153,7 +153,7 @@ Yes! Edit `configs/tags_v3.json` (or create a new version) and add your regex pa
 
 Then run: `python pipeline_runner.py --tags-version v3`
 
----
+______________________________________________________________________
 
 ## Technical Questions
 
@@ -195,7 +195,7 @@ Just ensure Python 3.12 is installed and you have sufficient disk space.
 
 Currently uses JSON files (`metadata.json`) for simplicity. A future version may migrate to PostgreSQL for better performance at scale.
 
----
+______________________________________________________________________
 
 ## Data & Privacy
 
@@ -231,7 +231,7 @@ Manually updated as new information becomes available. The `scorecard_diff.py` m
 
 We aim to use authoritative sources (UNESCO, UNCTAD, ILGA, UNICEF, etc.). Each indicator includes the source URL for verification. If you find an error, please [report it](https://github.com/MissCrispenCakes/DigitalChild/issues).
 
----
+______________________________________________________________________
 
 ## Contributing & Development
 
@@ -248,8 +248,8 @@ Yes! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines. Contributions wel
 ### I found a bug. What should I do?
 
 1. Check if it's already reported: [Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-2. Review [FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
-3. If not resolved, open a new issue with details
+1. Review [FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
+1. If not resolved, open a new issue with details
 
 ### How do I add a new scraper?
 
@@ -258,10 +258,10 @@ See [SCRAPER_STRUCTURE.md](standards/SCRAPER_STRUCTURE.md) for a template and gu
 Basic steps:
 
 1. Create `scrapers/new_source.py`
-2. Implement `scrape()` function
-3. Add to `SCRAPER_MAP` in `pipeline_runner.py`
-4. Add tests
-5. Submit pull request
+1. Implement `scrape()` function
+1. Add to `SCRAPER_MAP` in `pipeline_runner.py`
+1. Add tests
+1. Submit pull request
 
 ### How can I test my changes?
 
@@ -276,7 +276,7 @@ pytest tests/test_validators.py -v
 pytest tests/ --cov
 ```
 
----
+______________________________________________________________________
 
 ## Troubleshooting
 
@@ -285,9 +285,9 @@ pytest tests/ --cov
 Common causes:
 
 1. **Already downloaded:** Pipeline skips existing files (check `data/raw/<source>/`)
-2. **Network issues:** Firewall, proxy, or connection problems
-3. **Source changed:** Website structure may have changed
-4. **Robots.txt blocking:** Some sites block automated access
+1. **Network issues:** Firewall, proxy, or connection problems
+1. **Source changed:** Website structure may have changed
+1. **Robots.txt blocking:** Some sites block automated access
 
 Check logs in `logs/` for error messages.
 
@@ -300,9 +300,9 @@ Run `python init_project.py` to ensure all directories exist.
 Common reasons:
 
 1. **Pre-commit not installed:** Run `pip install pre-commit && pre-commit install`
-2. **Dependencies outdated:** Run `pip install --upgrade -r requirements.txt`
-3. **Python version:** Ensure Python 3.12 is active
-4. **Working directory:** Run from project root, not subdirectory
+1. **Dependencies outdated:** Run `pip install --upgrade -r requirements.txt`
+1. **Python version:** Ensure Python 3.12 is active
+1. **Working directory:** Run from project root, not subdirectory
 
 ### I'm getting import errors
 
@@ -313,10 +313,10 @@ Ensure you're running commands from the **project root** directory (where `pipel
 The website is static and generated from docs. If it's not working:
 
 1. Ensure MkDocs is installed: `pip install mkdocs mkdocs-material`
-2. Build locally: `mkdocs serve`
-3. Check `mkdocs.yml` configuration
+1. Build locally: `mkdocs serve`
+1. Check `mkdocs.yml` configuration
 
----
+______________________________________________________________________
 
 ## Research & Citations
 
@@ -342,7 +342,7 @@ Absolutely! That's an intended use case. Please cite the project and consider co
 
 Open a [discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions) or reach out via the website contact form.
 
----
+______________________________________________________________________
 
 ## Future Development
 
@@ -364,16 +364,16 @@ Target: Late 2026. It's in Phase 4 of the roadmap. Focus right now is on complet
 
 Yes! Open a [feature request issue](https://github.com/MissCrispenCakes/DigitalChild/issues/new) or discussion. No guarantees, but we're open to suggestions that align with the project mission.
 
----
+______________________________________________________________________
 
 ## Contact & Support
 
 ### How do I get help?
 
 1. **Documentation:** Check [docs/](.)
-2. **FAQ:** This page
-3. **Issues:** Search [existing issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-4. **Discussions:** Ask in [discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
+1. **FAQ:** This page
+1. **Issues:** Search [existing issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
+1. **Discussions:** Ask in [discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
 ### Is there a mailing list or community forum?
 
@@ -392,7 +392,7 @@ This is a PhD research project maintained part-time by one person. Please be pat
 - 📝 Cite it in your publications
 - 💰 Consider sponsoring (if/when GitHub Sponsors is enabled)
 
----
+______________________________________________________________________
 
 **Didn't find your answer?** Open a [discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions) or [issue](https://github.com/MissCrispenCakes/DigitalChild/issues).
 
