@@ -477,8 +477,8 @@ Report via [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issu
 
 For sensitive matters not suitable for public issues:
 
-- Email: 10444589+MissCrispenCakes@users.noreply.github.com
-- Subject line: "[DATA GOVERNANCE] Your concern"
+- Use [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions) (can be private)
+- Or report via [Security tab](https://github.com/MissCrispenCakes/DigitalChild/security) for confidential concerns
 
 ### Collaboration
 

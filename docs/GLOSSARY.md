@@ -479,7 +479,7 @@ Software with source code available for inspection, modification, and enhancemen
 
 ### Beyond the Rainbow
 
-Extended vision encompassing all vulnerable populations
+Extended future encompassing additional vulnerable populations
 
 - Future expansion beyond children and LGBTQ+
 - Includes elderly, disabled, refugees, indigenous peoples

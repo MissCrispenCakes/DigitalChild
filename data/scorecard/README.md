@@ -8,7 +8,7 @@ This directory contains the primary scorecard data files used for the LittleRain
 - **Purpose:** Main scorecard data used for conference presentation
 - **Date:** September 13, 2025 (post-conference)
 - **Structure:** 7 sheets (UN_194, SADC, ECOWAS, Global, Sheet1, Sheet5, Sheet2)
-- **Content:** 
+- **Content:**
   - 194 countries with 10 indicators
   - Color-coded regional groups (North Africa, ECOWAS)
   - Calculated indices (protection_index, Risk_index)

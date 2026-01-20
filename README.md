@@ -225,9 +225,9 @@ ______________________________________________________________________
 
 Found a security vulnerability? **Do not open a public issue.**
 
-Email: 10444589+MissCrispenCakes@users.noreply.github.com
+Report via [GitHub Security Advisories](https://github.com/MissCrispenCakes/DigitalChild/security) - click "Report a vulnerability"
 
-See [SECURITY.md](SECURITY.md) for responsible disclosure policy.
+See [SECURITY.md](SECURITY.md) for full responsible disclosure policy.
 
 ______________________________________________________________________
 
