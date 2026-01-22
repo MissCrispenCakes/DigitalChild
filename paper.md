@@ -15,10 +15,10 @@ authors:
   - name: D.T. Vollmer
     affiliation: 2
 affiliations:
- - name: York University, Toronto, Canada
-   index: 1
- - name: Resilient LLP, Toronto, Canada
-   index: 2
+  - name: York University, Toronto, Canada
+    index: 1
+  - name: Resilient LLP, Toronto, Canada
+    index: 2
 date: 20 January 2026
 bibliography: paper.bib
 ---
@@ -34,9 +34,9 @@ The pipeline automates the collection of policy documents from international org
 While quantitative human rights research has grown substantially, a critical gap remains: **the lack of transparent, reproducible computational methods**. Existing research often presents results without sharing the underlying code, data processing steps, or validation procedures. This opacity creates several problems:
 
 1. **Reproducibility crisis**: Published findings cannot be independently verified or extended
-2. **Hidden methodological decisions**: Researchers cannot assess how data cleaning, categorization, or source selection impacts conclusions
-3. **Barrier to entry**: New researchers must reinvent data collection and processing infrastructure
-4. **Stale data**: Without automated pipelines, updating analyses as policies change is prohibitively expensive
+1. **Hidden methodological decisions**: Researchers cannot assess how data cleaning, categorization, or source selection impacts conclusions
+1. **Barrier to entry**: New researchers must reinvent data collection and processing infrastructure
+1. **Stale data**: Without automated pipelines, updating analyses as policies change is prohibitively expensive
 
 Human rights organizations and researchers commonly rely on manual document review or proprietary tools that do not expose their methods. `DigitalChild` addresses this by providing complete documentation (25+ markdown files), tested modular code (124 automated tests), explicit version control for all tagging rules, comprehensive installation guides, and provenance tracking that maintains source URLs and processing history for every data point. This enables researchers to validate findings, adapt methods, or build upon the infrastructure.
 
@@ -47,6 +47,8 @@ Existing human rights data analysis tools fall into three categories: manual rev
 Most critically, existing tools do not emphasize transparency and reproducibility as core design principles. `DigitalChild` uniquely combines automated collection, transparent methods, comprehensive testing, and complete documentation to enable reproducible research. The versioned configuration system allows researchers to compare how methodological choices impact results—a capability absent from existing tools.
 
 # Software Design
+
+**Build vs. Contribute Justification**: We chose to build new software rather than contribute to existing tools (UPR Info, HRDAG) because those projects either (1) do not release their processing infrastructure as open-source code, precluding contributions, or (2) focus on data aggregation and presentation rather than providing reusable analysis pipelines. Contributing reproducibility features to closed-infrastructure projects would be impossible. Existing academic scripts lack the architectural foundation for transparent, versioned configurations and comprehensive testing. Our requirements—complete provenance tracking, versioned regex rules with comparison tools, modular extensibility, and documentation-first design—necessitated ground-up architecture. Building new software enables the research community to adopt transparent methods, whereas extending aggregation-focused tools would not address the reproducibility gap.
 
 `DigitalChild` follows a modular pipeline architecture with four core stages: scraping, processing, tagging, and export. Each data source has dedicated scrapers (requests-based and Selenium variants) implementing rate limiting and respectful crawling. A fallback handler system attempts multiple processors (PDF, DOCX, HTML) sequentially, prioritizing reliability over speed.
 
