@@ -22,27 +22,19 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
 -   :material-earth:{ .lg .middle } **194 Countries Tracked**
 
-    ---
-
-    Comprehensive global coverage of digital rights indicators
+Comprehensive global coverage of digital rights indicators
 
 -   :material-chart-line:{ .lg .middle } **10 Indicators**
 
-    ---
-
-    AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
+AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
 
 -   :material-alert:{ .lg .middle } **Critical Gaps Identified**
 
-    ---
-
-    Many countries lack specific child online protection frameworks
+Many countries lack specific child online protection frameworks
 
 -   :material-shield-check:{ .lg .middle } **Best Practices**
 
-    ---
-
-    Leading countries demonstrate comprehensive approaches
+Leading countries demonstrate comprehensive approaches
 
 </div>
 
@@ -172,33 +164,25 @@ Insights for:
 
 -   :material-chart-box:{ .lg .middle } **Scorecard Visualization**
 
-    ---
-
-    Interactive charts showing indicators across countries
+Interactive charts showing indicators across countries
 
     [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
 
 -   :material-table-search:{ .lg .middle } **Data Explorer**
 
-    ---
-
-    Filter and search through all indicators
+Filter and search through all indicators
 
     [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
 
 -   :material-download:{ .lg .middle } **Export Data**
 
-    ---
-
-    Download CSV files for your own analysis
+Download CSV files for your own analysis
 
     [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
 
 -   :material-code-tags:{ .lg .middle } **Use the Pipeline**
 
-    ---
-
-    Run the analysis yourself on your own machine
+Run the analysis yourself on your own machine
 
     [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
 

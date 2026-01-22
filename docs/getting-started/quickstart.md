@@ -262,33 +262,25 @@ python pipeline_runner.py --mode urls --source upr
 
 -   :material-book-open-page-variant:{ .lg .middle } **Learn More**
 
-    ---
-
-    Dive deeper into pipeline operations
+Dive deeper into pipeline operations
 
     [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
 
 -   :material-tag-multiple:{ .lg .middle } **Customize Tags**
 
-    ---
-
-    Add your own tag patterns
+Add your own tag patterns
 
     [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
 
 -   :material-chart-bar:{ .lg .middle } **Explore Scorecard**
 
-    ---
-
-    Understand country indicators
+Understand country indicators
 
     [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
 
 -   :material-cog:{ .lg .middle } **Add Scrapers**
 
-    ---
-
-    Build scrapers for new sources
+Build scrapers for new sources
 
     [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
 
