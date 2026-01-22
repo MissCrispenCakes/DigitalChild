@@ -67,21 +67,29 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :material-database:{ .lg .middle } __Open Data__
+-   :material-database:{ .lg .middle } __Open Data__
 
-  All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
+    ---
 
-- :material-code-tags:{ .lg .middle } __Open Source Code__
+    All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
-  Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
+-   :material-code-tags:{ .lg .middle } __Open Source Code__
 
-- :material-book-open-variant:{ .lg .middle } __Documentation__
+    ---
 
-  Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
+    Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
 
-- :material-shield-check:{ .lg .middle } __Research Quality__
+-   :material-book-open-variant:{ .lg .middle } __Documentation__
 
-  Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
+    ---
+
+    Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
+
+-   :material-shield-check:{ .lg .middle } __Research Quality__
+
+    ---
+
+    Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
 
 </div>
 

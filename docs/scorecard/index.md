@@ -18,29 +18,29 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
+-   :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
 
-  ______________________________________________________________________
+    ---
 
-  Comprehensive global coverage across all UN member states and territories
+    Comprehensive global coverage across all UN member states and territories
 
-- :material-chart-line:{ .lg .middle } **10 Indicators**
+-   :material-chart-line:{ .lg .middle } **10 Indicators**
 
-  ______________________________________________________________________
+    ---
 
-  AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
+    AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
 
-- :material-link:{ .lg .middle } **2,543 Source URLs**
+-   :material-link:{ .lg .middle } **2,543 Source URLs**
 
-  ______________________________________________________________________
+    ---
 
-  Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
+    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
 
-- :material-update:{ .lg .middle } **January 2026**
+-   :material-update:{ .lg .middle } **January 2026**
 
-  ______________________________________________________________________
+    ---
 
-  Last updated with latest policy changes and new data
+    Last updated with latest policy changes and new data
 
 </div>
 
