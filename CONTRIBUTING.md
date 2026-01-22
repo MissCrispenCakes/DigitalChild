@@ -17,15 +17,16 @@ This project analyzes human rights documents focusing on child and LGBTQ+ digita
 ### Ways to Contribute
 
 1. **Report Issues** - Found a bug? Let us know!
-2. **Suggest Features** - Ideas for improvements welcome
-3. **Add Scrapers** - New data sources needed
-4. **Improve Documentation** - Help make docs clearer
-5. **Add Tests** - More test coverage always helps
-6. **Share Research** - Using this in your work? Let us know!
+1. **Suggest Features** - Ideas for improvements welcome
+1. **Add Scrapers** - New data sources needed
+1. **Improve Documentation** - Help make docs clearer
+1. **Add Tests** - More test coverage always helps
+1. **Share Research** - Using this in your work? Let us know!
 
 ### Not Sure Where to Start?
 
 Check issues labeled:
+
 - `good first issue` - Great for new contributors
 - `help wanted` - Maintainer needs assistance
 - `documentation` - Help improve docs
@@ -33,11 +34,13 @@ Check issues labeled:
 ## 🐛 Reporting Bugs
 
 **Before reporting:**
+
 1. Check [existing issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-2. Review [First Run Errors](docs/guides/FIRST_RUN_ERRORS.md)
-3. Try with latest `basecamp` branch
+1. Review [First Run Errors](docs/guides/FIRST_RUN_ERRORS.md)
+1. Try with latest `basecamp` branch
 
 **When reporting, include:**
+
 - Python version (`python --version`)
 - Operating system
 - Steps to reproduce
@@ -48,12 +51,14 @@ Check issues labeled:
 ## 💡 Suggesting Features
 
 We're particularly interested in:
+
 - New data sources (human rights organizations, treaty bodies)
 - Additional analysis methods
 - Visualization improvements
 - Accessibility enhancements
 
 **Feature request template:**
+
 ```markdown
 **Problem:** What problem does this solve?
 **Proposed Solution:** How would it work?
@@ -88,17 +93,20 @@ pytest tests/ -v
 ### Making Changes
 
 1. **Create a branch** from `basecamp`:
+
    ```bash
    git checkout -b feature/your-feature-name basecamp
    ```
 
-2. **Make your changes:**
+1. **Make your changes:**
+
    - Write clear, documented code
    - Follow existing code style
    - Add tests for new features
    - Update documentation
 
-3. **Test thoroughly:**
+1. **Test thoroughly:**
+
    ```bash
    # Run tests
    pytest tests/ -v
@@ -110,7 +118,8 @@ pytest tests/ -v
    python pipeline_runner.py --source au_policy
    ```
 
-4. **Commit with clear messages:**
+1. **Commit with clear messages:**
+
    ```bash
    git add .
    git commit -m "Add feature: brief description
@@ -121,7 +130,8 @@ pytest tests/ -v
    Fixes #123"
    ```
 
-5. **Push and create Pull Request:**
+1. **Push and create Pull Request:**
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -131,6 +141,7 @@ pytest tests/ -v
 **Title:** Clear, concise description (50 chars or less)
 
 **Description should include:**
+
 - What problem this solves
 - How you tested it
 - Screenshots (if UI changes)
@@ -138,12 +149,14 @@ pytest tests/ -v
 - Related issues (use `Fixes #123`)
 
 **Before submitting:**
+
 - ✅ All tests pass (`pytest tests/ -v`)
 - ✅ Pre-commit checks pass (`pre-commit run --all-files`)
 - ✅ Documentation updated (if needed)
 - ✅ No merge conflicts with `basecamp`
 
 **Review process:**
+
 - Maintainer reviews within 1-2 weeks (remember: part-time!)
 - Address feedback if requested
 - Once approved, maintainer merges
@@ -159,6 +172,7 @@ pytest tests/ -v
 - **Docstrings:** Use for public functions
 
 **Example:**
+
 ```python
 def scrape(base_url: str = None, countries: list = None) -> list:
     """
@@ -185,6 +199,7 @@ def scrape(base_url: str = None, countries: list = None) -> list:
 ### Commit Messages
 
 **Format:**
+
 ```
 Brief summary (50 chars or less)
 
@@ -196,6 +211,7 @@ Fixes #issue_number (if applicable)
 ```
 
 **Good examples:**
+
 ```
 Add UNICEF scraper for child rights reports
 
@@ -217,6 +233,7 @@ Fixes #42
 - Name test functions `test_*`
 
 **Example:**
+
 ```python
 def test_scraper_returns_list():
     """Test that scraper returns a list of file paths."""
@@ -241,12 +258,14 @@ pytest tests/ --cov=processors --cov=scrapers
 ## 📚 Adding Documentation
 
 **When to update docs:**
+
 - New features added
 - API changes
 - Configuration changes
 - New scrapers/processors
 
 **Where to add docs:**
+
 - `README.md` - Brief overview
 - `docs/` - Detailed documentation
 - `CLAUDE.md` - AI assistant context
@@ -257,15 +276,17 @@ pytest tests/ --cov=processors --cov=scrapers
 Found a security vulnerability? **Do NOT open a public issue.**
 
 Instead:
+
 1. Email: [Create SECURITY.md with contact email]
-2. Include: Description, impact, steps to reproduce
-3. We'll respond within 48 hours
+1. Include: Description, impact, steps to reproduce
+1. We'll respond within 48 hours
 
 See [SECURITY.md](SECURITY.md) for details.
 
 ## 📄 Licensing
 
 By contributing, you agree:
+
 - Code contributions → MIT License
 - Data/docs contributions → CC BY 4.0
 - You have rights to contribute this work
@@ -278,6 +299,7 @@ See [LICENSE](LICENSE) and [LICENSE-DATA](LICENSE-DATA) for details.
 ### Our Pledge
 
 We are committed to providing a welcoming, inclusive environment for all contributors regardless of:
+
 - Age, body size, disability
 - Ethnicity, sex characteristics, gender identity/expression
 - Level of experience, education
@@ -287,6 +309,7 @@ We are committed to providing a welcoming, inclusive environment for all contrib
 ### Our Standards
 
 **Positive behavior:**
+
 - Using welcoming, inclusive language
 - Respecting different viewpoints
 - Accepting constructive criticism gracefully
@@ -294,6 +317,7 @@ We are committed to providing a welcoming, inclusive environment for all contrib
 - Showing empathy toward others
 
 **Unacceptable behavior:**
+
 - Harassment, trolling, insults
 - Publishing private information
 - Sexual language or advances
@@ -313,12 +337,13 @@ Report violations to [maintainer email]. All reports reviewed and responded to a
 ## 🎉 Recognition
 
 Contributors are acknowledged in:
+
 - GitHub contributors list
 - CITATION.cff file (for academic citations)
 - Project documentation
 
 Thank you for contributing to human rights research! 🌈
 
----
+______________________________________________________________________
 
 **Last updated:** January 2026

@@ -5,7 +5,7 @@ Interactive visualization of human rights indicators across 194 countries.
 !!! info "Coming Soon"
 Interactive visualizations are currently under development. This page will feature:
 
-```
+```txt
 - Country-level indicator heatmaps
 - Regional comparison charts
 - Time-series trend analysis
@@ -16,7 +16,9 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 ## Quick Stats
 
+```html
 <div class="grid cards" markdown>
+```
 
 - :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
 
@@ -203,6 +205,7 @@ This generates:
 
 ## Data Explorer
 
+```html
 <div id="scorecard-explorer">
   <p><em>Interactive data explorer will be available in future update.</em></p>
 </div>
@@ -223,6 +226,7 @@ This generates:
   height: 600px;
 }
 </style>
+```
 
 ## Validation & Quality
 
@@ -302,7 +306,7 @@ When using scorecard data in publications:
 
 Or:
 
-> Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: https://github.com/MissCrispenCakes/DigitalChild. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
+> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: <https://github.com/MissCrispenCakes/DigitalChild>. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
 ## Limitations & Disclaimers
 

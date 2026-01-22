@@ -5,7 +5,7 @@ Interactive exploration of scorecard data (coming soon).
 !!! info "Under Development"
 The data explorer is currently under development. This page will feature:
 
-```
+```txt
 - Filter by country, region, or indicator
 - Sort and search capabilities
 - Export filtered results
@@ -35,7 +35,7 @@ Then analyze with your preferred tool:
 
 Scorecard data is stored in:
 
-```
+```txt
 scorecard_main.xlsx
 ```
 

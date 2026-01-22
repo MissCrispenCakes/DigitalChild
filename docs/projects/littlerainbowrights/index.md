@@ -231,7 +231,7 @@ When using LittleRainbowRights data:
 
 Or:
 
-> Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
+> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard. Available at: https://grimdata.org/projects/littlerainbowrights/. Licensed under CC BY 4.0. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
 [Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 

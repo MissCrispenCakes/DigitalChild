@@ -25,7 +25,7 @@ This will:
 
 Expected output:
 
-```
+```terminal
 [INFO] Starting pipeline for source: au_policy
 [INFO] Scraping documents...
 [INFO] Found 12 documents
@@ -120,7 +120,7 @@ Each source has unique scraping logic for that organization's website.
 
 ### Data Flow
 
-```
+```txt
 ┌─────────────────┐
 │   WEB SOURCES   │ (AU, OHCHR, UPR, UNICEF)
 └────────┬────────┘
@@ -179,7 +179,7 @@ The pipeline has 3 modes:
 
 === "scraper (default)"
 
-````
+````txt
 **Complete workflow:** Scrape → Process → Tag → Export
 
 ```bash
@@ -189,7 +189,7 @@ python pipeline_runner.py --source au_policy
 
 === "urls"
 
-````
+````txt
 **From static URLs:** Process from `configs/url_dict/*.json`
 
 ```bash
@@ -199,7 +199,7 @@ python pipeline_runner.py --mode urls --source upr
 
 === "scorecard"
 
-````
+````txt
 **Indicator workflow:** Enrich → Export → Validate
 
 ```bash
@@ -258,7 +258,9 @@ python pipeline_runner.py --mode urls --source upr
 
 ## Next Steps
 
+```html
 <div class="grid cards" markdown>
+```
 
 - :material-book-open-page-variant:{ .lg .middle } **Learn More**
 
