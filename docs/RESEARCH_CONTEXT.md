@@ -9,13 +9,11 @@ ______________________________________________________________________
 ## The Pattern: First Rights Erode During Volatility
 
 !!! quote "From Published Research"
-**"During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."**
+    **"During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."**
 
-```
-**"Consequently, the erasure of gendered human dignity becomes a repeatedly expected, and therefore accepted, outcome."**
+    **"Consequently, the erasure of gendered human dignity becomes a repeatedly expected, and therefore accepted, outcome."**
 
-— Vollmer & Vollmer (2022), *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-```
+    — Vollmer & Vollmer (2022), *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 This documented pattern reveals a governance crisis. Whether during armed conflict, political upheaval, economic collapse, or rapid technological change—the rights of marginalized populations (women, LGBTQ+ members, trans individuals, children) erode first and fastest.
 
@@ -28,11 +26,8 @@ ______________________________________________________________________
 ## The Documentation Crisis: When Evidence Matters Most, Systems Fail
 
 !!! danger "Decisions Without Evidence"
-"Measuring the prevalence of SGBV is difficult, in general, due to typical factors affecting reporting, documenting, and maintaining data on incidences of occurrences. **This is further exacerbated where instability exists.**"
-
-```
-— Vollmer & Vollmer (2022), Section 4.3
-```
+    "Measuring the prevalence of SGBV is difficult, in general, due to typical factors affecting reporting, documenting, and maintaining data on incidences of occurrences. **This is further exacerbated where instability exists.**"
+    — Vollmer & Vollmer (2022), Section 4.3
 
 ### Two Contexts, Same Governance Challenge
 
@@ -86,13 +81,11 @@ ______________________________________________________________________
 ## The Solution: Transparent Tracking Enables Evidence-Based Governance
 
 !!! info "Automation Enables Evidence, Not Just Efficiency"
-"Harnessing AI and data scraping technology to quickly extract information from online human rights sources such as the UPR provides an important tool to reduce costs associated with research and advocacy and may improve and accelerate access to justice for many victims of human rights violations."
+    "Harnessing AI and data scraping technology to quickly extract information from online human rights sources such as the UPR provides an important tool to reduce costs associated with research and advocacy and may improve and accelerate access to justice for many victims of human rights violations."
 
-```
-"**It is therefore vital for computational models to handle what data does exist and to streamline all formats of data when incidents are documented.**"
+    "**It is therefore vital for computational models to handle what data does exist and to streamline all formats of data when incidents are documented.**"
 
-— Vollmer & Vollmer (2022), Section 4.3
-```
+    — Vollmer & Vollmer (2022), Section 4.3
 
 ### Why Computational Methods Matter
 
@@ -214,13 +207,11 @@ ______________________________________________________________________
 ### On Format Inconsistencies
 
 !!! info "Cycle-Dependent Refinement"
-"At present the UPR documents are not consistent in terms of presentation: individual member states may respond to the Working Group in multiple accepted formats, document files are displayed in PDF or Word Documents, several broken links were identified... terminology and textual structure of responses and recommendations vary from cycle to cycle."
+    "At present the UPR documents are not consistent in terms of presentation: individual member states may respond to the Working Group in multiple accepted formats, document files are displayed in PDF or Word Documents, several broken links were identified... terminology and textual structure of responses and recommendations vary from cycle to cycle."
 
-```
-However, "updates to the UPR documents were actively occurring to remedy some of these issues. Changes within the documentation itself are noted as 'cycle dependent' in that each cycle of the UPR demonstrates refinement in the format of responses and recommendations where consistent language is being favoured."
+    However, "updates to the UPR documents were actively occurring to remedy some of these issues. Changes within the documentation itself are noted as 'cycle dependent' in that each cycle of the UPR demonstrates refinement in the format of responses and recommendations where consistent language is being favoured."
 
-— Vollmer & Vollmer (2022), Section 4.2
-```
+    — Vollmer & Vollmer (2022), Section 4.2
 
 **This observation applies equally to digital rights documentation:** Policy formats evolve, terminology standardizes over time, and computational methods must handle both current inconsistencies and future improvements. We can't wait for perfect data before making decisions—systems must work with what exists.
 
@@ -241,11 +232,9 @@ ______________________________________________________________________
 ## SOGIESC Rights: The Transitive Nature Challenge
 
 !!! warning "Volatile and Impermanent Standards"
-"In particular, the unique nature of SOGIESC rights is, at present, **transitive in nature** with regards to gaining or losing traction on human rights and is often dependent on **volatile and impermanent social and cultural standards** for acceptance or understanding."
+    "In particular, the unique nature of SOGIESC rights is, at present, **transitive in nature** with regards to gaining or losing traction on human rights and is often dependent on **volatile and impermanent social and cultural standards** for acceptance or understanding."
 
-```
-— Vollmer & Vollmer (2022), Section 4.3
-```
+    — Vollmer & Vollmer (2022), Section 4.3
 
 **SOGIESC:** Sexual Orientation, Gender Identity and Expression, and Sex Characteristics
 

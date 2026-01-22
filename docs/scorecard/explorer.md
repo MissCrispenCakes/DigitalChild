@@ -3,14 +3,13 @@
 Interactive exploration of scorecard data (coming soon).
 
 !!! info "Under Development"
-The data explorer is currently under development. This page will feature:
-
-```txt
-- Filter by country, region, or indicator
-- Sort and search capabilities
-- Export filtered results
-- Compare multiple countries side-by-side
-```
+    The data explorer is currently under development. This page will feature:
+    ```txt
+    - Filter by country, region, or indicator
+    - Sort and search capabilities
+    - Export filtered results
+    - Compare multiple countries side-by-side
+    ```
 
 ## Current Options
 

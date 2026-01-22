@@ -56,7 +56,7 @@ conda activate digitalchild
 ````
 
 !!! tip "Why virtual environment?"
-Virtual environments isolate project dependencies, preventing conflicts with other Python projects on your system.
+    Virtual environments isolate project dependencies, preventing conflicts with other Python projects on your system.
 
 ### 3. Install Dependencies
 
@@ -89,7 +89,7 @@ This creates:
 - `logs/` - Run logs
 
 !!! success "Ready to Go!"
-Your installation is complete. Proceed to [Quick Start](quickstart.md) to run your first pipeline.
+    Your installation is complete. Proceed to [Quick Start](quickstart.md) to run your first pipeline.
 
 ## Development Installation
 
@@ -161,7 +161,7 @@ python -c "from selenium import webdriver; print('Selenium ready!')"
 ### Python Version Issues
 
 !!! failure "Error: Python 3.12 required"
-The project uses modern Python features from 3.12. Install Python 3.12 from [python.org](https://www.python.org/downloads/).
+    The project uses modern Python features from 3.12. Install Python 3.12 from [python.org](https://www.python.org/downloads/).
 
 ### Virtual Environment Not Activating
 

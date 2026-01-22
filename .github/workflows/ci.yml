@@ -126,11 +126,16 @@ jobs:
           # Check README
           mdformat --check README.md
 
-          # Check all docs except files with grid cards (which use --- in list items)
+          # Check all docs except files with special formatting:
+          # - Grid cards use --- in list items (mdformat rejects)
+          # - Admonition files use indented content (mdformat wants unindented)
           find docs -name "*.md" \
             ! -path "docs/index.md" \
             ! -path "docs/getting-started/quickstart.md" \
             ! -path "docs/projects/littlerainbowrights/index.md" \
             ! -path "docs/projects/sgbv/index.md" \
             ! -path "docs/scorecard/index.md" \
+            ! -path "docs/getting-started/installation.md" \
+            ! -path "docs/RESEARCH_CONTEXT.md" \
+            ! -path "docs/scorecard/explorer.md" \
             -exec mdformat --check {} +
