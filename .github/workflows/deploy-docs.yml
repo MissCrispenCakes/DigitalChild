@@ -11,16 +11,22 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for git info
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,25 +37,41 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements-docs.txt') }}
+          key: ${{ runner.os }}-pip-mkdocs-${{ hashFiles('mkdocs.yml') }}
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${{ runner.os }}-pip-mkdocs-
 
-      - name: Install dependencies
+      - name: Install MkDocs and dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs mkdocs-material pymdown-extensions
+          pip install mkdocs-material==9.7.1
+          pip install pymdown-extensions
 
-      - name: Build and deploy documentation
-        run: |
-          mkdocs gh-deploy --force --clean --verbose
+      - name: Build documentation
+        run: mkdocs build --clean --verbose
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Summary
         run: |
           echo "### Documentation Deployed Successfully! ✅" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🌐 Site will be available at:" >> $GITHUB_STEP_SUMMARY
-          echo "- https://misscrispcakes.github.io/DigitalChild/" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 Site available at:" >> $GITHUB_STEP_SUMMARY
+          echo "- ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
           echo "- https://grimdata.org (after DNS configured)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📝 Commit: \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
