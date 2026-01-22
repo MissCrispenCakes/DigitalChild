@@ -289,6 +289,14 @@
   100% { transform: rotate(360deg); }
 }
 
+/* Fix code blocks inside admonitions wrapping text to prevent scrollbars */
+.admonition pre code,
+.md-typeset .admonition pre code {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
 /* Accessibility improvements */
 .sr-only {
   position: absolute;
