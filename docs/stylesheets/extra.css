@@ -30,24 +30,27 @@
 .md-typeset .grid.cards > ul {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
-  gap: 1rem !important;
+  gap: 1.5rem !important;
   list-style: none !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+  margin: 1.5em 0 !important;
+  padding: 0 !important;
 }
 
 .md-typeset .grid.cards > ul > li {
-  border: 0.05rem solid var(--md-default-fg-color--lightest) !important;
-  border-radius: 0.1rem !important;
+  background-color: var(--md-default-bg-color) !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
   display: block !important;
   margin: 0 !important;
-  padding: 0.8rem !important;
-  transition: border 0.25s, box-shadow 0.25s !important;
+  padding: 1rem !important;
+  transition: all 0.2s ease !important;
 }
 
 .md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--md-accent-fg-color) !important;
-  box-shadow: var(--md-shadow-z2) !important;
+  border-color: #3f51b5 !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Status badges */
@@ -258,10 +261,15 @@
 
 /* Fix code blocks inside admonitions wrapping text to prevent scrollbars */
 .admonition,
-.md-typeset .admonition {
+.md-typeset .admonition,
+.admonition.quote,
+.md-typeset .admonition.quote {
+  overflow: hidden !important;
   overflow-x: hidden !important;
 }
 
+.admonition *,
+.md-typeset .admonition *,
 .admonition pre,
 .md-typeset .admonition pre {
   white-space: pre-wrap !important;
@@ -269,19 +277,19 @@
   overflow-wrap: break-word !important;
   overflow-x: hidden !important;
   max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .admonition pre code,
-.md-typeset .admonition pre code {
-  white-space: pre-wrap !important;
-  word-wrap: break-word !important;
-  overflow-wrap: break-word !important;
-  display: block !important;
-}
-
+.md-typeset .admonition pre code,
 .admonition code,
 .md-typeset .admonition code {
-  word-break: break-all !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  display: inline-block !important;
+  max-width: 100% !important;
 }
 
 /* Accessibility improvements */
