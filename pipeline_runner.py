@@ -260,7 +260,11 @@ def resolve_tags_config(version):
         config_path = os.path.join("configs", f"{version}.json")
         if os.path.exists(config_path):
             return config_path
-        raise ValueError(f"Unknown tags version: {version}")
+        # Provide helpful error with available versions
+        available = ", ".join(sorted(versions.keys())) if versions else "none found"
+        raise ValueError(
+            f"Unknown tags version: '{version}'. Available versions: {available}"
+        )
 
 
 def run_pipeline(
@@ -480,16 +484,16 @@ if __name__ == "__main__":
 
     if args.mode == "scorecard":
         # Scorecard-only mode
-        from processors.scorecard_diff import check_for_updates
-        from processors.scorecard_enricher import enrich_metadata
-        from processors.scorecard_validator import validate_scorecard_urls
+        from processors.scorecard_diff import run_diff_check
+        from processors.scorecard_enricher import enrich_all_metadata
+        from processors.scorecard_validator import validate_all_urls
 
         set_run_logfile("scorecard_run", module_logs=not args.no_module_logs)
         logger = get_logger("pipeline_runner")
 
         if args.scorecard_action in ("enrich", "all"):
             logger.info("Enriching metadata with scorecard...")
-            stats = enrich_metadata()
+            stats = enrich_all_metadata(save=True)
             logger.info(f"Enrichment stats: {stats}")
 
         if args.scorecard_action in ("export", "all"):
@@ -499,12 +503,14 @@ if __name__ == "__main__":
 
         if args.scorecard_action in ("validate", "all"):
             logger.info("Validating scorecard URLs...")
-            summary = validate_scorecard_urls()
+            report = validate_all_urls(save_report=True)
+            summary = f"{report['summary']['total_urls']} URLs, {report['summary']['reachable']} reachable"
             logger.info(f"URL validation: {summary}")
 
         if args.scorecard_action in ("diff", "all"):
             logger.info("Checking for scorecard source updates...")
-            summary = check_for_updates()
+            report = run_diff_check(save_report=True)
+            summary = f"{report['source_changes']['changed']} sources changed, {report['stale_entries']['count']} stale entries"
             logger.info(f"Diff check: {summary}")
 
         logger.info("Scorecard operations complete.")

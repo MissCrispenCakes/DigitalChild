@@ -144,7 +144,19 @@ The tagger applies regex-based rules to identify mentions of:
 - Online rights
 - And more...
 
-Tags are versioned (v1, v2, v3, digital) allowing comparison across rule sets.
+Tags are versioned (`v1`, `v2`, `v3`, `digital`, `queerai`) allowing comparison across rule sets.
+
+### What tags versions are available?
+
+The pipeline supports multiple tag configurations:
+
+- **v1** - Original basic tags
+- **v2** - Expanded tag set
+- **v3** - Current comprehensive tags (recommended)
+- **digital** - Digital rights focused tags
+- **queerai** - QueerAI conference tags
+
+Use with: `python pipeline_runner.py --source au_policy --tags-version v3`
 
 ### Can I add my own tags?
 

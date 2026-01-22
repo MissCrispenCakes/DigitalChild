@@ -86,7 +86,8 @@ DigitalChild is a data pipeline that:
 **Entry Point:**
 
 ```bash
-python pipeline_runner.py --source au_policy --tags-version latest
+# Available tags versions: v1, v2, v3, digital, queerai
+python pipeline_runner.py --source au_policy --tags-version v3
 ```
 
 ### 2. Scrapers (`scrapers/`)

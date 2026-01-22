@@ -79,8 +79,8 @@ pytest tests/ --maxfail=1 --disable-warnings -q --cov=processors --cov=scrapers 
 # Basic run (AU policies)
 python pipeline_runner.py --source au_policy
 
-# With options
-python pipeline_runner.py --source au_policy --tags-version latest
+# With options (tags versions: v1, v2, v3, digital, queerai)
+python pipeline_runner.py --source au_policy --tags-version v3
 python pipeline_runner.py --source upr --country kenya
 python pipeline_runner.py --mode scorecard --scorecard-action all
 

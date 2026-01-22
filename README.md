@@ -107,8 +107,8 @@ python init_project.py
 # Run complete pipeline for AU Policy documents
 python pipeline_runner.py --source au_policy
 
-# Run with latest tags
-python pipeline_runner.py --source au_policy --tags-version latest
+# Run with specific tags version (v1, v2, v3, or digital)
+python pipeline_runner.py --source au_policy --tags-version v3
 
 # Process specific country (UPR documents)
 python pipeline_runner.py --source upr --country kenya

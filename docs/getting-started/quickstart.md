@@ -79,13 +79,13 @@ python pipeline_runner.py --source upr --country kenya
 
 This scrapes and processes UPR (Universal Periodic Review) documents for Kenya specifically.
 
-### Use Latest Tags
+### Use Specific Tags Version
 
 ```bash
-python pipeline_runner.py --source au_policy --tags-version latest
+python pipeline_runner.py --source au_policy --tags-version v3
 ```
 
-The `latest` version points to the most recent tag configuration (currently `tags_v3`).
+Available tags versions: `v1`, `v2`, `v3` (recommended), `digital`, `queerai`.
 
 ### Run Scorecard Workflow
 

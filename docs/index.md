@@ -33,7 +33,9 @@ ______________________________________________________________________
 
     **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 2025)
 
-    **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099) Vollmer & Vollmer (2026), Zenodo
+    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)
+
+    [Vollmer & Vollmer (2026), Zenodo](https://doi.org/10.5281/zenodo.18318099)
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
@@ -51,7 +53,7 @@ ______________________________________________________________________
 
     **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
 
-    **Repository:** Under reconstruction (see project page for details)
+    **Repository:** [HumanRights] Under reconstruction (see project page for details)
 
     [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
 
