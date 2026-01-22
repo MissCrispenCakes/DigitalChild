@@ -19,24 +19,24 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
 - ✅ **Informed the development** of the expanded LittleRainbowRights project
 
 !!! info "Precursor to LittleRainbowRights"
-This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
+    This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
 
 !!! note "Separate Repository"
-SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
+    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
 
 ## Project Status
 
 !!! success "Published Research"
-**Vollmer, SC and Vollmer, DT.** (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [https://doi.org/10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
+    **Vollmer, SC and Vollmer, DT.** (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [https://doi.org/10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 !!! warning "Update Needed - UPR Cycle Progress"
-**Dataset requires updating:**
-
-- **UPR Cycle 3** has now completed (original research based on Cycles 1-3)
-- **UPR Cycle 4** is currently in progress with new recommendations
-- **New analytical lens available:** Pandemic and forced confinement perspectives offer rich opportunities for additional data mining, examining how COVID-19 lockdowns and related policies intersected with SGBV patterns and recommendations
-
-The repository and analysis tools are ready for expansion to incorporate this new data and analytical framework.
+    **Dataset requires updating:**
+    ```
+    - UPR Cycle 3 has now completed (original research based on Cycles 1-3)
+    - UPR Cycle 4 is currently in progress with new recommendations
+    - New analytical lens available: Pandemic and forced confinement perspectives offer rich opportunities for additional data mining, examining how COVID-19 lockdowns and related policies intersected with SGBV  patterns and recommendations
+    ```
+    The repository and analysis tools are ready for expansion to incorporate this new data and analytical framework.
 
 ## Key Features
 
@@ -98,15 +98,15 @@ This project addresses:
 ## Key Findings
 
 !!! note "Summary"
-Detailed findings are available in the published journal article.
+    Detailed findings are available in the published journal article.
 
-```
-Key insights include:
-- Regional variation in SGBV recommendation frequency
-- Common themes across recommendations
-- Implementation challenges
-- Best practice examples
-```
+    ```
+    Key insights include:
+    - Regional variation in SGBV recommendation frequency
+    - Common themes across recommendations
+    - Implementation challenges
+    - Best practice examples
+    ```
 
 ## SGBV Categories Analyzed
 
@@ -120,7 +120,7 @@ Key insights include:
 1. **Prevention** - Education, awareness campaigns, perpetrator programs
 
 !!! info "Emerging Analytical Lens"
-**Pandemic and Forced Confinement Perspectives**
+    **Pandemic and Forced Confinement Perspectives**
 
 The COVID-19 pandemic and associated lockdown measures created unique conditions that intersected with SGBV:
 
@@ -162,19 +162,19 @@ The SGBV project will be fully integrated into the GRIMdata platform with:
 ## Publications
 
 !!! example "Published Research"
-**Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states**
+    **Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states**
 
-**Authors:** Vollmer, SC and Vollmer, DT
+    **Authors:** Vollmer, SC and Vollmer, DT
 
-**Journal:** Stellenbosch Law Review, Volume 33, Issue 1, 2022
+    **Journal:** Stellenbosch Law Review, Volume 33, Issue 1, 2022
 
-**Pages:** 8–41
+    **Pages:** 8–41
 
-**DOI:** [10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
+    **DOI:** [10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
-**Abstract:** This research analyzes how the Universal Periodic Review (UPR) mechanism processes sexual and gender-based violence (SGBV) recommendations in Southern African Development Community (SADC) member states. The study examines patterns across UPR cycles, regional variation in SGBV recommendation frequency, and implementation challenges.
+    **Abstract:** This research analyzes how the Universal Periodic Review (UPR) mechanism processes sexual and gender-based violence (SGBV) recommendations in Southern African Development Community (SADC) member states. The study examines patterns across UPR cycles, regional variation in SGBV recommendation frequency, and implementation challenges.
 
-[Access full article](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
+    [Access full article](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
 ## How to Use This Data
 
@@ -216,16 +216,18 @@ This project builds on and complements:
 ## Repository & Code
 
 !!! info "Separate Codebase"
-The SGBV-UPR project has its own repository with specialized analysis tools.
+    The SGBV-UPR project has its own repository with specialized analysis tools.
 
-**Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights)
+    The codebase includes:
+    ```
+    - UPR-specific scrapers
+    - SGBV tagging rules
+    - Longitudinal analysis tools
+    - Visualization scripts
+    ```
 
-The codebase includes:
-
-- UPR-specific scrapers
-- SGBV tagging rules
-- Longitudinal analysis tools
-- Visualization scripts
+!!! danger "Repository Under Maintenance"
+    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights)
 
 ## Future Development
 

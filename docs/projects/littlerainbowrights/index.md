@@ -120,7 +120,7 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 ## Key Publications
 
 !!! info "Research Output"
-Publications using LittleRainbowRights data will be listed here as they become available.
+    Publications using LittleRainbowRights data will be listed here as they become available.
 
 ## How to Use This Data
 

@@ -160,7 +160,7 @@ This dual licensing ensures maximum utility while giving credit to the research 
 GRIMdata is maintained by an independent researcher alongside other work. Both projects represent passion projects aimed at making human rights data more accessible and analysis more transparent.
 
 !!! warning "Maintained by PhD Student"
-This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
+    This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
 
 ## Contact & Contributing
 

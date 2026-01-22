@@ -297,32 +297,32 @@ python pipeline_runner.py --mode urls --source upr
 ## Troubleshooting
 
 !!! failure "No documents found"
-Check if documents already exist in `data/raw/<source>/`. The pipeline skips existing files. Delete to re-scrape.
+    Check if documents already exist in `data/raw/<source>/`. The pipeline skips existing files. Delete to re-scrape.
 
 !!! failure "Import errors"
-Ensure you're running from project root, not from subdirectories. Use absolute paths if needed.
+    Ensure you're running from project root, not from subdirectories. Use absolute paths if needed.
 
 !!! failure "Processing failed"
-Check `logs/` for error details. Some PDFs may be scanned images (no text layer) and will fail.
+    Check `logs/` for error details. Some PDFs may be scanned images (no text layer) and will fail.
 
 !!! failure "Tags summary empty"
-Verify documents have text content. Check `data/processed/` for .txt files.
+    Verify documents have text content. Check `data/processed/` for .txt files.
 
 See [First Run Errors](../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
 
 ## Pro Tips
 
 !!! tip "Incremental Processing"
-The pipeline skips already-downloaded files. Run again to only process new documents.
+    The pipeline skips already-downloaded files. Run again to only process new documents.
 
 !!! tip "Parallel Analysis"
-Export CSV files can be analyzed in parallel with R, Python, Excel, or Tableau.
+    Export CSV files can be analyzed in parallel with R, Python, Excel, or Tableau.
 
 !!! tip "Custom Tags"
-Edit `configs/tags_v3.json` to add your own regex patterns. Re-run with `--tags-version v3`.
+    Edit `configs/tags_v3.json` to add your own regex patterns. Re-run with `--tags-version v3`.
 
 !!! tip "Version Control"
-Tags history preserves all tagging operations. Compare results across tag versions using metadata.
+    Tags history preserves all tagging operations. Compare results across tag versions using metadata.
 
 ## Getting Help
 

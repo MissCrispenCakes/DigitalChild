@@ -3,7 +3,7 @@
 Interactive visualization of human rights indicators across 194 countries.
 
 !!! info "Coming Soon"
-Interactive visualizations are currently under development. This page will feature:
+    Interactive visualizations are currently under development. This page will feature:
 
 ```txt
 - Country-level indicator heatmaps
@@ -320,7 +320,7 @@ Or:
 - **Regional variation:** Federal systems may have state/provincial differences
 
 !!! info "Use Responsibly"
-This scorecard is a research tool, not legal advice. Always:
+    This scorecard is a research tool, not legal advice. Always:
 
 - Verify source URLs before citing
 - Consider local context and nuance

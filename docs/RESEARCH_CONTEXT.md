@@ -261,33 +261,35 @@ ______________________________________________________________________
 
 ## Design Principles Drawn from This Context
 
+From **Vollmer & Vollmer (2022)**
+
 ### 1. Transparency Over Opacity
 
-**From published research:** "Tolerating the deterioration of these rights is a course of action that should be altered and supported by human rights institutions."
+"Tolerating the deterioration of these rights is a course of action that should be altered and supported by human rights institutions."
 
 **Implementation:** Versioned configurations with explicit patterns rather than opaque algorithms. Researchers can see exactly WHY each tag was applied, HOW each recommendation was extracted, WHICH sources were used. This enables independent verification and prevents "trust us" governance.
 
 ### 2. Resilience Over Efficiency
 
-**From published research:** "It is therefore vital for computational models to handle what data does exist and to streamline all formats of data when incidents are documented."
+"It is therefore vital for computational models to handle what data does exist and to streamline all formats of data when incidents are documented."
 
 **Implementation:** Fallback handlers attempt multiple processors sequentially. Dual scrapers (requests + Selenium) ensure robustness. Retry logic with parallel workers for URL validation. **We can't wait for perfect data before making decisions—systems must work with what exists now.**
 
 ### 3. Provenance Over Convenience
 
-**From published research:** Need for "consistent, explicit, and irrefutable indications."
+Need for "consistent, explicit, and irrefutable indications."
 
 **Implementation:** Every document maintains complete processing history. Source URLs preserved. Tag versions timestamped. Metadata tracks exactly which rules were applied when. This enables accountability: **decisions can be traced back to evidence, assumptions can be challenged.**
 
 ### 4. Accessibility Over Gatekeeping
 
-**From published research:** "Reduce costs associated with research and advocacy and may improve and accelerate access to justice."
+"Reduce costs associated with research and advocacy and may improve and accelerate access to justice."
 
 **Implementation:** Comprehensive documentation (25+ markdown files), "do it yourself" installation guides, tested procedures (124+ tests), MIT license for code, CC BY 4.0 for data. **Evidence shouldn't be locked behind institutional or financial barriers** when decisions affect vulnerable populations.
 
 ### 5. Continuity Over Perfection
 
-**From published research:** "Actively seeking and searching for updates with methods that can be automated... may provide fundamental support not easily obtained through more traditional means."
+"Actively seeking and searching for updates with methods that can be automated... may provide fundamental support not easily obtained through more traditional means."
 
 **Implementation:** Automated scrapers continue collection even when traditional methods fail. Change detection monitors sources for updates. The pipeline maintains continuity rather than waiting for perfect data. **By the time data is perfect, decisions have already been made and may be irreversible.**
 
