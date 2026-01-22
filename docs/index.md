@@ -2,6 +2,7 @@
 
 ## Global Rights Index Monitoring
 
+
 **GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries.
 
 **Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
