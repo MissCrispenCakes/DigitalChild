@@ -64,9 +64,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
-  # Commented out to prevent 404 errors until assets are added
-  # logo: assets/logo.png  # TODO: Add logo
-  # favicon: assets/favicon.ico  # TODO: Add favicon
+    logo: material/book-open-page-variant
 
 # Plugins
 plugins:
