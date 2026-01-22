@@ -56,6 +56,7 @@ conda activate digitalchild
 ````
 
 !!! tip "Why virtual environment?"
+
     Virtual environments isolate project dependencies, preventing conflicts with other Python projects on your system.
 
 ### 3. Install Dependencies

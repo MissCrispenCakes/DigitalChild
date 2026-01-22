@@ -4,13 +4,12 @@ Interactive visualization of human rights indicators across 194 countries.
 
 !!! info "Coming Soon"
     Interactive visualizations are currently under development. This page will feature:
-
-```txt
-- Country-level indicator heatmaps
-- Regional comparison charts
-- Time-series trend analysis
-- Source URL verification status
-```
+    ```txt
+    - Country-level indicator heatmaps
+    - Regional comparison charts
+    - Time-series trend analysis
+    - Source URL verification status
+    ```
 
 For now, you can explore the data through CSV exports or the data explorer below.
 
@@ -312,20 +311,20 @@ Or:
 ## Limitations & Disclaimers
 
 !!! warning "Important Considerations"
-
-- **Point-in-time data:** Reflects information as of January 2026
-- **Binary categorization:** Complex policies simplified into discrete categories
-- **Source availability:** Some countries lack accessible English-language sources
-- **Implementation vs. policy:** Tracks official policy, not enforcement
-- **Regional variation:** Federal systems may have state/provincial differences
+    **Point-in-time data:** Reflects information as of January 2026
+    **Binary categorization:** Complex policies simplified into discrete categories
+    **Source availability:** Some countries lack accessible English-language sources
+    **Implementation vs. policy:** Tracks official policy, not enforcement
+    **Regional variation:** Federal systems may have state/provincial differences
 
 !!! info "Use Responsibly"
     This scorecard is a research tool, not legal advice. Always:
-
-- Verify source URLs before citing
-- Consider local context and nuance
-- Acknowledge limitations in publications
-- Cross-reference with other datasets
+    ```txt
+    - Verify source URLs before citing
+    - Consider local context and nuance
+    - Acknowledge limitations in publications
+    - Cross-reference with other datasets
+    ```
 
 ## Future Enhancements
 

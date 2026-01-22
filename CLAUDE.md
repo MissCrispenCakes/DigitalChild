@@ -9,7 +9,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ALWAYS run before committing:
 
 ```bash
-python -m mdformat --check README.md docs/
 pre-commit run --all-files
 ```
 

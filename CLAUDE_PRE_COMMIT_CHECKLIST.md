@@ -4,19 +4,7 @@
 
 ## Before EVERY commit, run these checks:
 
-### 1. mdformat check (MANDATORY - CI will fail if you skip this)
-
-```bash
-python -m mdformat --check README.md docs/
-```
-
-If this fails, run without --check to fix:
-
-```bash
-python -m mdformat README.md docs/
-```
-
-### 2. pre-commit hooks (MANDATORY)
+### 1. pre-commit hooks (MANDATORY)
 
 ```bash
 pre-commit run --all-files
@@ -33,7 +21,7 @@ This checks:
 - check-json
 - detect-private-key
 
-### 3. If you modified any scrapers or processors, run tests
+### 2. If you modified any scrapers or processors, run tests
 
 ```bash
 pytest tests/ -v
@@ -41,24 +29,21 @@ pytest tests/ -v
 
 ## Common mistakes to avoid:
 
-1. **Adding extra blank lines in markdown** - mdformat enforces single blank lines after headers
-2. **Forgetting to stage workflow file changes** - Always check git status
-3. **Making trivial edits without checking format** - Even a single line change can break mdformat
-4. **Pushing without verifying pre-commit passes** - CI will fail and waste time/money
+1. **Forgetting to stage workflow file changes** - Always check git status
+2. **Pushing without verifying pre-commit passes** - CI will fail and waste time/money
+3. **Missing end-of-file newlines** - pre-commit will catch this
 
 ## Workflow before any git push:
 
-1. Run mdformat check
-2. If mdformat fails, fix it
-3. Run pre-commit hooks
-4. If pre-commit fails, fix it
-5. Stage all changes: `git add .`
-6. Commit with clear message
-7. THEN push
+1. Run pre-commit hooks
+2. If pre-commit fails, fix it
+3. Stage all changes: `git add .`
+4. Commit with clear message
+5. THEN push
 
 ## Remember:
 
 - Every CI failure costs the user money
 - Every failed push wastes the user's time
 - CHECK BEFORE YOU PUSH
-- If you modified markdown, ALWAYS run mdformat first
+- pre-commit catches: black, isort, flake8, markdownlint, and basic file issues
