@@ -23,7 +23,9 @@ ______________________________________________________________________
 
 ### 📥 Data Collection
 
-- **7 data sources** - AU Policy, OHCHR, UPR, UNICEF, ACERWC, ACHPR, Manual uploads
+- **Multiple data sources** - International organizations (UN, AU), treaty bodies (OHCHR, UPR, UNICEF, ACERWC, ACHPR), government sources, NGOs, legal databases, research publications
+- **Global and regional coverage** - African, global, and country-specific sources across multiple regions
+- **Direct URL tracking** - Government postings, public notices, community organizations, business/legal sources, policy documents
 - **Multi-format support** - PDF, DOCX, HTML document processing
 - **Automated scraping** - Respectful, rate-limited web scraping with fallback handlers
 
@@ -52,6 +54,24 @@ ______________________________________________________________________
 - **CSV exports** - Tags summaries, scorecard data, analysis results
 - **Metadata tracking** - Complete provenance for every document
 - **Reproducible** - Version-controlled configs and timestamps
+
+______________________________________________________________________
+
+## 🎯 Why This Work Matters
+
+Digital systems (AI, surveillance, age verification, content moderation) are being deployed rapidly affecting children and LGBTQ+ youth. We don't yet know whether these systems help or harm—but decisions are being made RIGHT NOW with permanent consequences.
+
+**The problem:** Who should control vulnerable populations' digital rights?
+
+- **Parents?** May not understand digital safety (already posting kids' photos publicly)
+- **Governments?** May weaponize systems (countries criminalizing LGBTQ+ people using biometric data for tracking)
+- **Companies?** May lack security (data "everywhere forever, easily hacked")
+
+**Without transparent tracking:** Assumptions → decisions → irreversible consequences → by the time we know we were wrong, TOO LATE to reverse.
+
+This pipeline tracks digital rights deployments across 194 countries, enabling evidence-based decisions BEFORE consequences become irreversible.
+
+**Methodological foundation:** [Research Context](docs/RESEARCH_CONTEXT.md) | **Published work:** [Vollmer & Vollmer (2022)](https://doi.org/10.47348/SLR/2022/i1a1)
 
 ______________________________________________________________________
 
@@ -105,12 +125,15 @@ ______________________________________________________________________
 
 **Phase 1-2 Complete:**
 
-- ✅ Core pipeline (scraping, processing, tagging) - 7 sources supported
+- ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
 - ✅ Validation & security framework - 68 validator tests, 124 total tests passing
+- ✅ Recommendations extraction system - Regex-based with versioning and history tracking
+- ✅ Timeline exports - Global, by-country, and by-region analysis over time
+- ✅ Comparison analytics - Compare tags and recommendations across versions
 - ✅ Comprehensive documentation - 25 markdown files
 
-**Phase 3 In Progress:** Recommendations extraction, timeline exports, comparison analytics
+**Phase 3 Mostly Complete (73%):** Advanced processing features operational, NLP enhancements planned
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
 
@@ -209,8 +232,9 @@ If you use this project in your research, please cite it:
   title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
   author = {Vollmer, S.C. and Vollmer, D.T.},
   year = {2026},
-  version = {0.9.0},
+  version = {1.0.1},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
+  doi = {10.5281/zenodo.18318099},
   note = {Available at: https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)}
 }
 ```
