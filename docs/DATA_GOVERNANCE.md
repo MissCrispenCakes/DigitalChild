@@ -104,7 +104,7 @@ Scrapers designed to:
 - **Code:** MIT (free use, attribution appreciated)
 - **Data/Documentation:** CC BY 4.0 (attribution required)
 
-See [LICENSE](../LICENSE) and [LICENSE-DATA](../LICENSE-DATA) for details.
+See [LICENSE](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE) and [LICENSE-DATA](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA) for details.
 
 ## 🧭 Ethical Research Practices
 
@@ -377,12 +377,12 @@ When reporting data quality issues:
 
 **Code:**
 
-- MIT License (see [LICENSE](../LICENSE))
+- MIT License (see [LICENSE](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE))
 - Free use including commercial
 
 **Data/Documentation:**
 
-- CC BY 4.0 (see [LICENSE-DATA](../LICENSE-DATA))
+- CC BY 4.0 (see [LICENSE-DATA](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA))
 - Attribution required
 
 ### Data Protection Laws

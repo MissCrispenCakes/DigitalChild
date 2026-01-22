@@ -382,7 +382,7 @@ ______________________________________________________________________
 
 ### How do I get help?
 
-1. **Documentation:** Check [docs/](.)
+1. **Documentation:** Check [the documentation](index.md)
 1. **FAQ:** This page
 1. **Issues:** Search [existing issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 1. **Discussions:** Ask in [discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)

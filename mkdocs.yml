@@ -183,6 +183,7 @@ nav:
       - SGBV-UPR:
           - Project Overview: projects/sgbv/index.md
   - About:
+      - Research Context: RESEARCH_CONTEXT.md
       - Contributing: CONTRIBUTING.md
 
 # Custom CSS
