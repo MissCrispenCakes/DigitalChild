@@ -2,8 +2,9 @@
 
 ### GRIMdata / LittleRainbowRights
 
-[![CI Pipeline](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
-[![Docs Health](https://img.shields.io/badge/docs-health-brightgreen)](docs/guides/FIRST_RUN_ERRORS.md)
+[![CI](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg?branch=basecamp&event=push)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
+[![CD](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/deploy-docs.yml/badge.svg?branch=basecamp)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/deploy-docs.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
