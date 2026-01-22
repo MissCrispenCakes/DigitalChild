@@ -258,9 +258,7 @@ python pipeline_runner.py --mode urls --source upr
 
 ## Next Steps
 
-```html
 <div class="grid cards" markdown>
-```
 
 - :material-book-open-page-variant:{ .lg .middle } **Learn More**
 
@@ -295,6 +293,7 @@ python pipeline_runner.py --mode urls --source upr
   [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
 
 </div>
+```
 
 ## Troubleshooting
 

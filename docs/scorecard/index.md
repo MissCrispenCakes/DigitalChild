@@ -16,9 +16,7 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 ## Quick Stats
 
-```html
 <div class="grid cards" markdown>
-```
 
 - :fontawesome-solid-earth-americas:{ .lg .middle } **194 Countries**
 
