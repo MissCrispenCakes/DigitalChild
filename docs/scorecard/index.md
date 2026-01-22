@@ -190,16 +190,16 @@ This generates:
 
 **scorecard_summary.csv:**
 
-| Country | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
+| Country      | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
 | ------------ | ---------------- | ------------------- | ------------------ | --- |
-| Kenya | Framework | Comprehensive Law | No Protections | ... |
-| South Africa | Strategy | Comprehensive Law | Some Protections | ... |
+| Kenya        | Framework        | Comprehensive Law   | No Protections     | ... |
+| South Africa | Strategy         | Comprehensive Law   | Some Protections   | ... |
 
 **scorecard_sources.csv:**
 
-| Country | Indicator | Value | Source_URL | Validated | Last_Checked |
+| Country | Indicator | Value     | Source_URL  | Validated | Last_Checked |
 | ------- | --------- | --------- | ----------- | --------- | ------------ |
-| Kenya | AI_Policy | Framework | https://... | ✅ | 2026-01-15 |
+| Kenya   | AI_Policy | Framework | https://... | ✅        | 2026-01-15   |
 
 ## Data Explorer
 

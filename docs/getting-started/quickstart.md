@@ -165,13 +165,13 @@ Each source has unique scraping logic for that organization's website.
 
 After running the pipeline:
 
-| Path | Contents |
+| Path                             | Contents                    |
 | -------------------------------- | --------------------------- |
-| `data/raw/au_policy/` | Downloaded PDF files |
-| `data/processed/Africa/AU/text/` | Extracted text files |
-| `data/metadata/metadata.json` | Document metadata with tags |
-| `data/exports/tags_summary.csv` | Tag analysis |
-| `logs/` | Run logs with timestamps |
+| `data/raw/au_policy/`            | Downloaded PDF files        |
+| `data/processed/Africa/AU/text/` | Extracted text files        |
+| `data/metadata/metadata.json`    | Document metadata with tags |
+| `data/exports/tags_summary.csv`  | Tag analysis                |
+| `logs/`                          | Run logs with timestamps    |
 
 ## Pipeline Modes
 
@@ -211,19 +211,19 @@ python pipeline_runner.py --mode scorecard --scorecard-action all
 
 ### Required Arguments
 
-| Argument | Description | Example |
+| Argument   | Description      | Example                     |
 | ---------- | ---------------- | --------------------------- |
 | `--source` | Data source name | `au_policy`, `upr`, `ohchr` |
 
 ### Optional Arguments
 
-| Argument | Description | Example |
+| Argument             | Description             | Example                               |
 | -------------------- | ----------------------- | ------------------------------------- |
-| `--tags-version` | Tag config version | `latest`, `v3`, `v2` |
-| `--mode` | Pipeline mode | `scraper`, `urls`, `scorecard` |
-| `--country` | Filter by country | `kenya`, `south_africa` |
-| `--scorecard-action` | Scorecard action | `enrich`, `export`, `validate`, `all` |
-| `--no-module-logs` | Disable per-module logs | (flag, no value) |
+| `--tags-version`     | Tag config version      | `latest`, `v3`, `v2`                  |
+| `--mode`             | Pipeline mode           | `scraper`, `urls`, `scorecard`        |
+| `--country`          | Filter by country       | `kenya`, `south_africa`               |
+| `--scorecard-action` | Scorecard action        | `enrich`, `export`, `validate`, `all` |
+| `--no-module-logs`   | Disable per-module logs | (flag, no value)                      |
 
 ### Examples
 
@@ -246,15 +246,15 @@ python pipeline_runner.py --mode urls --source upr
 
 ## Supported Sources
 
-| Source | Description | Documents |
+| Source      | Description                             | Documents       |
 | ----------- | --------------------------------------- | --------------- |
-| `au_policy` | African Union policy documents | ~10-15 |
-| `ohchr` | OHCHR Treaty Body database | Hundreds |
-| `upr` | Universal Periodic Review (per country) | ~50 per country |
-| `unicef` | UNICEF reports | Varies |
-| `acerwc` | African Committee on Child Rights | ~20-30 |
-| `achpr` | African Commission on Human Rights | ~30-40 |
-| `manual` | Manual uploads to `data/raw/manual/` | User-provided |
+| `au_policy` | African Union policy documents          | ~10-15          |
+| `ohchr`     | OHCHR Treaty Body database              | Hundreds        |
+| `upr`       | Universal Periodic Review (per country) | ~50 per country |
+| `unicef`    | UNICEF reports                          | Varies          |
+| `acerwc`    | African Committee on Child Rights       | ~20-30          |
+| `achpr`     | African Commission on Human Rights      | ~30-40          |
+| `manual`    | Manual uploads to `data/raw/manual/`    | User-provided   |
 
 ## Next Steps
 
