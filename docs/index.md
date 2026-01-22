@@ -23,33 +23,37 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :rainbow:{ .lg .middle } __LittleRainbowRights__
+-   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
-  **Status:** Active | **Scope:** Global (194 countries)
+    ---
 
-  Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
+    **Status:** Active | **Scope:** Global (194 countries)
 
-  **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 2025)
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
 
-  **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099) Vollmer & Vollmer (2026), Zenodo
+    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 2025)
 
-  **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
+    **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099) Vollmer & Vollmer (2026), Zenodo
 
-  [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
+    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
-- :material-hand-heart:{ .lg .middle } __SGBV-UPR__
+    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
-  **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
+-   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
-  Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
+    ---
 
-  **Presented:** International Conference on The Responsiveness of the African Human Rights System to SGBV (September 2021, Session: Diverse Gender Identities)
+    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
 
-  **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
 
-  **Repository:** Under reconstruction (see project page for details)
+    **Presented:** International Conference on The Responsiveness of the African Human Rights System to SGBV (September 2021, Session: Diverse Gender Identities)
 
-  [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
+    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
+
+    **Repository:** Under reconstruction (see project page for details)
+
+    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
 
 </div>
 
