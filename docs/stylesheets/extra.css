@@ -26,11 +26,34 @@
   background: var(--rainbow-gradient);
 }
 
-/* Card grid styling - minimal adjustments to Material's built-in grid cards */
-/* Material for MkDocs 9.x has built-in grid card support - we only adjust spacing */
+/* Card grid styling - ensure proper visual card appearance */
 .md-typeset .grid.cards {
+  display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
   gap: 1rem !important;
+  margin: 1rem 0;
+}
+
+/* Ensure list items inside grid cards look like actual cards */
+.md-typeset .grid.cards > ul,
+.md-typeset .grid.cards > ol {
+  display: contents;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+  transition: box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 /* Status badges */
