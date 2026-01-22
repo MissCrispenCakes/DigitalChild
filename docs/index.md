@@ -10,7 +10,7 @@
 "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
 
 ```
-*— Vollmer & Vollmer (2022), Stellenbosch Law Review* ([DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1))
+— Vollmer & Vollmer (2022), *Stellenbosch Law Review* [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 ```
 
 **GRIMdata's response:** Decisions affecting marginalized populations' fundamental rights are being made RIGHT NOW with PERMANENT consequences—often by the wrong actors, based on assumptions rather than evidence. Both research tracks (SGBV-UPR for violence documentation, LittleRainbowRights for digital system deployments) use transparent tracking to replace assumptions with evidence BEFORE consequences become irreversible.
