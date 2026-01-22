@@ -2,6 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## ⚠️ CRITICAL: Before Every Commit
+
+**READ `CLAUDE_PRE_COMMIT_CHECKLIST.md` BEFORE EVERY COMMIT**
+
+ALWAYS run before committing:
+
+```bash
+python -m mdformat --check README.md docs/
+pre-commit run --all-files
+```
+
+**Every CI failure costs money. Every failed push wastes time. CHECK BEFORE YOU PUSH.**
+
 ## Project Overview
 
 DigitalChild (GRIMdata / LittleRainbowRights) is a Python 3.12 data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection.
