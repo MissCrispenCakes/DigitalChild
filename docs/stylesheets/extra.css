@@ -26,34 +26,28 @@
   background: var(--rainbow-gradient);
 }
 
-/* Card grid styling - ensure proper visual card appearance */
-.md-typeset .grid.cards {
+/* Card grid styling - Material for MkDocs grid cards */
+.md-typeset .grid.cards > ul {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
   gap: 1rem !important;
-  margin: 1rem 0;
+  list-style: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
-/* Ensure list items inside grid cards look like actual cards */
-.md-typeset .grid.cards > ul,
-.md-typeset .grid.cards > ol {
-  display: contents;
+.md-typeset .grid.cards > ul > li {
+  border: 0.05rem solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 0.1rem !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0.8rem !important;
+  transition: border 0.25s, box-shadow 0.25s !important;
 }
 
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid.cards > ol > li {
-  background: var(--md-default-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.2rem;
-  padding: 1rem;
-  margin: 0;
-  list-style: none;
-  transition: box-shadow 0.2s;
-}
-
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid.cards > ol > li:hover {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color) !important;
+  box-shadow: var(--md-shadow-z2) !important;
 }
 
 /* Status badges */
@@ -263,11 +257,31 @@
 }
 
 /* Fix code blocks inside admonitions wrapping text to prevent scrollbars */
+.admonition,
+.md-typeset .admonition {
+  overflow-x: hidden !important;
+}
+
+.admonition pre,
+.md-typeset .admonition pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
 .admonition pre code,
 .md-typeset .admonition pre code {
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
+  display: block !important;
+}
+
+.admonition code,
+.md-typeset .admonition code {
+  word-break: break-all !important;
 }
 
 /* Accessibility improvements */
