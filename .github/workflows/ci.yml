@@ -102,4 +102,3 @@ jobs:
         run: |
           pytest tests/ --maxfail=1 --disable-warnings -q \
             --cov=processors --cov=scrapers --cov-report=term-missing
-
