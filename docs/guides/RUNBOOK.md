@@ -47,8 +47,8 @@ ______________________________________________________________________
 # Run AU Policy scraper and full pipeline
 python pipeline_runner.py --source au_policy
 
-# Run with specific tags version (available: v1, v2, v3, digital, queerai)
-python pipeline_runner.py --source au_policy --tags-version v3
+# Run with specific tags version
+python pipeline_runner.py --source au_policy --tags-version latest
 
 # Run without module logs
 python pipeline_runner.py --source au_policy --no-module-logs

@@ -150,13 +150,14 @@ Tags are versioned (`v1`, `v2`, `v3`, `digital`, `queerai`) allowing comparison 
 
 The pipeline supports multiple tag configurations:
 
+- **latest** - Alias for the most current version (currently v3) - **recommended**
 - **v1** - Original basic tags
 - **v2** - Expanded tag set
-- **v3** - Current comprehensive tags (recommended)
+- **v3** - Current comprehensive tags
 - **digital** - Digital rights focused tags
 - **queerai** - QueerAI conference tags
 
-Use with: `python pipeline_runner.py --source au_policy --tags-version v3`
+Use with: `python pipeline_runner.py --source au_policy --tags-version latest`
 
 ### Can I add my own tags?
 

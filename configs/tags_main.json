@@ -1,10 +1,11 @@
 {
   "versions": {
+    "latest": "tags_v3.json",
     "v1": "tags_v1.json",
-    "digital": "tags_digital.json",
     "v2": "tags_v2.json",
     "v3": "tags_v3.json",
+    "digital": "tags_digital.json",
     "queerai": "queer_ai_digital_child.json"
   },
-  "notes": "tags_main.json tracks multiple tag sets for comparison or reruns."
+  "notes": "tags_main.json tracks multiple tag sets for comparison or reruns. 'latest' points to the most current recommended version."
 }

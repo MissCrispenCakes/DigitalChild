@@ -204,8 +204,7 @@ python utils/pipeline_runner_DEMO.py
 Various options:
 
 ```bash
-# Available tags versions: v1, v2, v3, digital, queerai
-python pipeline_runner.py --source au_policy --tags-version v3
+python pipeline_runner.py --source au_policy --tags-version latest
 python pipeline_runner.py --source au_policy --no-module-logs
 python pipeline_runner.py --source upr --country kenya
 python pipeline_runner.py --mode scorecard --scorecard-action all
