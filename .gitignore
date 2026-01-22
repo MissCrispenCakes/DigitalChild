@@ -34,6 +34,7 @@ htmlcov/
 Thumbs.db
 /.LittleRainbow
 .vscode/
+
 # MkDocs build output
 /site/
 alignmentissue_*.PNG

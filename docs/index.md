@@ -14,6 +14,8 @@ ______________________________________________________________________
 
 - :rainbow:{ .lg .middle } __LittleRainbowRights__
 
+  ______________________________________________________________________
+
   **Status:** Active | **Scope:** Global (194 countries)
 
   Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard. Presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
@@ -23,6 +25,8 @@ ______________________________________________________________________
   [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 
 - :material-hand-heart:{ .lg .middle } __SGBV-UPR__
+
+  ______________________________________________________________________
 
   **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
 
@@ -48,17 +52,25 @@ ______________________________________________________________________
 
 - :material-database:{ .lg .middle } __Open Data__
 
+  ______________________________________________________________________
+
   All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
 - :material-code-tags:{ .lg .middle } __Open Source Code__
+
+  ______________________________________________________________________
 
   Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
 
 - :material-book-open-variant:{ .lg .middle } __Documentation__
 
+  ______________________________________________________________________
+
   Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
 
 - :material-shield-check:{ .lg .middle } __Research Quality__
+
+  ______________________________________________________________________
 
   Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
 
