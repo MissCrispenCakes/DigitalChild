@@ -44,19 +44,27 @@ The repository and analysis tools are ready for expansion to incorporate this ne
 
 -   :material-file-document:{ .lg .middle } **UPR Document Analysis**
 
-Systematic analysis of UPR recommendations across countries
+    ---
+
+    Systematic analysis of UPR recommendations across countries
 
 -   :material-tag-multiple:{ .lg .middle } **SGBV-Specific Tagging**
 
-Identification of SGBV-related recommendations and themes
+    ---
+
+    Identification of SGBV-related recommendations and themes
 
 -   :material-chart-timeline:{ .lg .middle } **Longitudinal Tracking**
 
-How SGBV recommendations evolve across UPR cycles
+    ---
+
+    How SGBV recommendations evolve across UPR cycles
 
 -   :material-earth:{ .lg .middle } **Global Coverage**
 
-Analysis across all UN member states
+    ---
+
+    Analysis across all UN member states
 
 </div>
 

@@ -25,7 +25,9 @@ ______________________________________________________________________
 
 -   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
-**Status:** Active | **Scope:** Global (194 countries)
+    ---
+
+    **Status:** Active | **Scope:** Global (194 countries)
 
     Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
 
@@ -39,7 +41,9 @@ ______________________________________________________________________
 
 -   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
-**Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
+    ---
+
+    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
 
     Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
 
@@ -65,19 +69,27 @@ ______________________________________________________________________
 
 -   :material-database:{ .lg .middle } __Open Data__
 
-All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
+    ---
+
+    All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
 -   :material-code-tags:{ .lg .middle } __Open Source Code__
 
-Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
+    ---
+
+    Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
 
 -   :material-book-open-variant:{ .lg .middle } __Documentation__
 
-Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
+    ---
+
+    Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
 
 -   :material-shield-check:{ .lg .middle } __Research Quality__
 
-Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
+    ---
+
+    Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
 
 </div>
 
