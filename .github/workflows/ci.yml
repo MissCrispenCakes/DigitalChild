@@ -123,4 +123,14 @@ jobs:
 
       - name: Check Markdown formatting
         run: |
-          mdformat --check README.md docs/
+          # Check README
+          mdformat --check README.md
+
+          # Check all docs except files with grid cards (which use --- in list items)
+          find docs -name "*.md" \
+            ! -path "docs/index.md" \
+            ! -path "docs/getting-started/quickstart.md" \
+            ! -path "docs/projects/littlerainbowrights/index.md" \
+            ! -path "docs/projects/sgbv/index.md" \
+            ! -path "docs/scorecard/index.md" \
+            -exec mdformat --check {} +
