@@ -179,7 +179,7 @@ The pipeline has 3 modes:
 
 === "scraper (default)"
 
-````txt
+````
 **Complete workflow:** Scrape → Process → Tag → Export
 
 ```bash
@@ -189,7 +189,7 @@ python pipeline_runner.py --source au_policy
 
 === "urls"
 
-````txt
+````
 **From static URLs:** Process from `configs/url_dict/*.json`
 
 ```bash
@@ -199,7 +199,7 @@ python pipeline_runner.py --mode urls --source upr
 
 === "scorecard"
 
-````txt
+````
 **Indicator workflow:** Enrich → Export → Validate
 
 ```bash
@@ -293,7 +293,6 @@ python pipeline_runner.py --mode urls --source upr
   [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
 
 </div>
-```
 
 ## Troubleshooting
 
