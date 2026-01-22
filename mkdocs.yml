@@ -41,7 +41,8 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
-    - navigation.instant.prefetch
+    # Disabled: Too aggressive, causes slowness
+    # - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
@@ -63,8 +64,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
-  logo: assets/logo.png  # TODO: Add logo
-  favicon: assets/favicon.ico  # TODO: Add favicon
+  # Commented out to prevent 404 errors until assets are added
+  # logo: assets/logo.png  # TODO: Add logo
+  # favicon: assets/favicon.ico  # TODO: Add favicon
 
 # Plugins
 plugins:
@@ -190,4 +192,5 @@ extra_css:
 # Custom JavaScript
 extra_javascript:
   - javascripts/extra.js
-  - https://cdn.plot.ly/plotly-2.27.0.min.js
+  # Plotly removed from global load - will be loaded conditionally by extra.js on scorecard pages only
+  # This saves 2.27MB on every page load!

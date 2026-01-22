@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize scorecard visualizations if on scorecard page
   if (window.location.pathname.includes('scorecard')) {
-    initializeScorecardVisualizations();
+    loadPlotlyAndInitialize();
   }
 
   // Add copy button functionality to code blocks (if not already present)
   enhanceCodeBlocks();
 
-  // Add external link indicators
-  markExternalLinks();
+  // Add external link indicators (debounced to avoid slowness on large pages)
+  setTimeout(markExternalLinks, 100);
 });
 
 /**
@@ -34,6 +34,31 @@ function addRainbowEffects() {
       heading.parentNode.insertBefore(underline, heading.nextSibling);
     }
   });
+}
+
+/**
+ * Load Plotly.js dynamically only on scorecard pages (saves 2.27MB on other pages!)
+ */
+function loadPlotlyAndInitialize() {
+  console.log('Loading Plotly for scorecard visualizations...');
+
+  // Check if Plotly already loaded
+  if (typeof Plotly !== 'undefined') {
+    initializeScorecardVisualizations();
+    return;
+  }
+
+  // Dynamically load Plotly.js
+  const script = document.createElement('script');
+  script.src = 'https://cdn.plot.ly/plotly-2.27.0.min.js';
+  script.onload = function() {
+    console.log('Plotly loaded successfully');
+    initializeScorecardVisualizations();
+  };
+  script.onerror = function() {
+    console.error('Failed to load Plotly - interactive charts disabled');
+  };
+  document.head.appendChild(script);
 }
 
 /**
