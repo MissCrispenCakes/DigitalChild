@@ -9,9 +9,9 @@
 ## Example
 
 {
-  "filters": {
-    "region": "Africa",
-    "country": "Kenya",
-    "tags": ["ChildRights", "LGBTQ"]
-  }
+"filters": {
+"region": "Africa",
+"country": "Kenya",
+"tags": ["ChildRights", "LGBTQ"]
+}
 }

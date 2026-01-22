@@ -38,3 +38,6 @@ Thumbs.db
 /site/
 alignmentissue_*.PNG
 docs/index.md.backup
+
+# Presentation materials (local only)
+presentations/QueerAI_Slides_Data.pdf
