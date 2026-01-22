@@ -1,0 +1,6 @@
+# Grid cards use --- horizontal rules inside list items which mdformat doesn't support
+docs/index.md
+docs/getting-started/quickstart.md
+docs/projects/littlerainbowrights/index.md
+docs/projects/sgbv/index.md
+docs/scorecard/index.md
