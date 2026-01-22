@@ -46,7 +46,7 @@ This directory contains comprehensive documentation for the **DigitalChild** pip
 
 ### `/docs` (Root)
 
-Core documentation and project overview:
+Core documentation and project overview (not website content):
 
 - Architecture overview
 - FAQ and glossary
@@ -98,6 +98,19 @@ Format specifications and conventions:
 - Document type standards
 - ISO country/region mapping
 - Scraper structure
+
+### `/docs/website` (Website Content)
+
+MkDocs website-specific content (separated from core documentation):
+
+- `index.md` - Website landing page
+- `getting-started/` - Installation and quickstart guides for new users
+- `projects/` - Project overview pages (LittleRainbowRights, SGBV-UPR)
+- `scorecard/` - Interactive scorecard visualizations and data explorer
+- `javascripts/` - Custom JavaScript for website functionality
+- `stylesheets/` - Custom CSS for website styling
+
+**Note:** This content is for the public-facing website (grimdata.org), while documentation in `/docs` root and subdirectories is for developers and researchers working with the pipeline.
 
 ## Key Features Documented
 

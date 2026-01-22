@@ -69,7 +69,7 @@ The LittleRainbowRights scorecard tracks these key indicators:
 1. **DPA Independence** - Data Protection Authority autonomy
 1. **Content Moderation** - Regulations on harmful content removal
 
-[View Full Scorecard](../../scorecard/index.md){ .md-button .md-button--primary }
+[View Full Scorecard](../scorecard/index.md){ .md-button .md-button--primary }
 
 ## Regional Analysis
 
@@ -146,7 +146,7 @@ regional_summary = df.groupby('Region').agg({
 })
 ```
 
-[Installation Guide](../../getting-started/installation.md) | [API Documentation](../../ARCHITECTURE.md)
+[Installation Guide](../getting-started/installation.md) | [API Documentation](../../ARCHITECTURE.md)
 
 ### For Advocates
 
@@ -176,7 +176,7 @@ Insights for:
 
     Interactive charts showing indicators across countries
 
-    [:octicons-arrow-right-24: Explore Data](../../scorecard/index.md)
+    [:octicons-arrow-right-24: Explore Data](../scorecard/index.md)
 
 -   :material-table-search:{ .lg .middle } **Data Explorer**
 
@@ -184,7 +184,7 @@ Insights for:
 
     Filter and search through all indicators
 
-    [:octicons-arrow-right-24: Search Data](../../scorecard/explorer.md)
+    [:octicons-arrow-right-24: Search Data](../scorecard/explorer.md)
 
 -   :material-download:{ .lg .middle } **Export Data**
 
@@ -200,7 +200,7 @@ Insights for:
 
     Run the analysis yourself on your own machine
 
-    [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
+    [:octicons-arrow-right-24: Quick Start](../getting-started/quickstart.md)
 
 </div>
 
@@ -260,7 +260,7 @@ This project follows strict ethical guidelines:
 
 ## Related Projects
 
-- **[GRIMdata](../../index.md)** - Main project hub
+- **[GRIMdata](../index.md)** - Main project hub
 - **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis ([GitHub](https://github.com/MissCrispenCakes/HumanRights) - *private, under construction*)
 - **[DigitalChild Pipeline](https://github.com/MissCrispenCakes/DigitalChild)** - Technical implementation
 

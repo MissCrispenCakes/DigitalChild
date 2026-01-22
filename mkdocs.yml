@@ -132,13 +132,13 @@ extra:
 
 # Navigation
 nav:
-  - GRIMdata Home: index.md
+  - GRIMdata Home: website/index.md
   - Projects:
       - LittleRainbowRights:
-          - Project Overview: projects/littlerainbowrights/index.md
+          - Project Overview: website/projects/littlerainbowrights/index.md
           - Getting Started:
-              - Installation: getting-started/installation.md
-              - Quick Start: getting-started/quickstart.md
+              - Installation: website/getting-started/installation.md
+              - Quick Start: website/getting-started/quickstart.md
               - First Run Errors: guides/FIRST_RUN_ERRORS.md
               - FAQ: FAQ.md
           - User Guides:
@@ -146,8 +146,8 @@ nav:
               - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
               - Validators Usage: guides/VALIDATORS_USAGE.md
           - Scorecard:
-              - Visualization: scorecard/index.md
-              - Data Explorer: scorecard/explorer.md
+              - Visualization: website/scorecard/index.md
+              - Data Explorer: website/scorecard/explorer.md
           - Documentation:
               - Architecture: ARCHITECTURE.md
               - Glossary: GLOSSARY.md
@@ -179,17 +179,17 @@ nav:
                   - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
                   - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
       - SGBV-UPR:
-          - Project Overview: projects/sgbv/index.md
+          - Project Overview: website/projects/sgbv/index.md
   - About:
       - Research Context: RESEARCH_CONTEXT.md
       - Contributing: CONTRIBUTING.md
 
 # Custom CSS
 extra_css:
-  - stylesheets/extra.css
+  - website/stylesheets/extra.css
 
 # Custom JavaScript
 extra_javascript:
-  - javascripts/extra.js
+  - website/javascripts/extra.js
   # Plotly removed from global load - will be loaded conditionally by extra.js on scorecard pages only
   # This saves 2.27MB on every page load!
