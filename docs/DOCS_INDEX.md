@@ -2,13 +2,14 @@
 
 This index lists all documentation files in `docs/` organized by category.
 
-**Total: 29 documentation files** (as of January 2026)
+**Total: 38 documentation files** (as of January 2026)
 
 ______________________________________________________________________
 
 ## 📚 Core Documentation (Root)
 
 - `../README.md` → Project quickstart, badges, installation
+- `index.md` → GRIMdata homepage (landing page)
 - `README.md` → Documentation overview and navigation
 - `DOCS_INDEX.md` → This index
 - `ARCHITECTURE.md` → System architecture and components
@@ -16,17 +17,45 @@ ______________________________________________________________________
 - `GLOSSARY.md` → Definitions of key terms
 - `DATA_GOVERNANCE.md` → Privacy, ethics, data handling policies
 - `ROADMAP.md` → Project roadmap and phases
+- `CONTRIBUTING.md` → Contribution guidelines (also in root)
 
 ______________________________________________________________________
 
-## 📖 Guides (guides/)
+## 🚀 Getting Started (getting-started/)
 
-User-facing operational guides:
+New user guides:
+
+- `getting-started/installation.md` → Installation and setup instructions
+- `getting-started/quickstart.md` → Quick start guide for first-time users
+
+______________________________________________________________________
+
+## 📖 User Guides (guides/)
+
+Operational guides for users:
 
 - `guides/RUNBOOK.md` → Comprehensive commands for all operations
 - `guides/FIRST_RUN_ERRORS.md` → Troubleshooting first-run issues
 - `guides/SCORECARD_WORKFLOW.md` → Complete scorecard system guide
 - `guides/VALIDATORS_USAGE.md` → Using the validation framework
+
+______________________________________________________________________
+
+## 🌈 Projects (projects/)
+
+Project-specific documentation:
+
+- `projects/littlerainbowrights/index.md` → LittleRainbowRights project overview
+- `projects/sgbv/index.md` → SGBV-UPR project overview
+
+______________________________________________________________________
+
+## 📊 Scorecard (scorecard/)
+
+Scorecard visualization and data:
+
+- `scorecard/index.md` → Scorecard visualization and indicators
+- `scorecard/explorer.md` → Data explorer interface
 
 ______________________________________________________________________
 
@@ -59,6 +88,7 @@ Technical standards and schemas:
 - `standards/TAGS_CONFIG_FORMAT.md` → Tag configuration structure
 - `standards/RECOMMENDATIONS_CONFIG_FORMAT.md` → Recommendations config format
 - `standards/COMPARISON_CONFIG_FORMAT.md` → Comparison config format
+- `standards/FILTERS_CONFIG_FORMAT.md` → Filters configuration format
 - `standards/SCRAPER_STRUCTURE.md` → Scraper implementation guide
 
 ______________________________________________________________________
@@ -82,17 +112,20 @@ These files live in the project root, not docs/:
 
 - `../LICENSE` → MIT License for code
 - `../LICENSE-DATA` → CC BY 4.0 License for data/docs
-- `../CONTRIBUTING.md` → Contribution guidelines
-- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md` → Security policies and vulnerability reporting
-- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff` → Academic citation format
-- `https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md` → AI assistant context
+- `../SECURITY.md` → Security policies and vulnerability reporting
+- `../CITATION.cff` → Academic citation format
+- `../CLAUDE.md` → AI assistant context
+- `../DEPLOYMENT_GUIDE.md` → Deployment instructions
 
 ______________________________________________________________________
 
 ## Notes
 
 - Documentation reorganized January 2026 for better navigation
+- getting-started/ = new user onboarding
 - guides/ = operational how-tos
+- projects/ = project-specific overviews
+- scorecard/ = data visualization and exploration
 - planning/ = future features and feasibility
 - reviews/ = analysis and test summaries
 - standards/ = technical specifications

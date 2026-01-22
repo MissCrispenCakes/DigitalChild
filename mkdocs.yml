@@ -12,7 +12,7 @@ edit_uri: edit/basecamp/docs/
 
 # Copyright
 copyright: |
-  &copy; 2025 GRIMdata<br>
+  &copy; 2026 GRIMdata<br>
   LittleRainbowRights: <a href="https://github.com/MissCrispenCakes/DigitalChild">DigitalChild repo</a> |
   SGBV-UPR: <a href="https://github.com/MissCrispenCakes/HumanRights">HumanRights repo</a>
 
@@ -163,6 +163,7 @@ nav:
                   - Tags Config: standards/TAGS_CONFIG_FORMAT.md
                   - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
                   - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
+                  - Filters Config: standards/FILTERS_CONFIG_FORMAT.md
                   - ISO Mapping: standards/ISO_MAPPING.md
               - Notes:
                   - Directory Structure: notes/DIRECTORY_STRUCTURE.md
