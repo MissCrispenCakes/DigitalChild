@@ -26,33 +26,18 @@
   background: var(--rainbow-gradient);
 }
 
-/* Card grid styling - target only ul/li elements, not all children */
+/* Card grid styling - consolidated rules */
 .md-typeset .grid.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   margin: 2rem 0;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   list-style: none;
   padding: 0;
-}
-
-/* Target only list items that are actual cards */
-.md-typeset .grid.cards > li {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.2rem;
-  padding: 2rem;
-  transition: all 0.2s;
-  box-sizing: border-box;
-  overflow: visible;
-  margin: 0;
-}
-
-.md-typeset .grid.cards > li:hover {
-  border-color: var(--md-accent-fg-color);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
+  align-items: stretch;
 }
 
 /* Prevent grid cards from breaking layout */
@@ -61,20 +46,27 @@
   overflow-x: hidden;
 }
 
-/* Hide any empty list items */
-.md-typeset .grid.cards > li:empty {
-  display: none;
-}
-
-/* Ensure all cards have equal height in a row */
-.md-typeset .grid.cards {
-  align-items: stretch;
-}
-
+/* Target only list items that are actual cards */
 .md-typeset .grid.cards > li {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.md-typeset .grid.cards > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Hide any empty list items */
+.md-typeset .grid.cards > li:empty {
+  display: none;
 }
 
 /* Remove any pseudo-elements that might create ghost boxes */

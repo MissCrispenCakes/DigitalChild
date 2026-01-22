@@ -124,11 +124,14 @@ The **LittleRainbowRights** project is ready for use:
 
 **SGBV-UPR Research:**
 
-- Vollmer, SC and Vollmer, DT. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
+> Vollmer, SC and Vollmer, DT. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states.
+> *Stellenbosch Law Review*, 33(1), 8–41.
+> [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
 
 **LittleRainbowRights Research:**
 
-- Vollmer, DT and Vollmer, SC. (2025). Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa. Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025.
+> Vollmer, DT and Vollmer, SC. (2025). Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.
+> Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025.
 
 ## Open Source & Licensing
 

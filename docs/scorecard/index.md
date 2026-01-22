@@ -304,7 +304,10 @@ When using scorecard data in publications:
 
 Or:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators. Licensed under CC BY 4.0. Available at: <https://github.com/MissCrispenCakes/DigitalChild>. ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
+> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators.
+> Licensed under CC BY 4.0.
+> Available at: https://github.com/MissCrispenCakes/DigitalChild
+> ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
 ## Limitations & Disclaimers
 
