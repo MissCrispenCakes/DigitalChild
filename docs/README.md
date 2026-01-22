@@ -5,7 +5,7 @@ This directory contains comprehensive documentation for the **DigitalChild** pip
 **GRIMdata** (grimdata.org) hosts multiple human rights research projects:
 
 - **LittleRainbowRights** - Child and LGBTQ+ digital rights (this repository: DigitalChild)
-- **SGBV-UPR** - Sexual and gender-based violence analysis (separate repository: HumanRights)
+- **SGBV-UPR** - Sexual and gender-based violence analysis (separate repository: HumanRights - *currently private, under construction*)
 
 ## Quick Navigation
 

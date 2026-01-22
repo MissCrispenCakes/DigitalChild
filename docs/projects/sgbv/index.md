@@ -7,6 +7,9 @@
 [:octicons-mark-github-16: GitHub Repository](https://github.com/MissCrispenCakes/HumanRights){ .md-button }
 [:material-book-open-variant: Published Paper](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
+!!! warning "Repository Under Construction"
+    The HumanRights repository is currently private and being retooled. Check back soon for access to the updated codebase.
+
 ______________________________________________________________________
 
 ## About This Project
@@ -21,8 +24,8 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
 !!! info "Precursor to LittleRainbowRights"
     This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
 
-!!! note "Separate Repository"
-    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights). Documentation lives here but the pipeline is maintained separately.
+!!! note "Separate Repository (Under Construction)"
+    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress)*. Documentation lives here but the pipeline is maintained separately.
 
 ## Project Status
 
@@ -148,7 +151,7 @@ Interactive visualizations will include:
 Data and findings are available through:
 
 - **Journal publication** - [Vollmer & Vollmer (2022) in Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights)
+- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - under construction)*
 
 ## Integration with GRIMdata
 
@@ -226,8 +229,8 @@ This project builds on and complements:
     - Visualization scripts
     ```
 
-!!! danger "Repository Under Maintenance"
-    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights)
+!!! warning "Repository Under Construction"
+    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress)*
 
 ## Future Development
 

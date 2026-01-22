@@ -261,7 +261,7 @@ This project follows strict ethical guidelines:
 ## Related Projects
 
 - **[GRIMdata](../../index.md)** - Main project hub
-- **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis ([GitHub](https://github.com/MissCrispenCakes/HumanRights))
+- **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis ([GitHub](https://github.com/MissCrispenCakes/HumanRights) - *private, under construction*)
 - **[DigitalChild Pipeline](https://github.com/MissCrispenCakes/DigitalChild)** - Technical implementation
 
 ## Contact
