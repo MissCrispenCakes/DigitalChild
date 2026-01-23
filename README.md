@@ -127,7 +127,7 @@ ______________________________________________________________________
 
 - ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
-- ✅ Validation & security framework - 68 validator tests, 124 total tests passing
+- ✅ Validation & security framework - 124 tests passing (68 validator tests)
 - ✅ Recommendations extraction system - Regex-based with versioning and history tracking
 - ✅ Timeline exports - Global, by-country, and by-region analysis over time
 - ✅ Comparison analytics - Compare tags and recommendations across versions

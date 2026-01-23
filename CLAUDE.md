@@ -62,8 +62,13 @@ Pre-commit runs: black, isort, flake8, markdownlint, trailing-whitespace, end-of
 
 ### Run Tests
 
+**IMPORTANT:** Activate virtual environment first to ensure all dependencies (PyPDF2, python-docx) are available.
+
 ```bash
-# Full test suite (~33 seconds, 56 tests)
+# Activate virtual environment
+source .LittleRainbow/bin/activate  # On Windows: .LittleRainbow\Scripts\activate
+
+# Full test suite (~106 seconds, 124 tests)
 pytest tests/ -v
 
 # Specific test file

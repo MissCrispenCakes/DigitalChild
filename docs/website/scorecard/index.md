@@ -285,13 +285,15 @@ Detects:
 Found an error or have updated information?
 
 1. **Verify** - Check the source URL in `scorecard_main.xlsx`
-1. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
-   - Country name
-   - Indicator
-   - Current value vs. correct value
-   - Authoritative source URL
-1. **Update** - Maintainer reviews and updates
-1. **Re-export** - Updated data regenerated
+2. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
+    ```txt
+    - Country name
+    - Indicator
+    - Current value vs. correct value
+    - Authoritative source URL
+    ```
+3. **Update** - Maintainer reviews and updates
+4. **Re-export** - Updated data regenerated
 
 ## Citing Scorecard Data
 
