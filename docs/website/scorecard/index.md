@@ -174,6 +174,40 @@ Requirement to provide biometric data when registering SIM cards, either directl
 - **Non-biometric ID Required** (1) - ID number/passport required but NOT linked to biometric database (photo on card ≠ biometric unless in facial recognition database)
 - **Mandatory Biometric Registration** (0) - Biometric data (fingerprints, facial scans, iris) required directly OR SIM requires national ID that is biometrically backed
 
+## Composite Scores
+
+In addition to the 10 individual indicators, the scorecard calculates composite metrics:
+
+### Protection Score
+
+**Formula:** Sum of all 10 indicator scores (0–20 scale)
+
+- **Maximum:** 20 (all indicators score 2)
+- **Minimum:** 0 (all indicators score 0)
+- **Interpretation:** Higher scores indicate stronger digital rights protections
+
+**Example:** Country with 7 indicators at (2), 2 at (1), 1 at (0) = 14 + 2 + 0 = 16 Protection Score
+
+### Risk Index
+
+**Formula:** 100 − (Protection_Score / 20 × 100)
+
+- **Maximum:** 100 (no protections, highest risk)
+- **Minimum:** 0 (full protections, lowest risk)
+- **Interpretation:** Inverted scale where higher values indicate greater risk
+
+**Example:** Protection Score of 16 → Risk Index = 100 − (16/20 × 100) = 100 − 80 = 20
+
+### Data Completeness
+
+**Formula:** (Number of known indicators / 10) × 100
+
+- **Maximum:** 100% (all 10 indicators have data)
+- **Minimum:** 0% (no indicator data available)
+- **Interpretation:** Percentage of metrics with verified data for the country
+
+**Note:** Countries with low data completeness (<50%) should be interpreted cautiously as composite scores may not reflect full picture.
+
 ## Exporting Data
 
 ### From the Pipeline
