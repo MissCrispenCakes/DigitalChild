@@ -150,7 +150,7 @@ Both research tracks implement the same transparency principles:
   3. Children's Data Safeguards (legal protections for children's personal data)
   4. Child Online Protection Strategy (national COP strategy or framework)
   5. SOGI Sensitive Data (sexual orientation/gender identity as sensitive data)
-  6. LGBTQ+ Legal Status (will biometric data be weaponized against LGBTQ+ individuals?)
+  6. LGBTQ+ Legal Status (legal recognition and protection of LGBTQ+ individuals)
   7. LGBTQ+ Promotion/Propaganda Offences (laws restricting LGBTQ+ advocacy/discussion)
   8. AI Policy Status (are safeguards in place for high-risk AI?)
   9. DPIA Required for High-Risk AI (Data Protection Impact Assessments mandatory?)
