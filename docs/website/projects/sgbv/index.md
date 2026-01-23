@@ -309,7 +309,7 @@ Ethical considerations for SGBV research:
 - **Confidentiality** - While UPR data is public, we are mindful of implications
 - **Responsible reporting** - Accurate representation of findings
 
-[Full Data Governance Policy](../../DATA_GOVERNANCE.md)
+[Full Data Governance Policy](../../../DATA_GOVERNANCE.md)
 
 ## Support & Contact
 

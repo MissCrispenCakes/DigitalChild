@@ -198,7 +198,7 @@ Insights for:
 
     Download CSV files for your own analysis
 
-    [:octicons-arrow-right-24: Get Data](../../guides/RUNBOOK.md)
+    [:octicons-arrow-right-24: Get Data](../../../guides/RUNBOOK.md)
 
 -   :material-code-tags:{ .lg .middle } **Use the Pipeline**
 
@@ -254,7 +254,7 @@ This project follows strict ethical guidelines:
 - **Regular validation** - Automated checking of 2,543 source URLs
 - **Community review** - Open to corrections and updates
 
-[Read Full Data Governance Policy](../../DATA_GOVERNANCE.md)
+[Read Full Data Governance Policy](../../../DATA_GOVERNANCE.md)
 
 ## Support This Work
 

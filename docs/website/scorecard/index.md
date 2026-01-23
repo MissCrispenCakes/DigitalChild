@@ -356,7 +356,7 @@ For technical documentation:
 
 - **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../FAQ.md)
+- **General questions:** [FAQ](../../FAQ.md)
 
 ______________________________________________________________________
 

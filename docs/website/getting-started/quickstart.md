@@ -266,7 +266,7 @@ python pipeline_runner.py --mode urls --source upr
 
     Dive deeper into pipeline operations
 
-    [:octicons-arrow-right-24: Read Runbook](../guides/RUNBOOK.md)
+    [:octicons-arrow-right-24: Read Runbook](../../guides/RUNBOOK.md)
 
 -   :material-tag-multiple:{ .lg .middle } **Customize Tags**
 
@@ -308,7 +308,7 @@ python pipeline_runner.py --mode urls --source upr
 !!! failure "Tags summary empty"
     Verify documents have text content. Check `data/processed/` for .txt files.
 
-See [First Run Errors](../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
+See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
 
 ## Pro Tips
 
@@ -327,7 +327,7 @@ See [First Run Errors](../guides/FIRST_RUN_ERRORS.md) for comprehensive troubles
 ## Getting Help
 
 - **Documentation:** [Full docs index](../DOCS_INDEX.md)
-- **FAQ:** [Common questions](../FAQ.md)
+- **FAQ:** [Common questions](../../FAQ.md)
 - **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
