@@ -3,9 +3,10 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 Copyright (c) 2025 GRIMdata / LittleRainbowRights
 
 This license applies to:
-- Scorecard data (scorecard_main.xlsx and CSV exports)
+- Scorecard data (scorecard_main.xlsx and CSV exports, all files in data/ directory except data/raw/ see Note 1.)
 - Documentation files (all files in docs/ directory)
 - Configuration files (configs/ directory)
+- Presentation files (presentations/ directory)
 - Analysis outputs and metadata
 
 You are free to:
@@ -42,3 +43,4 @@ NOTES:
 
 3. When using the scorecard data, please cite both this project AND the
    original sources (URLs provided in the data).
+
