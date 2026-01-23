@@ -54,7 +54,8 @@ jobs:
           download_file "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf" "data/raw/au_policy/AU_Digital_ID_2022.pdf"
           download_file "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf" "data/raw/au_policy/AU_Data_Policy_2022.pdf"
           download_file "https://africaportal.org/wp-content/uploads/2023/06/Building-an-Enabling-Environment-for-Inclusive-Digital-Transformation-Africa-R_DQzy95E.pdf" "data/raw/au_policy/AU_Digital_Economy_2021.pdf"
-          download_file "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf" "data/raw/au_policy/AU_Free_Trade_2012.pdf"
+          # AfCFTA Agreement - tralac.org mirror used due to SSL timeout with official au.int source
+          download_file "https://www.tralac.org/documents/resources/african-union/1870-agreement-establishing-the-afcfta-kigali-draft-text-march-2018-1/file.html" "data/raw/au_policy/AU_Free_Trade_2012.pdf"
           download_file "https://smartafrica.org/wp-content/uploads/2023/11/70029-eng_ai-for-africa-blueprint-min.pdf" "data/raw/au_policy/AU_AI_Africa_2021.pdf"
 
           # Count successfully downloaded files

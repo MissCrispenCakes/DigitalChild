@@ -26,7 +26,10 @@ URLS = {
     "AU_Digital_ID_2022": "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf",
     "AU_Data_Policy_2022": "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf",
     "AU_Digital_Economy_2021": "https://africaportal.org/wp-content/uploads/2023/06/Building-an-Enabling-Environment-for-Inclusive-Digital-Transformation-Africa-R_DQzy95E.pdf",
-    "AU_Free_Trade_2012": "https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf",
+    # AfCFTA Agreement (Kigali Draft, March 2018)
+    # NOTE: tralac.org mirror used due to SSL timeout issues with official au.int source
+    # Official URL (often unreliable): https://au.int/sites/default/files/treaties/36437-treaty-consolidated_text_on_cfta_-_en.pdf
+    "AU_Free_Trade_2012": "https://www.tralac.org/documents/resources/african-union/1870-agreement-establishing-the-afcfta-kigali-draft-text-march-2018-1/file.html",
     "AU_AI_Africa_2021": "https://smartafrica.org/wp-content/uploads/2023/11/70029-eng_ai-for-africa-blueprint-min.pdf",
 }
 
