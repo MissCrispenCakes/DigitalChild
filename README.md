@@ -71,6 +71,8 @@ Digital systems (AI, surveillance, biometric identification, identity verificati
 
 This pipeline tracks digital rights deployments across 194 countries, enabling evidence-based decisions BEFORE consequences become irreversible.
 
+**Research approach:** We document facts and analyze enforcement mechanisms without imposing Western-centric values. Our methodology recognizes cultural context while focusing on protecting vulnerable populations' autonomy. See [Data Governance](docs/DATA_GOVERNANCE.md#-cultural-sensitivity-research-stance) for our cultural sensitivity framework.
+
 **Methodological foundation:** [Research Context](docs/RESEARCH_CONTEXT.md) | **Published work:** [Vollmer & Vollmer (2022)](https://doi.org/10.47348/SLR/2022/i1a1)
 
 ______________________________________________________________________
@@ -276,7 +278,7 @@ Data sources tracked with 2,543 validated URLs ensuring transparency and verific
 - GitHub Pages for documentation
 - MkDocs Material for website
 
-**Maintained by:** PhD student as part of human rights research (please be patient with response times!)
+**Maintained by:** PhD student (passion project, please be patient with response times!)
 
 ______________________________________________________________________
 

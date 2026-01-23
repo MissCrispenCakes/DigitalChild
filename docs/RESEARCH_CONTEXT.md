@@ -112,6 +112,40 @@ When decisions about vulnerable populations' rights are made without evidence, t
 - Technology companies making irreversible decisions about data collection
 - Institutions failing to protect fundamental rights (access, control, privacy, security)
 
+### Cultural Sensitivity and Non-Imposing Analysis
+
+This research examines human rights policies across 194 countries with vastly different cultural, legal, and religious contexts. For topics like LGBTQ+ rights and child protection—where perspectives differ dramatically across societies—our methodology must distinguish between objective measurement and value imposition.
+
+**Three-part analytical framework:**
+
+1. **Document what policies exist** (objective measurement)
+   - What laws are on the books?
+   - What enforcement mechanisms are available?
+   - What data collection systems are deployed?
+
+2. **Analyze enforcement mechanisms** (technical assessment)
+   - Evaluate by what policies **require in order to be enforced at scale**
+   - Track enforcement primitives: Verify → Register → Retain → Link → Deactivate
+   - Assess technical capability and infrastructure deployment
+
+3. **Evaluate impact on vulnerable populations** (research focus)
+   - How do these systems affect autonomy and self-determination?
+   - What are the risks of weaponization against marginalized groups?
+   - Do implementations help or harm vulnerable populations?
+
+**What we do NOT do:**
+
+- ❌ Impose Western-centric values about what laws "should" exist
+- ❌ Oversimplify complex cultural contexts
+- ❌ Prescribe policy solutions
+- ❌ Ignore regional differences in legal traditions
+
+**Why this matters:**
+
+A project tracking LGBTQ+ criminalization and biometric data collection must acknowledge that while we document facts objectively, our analysis **explicitly focuses on protecting vulnerable populations from harm**. This is not value-neutral research—our research question is whether systems help or harm marginalized groups—but it is methodologically rigorous in separating measurement from interpretation.
+
+See [Data Governance: Cultural Sensitivity](DATA_GOVERNANCE.md#-cultural-sensitivity-research-stance) for full framework.
+
 ______________________________________________________________________
 
 ## How This Principle Informs GRIMdata Projects

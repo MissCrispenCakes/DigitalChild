@@ -274,7 +274,7 @@ python pipeline_runner.py --mode urls --source upr
 
     Add your own tag patterns
 
-    [:octicons-arrow-right-24: Tags Config Format](../standards/TAGS_CONFIG_FORMAT.md)
+    [:octicons-arrow-right-24: Tags Config Format](../../standards/TAGS_CONFIG_FORMAT.md)
 
 -   :material-chart-bar:{ .lg .middle } **Explore Scorecard**
 
@@ -282,7 +282,7 @@ python pipeline_runner.py --mode urls --source upr
 
     Understand country indicators
 
-    [:octicons-arrow-right-24: Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md)
+    [:octicons-arrow-right-24: Scorecard Workflow](../../guides/SCORECARD_WORKFLOW.md)
 
 -   :material-cog:{ .lg .middle } **Add Scrapers**
 
@@ -290,7 +290,7 @@ python pipeline_runner.py --mode urls --source upr
 
     Build scrapers for new sources
 
-    [:octicons-arrow-right-24: Scraper Structure](../standards/SCRAPER_STRUCTURE.md)
+    [:octicons-arrow-right-24: Scraper Structure](../../standards/SCRAPER_STRUCTURE.md)
 
 </div>
 
@@ -326,7 +326,7 @@ See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troub
 
 ## Getting Help
 
-- **Documentation:** [Full docs index](../DOCS_INDEX.md)
+- **Documentation:** [Full docs index](../../DOCS_INDEX.md)
 - **FAQ:** [Common questions](../../FAQ.md)
 - **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)

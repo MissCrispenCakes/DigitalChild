@@ -370,7 +370,7 @@ Or:
 
 ## Future Enhancements
 
-Planned features (see [Roadmap](../ROADMAP.md)):
+Planned features (see [Roadmap](../../ROADMAP.md)):
 
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
@@ -384,9 +384,9 @@ Planned features (see [Roadmap](../ROADMAP.md)):
 
 For technical documentation:
 
-- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md) - Complete system overview
-- [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
-- [Architecture](../ARCHITECTURE.md) - System design
+- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md) - Complete system overview
+- [Metadata Schema](../../standards/METADATA_SCHEMA.md) - Data structure
+- [Architecture](../../ARCHITECTURE.md) - System design
 
 ## Support & Feedback
 

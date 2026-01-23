@@ -105,7 +105,7 @@ The data explorer will include:
 
 ## Development Timeline
 
-See [Roadmap](../ROADMAP.md) for detailed timeline.
+See [Roadmap](../../ROADMAP.md) for detailed timeline.
 
 - **Phase 3 (Current):** CSV exports and basic visualization
 - **Phase 4 (2026):** Interactive dashboard with filters
@@ -116,7 +116,7 @@ See [Roadmap](../ROADMAP.md) for detailed timeline.
 Want to help build the data explorer?
 
 1. Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Avisualization)
-1. Review [contribution guidelines](../CONTRIBUTING.md)
+1. Review [contribution guidelines](../../CONTRIBUTING.md)
 1. Submit pull requests with visualization improvements
 
 Technologies we're considering:
@@ -189,7 +189,7 @@ python explore_scorecard.py
 ## Questions?
 
 - [FAQ](../../FAQ.md)
-- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md)
+- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md)
 - [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
 ______________________________________________________________________

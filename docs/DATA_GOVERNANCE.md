@@ -12,6 +12,31 @@ DigitalChild collects, processes, and analyzes human rights documents to support
 1. **Reproducibility** - Enabling verification and replication of findings
 1. **Responsible use** - Supporting human rights research without causing harm
 
+## 🌍 Cultural Sensitivity & Research Stance
+
+### Non-Imposing Methodology
+
+This project tracks digital rights policies across 194 countries with vastly different cultural, legal, and religious contexts. Human rights standards vary globally, and we recognize that imposing Western-centric values would undermine both academic credibility and ethical research.
+
+**Our approach:**
+
+- ✅ **Document facts without imposing values** - We track what laws exist, not what laws "should" exist
+- ✅ **Acknowledge cultural context** - Analysis recognizes regional differences in legal traditions and social norms
+- ✅ **Include diverse sources** - UN, African Union, regional bodies, and local organizations
+- ✅ **Evaluate mechanisms, not intent** - Focus on enforcement mechanisms (Verify → Register → Retain → Link → Deactivate) rather than stated policy goals
+- ✅ **Avoid oversimplification** - Complex issues are presented with nuance and context
+- ✅ **Transparent about perspective** - We acknowledge our research stance focuses on vulnerable populations' autonomy
+
+**Why this matters:**
+
+For a project examining LGBTQ+ rights and child protection policies—topics where cultural, religious, and legal perspectives differ dramatically—our methodology must distinguish between:
+
+1. **Documenting what policies exist** (objective measurement)
+2. **Analyzing enforcement mechanisms** (technical assessment)
+3. **Evaluating impact on vulnerable populations** (research focus)
+
+See [Research Context](RESEARCH_CONTEXT.md) for detailed methodology including mechanism-based risk analysis framework.
+
 ## 📜 Data Collection Principles
 
 ### 1. Public Domain Documents Only
@@ -222,14 +247,7 @@ Future expansion may include:
 - Native language processing
 - Cultural context preservation
 
-### Cultural Sensitivity
-
-Human rights standards vary globally. We:
-
-- ✅ Document facts without imposing Western-centric values
-- ✅ Acknowledge cultural context in analysis
-- ✅ Include diverse sources (UN, AU, regional bodies)
-- ✅ Avoid oversimplification of complex issues
+**Note:** See [Cultural Sensitivity & Research Stance](#-cultural-sensitivity-research-stance) section above for our methodology regarding cultural context and non-imposing analysis.
 
 ## 🔐 Security & Access Control
 
@@ -386,6 +404,13 @@ When reporting data quality issues:
 - Attribution required
 
 ### Data Protection Laws
+
+**Canada (PIPEDA & Provincial Laws):**
+
+- No personal data collection from users
+- Public documents processed as already published
+- Compliance with federal PIPEDA and provincial privacy laws (Quebec Law 25, BC PIPA, AB PIPA)
+- Users responsible for their own institutional compliance
 
 **GDPR (European Union):**
 
