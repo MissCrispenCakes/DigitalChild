@@ -45,6 +45,15 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 ## Indicators Tracked
 
+!!! info "Scoring System"
+    Each indicator uses a 0-1-2 scale where higher scores indicate stronger protections:
+
+    - **2 (Best)** - Comprehensive protections or safeguards in place
+    - **1 (Middle)** - Partial protections or mixed implementation
+    - **0 (Worst)** - No protections, harmful policies, or heightened risk
+
+    Categories are listed from best (2) to worst (0) below. Risk analysis examines **combinations** of indicators (e.g., LGBTQ criminalization × biometric ID linkage).
+
 ### 1. Data Protection Law
 
 Existence of comprehensive data protection legislation governing personal data processing.
@@ -113,10 +122,9 @@ Legal recognition and protection of LGBTQ+ individuals.
 
 **Categories:**
 
-- Criminalization
-- No Specific Protections
-- Some Protections
-- Comprehensive Protections
+- **Comprehensive Protections** (2) - Anti-discrimination laws, marriage recognition, constitutional protections
+- **Legal, No Specific Protections** (1) - Same-sex relations decriminalized but no anti-discrimination protections
+- **Criminalization** (0) - Same-sex relations criminalized under law
 
 ### 7. LGBTQ+ Promotion / Propaganda Offences
 
@@ -156,15 +164,15 @@ Legal requirement to conduct Data Protection Impact Assessments for high-risk AI
 
 ### 10. SIM Card Biometric ID Linkage
 
-Requirement to provide biometric data when registering SIM cards.
+Requirement to provide biometric data when registering SIM cards, either directly or through linkage to biometric national ID systems.
 
 **Sources:** Privacy International; telecom regulators; media reports
 
 **Categories:**
 
-- Mandatory Biometric Registration
-- Optional / Partial
-- Not Required
+- **Not Required** (2) - No ID requirement or minimal registration without biometric linkage
+- **Non-biometric ID Required** (1) - ID number/passport required but NOT linked to biometric database (photo on card ≠ biometric unless in facial recognition database)
+- **Mandatory Biometric Registration** (0) - Biometric data (fingerprints, facial scans, iris) required directly OR SIM requires national ID that is biometrically backed
 
 ## Exporting Data
 
