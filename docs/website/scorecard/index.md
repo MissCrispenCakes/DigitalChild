@@ -62,9 +62,9 @@ Existence of comprehensive data protection legislation governing personal data p
 
 **Categories:**
 
-- Comprehensive Law
-- Draft Legislation
-- No Specific Law
+- **Comprehensive Law** (2) - Enacted data protection legislation with enforcement mechanisms
+- **Draft Legislation** (1) - Bill pending or under consultation
+- **No Specific Law** (0) - No comprehensive data protection law
 
 ### 2. Data Protection Authority Independence (DPA_Independence)
 
@@ -74,9 +74,9 @@ Whether the national Data Protection Authority operates independently from execu
 
 **Categories:**
 
-- Independent Authority
-- Limited Independence
-- No DPA or Dependent Authority
+- **Independent Authority** (2) - DPA operates with full operational and financial independence
+- **Limited Independence** (1) - DPA exists but with constraints (appointments, budget, reporting)
+- **No DPA or Dependent Authority** (0) - No DPA established or DPA fully controlled by executive
 
 ### 3. Children's Data Safeguards
 
@@ -86,9 +86,9 @@ Legal protections specifically addressing children's personal data and digital p
 
 **Categories:**
 
-- Explicit Child Data Protections
-- General Protections Only
-- No Specific Safeguards
+- **Explicit Child Data Protections** (2) - Specific provisions for children's data (parental consent, age verification, special safeguards)
+- **General Protections Only** (1) - Children covered under general data protection but no child-specific provisions
+- **No Specific Safeguards** (0) - No data protection framework or no mention of children
 
 ### 4. Child Online Protection Strategy (COP_Strategy)
 
@@ -98,9 +98,9 @@ Existence of a national child online safety or digital child protection strategy
 
 **Categories:**
 
-- National COP Strategy
-- Partial / Sectoral Measures
-- No Strategy
+- **National COP Strategy** (2) - Comprehensive national child online protection strategy or framework
+- **Partial / Sectoral Measures** (1) - Sectoral initiatives, pilot programs, or digital literacy campaigns
+- **No Strategy** (0) - No national or sectoral child online protection strategy
 
 ### 5. Sensitive Data Protections for SOGI (SOGI_Sensitive_Data)
 
@@ -110,9 +110,9 @@ Whether sexual orientation and gender identity are legally recognized as sensiti
 
 **Categories:**
 
-- Explicitly Protected
-- Implicitly Covered
-- Not Recognized
+- **Explicitly Protected** (2) - Sexual orientation and/or gender identity explicitly listed as sensitive data
+- **Implicitly Covered** (1) - Covered under "sex life" or similar broader categories
+- **Not Recognized** (0) - SOGI not recognized as sensitive data or no data protection law
 
 ### 6. LGBTQ+ Legal Status
 
@@ -134,9 +134,9 @@ Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identitie
 
 **Categories:**
 
-- Criminalized Promotion
-- Restrictive Measures
-- No Restrictions
+- **No Restrictions** (2) - No legal restrictions on LGBTQ+ expression, advocacy, or visibility
+- **Restrictive Measures** (1) - Administrative restrictions, morality codes, or broadcast regulations limiting LGBTQ+ expression
+- **Criminalized Promotion** (0) - Explicit propaganda laws or criminal penalties for LGBTQ+ advocacy/discussion
 
 ### 8. AI Policy Status
 
@@ -146,9 +146,9 @@ Whether a country has adopted a national AI strategy or framework.
 
 **Categories:**
 
-- Comprehensive AI Strategy
-- Framework or Guidelines
-- No Published Policy
+- **Comprehensive AI Strategy** (2) - Adopted national AI strategy with implementation plan and governance framework
+- **Framework or Guidelines** (1) - Draft strategy, policy guidelines, or AI addressed in broader digital transformation plans
+- **No Published Policy** (0) - No AI-specific strategy or framework
 
 ### 9. DPIA Required for High-Risk AI
 
@@ -158,9 +158,9 @@ Legal requirement to conduct Data Protection Impact Assessments for high-risk AI
 
 **Categories:**
 
-- Explicitly Required
-- Partially Required
-- Not Required
+- **Explicitly Required** (2) - Law mandates DPIA for high-risk AI systems (profiling, automated decisions, biometric processing)
+- **Partially Required** (1) - DPIA required for certain processing but not specifically for AI, or optional/recommended
+- **Not Required** (0) - No DPIA requirement or no data protection framework
 
 ### 10. SIM Card Biometric ID Linkage
 
