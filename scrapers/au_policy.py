@@ -19,6 +19,9 @@ URLS = {
     "AU_AI_Strategy_2024": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf",
     "AU_Digital_Compact_2024": "https://au.int/sites/default/files/documents/44005-doc-AU_Digital_Compact_V4.pdf",
     "AU_Digital_Transformation_Strategy_2020": "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf",
+    # Malabo Convention (AU Convention on Cyber Security and Personal Data Protection, 2014)
+    # NOTE: Third-party mirror used due to intermittent connectivity issues with official au.int source
+    # Official URL (often unreliable): https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf
     "AU_Cybersecurity_Data_Protection_Strategy_2014": "https://dataprotection.org.gh/wp-content/uploads/2025/05/Malabo-Convention.pdf",
     "AU_Digital_ID_2022": "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf",
     "AU_Data_Policy_2022": "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf",

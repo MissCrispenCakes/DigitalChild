@@ -49,6 +49,7 @@ jobs:
           download_file "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf" "data/raw/au_policy/AU_AI_Strategy_2024.pdf"
           download_file "https://au.int/sites/default/files/documents/44005-doc-AU_Digital_Compact_V4.pdf" "data/raw/au_policy/AU_Digital_Compact_2024.pdf"
           download_file "https://digitaltransformationcar.org/assets/docs/38507-doc-DTS_for_Africa_2020-2030_English.pdf" "data/raw/au_policy/AU_Digital_Transformation_Strategy_2020.pdf"
+          # Malabo Convention - Third-party mirror used due to intermittent connectivity with official au.int source
           download_file "https://dataprotection.org.gh/wp-content/uploads/2025/05/Malabo-Convention.pdf" "data/raw/au_policy/AU_Cybersecurity_Data_Protection_Strategy_2014.pdf"
           download_file "https://techpolicyadvisory.com/wp-content/uploads/2025/03/African-Union-AU-Interoperability-Framework-for-Digital-ID.pdf" "data/raw/au_policy/AU_Digital_ID_2022.pdf"
           download_file "https://youngafricanpolicyresearch.org/wp-content/uploads/2023/07/42078-doc-AU-DATA-POLICY-FRAMEWORK-ENG1.pdf" "data/raw/au_policy/AU_Data_Policy_2022.pdf"
