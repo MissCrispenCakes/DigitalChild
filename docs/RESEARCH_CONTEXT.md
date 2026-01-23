@@ -144,6 +144,7 @@ Both research tracks implement the same transparency principles:
 **The tracking response:**
 
 - 194 countries, 10 indicators tracking **actual policy deployments**:
+  ```txt
   1. Data Protection Law (comprehensive legislation governing personal data)
   2. DPA Independence (Data Protection Authority independence from executive control)
   3. Children's Data Safeguards (legal protections for children's personal data)
@@ -154,6 +155,7 @@ Both research tracks implement the same transparency principles:
   8. AI Policy Status (are safeguards in place for high-risk AI?)
   9. DPIA Required for High-Risk AI (Data Protection Impact Assessments mandatory?)
   10. SIM Biometric ID Linkage (does biometric registration enable access or tracking?)
+  ```
 - 2,543 validated source URLs from UNESCO, UNCTAD, ILGA, UNICEF
 - Automated validation, change detection, format standardization
 - Planned NLTK integration for sentiment analysis, topic modeling, outcome assessment
