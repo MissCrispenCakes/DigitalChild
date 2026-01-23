@@ -119,19 +119,17 @@ This research examines human rights policies across 194 countries with vastly di
 **Three-part analytical framework:**
 
 1. **Document what policies exist** (objective measurement)
-   - What laws are on the books?
-   - What enforcement mechanisms are available?
-   - What data collection systems are deployed?
-
+    - What laws are on the books?
+    - What enforcement mechanisms are available?
+    - What data collection systems are deployed?
 2. **Analyze enforcement mechanisms** (technical assessment)
-   - Evaluate by what policies **require in order to be enforced at scale**
-   - Track enforcement primitives: Verify → Register → Retain → Link → Deactivate
-   - Assess technical capability and infrastructure deployment
-
+    - Evaluate by what policies **require in order to be enforced at scale**
+    - Track enforcement primitives: Verify → Register → Retain → Link → Deactivate
+    - Assess technical capability and infrastructure deployment
 3. **Evaluate impact on vulnerable populations** (research focus)
-   - How do these systems affect autonomy and self-determination?
-   - What are the risks of weaponization against marginalized groups?
-   - Do implementations help or harm vulnerable populations?
+    - How do these systems affect autonomy and self-determination?
+    - What are the risks of weaponization against marginalized groups?
+    - Do implementations help or harm vulnerable populations?
 
 **What we do NOT do:**
 
