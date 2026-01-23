@@ -59,7 +59,7 @@ ______________________________________________________________________
 
 ## 🎯 Why This Work Matters
 
-Digital systems (AI, surveillance, age verification, content moderation) are being deployed rapidly affecting children and LGBTQ+ youth. We don't yet know whether these systems help or harm—but decisions are being made RIGHT NOW with permanent consequences.
+Digital systems (AI, surveillance, biometric identification, identity verification systems) are being deployed rapidly affecting children and LGBTQ+ youth. We don't yet know whether these systems help or harm—but decisions are being made RIGHT NOW with permanent consequences.
 
 **The problem:** Who should control vulnerable populations' digital rights?
 

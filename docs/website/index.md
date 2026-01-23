@@ -31,11 +31,11 @@ ______________________________________________________________________
 
     Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features open-source pipeline, validated data sources, and comprehensive scorecard.
 
-    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 2025)
+    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
 
     **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)
 
-    [Vollmer & Vollmer (2026), Zenodo](https://doi.org/10.5281/zenodo.18318099)
+    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318099)
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
