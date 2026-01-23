@@ -50,8 +50,8 @@ python -m venv .LittleRainbow
 
 ````
 ```bash
-conda create -n digitalchild python=3.12
-conda activate digitalchild
+conda create -n LittleRainbow python=3.12
+conda activate LittleRainbow
 ```
 ````
 
