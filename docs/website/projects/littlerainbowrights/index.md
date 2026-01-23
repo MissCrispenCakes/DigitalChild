@@ -50,24 +50,30 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
 The LittleRainbowRights scorecard tracks these key indicators:
 
-### Child-Specific Indicators
+### Data Protection & Privacy
 
-1. **Child Online Protection** - Legislation and policies safeguarding children in digital environments
-1. **Age Verification Requirements** - Mandatory age checks for accessing online services
+1. **Data Protection Law** - Comprehensive data protection legislation governing personal data processing
+2. **DPA Independence** - Data Protection Authority operates independently from executive control
+3. **Children's Data Safeguards** - Legal protections for children's personal data and digital privacy
+4. **SOGI Sensitive Data** - Sexual orientation and gender identity recognized as sensitive personal data
 
-### LGBTQ+-Specific Indicators
+### Child Protection
 
-3. **LGBTQ+ Legal Status** - Recognition and protections for LGBTQ+ individuals
-1. **Promotion/Propaganda Laws** - Restrictions on LGBTQ+ content and discussion
+5. **Child Online Protection Strategy** - National child online safety or digital child protection strategy
 
-### Universal Digital Rights
+### LGBTQ+ Rights
 
-5. **AI Policy Status** - National strategies addressing AI and automation
-1. **Data Protection Law** - Comprehensive data protection legislation
-1. **SIM Card Biometric Registration** - Privacy concerns with biometric requirements
-1. **Encryption Backdoors** - Government surveillance capabilities
-1. **DPA Independence** - Data Protection Authority autonomy
-1. **Content Moderation** - Regulations on harmful content removal
+6. **LGBTQ+ Legal Status** - Legal recognition and protection of LGBTQ+ individuals
+7. **LGBTQ+ Promotion/Propaganda Offences** - Laws restricting discussion or advocacy of LGBTQ+ identities
+
+### Emerging Technologies
+
+8. **AI Policy Status** - National AI strategy or framework adoption
+9. **DPIA Required for High-Risk AI** - Data Protection Impact Assessments required for high-risk AI systems
+
+### Digital Identification
+
+10. **SIM Card Biometric ID Linkage** - Requirement to provide biometric data when registering SIM cards
 
 [View Full Scorecard](../scorecard/index.md){ .md-button .md-button--primary }
 

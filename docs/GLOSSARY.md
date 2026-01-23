@@ -322,85 +322,85 @@ Security module for input validation
 
 ## Data Analysis Terms
 
-### Age Verification
-
-Technical or legal requirement to confirm user age before granting access
-
-- Indicator #10 in scorecard
-- Increasingly common for social media and adult content
-- Privacy concerns around data collection
-
 ### AI Policy Status
 
-Whether a country has published policy on artificial intelligence
+Whether a country has adopted a national AI strategy or framework addressing artificial intelligence governance and development
 
-- Indicator #1 in scorecard
+- Indicator #8 in scorecard
 - Includes strategies, frameworks, regulations
 - Tracked via UNESCO, UNCTAD, national government sources
 
-### Child Online Protection
+### Child Online Protection Strategy (COP_Strategy)
 
-Measures to safeguard children in digital environments
+National strategy or framework for safeguarding children in digital environments
 
 - Indicator #4 in scorecard
-- Includes laws, policies, filtering, education
+- Comprehensive plans vs. partial/sectoral measures
 - Critical for DigitalChild research focus
 
-### Content Moderation
+### Children's Data Safeguards
 
-Rules and systems for removing harmful online content
+Legal protections specifically addressing children's personal data and digital privacy
 
-- Indicator #9 in scorecard
-- Includes platform policies, government regulations
-- Balance between safety and free expression
+- Indicator #3 in scorecard
+- Explicit protections vs. general data protection laws
+- Covers consent, data minimization, age-appropriate processing
 
-### Data Protection Authority (DPA)
+### Data Protection Authority (DPA) Independence
 
-Independent agency overseeing data protection compliance
+Whether the national Data Protection Authority operates independently from executive control
 
-- Indicator #8 tracks DPA independence
-- Key for enforcing privacy rights
-- Not all countries have established DPAs
+- Indicator #2 in scorecard
+- Key for enforcing privacy rights effectively
+- Independence crucial for accountability
 
 ### Data Protection Law
 
-Legislation governing collection, use, and storage of personal data
+Comprehensive legislation governing collection, use, and storage of personal data
 
-- Indicator #2 in scorecard
+- Indicator #1 in scorecard
 - Examples: GDPR (Europe), POPIA (South Africa), NDPR (Nigeria)
 - Foundation for digital privacy rights
 
-### Encryption Backdoor
+### DPIA Required for High-Risk AI
 
-Intentional weakness in encryption allowing government access
+Legal requirement to conduct Data Protection Impact Assessments for high-risk AI systems
 
-- Indicator #6 in scorecard
-- Controversial trade-off between security and surveillance
-- Impacts privacy and data protection
+- Indicator #9 in scorecard
+- Addresses algorithmic accountability
+- Emerging requirement in modern AI regulation
 
 ### LGBTQ+ Legal Status
 
-Legal recognition and protections for LGBTQ+ individuals
+Legal recognition and protection of LGBTQ+ individuals
 
-- Indicator #3 in scorecard
-- Ranges from criminalization to full equality
-- Sourced from ILGA World, State-Sponsored Homophobia report
+- Indicator #6 in scorecard
+- Ranges from criminalization to comprehensive protections
+- Sourced from ILGA World, Human Rights Watch
 
 ### Promotion/Propaganda Laws
 
-Legislation restricting discussion or "promotion" of LGBTQ+ topics
+Legislation restricting discussion, visibility, or advocacy related to LGBTQ+ identities
 
 - Indicator #7 in scorecard
 - Often targets education, media, public discourse
 - Human rights concern for freedom of expression
 
-### SIM Card Biometric Registration
+### SIM Card Biometric ID Linkage
 
-Requirement to provide biometric data (fingerprints, facial recognition) to obtain mobile SIM card
+Requirement to provide biometric data when registering mobile SIM cards
 
-- Indicator #5 in scorecard
+- Indicator #10 in scorecard
 - Privacy and surveillance implications
 - Disproportionately impacts vulnerable populations
+
+### SOGI Sensitive Data
+
+Whether sexual orientation and gender identity are legally recognized as sensitive personal data requiring special protection
+
+- Indicator #5 in scorecard
+- Explicit vs. implicit coverage in data protection laws
+- Critical for LGBTQ+ digital privacy
 
 ## Research Terms
 

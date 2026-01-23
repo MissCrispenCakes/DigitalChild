@@ -119,18 +119,18 @@ The `fallback_handler` automatically tries different processors until one succee
 
 The scorecard tracks **10 human rights indicators** across **194 countries**:
 
-1. AI Policy Status
-1. Data Protection Law
-1. LGBTQ+ Legal Status
-1. Child Online Protection
-1. SIM Card Biometric Requirements
-1. Encryption Backdoors
-1. LGBTQ+ Promotion/Propaganda Laws
-1. Data Protection Authority Independence
-1. Content Moderation Regulations
-1. Age Verification Requirements
+1. **Data Protection Law** - Comprehensive data protection legislation
+2. **DPA Independence** - Data Protection Authority independence from executive control
+3. **Children's Data Safeguards** - Legal protections for children's personal data
+4. **Child Online Protection Strategy** - National child online safety strategy
+5. **SOGI Sensitive Data** - Sexual orientation/gender identity as sensitive data
+6. **LGBTQ+ Legal Status** - Legal recognition and protections for LGBTQ+ individuals
+7. **LGBTQ+ Promotion/Propaganda Offences** - Laws restricting LGBTQ+ discussion/advocacy
+8. **AI Policy Status** - National AI strategy or framework
+9. **DPIA Required for High-Risk AI** - Data Protection Impact Assessments for high-risk AI
+10. **SIM Card Biometric ID Linkage** - Biometric data required for SIM registration
 
-Each indicator includes the current status and source URL for verification.
+Each indicator includes the current status, categories, and source URLs for verification.
 
 ### How does tagging work?
 

@@ -45,25 +45,11 @@ For now, you can explore the data through CSV exports or the data explorer below
 
 ## Indicators Tracked
 
-### 1. AI Policy Status
+### 1. Data Protection Law
 
-Whether a country has published an official AI strategy, framework, or comprehensive regulation.
+Existence of comprehensive data protection legislation governing personal data processing.
 
-**Sources:** UNESCO AI Policy Observatory, UNCTAD, National Government websites
-
-**Categories:**
-
-- Comprehensive AI Strategy
-- Framework or Guidelines
-- No Published Policy
-
-### 2. Data Protection Law
-
-Existence of comprehensive data protection legislation.
-
-**Sources:** UNCTAD Data Protection and Privacy Legislation, National Government websites
-
-**Examples:** GDPR (EU), POPIA (South Africa), NDPR (Nigeria)
+**Sources:** UNCTAD Data Protection and Privacy Legislation Database; national statutes
 
 **Categories:**
 
@@ -71,11 +57,59 @@ Existence of comprehensive data protection legislation.
 - Draft Legislation
 - No Specific Law
 
-### 3. LGBTQ+ Legal Status
+### 2. Data Protection Authority Independence (DPA_Independence)
 
-Legal recognition and protections for LGBTQ+ individuals.
+Whether the national Data Protection Authority operates independently from executive control.
 
-**Sources:** ILGA World State-Sponsored Homophobia Report, Human Rights Watch
+**Sources:** UNCTAD; DPA statutes; academic and regulatory analysis
+
+**Categories:**
+
+- Independent Authority
+- Limited Independence
+- No DPA or Dependent Authority
+
+### 3. Children's Data Safeguards
+
+Legal protections specifically addressing children's personal data and digital privacy.
+
+**Sources:** National legislation; UNICEF; data protection laws
+
+**Categories:**
+
+- Explicit Child Data Protections
+- General Protections Only
+- No Specific Safeguards
+
+### 4. Child Online Protection Strategy (COP_Strategy)
+
+Existence of a national child online safety or digital child protection strategy.
+
+**Sources:** UNICEF; ITU; national policy documents
+
+**Categories:**
+
+- National COP Strategy
+- Partial / Sectoral Measures
+- No Strategy
+
+### 5. Sensitive Data Protections for SOGI (SOGI_Sensitive_Data)
+
+Whether sexual orientation and gender identity are legally recognized as sensitive personal data.
+
+**Sources:** Data protection statutes; ILGA World
+
+**Categories:**
+
+- Explicitly Protected
+- Implicitly Covered
+- Not Recognized
+
+### 6. LGBTQ+ Legal Status
+
+Legal recognition and protection of LGBTQ+ individuals.
+
+**Sources:** ILGA World; Human Rights Watch
 
 **Categories:**
 
@@ -84,89 +118,53 @@ Legal recognition and protections for LGBTQ+ individuals.
 - Some Protections
 - Comprehensive Protections
 
-### 4. Child Online Protection
+### 7. LGBTQ+ Promotion / Propaganda Offences
 
-Measures to safeguard children in digital environments.
+Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identities.
 
-**Sources:** UNICEF, ITU, National Legislation
-
-**Categories:**
-
-- Comprehensive Framework
-- Partial Measures
-- No Specific Policy
-
-### 5. SIM Card Biometric Registration
-
-Requirement to provide biometric data for mobile SIM card registration.
-
-**Sources:** Privacy International, National Telecom Regulators, Media Reports
+**Sources:** ILGA World; national criminal codes
 
 **Categories:**
 
-- Mandatory Biometric
-- Optional or Partial
-- Not Required
-
-### 6. Encryption Backdoors
-
-Government-mandated weaknesses in encryption for surveillance.
-
-**Sources:** Access Now, EFF, National Legislation
-
-**Categories:**
-
-- Backdoors Mandated
-- Proposed Legislation
-- No Known Backdoors
-
-### 7. LGBTQ+ Promotion/Propaganda Laws
-
-Legislation restricting discussion or "promotion" of LGBTQ+ topics.
-
-**Sources:** ILGA World, Human Rights Watch
-
-**Categories:**
-
-- Criminalized "Promotion"
+- Criminalized Promotion
 - Restrictive Measures
 - No Restrictions
 
-### 8. Data Protection Authority Independence
+### 8. AI Policy Status
 
-Independence of the national Data Protection Authority.
+Whether a country has adopted a national AI strategy or framework.
 
-**Sources:** UNCTAD, National DPA websites, Academic Research
-
-**Categories:**
-
-- Independent Authority
-- Limited Independence
-- No DPA or Dependent
-
-### 9. Content Moderation Regulations
-
-Regulations governing removal of harmful online content.
-
-**Sources:** UNESCO, National Legislation, Academic Research
+**Sources:** UNESCO AI Policy Observatory; UNCTAD; national governments
 
 **Categories:**
 
-- Comprehensive Regulation
-- Sectoral Regulations
-- No Specific Regulation
+- Comprehensive AI Strategy
+- Framework or Guidelines
+- No Published Policy
 
-### 10. Age Verification Requirements
+### 9. DPIA Required for High-Risk AI
 
-Requirements to verify user age before accessing online services.
+Legal requirement to conduct Data Protection Impact Assessments for high-risk AI systems.
 
-**Sources:** National Legislation, UNICEF, Media Reports
+**Sources:** AI laws; data protection statutes; regulatory guidance
 
 **Categories:**
 
-- Mandatory Age Verification
-- Platform Self-Regulation
-- No Requirements
+- Explicitly Required
+- Partially Required
+- Not Required
+
+### 10. SIM Card Biometric ID Linkage
+
+Requirement to provide biometric data when registering SIM cards.
+
+**Sources:** Privacy International; telecom regulators; media reports
+
+**Categories:**
+
+- Mandatory Biometric Registration
+- Optional / Partial
+- Not Required
 
 ## Exporting Data
 
