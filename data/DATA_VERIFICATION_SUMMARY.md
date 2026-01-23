@@ -34,10 +34,12 @@ All conflicts occurred 7-11 months before Sept 2025 conference and represent fil
 
 ## File Organization
 
-**Canonical file:** `data/scorecard/scorecard_main_presentation.xlsx`
+**Canonical file:** `data/scorecard/scorecard_main.xlsx`
 
 - Most complete source documentation
 - Primary reference for research and citations
+- Pipeline reads from this location
+- Convenience copy maintained at `scorecard.xlsx` (root)
 
 **Visualization file:** `data/scorecard/Global_QueerAI_Child_Scorecard_MASTER.xlsx`
 
@@ -46,8 +48,9 @@ All conflicts occurred 7-11 months before Sept 2025 conference and represent fil
 
 **Archive:** `data/archive/`
 
-- Historical versions with date stamps
+- Versioned backups with date stamps (e.g., `scorecard_2026-01-22.xlsx`)
 - Previous scorecard iterations
+- Pre-rename versions for historical reference
 
 ## Recommendations
 

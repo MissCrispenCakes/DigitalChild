@@ -4,10 +4,10 @@ This directory contains the primary scorecard data files used for the LittleRain
 
 ## Primary Files
 
-### `scorecard_main_presentation.xlsx` ⭐ CANONICAL
+### `scorecard_main.xlsx` ⭐ CANONICAL
 
-- **Purpose:** Main scorecard data used for conference presentation
-- **Date:** September 13, 2025 (post-conference)
+- **Purpose:** Main scorecard data (source of truth for all pipeline operations)
+- **Date:** January 22, 2026 (last updated)
 - **Structure:** 7 sheets (UN_194, SADC, ECOWAS, Global, Sheet1, Sheet5, Sheet2)
 - **Content:**
   - 194 countries with 10 indicators
@@ -15,6 +15,8 @@ This directory contains the primary scorecard data files used for the LittleRain
   - Calculated indices (protection_index, Risk_index)
   - Regional analysis sheets for SADC (16 countries) and ECOWAS (13 countries)
 - **Use this for:** Primary data analysis, generating reports, updating indicators
+- **Pipeline reads from:** `data/scorecard/scorecard_main.xlsx`
+- **Convenience copy:** `scorecard.xlsx` (root directory, for quick reference)
 
 ### `Global_QueerAI_Child_Scorecard_MASTER.xlsx`
 
@@ -57,10 +59,11 @@ All files track these 10 indicators:
 
 When updating scorecard data:
 
-1. Use `scorecard_main_presentation.xlsx` as the primary source
+1. Edit `data/scorecard/scorecard_main.xlsx` (canonical source)
 1. Verify sources using `_GLOBAL_Policy_Matrix_UPR_Main_FINAL.xlsx`
 1. Update visualizations using `Global_QueerAI_Child_Scorecard_MASTER.xlsx`
-1. Export new CSVs to `data/exports/`
+1. Run pipeline to export new CSVs to `data/exports/`
+1. Pipeline automatically updates convenience copy `scorecard.xlsx` in root
 
 ## Citation
 

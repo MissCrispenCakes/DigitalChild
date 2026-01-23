@@ -52,6 +52,8 @@ Vollmer, DT and Vollmer, SC. (2025). Queer AI for the digital child: Examining t
 
 Conference presentation data files are located in `data/scorecard/`:
 
-- `scorecard_main_presentation.xlsx` - Primary data with color-coded regional groups
+- `scorecard_main.xlsx` - Primary data with color-coded regional groups (canonical source)
 - `Global_QueerAI_Child_Scorecard_MASTER.xlsx` - Visualization version
 - `_GLOBAL_Policy_Matrix_UPR_Main_FINAL.xlsx` - Source verification
+
+Note: The original `scorecard_main_presentation.xlsx` has been renamed to `scorecard_main.xlsx` and archived at `data/archive/scorecard_main_presentation_2026-01-22.xlsx`.

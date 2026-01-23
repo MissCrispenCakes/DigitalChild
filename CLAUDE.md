@@ -144,7 +144,7 @@ Each source has both a requests-based scraper and a Selenium variant (`_sel` suf
 
 Separate workflow for country-level indicators (10 metrics per country):
 
-1. **Load**: `processors/scorecard.py` reads `scorecard_main.xlsx`
+1. **Load**: `processors/scorecard.py` reads `data/scorecard/scorecard_main.xlsx` (canonical source)
 1. **Enrich**: `processors/scorecard_enricher.py` adds indicators to document metadata
 1. **Export**: `processors/scorecard_export.py` generates CSV exports
 1. **Validate**: `processors/scorecard_validator.py` checks source URLs
@@ -353,10 +353,11 @@ def convert(input_path, output_dir):
 
 ### Update Scorecard Data
 
-1. Edit `scorecard_main.xlsx` with new data
+1. Edit `data/scorecard/scorecard_main.xlsx` (canonical source) with new data
 1. Re-enrich: `python processors/scorecard_enricher.py`
 1. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
 1. Validate: `python processors/scorecard_validator.py`
+1. Update convenience copy: `cp data/scorecard/scorecard_main.xlsx scorecard.xlsx`
 
 ## File Naming Standards
 

@@ -14,7 +14,9 @@ import pandas as pd
 from processors.logger import get_logger
 from scrapers.country_utils import normalize_country
 
-SCORECARD_FILE = os.path.join(os.path.dirname(__file__), "..", "scorecard_main.xlsx")
+SCORECARD_FILE = os.path.join(
+    os.path.dirname(__file__), "..", "data", "scorecard", "scorecard_main.xlsx"
+)
 
 # Indicator columns (value + source pairs)
 INDICATOR_COLUMNS = [
