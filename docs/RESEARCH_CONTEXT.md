@@ -147,8 +147,8 @@ Both research tracks implement the same transparency principles:
   ```txt
   1. Data Protection Law (comprehensive legislation governing personal data)
   2. DPA Independence (Data Protection Authority independence from executive control)
-  3. Children's Data Safeguards (legal protections for children's personal data)
-  4. Child Online Protection Strategy (national COP strategy or framework)
+  3. Children's Data Safeguards (child-specific data governance safeguards in binding law)
+  4. Child Online Protection Strategy (national COP framework addressing online harms)
   5. SOGI Sensitive Data (sexual orientation/gender identity as sensitive data)
   6. LGBTQ+ Legal Status (legal recognition and protection of LGBTQ+ individuals)
   7. LGBTQ+ Promotion/Propaganda Offences (laws restricting LGBTQ+ advocacy/discussion)
@@ -224,8 +224,8 @@ LittleRainbowRights is designed to detect when "agreeable" stances become enforc
 - `SIM_Biometric_ID_Linkage` - Biometric requirement for digital access
 
 **Protection framework indicators:**
-- `Children_Data_Safeguards` - Legal protections for children's data
-- `COP_Strategy` - National child online protection strategy
+- `Children_Data_Safeguards` - Child-specific data governance safeguards in binding law
+- `COP_Strategy` - National COP framework addressing online harms
 
 **Privacy safeguards:**
 - `SOGI_Sensitive_Data` - Sexual orientation/gender identity as protected sensitive data

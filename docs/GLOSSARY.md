@@ -332,19 +332,20 @@ Whether a country has adopted a national AI strategy or framework addressing art
 
 ### Child Online Protection Strategy (COP_Strategy)
 
-National strategy or framework for safeguarding children in digital environments
+National COP strategy/framework addressing online harms to children
 
 - Indicator #4 in scorecard
-- Comprehensive plans vs. partial/sectoral measures
-- Critical for DigitalChild research focus
+- Includes governance bodies, reporting/hotlines, digital literacy, platform safety guidance, sectoral online safety rules
+- May include parental empowerment measures
+- Comprehensive national frameworks vs. partial/sectoral initiatives
 
 ### Children's Data Safeguards
 
-Legal protections specifically addressing children's personal data and digital privacy
+Binding child-specific privacy/data-protection safeguards in law or regulation (not general child welfare law)
 
 - Indicator #3 in scorecard
-- Explicit protections vs. general data protection laws
-- Covers consent, data minimization, age-appropriate processing
+- Data governance provisions: limits on profiling/ads for children, heightened consent standards, age-appropriate design, best interests principle, retention/minimization, minors' rights (erase/access)
+- Explicit child-specific data protections vs. general data protection coverage
 
 ### Data Protection Authority (DPA) Independence
 

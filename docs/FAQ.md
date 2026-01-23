@@ -121,8 +121,8 @@ The scorecard tracks **10 human rights indicators** across **194 countries**:
 
 1. **Data Protection Law** - Comprehensive data protection legislation
 2. **DPA Independence** - Data Protection Authority independence from executive control
-3. **Children's Data Safeguards** - Legal protections for children's personal data
-4. **Child Online Protection Strategy** - National child online safety strategy
+3. **Children's Data Safeguards** - Child-specific data governance safeguards in binding law
+4. **Child Online Protection Strategy** - National COP framework addressing online harms
 5. **SOGI Sensitive Data** - Sexual orientation/gender identity as sensitive data
 6. **LGBTQ+ Legal Status** - Legal recognition and protections for LGBTQ+ individuals
 7. **LGBTQ+ Promotion/Propaganda Offences** - Laws restricting LGBTQ+ discussion/advocacy

@@ -54,7 +54,7 @@ For now, you can explore the data through CSV exports or the data explorer below
 
     Categories are listed from best (2) to worst (0) below. Risk analysis examines **combinations** of indicators (e.g., LGBTQ criminalization × biometric ID linkage).
 
-### 1. Data Protection Law
+### 1. Data Protection Law (Data_Protection_Law)
 
 Existence of comprehensive data protection legislation governing personal data processing.
 
@@ -78,28 +78,28 @@ Whether the national Data Protection Authority operates independently from execu
 - **Limited Independence** (1) - DPA exists but with constraints (appointments, budget, reporting)
 - **No DPA or Dependent Authority** (0) - No DPA established or DPA fully controlled by executive
 
-### 3. Children's Data Safeguards
+### 3. Children's Data Safeguards (Children_Data_Safeguards)
 
-Legal protections specifically addressing children's personal data and digital privacy.
+Binding child-specific privacy/data-protection safeguards in law or regulation (not general child welfare law).
 
 **Sources:** National legislation; UNICEF; data protection laws
 
 **Categories:**
 
-- **Explicit Child Data Protections** (2) - Specific provisions for children's data (parental consent, age verification, special safeguards)
-- **General Protections Only** (1) - Children covered under general data protection but no child-specific provisions
-- **No Specific Safeguards** (0) - No data protection framework or no mention of children
+- **Explicit Child Data Protections** (2) - Child-specific data governance provisions: limits on profiling/ads for children, heightened consent standards, age-appropriate design, "best interests of child" principle, retention/minimization rules, minors' rights (erase/access)
+- **General Protections Only** (1) - Children covered under general data protection but no child-specific data governance provisions
+- **No Specific Safeguards** (0) - No data protection framework or no child-specific safeguards
 
 ### 4. Child Online Protection Strategy (COP_Strategy)
 
-Existence of a national child online safety or digital child protection strategy.
+National COP strategy/framework addressing online harms to children; may include parental tools/rights.
 
 **Sources:** UNICEF; ITU; national policy documents
 
 **Categories:**
 
-- **National COP Strategy** (2) - Comprehensive national child online protection strategy or framework
-- **Partial / Sectoral Measures** (1) - Sectoral initiatives, pilot programs, or digital literacy campaigns
+- **National COP Strategy** (2) - Comprehensive national COP framework: governance bodies, reporting/hotlines, digital literacy programs, platform safety guidance, sectoral online safety rules, parental empowerment measures
+- **Partial / Sectoral Measures** (1) - Sectoral initiatives, pilot programs, awareness campaigns, or piecemeal safety measures
 - **No Strategy** (0) - No national or sectoral child online protection strategy
 
 ### 5. Sensitive Data Protections for SOGI (SOGI_Sensitive_Data)
@@ -114,7 +114,7 @@ Whether sexual orientation and gender identity are legally recognized as sensiti
 - **Implicitly Covered** (1) - Covered under "sex life" or similar broader categories
 - **Not Recognized** (0) - SOGI not recognized as sensitive data or no data protection law
 
-### 6. LGBTQ+ Legal Status
+### 6. LGBTQ+ Legal Status (LGBTQ_Legal_Status)
 
 Legal recognition and protection of LGBTQ+ individuals.
 
@@ -126,7 +126,7 @@ Legal recognition and protection of LGBTQ+ individuals.
 - **Legal, No Specific Protections** (1) - Same-sex relations decriminalized but no anti-discrimination protections
 - **Criminalization** (0) - Same-sex relations criminalized under law
 
-### 7. LGBTQ+ Promotion / Propaganda Offences
+### 7. LGBTQ+ Promotion / Propaganda Offences (Promotion_Propaganda_Offences)
 
 Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identities.
 
@@ -138,7 +138,7 @@ Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identitie
 - **Restrictive Measures** (1) - Administrative restrictions, morality codes, or broadcast regulations limiting LGBTQ+ expression
 - **Criminalized Promotion** (0) - Explicit propaganda laws or criminal penalties for LGBTQ+ advocacy/discussion
 
-### 8. AI Policy Status
+### 8. AI Policy Status (AI_Policy_Status)
 
 Whether a country has adopted a national AI strategy or framework.
 
@@ -150,7 +150,7 @@ Whether a country has adopted a national AI strategy or framework.
 - **Framework or Guidelines** (1) - Draft strategy, policy guidelines, or AI addressed in broader digital transformation plans
 - **No Published Policy** (0) - No AI-specific strategy or framework
 
-### 9. DPIA Required for High-Risk AI
+### 9. DPIA Required for High-Risk AI (DPIA_Required_High_Risk_AI)
 
 Legal requirement to conduct Data Protection Impact Assessments for high-risk AI systems.
 
@@ -162,7 +162,7 @@ Legal requirement to conduct Data Protection Impact Assessments for high-risk AI
 - **Partially Required** (1) - DPIA required for certain processing but not specifically for AI, or optional/recommended
 - **Not Required** (0) - No DPIA requirement or no data protection framework
 
-### 10. SIM Card Biometric ID Linkage
+### 10. SIM Card Biometric ID Linkage (SIM_Biometric_ID_Linkage)
 
 Requirement to provide biometric data when registering SIM cards, either directly or through linkage to biometric national ID systems.
 
