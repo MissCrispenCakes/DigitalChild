@@ -59,11 +59,22 @@ All files track these 10 indicators:
 
 When updating scorecard data:
 
-1. Edit `data/scorecard/scorecard_main.xlsx` (canonical source)
+1. Edit `data/scorecard/scorecard_main.xlsx` (canonical source - 4 sheets: UN_194, SADC, ECOWAS, Global)
 1. Verify sources using `_GLOBAL_Policy_Matrix_UPR_Main_FINAL.xlsx`
 1. Update visualizations using `Global_QueerAI_Child_Scorecard_MASTER.xlsx`
-1. Run pipeline to export new CSVs to `data/exports/`
-1. Pipeline automatically updates convenience copy `scorecard.xlsx` in root
+1. Run multi-format export:
+   ```bash
+   python utils/export_scorecard_formats.py
+   ```
+   This generates convenience copies in root (UN_194 sheet only):
+   - `scorecard.xlsx` (Excel format)
+   - `scorecard.ods` (OpenDocument for LibreOffice)
+   - `scorecard.csv` (CSV for maximum compatibility)
+   - `scorecard.gsheet.json` (Google Sheets upload instructions)
+1. Run pipeline to export new CSVs to `data/exports/`:
+   ```bash
+   python pipeline_runner.py --mode scorecard --scorecard-action export
+   ```
 
 ## Citation
 

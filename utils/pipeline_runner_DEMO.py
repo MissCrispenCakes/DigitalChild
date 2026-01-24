@@ -33,7 +33,7 @@ def save_metadata(metadata):
 
 def update_metadata(doc_id, source, country, region, year, tags, tag_version="tags_v1"):
     metadata = load_metadata()
-    now = datetime.utcnow().isoformat() + "Z"
+    now = datetime.now(datetime.UTC).isoformat().replace("+00:00", "Z")
 
     existing = next((d for d in metadata["documents"] if d["id"] == doc_id), None)
 

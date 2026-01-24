@@ -15,7 +15,7 @@
 
 **Core principle:** Evidence-based governance, not governance by assumption.
 
-[:octicons-book-16: Read Full Research Context](RESEARCH_CONTEXT.md){ .md-button }
+[:octicons-book-16: Read Full Research Context](../RESEARCH_CONTEXT.md){ .md-button }
 
 ______________________________________________________________________
 
@@ -169,7 +169,7 @@ GRIMdata is maintained by an independent researcher alongside other work. Both p
 - **GitHub (LittleRainbowRights):** [DigitalChild Repository](https://github.com/MissCrispenCakes/DigitalChild)
 - **GitHub (SGBV-UPR):** Repository under reconstruction (see [SGBV project page](projects/sgbv/index.md))
 - **Issues & Discussions:** Use [DigitalChild repository](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Contributing:** See [Contributing Guidelines](CONTRIBUTING.md)
+- **Contributing:** See [Contributing Guidelines](../CONTRIBUTING.md)
 
 ## Support This Work
 

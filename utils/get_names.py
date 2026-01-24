@@ -1,3 +1,14 @@
+"""
+One-off utility script for generating URL dictionaries from direct links.
+
+This script reads URLs from configs/direct_links_main.txt and generates
+Python dictionary code with cleaned keys based on domain and path.
+
+NOTE: This is a standalone utility script with hard-coded relative paths.
+It is not part of the main pipeline and is intended for manual, one-time use
+during URL dictionary preparation.
+"""
+
 import os
 from urllib.parse import urlparse
 

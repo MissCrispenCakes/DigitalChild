@@ -1,3 +1,14 @@
+"""
+One-off utility script for cleaning and processing URL dictionaries.
+
+This script processes raw link files and generates cleaned URL dictionaries
+for various sources (ACERWC, ACHPR, AU Treaty, OHCHR, UNICEF, UPR).
+
+NOTE: This is a standalone utility script with hard-coded relative paths.
+It is not part of the main pipeline and is intended for manual, one-time use
+during data preparation workflows.
+"""
+
 import json
 import os
 import re

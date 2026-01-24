@@ -209,7 +209,7 @@ python pipeline_runner.py  # Success
 
 ### More Help
 
-See [First Run Errors](../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
+See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troubleshooting.
 
 ## Next Steps
 

@@ -62,7 +62,7 @@ def load_scorecard(filepath: str = None, force_reload: bool = False) -> pd.DataF
         raise FileNotFoundError(f"Scorecard file not found: {filepath}")
 
     logger.info(f"Loading scorecard from {filepath}")
-    df = pd.read_excel(filepath, sheet_name="Sheet1")
+    df = pd.read_excel(filepath, sheet_name="UN_194")
 
     # Clean column names
     df.columns = df.columns.str.strip()

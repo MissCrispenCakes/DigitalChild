@@ -42,3 +42,9 @@ docs/index.md.backup
 
 # Presentation materials (local only)
 presentations/QueerAI_Slides_Data.pdf
+
+# Excel temporary lock files
+~$*
+
+# Miscellaneous
+repo-cleaning/

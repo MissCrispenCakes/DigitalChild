@@ -55,7 +55,6 @@ files = {
     "configs/tags_v1.json": '{\n  "rules": {}\n}\n',
     "data/metadata/metadata.json": '{\n  "documents": []\n}\n',
     "docs/README.md": "# Project README\n",
-    "docs/FIRST_RUN_ERRORS.md": "# First Run Errors Guide\n",
     "tests/test_year_extraction.py": "# Year extraction test placeholder\n",
     "tests/test_csv_footer.py": "# CSV footer test placeholder\n",
     "tests/test_logging.py": "# Logging test placeholder\n",

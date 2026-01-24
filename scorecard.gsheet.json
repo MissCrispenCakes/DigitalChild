@@ -1,0 +1,35 @@
+{
+  "format": "Google Sheets",
+  "source": "data/scorecard/scorecard_main.xlsx",
+  "sheet": "UN_194",
+  "exported": "2026-01-23T17:56:14.327459",
+  "rows": 194,
+  "columns": 44,
+  "instructions": {
+    "upload": [
+      "1. Go to https://sheets.google.com",
+      "2. File \u2192 Import \u2192 Upload",
+      "3. Select scorecard.xlsx or scorecard.ods",
+      "4. Choose 'Replace spreadsheet' or 'Create new'"
+    ],
+    "api": [
+      "Use Google Sheets API v4 to upload programmatically",
+      "See: https://developers.google.com/sheets/api/guides/create"
+    ]
+  },
+  "data_preview": {
+    "countries": 194,
+    "indicators": [
+      "RowNumber",
+      "Region - Broad",
+      "Region - Specific",
+      "Data_Protection_Law",
+      "DPA_Independence",
+      "Children_Data_Safeguards",
+      "COP_Strategy",
+      "SOGI_Sensitive_Data",
+      "LGBTQ_Legal_Status",
+      "Promotion_Propaganda_Offences"
+    ]
+  }
+}
