@@ -23,7 +23,9 @@ class APIError(Exception):
     message = "An internal error occurred"
     details = {}
 
-    def __init__(self, message=None, status_code=None, error_code=None, details=None):
+    def __init__(  # noqa: B042
+        self, message=None, status_code=None, error_code=None, details=None
+    ):
         """
         Initialize API error with optional overrides
 
@@ -32,6 +34,9 @@ class APIError(Exception):
             status_code: HTTP status code (overrides class default)
             error_code: Error code (overrides class default)
             details: Additional error details
+
+        Note: B042 ignored - keyword args needed for API flexibility,
+        pickle/copy.copy not used in this application.
         """
         super().__init__(message or self.message)
         self.message = message or self.message

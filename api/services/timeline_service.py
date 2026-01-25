@@ -9,7 +9,7 @@ Provides temporal analysis of tags over time with year × tag matrices.
 
 import json
 from collections import defaultdict
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 
 from flask import current_app
 
@@ -63,9 +63,7 @@ def get_tags_timeline(
 
     if country:
         filtered_docs = [
-            d
-            for d in filtered_docs
-            if d.get("country", "").lower() == country.lower()
+            d for d in filtered_docs if d.get("country", "").lower() == country.lower()
         ]
 
     if region:

@@ -55,10 +55,14 @@ def tags_timeline():
 
     # Validate year parameters
     if year_min:
-        year_min = validate_integer(year_min, "year_min", min_value=1900, max_value=2100)
+        year_min = validate_integer(
+            year_min, "year_min", min_value=1900, max_value=2100
+        )
 
     if year_max:
-        year_max = validate_integer(year_max, "year_max", min_value=1900, max_value=2100)
+        year_max = validate_integer(
+            year_max, "year_max", min_value=1900, max_value=2100
+        )
 
     # Validate string parameters
     if version:

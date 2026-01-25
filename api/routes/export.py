@@ -9,7 +9,10 @@ Endpoints for downloading datasets in CSV format.
 
 from flask import Blueprint, Response, request
 
+from api.extensions import limiter
+from api.middleware.auth import optional_api_key
 from api.middleware.error_handlers import APIError
+from api.middleware.rate_limit import rate_limit_export
 from api.services.export_service import generate_export, get_available_formats
 from api.utils.response import success_response
 from api.utils.validators import validate_string
@@ -45,6 +48,8 @@ def list_formats():
 
 
 @export_bp.route("/<format_id>", methods=["GET"])
+@optional_api_key
+@limiter.limit(rate_limit_export)
 def download_export(format_id: str):
     """
     GET /api/export/:format
@@ -56,6 +61,10 @@ def download_export(format_id: str):
 
     Query parameters:
         - version: Tag version (for tags_summary only)
+
+    Rate limiting:
+        - Public: 20 requests/hour
+        - Authenticated: 200 requests/hour
 
     Returns:
         CSV file download with appropriate headers

@@ -92,9 +92,7 @@ def generate_tags_summary_csv(version: str = None) -> str:
 
     # Write rows
     for tag_data in tags:
-        writer.writerow(
-            [tag_data["tag"], tag_data["count"], tag_data["percentage"]]
-        )
+        writer.writerow([tag_data["tag"], tag_data["count"], tag_data["percentage"]])
 
     # Footer
     output.write("\n")

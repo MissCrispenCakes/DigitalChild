@@ -36,8 +36,8 @@ class Config:
     CACHE_DEFAULT_TIMEOUT = int(os.getenv("CACHE_DEFAULT_TIMEOUT", "300"))
 
     # Rate limiting settings
-    RATELIMIT_STORAGE_URL = os.getenv("RATELIMIT_STORAGE_URL", "memory://")
-    RATELIMIT_DEFAULT = os.getenv("RATELIMIT_DEFAULT", "100 per hour")
+    RATELIMIT_STORAGE_URI = os.getenv("RATELIMIT_STORAGE_URI", "memory://")
+    RATELIMIT_PUBLIC = os.getenv("RATELIMIT_PUBLIC", "100 per hour")
     RATELIMIT_AUTHENTICATED = os.getenv("RATELIMIT_AUTHENTICATED", "1000 per hour")
 
     # Data file paths
@@ -89,8 +89,8 @@ class ProductionConfig(Config):
     CACHE_REDIS_URL = os.getenv("CACHE_REDIS_URL", "redis://localhost:6379/0")
 
     # Use Redis for rate limiting in production
-    RATELIMIT_STORAGE_URL = os.getenv(
-        "RATELIMIT_STORAGE_URL", "redis://localhost:6379/1"
+    RATELIMIT_STORAGE_URI = os.getenv(
+        "RATELIMIT_STORAGE_URI", "redis://localhost:6379/1"
     )
 
     @staticmethod

@@ -79,9 +79,7 @@ class TestTagsRoutes:
 
     def test_list_tags_with_multiple_filters(self, client):
         """Test combining multiple filters"""
-        response = client.get(
-            "/api/tags?version=tags_v3&region=Africa&year_min=2020"
-        )
+        response = client.get("/api/tags?version=tags_v3&region=Africa&year_min=2020")
 
         assert response.status_code == 200
         data = json.loads(response.data)

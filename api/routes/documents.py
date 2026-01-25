@@ -9,8 +9,10 @@ Provides endpoints for listing and retrieving document metadata.
 
 from flask import Blueprint, current_app, request
 
-from api.extensions import cache
+from api.extensions import cache, limiter
+from api.middleware.auth import optional_api_key
 from api.middleware.error_handlers import NotFoundError
+from api.middleware.rate_limit import rate_limit_search
 from api.services.metadata_service import get_document, get_documents
 from api.utils.response import paginated_response, success_response
 from api.utils.validators import (
@@ -26,6 +28,8 @@ documents_bp = Blueprint("documents", __name__, url_prefix="/api/documents")
 
 
 @documents_bp.route("", methods=["GET"])
+@optional_api_key
+@limiter.limit(rate_limit_search)
 def list_documents():
     """
     List documents with optional filtering and pagination
@@ -43,6 +47,10 @@ def list_documents():
         - per_page: Items per page (default: 20, max: 100)
         - sort_by: Field to sort by (default: "last_processed")
         - sort_order: "asc" or "desc" (default: "desc")
+
+    Rate limiting:
+        - Public: 200 requests/hour
+        - Authenticated: 2000 requests/hour
 
     Returns:
         200: Paginated list of documents

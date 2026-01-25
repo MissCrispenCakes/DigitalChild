@@ -83,9 +83,7 @@ def get_tag_frequency(
 
     if country:
         filtered_docs = [
-            d
-            for d in filtered_docs
-            if d.get("country", "").lower() == country.lower()
+            d for d in filtered_docs if d.get("country", "").lower() == country.lower()
         ]
 
     if region:
