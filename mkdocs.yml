@@ -122,9 +122,9 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://littlerainbowrights.com
       name: LittleRainbowRights
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX  # TODO: Add Google Analytics ID if desired
+  # analytics:  # Uncomment and add Google Analytics ID if desired
+  #   provider: google
+  #   property: G-XXXXXXXXXX
   alternate:
     - name: English
       link: /

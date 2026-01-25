@@ -479,8 +479,9 @@ Report via [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issu
 
 For sensitive matters not suitable for public issues:
 
-- Email: [YOUR-EMAIL@DOMAIN.COM] <!-- TODO: Add actual email -->
-- Subject line: "[DATA GOVERNANCE] Your concern"
+- Use [GitHub Security Advisories](https://github.com/MissCrispenCakes/DigitalChild/security) for vulnerability reporting
+- Use [GitHub Discussions (Security category)](https://github.com/MissCrispenCakes/DigitalChild/discussions/categories/security) for sensitive data governance concerns
+- Prefix discussion title with "[DATA GOVERNANCE]" for easy identification
 
 ### Collaboration
 
@@ -507,5 +508,3 @@ This project exists to shine light on digital rights protections (or lack thereo
 ______________________________________________________________________
 
 **Last updated:** January 2026
-
-**TODO:** Add security contact email address above

@@ -28,10 +28,32 @@ The scorecard tracks 10 indicators (each with value + source URL):
 1. **COP_Strategy** - Child online protection strategy
 1. **SIM_Biometric_ID_Linkage** - SIM registration and biometric requirements
 
+## Data File Structure
+
+**File**: `data/scorecard/scorecard_main.xlsx`
+
+The scorecard Excel file contains multiple sheets:
+
+- **UN_194** (primary sheet): 194 UN member states with all 10 indicators
+- **SADC**: 16 SADC member states (regional subset)
+- **ECOWAS**: 13 ECOWAS member states (regional subset)
+- **Global**: Scoring rules and methodology documentation
+
+**IMPORTANT**: The `scorecard.py` loader reads from the **UN_194** sheet by default. This sheet contains the complete dataset for all 194 countries.
+
+**Sheet Structure (UN_194)**:
+- Column 1: RowNumber
+- Column 2: Country (full country name)
+- Columns 3-4: Region - Broad, Region - Specific
+- Columns 5+: Indicator value columns paired with _Source columns
+
+Example: `AI_Policy_Status` (value) + `AI_Policy_Status_Source` (URL)
+
 ## Architecture
 
 ```
 scorecard_main.xlsx
+  (UN_194 sheet)
         ↓
     scorecard.py (loader)
         ↓
@@ -311,6 +333,21 @@ pytest tests/test_scorecard.py --cov=processors/scorecard --cov-report=html
 ```
 
 ## Troubleshooting
+
+### Wrong Sheet Name Error
+
+**Problem**: `ValueError: Worksheet named 'X' not found`
+
+**Solution**: The scorecard file has multiple sheets. The loader expects the **UN_194** sheet by default (as of 2026-01-24). If you see this error:
+
+1. Check that `scorecard_main.xlsx` contains a sheet named "UN_194"
+2. Verify the sheet has 194 rows (countries) with all indicator columns
+3. The sheet name is hard-coded in `processors/scorecard.py` line 65:
+   ```python
+   df = pd.read_excel(filepath, sheet_name="UN_194")
+   ```
+
+**Historical Note**: Prior to 2026-01-24, the code expected a sheet named "Sheet1". This was updated to use the properly named "UN_194" sheet for clarity.
 
 ### Country Not Found
 
