@@ -18,7 +18,7 @@ pre-commit run --all-files
 
 DigitalChild (GRIMdata / LittleRainbowRights) is a Python 3.12 data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection.
 
-**Key Tech**: BeautifulSoup4, Selenium, pandas, PyPDF2, pytest
+**Key Tech**: BeautifulSoup4, Selenium, pandas, pypdf, pytest
 
 ## Essential Commands
 
@@ -62,7 +62,7 @@ Pre-commit runs: black, isort, flake8, markdownlint, trailing-whitespace, end-of
 
 ### Run Tests
 
-**IMPORTANT:** Activate virtual environment first to ensure all dependencies (PyPDF2, python-docx) are available.
+**IMPORTANT:** Activate virtual environment first to ensure all dependencies (pypdf, python-docx) are available.
 
 ```bash
 # Activate virtual environment
@@ -400,7 +400,7 @@ Always run `pre-commit run --all-files` before committing. Common auto-fixes:
 
 - **ALWAYS** run `python init_project.py` on fresh clone
 - Test suite takes ~33 seconds for 56 tests
-- PyPDF2 deprecation warning is expected (migration to pypdf planned)
+- pypdf deprecation warning is expected (migration to pypdf planned)
 - Pre-commit hooks are CRITICAL - CI fails if they fail
 - Line length: 88 characters (black standard)
 - Import sorting: isort with `--profile black`

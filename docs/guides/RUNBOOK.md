@@ -371,7 +371,7 @@ which python  # Should show .LittleRainbow/bin/python
 pip install -r requirements.txt
 
 # Check installed packages
-pip list | grep -E "(pandas|requests|beautifulsoup4|PyPDF2|selenium)"
+pip list | grep -E "(pandas|requests|beautifulsoup4|pypdf|selenium)"
 ```
 
 **Test failures:**

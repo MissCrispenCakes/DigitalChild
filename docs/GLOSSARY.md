@@ -161,9 +161,9 @@ Python library for data analysis and manipulation
 File format for presenting documents independent of software/hardware
 
 - Most common format for human rights documents
-- Processed using PyPDF2 in this pipeline
+- Processed using pypdf in this pipeline
 
-### PyPDF2
+### pypdf
 
 Python library for reading and manipulating PDF files
 
@@ -268,7 +268,7 @@ Main entry point script (`pipeline_runner.py`)
 
 Module that converts documents to text
 
-- PDF processor (PyPDF2)
+- PDF processor (pypdf)
 - DOCX processor (python-docx)
 - HTML processor (BeautifulSoup4)
 - Outputs to `data/processed/`

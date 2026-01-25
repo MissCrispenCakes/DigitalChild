@@ -274,7 +274,7 @@ Data sources tracked with 2,543 validated URLs ensuring transparency and verific
 
 **Built with:**
 
-- Python 3.12, BeautifulSoup4, Selenium, pandas, PyPDF2, pytest
+- Python 3.12, BeautifulSoup4, Selenium, pandas, pypdf, pytest
 - GitHub Pages for documentation
 - MkDocs Material for website
 

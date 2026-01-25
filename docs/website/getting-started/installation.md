@@ -70,7 +70,7 @@ This installs:
 - `beautifulsoup4` - HTML parsing
 - `selenium` - Browser automation (optional)
 - `pandas` - Data manipulation
-- `PyPDF2` - PDF processing
+- `pypdf` - PDF processing
 - `python-docx` - Word document processing
 - `openpyxl` - Excel file handling
 - `requests` - HTTP requests

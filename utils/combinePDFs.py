@@ -11,7 +11,7 @@ python utils/combinePDFs.py combined.pdf data/raw/au_policy/AU_AI_Strategy_2024.
 
 import sys
 
-from PyPDF2 import PdfMerger
+from pypdf import PdfMerger
 
 
 def combine_pdfs(pdf_list, output_path="combined.pdf"):

@@ -7,7 +7,7 @@ Converts PDFs to plain text for further processing.
 
 import os
 
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 
 from processors.logger import get_logger
 

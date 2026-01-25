@@ -367,9 +367,9 @@ Two jobs run on push/PR to main, homebase, basecamp branches:
 **Error**: `ModuleNotFoundError: No module named 'processors'`\
 **Fix**: Run commands from project root, not subdirectories
 
-### PyPDF2 Deprecation Warning
+### pypdf Deprecation Warning
 
-Expected warning during tests. The project uses PyPDF2 (will migrate to pypdf later).
+Expected warning during tests. The project uses pypdf (will migrate to pypdf later).
 
 ### Pre-commit Hook Failures
 

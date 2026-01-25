@@ -150,7 +150,7 @@ MkDocs website-specific content (separated from core documentation):
 
 **Purpose:** Pipeline for analyzing child & LGBTQ+ digital protections through automated scraping, processing, and analysis of human rights documents.
 
-**Tech Stack:** Python 3.12, BeautifulSoup4, Selenium, pandas, PyPDF2, pytest
+**Tech Stack:** Python 3.12, BeautifulSoup4, Selenium, pandas, pypdf, pytest
 
 ## Getting Help
 

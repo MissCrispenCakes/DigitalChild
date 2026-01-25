@@ -245,7 +245,7 @@ ______________________________________________________________________
 - Future work focuses on expanding analytics and building research dashboard
 - All core infrastructure is stable and well-tested (124 tests passing in ~106 seconds)
 - Documentation is comprehensive and up-to-date
-- **Known:** PyPDF2 deprecation warning - planned migration to `pypdf` library in future update
+- **Completed:** Migrated from PyPDF2 to pypdf (January 2026) - no more deprecation warnings
 
 ______________________________________________________________________
 

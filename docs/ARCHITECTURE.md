@@ -122,7 +122,7 @@ python pipeline_runner.py --source au_policy --tags-version latest
 
 **Modules:**
 
-- `pdf_to_text.py` - Extract text from PDFs (PyPDF2)
+- `pdf_to_text.py` - Extract text from PDFs (pypdf)
 - `docx_to_text.py` - Extract text from Word docs (python-docx)
 - `html_to_text.py` - Extract text from HTML (BeautifulSoup4)
 - `fallback_handler.py` - Try processors until one succeeds
@@ -419,7 +419,7 @@ pytest tests/ --cov                 # With coverage
 
 1. **PDF Processing:** CPU bound
 
-   - Mitigated by: Fallback handler, efficient PyPDF2 usage
+   - Mitigated by: Fallback handler, efficient pypdf usage
 
 1. **URL Validation:** Network I/O bound
 
@@ -511,7 +511,7 @@ GitHub Repository
 - BeautifulSoup4 (HTML parsing)
 - Selenium (dynamic scraping)
 - pandas (data manipulation)
-- PyPDF2 (PDF processing)
+- pypdf (PDF processing)
 
 **Testing:**
 

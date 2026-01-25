@@ -9,7 +9,7 @@
 
 ### Priority Breakdown
 - **High Priority**: 3 tasks (CI monitoring, scorecard source review, broken URL fixes)
-- **Medium Priority**: 3 tasks (PyPDF2 migration, security emails, stale data updates)
+- **Medium Priority**: 3 tasks (pypdf migration, security emails, stale data updates)
 - **Lower Priority**: 3 tasks (ISO mapping, doc classification, dashboard prototype)
 
 ---
@@ -31,7 +31,7 @@
 - **Dependencies**: None
 - **Files**: DATA_GOVERNANCE.md (2), SECURITY.md (2), mkdocs.yml (1)
 
-#### Task #4: Migrate PyPDF2 to pypdf (45 min)
+#### Task #4: Migrate pypdf to pypdf (45 min)
 - Low-risk, high-value task
 - Removes deprecation warnings
 - **Dependencies**: None
@@ -39,7 +39,7 @@
 - **Outcome**: Cleaner test output, future-proof code
 
 **Session 1 Total**: ~1 hour
-**Deliverables**: CI verified, security emails added, PyPDF2 migrated
+**Deliverables**: CI verified, security emails added, pypdf migrated
 
 ---
 
@@ -143,7 +143,7 @@ Task #1 (CI Monitor) → BLOCKS ALL (verify green CI first)
                       ↓
     ┌────────────────┴────────────────┐
     ↓                                 ↓
-Task #5 (Security)              Task #4 (PyPDF2)
+Task #5 (Security)              Task #4 (pypdf)
 (independent)                   (independent)
                                      ↓
                             Task #3 (Alt URLs) ← HIGH PRIORITY
@@ -168,7 +168,7 @@ Task #7 (ISO Mapping) → Task #8 (Doc Classification)
 ### Week 1: Foundation & Quick Wins
 1. **Task #1**: Monitor CI (5 min) - VERIFY FIRST
 2. **Task #5**: Security emails (10 min) - QUICK WIN
-3. **Task #4**: PyPDF2 migration (45 min) - HIGH VALUE
+3. **Task #4**: pypdf migration (45 min) - HIGH VALUE
 4. **Task #3**: Alternative URLs (1 hr) - CRITICAL
 5. **Task #2**: Review sources (1.5 hrs) - BUILDS ON #3
 
@@ -202,7 +202,7 @@ Task #7 (ISO Mapping) → Task #8 (Doc Classification)
 - Task #6 (Stale updates - single batch of 5-10 entries)
 
 ### For Medium Sessions (1-3 hrs)
-- Task #4 (PyPDF2 migration)
+- Task #4 (pypdf migration)
 - Task #3 + #2 (Alternative URLs + Source review)
 - Task #7 (ISO mapping)
 
@@ -222,7 +222,7 @@ Task #7 (ISO Mapping) → Task #8 (Doc Classification)
 
 ### By End of Week 1
 - ✅ CI passing on basecamp
-- ✅ No PyPDF2 deprecation warnings
+- ✅ No pypdf deprecation warnings
 - ✅ All 5 scorecard sources working
 - ✅ Security contact TODOs resolved
 
@@ -262,7 +262,7 @@ Task #7 (ISO Mapping) → Task #8 (Doc Classification)
 open https://github.com/MissCrispenCakes/DigitalChild/actions
 
 # 2. If CI is green, proceed with Task #5 (security emails)
-# 3. Then tackle Task #4 (PyPDF2 migration)
+# 3. Then tackle Task #4 (pypdf migration)
 ```
 
 Use task management system to track progress and update task status!
