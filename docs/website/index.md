@@ -100,7 +100,7 @@ ______________________________________________________________________
 - **Python 3.12** - Core language
 - **BeautifulSoup4 & Selenium** - Web scraping
 - **pandas** - Data analysis
-- **pytest** - Testing framework (124+ tests)
+- **pytest** - Testing framework (170 tests)
 - **MkDocs Material** - Documentation
 
 All pipelines follow best practices for security, validation, and error handling.

@@ -7,13 +7,16 @@ This directory contains the primary scorecard data files used for the LittleRain
 ### `scorecard_main.xlsx` ⭐ CANONICAL
 
 - **Purpose:** Main scorecard data (source of truth for all pipeline operations)
-- **Date:** January 22, 2026 (last updated)
+- **Date:** January 25, 2026 (last updated - Phase 1 critical updates completed)
 - **Structure:** 7 sheets (UN_194, SADC, ECOWAS, Global, Sheet1, Sheet5, Sheet2)
 - **Content:**
   - 194 countries with 10 indicators
   - Color-coded regional groups (North Africa, ECOWAS)
   - Calculated indices (protection_index, Risk_index)
   - Regional analysis sheets for SADC (16 countries) and ECOWAS (13 countries)
+- **Recent Updates:**
+  - Phase 1 updates (January 25, 2026): 6 countries, 18 fields updated (20+ year old entries)
+  - See `docs/maintenance/SCORECARD_PHASE1_UPDATES.md` for complete change log
 - **Use this for:** Primary data analysis, generating reports, updating indicators
 - **Pipeline reads from:** `data/scorecard/scorecard_main.xlsx`
 - **Convenience copy:** `scorecard.xlsx` (root directory, for quick reference)
@@ -75,6 +78,12 @@ When updating scorecard data:
    ```bash
    python pipeline_runner.py --mode scorecard --scorecard-action export
    ```
+
+**For systematic updates of stale entries:**
+
+- See `docs/maintenance/SCORECARD_UPDATE_GUIDE.md` for step-by-step instructions
+- See `docs/maintenance/SCORECARD_MAINTENANCE_REPORT.md` for data quality analysis
+- See `docs/maintenance/SCORECARD_PHASE1_UPDATES.md` for recent change log
 
 ## Citation
 

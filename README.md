@@ -129,13 +129,19 @@ ______________________________________________________________________
 
 - ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
-- ✅ Validation & security framework - 124 tests passing (68 validator tests)
+- ✅ Validation & security framework - 170 tests passing (68 validator tests)
 - ✅ Recommendations extraction system - Regex-based with versioning and history tracking
 - ✅ Timeline exports - Global, by-country, and by-region analysis over time
 - ✅ Comparison analytics - Compare tags and recommendations across versions
-- ✅ Comprehensive documentation - 40 markdown files
+- ✅ Comprehensive documentation - 40+ markdown files
 
-**Phase 3 Mostly Complete (73%):** Advanced processing features operational, NLP enhancements planned
+**Phase 3 Complete (8/9 tasks):** Advanced processing features operational
+
+- ✅ ISO 3166-1 alpha-2 country code mapping - 194 countries fully mapped
+- ✅ Document type classifier - Multi-stage rules-based classification
+- ✅ Scorecard maintenance system - Phase 1 critical updates completed (6 countries, 18 fields updated)
+- ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
+- ⬜ Research dashboard (Phase 4 kickoff) - Planned
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
 

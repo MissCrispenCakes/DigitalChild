@@ -16,7 +16,7 @@ ______________________________________________________________________
 - [x] Tags version management (`tags_main.json`)
 - [x] Metadata tracking with history
 - [x] Unified logging system with per-module logs
-- [x] Comprehensive test suite (124 tests passing)
+- [x] Comprehensive test suite (170 tests passing)
 - [x] Documentation (setup, structure, standards, pipeline flow)
 - [x] CI/CD pipeline with GitHub Actions
 - [x] Pre-commit hooks (black, isort, flake8, markdown, yaml)
@@ -60,7 +60,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Phase 3: Advanced Processing (⏳ IN PROGRESS - 73% Complete)
+## Phase 3: Advanced Processing (✅ COMPLETE - 8/9 Tasks)
 
 ### Recommendations System
 
@@ -82,9 +82,17 @@ ______________________________________________________________________
 
 - [x] Country/region normalization with ISO codes
 - [x] Preservation of `_raw` fields for provenance
-- [ ] Complete ISO 3166-1 alpha-2 mapping
-- [ ] Automatic doc type classification (Policy, Law, TreatyBody, etc.)
-- [ ] Source reliability scoring
+- [x] Complete ISO 3166-1 alpha-2 mapping (194 countries)
+- [x] Automatic doc type classification (Policy, Law, TreatyBody, etc.)
+- [ ] Source reliability scoring (Phase 4)
+
+### Scorecard Maintenance
+
+- [x] Alternative source identification for failed monitors
+- [x] Phase 1 critical updates (6 countries, 18 fields, 20+ year old entries)
+- [x] Multi-format exports (CSV, XLSX, ODS, Google Sheets JSON)
+- [x] Update documentation and workflows
+- [ ] Phase 2-4 updates (ongoing maintenance)
 
 ______________________________________________________________________
 
@@ -190,37 +198,40 @@ ______________________________________________________________________
 
 - ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
 - ✅ Scorecard system (194 countries, 10 indicators, 2,543 source URLs tracked)
-- ✅ Validation and security framework - 124 tests passing (68 validator tests)
+- ✅ Validation and security framework - 170 tests passing (68 validator tests)
 - ✅ Recommendations extraction system - Regex-based with versioning and history tracking
 - ✅ Timeline exports - Global, by-country, and by-region analysis over time
 - ✅ Comparison analytics - Compare tags and recommendations across versions
-- ✅ Comprehensive documentation (40 markdown files)
+- ✅ ISO 3166-1 alpha-2 country code mapping - 194 countries fully mapped
+- ✅ Document type classifier - Multi-stage rules-based classification
+- ✅ Scorecard maintenance - Phase 1 critical updates (6 countries, 18 fields updated)
+- ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
+- ✅ Comprehensive documentation (40+ markdown files)
 
-**In Progress (Phase 3 - 73% Complete):**
+**In Progress (Phase 3 - 8/9 Complete):**
 
-- ⏳ Complete ISO 3166-1 alpha-2 country code mapping
-- ⏳ Automatic doc type classification (Policy, Law, TreatyBody, etc.)
-- ⏳ Source reliability scoring
-- ⏳ NLP-based recommendations extraction (planned)
+- ⏳ NLP-based recommendations extraction (planned for Phase 5)
 
 **Next Priority:**
 
-- 🎯 Complete remaining Phase 3 normalization features
-- 🎯 Begin research dashboard prototyping (Phase 4)
+- 🎯 Begin research dashboard prototyping (Phase 4 kickoff - Task #9)
 - 🎯 Interactive scorecard visualizations
+- 🎯 Source reliability scoring
+- 🎯 Continue scorecard maintenance (Phases 2-4: 41 remaining stale entries)
 
 ______________________________________________________________________
 
 ## Metrics
 
 - **Lines of Code:** ~15,000+ (Python, config, tests)
-- **Test Coverage:** 124 tests passing, comprehensive validation
-- **Documentation:** 40 markdown files, 1 comprehensive guide (CLAUDE.md)
+- **Test Coverage:** 170 tests passing, comprehensive validation
+- **Documentation:** 40+ markdown files, 1 comprehensive guide (CLAUDE.md)
 - **Data Sources:** 7 scrapers (AU, OHCHR, UPR, UNICEF, ACERWC, ACHPR, manual)
-- **Countries Tracked:** 194 (via scorecard)
+- **Countries Tracked:** 194 (via scorecard, all with ISO 3166-1 alpha-2 codes)
 - **Indicators:** 10 per country
 - **Source URLs:** 2,543 tracked and validated
 - **Tags Versions:** 4 (v1, v2, v3, digital)
+- **Export Formats:** CSV, XLSX, ODS, Google Sheets JSON (scorecard)
 
 ______________________________________________________________________
 
@@ -243,9 +254,13 @@ ______________________________________________________________________
 
 - End-to-end pipeline is production-ready for AU Policy + scorecard workflow
 - Future work focuses on expanding analytics and building research dashboard
-- All core infrastructure is stable and well-tested (124 tests passing in ~106 seconds)
+- All core infrastructure is stable and well-tested (170 tests passing in ~106 seconds)
 - Documentation is comprehensive and up-to-date
-- **Completed:** Migrated from PyPDF2 to pypdf (January 2026) - no more deprecation warnings
+- **Recent Completions (January 2026):**
+  - Migrated from PyPDF2 to pypdf - no more deprecation warnings
+  - ISO 3166-1 alpha-2 mapping for all 194 countries
+  - Document type classifier (multi-stage rules-based)
+  - Scorecard Phase 1 maintenance (6 countries, 18 fields updated)
 
 ______________________________________________________________________
 

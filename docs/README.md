@@ -121,7 +121,7 @@ MkDocs website-specific content (separated from core documentation):
 - ✅ Metadata tracking and versioning
 - ✅ Tagging system with version control
 - ✅ Comprehensive logging
-- ✅ Full test suite (124 tests)
+- ✅ Full test suite (170 tests)
 
 ### Scorecard System (Phase 2 - Complete)
 
@@ -130,6 +130,8 @@ MkDocs website-specific content (separated from core documentation):
 - ✅ CSV export functionality (summary, sources, indicators)
 - ✅ URL validation and monitoring
 - ✅ Source change detection
+- ✅ Multi-format exports (CSV, XLSX, ODS, Google Sheets JSON)
+- ✅ Maintenance documentation and update workflows
 
 ### Validation & Security (Phase 2 - Complete)
 
@@ -138,6 +140,14 @@ MkDocs website-specific content (separated from core documentation):
 - ✅ Path validation with traversal protection
 - ✅ File size and extension validation
 - ✅ Config and schema validation
+
+### Advanced Processing (Phase 3 - Complete, 8/9 tasks)
+
+- ✅ ISO 3166-1 alpha-2 country code mapping (194 countries)
+- ✅ Document type classification system (rules-based multi-stage)
+- ✅ Scorecard data maintenance (Phase 1 critical updates: 6 countries, 18 fields)
+- ✅ Alternative source monitoring (replaced 2 failed sources)
+- ⬜ Research dashboard (Phase 4 kickoff) - Planned
 
 ## Project Identity
 
