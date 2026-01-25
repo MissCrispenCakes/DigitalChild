@@ -19,7 +19,7 @@ limits==3.7.0
 pydantic==2.5.0
 
 # Production server
-gunicorn==21.2.0
+gunicorn==22.0.0
 
 # Environment variable management
 python-dotenv==1.0.0
