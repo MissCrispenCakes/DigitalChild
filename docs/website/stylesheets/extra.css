@@ -26,6 +26,37 @@
   background: var(--rainbow-gradient);
 }
 
+/* Announcement bar styling */
+.md-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 500;
+}
+
+.md-banner a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.md-banner a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.md-banner strong {
+  font-weight: 700;
+}
+
+.md-banner__button {
+  color: white;
+}
+
+.md-banner__button:hover {
+  opacity: 0.8;
+}
+
 /* Card grid styling - Material for MkDocs grid cards */
 /* Force grid layout on the UL */
 div.grid.cards > ul,

@@ -6,14 +6,6 @@
 
 **Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
 
-!!! tip "🆕 NEW: REST API Now Available!"
-    Access GRIMdata programmatically with our Flask REST API!
-
-    **9 endpoints** for documents, scorecard, and statistics
-
-    [:octicons-rocket-24: API Quick Start](../api/QUICK_START.md){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../api/README.md){ .md-button }
-
 !!! quote "Research Foundation"
     "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
 

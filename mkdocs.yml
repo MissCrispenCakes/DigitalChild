@@ -19,6 +19,7 @@ copyright: |
 # Theme
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -61,6 +62,7 @@ theme:
     - content.code.annotate
     - content.action.edit
     - content.tabs.link
+    - announce.dismiss
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -133,12 +135,12 @@ extra:
 # Navigation
 nav:
   - GRIMdata Home: website/index.md
-  - API Reference:
-      - Quick Reference: website/api-reference.md
-      - API Overview: api/README.md
-      - Quick Start: api/QUICK_START.md
-      - Week 1 Summary: API_WEEK1_SUMMARY.md
-      - Week 2 Summary: API_WEEK2_SUMMARY.md
+  - 🆕 NEW - REST API:
+      - "🚀 Quick Start": api/QUICK_START.md
+      - "📖 Full Documentation": api/README.md
+      - "⚡ Quick Reference": website/api-reference.md
+      - "Week 1 Summary": API_WEEK1_SUMMARY.md
+      - "Week 2 Summary": API_WEEK2_SUMMARY.md
   - Projects:
       - LittleRainbowRights:
           - Project Overview: website/projects/littlerainbowrights/index.md
