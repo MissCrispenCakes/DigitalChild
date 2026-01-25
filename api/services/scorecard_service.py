@@ -203,7 +203,6 @@ def _count_indicators(row) -> int:
         if key not in metadata_cols and not key.endswith("_Source"):
             value = row[key]
             # Count if value is not null, not empty string, and not "Unknown"
-            import pandas as pd
             if pd.notna(value) and str(value).strip() and str(value) != "Unknown":
                 count += 1
 
