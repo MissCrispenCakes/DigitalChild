@@ -12,7 +12,7 @@ import sys
 # Add project root to path for imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from api.app import create_app
+from api.app import create_app  # noqa: E402
 
 if __name__ == "__main__":
     # Load environment variables from .env file
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     port = int(os.getenv("DEV_PORT", "5000"))
 
     print(f"\n{'='*60}")
-    print(f"DigitalChild API - Development Server")
+    print("DigitalChild API - Development Server")
     print(f"{'='*60}")
     print(f"Environment: {app.config['FLASK_ENV']}")
     print(f"Debug mode: {app.debug}")

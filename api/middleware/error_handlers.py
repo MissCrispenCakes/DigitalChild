@@ -20,7 +20,7 @@ class APIError(Exception):
     message = "An internal error occurred"
 
     def __init__(self, message=None, details=None):
-        super().__init__()
+        super().__init__(message)
         if message:
             self.message = message
         self.details = details or {}

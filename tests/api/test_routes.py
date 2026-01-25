@@ -6,8 +6,6 @@ Tests all API endpoints with Flask test client.
 
 import json
 
-import pytest
-
 
 class TestHealthRoutes:
     """Tests for health check routes"""

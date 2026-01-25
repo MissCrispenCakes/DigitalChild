@@ -4,7 +4,6 @@ Health check and info endpoints
 Provides endpoints for monitoring API health and getting system information.
 """
 
-import os
 from datetime import datetime
 from pathlib import Path
 

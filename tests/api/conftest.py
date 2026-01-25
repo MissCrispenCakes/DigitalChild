@@ -5,7 +5,6 @@ Provides fixtures for Flask app and test client.
 """
 
 import json
-import os
 import sys
 from pathlib import Path
 

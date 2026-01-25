@@ -11,9 +11,9 @@ class ValidationError(Exception):
     """Raised when request validation fails"""
 
     def __init__(self, message: str, field: Optional[str] = None):
+        super().__init__(message, field)
         self.message = message
         self.field = field
-        super().__init__(self.message)
 
 
 def validate_page(value: Any, default: int = 1) -> int:

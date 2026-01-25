@@ -4,9 +4,6 @@ Unit tests for API service layer
 Tests metadata_service and scorecard_service functions.
 """
 
-import json
-from unittest.mock import Mock, patch
-
 import pytest
 
 from api.middleware.error_handlers import NotFoundError
@@ -262,6 +259,6 @@ class TestScorecardService:
             assert isinstance(stats, dict)
             assert len(stats) > 0
             # Each indicator should have total_countries and value_distribution
-            for indicator, data in stats.items():
+            for _indicator, data in stats.items():
                 assert "total_countries" in data
                 assert "value_distribution" in data

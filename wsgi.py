@@ -13,7 +13,7 @@ import sys
 # Add project root to path for imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from api.app import create_app
+from api.app import create_app  # noqa: E402
 
 # Load environment variables from .env file
 try:
