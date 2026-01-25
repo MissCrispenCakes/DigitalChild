@@ -64,6 +64,16 @@ DigitalChild is a data pipeline that:
        ▼
 ┌─────────────┐
 │data/exports │  (CSV files for analysis)
+└─────┬───────┘
+      │
+      ▼
+┌─────────────┐
+│  FLASK API  │  (REST endpoints for data access) ← Phase 4
+└─────┬───────┘
+      │ JSON/HTTP
+      ▼
+┌─────────────┐
+│  FRONTEND   │  (Dashboard, visualizations) ← Future
 └─────────────┘
 ```
 
@@ -380,13 +390,66 @@ def scrape(base_url=None, countries=None):
 1. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`
 1. Re-run enrichment
 
+## 🌐 API Layer (Phase 4)
+
+**File:** `api/` directory
+
+**Purpose:** REST API backend for programmatic data access and dashboard integration
+
+**Architecture:**
+
+```
+api/
+├── app.py              # Flask app factory
+├── config.py           # Environment-based configuration
+├── extensions.py       # Flask extensions (CORS, caching, rate limiting)
+├── routes/             # API endpoint blueprints
+│   ├── health.py       # Health check and system info
+│   ├── documents.py    # Documents list, filter, detail
+│   └── scorecard.py    # Scorecard summary, country detail, stats
+├── services/           # Business logic layer
+│   ├── metadata_service.py    # Document filtering and pagination
+│   └── scorecard_service.py   # Scorecard data access
+├── middleware/         # Request/response processing
+│   └── error_handlers.py      # Exception handling
+└── utils/              # Helper functions
+    ├── response.py     # Standard JSON responses
+    └── validators.py   # Request parameter validation
+```
+
+**Key Features:**
+
+- **9 REST endpoints** (health, info, documents × 2, scorecard × 5)
+- **Advanced filtering** (country, region, tags, year, source, doc_type)
+- **Pagination** (configurable page size, max 100)
+- **Sorting** (any field, ascending/descending)
+- **Caching** (15min documents, 1hr scorecard)
+- **Validation** (all query parameters validated)
+- **Standard responses** (success, error, paginated formats)
+
+**Entry Point:**
+
+```bash
+python run_api.py  # Development server on port 5000
+```
+
+**Testing:**
+
+```bash
+python test_api.py  # Quick health check (9/9 endpoints)
+```
+
+See [../api/README.md](../api/README.md) for complete API documentation.
+
 ## 🧪 Testing Strategy
 
-**Test Suite:** 124 tests covering:
+**Test Suite:** 209 tests covering:
 
 - 68 validator tests (comprehensive security checks)
 - 20 scorecard tests (load, enrich, export, validate)
-- 36 other tests (tagger, processors, metadata, logging)
+- 36 pipeline tests (tagger, processors, metadata, logging)
+- 46 other pipeline tests
+- 39 API tests (12 unit + 27 integration)
 
 **Test Organization:**
 
@@ -404,9 +467,11 @@ tests/
 **Run tests:**
 
 ```bash
-pytest tests/ -v                    # All tests
-pytest tests/test_validators.py -v # Specific module
-pytest tests/ --cov                 # With coverage
+pytest tests/ -v                      # All tests (pipeline + API)
+pytest tests/test_validators.py -v   # Specific module
+pytest tests/api/test_routes.py -v   # API integration tests
+pytest tests/ --cov                   # With coverage
+python test_api.py                    # Quick API health check
 ```
 
 ## 📊 Performance Considerations

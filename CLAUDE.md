@@ -18,7 +18,7 @@ pre-commit run --all-files
 
 DigitalChild (GRIMdata / LittleRainbowRights) is a Python 3.12 data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection.
 
-**Key Tech**: BeautifulSoup4, Selenium, pandas, pypdf, pytest
+**Key Tech**: BeautifulSoup4, Selenium, pandas, pypdf, pytest, Flask (API backend)
 
 ## Essential Commands
 
@@ -40,6 +40,12 @@ For CI/development, also install:
 
 ```bash
 pip install pytest pytest-cov pre-commit
+```
+
+For API development (Phase 4):
+
+```bash
+pip install -r api_requirements.txt
 ```
 
 ### Pre-commit Setup
@@ -68,7 +74,7 @@ Pre-commit runs: black, isort, flake8, markdownlint, trailing-whitespace, end-of
 # Activate virtual environment
 source .LittleRainbow/bin/activate  # On Windows: .LittleRainbow\Scripts\activate
 
-# Full test suite (~106 seconds, 124 tests)
+# Full test suite (~106 seconds, 170 pipeline tests + 39 API tests)
 pytest tests/ -v
 
 # Specific test file
@@ -94,6 +100,24 @@ python utils/pipeline_runner_DEMO.py
 ```
 
 **IMPORTANT**: Always run from repository root for imports to work.
+
+### Run API (Phase 4)
+
+```bash
+# Install API dependencies
+pip install -r api_requirements.txt
+
+# Run development server
+python run_api.py
+
+# Test API endpoints
+python test_api.py
+
+# Quick curl test
+curl http://localhost:5000/api/health
+```
+
+API available at `http://127.0.0.1:5000`. See [api/README.md](api/README.md) for endpoint documentation.
 
 ## Architecture
 

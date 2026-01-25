@@ -54,6 +54,10 @@ ______________________________________________________________________
 - **CSV exports** - Tags summaries, scorecard data, analysis results
 - **Metadata tracking** - Complete provenance for every document
 - **Reproducible** - Version-controlled configs and timestamps
+- **REST API** - 9 endpoints for programmatic data access (Flask backend)
+  - Documents: list with filters, pagination, sorting, detail view
+  - Scorecard: countries summary, indicators, statistics
+  - Caching, validation, standard JSON responses
 
 ______________________________________________________________________
 
@@ -121,6 +125,57 @@ python pipeline_runner.py --mode scorecard --scorecard-action all
 
 Exports appear in `data/exports/` as CSV files ready for analysis.
 
+### 🆕 Using the API (Alternative to Pipeline)
+
+**Don't want to run the pipeline?** Access data via REST API:
+
+```bash
+# Install API dependencies
+pip install -r api_requirements.txt
+
+# Start API server
+python run_api.py
+```
+
+Access data programmatically:
+
+```bash
+# Health check
+curl http://localhost:5000/api/health
+
+# Get all documents
+curl http://localhost:5000/api/documents
+
+# Filter by country
+curl "http://localhost:5000/api/documents?country=Kenya"
+
+# Get scorecard
+curl http://localhost:5000/api/scorecard/Kenya
+```
+
+**Python example:**
+
+```python
+import requests
+
+# Get Kenya's scorecard
+response = requests.get("http://localhost:5000/api/scorecard/Kenya")
+data = response.json()["data"]
+print(data["indicators"])
+
+# Get documents about AI policy
+response = requests.get("http://localhost:5000/api/documents?tags=AI")
+documents = response.json()["data"]["items"]
+```
+
+**9 endpoints available:**
+
+- Documents: list, filter, detail
+- Scorecard: summary, country, statistics
+- Health & info
+
+📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/website/api-reference.md)
+
 ______________________________________________________________________
 
 ## 📋 Project Status
@@ -133,7 +188,6 @@ ______________________________________________________________________
 - ✅ Recommendations extraction system - Regex-based with versioning and history tracking
 - ✅ Timeline exports - Global, by-country, and by-region analysis over time
 - ✅ Comparison analytics - Compare tags and recommendations across versions
-- ✅ Comprehensive documentation - 40+ markdown files
 
 **Phase 3 Complete (8/9 tasks):** Advanced processing features operational
 
@@ -141,9 +195,20 @@ ______________________________________________________________________
 - ✅ Document type classifier - Multi-stage rules-based classification
 - ✅ Scorecard maintenance system - Phase 1 critical updates completed (6 countries, 18 fields updated)
 - ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
-- ⬜ Research dashboard (Phase 4 kickoff) - Planned
 
-See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed feature roadmap and future phases.
+**Phase 4 In Progress (2/4 complete):** Research dashboard development
+
+- ✅ **Flask API backend (Week 1-2)** - 9 REST endpoints operational
+  - Documents API (list, filter, detail) with pagination and sorting
+  - Scorecard API (countries, indicators, statistics)
+  - Health and system info endpoints
+  - Request validation, caching (15min-1hr TTLs), error handling
+  - 39 test cases, comprehensive documentation
+- ⏳ Tags, Timeline, Export APIs (Week 3-5) - Planned
+- ⏳ Authentication and rate limiting (Week 4) - Planned
+- ⏳ Interactive dashboard frontend - Planned
+
+See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed roadmap and [api/README.md](api/README.md) for API documentation.
 
 ______________________________________________________________________
 
@@ -156,6 +221,8 @@ ______________________________________________________________________
 - **[Scorecard Workflow](docs/guides/SCORECARD_WORKFLOW.md)** - Indicator tracking system
 - **[Data Governance](docs/DATA_GOVERNANCE.md)** - Privacy, ethics, responsible research
 - **[Roadmap](docs/ROADMAP.md)** - Development phases and future features
+- **[API Documentation](api/README.md)** - REST API endpoints, usage, examples
+- **[API Quick Start](api/QUICK_START.md)** - Fast reference for API usage
 
 See [docs/DOCS_INDEX.md](docs/DOCS_INDEX.md) for full documentation index.
 
@@ -281,6 +348,7 @@ Data sources tracked with 2,543 validated URLs ensuring transparency and verific
 **Built with:**
 
 - Python 3.12, BeautifulSoup4, Selenium, pandas, pypdf, pytest
+- Flask, Flask-CORS, Flask-Caching for REST API
 - GitHub Pages for documentation
 - MkDocs Material for website
 

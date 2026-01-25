@@ -133,6 +133,12 @@ extra:
 # Navigation
 nav:
   - GRIMdata Home: website/index.md
+  - API Reference:
+      - Quick Reference: website/api-reference.md
+      - API Overview: api/README.md
+      - Quick Start: api/QUICK_START.md
+      - Week 1 Summary: API_WEEK1_SUMMARY.md
+      - Week 2 Summary: API_WEEK2_SUMMARY.md
   - Projects:
       - LittleRainbowRights:
           - Project Overview: website/projects/littlerainbowrights/index.md

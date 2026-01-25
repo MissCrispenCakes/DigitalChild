@@ -4,6 +4,17 @@
 
 **Analyzing digital protections for vulnerable populations through human rights document analysis**
 
+!!! example "🔌 Access via REST API"
+    **NEW:** Programmatic data access now available!
+
+    ```python
+    import requests
+    response = requests.get("http://localhost:5000/api/scorecard/Kenya")
+    data = response.json()["data"]
+    ```
+
+    [:octicons-rocket-24: API Documentation](../../../api/README.md){ .md-button .md-button--primary }
+
 ______________________________________________________________________
 
 ## About This Project
@@ -132,6 +143,33 @@ Total: **2,543 validated source URLs** ensuring transparency and verification.
 
 ### For Researchers
 
+**Via REST API (Recommended):**
+
+```python
+import requests
+
+# Get all scorecard data
+response = requests.get("http://localhost:5000/api/scorecard")
+countries = response.json()["data"]["items"]
+
+# Filter for specific country
+response = requests.get("http://localhost:5000/api/scorecard/Kenya")
+kenya_data = response.json()["data"]
+print(kenya_data["indicators"])
+
+# Get documents filtered by tags
+response = requests.get("http://localhost:5000/api/documents?tags=ChildRights,LGBTQ")
+documents = response.json()["data"]["items"]
+
+# Filter by region
+response = requests.get("http://localhost:5000/api/scorecard?region=Africa&per_page=50")
+african_countries = response.json()["data"]["items"]
+```
+
+See [API Documentation](../../../api/README.md) for all endpoints and filtering options.
+
+**Via Direct File Access:**
+
 ```python
 # Load scorecard data
 import pandas as pd
@@ -152,7 +190,7 @@ regional_summary = df.groupby('Region').agg({
 })
 ```
 
-[Installation Guide](../../getting-started/installation.md) | [API Documentation](../../../ARCHITECTURE.md)
+[Installation Guide](../../getting-started/installation.md) | [Quick Start](../../getting-started/quickstart.md)
 
 ### For Advocates
 

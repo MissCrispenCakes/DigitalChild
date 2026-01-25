@@ -2,6 +2,24 @@
 
 Get started with DigitalChild in 5 minutes.
 
+!!! tip "🚀 Fastest Way: Use the API"
+    **Don't want to run the pipeline?** Access data directly via REST API:
+
+    ```bash
+    pip install -r api_requirements.txt
+    python run_api.py
+    ```
+
+    Then query data:
+    ```bash
+    curl http://localhost:5000/api/documents
+    curl http://localhost:5000/api/scorecard/Kenya
+    ```
+
+    [:octicons-rocket-24: Full API Guide](../../api/README.md){ .md-button .md-button--primary }
+
+---
+
 ## Prerequisites
 
 Ensure you've [installed](installation.md) DigitalChild and activated your virtual environment.
@@ -68,6 +86,51 @@ cat data/metadata/metadata.json | python -m json.tool | head -50
 # See processed text
 ls data/processed/Africa/AU/text/
 ```
+
+## Access Data via API (Alternative)
+
+**NEW:** Instead of running the pipeline, you can access the data programmatically via the REST API:
+
+```bash
+# Start the API server
+python run_api.py
+```
+
+Then access data via HTTP requests:
+
+```bash
+# Health check
+curl http://localhost:5000/api/health
+
+# List all documents
+curl http://localhost:5000/api/documents
+
+# Filter documents by country
+curl "http://localhost:5000/api/documents?country=Kenya"
+
+# Get scorecard summary
+curl http://localhost:5000/api/scorecard
+
+# Get country scorecard
+curl http://localhost:5000/api/scorecard/Kenya
+```
+
+Or use Python:
+
+```python
+import requests
+
+# Get documents filtered by country
+response = requests.get("http://localhost:5000/api/documents?country=Kenya")
+documents = response.json()["data"]["items"]
+
+# Get scorecard for Kenya
+response = requests.get("http://localhost:5000/api/scorecard/Kenya")
+scorecard = response.json()["data"]
+print(scorecard["indicators"])
+```
+
+See [API Documentation](../../../api/README.md) for all 9 endpoints and features.
 
 ## Common Use Cases
 

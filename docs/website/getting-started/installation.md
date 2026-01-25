@@ -2,6 +2,17 @@
 
 This guide walks you through installing DigitalChild on your system.
 
+!!! success "Just want to access the data?"
+    **Skip installation!** Use the REST API instead:
+
+    ```bash
+    # Install API only
+    pip install -r api_requirements.txt
+    python run_api.py
+    ```
+
+    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START.md){ .md-button .md-button--primary }
+
 ## Prerequisites
 
 ### Required
@@ -61,6 +72,8 @@ conda activate LittleRainbow
 
 ### 3. Install Dependencies
 
+**Pipeline Dependencies:**
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -74,6 +87,22 @@ This installs:
 - `python-docx` - Word document processing
 - `openpyxl` - Excel file handling
 - `requests` - HTTP requests
+
+**API Dependencies (Optional):**
+
+If you want to run the Flask REST API:
+
+```bash
+pip install -r api_requirements.txt
+```
+
+This adds:
+
+- `Flask` - Web framework
+- `Flask-CORS` - Cross-origin resource sharing
+- `Flask-Caching` - Response caching
+- `Flask-Limiter` - Rate limiting
+- `gunicorn` - Production server
 
 ### 4. Initialize Project Structure
 
@@ -121,6 +150,20 @@ python -c "import pandas; import bs4; print('Success!')"
 
 # Run demo (no internet needed)
 python utils/pipeline_runner_DEMO.py
+```
+
+**Verify API Installation (Optional):**
+
+If you installed API dependencies:
+
+```bash
+# Test Flask import
+python -c "import flask; print('Flask ready!')"
+
+# Run API health check
+python run_api.py &
+sleep 2
+python test_api.py
 ```
 
 ## Optional: Selenium Setup

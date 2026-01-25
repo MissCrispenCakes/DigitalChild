@@ -96,19 +96,30 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Phase 4: Research Dashboard (🔜 PLANNED)
+## Phase 4: Research Dashboard (🚧 IN PROGRESS - 2/4 Complete)
 
-### Backend API
+### Backend API (✅ COMPLETE - Week 1 & 2)
 
-- [ ] Flask backend for serving metadata/exports
-- [ ] RESTful API endpoints:
-  - [ ] `/api/documents` - list/filter documents
-  - [ ] `/api/tags` - tag frequency and filters
-  - [ ] `/api/scorecard` - country indicators
-  - [ ] `/api/timeline` - temporal analysis
-  - [ ] `/api/export` - download datasets
-- [ ] Authentication and rate limiting
-- [ ] Caching layer for performance
+- [x] Flask backend infrastructure (app factory, config, extensions)
+- [x] RESTful API endpoints:
+  - [x] `/api/health` - API health check
+  - [x] `/api/info` - System statistics
+  - [x] `/api/documents` - list/filter documents (9 filters, pagination, sorting)
+  - [x] `/api/documents/:id` - document detail
+  - [x] `/api/scorecard` - countries summary (with region filter)
+  - [x] `/api/scorecard/:country` - country indicators
+  - [x] `/api/scorecard/indicators/statistics` - indicator value distribution
+  - [ ] `/api/tags` - tag frequency and filters (Week 3)
+  - [ ] `/api/timeline` - temporal analysis (Week 3)
+  - [ ] `/api/export` - download datasets (Week 3)
+- [ ] Authentication and rate limiting (Week 4)
+- [x] Caching layer for performance (15min documents, 1hr scorecard)
+- [x] Request validation and error handling
+- [x] Standard JSON response format
+- [x] 39 test cases written (12 unit + 27 integration)
+- [x] API documentation (README, Quick Start, Week 1/2 summaries)
+
+**Status:** 9 endpoints working (100% pass rate), ready for frontend integration
 
 ### Visualization Frontend
 
@@ -208,14 +219,18 @@ ______________________________________________________________________
 - ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
 - ✅ Comprehensive documentation (40+ markdown files)
 
-**In Progress (Phase 3 - 8/9 Complete):**
+**In Progress (Phase 4 - Week 1 & 2 Complete):**
 
+- ✅ Flask API backend (9 endpoints working, documented, tested)
+- ⏳ Tags, Timeline, Export APIs (Week 3-5)
+- ⏳ Authentication and rate limiting (Week 4)
+- ⏳ Dashboard frontend (Phase 4 later)
 - ⏳ NLP-based recommendations extraction (planned for Phase 5)
 
 **Next Priority:**
 
-- 🎯 Begin research dashboard prototyping (Phase 4 kickoff - Task #9)
-- 🎯 Interactive scorecard visualizations
+- 🚧 **Phase 4 API (Weeks 3-5):** Tags, Timeline, Export endpoints + Authentication
+- 🎯 Interactive dashboard frontend (React/Vue.js with D3.js visualizations)
 - 🎯 Source reliability scoring
 - 🎯 Continue scorecard maintenance (Phases 2-4: 41 remaining stale entries)
 
@@ -223,15 +238,17 @@ ______________________________________________________________________
 
 ## Metrics
 
-- **Lines of Code:** ~15,000+ (Python, config, tests)
-- **Test Coverage:** 170 tests passing, comprehensive validation
-- **Documentation:** 40+ markdown files, 1 comprehensive guide (CLAUDE.md)
+- **Lines of Code:** ~18,000+ (Python, config, tests, API)
+- **Test Coverage:** 209 tests (170 pipeline + 39 API)
+- **Documentation:** 45+ markdown files, comprehensive API docs
 - **Data Sources:** 7 scrapers (AU, OHCHR, UPR, UNICEF, ACERWC, ACHPR, manual)
 - **Countries Tracked:** 194 (via scorecard, all with ISO 3166-1 alpha-2 codes)
-- **Indicators:** 10 per country
+- **Documents Tracked:** 78 (via metadata.json)
+- **Indicators:** 10 per country (29 total indicator fields tracked)
 - **Source URLs:** 2,543 tracked and validated
 - **Tags Versions:** 4 (v1, v2, v3, digital)
 - **Export Formats:** CSV, XLSX, ODS, Google Sheets JSON (scorecard)
+- **API Endpoints:** 9 working (health, info, documents × 2, scorecard × 5)
 
 ______________________________________________________________________
 
@@ -261,6 +278,7 @@ ______________________________________________________________________
   - ISO 3166-1 alpha-2 mapping for all 194 countries
   - Document type classifier (multi-stage rules-based)
   - Scorecard Phase 1 maintenance (6 countries, 18 fields updated)
+  - **Flask API backend (Week 1-2):** 9 endpoints, filtering, pagination, caching, validation
 
 ______________________________________________________________________
 

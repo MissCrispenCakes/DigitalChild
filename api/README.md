@@ -1,0 +1,296 @@
+# DigitalChild Flask API
+
+REST API backend for serving DigitalChild data to the Phase 4 research dashboard.
+
+## Quick Start
+
+### Installation
+
+```bash
+# Activate virtual environment
+source .LittleRainbow/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt -r api_requirements.txt
+
+# Create .env file from template
+cp .env.example .env
+# Edit .env and configure as needed
+```
+
+### Running the Development Server
+
+```bash
+python run_api.py
+```
+
+The API will be available at `http://127.0.0.1:5000`
+
+### Testing
+
+```bash
+# Test health check
+curl http://127.0.0.1:5000/api/health
+
+# Test system info
+curl http://127.0.0.1:5000/api/info
+```
+
+## API Endpoints
+
+### Health & System Info
+
+**GET /api/health**
+- Returns API health status
+- Use for monitoring and load balancer health checks
+
+**GET /api/info**
+- Returns system information and data statistics
+- Includes document counts, scorecard coverage, and data freshness
+
+### Documents
+
+**GET /api/documents**
+- List documents with filtering and pagination
+- Query parameters:
+  - `country`: Filter by country name
+  - `region`: Filter by region
+  - `source`: Filter by source (e.g., "au_policy", "upr")
+  - `doc_type`: Filter by document type
+  - `tags`: Comma-separated list of tags
+  - `year`: Filter by specific year
+  - `year_min`, `year_max`: Filter by year range
+  - `page`: Page number (default: 1)
+  - `per_page`: Items per page (default: 20, max: 100)
+  - `sort_by`: Field to sort by (default: "last_processed")
+  - `sort_order`: "asc" or "desc" (default: "desc")
+
+Example:
+```bash
+curl "http://localhost:5000/api/documents?region=Africa&year_min=2020&per_page=10"
+```
+
+**GET /api/documents/:id**
+- Get detailed information for a single document
+- Returns full document metadata with tags_history
+- Cached for 15 minutes
+
+### Scorecard
+
+**GET /api/scorecard**
+- List all countries in scorecard with summary
+- Query parameters:
+  - `region`: Filter by region (optional)
+  - `page`: Page number (default: 1)
+  - `per_page`: Items per page (default: 20, max: 100)
+
+Example:
+```bash
+curl "http://localhost:5000/api/scorecard?region=Africa&per_page=20"
+```
+
+**GET /api/scorecard/:country**
+- Get full scorecard details for a specific country
+- Returns all 10 indicators with sources
+- Cached for 1 hour
+
+Example:
+```bash
+curl "http://localhost:5000/api/scorecard/Kenya"
+```
+
+**GET /api/scorecard/indicators/statistics**
+- Get statistics about indicator values across all countries
+- Returns value distribution for each indicator
+- Cached for 1 hour
+
+## Implementation Status
+
+### Week 1: Foundation ✅ COMPLETE
+
+1. ✅ API directory structure created
+2. ✅ Configuration management (development, production, testing)
+3. ✅ Flask extensions (CORS, Caching, Rate Limiting)
+4. ✅ Flask app factory pattern
+5. ✅ Metadata service layer with caching
+6. ✅ Scorecard service layer (works with pandas DataFrames)
+7. ✅ Health check routes
+8. ✅ Standard response formatting and error handling
+9. ✅ Request validators
+10. ✅ API requirements file
+11. ✅ Environment configuration template
+12. ✅ Development and production entry points
+
+### Week 2: Core APIs ✅ COMPLETE
+
+1. ✅ Documents API (list with filters, detail)
+2. ✅ Scorecard API (summary, country detail, statistics)
+3. ✅ Caching decorators (15min documents, 1hr scorecard)
+4. ✅ Request validation for all parameters
+5. ✅ Pagination support (configurable page size)
+6. ✅ Sorting support (any field, asc/desc)
+7. ✅ 39 test cases written (12 unit + 27 integration)
+8. ✅ All 9 endpoints working and tested
+
+### API Features
+
+- ✅ Standard JSON response format
+- ✅ Error handling with custom exceptions
+- ✅ File modification time caching for metadata
+- ✅ Pandas DataFrame support for scorecard data
+- ✅ Environment-based configuration
+- ✅ CORS support for frontend integration
+- ✅ Rate limiting ready (in-memory for dev, Redis for prod)
+- ✅ Logging with configurable levels
+
+## Architecture
+
+### Directory Structure
+
+```
+api/
+├── __init__.py                  # Package initialization
+├── app.py                       # Flask app factory
+├── config.py                    # Configuration classes
+├── extensions.py                # Flask extensions init
+├── routes/                      # API endpoints
+│   ├── health.py               # Health & info endpoints
+│   └── ...                     # (More routes in Week 2+)
+├── services/                    # Business logic layer
+│   ├── metadata_service.py     # Document metadata
+│   ├── scorecard_service.py    # Scorecard data
+│   └── ...                     # (More services in Week 2+)
+├── middleware/                  # Request/response processing
+│   └── error_handlers.py       # Exception handling
+└── utils/                       # Helper functions
+    ├── response.py             # Response formatting
+    └── validators.py           # Input validation
+```
+
+### Service Layer Pattern
+
+Services wrap existing `processors/` modules with API-friendly formatting:
+
+```python
+# Example: metadata_service.py
+from processors.logger import get_logger
+
+def get_documents(filters, page, per_page):
+    """Load metadata.json, apply filters, paginate"""
+    metadata = load_metadata()  # With file mtime caching
+    docs = metadata.get("documents", [])
+    # Apply filters...
+    # Paginate...
+    return {"documents": [...], "pagination": {...}}
+```
+
+### Response Format
+
+All endpoints return standardized JSON:
+
+**Success:**
+```json
+{
+  "status": "success",
+  "data": {...},
+  "timestamp": "2026-01-25T09:13:43Z"
+}
+```
+
+**Error:**
+```json
+{
+  "status": "error",
+  "error": {
+    "code": "NOT_FOUND",
+    "message": "Resource not found",
+    "details": {}
+  },
+  "timestamp": "2026-01-25T09:13:43Z"
+}
+```
+
+## Configuration
+
+Environment variables (see `.env.example`):
+
+- `FLASK_ENV`: development | production | testing
+- `SECRET_KEY`: Flask secret key (required in production)
+- `API_KEYS`: Comma-separated API keys (required in production)
+- `CORS_ORIGINS`: Allowed CORS origins
+- `CACHE_TYPE`: SimpleCache (dev) | RedisCache (prod)
+- `METADATA_FILE`: Path to metadata.json
+- `SCORECARD_FILE`: Path to scorecard_main.xlsx
+
+## Next Steps (Week 3+)
+
+- [ ] Implement Tags API
+  - GET /api/tags (tag frequency)
+  - GET /api/tags/versions (available tag versions)
+- [ ] Implement Timeline API
+  - GET /api/timeline/tags (tags over time)
+- [ ] Implement Export API
+  - GET /api/export/:format (download CSV exports)
+- [ ] Add authentication middleware
+  - API key validation
+  - Per-key rate limiting
+- [ ] Add Swagger/OpenAPI documentation
+- [ ] Performance optimization
+  - Redis caching for production
+  - DataFrame pickle cache for scorecard
+- [ ] Deployment
+  - Docker configuration
+  - Production deployment guide
+  - Monitoring and logging setup
+
+## Production Deployment
+
+### Using Gunicorn
+
+```bash
+# Install production dependencies
+pip install -r api_requirements.txt
+
+# Set environment
+export FLASK_ENV=production
+export SECRET_KEY=your-secret-key
+export API_KEYS=key1,key2,key3
+
+# Run with gunicorn
+gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
+```
+
+### Using Docker
+
+```bash
+# Build image
+docker build -t digitalchild-api .
+
+# Run container
+docker run -p 5000:5000 --env-file .env digitalchild-api
+```
+
+## Development Notes
+
+- Requires Python 3.12+
+- All data files must exist before starting API
+- Run `python init_project.py` if metadata.json doesn't exist
+- Services use file modification time caching for efficiency
+- Scorecard service works with pandas DataFrames from `processors/scorecard.py`
+- Always run from project root for imports to work correctly
+
+## Troubleshooting
+
+**ImportError: No module named 'api'**
+- Make sure you're running from the project root directory
+
+**FileNotFoundError: metadata.json**
+- Run `python init_project.py` to create required files
+
+**KeyError: 'Region'**
+- Scorecard columns use "Region - Broad" not "Region"
+- Service layer handles this mapping
+
+**TypeError: '<' not supported between instances of 'NoneType' and 'str'**
+- Fixed in metadata_service.py by converting None to "unknown"
+- All dictionary keys must be non-None for JSON serialization

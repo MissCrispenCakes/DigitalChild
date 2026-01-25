@@ -2,7 +2,7 @@
 
 This index lists all documentation files in `docs/` organized by category.
 
-**Total: 38 documentation files** (as of January 2026)
+**Total: 47 documentation files** (as of January 2026)
 
 ______________________________________________________________________
 
@@ -38,6 +38,16 @@ Operational guides for users:
 - `guides/FIRST_RUN_ERRORS.md` → Troubleshooting first-run issues
 - `guides/SCORECARD_WORKFLOW.md` → Complete scorecard system guide
 - `guides/VALIDATORS_USAGE.md` → Using the validation framework
+
+## 🌐 API Documentation (../api/)
+
+REST API backend documentation (Phase 4):
+
+- `../api/README.md` → Complete API documentation, endpoints, usage
+- `../api/QUICK_START.md` → Fast reference guide for API usage
+- `API_WEEK1_SUMMARY.md` → Week 1 implementation summary (foundation)
+- `API_WEEK2_SUMMARY.md` → Week 2 implementation summary (core endpoints)
+- `../test_api.py` → API health check script
 
 ______________________________________________________________________
 
@@ -103,6 +113,7 @@ Internal development notes:
 - `notes/TAGS_MAIN_NOTES.md` → Tag version management
 - `notes/TAGS_EXPORT_NOTES.md` → Tag summary CSV interpretation
 - `notes/COMPARISON_EXPORT_NOTES.md` → Comparison export format
+- `notes/NEXT_STEPS_PLAN.md` → Future development priorities
 
 ______________________________________________________________________
 
@@ -119,9 +130,20 @@ These files live in the project root, not docs/:
 
 ______________________________________________________________________
 
+## 🛠 Maintenance (maintenance/)
+
+Scorecard maintenance documentation:
+
+- `maintenance/SCORECARD_MAINTENANCE_REPORT.md` → Analysis of scorecard data staleness
+- `maintenance/SCORECARD_UPDATE_GUIDE.md` → Step-by-step update procedures
+- `maintenance/SCORECARD_PHASE1_UPDATES.md` → Phase 1 critical updates log
+
+______________________________________________________________________
+
 ## Notes
 
 - Documentation reorganized January 2026 for better navigation
+- Phase 4 API documentation added January 2026 (9 endpoints operational)
 - getting-started/ = new user onboarding
 - guides/ = operational how-tos
 - projects/ = project-specific overviews
@@ -130,3 +152,5 @@ ______________________________________________________________________
 - reviews/ = analysis and test summaries
 - standards/ = technical specifications
 - notes/ = internal development notes
+- maintenance/ = scorecard update tracking
+- api/ = REST API backend (Flask)

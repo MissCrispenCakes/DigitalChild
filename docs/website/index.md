@@ -6,6 +6,14 @@
 
 **Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
 
+!!! tip "🆕 NEW: REST API Now Available!"
+    Access GRIMdata programmatically with our Flask REST API!
+
+    **9 endpoints** for documents, scorecard, and statistics
+
+    [:octicons-rocket-24: API Quick Start](../api/QUICK_START.md){ .md-button .md-button--primary }
+    [:octicons-book-24: Full API Docs](../api/README.md){ .md-button }
+
 !!! quote "Research Foundation"
     "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
 
@@ -16,6 +24,65 @@
 **Core principle:** Evidence-based governance, not governance by assumption.
 
 [:octicons-book-16: Read Full Research Context](../RESEARCH_CONTEXT.md){ .md-button }
+
+______________________________________________________________________
+
+## Quick Links
+
+<div class="grid cards" markdown>
+
+-   :octicons-rocket-24:{ .lg .middle } **API Quick Start**
+
+    ---
+
+    Get started with the REST API in 2 minutes
+
+    ```bash
+    pip install -r api_requirements.txt
+    python run_api.py
+    curl http://localhost:5000/api/documents
+    ```
+
+    [:octicons-arrow-right-24: API Docs](../api/README.md){ .md-button }
+
+-   :material-download:{ .lg .middle } **Install Pipeline**
+
+    ---
+
+    Install the data pipeline locally
+
+    ```bash
+    git clone https://github.com/MissCrispenCakes/DigitalChild.git
+    cd DigitalChild
+    pip install -r requirements.txt
+    ```
+
+    [:octicons-arrow-right-24: Installation](getting-started/installation.md){ .md-button }
+
+-   :material-database-export:{ .lg .middle } **Download Data**
+
+    ---
+
+    Access pre-generated CSV exports
+
+    - Scorecard summary (194 countries)
+    - Document metadata
+    - Source validation reports
+
+    [:octicons-arrow-right-24: Scorecard](scorecard/index.md){ .md-button }
+
+-   :material-book-open:{ .lg .middle } **Read Research**
+
+    ---
+
+    Published research and methodology
+
+    - Zenodo DOI: 10.5281/zenodo.18318099
+    - Stellenbosch Law Review (2022)
+
+    [:octicons-arrow-right-24: Research Context](../RESEARCH_CONTEXT.md){ .md-button }
+
+</div>
 
 ______________________________________________________________________
 
@@ -75,6 +142,12 @@ ______________________________________________________________________
 
     All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
 
+-   :material-api:{ .lg .middle } __REST API__
+
+    ---
+
+    NEW: Flask REST API with 9 endpoints for programmatic data access. Filter, paginate, and query documents and scorecard data via HTTP.
+
 -   :material-code-tags:{ .lg .middle } __Open Source Code__
 
     ---
@@ -100,10 +173,11 @@ ______________________________________________________________________
 - **Python 3.12** - Core language
 - **BeautifulSoup4 & Selenium** - Web scraping
 - **pandas** - Data analysis
-- **pytest** - Testing framework (170 tests)
+- **Flask** - REST API backend (Phase 4)
+- **pytest** - Testing framework (209 tests: 170 pipeline + 39 API)
 - **MkDocs Material** - Documentation
 
-All pipelines follow best practices for security, validation, and error handling.
+All pipelines follow best practices for security, validation, and error handling. The REST API provides programmatic data access with filtering, pagination, and caching.
 
 ## Getting Started with LittleRainbowRights
 
@@ -111,10 +185,12 @@ The **LittleRainbowRights** project is ready for use:
 
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
 1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
+1. **[Access via API](../api/README.md)** - REST API with 9 endpoints (NEW!)
 1. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
 1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
+[API Documentation](../api/README.md){ .md-button }
 
 ## Use Cases
 

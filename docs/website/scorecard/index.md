@@ -2,7 +2,26 @@
 
 Interactive visualization of human rights indicators across 194 countries.
 
-!!! info "Coming Soon"
+!!! tip "🚀 Access Scorecard Data via API"
+    **Fastest way to get scorecard data:**
+
+    ```bash
+    # Get all countries
+    curl http://localhost:5000/api/scorecard
+
+    # Get specific country
+    curl http://localhost:5000/api/scorecard/Kenya
+
+    # Get indicator statistics
+    curl http://localhost:5000/api/scorecard/indicators/statistics
+    ```
+
+    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START.md){ .md-button .md-button--primary }
+    [:octicons-book-24: Full API Docs](../../api/README.md){ .md-button }
+
+---
+
+!!! info "Coming Soon: Interactive Visualizations"
     Interactive visualizations are currently under development. This page will feature:
     ```txt
     - Country-level indicator heatmaps
@@ -11,7 +30,7 @@ Interactive visualization of human rights indicators across 194 countries.
     - Source URL verification status
     ```
 
-For now, you can explore the data through CSV exports or the data explorer below.
+For now, you can explore the data through the REST API, CSV exports, or the data explorer below.
 
 ## Quick Stats
 
@@ -210,6 +229,48 @@ In addition to the 10 individual indicators, the scorecard calculates composite 
 
 ## Exporting Data
 
+### Via REST API (Recommended)
+
+**NEW:** Access scorecard data programmatically via the REST API:
+
+```bash
+# Start the API server
+python run_api.py
+```
+
+Then query the data:
+
+```bash
+# Get all countries with scorecard data
+curl http://localhost:5000/api/scorecard
+
+# Get specific country
+curl http://localhost:5000/api/scorecard/Kenya
+
+# Get indicator statistics
+curl http://localhost:5000/api/scorecard/indicators/statistics
+
+# Filter by region
+curl "http://localhost:5000/api/scorecard?region=Africa"
+```
+
+**Python Example:**
+
+```python
+import requests
+import pandas as pd
+
+# Fetch scorecard data via API
+response = requests.get("http://localhost:5000/api/scorecard?per_page=200")
+data = response.json()["data"]["items"]
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+print(df[["country", "region", "indicator_count"]])
+```
+
+See [API Documentation](../../../api/README.md) for complete endpoint reference.
+
 ### From the Pipeline
 
 Run the scorecard export workflow:
@@ -375,7 +436,7 @@ Planned features (see [Roadmap](../../ROADMAP.md)):
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
 - [ ] Time-series tracking of policy changes
-- [ ] API for programmatic access
+- [x] **API for programmatic access** ✅ **COMPLETE** (9 endpoints live, see [API docs](../../../api/README.md))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)
