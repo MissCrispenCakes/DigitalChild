@@ -20,8 +20,8 @@ class APIError(Exception):
     message = "An internal error occurred"
 
     def __init__(self, message=None, details=None):
-        # Don't pass kwargs to super() to comply with B042
-        super().__init__()
+        # B042: Pass message to super, store details separately
+        super().__init__(message or self.message)
         if message:
             self.message = message
         self.details = details or {}
