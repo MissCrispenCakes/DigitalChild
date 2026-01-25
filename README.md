@@ -282,10 +282,12 @@ ______________________________________________________________________
 
 ## 📄 License
 
-**Dual licensing for different components:**
+**MIT License** - see [LICENSE](LICENSE) file
 
-- **Code:** [MIT License](LICENSE) - Free to use, modify, and distribute
-- **Data & Documentation:** [CC BY 4.0](LICENSE-DATA) - Attribution required
+This project uses dual licensing:
+
+- **Code (software):** MIT License - Free to use, modify, and distribute
+- **Data & Documentation:** CC BY 4.0 - Attribution required (see [LICENSE-DATA](LICENSE-DATA))
 
 This means:
 
@@ -294,7 +296,7 @@ This means:
 - ✅ Fork, modify, and redistribute
 - ❌ Don't remove attribution from data/docs
 
-See [LICENSE](LICENSE) and [LICENSE-DATA](LICENSE-DATA) for full terms.
+**Full license terms:** [LICENSE](LICENSE) (MIT) and [LICENSE-DATA](LICENSE-DATA) (CC BY 4.0)
 
 ______________________________________________________________________
 
