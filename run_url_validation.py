@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """Quick script to validate all scorecard URLs."""
 
 from processors.scorecard_validator import validate_scorecard_urls

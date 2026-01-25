@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 AU Policy Scraper - Selenium Version
 -----------------

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 Set Up REUSE Compliance Structure
 

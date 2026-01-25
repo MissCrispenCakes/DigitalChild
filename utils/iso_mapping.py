@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 ISO 3166-1 alpha-2 Country Code Mapping
 =========================================

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 Configuration management for DigitalChild API
 

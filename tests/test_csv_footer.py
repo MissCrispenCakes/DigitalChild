@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 # CSV footer test placeholder
 import csv  # noqa: F401
 import os  # noqa: F401

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 # utils/selenium_setup.py
 """
 Initialize a Selenium Chrome/Chromium driver that works in WSL Ubuntu.

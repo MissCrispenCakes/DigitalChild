@@ -52,3 +52,7 @@ presentations/QueerAI_Slides_Data.pdf
 # Miscellaneous
 repo-cleaning/
 /.env
+
+# REUSE compliance (ignore cache, but commit dep5)
+.reuse/.cache/
+!.reuse/dep5

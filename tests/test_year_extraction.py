@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 import pytest
 
 from pipeline_runner import extract_year  # ✅ use real implementation
