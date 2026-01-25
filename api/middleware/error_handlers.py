@@ -18,15 +18,7 @@ class APIError(Exception):
     status_code = 500
     error_code = "INTERNAL_ERROR"
     message = "An internal error occurred"
-
-    def __init__(self, message=None, details=None):
-        # B042: Must pass args to super and can take kwargs for custom attrs
-        if message is not None:
-            super().__init__(message)
-            self.message = message
-        else:
-            super().__init__(self.message)
-        self.details = details if details is not None else {}
+    details = {}
 
 
 class NotFoundError(APIError):
