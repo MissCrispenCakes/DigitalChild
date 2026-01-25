@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 ## 📚 Core Documentation (Root)
 
-- `../README.md` → Project quickstart, badges, installation
+- [Project README (GitHub)](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/README.md) → Project quickstart, badges, installation
 - `index.md` → GRIMdata homepage (landing page)
 - `README.md` → Documentation overview and navigation
 - `DOCS_INDEX.md` → This index
@@ -43,7 +43,7 @@ Operational guides for users:
 
 REST API backend documentation (Phase 4):
 
-- `../api/README.md` → Complete API documentation, endpoints, usage
+- `api/README.md` → Complete API documentation, endpoints, usage
 - `../api/QUICK_START.md` → Fast reference guide for API usage
 - `API_WEEK1_SUMMARY.md` → Week 1 implementation summary (foundation)
 - `API_WEEK2_SUMMARY.md` → Week 2 implementation summary (core endpoints)

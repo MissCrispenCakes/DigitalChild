@@ -48,7 +48,7 @@ nav:
     **9 endpoints** for documents, scorecard, and statistics
 
     [:octicons-rocket-24: API Quick Start](../api/QUICK_START.md){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../api/README.md){ .md-button }
+    [:octicons-book-24: Full API Docs](api/README){ .md-button }
 ```
 
 **Added "Quick Links" section with 4 cards:**
@@ -126,7 +126,7 @@ nav:
     response = requests.get("http://localhost:5000/api/scorecard/Kenya")
     ```
 
-    [:octicons-rocket-24: API Documentation](../../../api/README.md)
+    [:octicons-rocket-24: API Documentation](../../api/README)
 ```
 
 **Impact:** Researchers see API option immediately on project page
@@ -154,7 +154,7 @@ nav:
 **Added to Quick Navigation:**
 
 ```markdown
-- **[../api/README.md](../api/README.md)** - 🆕 **REST API Documentation**
+- **[api/README](api/README)** - 🆕 **REST API Documentation**
 - **[website/api-reference.md](website/api-reference.md)** - 🆕 **API Quick Reference**
 ```
 

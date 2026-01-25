@@ -439,7 +439,7 @@ python run_api.py  # Development server on port 5000
 python test_api.py  # Quick health check (9/9 endpoints)
 ```
 
-See [../api/README.md](../api/README.md) for complete API documentation.
+See [api/README](api/README) for complete API documentation.
 
 ## 🧪 Testing Strategy
 

@@ -164,7 +164,7 @@ All documentation updates have been:
 ## Key Resources
 
 For detailed API information, see:
-- [api/README.md](../api/README.md) - Complete API documentation
+- [api/README.md](api/README) - Complete API documentation
 - [api/QUICK_START.md](../api/QUICK_START.md) - Fast reference
 - [API_WEEK1_SUMMARY.md](API_WEEK1_SUMMARY.md) - Week 1 details
 - [API_WEEK2_SUMMARY.md](API_WEEK2_SUMMARY.md) - Week 2 details
