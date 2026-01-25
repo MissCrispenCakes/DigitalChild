@@ -39,16 +39,17 @@ MONITORED_SOURCES = {
         "base_url": "https://ilga.org/maps-sexual-orientation-laws",
         "pattern": r"LGBTQ_Legal_Status|Promotion_Propaganda",
     },
-    "human_dignity_trust": {
-        "name": "Human Dignity Trust Country Profiles",
-        "base_url": "https://www.humandignitytrust.org/country-profile",
-        "pattern": r"LGBTQ_Legal_Status",
-    },
-    "gsma_sim": {
-        "name": "GSMA SIM Registration",
-        "base_url": "https://www.gsma.com/mobilefordevelopment/resources/mandatory-sim-registration",
+    # REMOVED: human_dignity_trust (site unreachable)
+    # Replaced by: ilga_maps (already monitored above)
+    # See: docs/maintenance/SCORECARD_MAINTENANCE_REPORT.md for details
+    "privacy_intl_sim": {
+        "name": "Privacy International - SIM Registration",
+        "base_url": "https://privacyinternational.org/learn/biometric-id-databases",
         "pattern": r"SIM_Biometric",
     },
+    # NOTE: gsma_sim removed (site unreachable)
+    # Replaced by: privacy_intl_sim (above)
+    # See: docs/maintenance/SCORECARD_MAINTENANCE_REPORT.md for details
 }
 
 REQUEST_TIMEOUT = 20
