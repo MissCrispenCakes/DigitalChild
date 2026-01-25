@@ -8,7 +8,6 @@ ______________________________________________________________________
 
 ## 📚 Core Documentation (Root)
 
-- [Project README (GitHub)](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/README.md) → Project quickstart, badges, installation
 - `index.md` → GRIMdata homepage (landing page)
 - `README.md` → Documentation overview and navigation
 - `DOCS_INDEX.md` → This index

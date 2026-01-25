@@ -11,7 +11,8 @@ This directory contains comprehensive documentation for the **DigitalChild** pip
 
 ### Getting Started
 
-- **[Project README](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/README.md)** - Project README with setup instructions and quickstart (on GitHub)
+- **[website/getting-started/installation.md](website/getting-started/installation.md)** - Installation and setup instructions
+- **[website/getting-started/quickstart.md](website/getting-started/quickstart.md)** - Quick start guide for first-time users
 - **[api/README](api/README/)** - 🆕 **REST API Documentation** (9 endpoints for programmatic access)
 - **[website/api-reference.md](website/api-reference.md)** - 🆕 **API Quick Reference** (skimmable cheat sheet)
 - **[DOCS_INDEX.md](DOCS_INDEX.md)** - Complete index of all documentation files
