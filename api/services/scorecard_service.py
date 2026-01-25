@@ -8,6 +8,7 @@ Works with pandas DataFrames returned by load_scorecard().
 
 from typing import Dict, Optional
 
+import pandas as pd
 from flask import current_app
 
 from api.middleware.error_handlers import NotFoundError
@@ -23,7 +24,6 @@ except ImportError:
     current_app.logger.warning(
         "processors.scorecard not available, using stub functions"
     )
-    import pandas as pd
 
     # Stub functions for testing without processors
     def load_scorecard():
