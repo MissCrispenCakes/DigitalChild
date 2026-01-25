@@ -353,7 +353,7 @@ The scorecard analysis identified 3 key maintenance priorities:
 ### Medium-Term (Next Month)
 1. ⬜ Update 8 high-priority entries (10-15 years old)
 2. ⬜ Begin batch processing of 6-10 year old entries
-3. ⬜ Document update methodology in CLAUDE.md
+3. ⬜ Document update methodology in guides/SCORECARD_WORKFLOW.md
 
 ### Long-Term (Next Quarter)
 1. ⬜ Establish quarterly maintenance schedule

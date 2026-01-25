@@ -14,7 +14,6 @@ This directory contains comprehensive documentation for the **DigitalChild** pip
 - **[Project README](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/README.md)** - Project README with setup instructions and quickstart (on GitHub)
 - **[api/README](api/README/)** - 🆕 **REST API Documentation** (9 endpoints for programmatic access)
 - **[website/api-reference.md](website/api-reference.md)** - 🆕 **API Quick Reference** (skimmable cheat sheet)
-- **[https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md)** - Comprehensive guide for Claude Code AI assistant
 - **[DOCS_INDEX.md](DOCS_INDEX.md)** - Complete index of all documentation files
 - **[guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)** - Common errors and solutions for first-time users
 
@@ -169,7 +168,6 @@ MkDocs website-specific content (separated from core documentation):
 1. **First-time setup issues?** → See [guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)
 1. **Need to understand a feature?** → Check [DOCS_INDEX.md](DOCS_INDEX.md) for relevant docs
 1. **Want to contribute?** → Read [ROADMAP.md](ROADMAP.md) for planned features
-1. **Using Claude Code?** → See [https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md) for AI assistant guidance
 
 ## Documentation Maintenance
 

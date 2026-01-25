@@ -9,7 +9,6 @@ ______________________________________________________________________
 - `pipeline_runner.py` → Main entry point for running pipelines (scraper, urls, scorecard modes)
 - `init_project.py` → Bootstrap script to create directory structure and placeholders
 - `requirements.txt` → Python dependencies
-- `CLAUDE.md` → Comprehensive guide for Claude Code AI assistant
 - `README.md` → Project quickstart and documentation
 - `scorecard_main.xlsx` → Scorecard data (194 countries, 10 indicators each)
 - `.github/workflows/ci.yml` → GitHub Actions CI pipeline
@@ -281,7 +280,6 @@ DigitalChild/
 ├── init_project.py            # Bootstrap script
 ├── requirements.txt           # Dependencies
 ├── scorecard_main.xlsx        # Scorecard data
-├── CLAUDE.md                  # AI assistant guide
 ├── README.md                  # Project quickstart
 ├── scrapers/                  # Data fetching (no __init__.py)
 ├── processors/                # Data processing (has __init__.py)

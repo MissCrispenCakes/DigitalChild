@@ -263,8 +263,6 @@ The project is actively developed. Contributions welcome in:
 1. **Testing** coverage expansion
 1. **Performance** optimizations
 
-See [CLAUDE.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CLAUDE.md) for development guide.
-
 ______________________________________________________________________
 
 ## Notes

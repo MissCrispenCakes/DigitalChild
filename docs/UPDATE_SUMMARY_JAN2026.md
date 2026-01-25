@@ -43,13 +43,6 @@ All documentation has been updated to reflect the completion of Phase 4 Flask AP
 - Updated metrics (209 tests, 18k+ lines, 9 endpoints)
 - Added API completion to "Recent Completions"
 
-**CLAUDE.md**
-- Added Flask to technology stack
-- Added API dependencies installation section
-- Added "Run API" commands section
-- Updated test count (170 pipeline + 39 API)
-- Added API documentation reference
-
 ### 2. Documentation Index
 
 **docs/DOCS_INDEX.md**

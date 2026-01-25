@@ -127,7 +127,6 @@ These files live in the project root, not docs/:
 - `../LICENSE-DATA` → CC BY 4.0 License for data/docs
 - `../SECURITY.md` → Security policies and vulnerability reporting
 - `../CITATION.cff` → Academic citation format
-- `../CLAUDE.md` → AI assistant context
 - `../DEPLOYMENT_GUIDE.md` → Deployment instructions
 
 ______________________________________________________________________
