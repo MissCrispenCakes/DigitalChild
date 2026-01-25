@@ -60,14 +60,14 @@ def system_info():
 
     data_freshness = {}
     if metadata_file.exists():
-        data_freshness["metadata_updated"] = datetime.fromtimestamp(
-            metadata_file.stat().st_mtime
-        ).isoformat() + "Z"
+        data_freshness["metadata_updated"] = (
+            datetime.fromtimestamp(metadata_file.stat().st_mtime).isoformat() + "Z"
+        )
 
     if scorecard_file.exists():
-        data_freshness["scorecard_updated"] = datetime.fromtimestamp(
-            scorecard_file.stat().st_mtime
-        ).isoformat() + "Z"
+        data_freshness["scorecard_updated"] = (
+            datetime.fromtimestamp(scorecard_file.stat().st_mtime).isoformat() + "Z"
+        )
 
     return success_response(
         {

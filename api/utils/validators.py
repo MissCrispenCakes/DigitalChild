@@ -129,7 +129,9 @@ def validate_enum(
     return value
 
 
-def validate_string(value: Any, field_name: str, max_length: int = 200) -> Optional[str]:
+def validate_string(
+    value: Any, field_name: str, max_length: int = 200
+) -> Optional[str]:
     """
     Validate string parameter
 

@@ -110,7 +110,7 @@ def get_country_details(country: str) -> Dict:
     indicators = get_all_indicators(country)
 
     # get_country_scorecard returns a pandas Series or dict
-    if hasattr(scorecard_row, 'get'):
+    if hasattr(scorecard_row, "get"):
         # It's a Series or dict
         return {
             "country": scorecard_row.get("Country"),
@@ -139,10 +139,18 @@ def get_indicator_statistics() -> Dict:
 
     # Define indicator columns (excluding metadata columns)
     metadata_cols = [
-        "RowNumber", "Country", "Region - Broad", "Region - Specific",
-        "Country_Normalized", "Country_ISO"
+        "RowNumber",
+        "Country",
+        "Region - Broad",
+        "Region - Specific",
+        "Country_Normalized",
+        "Country_ISO",
     ]
-    indicator_cols = [col for col in df.columns if col not in metadata_cols and not col.endswith("_Source")]
+    indicator_cols = [
+        col
+        for col in df.columns
+        if col not in metadata_cols and not col.endswith("_Source")
+    ]
 
     stats = {}
 
@@ -193,8 +201,12 @@ def _count_indicators(row) -> int:
         Count of populated indicators
     """
     metadata_cols = [
-        "RowNumber", "Country", "Region - Broad", "Region - Specific",
-        "Country_Normalized", "Country_ISO"
+        "RowNumber",
+        "Country",
+        "Region - Broad",
+        "Region - Specific",
+        "Country_Normalized",
+        "Country_ISO",
     ]
     count = 0
 

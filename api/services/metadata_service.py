@@ -161,7 +161,9 @@ def get_metadata_stats() -> Dict:
 
     # Year range (handle empty list)
     years = [doc.get("year") for doc in docs if doc.get("year")]
-    year_range = {"min": min(years), "max": max(years)} if years else {"min": None, "max": None}
+    year_range = (
+        {"min": min(years), "max": max(years)} if years else {"min": None, "max": None}
+    )
 
     return {
         "total": len(docs),

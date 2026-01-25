@@ -46,9 +46,7 @@ class Config:
     SCORECARD_FILE = os.getenv(
         "SCORECARD_FILE", str(DATA_DIR / "scorecard" / "scorecard_main.xlsx")
     )
-    TAGS_CONFIG_DIR = os.getenv(
-        "TAGS_CONFIG_DIR", str(PROJECT_ROOT / "configs")
-    )
+    TAGS_CONFIG_DIR = os.getenv("TAGS_CONFIG_DIR", str(PROJECT_ROOT / "configs"))
     EXPORTS_DIR = os.getenv("EXPORTS_DIR", str(DATA_DIR / "exports"))
 
     # Pagination defaults

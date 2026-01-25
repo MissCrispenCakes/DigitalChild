@@ -83,7 +83,9 @@ def list_countries():
 
 
 @scorecard_bp.route("/<country>", methods=["GET"])
-@cache.cached(timeout=3600, key_prefix=lambda: f"scorecard:{request.view_args['country']}")
+@cache.cached(
+    timeout=3600, key_prefix=lambda: f"scorecard:{request.view_args['country']}"
+)
 def get_country_scorecard(country):
     """
     Get full scorecard details for a specific country

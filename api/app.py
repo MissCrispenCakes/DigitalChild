@@ -31,7 +31,7 @@ def create_app(config_name=None):
     app.config.from_object(config_class)
 
     # Validate production configuration
-    if hasattr(config_class, 'validate'):
+    if hasattr(config_class, "validate"):
         config_class.validate()
 
     # Configure logging
@@ -56,8 +56,8 @@ def create_app(config_name=None):
 
 def register_blueprints(app):
     """Register Flask blueprints (route modules)"""
-    from api.routes.health import health_bp
     from api.routes.documents import documents_bp
+    from api.routes.health import health_bp
     from api.routes.scorecard import scorecard_bp
 
     app.register_blueprint(health_bp)
