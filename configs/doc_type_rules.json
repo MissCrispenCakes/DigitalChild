@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Document type classification rules for automatic detection",
+  "version": "v1",
+  "last_updated": "2026-01-25",
+  "document_types": {
+    "Law": {
+      "description": "Legislation, acts, statutes, regulations, legal frameworks",
+      "filename_patterns": [
+        "\\bact\\b",
+        "\\blaw\\b",
+        "\\blegislation\\b",
+        "\\bstatute\\b",
+        "\\bregulation\\b",
+        "\\bamendment\\b",
+        "\\bbill\\b",
+        "\\bcode\\b",
+        "legal_framework"
+      ],
+      "content_keywords": [
+        "enacted by parliament",
+        "legislative act",
+        "pursuant to",
+        "sections of this act",
+        "as amended",
+        "statutory",
+        "promulgated"
+      ],
+      "priority": 90
+    },
+    "Treaty": {
+      "description": "International treaties, conventions, charters, protocols",
+      "filename_patterns": [
+        "\\btreaty\\b",
+        "\\bconvention\\b",
+        "\\bcharter\\b",
+        "\\bprotocol\\b",
+        "\\bagreement\\b",
+        "\\bcovenant\\b",
+        "\\baccord\\b"
+      ],
+      "content_keywords": [
+        "state parties",
+        "ratification",
+        "signatory",
+        "treaty body",
+        "international law"
+      ],
+      "priority": 95
+    },
+    "TreatyBodyReport": {
+      "description": "Reports from UN treaty bodies (OHCHR, CRC, CESCR, CCPR, etc.)",
+      "filename_patterns": [
+        "\\bohchr\\b",
+        "\\bcrc\\b",
+        "\\bcescr\\b",
+        "\\bccpr\\b",
+        "\\bcedaw\\b",
+        "\\bcat\\b",
+        "\\bcrpd\\b",
+        "\\bacerwc\\b",
+        "\\bachpr\\b",
+        "treaty_body",
+        "concluding_observations",
+        "general_comment"
+      ],
+      "content_keywords": [
+        "treaty body",
+        "concluding observations",
+        "committee on",
+        "general comment",
+        "state party report",
+        "session of the committee"
+      ],
+      "priority": 100
+    },
+    "UPR": {
+      "description": "Universal Periodic Review documents",
+      "filename_patterns": [
+        "\\bupr\\b",
+        "universal_periodic_review",
+        "human_rights_council"
+      ],
+      "content_keywords": [
+        "universal periodic review",
+        "working group on the upr",
+        "national report submitted",
+        "stakeholder submissions"
+      ],
+      "priority": 100
+    },
+    "Policy": {
+      "description": "Government policies, strategies, frameworks, action plans",
+      "filename_patterns": [
+        "\\bpolicy\\b",
+        "\\bstrategy\\b",
+        "\\bframework\\b",
+        "action_plan",
+        "\\bcompact\\b",
+        "\\bagenda\\b",
+        "\\broadmap\\b",
+        "digital_policy",
+        "cyber_policy"
+      ],
+      "content_keywords": [
+        "policy framework",
+        "strategic plan",
+        "national strategy",
+        "policy objectives",
+        "policy statement",
+        "implementation plan"
+      ],
+      "priority": 60
+    },
+    "Guidelines": {
+      "description": "Best practices, recommendations, operational guidance",
+      "filename_patterns": [
+        "\\bguidelines\\b",
+        "\\bguidance\\b",
+        "best_practices",
+        "\\bmanual\\b",
+        "\\bhandbook\\b",
+        "operational_guide"
+      ],
+      "content_keywords": [
+        "best practices",
+        "recommended approach",
+        "guidelines for",
+        "practical guidance",
+        "how to"
+      ],
+      "priority": 70
+    },
+    "Report": {
+      "description": "Research reports, monitoring reports, assessments, studies",
+      "filename_patterns": [
+        "\\breport\\b",
+        "\\bassessment\\b",
+        "\\banalysis\\b",
+        "\\bstudy\\b",
+        "\\bresearch\\b",
+        "\\bsurvey\\b",
+        "\\bmonitoring\\b",
+        "annual_report",
+        "country_report"
+      ],
+      "content_keywords": [
+        "this report",
+        "research findings",
+        "methodology",
+        "executive summary",
+        "key findings",
+        "recommendations"
+      ],
+      "priority": 50
+    },
+    "Observations": {
+      "description": "Concluding observations from treaty monitoring bodies",
+      "filename_patterns": [
+        "concluding_observations",
+        "\\bobservations\\b"
+      ],
+      "content_keywords": [
+        "concluding observations",
+        "the committee notes",
+        "the committee recommends",
+        "welcomes the efforts",
+        "expresses concern"
+      ],
+      "priority": 85
+    },
+    "Recommendations": {
+      "description": "Specific recommendations from committees or commissions",
+      "filename_patterns": [
+        "recommendations",
+        "\\brecommends\\b"
+      ],
+      "content_keywords": [
+        "recommends that",
+        "following recommendations",
+        "key recommendations"
+      ],
+      "priority": 80
+    },
+    "Constitution": {
+      "description": "National constitutions and amendments",
+      "filename_patterns": [
+        "\\bconstitution\\b",
+        "constitutional"
+      ],
+      "content_keywords": [
+        "constitutional court",
+        "article",
+        "fundamental rights",
+        "supreme law"
+      ],
+      "priority": 100
+    }
+  },
+  "classification_strategy": {
+    "description": "Multi-stage classification approach",
+    "stages": [
+      {
+        "name": "source_based",
+        "description": "Use source metadata (e.g., 'upr' source → UPR type)",
+        "weight": 1.0
+      },
+      {
+        "name": "filename_pattern",
+        "description": "Match filename against regex patterns",
+        "weight": 0.8
+      },
+      {
+        "name": "content_keywords",
+        "description": "Search for keywords in first 2000 characters of text",
+        "weight": 0.6
+      }
+    ],
+    "default_type": "Unknown",
+    "confidence_threshold": 0.5
+  },
+  "source_mapping": {
+    "description": "Direct mapping from source to doc_type (highest priority)",
+    "mapping": {
+      "upr": "UPR",
+      "upr_sel": "UPR",
+      "ohchr": "TreatyBodyReport",
+      "ohchr_sel": "TreatyBodyReport",
+      "acerwc": "TreatyBodyReport",
+      "acerwc_sel": "TreatyBodyReport",
+      "achpr": "TreatyBodyReport",
+      "achpr_sel": "TreatyBodyReport",
+      "au_policy": "Policy",
+      "au_policy_sel": "Policy",
+      "unicef": "Report",
+      "unicef_sel": "Report"
+    }
+  }
+}

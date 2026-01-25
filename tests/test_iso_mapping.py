@@ -5,13 +5,12 @@ Tests for ISO 3166-1 alpha-2 Country Code Mapping
 Tests the complete ISO mapping for all 194 UN member states.
 """
 
-import pytest
 from utils.iso_mapping import (
-    ISO_COUNTRY_MAPPING,
     ISO_CODE_TO_COUNTRY,
+    ISO_COUNTRY_MAPPING,
     TOTAL_COUNTRIES,
-    get_iso_code,
     get_country_name,
+    get_iso_code,
     normalize_country_to_iso,
 )
 
@@ -57,7 +56,10 @@ class TestISOMapping:
     def test_special_cases(self):
         """Test countries with special naming conventions."""
         test_cases = [
-            ("Côte d’Ivoire", "CI"),  # Special characters (curly apostrophe from UN data)
+            (
+                "Côte d’Ivoire",
+                "CI",
+            ),  # Special characters (curly apostrophe from UN data)
             ("Democratic People's Republic of Korea", "KP"),  # North Korea
             ("Republic of Korea", "KR"),  # South Korea
             ("Bolivia (Plurinational State of)", "BO"),
