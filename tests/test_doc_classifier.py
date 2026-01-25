@@ -6,8 +6,6 @@ Tests the automatic classification of document types based on
 filename patterns, content keywords, and source metadata.
 """
 
-import pytest
-
 from processors.doc_classifier import (
     DocumentClassifier,
     classify_document,
@@ -302,9 +300,7 @@ class TestPriorityAndScoring:
         classifier = DocumentClassifier()
 
         # Document that could be both Treaty and Report
-        doc_type, _, scores = classifier.classify(
-            doc_id="Convention_Report_2024.pdf"
-        )
+        doc_type, _, scores = classifier.classify(doc_id="Convention_Report_2024.pdf")
 
         # Treaty has higher priority (95) than Report (50)
         assert doc_type in ["Treaty", "Report"]
@@ -317,9 +313,7 @@ class TestPriorityAndScoring:
         classifier = DocumentClassifier()
 
         # Document with many law-related keywords
-        doc_type1, conf1, _ = classifier.classify(
-            doc_id="Cyber_Act.pdf"
-        )
+        doc_type1, conf1, _ = classifier.classify(doc_id="Cyber_Act.pdf")
 
         doc_type2, conf2, _ = classifier.classify(
             doc_id="Cyber_Security_Act_Legislation_2018.pdf"
@@ -366,8 +360,7 @@ class TestRealWorldExamples:
         """Test OHCHR concluding observations."""
         classifier = DocumentClassifier()
         doc_type, confidence, _ = classifier.classify(
-            doc_id="CRC_Concluding_Observations_Kenya_2023.pdf",
-            source="ohchr"
+            doc_id="CRC_Concluding_Observations_Kenya_2023.pdf", source="ohchr"
         )
         assert doc_type == "TreatyBodyReport"
         assert confidence == 1.0

@@ -54,10 +54,8 @@ class DocumentClassifier:
         self.rules = self._load_rules()
         self.doc_types = self.rules.get("document_types", {})
         self.source_mapping = self.rules.get("source_mapping", {}).get("mapping", {})
-        self.default_type = (
-            self.rules.get("classification_strategy", {}).get(
-                "default_type", "Unknown"
-            )
+        self.default_type = self.rules.get("classification_strategy", {}).get(
+            "default_type", "Unknown"
         )
         logger.info(f"Initialized classifier with {len(self.doc_types)} document types")
 
@@ -169,7 +167,9 @@ class DocumentClassifier:
 
         return scores
 
-    def _classify_by_content(self, text: str, max_chars: int = 2000) -> Dict[str, float]:
+    def _classify_by_content(
+        self, text: str, max_chars: int = 2000
+    ) -> Dict[str, float]:
         """
         Score document types based on content keywords.
 
