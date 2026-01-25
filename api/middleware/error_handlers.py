@@ -20,11 +20,13 @@ class APIError(Exception):
     message = "An internal error occurred"
 
     def __init__(self, message=None, details=None):
-        # B042: Pass message to super, store details separately
-        super().__init__(message or self.message)
-        if message:
+        # B042: Must pass args to super and can take kwargs for custom attrs
+        if message is not None:
+            super().__init__(message)
             self.message = message
-        self.details = details or {}
+        else:
+            super().__init__(self.message)
+        self.details = details if details is not None else {}
 
 
 class NotFoundError(APIError):
