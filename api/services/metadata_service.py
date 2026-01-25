@@ -270,9 +270,7 @@ def _filter_by_tags(docs: List[Dict], required_tags: List[str]) -> List[Dict]:
     return result
 
 
-def _apply_sorting(
-    docs: List[Dict], sort_by: str, sort_order: str
-) -> List[Dict]:
+def _apply_sorting(docs: List[Dict], sort_by: str, sort_order: str) -> List[Dict]:
     """
     Sort documents by specified field
 

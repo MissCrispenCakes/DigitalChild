@@ -42,9 +42,7 @@ def validate_page(value: Any, default: int = 1) -> int:
         raise ValidationError("Page must be an integer", field="page")
 
 
-def validate_per_page(
-    value: Any, default: int = 20, max_value: int = 100
-) -> int:
+def validate_per_page(value: Any, default: int = 20, max_value: int = 100) -> int:
     """
     Validate per_page parameter
 
@@ -67,9 +65,7 @@ def validate_per_page(
         if per_page < 1:
             raise ValidationError("per_page must be >= 1", field="per_page")
         if per_page > max_value:
-            raise ValidationError(
-                f"per_page must be <= {max_value}", field="per_page"
-            )
+            raise ValidationError(f"per_page must be <= {max_value}", field="per_page")
         return per_page
     except ValueError:
         raise ValidationError("per_page must be an integer", field="per_page")

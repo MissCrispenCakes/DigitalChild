@@ -36,9 +36,7 @@ class TestMetadataService:
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
 
-            result = get_documents(
-                filters={"country": "Kenya"}, page=1, per_page=10
-            )
+            result = get_documents(filters={"country": "Kenya"}, page=1, per_page=10)
 
             assert result["pagination"]["total"] == 1
             assert result["documents"][0]["country"] == "Kenya"
@@ -50,9 +48,7 @@ class TestMetadataService:
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
 
-            result = get_documents(
-                filters={"region": "Africa"}, page=1, per_page=10
-            )
+            result = get_documents(filters={"region": "Africa"}, page=1, per_page=10)
 
             assert result["pagination"]["total"] == 2
             for doc in result["documents"]:
@@ -65,9 +61,7 @@ class TestMetadataService:
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
 
-            result = get_documents(
-                filters={"tags": "AI"}, page=1, per_page=10
-            )
+            result = get_documents(filters={"tags": "AI"}, page=1, per_page=10)
 
             assert result["pagination"]["total"] == 2
 
@@ -78,9 +72,7 @@ class TestMetadataService:
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
 
-            result = get_documents(
-                filters={"year": 2024}, page=1, per_page=10
-            )
+            result = get_documents(filters={"year": 2024}, page=1, per_page=10)
 
             assert result["pagination"]["total"] == 1
             assert result["documents"][0]["year"] == 2024
@@ -100,9 +92,7 @@ class TestMetadataService:
 
             assert result["pagination"]["total"] == 2
 
-    def test_get_documents_pagination(
-        self, app, sample_metadata, mock_metadata_file
-    ):
+    def test_get_documents_pagination(self, app, sample_metadata, mock_metadata_file):
         """Test document pagination"""
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
@@ -133,9 +123,7 @@ class TestMetadataService:
             assert doc["id"] == "test_doc_1"
             assert doc["country"] == "Kenya"
 
-    def test_get_document_not_found(
-        self, app, sample_metadata, mock_metadata_file
-    ):
+    def test_get_document_not_found(self, app, sample_metadata, mock_metadata_file):
         """Test getting a document that doesn't exist"""
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
@@ -174,9 +162,7 @@ class TestMetadataService:
             years = [doc["year"] for doc in result["documents"]]
             assert years == [2022, 2023, 2024]
 
-    def test_documents_sorting_desc(
-        self, app, sample_metadata, mock_metadata_file
-    ):
+    def test_documents_sorting_desc(self, app, sample_metadata, mock_metadata_file):
         """Test sorting documents descending"""
         with app.app_context():
             app.config["METADATA_FILE"] = mock_metadata_file
