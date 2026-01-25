@@ -47,7 +47,9 @@ REST API backend documentation (Phase 4):
 - `../api/QUICK_START.md` → Fast reference guide for API usage
 - `API_WEEK1_SUMMARY.md` → Week 1 implementation summary (foundation)
 - `API_WEEK2_SUMMARY.md` → Week 2 implementation summary (core endpoints)
+- `API_DEPENDENCY_UPDATE.md` → Dependency updates and security patches (Jan 2026)
 - `../test_api.py` → API health check script
+- `../test_dependency_updates.sh` → Dependency update verification script
 
 ______________________________________________________________________
 

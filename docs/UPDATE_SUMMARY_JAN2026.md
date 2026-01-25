@@ -129,6 +129,21 @@ pytest tests/api/test_routes.py -v   # API integration tests
 curl http://localhost:5000/api/health # Quick curl test
 ```
 
+## Dependency Security Updates (January 25, 2026)
+
+All Flask API dependencies updated to latest stable versions to resolve 12 security vulnerabilities:
+
+**Key Updates:**
+- Flask: 3.0.0 → 3.1.2 (security patches)
+- Werkzeug: 3.0.1 → 3.1.3 (security patches)
+- Flask-CORS: 4.0.0 → 5.0.0 (Flask 3.1 compatibility)
+- gunicorn: 21.2.0 → 23.0.0 (CVE fixes, Python 3.12 support)
+- All other dependencies updated to latest stable
+
+**Compatibility:** Zero breaking changes - all existing code works with updated packages
+
+See [API_DEPENDENCY_UPDATE.md](API_DEPENDENCY_UPDATE.md) for complete details.
+
 ## Next Steps
 
 Documentation is now current as of January 2026. Future updates will track:
