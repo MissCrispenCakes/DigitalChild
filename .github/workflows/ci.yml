@@ -36,7 +36,10 @@ jobs:
             local url="$1"
             local output="$2"
             echo "Downloading $output..."
-            if curl --fail --show-error --retry 5 --retry-delay 10 --connect-timeout 30 --max-time 120 -L -o "$output" "$url"; then
+            if curl --fail --show-error --retry 5 --retry-delay 10 --connect-timeout 30 --max-time 120 \
+              -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+              -H "Accept: application/pdf,application/octet-stream,*/*" \
+              -L -o "$output" "$url"; then
               echo "✓ Successfully downloaded $output"
               return 0
             else
