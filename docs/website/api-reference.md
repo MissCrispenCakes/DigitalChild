@@ -235,9 +235,9 @@ For complete API documentation including:
 - Authentication
 - Production deployment
 
-See: [:octicons-book-24: Full API Documentation](../api/README.md){ .md-button .md-button--primary }
+See: [:octicons-book-24: Full API Documentation](../api/README/){ .md-button .md-button--primary }
 
-Or: [:octicons-zap-24: API Quick Start Guide](../api/QUICK_START.md){ .md-button }
+Or: [:octicons-zap-24: API Quick Start Guide](../api/QUICK_START/){ .md-button }
 
 ---
 

@@ -35,7 +35,7 @@ ______________________________________________________________________
     curl http://localhost:5000/api/documents
     ```
 
-    [:octicons-arrow-right-24: API Docs](../api/README.md){ .md-button }
+    [:octicons-arrow-right-24: API Docs](../api/README/){ .md-button }
 
 -   :material-download:{ .lg .middle } **Install Pipeline**
 
@@ -177,12 +177,12 @@ The **LittleRainbowRights** project is ready for use:
 
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
 1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
-1. **[Access via API](../api/README.md)** - REST API with 9 endpoints (NEW!)
+1. **[Access via API](../api/README/)** - REST API with 9 endpoints (NEW!)
 1. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
 1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
-[API Documentation](../api/README.md){ .md-button }
+[API Documentation](../api/README/){ .md-button }
 
 ## Use Cases
 

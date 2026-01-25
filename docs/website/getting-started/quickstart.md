@@ -16,7 +16,7 @@ Get started with DigitalChild in 5 minutes.
     curl http://localhost:5000/api/scorecard/Kenya
     ```
 
-    [:octicons-rocket-24: Full API Guide](../../api/README.md){ .md-button .md-button--primary }
+    [:octicons-rocket-24: Full API Guide](../../api/README/){ .md-button .md-button--primary }
 
 ---
 
@@ -130,7 +130,7 @@ scorecard = response.json()["data"]
 print(scorecard["indicators"])
 ```
 
-See [API Documentation](../../../api/README.md) for all 9 endpoints and features.
+See [API Documentation](../../../api/README/) for all 9 endpoints and features.
 
 ## Common Use Cases
 

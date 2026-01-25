@@ -16,8 +16,8 @@ Interactive visualization of human rights indicators across 194 countries.
     curl http://localhost:5000/api/scorecard/indicators/statistics
     ```
 
-    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START.md){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../../api/README.md){ .md-button }
+    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START/){ .md-button .md-button--primary }
+    [:octicons-book-24: Full API Docs](../../api/README/){ .md-button }
 
 ---
 
@@ -269,7 +269,7 @@ df = pd.DataFrame(data)
 print(df[["country", "region", "indicator_count"]])
 ```
 
-See [API Documentation](../../../api/README.md) for complete endpoint reference.
+See [API Documentation](../../../api/README/) for complete endpoint reference.
 
 ### From the Pipeline
 
@@ -436,7 +436,7 @@ Planned features (see [Roadmap](../../ROADMAP.md)):
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (9 endpoints live, see [API docs](../../../api/README.md))
+- [x] **API for programmatic access** ✅ **COMPLETE** (9 endpoints live, see [API docs](../../../api/README/))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)
