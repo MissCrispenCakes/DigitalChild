@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 Update CSV Export Functions to Include License Headers
 
@@ -55,11 +58,13 @@ def add_license_to_csv_footer(filepath, dry_run=False):
         return False, "No standard footer found"
 
     # Add license lines before the Project line
+    # REUSE-IgnoreStart
     license_lines = (
         '        csvfile.write("# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights\\n")\n'
         '        csvfile.write("# SPDX-License-Identifier: CC-BY-4.0\\n")\n'
         '        csvfile.write("\\n")\n'
     )
+    # REUSE-IgnoreEnd
 
     # Insert license lines before the footer
     new_content = re.sub(

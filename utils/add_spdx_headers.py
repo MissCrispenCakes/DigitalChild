@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """
 Add SPDX License Headers to Python Files
 
@@ -88,11 +91,13 @@ def add_spdx_header(filepath, dry_run=False):
     license_id = determine_license(filepath)
 
     # Create SPDX header
+    # REUSE-IgnoreStart
     spdx_header = (
         "# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights\n"
         f"# SPDX-License-Identifier: {license_id}\n"
         "\n"
     )
+    # REUSE-IgnoreEnd
 
     # Handle shebang lines
     if content.startswith("#!"):
