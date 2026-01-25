@@ -74,6 +74,45 @@ def validate_per_page(value: Any, default: int = 20, max_value: int = 100) -> in
         raise ValidationError("per_page must be an integer", field="per_page")
 
 
+def validate_integer(
+    value: Any,
+    field_name: str,
+    min_value: Optional[int] = None,
+    max_value: Optional[int] = None,
+) -> Optional[int]:
+    """
+    Validate integer parameter
+
+    Args:
+        value: Integer value from request
+        field_name: Name of field for error messages
+        min_value: Minimum allowed value (optional)
+        max_value: Maximum allowed value (optional)
+
+    Returns:
+        Validated integer or None if not provided
+
+    Raises:
+        ValidationError: If integer is invalid
+    """
+    if value is None:
+        return None
+
+    try:
+        int_value = int(value)
+        if min_value is not None and int_value < min_value:
+            raise ValidationError(
+                f"{field_name} must be >= {min_value}", field=field_name
+            )
+        if max_value is not None and int_value > max_value:
+            raise ValidationError(
+                f"{field_name} must be <= {max_value}", field=field_name
+            )
+        return int_value
+    except ValueError:
+        raise ValidationError(f"{field_name} must be an integer", field=field_name)
+
+
 def validate_year(value: Any) -> Optional[int]:
     """
     Validate year parameter

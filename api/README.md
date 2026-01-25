@@ -104,6 +104,74 @@ curl "http://localhost:5000/api/scorecard/Kenya"
 - Returns value distribution for each indicator
 - Cached for 1 hour
 
+### Tags
+
+**GET /api/tags**
+- Get tag frequency analysis across documents
+- Query parameters:
+  - `version`: Tag version (e.g., "tags_v3", "digital", "queerai")
+  - `country`: Filter by country name
+  - `region`: Filter by region
+  - `year`: Filter by specific year
+  - `year_min`, `year_max`: Filter by year range
+
+Example:
+```bash
+curl "http://localhost:5000/api/tags?version=tags_v3&region=Africa&year_min=2020"
+```
+
+**GET /api/tags/versions**
+- Get list of available tag versions
+- Returns array of version identifiers
+
+Example:
+```bash
+curl "http://localhost:5000/api/tags/versions"
+```
+
+### Timeline
+
+**GET /api/timeline/tags**
+- Get temporal analysis of tags over time (year × tag matrix)
+- Query parameters:
+  - `version`: Tag version (optional)
+  - `year_min`, `year_max`: Filter by year range (optional)
+  - `country`: Filter by country (optional)
+  - `region`: Filter by region (optional)
+
+Example:
+```bash
+curl "http://localhost:5000/api/timeline/tags?version=tags_v3&year_min=2018&year_max=2024"
+```
+
+### Export
+
+**GET /api/export**
+- List available export formats
+- Returns format ID, filename, and description for each format
+
+Example:
+```bash
+curl "http://localhost:5000/api/export"
+```
+
+**GET /api/export/:format**
+- Download dataset in CSV format
+- Available formats:
+  - `scorecard_summary`: Scorecard data for all countries
+  - `tags_summary`: Tag frequency across all documents
+  - `documents_list`: Complete document list with metadata
+- Query parameters (for tags_summary):
+  - `version`: Tag version (optional)
+
+Example:
+```bash
+curl "http://localhost:5000/api/export/scorecard_summary" -o scorecard.csv
+curl "http://localhost:5000/api/export/tags_summary?version=tags_v3" -o tags.csv
+```
+
+All CSV exports include SPDX license headers (CC-BY-4.0) for data attribution.
+
 ## Implementation Status
 
 ### Week 1: Foundation ✅ COMPLETE
@@ -131,6 +199,20 @@ curl "http://localhost:5000/api/scorecard/Kenya"
 6. ✅ Sorting support (any field, asc/desc)
 7. ✅ 39 test cases written (12 unit + 27 integration)
 8. ✅ All 9 endpoints working and tested
+
+### Week 3: Extended APIs ✅ COMPLETE
+
+1. ✅ Tags API (frequency analysis, version management)
+   - GET /api/tags (with filters)
+   - GET /api/tags/versions
+2. ✅ Timeline API (temporal analysis)
+   - GET /api/timeline/tags (year × tag matrix)
+3. ✅ Export API (CSV downloads)
+   - GET /api/export (list formats)
+   - GET /api/export/:format (download CSV)
+4. ✅ SPDX license headers in CSV exports
+5. ✅ 31 test cases written for Week 3 endpoints
+6. ✅ All 14 endpoints now working (76 total tests passing)
 
 ### API Features
 
@@ -222,26 +304,47 @@ Environment variables (see `.env.example`):
 - `METADATA_FILE`: Path to metadata.json
 - `SCORECARD_FILE`: Path to scorecard_main.xlsx
 
-## Next Steps (Week 3+)
+## Next Steps (Week 4-5)
 
-- [ ] Implement Tags API
-  - GET /api/tags (tag frequency)
-  - GET /api/tags/versions (available tag versions)
-- [ ] Implement Timeline API
-  - GET /api/timeline/tags (tags over time)
-- [ ] Implement Export API
-  - GET /api/export/:format (download CSV exports)
+### Week 4: Authentication & Rate Limiting
+
 - [ ] Add authentication middleware
-  - API key validation
+  - API key validation via X-API-Key header
   - Per-key rate limiting
+  - Auth decorator for protected endpoints
+- [ ] Implement rate limiting
+  - 100 requests/hour for public endpoints
+  - 1000 requests/hour for authenticated endpoints
+  - Flask-Limiter integration
+  - Redis storage for production
+- [ ] Update all endpoints with auth requirements
+- [ ] Add 8-10 tests for authentication
+- [ ] Update documentation with auth examples
+
+### Week 5: Production Ready
+
 - [ ] Add Swagger/OpenAPI documentation
+  - flask-swagger-ui integration
+  - API explorer at /api/docs
 - [ ] Performance optimization
   - Redis caching for production
-  - DataFrame pickle cache for scorecard
-- [ ] Deployment
-  - Docker configuration
+  - Connection pooling
+- [ ] Deployment guides
+  - Docker configuration (Dockerfile, docker-compose.yml)
   - Production deployment guide
-  - Monitoring and logging setup
+  - Nginx reverse proxy example
+  - Gunicorn configuration
+- [ ] Security audit
+  - OWASP checklist review
+  - Input validation review
+  - Rate limit testing
+- [ ] Monitoring and logging
+  - Structured logging
+  - Health check monitoring
+  - Performance metrics
+- [ ] Load testing
+  - Concurrent request testing
+  - Response time benchmarks
 
 ## Production Deployment
 

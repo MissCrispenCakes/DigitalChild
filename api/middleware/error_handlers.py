@@ -23,6 +23,25 @@ class APIError(Exception):
     message = "An internal error occurred"
     details = {}
 
+    def __init__(self, message=None, status_code=None, error_code=None, details=None):
+        """
+        Initialize API error with optional overrides
+
+        Args:
+            message: Error message (overrides class default)
+            status_code: HTTP status code (overrides class default)
+            error_code: Error code (overrides class default)
+            details: Additional error details
+        """
+        super().__init__(message or self.message)
+        self.message = message or self.message
+        if status_code is not None:
+            self.status_code = status_code
+        if error_code is not None:
+            self.error_code = error_code
+        if details is not None:
+            self.details = details
+
 
 class NotFoundError(APIError):
     """Raised when a resource is not found"""

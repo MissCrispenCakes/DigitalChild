@@ -63,6 +63,50 @@ curl http://127.0.0.1:5000/api/scorecard/Kenya
 curl http://127.0.0.1:5000/api/scorecard/indicators/statistics
 ```
 
+### Get Tag Frequency
+```bash
+# All tags
+curl http://127.0.0.1:5000/api/tags
+
+# By version
+curl "http://127.0.0.1:5000/api/tags?version=tags_v3"
+
+# Filtered by region and year
+curl "http://127.0.0.1:5000/api/tags?region=Africa&year_min=2020&year_max=2024"
+```
+
+### Get Tag Versions
+```bash
+curl http://127.0.0.1:5000/api/tags/versions
+```
+
+### Get Timeline (Tags Over Time)
+```bash
+# All years
+curl http://127.0.0.1:5000/api/timeline/tags
+
+# Filtered by version and year range
+curl "http://127.0.0.1:5000/api/timeline/tags?version=tags_v3&year_min=2018&year_max=2024"
+
+# By region
+curl "http://127.0.0.1:5000/api/timeline/tags?region=Africa"
+```
+
+### Export Data (CSV Downloads)
+```bash
+# List available export formats
+curl http://127.0.0.1:5000/api/export
+
+# Download scorecard summary
+curl "http://127.0.0.1:5000/api/export/scorecard_summary" -o scorecard.csv
+
+# Download tags summary
+curl "http://127.0.0.1:5000/api/export/tags_summary?version=tags_v3" -o tags.csv
+
+# Download documents list
+curl "http://127.0.0.1:5000/api/export/documents_list" -o documents.csv
+```
+
 ## Response Format
 
 ### Success Response
@@ -125,6 +169,22 @@ curl http://127.0.0.1:5000/api/scorecard/indicators/statistics
 - `region` - Filter by region
 - `page` - Page number (default: 1)
 - `per_page` - Items per page (default: 20, max: 100)
+
+### Tags
+- `version` - Tag version (e.g., "tags_v3", "digital", "queerai")
+- `country` - Filter by country name
+- `region` - Filter by region
+- `year` - Specific year
+- `year_min`, `year_max` - Year range
+
+### Timeline
+- `version` - Tag version (optional)
+- `country` - Filter by country (optional)
+- `region` - Filter by region (optional)
+- `year_min`, `year_max` - Year range (optional)
+
+### Export
+- `version` - Tag version (for tags_summary export only)
 
 ## Common Filter Examples
 
@@ -214,6 +274,6 @@ python init_project.py
 
 ## Next Steps
 
-- See `api/README.md` for complete documentation
-- See `docs/API_WEEK2_SUMMARY.md` for implementation details
+- See `api/README.md` for complete API documentation (all 14 endpoints)
 - See `.env.example` for configuration options
+- Check test coverage: `pytest tests/api/ -v` (76 tests passing)

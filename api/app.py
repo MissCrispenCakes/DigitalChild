@@ -60,12 +60,18 @@ def create_app(config_name=None):
 def register_blueprints(app):
     """Register Flask blueprints (route modules)"""
     from api.routes.documents import documents_bp
+    from api.routes.export import export_bp
     from api.routes.health import health_bp
     from api.routes.scorecard import scorecard_bp
+    from api.routes.tags import tags_bp
+    from api.routes.timeline import timeline_bp
 
     app.register_blueprint(health_bp)
     app.register_blueprint(documents_bp)
     app.register_blueprint(scorecard_bp)
+    app.register_blueprint(tags_bp)
+    app.register_blueprint(timeline_bp)
+    app.register_blueprint(export_bp)
 
     app.logger.info(f"Registered {len(app.blueprints)} blueprints")
 
