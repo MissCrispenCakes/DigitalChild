@@ -145,6 +145,7 @@ nav:
   - Scorecard: scorecard/index.md
   - Data Explorer: scorecard/explorer.md
   - Projects:
+      - Overview: website/projects/index.md
       - LittleRainbowRights:
           - Project Overview: website/projects/littlerainbowrights/index.md
           - Getting Started:
