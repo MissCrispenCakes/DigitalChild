@@ -16,8 +16,8 @@ Interactive visualization of human rights indicators across 194 countries.
     curl http://localhost:5000/api/scorecard/indicators/statistics
     ```
 
-    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START/){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../../api/README/){ .md-button }
+    [:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
+    [:octicons-book-24: Full API Docs](../api/README/){ .md-button }
 
 ---
 
@@ -269,7 +269,7 @@ df = pd.DataFrame(data)
 print(df[["country", "region", "indicator_count"]])
 ```
 
-See [API Documentation](../../../api/README/) for complete endpoint reference.
+See [API Documentation](../api/README/) for complete endpoint reference.
 
 ### From the Pipeline
 
@@ -431,12 +431,12 @@ Or:
 
 ## Future Enhancements
 
-Planned features (see [Roadmap](../../ROADMAP.md)):
+Planned features (see [Roadmap](../ROADMAP.md)):
 
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../../../api/README/))
+- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/README/))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)
@@ -445,15 +445,15 @@ Planned features (see [Roadmap](../../ROADMAP.md)):
 
 For technical documentation:
 
-- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md) - Complete system overview
-- [Metadata Schema](../../standards/METADATA_SCHEMA.md) - Data structure
-- [Architecture](../../ARCHITECTURE.md) - System design
+- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md) - Complete system overview
+- [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
+- [Architecture](../ARCHITECTURE.md) - System design
 
 ## Support & Feedback
 
 - **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../../FAQ.md)
+- **General questions:** [FAQ](../FAQ.md)
 
 ______________________________________________________________________
 
