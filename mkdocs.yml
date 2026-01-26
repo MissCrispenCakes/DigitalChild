@@ -50,7 +50,8 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.path
-    - navigation.indexes
+    # Disabled: Can conflict with toc.integrate
+    # - navigation.indexes
     - navigation.footer
     - toc.follow
     - toc.integrate
