@@ -53,7 +53,8 @@ theme:
     - navigation.indexes
     - navigation.footer
     - toc.follow
-    - toc.integrate
+    # Disabled: User prefers traditional right-sidebar TOC for all pages
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
