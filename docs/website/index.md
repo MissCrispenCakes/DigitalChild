@@ -138,7 +138,7 @@ ______________________________________________________________________
 
     ---
 
-    NEW: Flask REST API with 9 endpoints for programmatic data access. Filter, paginate, and query documents and scorecard data via HTTP.
+    Flask REST API with 14 endpoints for programmatic data access. Features authentication, rate limiting, and production deployment. Filter, paginate, and query documents, scorecard, tags, and timeline data via HTTP.
 
 -   :material-code-tags:{ .lg .middle } __Open Source Code__
 
@@ -166,7 +166,7 @@ ______________________________________________________________________
 - **BeautifulSoup4 & Selenium** - Web scraping
 - **pandas** - Data analysis
 - **Flask** - REST API backend (Phase 4)
-- **pytest** - Testing framework (209 tests: 170 pipeline + 39 API)
+- **pytest** - Testing framework (274 tests: 170 pipeline + 104 API)
 - **MkDocs Material** - Documentation
 
 All pipelines follow best practices for security, validation, and error handling. The REST API provides programmatic data access with filtering, pagination, and caching.
@@ -177,7 +177,7 @@ The **LittleRainbowRights** project is ready for use:
 
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
 1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
-1. **[Access via API](../api/README/)** - REST API with 9 endpoints (NEW!)
+1. **[Access via API](../api/README/)** - REST API with 14 endpoints (Production-ready with authentication!)
 1. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
 1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 

@@ -45,7 +45,7 @@ nav:
 !!! tip "🆕 NEW: REST API Now Available!"
     Access GRIMdata programmatically with our Flask REST API!
 
-    **9 endpoints** for documents, scorecard, and statistics
+    **14 endpoints** for documents, scorecard, tags, timeline, and statistics
 
     [:octicons-rocket-24: API Quick Start](../api/QUICK_START.md){ .md-button .md-button--primary }
     [:octicons-book-24: Full API Docs](api/README){ .md-button }
@@ -65,7 +65,7 @@ nav:
 **Created new skimmable page with:**
 
 - One-line start command
-- Table of all 9 endpoints
+- Table of all 14 endpoints
 - Quick examples in tabs (bash, Python)
 - Response format examples
 - Common queries
@@ -167,7 +167,7 @@ nav:
 - Install commands
 - Curl examples
 - Python example
-- List of 9 endpoints
+- List of 14 endpoints
 - Links to full docs
 
 **Impact:** GitHub visitors see API prominently in main README
@@ -252,7 +252,7 @@ nav:
 **After:**
 1. Click "API Reference" in main navigation
 2. Click "Quick Reference"
-3. See entire API on one page (9 endpoints, examples, response formats)
+3. See entire API on one page (14 endpoints, examples, response formats)
 
 ## Discoverability Metrics
 
@@ -321,7 +321,7 @@ nav:
 **Path:**
 1. Click "API Reference" in main navigation
 2. Click "Quick Reference"
-3. See table of 9 endpoints + examples + response formats
+3. See table of 14 endpoints + examples + response formats
 4. **Success in:** 2 minutes
 
 ### Scenario 4: User installing pipeline

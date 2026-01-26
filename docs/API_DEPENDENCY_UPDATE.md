@@ -138,7 +138,7 @@ curl http://localhost:5000/api/scorecard
 ### 4. Run Test Suite
 
 ```bash
-# Quick health check (9 endpoints)
+# Quick health check (14 endpoints)
 python test_api.py
 
 # Full pytest suite (39 tests)
@@ -153,7 +153,7 @@ pytest tests/ -v
 ### All Tests Should Pass
 
 ```
-✓ 9/9 endpoints working (test_api.py)
+✓ 14/14 endpoints working (test_api.py)
 ✓ 39/39 API tests passing (pytest tests/api/)
 ✓ 209/209 total tests passing (pytest tests/)
 ```

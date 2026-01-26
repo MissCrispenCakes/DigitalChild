@@ -130,7 +130,7 @@ scorecard = response.json()["data"]
 print(scorecard["indicators"])
 ```
 
-See [API Documentation](../../../api/README/) for all 9 endpoints and features.
+See [API Documentation](../../../api/README/) for all 14 endpoints and features.
 
 ## Common Use Cases
 

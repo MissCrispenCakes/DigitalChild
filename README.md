@@ -55,10 +55,14 @@ ______________________________________________________________________
 - **CSV exports** - Tags summaries, scorecard data, analysis results
 - **Metadata tracking** - Complete provenance for every document
 - **Reproducible** - Version-controlled configs and timestamps
-- **REST API** - 9 endpoints for programmatic data access (Flask backend)
+- **REST API** - 14 production-ready endpoints for programmatic data access (Flask backend)
   - Documents: list with filters, pagination, sorting, detail view
   - Scorecard: countries summary, indicators, statistics
-  - Caching, validation, standard JSON responses
+  - Tags: frequency analysis, version management, filtering
+  - Timeline: temporal analysis of tags over time
+  - Export: CSV downloads with SPDX license headers
+  - API key authentication, dynamic rate limiting (100-2000 req/hr)
+  - Docker deployment with Redis caching and Nginx reverse proxy
 
 ______________________________________________________________________
 
@@ -159,23 +163,44 @@ curl http://localhost:5000/api/scorecard/Kenya
 ```python
 import requests
 
+# Optional: Use API key for higher rate limits
+headers = {"X-API-Key": "your-api-key"}
+
 # Get Kenya's scorecard
-response = requests.get("http://localhost:5000/api/scorecard/Kenya")
+response = requests.get("http://localhost:5000/api/scorecard/Kenya", headers=headers)
 data = response.json()["data"]
 print(data["indicators"])
 
 # Get documents about AI policy
-response = requests.get("http://localhost:5000/api/documents?tags=AI")
+response = requests.get("http://localhost:5000/api/documents?tags=AI", headers=headers)
 documents = response.json()["data"]["items"]
+
+# Get tag frequency for Africa
+response = requests.get("http://localhost:5000/api/tags?region=Africa", headers=headers)
+tags = response.json()["data"]["tags"]
+
+# Download scorecard CSV
+response = requests.get("http://localhost:5000/api/export/scorecard_summary", headers=headers)
+with open("scorecard.csv", "wb") as f:
+    f.write(response.content)
 ```
 
-**9 endpoints available:**
+**14 endpoints available:**
 
-- Documents: list, filter, detail
-- Scorecard: summary, country, statistics
-- Health & info
+- **Documents:** list, filter, detail (with pagination and sorting)
+- **Scorecard:** summary, country detail, statistics
+- **Tags:** frequency analysis, version list (filterable by country/region/year)
+- **Timeline:** tags over time (year × tag matrix)
+- **Export:** list formats, download CSVs
+- **Health:** status check, system info
 
-📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/website/api-reference.md)
+**Features:**
+- API key authentication (optional, higher rate limits when authenticated)
+- Rate limiting: 100 req/hr public, 1000 req/hr authenticated
+- Caching: 15min-1hr TTLs for optimal performance
+- Docker deployment ready with Redis and Nginx
+
+📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/website/api-reference.md) | [Production Deployment](docs/guides/PRODUCTION_DEPLOYMENT.md)
 
 ______________________________________________________________________
 
@@ -197,17 +222,29 @@ ______________________________________________________________________
 - ✅ Scorecard maintenance system - Phase 1 critical updates completed (6 countries, 18 fields updated)
 - ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
 
-**Phase 4 In Progress (2/4 complete):** Research dashboard development
+**Phase 4 Complete (5/5 weeks):** REST API backend operational
 
-- ✅ **Flask API backend (Week 1-2)** - 9 REST endpoints operational
+- ✅ **Flask API backend (Week 1-2)** - Foundation and core endpoints
+  - App factory pattern, configuration management, extensions
   - Documents API (list, filter, detail) with pagination and sorting
   - Scorecard API (countries, indicators, statistics)
   - Health and system info endpoints
   - Request validation, caching (15min-1hr TTLs), error handling
-  - 39 test cases, comprehensive documentation
-- ⏳ Tags, Timeline, Export APIs (Week 3-5) - Planned
-- ⏳ Authentication and rate limiting (Week 4) - Planned
-- ⏳ Interactive dashboard frontend - Planned
+- ✅ **Extended APIs (Week 3)** - Tags, Timeline, Export endpoints
+  - Tags API: frequency analysis, version management, filtering
+  - Timeline API: temporal analysis (year × tag matrices)
+  - Export API: CSV downloads with SPDX license headers
+- ✅ **Authentication & Rate Limiting (Week 4)** - Security features
+  - API key authentication via X-API-Key header
+  - Dynamic rate limiting (100/1000 req/hr public/authenticated)
+  - Custom limits for expensive operations (exports, search)
+- ✅ **Production Deployment (Week 5)** - Infrastructure ready
+  - Docker + docker-compose configuration
+  - Redis caching and rate limiting storage
+  - Nginx reverse proxy with SSL/TLS
+  - Complete deployment guide (678 lines)
+- ✅ **Testing & Quality** - 104 tests passing (100% success rate)
+- ⏳ **Interactive dashboard frontend** - Planned for Phase 5
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed roadmap and [api/README.md](api/README.md) for API documentation.
 

@@ -40,15 +40,16 @@ Operational guides for users:
 
 ## 🌐 API Documentation (../api/)
 
-REST API backend documentation (Phase 4):
+REST API backend documentation (Phase 4 - Complete):
 
-- `api/README.md` → Complete API documentation, endpoints, usage
+- `api/README.md` → Complete API documentation, endpoints, usage (14 endpoints)
 - `../api/QUICK_START.md` → Fast reference guide for API usage
 - `API_WEEK1_SUMMARY.md` → Week 1 implementation summary (foundation)
 - `API_WEEK2_SUMMARY.md` → Week 2 implementation summary (core endpoints)
 - `API_DEPENDENCY_UPDATE.md` → Dependency updates and security patches (Jan 2026)
 - `../test_api.py` → API health check script
 - `../test_dependency_updates.sh` → Dependency update verification script
+- `guides/PRODUCTION_DEPLOYMENT.md` → Complete production deployment guide (Docker, Redis, Nginx)
 
 ______________________________________________________________________
 
@@ -143,7 +144,7 @@ ______________________________________________________________________
 ## Notes
 
 - Documentation reorganized January 2026 for better navigation
-- Phase 4 API documentation added January 2026 (9 endpoints operational)
+- Phase 4 API documentation complete January 2026 (14 endpoints operational, production-ready)
 - getting-started/ = new user onboarding
 - guides/ = operational how-tos
 - projects/ = project-specific overviews
@@ -153,4 +154,4 @@ ______________________________________________________________________
 - standards/ = technical specifications
 - notes/ = internal development notes
 - maintenance/ = scorecard update tracking
-- api/ = REST API backend (Flask)
+- api/ = REST API backend (Flask with authentication, rate limiting, Docker deployment)

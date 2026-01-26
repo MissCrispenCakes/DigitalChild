@@ -390,7 +390,7 @@ def scrape(base_url=None, countries=None):
 1. Update `INDICATOR_COLUMNS` in `processors/scorecard.py`
 1. Re-run enrichment
 
-## 🌐 API Layer (Phase 4)
+## 🌐 API Layer (Phase 4 - Complete)
 
 **File:** `api/` directory
 
@@ -406,11 +406,19 @@ api/
 ├── routes/             # API endpoint blueprints
 │   ├── health.py       # Health check and system info
 │   ├── documents.py    # Documents list, filter, detail
-│   └── scorecard.py    # Scorecard summary, country detail, stats
+│   ├── scorecard.py    # Scorecard summary, country detail, stats
+│   ├── tags.py         # Tag frequency analysis, version list
+│   ├── timeline.py     # Tags over time (temporal analysis)
+│   └── export.py       # CSV export downloads
 ├── services/           # Business logic layer
 │   ├── metadata_service.py    # Document filtering and pagination
-│   └── scorecard_service.py   # Scorecard data access
+│   ├── scorecard_service.py   # Scorecard data access
+│   ├── tags_service.py        # Tag aggregation
+│   ├── timeline_service.py    # Timeline analysis
+│   └── export_service.py      # CSV generation
 ├── middleware/         # Request/response processing
+│   ├── auth.py                # API key authentication
+│   ├── rate_limit.py          # Dynamic rate limiting
 │   └── error_handlers.py      # Exception handling
 └── utils/              # Helper functions
     ├── response.py     # Standard JSON responses
@@ -419,37 +427,48 @@ api/
 
 **Key Features:**
 
-- **9 REST endpoints** (health, info, documents × 2, scorecard × 5)
+- **14 REST endpoints** (health, info, documents × 2, scorecard × 3, tags × 2, timeline × 1, export × 2)
+- **Authentication** (API key via X-API-Key header, optional)
+- **Rate limiting** (100 req/hr public, 1000 req/hr authenticated, custom limits for exports/search)
 - **Advanced filtering** (country, region, tags, year, source, doc_type)
 - **Pagination** (configurable page size, max 100)
 - **Sorting** (any field, ascending/descending)
-- **Caching** (15min documents, 1hr scorecard)
+- **Caching** (15min documents, 1hr scorecard/tags)
 - **Validation** (all query parameters validated)
 - **Standard responses** (success, error, paginated formats)
+- **Production ready** (Docker, docker-compose, Nginx, Redis)
 
 **Entry Point:**
 
 ```bash
+# Development
 python run_api.py  # Development server on port 5000
+
+# Production (Docker)
+docker-compose up -d  # API + Redis + Nginx
 ```
 
 **Testing:**
 
 ```bash
-python test_api.py  # Quick health check (9/9 endpoints)
+python test_api.py  # Quick health check (14/14 endpoints)
+pytest tests/api/ -v  # Full test suite (104 tests)
 ```
 
-See [api/README](api/README) for complete API documentation.
+See [api/README](api/README) for complete API documentation and [guides/PRODUCTION_DEPLOYMENT](guides/PRODUCTION_DEPLOYMENT) for deployment guide.
 
 ## 🧪 Testing Strategy
 
-**Test Suite:** 209 tests covering:
+**Test Suite:** 274 tests covering:
 
 - 68 validator tests (comprehensive security checks)
 - 20 scorecard tests (load, enrich, export, validate)
 - 36 pipeline tests (tagger, processors, metadata, logging)
 - 46 other pipeline tests
-- 39 API tests (12 unit + 27 integration)
+- 104 API tests (unit + integration, 100% pass rate)
+  - Authentication and rate limiting tests
+  - Route integration tests
+  - Service layer tests
 
 **Test Organization:**
 
@@ -461,17 +480,22 @@ tests/
 ├── test_metadata.py         # Metadata operations
 ├── test_logging.py          # Logging system
 ├── test_fallback_handler.py # Multi-format processing
+├── api/                     # API tests (104 tests)
+│   ├── test_routes.py       # Route integration tests
+│   ├── test_auth.py         # Authentication tests
+│   ├── test_rate_limit.py   # Rate limiting tests
+│   └── test_services.py     # Service layer tests
 └── conftest.py              # Pytest configuration
 ```
 
 **Run tests:**
 
 ```bash
-pytest tests/ -v                      # All tests (pipeline + API)
+pytest tests/ -v                      # All tests (pipeline + API, 274 total)
 pytest tests/test_validators.py -v   # Specific module
-pytest tests/api/test_routes.py -v   # API integration tests
+pytest tests/api/ -v                  # All API tests (104 tests)
 pytest tests/ --cov                   # With coverage
-python test_api.py                    # Quick API health check
+python test_api.py                    # Quick API health check (14 endpoints)
 ```
 
 ## 📊 Performance Considerations

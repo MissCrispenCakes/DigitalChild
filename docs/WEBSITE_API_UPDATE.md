@@ -2,7 +2,7 @@
 
 ## Overview
 
-All GRIMdata website files have been updated to reflect the Flask REST API implementation (Phase 4, Weeks 1-2 complete). This update ensures users can discover and use the new API endpoints across all website documentation.
+All GRIMdata website files have been updated to reflect the Flask REST API implementation (Phase 4, All 5 Weeks Complete). This update ensures users can discover and use the new API endpoints across all website documentation.
 
 ## What Changed
 
@@ -86,7 +86,7 @@ documents = response.json()["data"]["items"]
 **After:**
 
 ```
-- [x] API for programmatic access ✅ COMPLETE (9 endpoints live)
+- [x] API for programmatic access ✅ COMPLETE (14 endpoints live, production-ready)
 ```
 
 ### 5. Main Website Index
@@ -98,7 +98,7 @@ documents = response.json()["data"]["items"]
 - Added API to "Getting Started" numbered list
 - Added "API Documentation" button alongside "Get Started" button
 - Updated "What GRIMdata Provides" grid cards
-- Added new card: "REST API" highlighting 9 endpoints
+- Added new card: "REST API" highlighting 14 endpoints
 
 **New Grid Card:**
 
@@ -107,7 +107,7 @@ documents = response.json()["data"]["items"]
 
     ---
 
-    NEW: Flask REST API with 9 endpoints for programmatic data access.
+    Flask REST API with 14 endpoints for programmatic data access (production-ready with authentication).
     Filter, paginate, and query documents and scorecard data via HTTP.
 ```
 
@@ -215,7 +215,7 @@ bash verify_website_api_update.sh
 **API Description:**
 
 - "Flask REST API"
-- "9 endpoints"
+- "14 endpoints, authentication, rate limiting"
 - "Programmatic data access"
 - "Filter, paginate, and query"
 

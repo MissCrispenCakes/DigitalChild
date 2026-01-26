@@ -197,8 +197,8 @@ All CSV exports include SPDX license headers (CC-BY-4.0) for data attribution.
 4. ✅ Request validation for all parameters
 5. ✅ Pagination support (configurable page size)
 6. ✅ Sorting support (any field, asc/desc)
-7. ✅ 39 test cases written (12 unit + 27 integration)
-8. ✅ All 9 endpoints working and tested
+7. ✅ 104 test cases written (100% pass rate)
+8. ✅ All 14 endpoints working and tested
 
 ### Week 3: Extended APIs ✅ COMPLETE
 

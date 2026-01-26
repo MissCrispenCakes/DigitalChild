@@ -436,7 +436,7 @@ Planned features (see [Roadmap](../../ROADMAP.md)):
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (9 endpoints live, see [API docs](../../../api/README/))
+- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../../../api/README/))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)
