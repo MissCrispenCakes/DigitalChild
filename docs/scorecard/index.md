@@ -2,37 +2,9 @@
 
 Interactive visualization of human rights indicators across 194 countries.
 
-!!! tip "🚀 Access Scorecard Data via API"
-    **Fastest way to get scorecard data:**
+## Overview
 
-    ```bash
-    # Get all countries
-    curl http://localhost:5000/api/scorecard
-
-    # Get specific country
-    curl http://localhost:5000/api/scorecard/Kenya
-
-    # Get indicator statistics
-    curl http://localhost:5000/api/scorecard/indicators/statistics
-    ```
-
-    [:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../api/README/){ .md-button }
-
----
-
-!!! info "Coming Soon: Interactive Visualizations"
-    Interactive visualizations are currently under development. This page will feature:
-    ```txt
-    - Country-level indicator heatmaps
-    - Regional comparison charts
-    - Time-series trend analysis
-    - Source URL verification status
-    ```
-
-For now, you can explore the data through the REST API, CSV exports, or the data explorer below.
-
-## Quick Stats
+The LittleRainbowRights scorecard tracks 10 key indicators across 194 countries, providing comprehensive data on child and LGBTQ+ digital rights protections.
 
 <div class="grid cards" markdown>
 
@@ -61,6 +33,30 @@ For now, you can explore the data through the REST API, CSV exports, or the data
     Last updated with latest policy changes and new data
 
 </div>
+
+## Accessing Scorecard Data
+
+!!! tip "🚀 Via REST API (Recommended)"
+    **Fastest way to get scorecard data:**
+
+    ```bash
+    # Get all countries
+    curl http://localhost:5000/api/scorecard
+
+    # Get specific country
+    curl http://localhost:5000/api/scorecard/Kenya
+
+    # Get indicator statistics
+    curl http://localhost:5000/api/scorecard/indicators/statistics
+    ```
+
+    [:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
+    [:octicons-book-24: Full API Docs](../api/README/){ .md-button }
+
+!!! info "Coming Soon: Interactive Visualizations"
+    Interactive visualizations are currently under development. This page will feature country-level heatmaps, regional comparisons, time-series analysis, and source verification status.
+
+    For now, explore the data through the REST API, CSV exports, or direct file access (see [Exporting Data](#exporting-data) below).
 
 ## Indicators Tracked
 
