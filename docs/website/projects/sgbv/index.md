@@ -1,5 +1,7 @@
 # SGBV-UPR Project
 
+[:octicons-arrow-left-24: Back to All Projects](../index.md){ .md-button }
+
 ## Sexual and Gender-Based Violence Analysis
 
 **Foundational research demonstrating automated UPR analysis at regional scale**

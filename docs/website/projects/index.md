@@ -1,5 +1,7 @@
 # GRIMdata Research Projects
 
+[:octicons-home-24: Back to GRIMdata Home](../index.md){ .md-button }
+
 **Two complementary research tracks analyzing human rights through automated document analysis**
 
 ______________________________________________________________________

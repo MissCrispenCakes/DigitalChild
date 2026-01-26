@@ -118,6 +118,8 @@ ______________________________________________________________________
 
 </div>
 
+[:octicons-apps-24: View All Projects](projects/index.md){ .md-button .md-button--primary }
+
 ## Research Evolution
 
 **SGBV-UPR** (2019-2022) demonstrated the feasibility of automated analysis of UPR recommendations at regional scale, focusing on SADC member states and SGBV themes. This work was published in academic literature and validated the core methodology.

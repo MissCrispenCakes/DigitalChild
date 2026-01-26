@@ -158,8 +158,8 @@ nav:
               - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
               - Validators Usage: guides/VALIDATORS_USAGE.md
           - Scorecard:
-              - Scorecard Visualization: website/scorecard/index.md
-              - Data Explorer: website/scorecard/explorer.md
+              - Scorecard Visualization: scorecard/index.md
+              - Data Explorer: scorecard/explorer.md
           - Documentation:
               - Architecture: ARCHITECTURE.md
               - Glossary: GLOSSARY.md
