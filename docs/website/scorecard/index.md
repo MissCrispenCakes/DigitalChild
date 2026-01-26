@@ -2,9 +2,7 @@
 
 Interactive visualization of human rights indicators across 194 countries.
 
-## Overview
-
-The LittleRainbowRights scorecard tracks 10 key indicators across 194 countries, providing comprehensive data on child and LGBTQ+ digital rights protections.
+## Quick Overview
 
 <div class="grid cards" markdown>
 
@@ -34,29 +32,31 @@ The LittleRainbowRights scorecard tracks 10 key indicators across 194 countries,
 
 </div>
 
-## Accessing Scorecard Data
+## Accessing Data
 
-!!! tip "🚀 Via REST API (Recommended)"
-    **Fastest way to get scorecard data:**
+### Via REST API
 
-    ```bash
-    # Get all countries
-    curl http://localhost:5000/api/scorecard
+Get scorecard data programmatically:
 
-    # Get specific country
-    curl http://localhost:5000/api/scorecard/Kenya
+```bash
+# Get all countries
+curl http://localhost:5000/api/scorecard
 
-    # Get indicator statistics
-    curl http://localhost:5000/api/scorecard/indicators/statistics
-    ```
+# Get specific country
+curl http://localhost:5000/api/scorecard/Kenya
 
-    [:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](../api/README/){ .md-button }
+# Get indicator statistics
+curl http://localhost:5000/api/scorecard/indicators/statistics
+```
 
-!!! info "Coming Soon: Interactive Visualizations"
-    Interactive visualizations are currently under development. This page will feature country-level heatmaps, regional comparisons, time-series analysis, and source verification status.
+[:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
+[:octicons-book-24: Full API Docs](../api/README/){ .md-button }
 
-    For now, explore the data through the REST API, CSV exports, or direct file access (see [Exporting Data](#exporting-data) below).
+### Interactive Visualizations
+
+Interactive visualizations are currently under development. This page will feature country-level heatmaps, regional comparisons, time-series analysis, and source verification status.
+
+For now, explore the data through the REST API, CSV exports, or direct file access (see [Exporting Data](#exporting-data) below).
 
 ## Indicators Tracked
 
