@@ -53,7 +53,8 @@ theme:
     - navigation.indexes
     - navigation.footer
     - toc.follow
-    - toc.integrate
+    # Disabled: Integrates TOC into left nav instead of right sidebar
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
