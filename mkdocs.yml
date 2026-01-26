@@ -142,7 +142,7 @@ nav:
       - "⚡ Quick Reference": website/api-reference.md
       - "Week 1 Summary": API_WEEK1_SUMMARY.md
       - "Week 2 Summary": API_WEEK2_SUMMARY.md
-  - Scorecard Visualization: scorecard/index.md
+  - Scorecard: scorecard/index.md
   - Data Explorer: scorecard/explorer.md
   - Projects:
       - LittleRainbowRights:
@@ -157,7 +157,7 @@ nav:
               - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
               - Validators Usage: guides/VALIDATORS_USAGE.md
           - Scorecard:
-              - Visualization: website/scorecard/index.md
+              - Scorecard Visualization: website/scorecard/index.md
               - Data Explorer: website/scorecard/explorer.md
           - Documentation:
               - Architecture: ARCHITECTURE.md

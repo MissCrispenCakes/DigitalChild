@@ -61,7 +61,7 @@ ______________________________________________________________________
     - Document metadata
     - Source validation reports
 
-    [:octicons-arrow-right-24: Scorecard](scorecard/index.md){ .md-button }
+    [:octicons-arrow-right-24: View Scorecard](scorecard/index.md){ .md-button }
 
 -   :material-book-open:{ .lg .middle } **Read Research**
 
@@ -178,7 +178,7 @@ The **LittleRainbowRights** project is ready for use:
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
 1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
 1. **[Access via API](../api/README/)** - REST API with 14 endpoints (Production-ready with authentication!)
-1. **[Explore the scorecard](scorecard/index.md)** - Browse 194-country dataset
+1. **[View Scorecard](scorecard/index.md)** - Browse 194-country dataset
 1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
