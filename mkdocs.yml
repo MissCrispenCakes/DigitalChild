@@ -141,6 +141,9 @@ nav:
       - "⚡ Quick Reference": website/api-reference.md
       - "Week 1 Summary": API_WEEK1_SUMMARY.md
       - "Week 2 Summary": API_WEEK2_SUMMARY.md
+  - Scorecard:
+      - Visualization: scorecard/index.md
+      - Data Explorer: scorecard/explorer.md
   - Projects:
       - LittleRainbowRights:
           - Project Overview: website/projects/littlerainbowrights/index.md
