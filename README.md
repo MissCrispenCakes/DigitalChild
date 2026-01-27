@@ -200,7 +200,7 @@ with open("scorecard.csv", "wb") as f:
 - Caching: 15min-1hr TTLs for optimal performance
 - Docker deployment ready with Redis and Nginx
 
-📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/website/api-reference.md) | [Production Deployment](docs/guides/PRODUCTION_DEPLOYMENT.md)
+📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/api/quick-reference.md) | [Production Deployment](docs/guides/PRODUCTION_DEPLOYMENT.md)
 
 ______________________________________________________________________
 
