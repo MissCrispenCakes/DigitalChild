@@ -347,7 +347,7 @@ If you use this project in your research, please cite it:
   title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
   author = {Vollmer, S.C. and Vollmer, D.T.},
   year = {2026},
-  version = {1.0.1},
+  version = {2.0.0},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
   doi = {10.5281/zenodo.18318099},
   note = {Available at: https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)}
