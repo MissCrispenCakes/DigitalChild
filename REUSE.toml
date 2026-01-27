@@ -1,0 +1,112 @@
+version = 1
+SPDX-PackageName = "DigitalChild"
+SPDX-PackageSupplier = "GRIMdata <https://github.com/MissCrispenCakes/DigitalChild>"
+SPDX-PackageDownloadLocation = "https://github.com/MissCrispenCakes/DigitalChild"
+
+[[annotations]]
+path = ["docs/**", "**.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["configs/**", "data/metadata/**", "data/exports/**", "utils/**.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["scorecard**.xlsx", "scorecard.csv", "scorecard.ods", "scorecard.gsheet.json", "data/scorecard/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "presentations/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "data/raw/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Various (see source URLs in metadata)"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ".github/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [".pre-commit-config.yaml", ".gitignore", ".gitattributes"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["**requirements.txt", "requirements/**.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "tests/fixtures/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["pytest.ini", "setup.py", "setup.cfg", "pyproject.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["mkdocs.yml", "docs/overrides/**", "docs/website/stylesheets/**", "docs/website/javascripts/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["CITATION.cff", "zenodo.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ".zenodo.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = [".vscode/**", ".flake8"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ".env.example"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["**.txt", "**.sh", "**.bib"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["data/archive/**", "data/cache/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "CNAME"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 GRIMdata / LittleRainbowRights"
+SPDX-License-Identifier = "CC0-1.0"
