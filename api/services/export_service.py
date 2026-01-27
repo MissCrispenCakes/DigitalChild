@@ -58,10 +58,12 @@ def generate_scorecard_summary_csv() -> str:
         )
 
     # Footer
+    # REUSE-IgnoreStart
     output.write("\n")
     output.write("# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights\n")
     output.write("# SPDX-License-Identifier: CC-BY-4.0\n")
     output.write("\n")
+    # REUSE-IgnoreEnd
     output.write("# Project: GRIMdata / LittleRainbowRights\n")
     output.write("# Domains: https://GRIMdata.org | https://LittleRainbowRights.com\n")
     output.write(f"# Dataset: Scorecard Summary ({len(countries)} countries)\n")
@@ -95,10 +97,12 @@ def generate_tags_summary_csv(version: str = None) -> str:
         writer.writerow([tag_data["tag"], tag_data["count"], tag_data["percentage"]])
 
     # Footer
+    # REUSE-IgnoreStart
     output.write("\n")
     output.write("# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights\n")
     output.write("# SPDX-License-Identifier: CC-BY-4.0\n")
     output.write("\n")
+    # REUSE-IgnoreEnd
     output.write("# Project: GRIMdata / LittleRainbowRights\n")
     output.write("# Domains: https://GRIMdata.org | https://LittleRainbowRights.com\n")
     output.write(f"# Dataset: Tags Summary ({total_docs} documents analyzed)\n")
@@ -152,10 +156,12 @@ def generate_documents_list_csv() -> str:
         )
 
     # Footer
+    # REUSE-IgnoreStart
     output.write("\n")
     output.write("# SPDX-FileCopyrightText: 2025 GRIMdata / LittleRainbowRights\n")
     output.write("# SPDX-License-Identifier: CC-BY-4.0\n")
     output.write("\n")
+    # REUSE-IgnoreEnd
     output.write("# Project: GRIMdata / LittleRainbowRights\n")
     output.write("# Domains: https://GRIMdata.org | https://LittleRainbowRights.com\n")
     output.write(f"# Dataset: Documents List ({len(documents)} documents)\n")
