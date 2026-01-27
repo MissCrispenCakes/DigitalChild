@@ -49,8 +49,8 @@ curl http://localhost:5000/api/scorecard/Kenya
 curl http://localhost:5000/api/scorecard/indicators/statistics
 ```
 
-[:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
-[:octicons-book-24: Full API Docs](../api/README/){ .md-button }
+[:octicons-rocket-24: API Quick Start](../api/quickstart.md){ .md-button .md-button--primary }
+[:octicons-book-24: Full API Docs](../api/reference.md){ .md-button }
 
 ### Interactive Visualizations
 
@@ -265,7 +265,7 @@ df = pd.DataFrame(data)
 print(df[["country", "region", "indicator_count"]])
 ```
 
-See [API Documentation](../api/README/) for complete endpoint reference.
+See [API Documentation](../api/reference.md) for complete endpoint reference.
 
 ### From the Pipeline
 
@@ -432,7 +432,7 @@ Planned features (see [Roadmap](../ROADMAP.md)):
 - [ ] Interactive heatmap visualizations (Plotly.js)
 - [ ] Country comparison tool
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/README/))
+- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/index.md))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)

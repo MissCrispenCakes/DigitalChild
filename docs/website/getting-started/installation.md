@@ -11,7 +11,7 @@ This guide walks you through installing DigitalChild on your system.
     python run_api.py
     ```
 
-    [:octicons-rocket-24: API Quick Start](../../api/QUICK_START/){ .md-button .md-button--primary }
+    [:octicons-rocket-24: API Quick Start](../../api/quickstart.md){ .md-button .md-button--primary }
 
 ## Prerequisites
 

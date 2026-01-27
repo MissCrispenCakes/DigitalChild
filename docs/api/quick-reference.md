@@ -397,9 +397,9 @@ For complete API documentation including:
 - Performance optimization
 - Security best practices
 
-See: [:octicons-book-24: Full API Documentation](../../api/README/){ .md-button .md-button--primary }
+See: [:octicons-book-24: Full API Documentation](reference.md){ .md-button .md-button--primary }
 
-Or: [:octicons-zap-24: API Quick Start Guide](../../api/QUICK_START/){ .md-button }
+Or: [:octicons-zap-24: API Quick Start Guide](quickstart.md){ .md-button }
 
 ---
 

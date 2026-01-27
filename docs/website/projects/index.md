@@ -29,7 +29,7 @@ ______________________________________________________________________
     **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099)
 
     [:octicons-arrow-right-24: Explore Project](littlerainbowrights/index.md){ .md-button .md-button--primary }
-    [:octicons-database-24: View Scorecard](../../scorecard/index.md){ .md-button }
+    [:octicons-database-24: View Scorecard](../scorecard/index.md){ .md-button }
 
 -   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
@@ -99,7 +99,7 @@ Both projects use the GRIMdata pipeline infrastructure:
 
     Access datasets via REST API or direct downloads
 
-    [:octicons-arrow-right-24: API Quick Start](../../api/QUICK_START.md)
+    [:octicons-arrow-right-24: API Quick Start](../../api/quickstart.md)
 
 -   :material-code-tags:{ .lg .middle } __Run the Pipeline__
 

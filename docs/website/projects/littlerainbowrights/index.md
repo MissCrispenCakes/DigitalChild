@@ -15,7 +15,7 @@
     data = response.json()["data"]
     ```
 
-    [:octicons-rocket-24: API Documentation](../../../api/README/){ .md-button .md-button--primary }
+    [:octicons-rocket-24: API Documentation](../../../api/reference.md){ .md-button .md-button--primary }
 
 ______________________________________________________________________
 
@@ -168,7 +168,7 @@ response = requests.get("http://localhost:5000/api/scorecard?region=Africa&per_p
 african_countries = response.json()["data"]["items"]
 ```
 
-See [API Documentation](../../../api/README/) for all endpoints and filtering options.
+See [API Documentation](../../../api/reference.md) for all endpoints and filtering options.
 
 **Via Direct File Access:**
 

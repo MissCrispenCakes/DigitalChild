@@ -1,8 +1,32 @@
-# Scorecard Visualization
+# Digital Rights Scorecard
 
-Interactive visualization of human rights indicators across 194 countries.
+**Tracking 10 key indicators across 194 countries to assess digital rights protections for vulnerable populations**
 
-## Quick Overview
+---
+
+## What is the Scorecard?
+
+The Digital Rights Scorecard is a comprehensive research tool that tracks **10 critical indicators** of digital rights protections across **194 countries worldwide**. It focuses specifically on the intersection of digital technology governance and the rights of vulnerable populations, particularly **LGBTQ+ individuals** and **children**.
+
+Each country receives scores on a 0-1-2 scale for each indicator, enabling comparative analysis of digital rights frameworks globally.
+
+---
+
+## Why It Exists
+
+As digital technologies—especially artificial intelligence, biometric systems, and data-driven platforms—become increasingly embedded in daily life, their impact on vulnerable communities requires systematic monitoring.
+
+**The gap this addresses:**
+- Existing digital rights indices focus on general privacy or internet freedom
+- Few track LGBTQ+-specific or child-specific digital protections
+- No comprehensive dataset examines the **intersection** of digital governance and vulnerable populations
+
+**Research foundation:**
+This scorecard was developed for the research paper *"Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa"* presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
+
+---
+
+## Quick Stats
 
 <div class="grid cards" markdown>
 
@@ -22,7 +46,7 @@ Interactive visualization of human rights indicators across 194 countries.
 
     ---
 
-    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
+    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF
 
 -   :material-update:{ .lg .middle } **January 2026**
 
@@ -32,225 +56,165 @@ Interactive visualization of human rights indicators across 194 countries.
 
 </div>
 
-## Accessing Data
+---
 
-### Via REST API
+## What It Tracks
 
-Get scorecard data programmatically:
+### The 10 Indicators
+
+1. **Data Protection Law** - Existence of comprehensive data protection legislation
+2. **DPA Independence** - Independence of Data Protection Authority from executive control
+3. **Children's Data Safeguards** - Binding child-specific privacy/data-protection safeguards
+4. **Child Online Protection Strategy** - National framework addressing online harms to children
+5. **SOGI Sensitive Data** - Legal recognition of sexual orientation/gender identity as sensitive data
+6. **LGBTQ+ Legal Status** - Legal recognition and protection of LGBTQ+ individuals
+7. **LGBTQ+ Promotion/Propaganda Offences** - Laws restricting LGBTQ+ expression or advocacy
+8. **AI Policy Status** - National AI strategy or framework adoption
+9. **DPIA Required for High-Risk AI** - Requirement for Data Protection Impact Assessments for AI
+10. **SIM Card Biometric ID Linkage** - Biometric data requirements for SIM card registration
+
+### Scoring System
+
+**0-1-2 Scale per indicator:**
+- **2 (Best)** - Comprehensive protections or safeguards in place
+- **1 (Middle)** - Partial protections or mixed implementation
+- **0 (Worst)** - No protections, harmful policies, or heightened risk
+
+**Composite Metrics:**
+- **Protection Score:** Sum of all 10 indicators (0-20 scale)
+- **Risk Index:** 100 − (Protection Score / 20 × 100) [inverted scale]
+- **Data Completeness:** Percentage of indicators with verified data
+
+---
+
+## Explore the Scorecard
+
+Choose your path based on your needs:
+
+<div class="grid cards" markdown>
+
+-   :material-book-open-variant:{ .lg .middle } **Design & Methodology**
+
+    ---
+
+    Understand how the scorecard was designed
+
+    - Detailed indicator definitions
+    - Scoring methodology
+    - Data sources and validation
+    - Limitations and caveats
+
+    [Learn About Design →](design.md)
+
+-   :material-api:{ .lg .middle } **Data Access (API)**
+
+    ---
+
+    Access scorecard data programmatically
+
+    - REST API endpoints
+    - CSV exports
+    - Python examples
+    - Direct file access
+
+    [Access the Data →](data-access.md)
+
+-   :material-chart-bar:{ .lg .middle } **Visualization**
+
+    ---
+
+    Explore visualizations and export options
+
+    - Current: CSV exports, API queries
+    - Future: Interactive heatmaps, country cards
+
+    [View Visualizations →](visualization.md)
+
+-   :material-table-search:{ .lg .middle } **Data Explorer**
+
+    ---
+
+    Interactive data exploration tool
+
+    - Coming soon: Filter, search, compare
+    - Current: Use API or CSV exports
+
+    [Try Explorer →](explorer.md)
+
+</div>
+
+---
+
+## Use Cases
+
+### Research Applications
+
+**Comparative Analysis:**
+Compare digital rights frameworks across regions to identify patterns and gaps
+
+**Risk Assessment:**
+Evaluate digital safety environments for vulnerable populations by country
+
+**Policy Tracking:**
+Monitor changes in digital governance policies over time
+
+**Advocacy Evidence:**
+Provide data-backed evidence for human rights advocacy
+
+### Example Research Questions
+
+- Which countries have comprehensive child data protections but criminalize LGBTQ+ identities?
+- How does biometric SIM registration correlate with LGBTQ+ legal status?
+- Which African countries have adopted AI strategies with data protection frameworks?
+- Where are LGBTQ+ children most at risk from digital surveillance?
+
+---
+
+## Data Quality & Sources
+
+### Authoritative Sources
+
+All 2,543 source URLs come from authoritative international organizations:
+
+- **UNESCO** - AI Policy Observatory
+- **UNCTAD** - Data Protection and Privacy Legislation Database
+- **ILGA World** - State-Sponsored Homophobia report (LGBTQ+ legal status)
+- **UNICEF** - Child protection measures and COP strategies
+- **ITU** - Telecom and internet regulations
+- **Privacy International** - Surveillance and biometric tracking
+- **Human Rights Watch** - Human rights monitoring
+
+### Validation & Monitoring
+
+**Quality Assurance:**
+- All 2,543 URLs automatically validated (HTTP status, redirects, link rot)
+- Change detection monitors when source content updates
+- Manual quarterly review by researchers
+- Community contributions via GitHub issues
+
+**Transparency:**
+- Every indicator value links to its authoritative source URL
+- Validation reports available in `data/scorecard/validation_report.csv`
+- Full methodology documented in [Design & Methodology](design.md)
+
+---
+
+## Quick Start Examples
+
+### API Access
 
 ```bash
-# Get all countries
-curl http://localhost:5000/api/scorecard
-
-# Get specific country
+# Get Kenya's scorecard
 curl http://localhost:5000/api/scorecard/Kenya
 
-# Get indicator statistics
-curl http://localhost:5000/api/scorecard/indicators/statistics
-```
-
-[:octicons-rocket-24: API Quick Start](../api/QUICK_START/){ .md-button .md-button--primary }
-[:octicons-book-24: Full API Docs](../api/README/){ .md-button }
-
-### Interactive Visualizations
-
-Interactive visualizations are currently under development. This page will feature country-level heatmaps, regional comparisons, time-series analysis, and source verification status.
-
-For now, explore the data through the REST API, CSV exports, or direct file access (see [Exporting Data](#exporting-data) below).
-
-## Indicators Tracked
-
-!!! info "Scoring System"
-    Each indicator uses a 0-1-2 scale where higher scores indicate stronger protections:
-
-    - **2 (Best)** - Comprehensive protections or safeguards in place
-    - **1 (Middle)** - Partial protections or mixed implementation
-    - **0 (Worst)** - No protections, harmful policies, or heightened risk
-
-    Categories are listed from best (2) to worst (0) below. Risk analysis examines **combinations** of indicators (e.g., LGBTQ criminalization × biometric ID linkage).
-
-### 1. Data Protection Law (Data_Protection_Law)
-
-Existence of comprehensive data protection legislation governing personal data processing.
-
-**Sources:** UNCTAD Data Protection and Privacy Legislation Database; national statutes
-
-**Categories:**
-
-- **Comprehensive Law** (2) - Enacted data protection legislation with enforcement mechanisms
-- **Draft Legislation** (1) - Bill pending or under consultation
-- **No Specific Law** (0) - No comprehensive data protection law
-
-### 2. Data Protection Authority Independence (DPA_Independence)
-
-Whether the national Data Protection Authority operates independently from executive control.
-
-**Sources:** UNCTAD; DPA statutes; academic and regulatory analysis
-
-**Categories:**
-
-- **Independent Authority** (2) - DPA operates with full operational and financial independence
-- **Limited Independence** (1) - DPA exists but with constraints (appointments, budget, reporting)
-- **No DPA or Dependent Authority** (0) - No DPA established or DPA fully controlled by executive
-
-### 3. Children's Data Safeguards (Children_Data_Safeguards)
-
-Binding child-specific privacy/data-protection safeguards in law or regulation (not general child welfare law).
-
-**Sources:** National legislation; UNICEF; data protection laws
-
-**Categories:**
-
-- **Explicit Child Data Protections** (2) - Child-specific data governance provisions: limits on profiling/ads for children, heightened consent standards, age-appropriate design, "best interests of child" principle, retention/minimization rules, minors' rights (erase/access)
-- **General Protections Only** (1) - Children covered under general data protection but no child-specific data governance provisions
-- **No Specific Safeguards** (0) - No data protection framework or no child-specific safeguards
-
-### 4. Child Online Protection Strategy (COP_Strategy)
-
-National COP strategy/framework addressing online harms to children; may include parental tools/rights.
-
-**Sources:** UNICEF; ITU; national policy documents
-
-**Categories:**
-
-- **National COP Strategy** (2) - Comprehensive national COP framework: governance bodies, reporting/hotlines, digital literacy programs, platform safety guidance, sectoral online safety rules, parental empowerment measures
-- **Partial / Sectoral Measures** (1) - Sectoral initiatives, pilot programs, awareness campaigns, or piecemeal safety measures
-- **No Strategy** (0) - No national or sectoral child online protection strategy
-
-### 5. Sensitive Data Protections for SOGI (SOGI_Sensitive_Data)
-
-Whether sexual orientation and gender identity are legally recognized as sensitive personal data.
-
-**Sources:** Data protection statutes; ILGA World
-
-**Categories:**
-
-- **Explicitly Protected** (2) - Sexual orientation and/or gender identity explicitly listed as sensitive data
-- **Implicitly Covered** (1) - Covered under "sex life" or similar broader categories
-- **Not Recognized** (0) - SOGI not recognized as sensitive data or no data protection law
-
-### 6. LGBTQ+ Legal Status (LGBTQ_Legal_Status)
-
-Legal recognition and protection of LGBTQ+ individuals.
-
-**Sources:** ILGA World; Human Rights Watch
-
-**Categories:**
-
-- **Comprehensive Protections** (2) - Anti-discrimination laws, marriage recognition, constitutional protections
-- **Legal, No Specific Protections** (1) - Same-sex relations decriminalized but no anti-discrimination protections
-- **Criminalization** (0) - Same-sex relations criminalized under law
-
-### 7. LGBTQ+ Promotion / Propaganda Offences (Promotion_Propaganda_Offences)
-
-Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identities.
-
-**Sources:** ILGA World; national criminal codes
-
-**Categories:**
-
-- **No Restrictions** (2) - No legal restrictions on LGBTQ+ expression, advocacy, or visibility
-- **Restrictive Measures** (1) - Administrative restrictions, morality codes, or broadcast regulations limiting LGBTQ+ expression
-- **Criminalized Promotion** (0) - Explicit propaganda laws or criminal penalties for LGBTQ+ advocacy/discussion
-
-### 8. AI Policy Status (AI_Policy_Status)
-
-Whether a country has adopted a national AI strategy or framework.
-
-**Sources:** UNESCO AI Policy Observatory; UNCTAD; national governments
-
-**Categories:**
-
-- **Comprehensive AI Strategy** (2) - Adopted national AI strategy with implementation plan and governance framework
-- **Framework or Guidelines** (1) - Draft strategy, policy guidelines, or AI addressed in broader digital transformation plans
-- **No Published Policy** (0) - No AI-specific strategy or framework
-
-### 9. DPIA Required for High-Risk AI (DPIA_Required_High_Risk_AI)
-
-Legal requirement to conduct Data Protection Impact Assessments for high-risk AI systems.
-
-**Sources:** AI laws; data protection statutes; regulatory guidance
-
-**Categories:**
-
-- **Explicitly Required** (2) - Law mandates DPIA for high-risk AI systems (profiling, automated decisions, biometric processing)
-- **Partially Required** (1) - DPIA required for certain processing but not specifically for AI, or optional/recommended
-- **Not Required** (0) - No DPIA requirement or no data protection framework
-
-### 10. SIM Card Biometric ID Linkage (SIM_Biometric_ID_Linkage)
-
-Requirement to provide biometric data when registering SIM cards, either directly or through linkage to biometric national ID systems.
-
-**Sources:** Privacy International; telecom regulators; media reports
-
-**Categories:**
-
-- **Not Required** (2) - No ID requirement or minimal registration without biometric linkage
-- **Non-biometric ID Required** (1) - ID number/passport required but NOT linked to biometric database (photo on card ≠ biometric unless in facial recognition database)
-- **Mandatory Biometric Registration** (0) - Biometric data (fingerprints, facial scans, iris) required directly OR SIM requires national ID that is biometrically backed
-
-## Composite Scores
-
-In addition to the 10 individual indicators, the scorecard calculates composite metrics:
-
-### Protection Score
-
-**Formula:** Sum of all 10 indicator scores (0–20 scale)
-
-- **Maximum:** 20 (all indicators score 2)
-- **Minimum:** 0 (all indicators score 0)
-- **Interpretation:** Higher scores indicate stronger digital rights protections
-
-**Example:** Country with 7 indicators at (2), 2 at (1), 1 at (0) = 14 + 2 + 0 = 16 Protection Score
-
-### Risk Index
-
-**Formula:** 100 − (Protection_Score / 20 × 100)
-
-- **Maximum:** 100 (no protections, highest risk)
-- **Minimum:** 0 (full protections, lowest risk)
-- **Interpretation:** Inverted scale where higher values indicate greater risk
-
-**Example:** Protection Score of 16 → Risk Index = 100 − (16/20 × 100) = 100 − 80 = 20
-
-### Data Completeness
-
-**Formula:** (Number of known indicators / 10) × 100
-
-- **Maximum:** 100% (all 10 indicators have data)
-- **Minimum:** 0% (no indicator data available)
-- **Interpretation:** Percentage of metrics with verified data for the country
-
-**Note:** Countries with low data completeness (<50%) should be interpreted cautiously as composite scores may not reflect full picture.
-
-## Exporting Data
-
-### Via REST API (Recommended)
-
-**NEW:** Access scorecard data programmatically via the REST API:
-
-```bash
-# Start the API server
-python run_api.py
-```
-
-Then query the data:
-
-```bash
-# Get all countries with scorecard data
-curl http://localhost:5000/api/scorecard
-
-# Get specific country
-curl http://localhost:5000/api/scorecard/Kenya
-
-# Get indicator statistics
-curl http://localhost:5000/api/scorecard/indicators/statistics
-
-# Filter by region
+# Get all African countries
 curl "http://localhost:5000/api/scorecard?region=Africa"
+
+# Get indicator statistics
+curl http://localhost:5000/api/scorecard/indicators/statistics
 ```
 
-**Python Example:**
+### Python Analysis
 
 ```python
 import requests
@@ -258,199 +222,141 @@ import pandas as pd
 
 # Fetch scorecard data via API
 response = requests.get("http://localhost:5000/api/scorecard?per_page=200")
-data = response.json()["data"]["items"]
+countries = response.json()["data"]["items"]
 
 # Convert to DataFrame
-df = pd.DataFrame(data)
-print(df[["country", "region", "indicator_count"]])
+df = pd.DataFrame(countries)
+
+# Find countries with LGBTQ+ criminalization AND biometric SIM requirements
+at_risk = df[
+    (df["LGBTQ_Legal_Status"] == "Criminalization") &
+    (df["SIM_Biometric_ID_Linkage"] == "Mandatory Biometric Registration")
+]
+print(f"Found {len(at_risk)} countries with heightened surveillance risk for LGBTQ+ individuals")
 ```
 
-See [API Documentation](../api/README/) for complete endpoint reference.
-
-### From the Pipeline
-
-Run the scorecard export workflow:
+### CSV Export
 
 ```bash
+# Export scorecard data
 python pipeline_runner.py --mode scorecard --scorecard-action export
+
+# Generates:
+# - data/exports/scorecard_summary.csv (countries × indicators)
+# - data/exports/scorecard_sources.csv (all source URLs)
+# - data/exports/scorecard_by_indicator.csv (grouped by indicator)
+# - data/exports/scorecard_by_region.csv (regional aggregations)
 ```
 
-This generates:
+---
 
-- `scorecard_summary.csv` - Countries × Indicators table
-- `scorecard_sources.csv` - All source URLs with validation status
-- `scorecard_by_indicator.csv` - Grouped by indicator
-- `scorecard_by_region.csv` - Regional aggregations
-
-### CSV Format
-
-**scorecard_summary.csv:**
-
-| Country      | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
-| ------------ | ---------------- | ------------------- | ------------------ | --- |
-| Kenya        | Framework        | Comprehensive Law   | No Protections     | ... |
-| South Africa | Strategy         | Comprehensive Law   | Some Protections   | ... |
-
-**scorecard_sources.csv:**
-
-| Country | Indicator | Value     | Source_URL  | Validated | Last_Checked |
-| ------- | --------- | --------- | ----------- | --------- | ------------ |
-| Kenya   | AI_Policy | Framework | https://... | ✅        | 2026-01-15   |
-
-## Data Explorer
-
-```html
-<div id="scorecard-explorer">
-  <p><em>Interactive data explorer will be available in future update.</em></p>
-</div>
-
-<style>
-#scorecard-explorer {
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 2rem;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-/* Placeholder for future plotly visualization */
-.plotly-chart {
-  width: 100%;
-  height: 600px;
-}
-</style>
-```
-
-## Validation & Quality
-
-### URL Validation
-
-All 2,543 source URLs are automatically validated:
-
-```bash
-python pipeline_runner.py --mode scorecard --scorecard-action validate
-```
-
-Generates `validation_report.csv` with:
-
-- HTTP status codes
-- Redirect chains
-- Broken links
-- Response times
-
-### Change Detection
-
-Monitor sources for updates:
-
-```bash
-python processors/scorecard_diff.py
-```
-
-Detects:
-
-- Content changes (via hashing)
-- Policy updates
-- Broken links
-- New data available
-
-### Data Quality
-
-**Authoritative Sources:**
-
-- UNESCO - AI policies and digital education
-- UNCTAD - Data protection legislation
-- ILGA World - LGBTQ+ legal status
-- UNICEF - Child protection measures
-- ITU - Telecom regulations
-- Privacy International - Surveillance measures
-
-**Update Frequency:**
-
-- Manually reviewed quarterly
-- Automated monitoring alerts when sources change
-- Community contributions via GitHub issues
-
-## Contributing Data
-
-Found an error or have updated information?
-
-1. **Verify** - Check the source URL in `scorecard_main.xlsx`
-2. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
-    ```txt
-    - Country name
-    - Indicator
-    - Current value vs. correct value
-    - Authoritative source URL
-    ```
-3. **Update** - Maintainer reviews and updates
-4. **Re-export** - Updated data regenerated
-
-## Citing Scorecard Data
+## Citation
 
 When using scorecard data in publications:
 
 ```bibtex
-@misc{littlerainbowrights2025,
+@misc{littlerainbowrights2025scorecard,
   title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, S.C.},
+  author = {Vollmer, D.T. and Vollmer, S.C.},
   year = {2025},
-  howpublished = {\url{https://github.com/MissCrispenCakes/DigitalChild}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
+  howpublished = {\url{https://grimdata.org/scorecard/}},
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)},
+  doi = {10.5281/zenodo.18318099}
 }
 ```
 
-Or:
+Or in text:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators.
-> Licensed under CC BY 4.0.
-> Available at: https://github.com/MissCrispenCakes/DigitalChild
-> ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
+> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*. Available at: https://grimdata.org/scorecard/. DOI: 10.5281/zenodo.18318099. Licensed under CC BY 4.0.
+
+---
 
 ## Limitations & Disclaimers
 
 !!! warning "Important Considerations"
-    **Point-in-time data:** Reflects information as of January 2026
-    **Binary categorization:** Complex policies simplified into discrete categories
-    **Source availability:** Some countries lack accessible English-language sources
-    **Implementation vs. policy:** Tracks official policy, not enforcement
-    **Regional variation:** Federal systems may have state/provincial differences
+
+    **Point-in-time data:** Reflects information as of January 2026. Policies change frequently.
+
+    **Binary categorization:** Complex policies are simplified into discrete 0-1-2 categories for comparability.
+
+    **Source availability:** Some countries lack accessible English-language sources or transparent policy documentation.
+
+    **Implementation vs. policy:** Tracks official policy and law, not enforcement effectiveness or lived experience.
+
+    **Regional variation:** Federal systems may have significant state/provincial differences not captured at national level.
+
+    **Intersectional risk:** Real-world risk is determined by **combinations** of indicators (e.g., LGBTQ+ criminalization + biometric SIM requirements), not single indicators in isolation.
 
 !!! info "Use Responsibly"
-    This scorecard is a research tool, not legal advice. Always:
-    ```txt
-    - Verify source URLs before citing
-    - Consider local context and nuance
-    - Acknowledge limitations in publications
-    - Cross-reference with other datasets
-    ```
+
+    This scorecard is a **research tool**, not legal advice. Always:
+
+    - Verify source URLs before citing in publications
+    - Consider local context, enforcement patterns, and lived experience
+    - Acknowledge limitations in research methodology sections
+    - Cross-reference with other datasets and qualitative research
+    - Consult local human rights organizations for on-the-ground context
+
+---
 
 ## Future Enhancements
 
-Planned features (see [Roadmap](../ROADMAP.md)):
+Planned features (see [Roadmap](../../ROADMAP.md)):
 
+- [x] **REST API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready)
 - [ ] Interactive heatmap visualizations (Plotly.js)
-- [ ] Country comparison tool
+- [ ] Country comparison tool (side-by-side view)
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/README/))
 - [ ] Real-time source monitoring alerts
-- [ ] Expanded indicators (15-20 total)
-- [ ] Sub-national data (states/provinces)
+- [ ] Expanded indicators (target: 15-20 total)
+- [ ] Sub-national data (states/provinces for federal systems)
+- [ ] Integration with other digital rights indices
 
-## Technical Details
+---
 
-For technical documentation:
+## Contributing
 
-- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md) - Complete system overview
-- [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
-- [Architecture](../ARCHITECTURE.md) - System design
+Found an error or have updated information?
+
+**Report Issues:**
+1. Verify the source URL in `scorecard_main.xlsx`
+2. Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
+   - Country name
+   - Indicator
+   - Current value vs. correct value
+   - Authoritative source URL
+3. Maintainer reviews and updates
+4. Updated data regenerated and published
+
+**Contribute Code:**
+- See [Contributing Guide](../../CONTRIBUTING.md)
+- Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Ascorecard)
+
+---
+
+## Technical Documentation
+
+For developers and researchers working with the scorecard system:
+
+- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md) - Complete system overview
+- [Metadata Schema](../../standards/METADATA_SCHEMA.md) - Data structure
+- [Architecture](../../ARCHITECTURE.md) - System design
+- [API Documentation](../api/index.md) - Programmatic access
+
+---
 
 ## Support & Feedback
 
 - **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../FAQ.md)
+- **General questions:** [FAQ](../../FAQ.md)
+- **Research collaboration:** Contact via [GitHub](https://github.com/MissCrispenCakes/DigitalChild)
 
-______________________________________________________________________
+---
 
-**Note:** Interactive visualizations are under active development. Check back for updates or [watch the repository](https://github.com/MissCrispenCakes/DigitalChild) for notifications.
+## License
+
+- **Scorecard Data:** CC BY 4.0
+- **Code & Pipeline:** MIT License
+
+See [LICENSE-DATA](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA) and [LICENSE](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE) for details.

@@ -144,17 +144,17 @@ nav:
       - FAQ: FAQ.md
 
   - API:
-      - Overview: website/api/index.md
-      - Quick Start: website/api/quickstart.md
-      - Full Documentation: website/api/reference.md
-      - Quick Reference: website/api/quick-reference.md
+      - Overview: api/index.md
+      - Quick Start: api/quickstart.md
+      - Full Documentation: api/reference.md
+      - Quick Reference: api/quick-reference.md
 
   - Scorecard:
-      - Overview: website/scorecard/index.md
-      - Design & Methodology: website/scorecard/design.md
-      - Data Access: website/scorecard/data-access.md
-      - Visualization: website/scorecard/visualization.md
-      - Data Explorer: website/scorecard/explorer.md
+      - Overview: scorecard/index.md
+      - Design & Methodology: scorecard/design.md
+      - Data Access: scorecard/data-access.md
+      - Visualization: scorecard/visualization.md
+      - Data Explorer: scorecard/explorer.md
 
   - Projects:
       - Overview: website/projects/index.md
