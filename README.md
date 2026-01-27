@@ -260,7 +260,7 @@ ______________________________________________________________________
 - **[Data Governance](docs/DATA_GOVERNANCE.md)** - Privacy, ethics, responsible research
 - **[Roadmap](docs/ROADMAP.md)** - Development phases and future features
 - **[API Documentation](api/README.md)** - REST API endpoints, usage, examples
-- **[API Quick Start](api/QUICK_START.md)** - Fast reference for API usage
+- **[API Quick Start](docs/api/quickstart.md)** - Fast reference for API usage
 
 See [docs/DOCS_INDEX.md](docs/DOCS_INDEX.md) for full documentation index.
 
