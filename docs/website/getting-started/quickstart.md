@@ -390,7 +390,7 @@ See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troub
 ## Getting Help
 
 - **Documentation:** [Full docs index](../../DOCS_INDEX.md)
-- **FAQ:** [Common questions](../../FAQ.md)
+- **FAQ:** [Common questions](../../FAQ/)
 - **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 

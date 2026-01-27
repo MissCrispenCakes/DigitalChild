@@ -258,7 +258,7 @@ See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troub
 
 - [Quick Start Guide](quickstart.md) - Run your first pipeline
 - [Runbook](../../guides/RUNBOOK.md) - Complete command reference
-- [FAQ](../../FAQ.md) - Common questions answered
+- [FAQ](../../FAQ/) - Common questions answered
 
 ## System Requirements
 
@@ -289,7 +289,7 @@ DigitalChild runs on:
 
 ## Need Help?
 
-- Check [FAQ](../../FAQ.md)
+- Check [FAQ](../../FAQ/)
 - Review [First Run Errors](../../guides/FIRST_RUN_ERRORS.md)
 - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - Start [Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)

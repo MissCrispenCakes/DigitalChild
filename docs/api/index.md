@@ -437,7 +437,7 @@ See the [Production Deployment Guide](../../guides/PRODUCTION_DEPLOYMENT.md) for
 
 - **Issues & Bugs:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature Requests:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General Questions:** [FAQ](../../FAQ.md)
+- **General Questions:** [FAQ](../FAQ/)
 
 ---
 
