@@ -79,7 +79,7 @@ All documentation has been updated to reflect the completion of Phase 4 Flask AP
 ### 5. New API Documentation
 
 **Created:**
-- api/README.md (complete API documentation)
+- api/index.md.md (complete API documentation)
 - api/QUICK_START.md (fast reference guide)
 - docs/API_WEEK1_SUMMARY.md (Week 1 implementation details)
 - docs/API_WEEK2_SUMMARY.md (Week 2 implementation details)
@@ -161,7 +161,7 @@ All documentation updates have been:
 ## Key Resources
 
 For detailed API information, see:
-- [api/README.md](api/README) - Complete API documentation
+- [api/index.md.md](api/index.md) - Complete API documentation
 - [api/QUICK_START.md](../api/QUICK_START.md) - Fast reference
 - [API_WEEK1_SUMMARY.md](API_WEEK1_SUMMARY.md) - Week 1 details
 - [API_WEEK2_SUMMARY.md](API_WEEK2_SUMMARY.md) - Week 2 details

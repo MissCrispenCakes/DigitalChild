@@ -455,7 +455,7 @@ python test_api.py  # Quick health check (14/14 endpoints)
 pytest tests/api/ -v  # Full test suite (104 tests)
 ```
 
-See [api/README](api/README) for complete API documentation and [guides/PRODUCTION_DEPLOYMENT](guides/PRODUCTION_DEPLOYMENT) for deployment guide.
+See [API Documentation](api/index.md) for complete API documentation and [Production Deployment Guide](guides/PRODUCTION_DEPLOYMENT.md) for deployment guide.
 
 ## 🧪 Testing Strategy
 

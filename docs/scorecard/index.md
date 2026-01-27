@@ -301,7 +301,7 @@ Or in text:
 
 ## Future Enhancements
 
-Planned features (see [Roadmap](../../ROADMAP.md)):
+Planned features (see [Roadmap](../ROADMAP.md)):
 
 - [x] **REST API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready)
 - [ ] Interactive heatmap visualizations (Plotly.js)
@@ -329,7 +329,7 @@ Found an error or have updated information?
 4. Updated data regenerated and published
 
 **Contribute Code:**
-- See [Contributing Guide](../../CONTRIBUTING.md)
+- See [Contributing Guide](../CONTRIBUTING.md)
 - Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Ascorecard)
 
 ---
@@ -338,9 +338,9 @@ Found an error or have updated information?
 
 For developers and researchers working with the scorecard system:
 
-- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md) - Complete system overview
-- [Metadata Schema](../../standards/METADATA_SCHEMA.md) - Data structure
-- [Architecture](../../ARCHITECTURE.md) - System design
+- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md) - Complete system overview
+- [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
+- [Architecture](../ARCHITECTURE.md) - System design
 - [API Documentation](../api/index.md) - Programmatic access
 
 ---
@@ -349,7 +349,7 @@ For developers and researchers working with the scorecard system:
 
 - **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../../FAQ.md)
+- **General questions:** [FAQ](../FAQ/)
 - **Research collaboration:** Contact via [GitHub](https://github.com/MissCrispenCakes/DigitalChild)
 
 ---

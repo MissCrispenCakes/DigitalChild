@@ -27,7 +27,7 @@ nav:
   - GRIMdata Home: website/index.md
   - API Reference:              # <-- NEW TOP-LEVEL NAVIGATION
       - Quick Reference: website/api-reference.md
-      - API Overview: api/README.md
+      - API Overview: api/index.md.md
       - Quick Start: api/QUICK_START.md
       - Week 1 Summary: API_WEEK1_SUMMARY.md
       - Week 2 Summary: API_WEEK2_SUMMARY.md
@@ -48,7 +48,7 @@ nav:
     **14 endpoints** for documents, scorecard, tags, timeline, and statistics
 
     [:octicons-rocket-24: API Quick Start](../api/QUICK_START.md){ .md-button .md-button--primary }
-    [:octicons-book-24: Full API Docs](api/README){ .md-button }
+    [:octicons-book-24: Full API Docs](api/index.md){ .md-button }
 ```
 
 **Added "Quick Links" section with 4 cards:**
@@ -126,7 +126,7 @@ nav:
     response = requests.get("http://localhost:5000/api/scorecard/Kenya")
     ```
 
-    [:octicons-rocket-24: API Documentation](../../api/README)
+    [:octicons-rocket-24: API Documentation](../../api/index.md)
 ```
 
 **Impact:** Researchers see API option immediately on project page
@@ -154,7 +154,7 @@ nav:
 **Added to Quick Navigation:**
 
 ```markdown
-- **[api/README](api/README)** - 🆕 **REST API Documentation**
+- **[api/index.md](api/index.md)** - 🆕 **REST API Documentation**
 - **[website/api-reference.md](website/api-reference.md)** - 🆕 **API Quick Reference**
 ```
 

@@ -610,8 +610,8 @@ print(at_risk[["Country", "region", "protection_score"]].to_string(index=False))
 ## Support
 
 - **API Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Data Questions:** [FAQ](../../FAQ.md)
-- **Export Problems:** [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md)
+- **Data Questions:** [FAQ](../FAQ/)
+- **Export Problems:** [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md)
 
 ---
 

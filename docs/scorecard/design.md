@@ -454,7 +454,7 @@ When using scorecard methodology or data:
 
 ## Future Methodology Enhancements
 
-Planned improvements (see [Roadmap](../../ROADMAP.md)):
+Planned improvements (see [Roadmap](../ROADMAP.md)):
 
 1. **Expanded indicators** (target: 15-20 total)
    - Platform accountability measures
@@ -486,9 +486,9 @@ Planned improvements (see [Roadmap](../../ROADMAP.md)):
 
 For technical implementation details:
 
-- [Scorecard Workflow Guide](../../guides/SCORECARD_WORKFLOW.md) - Complete system documentation
-- [Metadata Schema](../../standards/METADATA_SCHEMA.md) - Data structure
-- [Architecture](../../ARCHITECTURE.md) - System design
+- [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md) - Complete system documentation
+- [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
+- [Architecture](../ARCHITECTURE.md) - System design
 
 ---
 

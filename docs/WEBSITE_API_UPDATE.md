@@ -149,7 +149,7 @@ python run_api.py
 
 All updated files now link to:
 
-- **[api/README.md](api/README)** - Complete API documentation
+- **[api/index.md.md](api/index.md)** - Complete API documentation
 - **[api/QUICK_START.md](../api/QUICK_START.md)** - Fast reference guide
 
 ## User Experience Improvements
@@ -227,7 +227,7 @@ bash verify_website_api_update.sh
 
 **Documentation Links:**
 
-- Consistent linking to `api/README.md`
+- Consistent linking to `api/index.md.md`
 - Cross-references to `api/QUICK_START.md`
 
 ## Next Steps
@@ -249,7 +249,7 @@ Future website enhancements (separate from API):
 
 For complete API information, see:
 
-- [api/README.md](api/README) - Complete API documentation
+- [api/index.md.md](api/index.md) - Complete API documentation
 - [api/QUICK_START.md](../api/QUICK_START.md) - Fast reference
 - [UPDATE_SUMMARY_JAN2026.md](UPDATE_SUMMARY_JAN2026.md) - Main docs update
 - [verify_website_api_update.sh](../verify_website_api_update.sh) - Verification script

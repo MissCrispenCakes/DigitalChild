@@ -389,7 +389,7 @@ docker-compose up -d
 curl http://localhost:5000/api/health
 ```
 
-See the [Production Deployment Guide](../../guides/PRODUCTION_DEPLOYMENT.md) for complete setup instructions.
+See the [Production Deployment Guide](../guides/PRODUCTION_DEPLOYMENT.md) for complete setup instructions.
 
 ---
 
@@ -427,7 +427,7 @@ See the [Production Deployment Guide](../../guides/PRODUCTION_DEPLOYMENT.md) for
 
     Deploy with Docker, configure Nginx, manage API keys
 
-    [View Guide →](../../guides/PRODUCTION_DEPLOYMENT.md)
+    [View Guide →](../guides/PRODUCTION_DEPLOYMENT.md)
 
 </div>
 

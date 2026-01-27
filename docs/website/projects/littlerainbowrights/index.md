@@ -230,7 +230,7 @@ Insights for:
 
     Filter and search through all indicators
 
-    [:octicons-arrow-right-24: Search Data](../../../scorecard/explorer/)
+    [:octicons-arrow-right-24: Search Data](../../../scorecard/explorer.md)
 
 -   :material-download:{ .lg .middle } **Export Data**
 

@@ -15,7 +15,7 @@
 Scrape, process, tag, and analyze policy documents from international organizations. Track 10 human rights indicators across 194 countries. Support evidence-based advocacy and research.
 
 🌍 **Website:** [GRIMdata.org](https://grimdata.org) | [LittleRainbowRights.com](https://littlerainbowrights.com)
-📖 **Documentation:** [docs/](docs/)
+📖 **Documentation:** [docs/](docs/index.md)
 💬 **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
 ______________________________________________________________________
@@ -200,7 +200,7 @@ with open("scorecard.csv", "wb") as f:
 - Caching: 15min-1hr TTLs for optimal performance
 - Docker deployment ready with Redis and Nginx
 
-📖 **Full API documentation:** [api/README.md](api/README.md) | [Quick Reference](docs/api/quick-reference.md) | [Production Deployment](docs/guides/PRODUCTION_DEPLOYMENT.md)
+📖 **Full API documentation:** [docs/api/index.md](docs/api/index.md) | [Quick Reference](docs/api/quick-reference.md) | [Production Deployment](docs/guides/PRODUCTION_DEPLOYMENT.md)
 
 ______________________________________________________________________
 
@@ -246,7 +246,7 @@ ______________________________________________________________________
 - ✅ **Testing & Quality** - 104 tests passing (100% success rate)
 - ⏳ **Interactive dashboard frontend** - Planned for Phase 5
 
-See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed roadmap and [api/README.md](api/README.md) for API documentation.
+See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed roadmap and [docs/api/index.md](docs/api/index.md) for API documentation.
 
 ______________________________________________________________________
 
@@ -259,7 +259,7 @@ ______________________________________________________________________
 - **[Scorecard Workflow](docs/guides/SCORECARD_WORKFLOW.md)** - Indicator tracking system
 - **[Data Governance](docs/DATA_GOVERNANCE.md)** - Privacy, ethics, responsible research
 - **[Roadmap](docs/ROADMAP.md)** - Development phases and future features
-- **[API Documentation](api/README.md)** - REST API endpoints, usage, examples
+- **[API Documentation](docs/api/index.md)** - REST API endpoints, usage, examples
 - **[API Quick Start](docs/api/quickstart.md)** - Fast reference for API usage
 
 See [docs/DOCS_INDEX.md](docs/DOCS_INDEX.md) for full documentation index.

@@ -13,7 +13,7 @@ This directory contains comprehensive documentation for the **DigitalChild** pip
 
 - **[website/getting-started/installation.md](website/getting-started/installation.md)** - Installation and setup instructions
 - **[website/getting-started/quickstart.md](website/getting-started/quickstart.md)** - Quick start guide for first-time users
-- **[api/README](api/README/)** - 🆕 **REST API Documentation** (14 endpoints for programmatic access - production ready)
+- **[api/index.md](api/index.md/)** - 🆕 **REST API Documentation** (14 endpoints for programmatic access - production ready)
 - **[website/api-reference.md](website/api-reference.md)** - 🆕 **API Quick Reference** (skimmable cheat sheet)
 - **[DOCS_INDEX.md](DOCS_INDEX.md)** - Complete index of all documentation files
 - **[guides/FIRST_RUN_ERRORS.md](guides/FIRST_RUN_ERRORS.md)** - Common errors and solutions for first-time users
