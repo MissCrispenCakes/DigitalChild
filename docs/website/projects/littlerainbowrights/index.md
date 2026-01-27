@@ -88,7 +88,7 @@ The LittleRainbowRights scorecard tracks these key indicators:
 
 10. **SIM Card Biometric ID Linkage** - Requirement to provide biometric data when registering SIM cards
 
-[View Scorecard](../../../scorecard/index.md){ .md-button .md-button--primary }
+[View Scorecard](../../../scorecard/){ .md-button .md-button--primary }
 
 ## Regional Analysis
 
@@ -222,7 +222,7 @@ Insights for:
 
     Interactive charts showing indicators across countries
 
-    [:octicons-arrow-right-24: View Scorecard](../../../scorecard/index.md)
+    [:octicons-arrow-right-24: View Scorecard](../../../scorecard/)
 
 -   :material-table-search:{ .lg .middle } **Data Explorer**
 
@@ -230,7 +230,7 @@ Insights for:
 
     Filter and search through all indicators
 
-    [:octicons-arrow-right-24: Search Data](../../../scorecard/explorer.md)
+    [:octicons-arrow-right-24: Search Data](../../../scorecard/explorer/)
 
 -   :material-download:{ .lg .middle } **Export Data**
 
