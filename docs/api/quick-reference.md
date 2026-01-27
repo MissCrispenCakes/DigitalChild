@@ -256,63 +256,17 @@ curl -H "X-API-Key: your-api-key" http://localhost:5000/api/documents
 
 ## Features
 
-<div class="grid cards" markdown>
-
--   :material-filter:{ .lg .middle } **Advanced Filtering**
-
-    ---
-
-    Filter by country, region, tags, year, source, document type
-
--   :material-page-layout-sidebar-left:{ .lg .middle } **Pagination**
-
-    ---
-
-    Configurable page size (max 100 items per page)
-
--   :material-sort:{ .lg .middle } **Sorting**
-
-    ---
-
-    Sort by any field, ascending or descending
-
--   :material-cached:{ .lg .middle } **Caching**
-
-    ---
-
-    15-minute cache for documents, 1-hour for scorecard
-
--   :material-check-circle:{ .lg .middle } **Validation**
-
-    ---
-
-    All query parameters validated with clear error messages
-
--   :material-code-json:{ .lg .middle } **Standard Responses**
-
-    ---
-
-    Consistent JSON structure across all endpoints
-
--   :material-key:{ .lg .middle } **Authentication**
-
-    ---
-
-    Optional API keys for higher rate limits
-
--   :material-speedometer:{ .lg .middle } **Rate Limiting**
-
-    ---
-
-    100-2000 requests/hour based on authentication
-
--   :material-docker:{ .lg .middle } **Docker Ready**
-
-    ---
-
-    Complete Docker + docker-compose setup
-
-</div>
+| Feature | Description |
+|---------|-------------|
+| **Advanced Filtering** | Filter by country, region, tags, year, source, document type |
+| **Pagination** | Configurable page size (max 100 items per page) |
+| **Sorting** | Sort by any field, ascending or descending |
+| **Caching** | 15-minute cache for documents, 1-hour for scorecard |
+| **Validation** | All query parameters validated with clear error messages |
+| **Standard Responses** | Consistent JSON structure across all endpoints |
+| **Authentication** | Optional API keys for higher rate limits |
+| **Rate Limiting** | 100-2000 requests/hour based on authentication |
+| **Docker Ready** | Complete Docker + docker-compose setup |
 
 ---
 
@@ -381,7 +335,7 @@ docker-compose ps
 curl http://localhost:5000/api/health
 ```
 
-**Complete deployment guide:** [:octicons-rocket-24: Production Deployment](../../guides/PRODUCTION_DEPLOYMENT/)
+**Complete deployment guide:** [Production Deployment](../guides/PRODUCTION_DEPLOYMENT.md)
 
 ---
 
@@ -397,9 +351,7 @@ For complete API documentation including:
 - Performance optimization
 - Security best practices
 
-See: [:octicons-book-24: Full API Documentation](reference.md){ .md-button .md-button--primary }
-
-Or: [:octicons-zap-24: API Quick Start Guide](quickstart.md){ .md-button }
+**See:** [Full API Documentation](reference.md) | [API Quick Start Guide](quickstart.md)
 
 ---
 
