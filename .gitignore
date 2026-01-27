@@ -58,3 +58,6 @@ repo-cleaning/
 
 # Build artifacts (zip files for releases)
 *.zip
+
+# Test output dumps (local reference only)
+unit_tests_*.txt
