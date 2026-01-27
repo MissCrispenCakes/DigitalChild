@@ -436,7 +436,7 @@ When using scorecard methodology or data:
   year = {2025},
   howpublished = {\url{https://grimdata.org/scorecard/}},
   note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)},
-  doi = {10.5281/zenodo.18318099}
+  doi = {10.5281/zenodo.18318098}
 }
 ```
 

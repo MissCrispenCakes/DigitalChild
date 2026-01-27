@@ -26,7 +26,7 @@ ______________________________________________________________________
     - 14 REST API endpoints
     - Open-source Python pipeline
 
-    **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099)
+    **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)](https://doi.org/10.5281/zenodo.18318098)
 
     [:octicons-arrow-right-24: Explore Project](littlerainbowrights/index.md){ .md-button .md-button--primary }
     [:octicons-database-24: View Scorecard](../../scorecard/){ .md-button }
@@ -83,7 +83,7 @@ Both projects use the GRIMdata pipeline infrastructure:
 
 ### LittleRainbowRights
 
-- Vollmer, DT and Vollmer, SC. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025. [DOI: 10.5281/zenodo.18318099](https://doi.org/10.5281/zenodo.18318099)
+- Vollmer, DT and Vollmer, SC. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025. [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
 
 ### SGBV-UPR
 

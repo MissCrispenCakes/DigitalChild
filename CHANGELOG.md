@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Documentation Structure** - Reorganized API docs to website/api/, Scorecard docs to website/scorecard/
 - **Navigation Structure** - Scorecard and Data Explorer now properly nested under Scorecard section
 - **API Documentation** - Moved from docs/api/ to docs/website/api/ for consistency
-- **CITATION.cff** - Updated to v2.0.0 with confirmed Zenodo DOI: 10.5281/zenodo.18318099
+- **CITATION.cff** - Updated to v2.0.0 with confirmed Zenodo DOI: 10.5281/zenodo.18318098
 
 ### Fixed
 - **Navigation Links** - Consistent links throughout documentation, removed broken cross-references

@@ -65,7 +65,7 @@ First stable release of the DigitalChild data pipeline for analyzing human right
   year = {2026},
   version = {1.0.1},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
-  doi = {10.5281/zenodo.18318099}
+  doi = {10.5281/zenodo.18318098}
 }
 ```
 

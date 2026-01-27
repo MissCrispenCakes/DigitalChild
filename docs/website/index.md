@@ -69,7 +69,7 @@ ______________________________________________________________________
 
     Published research and methodology
 
-    - Zenodo DOI: 10.5281/zenodo.18318099
+    - Zenodo DOI: 10.5281/zenodo.18318098
     - Stellenbosch Law Review (2022)
 
     [:octicons-arrow-right-24: Research Context](../RESEARCH_CONTEXT.md){ .md-button }
@@ -92,9 +92,9 @@ ______________________________________________________________________
 
     **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
 
-    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)
+    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)
 
-    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318099)
+    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318098)
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 

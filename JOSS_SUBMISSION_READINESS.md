@@ -2,7 +2,7 @@
 
 **Date:** 2026-01-20
 **Repository:** https://github.com/MissCrispenCakes/DigitalChild
-**DOI:** 10.5281/zenodo.18318099
+**DOI:** 10.5281/zenodo.18318098
 
 ## ✅ Repository Requirements (ALL MET)
 
@@ -30,7 +30,7 @@
 - [x] **Code follows best practices** - Pre-commit hooks (black, isort, flake8)
 
 ### Archival
-- [x] **Zenodo DOI** - 10.5281/zenodo.18318099
+- [x] **Zenodo DOI** - 10.5281/zenodo.18318098
 - [x] **Tagged release** - v1.0.1
 - [x] **CITATION.cff** - Present with DOI
 

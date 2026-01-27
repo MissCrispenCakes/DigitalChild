@@ -87,14 +87,14 @@ doi: "[YOUR-DOI-IF-PUBLISHED]"
 
 **Problem:**
 - DOI is a placeholder
-- The draft release notes reference DOI: 10.5281/zenodo.18318099
+- The draft release notes reference DOI: 10.5281/zenodo.18318098
 - Need to confirm if this DOI is real and active
 
 **Action Required:**
-- Verify Zenodo DOI: https://doi.org/10.5281/zenodo.18318099
+- Verify Zenodo DOI: https://doi.org/10.5281/zenodo.18318098
 - If confirmed, update CITATION.cff with:
   ```yaml
-  doi: "10.5281/zenodo.18318099"
+  doi: "10.5281/zenodo.18318098"
   ```
 - If not confirmed, keep commented out until DOI is issued
 
@@ -183,7 +183,7 @@ Before publishing to Zenodo:
    - Option B: Add prominent correction notice to v1.0.0 GitHub release
 
 3. **Verify Zenodo DOI**
-   - Check if 10.5281/zenodo.18318099 is active
+   - Check if 10.5281/zenodo.18318098 is active
    - If not, generate new DOI via Zenodo integration
 
 ### Priority 2 (HIGH - Before v2.0.0 release)
@@ -252,7 +252,7 @@ grep -r "Digital Services Taxation\|Internet Penetration\|Mobile Coverage" docs/
 
 ## Questions to Answer
 
-1. **Is Zenodo DOI 10.5281/zenodo.18318099 real and active?**
+1. **Is Zenodo DOI 10.5281/zenodo.18318098 real and active?**
    - If yes: Update CITATION.cff
    - If no: Get new DOI before publishing
 

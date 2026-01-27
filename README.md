@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml/badge.svg?branch=basecamp&event=push)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/ci.yml)
 [![CD](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/deploy-docs.yml/badge.svg?branch=basecamp)](https://github.com/MissCrispenCakes/DigitalChild/actions/workflows/deploy-docs.yml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318099.svg)](https://doi.org/10.5281/zenodo.18318099)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)](https://doi.org/10.5281/zenodo.18318098)
 [![REUSE status](https://api.reuse.software/badge/github.com/MissCrispenCakes/DigitalChild)](https://api.reuse.software/info/github.com/MissCrispenCakes/DigitalChild)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
@@ -349,7 +349,7 @@ If you use this project in your research, please cite it:
   year = {2026},
   version = {2.0.0},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
-  doi = {10.5281/zenodo.18318099},
+  doi = {10.5281/zenodo.18318098},
   note = {Available at: https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)}
 }
 ```

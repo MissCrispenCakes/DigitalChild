@@ -1,7 +1,7 @@
 # Release Notes - v2.0.0
 
 **Date:** 2026-01-26
-**Zenodo DOI:** [10.5281/zenodo.18318099](https://doi.org/10.5281/zenodo.18318099)
+**Zenodo DOI:** [10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
 
 ## 🎉 Major Release: Production REST API + Documentation Platform
 
@@ -150,7 +150,7 @@ When using LittleRainbowRights data:
   year = {2025},
   howpublished = {\url{https://grimdata.org/projects/littlerainbowrights/}},
   note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810},
-  doi = {10.5281/zenodo.18318099}
+  doi = {10.5281/zenodo.18318098}
 }
 ```
 
@@ -158,8 +158,8 @@ When using LittleRainbowRights data:
 
 - **Website:** [grimdata.org](https://grimdata.org)
 - **GitHub:** [github.com/MissCrispenCakes/DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
-- **Zenodo:** [10.5281/zenodo.18318099](https://doi.org/10.5281/zenodo.18318099)
-- **Published Research:** [Vollmer & Vollmer (2025)](https://doi.org/10.5281/zenodo.18318099)
+- **Zenodo:** [10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
+- **Published Research:** [Vollmer & Vollmer (2025)](https://doi.org/10.5281/zenodo.18318098)
 
 ## 🙏 Acknowledgments
 

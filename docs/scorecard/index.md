@@ -261,13 +261,13 @@ When using scorecard data in publications:
   year = {2025},
   howpublished = {\url{https://grimdata.org/scorecard/}},
   note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)},
-  doi = {10.5281/zenodo.18318099}
+  doi = {10.5281/zenodo.18318098}
 }
 ```
 
 Or in text:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*. Available at: https://grimdata.org/scorecard/. DOI: 10.5281/zenodo.18318099. Licensed under CC BY 4.0.
+> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*. Available at: https://grimdata.org/scorecard/. DOI: 10.5281/zenodo.18318098. Licensed under CC BY 4.0.
 
 ---
 
