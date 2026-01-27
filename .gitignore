@@ -56,3 +56,6 @@ repo-cleaning/
 # REUSE compliance (ignore cache, but commit dep5)
 .reuse/.cache/
 !.reuse/dep5
+
+# Build artifacts (zip files for releases)
+*.zip
