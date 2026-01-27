@@ -97,6 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Regional coverage concentration in certain areas
 - Some indicators have incomplete data for certain countries
 
-[Unreleased]: https://github.com/MissCrispenCakes/DigitalChild/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/MissCrispenCakes/DigitalChild/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/MissCrispenCakes/DigitalChild/releases/tag/v2.0.0
 [1.0.1]: https://github.com/MissCrispenCakes/DigitalChild/releases/tag/v1.0.1
 [1.0.0]: https://github.com/MissCrispenCakes/DigitalChild/releases/tag/v1.0.0
