@@ -1,6 +1,6 @@
-# Release Notes - v2.0.0 (DRAFT)
+# Release Notes - v2.0.0
 
-**Date:** TBD
+**Date:** 2026-01-26
 **Zenodo DOI:** [10.5281/zenodo.18318099](https://doi.org/10.5281/zenodo.18318099)
 
 ## 🎉 Major Release: Production REST API + Documentation Platform

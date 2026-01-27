@@ -7,31 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-01-26
+
 ### Added
-- **REST API (Phase 4)** - 14 production-ready endpoints for programmatic data access
+- **REST API (Phase 4 Complete)** - 14 production-ready endpoints for programmatic data access
   - Documents API: list with filters, pagination, sorting, detail view
-  - Scorecard API: countries summary, indicators, statistics
+  - Scorecard API: countries summary, country details, indicator statistics
   - Tags API: frequency analysis, version management, filtering
   - Timeline API: temporal analysis of tags over time
   - Export API: CSV downloads with SPDX license headers
-- **Authentication & Rate Limiting** - API key authentication with dynamic rate limits (100-2000 req/hr)
+- **Authentication & Rate Limiting** - Optional API key authentication with dynamic rate limits (100-2000 req/hr)
 - **Production Deployment** - Docker, docker-compose, Redis caching, Nginx reverse proxy
-- **API Tests** - 104 integration tests (100% pass rate)
-- **Documentation Site** - MkDocs Material theme with comprehensive guides at grimdata.org
+- **API Tests** - 104 integration tests (100% pass rate, 100% endpoint coverage)
+- **Documentation Site Restructure** - Complete reorganization with landing pages for API and Scorecard sections
+- **API Landing Page** - Comprehensive overview at /api/ explaining features, use cases, and quick examples
+- **Scorecard Landing Page** - Overview at /scorecard/ with clear navigation to sub-sections
+- **Scorecard Design & Methodology Page** - Detailed indicator definitions, scoring system, and limitations
+- **Scorecard Data Access Page** - Comprehensive guide to API, CSV exports, direct file access, and pipeline integration
 - **Projects Landing Page** - Dedicated overview page for LittleRainbowRights and SGBV-UPR projects
-- **Navigation Improvements** - Consistent bidirectional navigation across all pages
+- **Navigation Improvements** - Clean, professional navigation without emojis, proper nesting of sections
 
 ### Changed
 - **Test Coverage** - Expanded from 124 to 274 tests (170 pipeline + 104 API)
 - **Codebase Size** - Grew from 15,000+ to 21,000+ lines of Python code
-- **Documentation** - Complete reorganization and expansion of all .md files
-- **Scorecard Pages** - Consolidated to single canonical location at /scorecard/
+- **Documentation Structure** - Reorganized API docs to website/api/, Scorecard docs to website/scorecard/
+- **Navigation Structure** - Scorecard and Data Explorer now properly nested under Scorecard section
+- **API Documentation** - Moved from docs/api/ to docs/website/api/ for consistency
+- **CITATION.cff** - Updated to v2.0.0 with confirmed Zenodo DOI: 10.5281/zenodo.18318099
 
 ### Fixed
-- **Navigation Links** - Consistent links between all pages (projects, scorecard, homepage)
-- **Duplicate Content** - Removed duplicate scorecard pages
+- **Navigation Links** - Consistent links throughout documentation, removed broken cross-references
+- **Duplicate Content** - Removed duplicate scorecard and API pages
 - **TOC Integration** - Fixed table of contents display in left sidebar
 - **404 Errors** - Fixed missing Projects landing page
+- **Emoji Usage** - Removed unprofessional emojis from navigation labels
+- **Scorecard v1.0.0 Release Notes** - Corrected incorrect indicator list in historical release notes
 
 ## [1.0.1] - 2026-01-20
 

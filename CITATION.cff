@@ -24,10 +24,9 @@ keywords:
   - OHCHR
 license: MIT
 license-url: "https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE"
-version: "0.9.0"
-date-released: "2026-01-19"
-doi: "[YOUR-DOI-IF-PUBLISHED]"
-# Uncomment and fill when you have a DOI (e.g., from Zenodo)
+version: "2.0.0"
+date-released: "2026-01-26"
+doi: "10.5281/zenodo.18318099"
 
 # For the data specifically
 references:

@@ -136,30 +136,35 @@ extra:
 # Navigation
 nav:
   - GRIMdata Home: website/index.md
-  - 🆕 NEW - REST API:
-      - "🚀 Quick Start": api/QUICK_START.md
-      - "📖 Full Documentation": api/README.md
-      - "⚡ Quick Reference": website/api-reference.md
-      - "Week 1 Summary": API_WEEK1_SUMMARY.md
-      - "Week 2 Summary": API_WEEK2_SUMMARY.md
-  - Scorecard: scorecard/index.md
-  - Data Explorer: scorecard/explorer.md
+
+  - Getting Started:
+      - Installation: website/getting-started/installation.md
+      - Quick Start: website/getting-started/quickstart.md
+      - First Run Errors: guides/FIRST_RUN_ERRORS.md
+      - FAQ: FAQ.md
+
+  - API:
+      - Overview: website/api/index.md
+      - Quick Start: website/api/quickstart.md
+      - Full Documentation: website/api/reference.md
+      - Quick Reference: website/api/quick-reference.md
+
+  - Scorecard:
+      - Overview: website/scorecard/index.md
+      - Design & Methodology: website/scorecard/design.md
+      - Data Access: website/scorecard/data-access.md
+      - Visualization: website/scorecard/visualization.md
+      - Data Explorer: website/scorecard/explorer.md
+
   - Projects:
       - Overview: website/projects/index.md
       - LittleRainbowRights:
           - Project Overview: website/projects/littlerainbowrights/index.md
-          - Getting Started:
-              - Installation: website/getting-started/installation.md
-              - Quick Start: website/getting-started/quickstart.md
-              - First Run Errors: guides/FIRST_RUN_ERRORS.md
-              - FAQ: FAQ.md
           - User Guides:
               - Runbook: guides/RUNBOOK.md
               - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
               - Validators Usage: guides/VALIDATORS_USAGE.md
-          - Scorecard:
-              - Scorecard Visualization: scorecard/index.md
-              - Data Explorer: scorecard/explorer.md
+              - Production Deployment: guides/PRODUCTION_DEPLOYMENT.md
           - Documentation:
               - Architecture: ARCHITECTURE.md
               - Glossary: GLOSSARY.md
@@ -192,6 +197,7 @@ nav:
                   - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
       - SGBV-UPR:
           - Project Overview: website/projects/sgbv/index.md
+
   - About:
       - Research Context: RESEARCH_CONTEXT.md
       - Contributing: CONTRIBUTING.md

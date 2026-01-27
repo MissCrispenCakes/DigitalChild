@@ -32,16 +32,19 @@ First stable release of the DigitalChild data pipeline for analyzing human right
 ## 📊 Dataset Highlights
 
 - **10 indicators tracked per country:**
-  - AI Policy Status
   - Data Protection Law
-  - LGBTQ Legal Status
-  - Child Online Protection
-  - Biometric SIM Registration
-  - Digital Services Taxation
-  - Internet Penetration
-  - Mobile Coverage
-  - Digital Skills Investment
-  - Online Content Regulation
+  - DPA Independence
+  - Children's Data Safeguards
+  - Child Online Protection Strategy
+  - SOGI Sensitive Data Protections
+  - LGBTQ+ Legal Status
+  - LGBTQ+ Promotion/Propaganda Offences
+  - AI Policy Status
+  - DPIA Required for High-Risk AI
+  - SIM Card Biometric ID Linkage
+
+!!! warning "Correction Notice"
+    The original v1.0.0 release notes (published 2026-01-20) incorrectly listed indicators #6-10 as "Digital Services Taxation, Internet Penetration, Mobile Coverage, Digital Skills Investment, Online Content Regulation." These indicators were NEVER part of the LittleRainbowRights scorecard. The correct indicators are listed above and have been used throughout all project documentation and data analysis since inception.
 
 - **Data sources:** UNESCO, UNCTAD, ILGA, UNICEF, national governments, treaty bodies
 
