@@ -349,7 +349,7 @@ For developers and researchers working with the scorecard system:
 
 - **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../FAQ/)
+- **General questions:** [FAQ](../FAQ.md)
 - **Research collaboration:** Contact via [GitHub](https://github.com/MissCrispenCakes/DigitalChild)
 
 ---

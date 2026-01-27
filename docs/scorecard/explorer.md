@@ -188,7 +188,7 @@ python explore_scorecard.py
 
 ## Questions?
 
-- [FAQ](../FAQ/)
+- [FAQ](../FAQ.md)
 - [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md)
 - [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
