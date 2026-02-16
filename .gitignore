@@ -61,3 +61,51 @@ repo-cleaning/
 
 # Test output dumps (local reference only)
 unit_tests_*.txt
+
+# JOSS submission prep (untracked working files)
+JOSS_SUBMISSION_ANALYSIS.md
+AUTHOR_CITATION_UPDATES_NEEDED.md
+GITIGNORE_SUGGESTIONS.md
+
+# Python tools
+.mypy_cache/
+.pytype/
+.ipynb_checkpoints/
+*.prof
+
+# Additional editor files
+*.swp
+*.swo
+*~
+.idea/
+
+# Additional security
+.env.*
+!.env.example
+*.secret
+*.key
+secrets/
+
+# Generated PDFs
+paper.pdf
+docs/**/*.pdf
+
+# Additional temp files
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# Additional testing
+coverage.xml
+*.cover
+
+# Additional macOS
+._*
+.AppleDouble
+.com.apple.timemachine.donotpresent
+
+# Additional Windows
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
