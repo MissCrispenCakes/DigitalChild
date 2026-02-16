@@ -9,6 +9,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-3359-2810"
   - family-names: "Vollmer"
     given-names: "D.T."
+    orcid: "https://orcid.org/0000-0002-5035-3395"
 repository-code: "https://github.com/MissCrispenCakes/DigitalChild"
 url: "https://grimdata.org"
 keywords:
@@ -37,6 +38,7 @@ references:
     authors:
       - family-names: "Vollmer"
         given-names: "D.T."
+        orcid: "https://orcid.org/0000-0002-5035-3395"
       - family-names: "Vollmer"
         given-names: "S.C."
         orcid: "https://orcid.org/0000-0002-3359-2810"
@@ -63,6 +65,7 @@ related-publications:
         orcid: "https://orcid.org/0000-0002-3359-2810"
       - family-names: "Vollmer"
         given-names: "D.T."
+        orcid: "https://orcid.org/0000-0002-5035-3395"
     year: 2022
     journal: "Stellenbosch Law Review"
     volume: 33
@@ -82,6 +85,7 @@ related-publications:
     authors:
       - family-names: "Vollmer"
         given-names: "D.T."
+        orcid: "https://orcid.org/0000-0002-5035-3395"
       - family-names: "Vollmer"
         given-names: "S.C."
         orcid: "https://orcid.org/0000-0002-3359-2810"
@@ -122,6 +126,7 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-3359-2810"
     - family-names: "Vollmer"
       given-names: "D.T."
+      orcid: "https://orcid.org/0000-0002-5035-3395"
   year: 2025
   url: "https://github.com/MissCrispenCakes/DigitalChild"
   notes: "Available at: https://grimdata.org"
