@@ -13,10 +13,12 @@ authors:
     orcid: 0000-0002-3359-2810
     affiliation: 1
   - name: D.T. Vollmer
+    orcid: 0000-0002-5035-3395
     affiliation: 2
 affiliations:
   - name: York University, Toronto, Canada
     index: 1
+    ror: 05fq50484
   - name: Resilient LLP, Toronto, Canada
     index: 2
 date: 20 January 2026
