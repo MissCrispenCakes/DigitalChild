@@ -2,19 +2,11 @@ name: Draft PDF
 
 on:
   push:
-    branches:
-      - main
-      - homebase
-      - basecamp
     paths:
       - 'paper.md'
       - 'paper.bib'
       - '.github/workflows/draft-pdf.yml'
   pull_request:
-    branches:
-      - main
-      - homebase
-      - basecamp
     paths:
       - 'paper.md'
       - 'paper.bib'
@@ -22,30 +14,19 @@ on:
 jobs:
   paper:
     runs-on: ubuntu-latest
-    name: Generate JOSS Paper PDF
+    name: Paper Draft
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Build draft PDF
-        uses: openjournals/openjournals-draft-action@v1.0
+        uses: openjournals/openjournals-draft-action@master
         with:
           journal: joss
           paper-path: paper.md
 
-      - name: Upload PDF artifact
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: paper-pdf
+          name: paper
           path: paper.pdf
-          retention-days: 30
-
-      - name: Check PDF was created
-        run: |
-          if [ -f paper.pdf ]; then
-            echo "✓ paper.pdf generated successfully"
-            ls -lh paper.pdf
-          else
-            echo "✗ paper.pdf was not created"
-            exit 1
-          fi
