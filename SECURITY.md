@@ -6,8 +6,9 @@ We release patches for security vulnerabilities for the following versions:
 
 | Version                  | Supported          |
 | ------------------------ | ------------------ |
-| latest (basecamp branch) | :white_check_mark: |
-| < 1.0                    | :x:                |
+| 2.0.1 (latest)          | :white_check_mark: |
+| 1.x                     | :white_check_mark: |
+| < 1.0                   | :x:                |
 
 ## Reporting a Vulnerability
 
@@ -185,4 +186,4 @@ We appreciate security researchers and users who help keep this project secure. 
 
 ______________________________________________________________________
 
-**Last updated:** January 2026
+**Last updated:** February 2026 (v2.0.1)
