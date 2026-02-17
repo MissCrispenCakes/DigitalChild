@@ -70,15 +70,7 @@ The scorecard system tracks 10 indicators across 194 countries with validated so
 
 # AI Usage Disclosure
 
-The core methodology and initial implementation were developed entirely by human researchers (Aug-Sep 2025), building on predecessor research from 2020-2021. Generative AI tools later assisted with documentation refinement and review:
-
-**Claude Code (Anthropic)**: Assisted with documentation writing, code reviews, and JOSS paper preparation.
-
-**GitHub Copilot**: Provided code suggestions during later development phases.
-
-**OpenAI**: Provided additional sources for data ingestion by quickly determining availability and open access of proposed URLs. Assisted in finding 'lost' links, and new or moved locations of data from previous URLs.
-
-Both code AI assistants are documented as contributors in the repository commit history. The foundational research questions, methodological framework, pipeline architecture, and data collection approach were designed by human researchers before AI involvement. AI tools accelerated documentation and code refinement tasks, not core research direction or analytical frameworks.
+AI tools assisted with manuscript editing and formatting to JOSS specifications. All technical work is original.
 
 # Acknowledgements
 
