@@ -54,6 +54,8 @@ Most critically, existing tools do not emphasize transparency and reproducibilit
 
 `DigitalChild` follows a modular pipeline architecture with four core stages: scraping, processing, tagging, and export. Each data source has dedicated scrapers (requests-based and Selenium variants) implementing rate limiting and respectful crawling. A fallback handler system attempts multiple processors (PDF, DOCX, HTML) sequentially, prioritizing reliability over speed.
 
+Installation requires Python 3.12+ with standard dependencies (pandas, requests, BeautifulSoup4, pypdf, python-docx, selenium). Users run `python pipeline_runner.py --source au_policy --tags-version latest` to execute the full pipeline: scraping documents, converting to text, applying tags, and generating CSV exports. The scorecard workflow operates independently via `python pipeline_runner.py --mode scorecard --scorecard-action all`.
+
 Regex-based rules defined in versioned JSON configurations enable transparent, auditable theme identification. While machine learning might offer higher accuracy, explicit regex patterns allow researchers to understand exactly why each tag was applied—critical for reproducibility and methodological transparency. All operations maintain complete provenance through JSON metadata files tracking processing history, tag versions, and timestamps. This design increases storage requirements but ensures full auditability. The architecture prioritizes extensibility through clear module boundaries, enabling researchers to add new scrapers or processors without modifying core pipeline logic.
 
 # Research Impact Statement
