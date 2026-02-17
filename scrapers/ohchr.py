@@ -16,13 +16,13 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://tbinternet.ohchr.org/"
+BASE_URL = "https://tbinternet.ohchr.org/"
 RAW_DIR = "data/raw/ohchr"
 
 logger = get_logger("ohchr")
 
 
-def scrape(base_url=DEFAULT_URL):
+def scrape(base_url=BASE_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
     try:

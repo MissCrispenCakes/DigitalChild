@@ -17,13 +17,13 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://au.int/en/acerwc"
+BASE_URL = "https://au.int/en/acerwc"
 RAW_DIR = "data/raw/acerwc"
 
 logger = get_logger("acerwc")
 
 
-def scrape(base_url=DEFAULT_URL):
+def scrape(base_url=BASE_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
     try:

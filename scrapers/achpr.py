@@ -17,13 +17,13 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-DEFAULT_URL = "https://www.achpr.org/"
+BASE_URL = "https://www.achpr.org/"
 RAW_DIR = "data/raw/achpr"
 
 logger = get_logger("achpr")
 
 
-def scrape(base_url=DEFAULT_URL):
+def scrape(base_url=BASE_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
 
     try:

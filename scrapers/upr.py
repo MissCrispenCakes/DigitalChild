@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 from processors.logger import get_logger
 from scrapers.utils import download_file
 
-BASE_INDEX = "https://www.ohchr.org/en/hr-bodies/upr/documentation"
+BASE_URL = "https://www.ohchr.org/en/hr-bodies/upr/documentation"
 RAW_DIR = "data/raw/upr"
 
 logger = get_logger("upr")
@@ -36,7 +36,7 @@ HEADERS = {
 }
 
 
-def scrape(base_url=BASE_INDEX, countries=None):
+def scrape(base_url=BASE_URL, countries=None):
     """
     Scrape UPR documentation.
     - base_url: UPR index or alternate index page
