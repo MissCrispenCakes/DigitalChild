@@ -10,7 +10,7 @@
 [:material-book-open-variant: Published Paper](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
 !!! warning "Repository Under Construction"
-    The HumanRights repository is currently private and being retooled. Check back soon for access to the updated codebase.
+    The HumanRights repository is currently private and being retooled (Laptop problems). Check back soon for access to the updated codebase to be restored.
 
 ______________________________________________________________________
 
@@ -27,7 +27,7 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
     This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
 
 !!! note "Separate Repository (Under Construction)"
-    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress)*. Documentation lives here but the pipeline is maintained separately.
+    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - fixing a laptop first)*. Documentation lives here but the pipeline is maintained separately.
 
 ## Project Status
 
@@ -153,7 +153,7 @@ Interactive visualizations will include:
 Data and findings are available through:
 
 - **Journal publication** - [Vollmer & Vollmer (2022) in Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - under construction)*
+- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - under construction - a laptop needs fixing)*
 
 ## Integration with GRIMdata
 
@@ -232,7 +232,7 @@ This project builds on and complements:
     ```
 
 !!! warning "Repository Under Construction"
-    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress)*
+    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - laptop needs a fix)*
 
 ## Future Development
 
