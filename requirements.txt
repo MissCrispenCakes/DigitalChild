@@ -8,19 +8,15 @@ pycountry
 
 # Core processing
 pypdf
-reportlab
 python-docx
 
 # Scorecard processing
 pandas
 openpyxl
-odfpy
 
 # Development + testing
 pytest
 pytest-cov
-pandoc
-logging
 
 # Docs + formatting
 markdown-link-checker
