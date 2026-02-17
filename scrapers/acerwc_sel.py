@@ -29,6 +29,7 @@ LINKS_LOG = os.path.join(LINK_DIR, "acerwc_links_found.txt")
 
 def scrape(base_url=BASE_URL):
     os.makedirs(RAW_DIR, exist_ok=True)
+    os.makedirs(LINK_DIR, exist_ok=True)
 
     driver = init_driver(headless=True)
     driver.get(base_url)
