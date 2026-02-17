@@ -37,12 +37,25 @@ URLS = {
 }
 
 
-def scrape():
+def scrape(base_url=None, countries=None):
+    """
+    Scrape AU policy documents from predefined URLs.
+
+    Args:
+        base_url: Optional base URL (unused, for compatibility with pipeline_runner)
+        countries: Optional list of countries (unused, for compatibility with pipeline_runner)
+
+    Returns:
+        List of paths to downloaded files
+    """
     os.makedirs(RAW_DIR, exist_ok=True)
+    downloaded = []
+
     for name, url in URLS.items():
         filename = os.path.join(RAW_DIR, f"{name}.pdf")
         if os.path.exists(filename):
             logger.info(f"Skipping (already exists): {filename}")
+            downloaded.append(filename)
             continue
         try:
             logger.info(f"Downloading {url}")
@@ -51,8 +64,11 @@ def scrape():
             with open(filename, "wb") as f:
                 f.write(resp.content)
             logger.info(f"Saved → {filename}")
+            downloaded.append(filename)
         except Exception as e:
             logger.error(f"Error downloading {url}: {e}")
+
+    return downloaded
 
 
 if __name__ == "__main__":

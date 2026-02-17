@@ -17,6 +17,19 @@ from processors.logger import get_logger
 logger = get_logger("pdf_to_text")
 
 
+def validate_format(filepath):
+    """
+    Validate if the file is a PDF based on file extension.
+
+    Args:
+        filepath: Path to the file to validate
+
+    Returns:
+        True if file has .pdf extension, False otherwise
+    """
+    return filepath.lower().endswith(".pdf")
+
+
 def convert(pdf_path, output_dir):
     """
     Convert a PDF file to plain text.

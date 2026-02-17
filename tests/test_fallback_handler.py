@@ -32,3 +32,33 @@ def test_fallback_html(tmp_path):
 
     result = fallback_handler.process_with_fallback(str(html_file), str(tmp_path))
     assert result and os.path.exists(result)
+
+
+def test_pdf_validate_format():
+    """Test that pdf_to_text.validate_format() works correctly."""
+    assert pdf_to_text.validate_format("document.pdf") is True
+    assert pdf_to_text.validate_format("document.PDF") is True
+    assert pdf_to_text.validate_format("document.Pdf") is True
+    assert pdf_to_text.validate_format("/path/to/document.pdf") is True
+    assert pdf_to_text.validate_format("document.docx") is False
+    assert pdf_to_text.validate_format("document.html") is False
+    assert pdf_to_text.validate_format("document.txt") is False
+    assert pdf_to_text.validate_format("document") is False
+
+
+def test_docx_validate_format():
+    """Test that docx_to_text.validate_format() works correctly."""
+    assert docx_to_text.validate_format("document.docx") is True
+    assert docx_to_text.validate_format("document.DOCX") is True
+    assert docx_to_text.validate_format("/path/to/document.docx") is True
+    assert docx_to_text.validate_format("document.pdf") is False
+    assert docx_to_text.validate_format("document.html") is False
+
+
+def test_html_validate_format():
+    """Test that html_to_text.validate_format() works correctly."""
+    assert html_to_text.validate_format("document.html") is True
+    assert html_to_text.validate_format("document.HTML") is True
+    assert html_to_text.validate_format("/path/to/document.html") is True
+    assert html_to_text.validate_format("document.pdf") is False
+    assert html_to_text.validate_format("document.docx") is False
