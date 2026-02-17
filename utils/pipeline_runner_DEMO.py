@@ -12,7 +12,7 @@ import argparse
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 from processors import pdf_to_text, tagger, tags_summary
 from processors.logger import get_logger, set_run_logfile
@@ -36,7 +36,7 @@ def save_metadata(metadata):
 
 def update_metadata(doc_id, source, country, region, year, tags, tag_version="tags_v1"):
     metadata = load_metadata()
-    now = datetime.now(datetime.UTC).isoformat().replace("+00:00", "Z")
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
     existing = next((d for d in metadata["documents"] if d["id"] == doc_id), None)
 

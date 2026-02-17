@@ -7,7 +7,7 @@ Standard response formatter for API endpoints
 Provides consistent JSON response structure across all endpoints.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
 from flask import jsonify
@@ -27,7 +27,7 @@ def success_response(data: Any, status_code: int = 200):
     response = {
         "status": "success",
         "data": data,
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
     }
     return jsonify(response), status_code
 
@@ -57,7 +57,7 @@ def error_response(
             "message": message,
             "details": details or {},
         },
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
     }
     return jsonify(response), status_code
 

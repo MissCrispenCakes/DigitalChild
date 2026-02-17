@@ -14,7 +14,7 @@ Usage:
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pandas as pd
 
@@ -55,7 +55,7 @@ def export_scorecard_formats(
         "format": "Google Sheets",
         "source": canonical_path,
         "sheet": sheet_name,
-        "exported": datetime.now().isoformat(),
+        "exported": datetime.now(timezone.utc).isoformat(),
         "rows": len(df),
         "columns": len(df.columns),
         "instructions": {

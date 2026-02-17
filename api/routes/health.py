@@ -7,7 +7,7 @@ Health check and info endpoints
 Provides endpoints for monitoring API health and getting system information.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from flask import Blueprint, current_app
@@ -31,7 +31,7 @@ def health_check():
     return success_response(
         {
             "status": "healthy",
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "version": current_app.config.get("API_VERSION", "v1"),
         }
     )
