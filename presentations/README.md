@@ -41,8 +41,8 @@ Speaker notes with detailed explanations for each slide section.
 
 ## Presenters
 
-- **D.T. Vollmer** - Resilient LLP (daniel@resilientllp.com)
-- **S.C. Vollmer** - York University (workscv@yorku.ca) - ORCID: 0000-0002-3359-2810
+- **D.T. Vollmer** - Resilient LLP - ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395)
+- **S.C. Vollmer** - York University - ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810)
 
 ## Citation
 
