@@ -11,7 +11,6 @@ Verifies that upr_sel scraper:
 4. Properly initializes and quits Selenium driver
 """
 
-import os
 import tempfile
 from unittest import mock
 

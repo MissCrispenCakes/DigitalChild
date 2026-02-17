@@ -11,7 +11,6 @@ Verifies that ohchr_sel scraper:
 4. Properly initializes and quits Selenium driver
 """
 
-import os
 import tempfile
 from unittest import mock
 
@@ -69,9 +68,7 @@ class TestOHCHRSeleniumScraper:
             ohchr_sel.RAW_DIR = tmpdir
 
             try:
-                with mock.patch(
-                    "scrapers.ohchr_sel.init_driver"
-                ) as mock_init:
+                with mock.patch("scrapers.ohchr_sel.init_driver") as mock_init:
                     mock_init.side_effect = Exception("Driver error")
                     try:
                         result = ohchr_sel.scrape()

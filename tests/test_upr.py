@@ -10,7 +10,6 @@ Verifies that upr scraper:
 3. Handles errors gracefully
 """
 
-import os
 import tempfile
 from unittest import mock
 
