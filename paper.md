@@ -1,5 +1,5 @@
 ---
-title: 'DigitalChild: An Open-Source Pipeline for Analyzing Human Rights Documents with Focus on Child and LGBTQ+ Digital Protection'
+title: 'DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection'
 tags:
   - Python
   - human rights
