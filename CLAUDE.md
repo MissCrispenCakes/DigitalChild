@@ -439,8 +439,8 @@ Always run `pre-commit run --all-files` before committing. Common auto-fixes:
 ## Documentation References
 
 - `docs/guides/FIRST_RUN_ERRORS.md` - Troubleshooting first run
-- `docs/PIPELINE_FLOW.md` - Detailed pipeline flow
-- `docs/SCORECARD_WORKFLOW.md` - Complete scorecard system guide
+- `docs/notes/PIPELINE_FLOW.md` - Detailed pipeline flow
+- `docs/guides/SCORECARD_WORKFLOW.md` - Complete scorecard system guide
 - `docs/standards/METADATA_SCHEMA.md` - Metadata structure
 - `docs/standards/TAGS_CONFIG_FORMAT.md` - Tags configuration format
 - `docs/standards/SCRAPER_STRUCTURE.md` - Scraper implementation guide
