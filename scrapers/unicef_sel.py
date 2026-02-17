@@ -8,7 +8,6 @@ Fetches UNICEF policy and research reports.
 Logs all discovered links into a file.
 """
 
-import logging
 import os
 from urllib.parse import urljoin
 
@@ -16,11 +15,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from processors.logger import get_logger
 from scrapers.selenium_setup import init_driver
 from scrapers.utils import download_file
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("unicef_selenium")
+logger = get_logger("unicef_selenium")
 
 LINK_DIR = "data/try_sel/unicef"
 RAW_DIR = "data/raw/unicef"

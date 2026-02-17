@@ -7,7 +7,6 @@ OHCHR Treaty Body Scraper - Selenium Version
 Fetches documents from the OHCHR Treaty Body Database.
 """
 
-import logging
 import os
 from urllib.parse import urljoin
 
@@ -15,11 +14,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from processors.logger import get_logger
 from scrapers.selenium_setup import init_driver
 from scrapers.utils import download_file
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("ohchr_selenium")
+logger = get_logger("ohchr_selenium")
 
 LINK_DIR = "data/try_sel/ohchr"
 RAW_DIR = "data/raw/ohchr"
