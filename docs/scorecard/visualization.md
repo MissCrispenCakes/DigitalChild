@@ -54,9 +54,31 @@ curl http://localhost:5000/api/scorecard/indicators/statistics
 
 ### Interactive Visualizations
 
-Interactive visualizations are currently under development. This page will feature country-level heatmaps, regional comparisons, time-series analysis, and source verification status.
+Explore the scorecard interactively below. Charts are rendered in your browser from a published static dataset — no server required. To filter, search, sort, and compare individual countries, use the [Data Explorer](explorer.md).
 
-For now, explore the data through the REST API, CSV exports, or direct file access (see [Exporting Data](#exporting-data) below).
+<div class="sc-viz">
+  <p id="sc-meta" class="sc-meta"></p>
+  <div id="sc-loading" class="sc-loading">Loading scorecard data…</div>
+
+  <div class="sc-controls">
+    <label for="sc-map-metric">Map metric:</label>
+    <select id="sc-map-metric">
+      <option value="protection_score">Protection Score (0–20, higher = stronger)</option>
+      <option value="risk_index">Risk Index (0–100, higher = greater risk)</option>
+      <option value="documented">Data completeness (documented indicators, 0–10)</option>
+    </select>
+  </div>
+  <div id="sc-map" class="sc-chart"></div>
+  <p class="sc-hint">Click a country on the map for its full indicator breakdown and sources.</p>
+  <div id="sc-detail" class="sc-detail"></div>
+
+  <div id="sc-indicators" class="sc-chart"></div>
+
+  <div id="sc-regions" class="sc-chart"></div>
+</div>
+
+!!! note "About this data"
+    Visualizations are generated from the project's designated visualization dataset and are **point-in-time**. Source-URL verification is an ongoing, separate workflow, so figures may be revised. The canonical pipeline data lives in `scorecard_main.xlsx`. See [Data Access](data-access.md) for the API and CSV exports.
 
 ## Indicators Tracked
 
@@ -299,28 +321,9 @@ This generates:
 
 ## Data Explorer
 
-```html
-<div id="scorecard-explorer">
-  <p><em>Interactive data explorer will be available in future update.</em></p>
-</div>
+Want to filter by region or indicator, search for a country, sort the full table, or compare countries side-by-side?
 
-<style>
-#scorecard-explorer {
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 2rem;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-/* Placeholder for future plotly visualization */
-.plotly-chart {
-  width: 100%;
-  height: 600px;
-}
-</style>
-```
+[:octicons-search-24: Open the Data Explorer](explorer.md){ .md-button .md-button--primary }
 
 ## Validation & Quality
 
@@ -429,8 +432,8 @@ Or:
 
 Planned features (see [Roadmap](../ROADMAP.md)):
 
-- [ ] Interactive heatmap visualizations (Plotly.js)
-- [ ] Country comparison tool
+- [x] **Interactive choropleth map, indicator & regional charts** ✅ **LIVE** (Plotly.js, this page)
+- [x] **Country comparison tool** ✅ **LIVE** (radar comparison in the [Data Explorer](explorer.md))
 - [ ] Time-series tracking of policy changes
 - [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/index.md))
 - [ ] Real-time source monitoring alerts

@@ -209,5 +209,6 @@ extra_css:
 # Custom JavaScript
 extra_javascript:
   - website/javascripts/extra.js
-  # Plotly removed from global load - will be loaded conditionally by extra.js on scorecard pages only
-  # This saves 2.27MB on every page load!
+  - website/javascripts/scorecard.js
+  # Plotly is NOT loaded globally. scorecard.js loads it from CDN on demand,
+  # only when scorecard chart containers are present (saves ~2.3MB elsewhere).

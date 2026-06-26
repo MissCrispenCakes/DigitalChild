@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add rainbow effect to specific elements
   addRainbowEffects();
 
-  // Initialize scorecard visualizations if on scorecard page
-  if (window.location.pathname.includes('scorecard')) {
-    loadPlotlyAndInitialize();
-  }
+  // Scorecard visualizations are handled by scorecard.js (loads Plotly + data
+  // only when scorecard chart containers are present on the page).
 
   // Add copy button functionality to code blocks (if not already present)
   enhanceCodeBlocks();
@@ -34,79 +32,6 @@ function addRainbowEffects() {
       heading.parentNode.insertBefore(underline, heading.nextSibling);
     }
   });
-}
-
-/**
- * Load Plotly.js dynamically only on scorecard pages (saves 2.27MB on other pages!)
- */
-function loadPlotlyAndInitialize() {
-  console.log('Loading Plotly for scorecard visualizations...');
-
-  // Check if Plotly already loaded
-  if (typeof Plotly !== 'undefined') {
-    initializeScorecardVisualizations();
-    return;
-  }
-
-  // Dynamically load Plotly.js
-  const script = document.createElement('script');
-  script.src = 'https://cdn.plot.ly/plotly-2.27.0.min.js';
-  script.onload = function() {
-    console.log('Plotly loaded successfully');
-    initializeScorecardVisualizations();
-  };
-  script.onerror = function() {
-    console.error('Failed to load Plotly - interactive charts disabled');
-  };
-  document.head.appendChild(script);
-}
-
-/**
- * Initialize scorecard visualizations using Plotly
- * Note: This is a placeholder for future implementation
- */
-function initializeScorecardVisualizations() {
-  console.log('Scorecard page detected - visualizations coming soon');
-
-  // Placeholder: Check if Plotly is available
-  if (typeof Plotly !== 'undefined') {
-    console.log('Plotly available - ready for visualizations');
-    // Future: Create charts here
-    // createIndicatorCharts();
-    // createCountryMap();
-  } else {
-    console.log('Plotly not loaded - interactive charts disabled');
-  }
-}
-
-/**
- * Create indicator distribution charts (placeholder for future)
- */
-function createIndicatorCharts() {
-  // Example data structure (to be replaced with actual data)
-  const sampleData = {
-    'AI_Policy_Status': {
-      'Comprehensive Strategy': 25,
-      'Framework or Guidelines': 48,
-      'No Published Policy': 121
-    },
-    'Data_Protection_Law': {
-      'Comprehensive Law': 71,
-      'Draft Legislation': 23,
-      'No Specific Law': 100
-    }
-  };
-
-  // Future: Create Plotly charts for each indicator
-  // Plotly.newPlot('indicator-chart', data, layout);
-}
-
-/**
- * Create country choropleth map (placeholder for future)
- */
-function createCountryMap() {
-  // Future: Create interactive world map with Plotly
-  // showing indicator values color-coded by country
 }
 
 /**
@@ -268,9 +193,7 @@ function debounce(func, wait) {
 window.GRIMdata = {
   fetchCSVData,
   formatDate,
-  debounce,
-  createIndicatorCharts,
-  createCountryMap
+  debounce
 };
 
 console.log('GRIMdata utilities loaded');
