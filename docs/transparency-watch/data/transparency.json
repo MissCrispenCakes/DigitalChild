@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-06-26T21:30:33Z",
-    "source_count": 9,
+    "generated_at": "2026-06-26T22:21:28Z",
+    "source_count": 10,
     "signal_types": [
       "dataset",
       "document",
@@ -404,6 +404,67 @@
       ]
     },
     {
+      "key": "ranking_digital_rights",
+      "name": "Ranking Digital Rights",
+      "domains": [
+        "rankingdigitalrights.org"
+      ],
+      "homepage": "https://rankingdigitalrights.org/",
+      "first_signal": "2015-11-05",
+      "last_signal": "2025-06-12",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "document",
+          "label": "Bulk downloads section",
+          "first_seen": "2015-11-05",
+          "count": 330,
+          "example": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015report.pdf",
+          "topical_first_seen": "2015-11-05",
+          "topical_example": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015report.pdf",
+          "topical": true,
+          "display_date": "2015-11-05",
+          "display_url": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015report.pdf"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2019-09-24",
+          "count": 17,
+          "example": "https://rankingdigitalrights.org/sitemap.xml",
+          "topical_first_seen": "2019-09-24",
+          "topical_example": "https://rankingdigitalrights.org/sitemap.xml",
+          "topical": true,
+          "display_date": "2019-09-24",
+          "display_url": "https://rankingdigitalrights.org/sitemap.xml"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2021-04-14",
+          "count": 97,
+          "example": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015data.xlsx",
+          "topical_first_seen": "2021-04-14",
+          "topical_example": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015data.xlsx",
+          "topical": true,
+          "display_date": "2021-04-14",
+          "display_url": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015data.xlsx"
+        },
+        {
+          "type": "api",
+          "label": "API endpoint",
+          "first_seen": "2025-03-07",
+          "count": 2,
+          "example": "https://rankingdigitalrights.org/v1/books",
+          "topical_first_seen": "2025-03-07",
+          "topical_example": "https://rankingdigitalrights.org/v1/books",
+          "topical": true,
+          "display_date": "2025-03-07",
+          "display_url": "https://rankingdigitalrights.org/v1/books"
+        }
+      ]
+    },
+    {
       "key": "dla_piper_dp",
       "name": "DLA Piper — Data Protection Laws of the World",
       "domains": [
@@ -464,6 +525,15 @@
       "type": "dataset",
       "label": "CSV dataset download",
       "url": "https://freedomhouse.org/country/scores&download.csv",
+      "topical": true
+    },
+    {
+      "date": "2025-03-07",
+      "source": "Ranking Digital Rights",
+      "source_key": "ranking_digital_rights",
+      "type": "api",
+      "label": "API endpoint",
+      "url": "https://rankingdigitalrights.org/v1/books",
       "topical": true
     },
     {
@@ -557,6 +627,15 @@
       "topical": true
     },
     {
+      "date": "2021-04-14",
+      "source": "Ranking Digital Rights",
+      "source_key": "ranking_digital_rights",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015data.xlsx",
+      "topical": true
+    },
+    {
       "date": "2020-03-28",
       "source": "Freedom House",
       "source_key": "freedom_house",
@@ -581,6 +660,15 @@
       "type": "structure",
       "label": "XML sitemap",
       "url": "https://ilga.org/sitemap.xml",
+      "topical": true
+    },
+    {
+      "date": "2019-09-24",
+      "source": "Ranking Digital Rights",
+      "source_key": "ranking_digital_rights",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://rankingdigitalrights.org/sitemap.xml",
       "topical": true
     },
     {
@@ -617,6 +705,15 @@
       "type": "document",
       "label": "Bulk downloads section",
       "url": "http://ilga.org/downloads/03_ILGA_WorldMap_ENGLISH_Overview_May2016.pdf",
+      "topical": true
+    },
+    {
+      "date": "2015-11-05",
+      "source": "Ranking Digital Rights",
+      "source_key": "ranking_digital_rights",
+      "type": "document",
+      "label": "Bulk downloads section",
+      "url": "https://rankingdigitalrights.org/index2015/assets/static/download/RDRindex2015report.pdf",
       "topical": true
     },
     {

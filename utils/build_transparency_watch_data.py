@@ -96,6 +96,13 @@ SOURCES = [
         "homepage": "https://www.accessnow.org/",
     },
     {
+        "key": "ranking_digital_rights",
+        "name": "Ranking Digital Rights",
+        "domains": ["rankingdigitalrights.org"],
+        "topic": r"index|scorecard|data|rights|telco|big.?tech|accountability|company",
+        "homepage": "https://rankingdigitalrights.org/",
+    },
+    {
         "key": "dla_piper_dp",
         "name": "DLA Piper — Data Protection Laws of the World",
         "domains": ["dlapiperdataprotection.com"],
