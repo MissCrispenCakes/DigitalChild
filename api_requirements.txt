@@ -29,7 +29,7 @@ python-dotenv==1.2.2
 openpyxl==3.1.5
 
 # JSON handling improvements
-ujson==5.12.1
+ujson==5.13.0
 
 # Note: Requires main requirements.txt for processors module dependencies
 # pip install -r requirements.txt -r api_requirements.txt
