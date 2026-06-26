@@ -156,6 +156,8 @@ nav:
       - Visualization: scorecard/visualization.md
       - Data Explorer: scorecard/explorer.md
 
+  - Transparency Watch: transparency-watch/index.md
+
   - Projects:
       - Overview: website/projects/index.md
       - LittleRainbowRights:
@@ -210,5 +212,6 @@ extra_css:
 extra_javascript:
   - website/javascripts/extra.js
   - website/javascripts/scorecard.js
+  - website/javascripts/transparency.js
   # Plotly is NOT loaded globally. scorecard.js loads it from CDN on demand,
   # only when scorecard chart containers are present (saves ~2.3MB elsewhere).

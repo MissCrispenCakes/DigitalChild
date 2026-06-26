@@ -1,0 +1,659 @@
+{
+  "meta": {
+    "generated_at": "2026-06-26T21:30:33Z",
+    "source_count": 9,
+    "signal_types": [
+      "dataset",
+      "document",
+      "api",
+      "structure"
+    ],
+    "method": "First archived appearance (Internet Archive Wayback CDX) of transparency-signal URLs per domain.",
+    "caveat": "Wayback coverage is incomplete: a first-seen date is an UPPER BOUND on public adoption (it may have appeared earlier, unarchived), and absence of a signal is not proof it never existed. Treat as indicative, verify before citing."
+  },
+  "sources": [
+    {
+      "key": "unctad",
+      "name": "UNCTAD — Cyberlaw / Data Protection Tracker",
+      "domains": [
+        "unctad.org",
+        "storage.unctad.org"
+      ],
+      "homepage": "https://unctad.org/page/data-protection-and-privacy-legislation-worldwide",
+      "first_signal": "2022-08-05",
+      "last_signal": "2026-05-31",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "dataset",
+          "label": "CSV dataset download",
+          "first_seen": "2022-08-05",
+          "count": 98,
+          "example": "https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/bond_spread.csv",
+          "topical_first_seen": "2026-05-31",
+          "topical_example": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/data.csv?2026-05-07",
+          "topical": true,
+          "display_date": "2026-05-31",
+          "display_url": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/data.csv?2026-05-07"
+        },
+        {
+          "type": "document",
+          "label": "Per-document link manifest",
+          "first_seen": "2026-05-31",
+          "count": 1,
+          "example": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/document_links.json?2026-05-07",
+          "topical_first_seen": "2026-05-31",
+          "topical_example": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/document_links.json?2026-05-07",
+          "topical": true,
+          "display_date": "2026-05-31",
+          "display_url": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/document_links.json?2026-05-07"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2022-08-06",
+          "count": 1,
+          "example": "https://storage.unctad.org/sitemap.xml",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2022-08-06",
+          "display_url": "https://storage.unctad.org/sitemap.xml"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2023-03-07",
+          "count": 1,
+          "example": "https://storage.unctad.org/2023-debt_climate_data/assets/data/2023-debt_climate_data.xlsx",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2023-03-07",
+          "display_url": "https://storage.unctad.org/2023-debt_climate_data/assets/data/2023-debt_climate_data.xlsx"
+        }
+      ]
+    },
+    {
+      "key": "unesco_ai",
+      "name": "UNESCO — AI Ethics / Observatory",
+      "domains": [
+        "unesco.org"
+      ],
+      "homepage": "https://www.unesco.org/en/artificial-intelligence",
+      "first_signal": null,
+      "last_signal": null,
+      "query_ok": false,
+      "signals": []
+    },
+    {
+      "key": "ilga",
+      "name": "ILGA World",
+      "domains": [
+        "ilga.org"
+      ],
+      "homepage": "https://database.ilga.org/en",
+      "first_signal": "2005-11-05",
+      "last_signal": "2026-01-19",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "document",
+          "label": "Bulk downloads section",
+          "first_seen": "2005-11-05",
+          "count": 3189,
+          "example": "http://www.ilga.org:80/content/download/1597/9984/version/2/file/ILGA-Octubre05-AfricaCAL.pdf",
+          "topical_first_seen": "2016-06-15",
+          "topical_example": "http://ilga.org/downloads/03_ILGA_WorldMap_ENGLISH_Overview_May2016.pdf",
+          "topical": true,
+          "display_date": "2016-06-15",
+          "display_url": "http://ilga.org/downloads/03_ILGA_WorldMap_ENGLISH_Overview_May2016.pdf"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2011-02-04",
+          "count": 12,
+          "example": "http://ilga.org/ilga/static/uploads/files/2010/12/16/ARC%20UN%20Voting%20Records-EJEs%202010.xls",
+          "topical_first_seen": "2016-11-21",
+          "topical_example": "http://ilga.org/downloads/ILGA_sexual_orientation_legal_dataset_SEPTEMBER_2016.xlsx",
+          "topical": true,
+          "display_date": "2016-11-21",
+          "display_url": "http://ilga.org/downloads/ILGA_sexual_orientation_legal_dataset_SEPTEMBER_2016.xlsx"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2019-09-24",
+          "count": 15,
+          "example": "https://ilga.org/sitemap.xml",
+          "topical_first_seen": "2019-09-24",
+          "topical_example": "https://ilga.org/sitemap.xml",
+          "topical": true,
+          "display_date": "2019-09-24",
+          "display_url": "https://ilga.org/sitemap.xml"
+        }
+      ]
+    },
+    {
+      "key": "hdt",
+      "name": "Human Dignity Trust",
+      "domains": [
+        "humandignitytrust.org"
+      ],
+      "homepage": "https://www.humandignitytrust.org/lgbt-the-law/map-of-criminalisation/",
+      "first_signal": "2022-06-24",
+      "last_signal": "2024-01-14",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2022-06-24",
+          "count": 8,
+          "example": "https://www.humandignitytrust.org/sitemap.xml",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2022-06-24",
+          "display_url": "https://www.humandignitytrust.org/sitemap.xml"
+        },
+        {
+          "type": "api",
+          "label": "API endpoint",
+          "first_seen": "2024-01-14",
+          "count": 3,
+          "example": "https://www.humandignitytrust.org/api/?list=all",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2024-01-14",
+          "display_url": "https://www.humandignitytrust.org/api/?list=all"
+        }
+      ]
+    },
+    {
+      "key": "privacy_intl",
+      "name": "Privacy International",
+      "domains": [
+        "privacyinternational.org"
+      ],
+      "homepage": "https://privacyinternational.org/",
+      "first_signal": null,
+      "last_signal": null,
+      "query_ok": false,
+      "signals": []
+    },
+    {
+      "key": "oecd_ai",
+      "name": "OECD.AI Policy Observatory",
+      "domains": [
+        "oecd.ai"
+      ],
+      "homepage": "https://oecd.ai/",
+      "first_signal": "2021-11-06",
+      "last_signal": "2026-03-02",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "api",
+          "label": "API endpoint",
+          "first_seen": "2021-11-06",
+          "count": 42,
+          "example": "https://api.oecd.ai/ws/AIPO/API/",
+          "topical_first_seen": "2021-11-06",
+          "topical_example": "https://api.oecd.ai/ws/AIPO/API/",
+          "topical": true,
+          "display_date": "2021-11-06",
+          "display_url": "https://api.oecd.ai/ws/AIPO/API/"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2022-06-29",
+          "count": 28,
+          "example": "https://oecd.ai/en/sitemap.xml",
+          "topical_first_seen": "2022-06-29",
+          "topical_example": "https://oecd.ai/en/sitemap.xml",
+          "topical": true,
+          "display_date": "2022-06-29",
+          "display_url": "https://oecd.ai/en/sitemap.xml"
+        },
+        {
+          "type": "structure",
+          "label": "Open-data / data portal",
+          "first_seen": "2023-08-01",
+          "count": 16,
+          "example": "https://oecd.ai/en/versions/2022/datasets/Datasets.pdf",
+          "topical_first_seen": "2023-08-01",
+          "topical_example": "https://oecd.ai/en/versions/2022/datasets/Datasets.pdf",
+          "topical": true,
+          "display_date": "2023-08-01",
+          "display_url": "https://oecd.ai/en/versions/2022/datasets/Datasets.pdf"
+        },
+        {
+          "type": "dataset",
+          "label": "CSV dataset download",
+          "first_seen": "2023-09-27",
+          "count": 154,
+          "example": "https://oecd.ai/fr/ARM-policy-initiatives.csv",
+          "topical_first_seen": "2023-09-27",
+          "topical_example": "https://oecd.ai/fr/ARM-policy-initiatives.csv",
+          "topical": true,
+          "display_date": "2023-09-27",
+          "display_url": "https://oecd.ai/fr/ARM-policy-initiatives.csv"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2023-10-10",
+          "count": 63,
+          "example": "https://oecd.ai/fr/OECD-Framework-of-Tools-for-Trustworthy-AI-sample.xlsx",
+          "topical_first_seen": "2023-10-10",
+          "topical_example": "https://oecd.ai/fr/OECD-Framework-of-Tools-for-Trustworthy-AI-sample.xlsx",
+          "topical": true,
+          "display_date": "2023-10-10",
+          "display_url": "https://oecd.ai/fr/OECD-Framework-of-Tools-for-Trustworthy-AI-sample.xlsx"
+        },
+        {
+          "type": "document",
+          "label": "Bulk downloads section",
+          "first_seen": "2025-12-30",
+          "count": 1,
+          "example": "https://wp.oecd.ai/download/",
+          "topical_first_seen": "2025-12-30",
+          "topical_example": "https://wp.oecd.ai/download/",
+          "topical": true,
+          "display_date": "2025-12-30",
+          "display_url": "https://wp.oecd.ai/download/"
+        }
+      ]
+    },
+    {
+      "key": "freedom_house",
+      "name": "Freedom House",
+      "domains": [
+        "freedomhouse.org"
+      ],
+      "homepage": "https://freedomhouse.org/",
+      "first_signal": "2007-10-05",
+      "last_signal": "2026-05-23",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "document",
+          "label": "Bulk downloads section",
+          "first_seen": "2007-10-05",
+          "count": 1873,
+          "example": "http://www.freedomhouse.org/modules/publications/ccr/www.transparency.org/content/download/18703/255305,",
+          "topical_first_seen": "2007-10-05",
+          "topical_example": "http://www.freedomhouse.org/modules/publications/ccr/www.transparency.org/content/download/18703/255305,",
+          "topical": true,
+          "display_date": "2007-10-05",
+          "display_url": "http://www.freedomhouse.org/modules/publications/ccr/www.transparency.org/content/download/18703/255305,"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2009-04-11",
+          "count": 40,
+          "example": "http://www.freedomhouse.org:80/JORDAN/GrantBudget2008.xls",
+          "topical_first_seen": "2009-04-11",
+          "topical_example": "http://www.freedomhouse.org:80/JORDAN/GrantBudget2008.xls",
+          "topical": true,
+          "display_date": "2009-04-11",
+          "display_url": "http://www.freedomhouse.org:80/JORDAN/GrantBudget2008.xls"
+        },
+        {
+          "type": "api",
+          "label": "API endpoint",
+          "first_seen": "2020-03-04",
+          "count": 44,
+          "example": "https://freedomhouse.org/api/map/fiw/2020/json",
+          "topical_first_seen": "2020-03-04",
+          "topical_example": "https://freedomhouse.org/api/map/fiw/2020/json",
+          "topical": true,
+          "display_date": "2020-03-04",
+          "display_url": "https://freedomhouse.org/api/map/fiw/2020/json"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2020-03-28",
+          "count": 764,
+          "example": "https://freedomhouse.org/es/es/sitemap.xml",
+          "topical_first_seen": "2020-03-28",
+          "topical_example": "https://freedomhouse.org/es/es/sitemap.xml",
+          "topical": true,
+          "display_date": "2020-03-28",
+          "display_url": "https://freedomhouse.org/es/es/sitemap.xml"
+        },
+        {
+          "type": "dataset",
+          "label": "CSV dataset download",
+          "first_seen": "2025-05-11",
+          "count": 1,
+          "example": "https://freedomhouse.org/country/scores&download.csv",
+          "topical_first_seen": "2025-05-11",
+          "topical_example": "https://freedomhouse.org/country/scores&download.csv",
+          "topical": true,
+          "display_date": "2025-05-11",
+          "display_url": "https://freedomhouse.org/country/scores&download.csv"
+        }
+      ]
+    },
+    {
+      "key": "access_now",
+      "name": "Access Now",
+      "domains": [
+        "accessnow.org"
+      ],
+      "homepage": "https://www.accessnow.org/",
+      "first_signal": "2015-07-31",
+      "last_signal": "2025-10-01",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "dataset",
+          "label": "CSV dataset download",
+          "first_seen": "2015-10-03",
+          "count": 10,
+          "example": "https://www.accessnow.org/page/-/img/map/csv_data.csv",
+          "topical_first_seen": "2015-10-03",
+          "topical_example": "https://www.accessnow.org/page/-/img/map/csv_data.csv",
+          "topical": true,
+          "display_date": "2015-10-03",
+          "display_url": "https://www.accessnow.org/page/-/img/map/csv_data.csv"
+        },
+        {
+          "type": "dataset",
+          "label": "Excel dataset download",
+          "first_seen": "2015-07-31",
+          "count": 5,
+          "example": "https://www.accessnow.org/page/-/docs/HTTPS%20Usage%20on%20top%20100%20Websites.xls",
+          "topical_first_seen": "2017-11-09",
+          "topical_example": "https://www.accessnow.org/cms/assets/uploads/2017/09/Shutdown-Tracker-Optimization-Project.xlsx",
+          "topical": true,
+          "display_date": "2017-11-09",
+          "display_url": "https://www.accessnow.org/cms/assets/uploads/2017/09/Shutdown-Tracker-Optimization-Project.xlsx"
+        },
+        {
+          "type": "api",
+          "label": "API endpoint",
+          "first_seen": "2015-07-31",
+          "count": 43,
+          "example": "https://www.accessnow.org/api/lounge",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2015-07-31",
+          "display_url": "https://www.accessnow.org/api/lounge"
+        },
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2017-11-09",
+          "count": 42,
+          "example": "https://www.accessnow.org/campaign-sitemap.xml",
+          "topical_first_seen": null,
+          "topical_example": null,
+          "topical": false,
+          "display_date": "2017-11-09",
+          "display_url": "https://www.accessnow.org/campaign-sitemap.xml"
+        }
+      ]
+    },
+    {
+      "key": "dla_piper_dp",
+      "name": "DLA Piper — Data Protection Laws of the World",
+      "domains": [
+        "dlapiperdataprotection.com"
+      ],
+      "homepage": "https://www.dlapiperdataprotection.com/",
+      "first_signal": "2022-07-01",
+      "last_signal": "2022-07-01",
+      "query_ok": true,
+      "signals": [
+        {
+          "type": "structure",
+          "label": "XML sitemap",
+          "first_seen": "2022-07-01",
+          "count": 1,
+          "example": "https://www.dlapiperdataprotection.com/sitemap.xml",
+          "topical_first_seen": "2022-07-01",
+          "topical_example": "https://www.dlapiperdataprotection.com/sitemap.xml",
+          "topical": true,
+          "display_date": "2022-07-01",
+          "display_url": "https://www.dlapiperdataprotection.com/sitemap.xml"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-05-31",
+      "source": "UNCTAD — Cyberlaw / Data Protection Tracker",
+      "source_key": "unctad",
+      "type": "dataset",
+      "label": "CSV dataset download",
+      "url": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/data.csv?2026-05-07",
+      "topical": true
+    },
+    {
+      "date": "2026-05-31",
+      "source": "UNCTAD — Cyberlaw / Data Protection Tracker",
+      "source_key": "unctad",
+      "type": "document",
+      "label": "Per-document link manifest",
+      "url": "https://storage.unctad.org/2026-cyberlaw_tracker/assets/data/document_links.json?2026-05-07",
+      "topical": true
+    },
+    {
+      "date": "2025-12-30",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "document",
+      "label": "Bulk downloads section",
+      "url": "https://wp.oecd.ai/download/",
+      "topical": true
+    },
+    {
+      "date": "2025-05-11",
+      "source": "Freedom House",
+      "source_key": "freedom_house",
+      "type": "dataset",
+      "label": "CSV dataset download",
+      "url": "https://freedomhouse.org/country/scores&download.csv",
+      "topical": true
+    },
+    {
+      "date": "2024-01-14",
+      "source": "Human Dignity Trust",
+      "source_key": "hdt",
+      "type": "api",
+      "label": "API endpoint",
+      "url": "https://www.humandignitytrust.org/api/?list=all",
+      "topical": false
+    },
+    {
+      "date": "2023-10-10",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "https://oecd.ai/fr/OECD-Framework-of-Tools-for-Trustworthy-AI-sample.xlsx",
+      "topical": true
+    },
+    {
+      "date": "2023-09-27",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "dataset",
+      "label": "CSV dataset download",
+      "url": "https://oecd.ai/fr/ARM-policy-initiatives.csv",
+      "topical": true
+    },
+    {
+      "date": "2023-08-01",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "structure",
+      "label": "Open-data / data portal",
+      "url": "https://oecd.ai/en/versions/2022/datasets/Datasets.pdf",
+      "topical": true
+    },
+    {
+      "date": "2023-03-07",
+      "source": "UNCTAD — Cyberlaw / Data Protection Tracker",
+      "source_key": "unctad",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "https://storage.unctad.org/2023-debt_climate_data/assets/data/2023-debt_climate_data.xlsx",
+      "topical": false
+    },
+    {
+      "date": "2022-08-06",
+      "source": "UNCTAD — Cyberlaw / Data Protection Tracker",
+      "source_key": "unctad",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://storage.unctad.org/sitemap.xml",
+      "topical": false
+    },
+    {
+      "date": "2022-07-01",
+      "source": "DLA Piper — Data Protection Laws of the World",
+      "source_key": "dla_piper_dp",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://www.dlapiperdataprotection.com/sitemap.xml",
+      "topical": true
+    },
+    {
+      "date": "2022-06-29",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://oecd.ai/en/sitemap.xml",
+      "topical": true
+    },
+    {
+      "date": "2022-06-24",
+      "source": "Human Dignity Trust",
+      "source_key": "hdt",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://www.humandignitytrust.org/sitemap.xml",
+      "topical": false
+    },
+    {
+      "date": "2021-11-06",
+      "source": "OECD.AI Policy Observatory",
+      "source_key": "oecd_ai",
+      "type": "api",
+      "label": "API endpoint",
+      "url": "https://api.oecd.ai/ws/AIPO/API/",
+      "topical": true
+    },
+    {
+      "date": "2020-03-28",
+      "source": "Freedom House",
+      "source_key": "freedom_house",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://freedomhouse.org/es/es/sitemap.xml",
+      "topical": true
+    },
+    {
+      "date": "2020-03-04",
+      "source": "Freedom House",
+      "source_key": "freedom_house",
+      "type": "api",
+      "label": "API endpoint",
+      "url": "https://freedomhouse.org/api/map/fiw/2020/json",
+      "topical": true
+    },
+    {
+      "date": "2019-09-24",
+      "source": "ILGA World",
+      "source_key": "ilga",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://ilga.org/sitemap.xml",
+      "topical": true
+    },
+    {
+      "date": "2017-11-09",
+      "source": "Access Now",
+      "source_key": "access_now",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "https://www.accessnow.org/cms/assets/uploads/2017/09/Shutdown-Tracker-Optimization-Project.xlsx",
+      "topical": true
+    },
+    {
+      "date": "2017-11-09",
+      "source": "Access Now",
+      "source_key": "access_now",
+      "type": "structure",
+      "label": "XML sitemap",
+      "url": "https://www.accessnow.org/campaign-sitemap.xml",
+      "topical": false
+    },
+    {
+      "date": "2016-11-21",
+      "source": "ILGA World",
+      "source_key": "ilga",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "http://ilga.org/downloads/ILGA_sexual_orientation_legal_dataset_SEPTEMBER_2016.xlsx",
+      "topical": true
+    },
+    {
+      "date": "2016-06-15",
+      "source": "ILGA World",
+      "source_key": "ilga",
+      "type": "document",
+      "label": "Bulk downloads section",
+      "url": "http://ilga.org/downloads/03_ILGA_WorldMap_ENGLISH_Overview_May2016.pdf",
+      "topical": true
+    },
+    {
+      "date": "2015-10-03",
+      "source": "Access Now",
+      "source_key": "access_now",
+      "type": "dataset",
+      "label": "CSV dataset download",
+      "url": "https://www.accessnow.org/page/-/img/map/csv_data.csv",
+      "topical": true
+    },
+    {
+      "date": "2015-07-31",
+      "source": "Access Now",
+      "source_key": "access_now",
+      "type": "api",
+      "label": "API endpoint",
+      "url": "https://www.accessnow.org/api/lounge",
+      "topical": false
+    },
+    {
+      "date": "2009-04-11",
+      "source": "Freedom House",
+      "source_key": "freedom_house",
+      "type": "dataset",
+      "label": "Excel dataset download",
+      "url": "http://www.freedomhouse.org:80/JORDAN/GrantBudget2008.xls",
+      "topical": true
+    },
+    {
+      "date": "2007-10-05",
+      "source": "Freedom House",
+      "source_key": "freedom_house",
+      "type": "document",
+      "label": "Bulk downloads section",
+      "url": "http://www.freedomhouse.org/modules/publications/ccr/www.transparency.org/content/download/18703/255305,",
+      "topical": true
+    }
+  ]
+}

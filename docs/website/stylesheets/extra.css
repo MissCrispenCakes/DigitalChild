@@ -622,3 +622,101 @@ table.sc-table td.sc-doc-warn,
   .sc-controls label.sc-check { width: auto; }
   .sc-chart { min-height: 300px; }
 }
+
+/* ============================================================
+   Source Transparency Watch (transparency.js)
+   ============================================================ */
+
+.tw-app { margin: 1.5rem 0; }
+
+/* Type badges (shared by timeline + source cards) */
+.tw-badge {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.12rem 0.45rem;
+  border-radius: 3px;
+  color: #fff;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+.tw-badge-dataset { background: #2457b8; }
+.tw-badge-document { background: #2e8b57; }
+.tw-badge-api { background: #7a3fb8; }
+.tw-badge-structure { background: #c77700; }
+
+.tw-star { color: #e8a33d; font-weight: 700; }
+.tw-link { text-decoration: none; }
+
+/* Timeline */
+#tw-timeline {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 0.75rem;
+}
+
+.tw-event {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.86rem;
+}
+
+.tw-date {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  min-width: 5.5rem;
+}
+
+.tw-src { font-weight: 600; }
+.tw-evlabel { color: var(--md-default-fg-color); }
+
+/* Source cards */
+#tw-sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.tw-card {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  background: var(--md-default-bg-color);
+}
+
+.tw-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.tw-card-head h3 { margin: 0; font-size: 1rem; }
+
+.tw-span {
+  margin: 0.1rem 0 0.6rem;
+  font-size: 0.76rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.tw-siglist { list-style: none; margin: 0; padding: 0; }
+.tw-siglist > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.35rem 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.82rem;
+}
+.tw-seen { color: var(--md-default-fg-color--light); }
+
+@media (max-width: 768px) {
+  .tw-date { min-width: 0; }
+}
