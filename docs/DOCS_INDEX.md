@@ -2,7 +2,7 @@
 
 This index lists all documentation files in `docs/` organized by category.
 
-**Total: 47 documentation files** (as of January 2026)
+**Total: 64 documentation files** (updated June 2026)
 
 ______________________________________________________________________
 
@@ -66,8 +66,20 @@ ______________________________________________________________________
 
 Scorecard visualization and data:
 
-- `scorecard/index.md` → Scorecard visualization and indicators
-- `scorecard/explorer.md` → Data explorer interface
+- `scorecard/index.md` → Scorecard overview and indicators
+- `scorecard/design.md` → Design & methodology (0–2 scoring rules)
+- `scorecard/data-access.md` → API, CSV, and direct file access
+- `scorecard/visualization.md` → Interactive map, indicator & regional charts
+- `scorecard/explorer.md` → Filter/search/sort explorer, country comparison & detail
+
+______________________________________________________________________
+
+## 🛰️ Transparency Watch (transparency-watch/)
+
+Monitoring peer organisations for open-data / primary-source transparency adoption:
+
+- `transparency-watch/index.md` → Adoption timeline + per-source cards (dated via Wayback)
+- `maintenance/SOURCE_AVAILABILITY_LOG.md` → Log of previously-available sources now gone (link rot)
 
 ______________________________________________________________________
 

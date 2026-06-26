@@ -459,7 +459,7 @@ See [API Documentation](api/index.md) for complete API documentation and [Produc
 
 ## 🧪 Testing Strategy
 
-**Test Suite:** 274 tests covering:
+**Test Suite:** 347 tests. Core areas covered:
 
 - 68 validator tests (comprehensive security checks)
 - 20 scorecard tests (load, enrich, export, validate)

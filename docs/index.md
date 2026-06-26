@@ -61,8 +61,11 @@ Welcome to the complete documentation for **DigitalChild** (LittleRainbowRights)
 - [Scorecard Overview](scorecard/index.md) - What it tracks and why
 - [Design & Methodology](scorecard/design.md) - How indicators are defined
 - [Data Access](scorecard/data-access.md) - API, CSV, and file access
-- [Visualization](scorecard/visualization.md) - Charts and exports
-- [Data Explorer](scorecard/explorer.md) - Interactive exploration
+- [Visualization](scorecard/visualization.md) - Interactive map, indicator & regional charts
+- [Data Explorer](scorecard/explorer.md) - Filter, search, sort & compare countries
+
+### Transparency Watch
+- [Source Transparency Watch](transparency-watch/index.md) - When peer organisations adopt open-data transparency
 
 ### Standards & Specifications
 - [Metadata Schema](standards/METADATA_SCHEMA.md) - Document metadata structure
@@ -94,7 +97,7 @@ DigitalChild/
 │   └── exports/           # CSV exports for analysis
 ├── configs/               # Tag configurations and URL dictionaries
 ├── docs/                  # This documentation
-└── tests/                 # Test suite (209 tests)
+└── tests/                 # Test suite (347 tests)
 ```
 
 ## Key Features
@@ -129,6 +132,6 @@ DigitalChild/
 
 ---
 
-**Version:** 2.0.0
-**Last Updated:** January 2026
+**Version:** 2.1.0 (live) · last archived release 2.0.0 (DOI: 10.5281/zenodo.18318098)
+**Last Updated:** June 2026
 **License:** MIT (code) / CC BY 4.0 (data)

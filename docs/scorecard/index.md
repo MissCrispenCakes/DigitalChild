@@ -125,8 +125,8 @@ Choose your path based on your needs:
 
     Explore visualizations and export options
 
-    - Current: CSV exports, API queries
-    - Future: Interactive heatmaps, country cards
+    - Live: Interactive choropleth map, indicator & regional charts, country cards
+    - Also: CSV exports, API queries
 
     [View Visualizations →](visualization.md)
 
@@ -136,8 +136,8 @@ Choose your path based on your needs:
 
     Interactive data exploration tool
 
-    - Coming soon: Filter, search, compare
-    - Current: Use API or CSV exports
+    - Live: Filter, search, sort, compare countries
+    - Also: API or CSV exports
 
     [Try Explorer →](explorer.md)
 
@@ -304,8 +304,9 @@ Or in text:
 Planned features (see [Roadmap](../ROADMAP.md)):
 
 - [x] **REST API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready)
-- [ ] Interactive heatmap visualizations (Plotly.js)
-- [ ] Country comparison tool (side-by-side view)
+- [x] **Interactive map & charts (Plotly.js)** ✅ **LIVE** (see [Visualization](visualization.md))
+- [x] **Country comparison tool** ✅ **LIVE** (radar comparison in the [Data Explorer](explorer.md))
+- [x] **Source transparency monitoring** ✅ **LIVE** (see [Transparency Watch](../transparency-watch/index.md))
 - [ ] Time-series tracking of policy changes
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (target: 15-20 total)

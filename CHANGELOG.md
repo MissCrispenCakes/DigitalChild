@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-06-26
+
+### Added
+- **Interactive Scorecard Visualization** - in-browser Plotly choropleth map (Protection Score / Risk Index / data-completeness metrics), indicator-distribution charts, and regional comparison, rendered from a published static dataset (no server required). Live at `/scorecard/visualization/`.
+- **Scorecard Data Explorer** - filter/search/sort table with a colour-coded indicator heatmap, a per-country detail panel (per-indicator score, justification, and source links), a data-completeness ("documented X/10") indicator, and a country-comparison radar chart. Live at `/scorecard/explorer/`.
+- **Source Transparency Watch** - a new page tracking when peer organisations adopt open-data / primary-source transparency, dated via the Internet Archive Wayback CDX API, with an adoption timeline and per-source cards. Live at `/transparency-watch/`.
+- **Static data generators** - `utils/build_scorecard_viz_data.py` and `utils/build_transparency_watch_data.py` (read-only; write only into `docs/`, never touching canonical sources).
+- **Source Availability Log** - `docs/maintenance/SOURCE_AVAILABILITY_LOG.md` records previously-available external sources that have gone dead (link rot), with provenance - the inverse of the Transparency Watch.
+
+### Changed
+- **Test suite** - 347 tests passing (documentation counts updated to match).
+- **CI** - the live-download demonstration step now tolerates individual rotted source URLs (bash errexit no longer aborts the whole step on one dead link); "≥3 valid downloads" remains the success gate.
+
+### Fixed
+- Removed a dead source URL (africaportal.org, now a 301 to a non-file page) from the CI demonstration set; recorded in the Source Availability Log.
+
 ## [2.0.0] - 2026-01-26
 
 ### Added

@@ -140,30 +140,32 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Phase 5: Visualization Dashboard (📅 NEXT)
+## Phase 5: Visualization Dashboard (🚧 IN PROGRESS)
+
+**Delivered (June 2026), as a static, server-free implementation (Plotly.js + vanilla JS on the MkDocs site) rather than a JS-framework SPA:** the scorecard interactive choropleth map, indicator-distribution and regional charts, a filter/search/sort Data Explorer with per-country detail panels, a country-comparison radar, and a [Source Transparency Watch](transparency-watch/index.md). Remaining items below target a fuller dashboard.
 
 ### Interactive Frontend
 
-- [ ] Dashboard framework (React or Vue.js)
+- [ ] Dashboard framework (React or Vue.js) — *deferred; shipped static instead*
 - [ ] Tag frequency visualizations (bar charts, heatmaps)
 - [ ] Timeline views (tags over time with D3.js or Plotly)
-- [ ] Geographic heatmaps (countries × tags)
-- [ ] Scorecard indicator displays
-- [ ] Interactive filters (region, country, tags, year, source)
-- [ ] Export/download UI for datasets
-- [ ] Mobile-responsive design
+- [x] Geographic heatmaps — scorecard choropleth (countries × Protection/Risk/completeness) ✅ **LIVE**
+- [x] Scorecard indicator displays ✅ **LIVE**
+- [x] Interactive filters (region, indicator, score, search) ✅ **LIVE** (Data Explorer)
+- [x] Export/download access for datasets ✅ (CSV exports + published static JSON)
+- [ ] Mobile-responsive design *(charts responsive; full audit pending)*
 - [ ] API integration with authentication
 - [ ] Real-time data updates
 
 ### Advanced Analytics
 
-- [ ] Comparison mode (version side-by-side)
-- [ ] Gap analysis (missing data visualization)
+- [x] Comparison mode (country side-by-side radar) ✅ **LIVE**
+- [ ] Gap analysis (missing data visualization) — *partial: "documented X/10" completeness indicator live*
 - [ ] Correlation analysis (tags vs indicators)
 - [ ] Trend analysis and forecasting
 - [ ] Custom report generation
 
-**Note:** Backend API is complete and ready for frontend integration
+**Note:** Backend API is complete; the live visualizations are driven by published static JSON (no server required).
 
 ______________________________________________________________________
 
@@ -253,7 +255,7 @@ ______________________________________________________________________
 ## Metrics
 
 - **Lines of Code:** ~21,000+ (Python, config, tests, API, deployment)
-- **Test Coverage:** 274 tests (170 pipeline + 104 API)
+- **Test Coverage:** 347 tests passing
 - **Documentation:** 75+ markdown files, comprehensive API docs
 - **Data Sources:** 7 scrapers (AU, OHCHR, UPR, UNICEF, ACERWC, ACHPR, manual)
 - **Countries Tracked:** 194 (via scorecard, all with ISO 3166-1 alpha-2 codes)
@@ -302,4 +304,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-Last updated: January 2026
+Last updated: June 2026

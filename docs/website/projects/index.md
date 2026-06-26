@@ -76,7 +76,7 @@ Both projects use the GRIMdata pipeline infrastructure:
 - **BeautifulSoup4 & Selenium** - Web scraping
 - **pandas** - Data analysis
 - **Flask** - REST API (LittleRainbowRights)
-- **pytest** - Testing framework (274 tests total)
+- **pytest** - Testing framework (347 tests total)
 - **MkDocs Material** - Documentation
 
 ## Publications
