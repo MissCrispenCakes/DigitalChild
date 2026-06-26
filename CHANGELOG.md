@@ -23,6 +23,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Removed a dead source URL (africaportal.org, now a 301 to a non-file page) from the CI demonstration set; recorded in the Source Availability Log.
 
+### Security
+- Dependency updates (via Dependabot) resolving flagged advisories: Flask 3.1.2 → 3.1.3, Werkzeug 3.1.5 → 3.1.6, ujson 5.10.0 → 5.13.0, pymdown-extensions 10.20 → 10.21.3, python-dotenv 1.0.1 → 1.2.2.
+
 ## [2.0.1] - 2026-02-16
 
 JOSS preparation and metadata improvements. _(Backfilled from the [v2.0.1 release notes](https://github.com/MissCrispenCakes/DigitalChild/releases/tag/v2.0.1); this entry was missing from the changelog.)_
