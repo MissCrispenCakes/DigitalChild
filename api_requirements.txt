@@ -23,7 +23,7 @@ pydantic==2.10.5
 gunicorn==23.0.0
 
 # Environment variable management
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 
 # Excel file reading (for scorecard.xlsx)
 openpyxl==3.1.5
