@@ -168,7 +168,7 @@ ______________________________________________________________________
 - **BeautifulSoup4 & Selenium** - Web scraping
 - **pandas** - Data analysis
 - **Flask** - REST API backend (Phase 4)
-- **pytest** - Testing framework (274 tests: 170 pipeline + 104 API)
+- **pytest** - Testing framework (347 tests)
 - **MkDocs Material** - Documentation
 
 All pipelines follow best practices for security, validation, and error handling. The REST API provides programmatic data access with filtering, pagination, and caching.

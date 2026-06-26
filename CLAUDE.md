@@ -74,7 +74,7 @@ Pre-commit runs: black, isort, flake8, markdownlint, trailing-whitespace, end-of
 # Activate virtual environment
 source .LittleRainbow/bin/activate  # On Windows: .LittleRainbow\Scripts\activate
 
-# Full test suite (~106 seconds, 170 pipeline tests + 39 API tests)
+# Full test suite (~106 seconds, 347 tests)
 pytest tests/ -v
 
 # Specific test file
@@ -186,6 +186,29 @@ Or individual steps:
 python processors/scorecard_enricher.py
 python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"
 ```
+
+### Website Visualizations & Transparency Watch
+
+The GRIMdata site (`docs/`, Material for MkDocs) deploys to GitHub Pages on push
+to `basecamp` (via `.github/workflows/deploy-docs.yml`). Its interactive features
+are **static** — driven by published JSON, no server required — produced by two
+**read-only generators** that write ONLY into `docs/` (they never modify
+canonical sources):
+
+- `utils/build_scorecard_viz_data.py` → `docs/scorecard/data/scorecard.json`.
+  Drives the scorecard map/charts/explorer (`docs/website/javascripts/scorecard.js`).
+  Reads scores from the **`Heatmap`/`Scorecard` sheets of
+  `Global_QueerAI_Child_Scorecard_MASTER.xlsx`** (the designated visualization
+  workbook — note this differs from the pipeline's canonical `scorecard_main.xlsx`),
+  plus region + per-indicator source URLs from `scorecard_main.xlsx`.
+- `utils/build_transparency_watch_data.py` → `docs/transparency-watch/data/transparency.json`.
+  Drives the Source Transparency Watch (`docs/website/javascripts/transparency.js`).
+  Engine: Internet Archive Wayback CDX (first-seen of transparency-signal URLs per
+  monitored peer domain). Edit the `SOURCES` list to add monitored orgs.
+
+To update the live site: re-run the relevant generator, commit the regenerated
+JSON, and push to `basecamp`. Dead/disappeared external sources are recorded in
+`docs/maintenance/SOURCE_AVAILABILITY_LOG.md`.
 
 ### Package Structure
 
@@ -423,7 +446,7 @@ Always run `pre-commit run --all-files` before committing. Common auto-fixes:
 ## Important Context from .github/copilot-instructions.md
 
 - **ALWAYS** run `python init_project.py` on fresh clone
-- Test suite takes ~33 seconds for 56 tests
+- Test suite takes ~106 seconds for 347 tests
 - pypdf deprecation warning is expected (migration to pypdf planned)
 - Pre-commit hooks are CRITICAL - CI fails if they fail
 - Line length: 88 characters (black standard)
