@@ -23,6 +23,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Removed a dead source URL (africaportal.org, now a 301 to a non-file page) from the CI demonstration set; recorded in the Source Availability Log.
 
+## [2.0.1] - 2026-02-16
+
+JOSS preparation and metadata improvements. _(Backfilled from the [v2.0.1 release notes](https://github.com/MissCrispenCakes/DigitalChild/releases/tag/v2.0.1); this entry was missing from the changelog.)_
+
+### Added
+- **JOSS submission infrastructure** - PDF-generation workflow (`draft-pdf.yml`) and JOSS paper metadata (author identifiers + York University ROR ID).
+- **Author ORCIDs** - added D.T. Vollmer's ORCID alongside S.C. Vollmer's across five locations in `CITATION.cff`.
+- **`.gitignore`** - expanded with 48 patterns covering security (`.env.*`, `secrets/`, `*.key`) and dev tooling (mypy, jupyter, editor files).
+
+### Changed
+- **REUSE compliance** - converted `dep5` to `REUSE.toml` format.
+
+### Fixed
+- Documentation links (FAQ + internal) corrected for MkDocs compatibility; documentation landing page created; end-of-file formatting.
+- Corrected the Zenodo concept DOI reference.
+
 ## [2.0.0] - 2026-01-26
 
 ### Added

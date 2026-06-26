@@ -1,124 +1,93 @@
 .
-├── pipeline_runner.py
-├── requirements.txt
+├── pipeline_runner.py            # Main entry point (scraper / urls / scorecard modes)
+├── init_project.py               # Bootstrap: create dirs + placeholders (idempotent)
+├── run_api.py                    # Launch the Flask REST API (Phase 4)
+├── requirements.txt              # Core pipeline dependencies
+├── api_requirements.txt          # Flask API dependencies
+├── requirements-docs.txt         # MkDocs site build dependencies
+├── CITATION.cff                  # Citation metadata (Zenodo / GitHub)
+├── CHANGELOG.md
+├── README.md
+├── CLAUDE.md                     # Working guide for AI / contributors
+├── mkdocs.yml                    # GRIMdata site (Material for MkDocs) config
 │
-├── scrapers/
-│   ├── au_policy.py
-│   ├── ohchr.py
-│   ├── upr.py
-│   ├── unicef.py
-│   ├── acerwc.py
-│   ├── achpr.py
-│   ├── utils.py
-│   ├── country_utils.py
-│   └── region_utils.py
+├── scrapers/                     # Fetch raw docs (NO __init__.py — imported by name)
+│   ├── au_policy.py, au_policy_sel.py        # AU policy (requests + Selenium variant)
+│   ├── acerwc.py, acerwc_sel.py
+│   ├── achpr.py, achpr_sel.py
+│   ├── ohchr.py, ohchr_sel.py
+│   ├── unicef.py, unicef_sel.py
+│   ├── upr.py, upr_sel.py
+│   ├── selenium_setup.py
+│   ├── country_utils.py          # normalize_country() → name + ISO alpha-2
+│   ├── region_utils.py
+│   └── utils.py
 │
-├── processors/
-│   ├── pdf_to_text.py
-│   ├── docx_to_text.py
-│   ├── html_to_text.py
-│   ├── fallback_handler.py
-│   ├── json_normalizer.py
-│   ├── tagger.py
-│   ├── recommendations.py
-│   ├── comparison.py
-│   ├── tags_summary.py
-│   ├── tags_timeline.py
-│   ├── tags_timeline_region.py
-│   ├── tags_timeline_country.py
+├── processors/                   # Convert / tag / enrich (HAS __init__.py)
+│   ├── pdf_to_text.py, docx_to_text.py, html_to_text.py
+│   ├── fallback_handler.py       # Try processors in sequence
+│   ├── json_normalizer.py        # Preserves _raw provenance fields
+│   ├── tagger.py                 # Regex tagging from configs/tags_*.json
+│   ├── doc_classifier.py
+│   ├── recommendations.py, comparison.py
+│   ├── tags_summary.py, tags_timeline*.py
+│   ├── scorecard.py              # Load scorecard_main.xlsx (canonical)
+│   ├── scorecard_enricher.py, scorecard_export.py
+│   ├── scorecard_validator.py    # Source URL validation (broken / redirect)
+│   ├── scorecard_diff.py         # Source change monitoring
+│   ├── validators.py             # Security: path / URL validation
 │   └── logger.py
 │
-├── configs/
-│   ├── tags_v1.json
-│   ├── tags_v2.json
-│   ├── tags_v3.json
-│   ├── tags_digital.json
-│   ├── tags_main.json
-│   ├── recs_v1.json
-│   ├── comparison.json
-│   └── filters/
-│       ├── default.json
-│       ├── africa_groups.json
-│       └── filters_config_format.md
+├── api/                          # Flask REST API (Phase 4) — 14 endpoints
+│   ├── app.py, config.py, extensions.py
+│   ├── routes/                   # documents, scorecard, tags, timeline, export, health
+│   ├── services/                 # metadata, scorecard, tags, timeline, export
+│   ├── middleware/               # auth, rate_limit, error_handlers
+│   └── utils/                    # response, cache_keys, validators
 │
-├── data/
-│   ├── raw/
-│   │   ├── au_policy/
-│   │   ├── ohchr/
-│   │   ├── upr/
-│   │   ├── unicef/
-│   │   ├── acerwc/
-│   │   ├── achpr/
-│   │   └── manual/
-│   │
-│   ├── processed/
-│   │   ├── Africa/
-│   │   │   ├── African_Union/
-│   │   │   │   ├── text/
-│   │   │   │   ├── json/
-│   │   │   │   └── ocr/
-│   │   │   ├── Kenya/
-│   │   │   │   ├── text/
-│   │   │   │   ├── json/
-│   │   │   │   └── ocr/
-│   │   │   ├── Nigeria/
-│   │   │   │   ├── text/
-│   │   │   │   ├── json/
-│   │   │   │   └── ocr/
-│   │   │   └── South_Africa/
-│   │   │       ├── text/
-│   │   │       ├── json/
-│   │   │       └── ocr/
-│   │   ├── Europe/
-│   │   ├── Asia/
-│   │   └── Americas/
-│   │
-│   ├── metadata/
-│   │   └── metadata.json
-│   │
-│   └── exports/
-│       ├── tags_summary.csv             (pipeline output)
-│       ├── comparison_export.csv
-│       ├── tags_timeline.csv
-│       ├── tags_timeline_region.csv
-│       └── tags_timeline_country.csv
+├── utils/                        # Standalone scripts / helpers
+│   ├── build_scorecard_viz_data.py        # → docs/scorecard/data/scorecard.json (site viz)
+│   ├── build_transparency_watch_data.py   # → docs/transparency-watch/data/transparency.json
+│   ├── export_scorecard_formats.py        # → root scorecard.{xlsx,ods,csv,gsheet.json}
+│   ├── iso_mapping.py, detectors.py, clean_names.py, get_names.py
+│   ├── combinePDFs.py, pipeline_runner_DEMO.py
+│   └── add_spdx_headers.py, setup_reuse.py, update_csv_licenses.py
 │
-├── logs/
-│   └── (created at runtime)
+├── configs/                      # Tagging + URL dictionaries
+│   ├── tags_main.json, tags_v1/v2/v3.json, tags_digital.json
+│   ├── recs_v1.json, comparison.json, doc_type_rules.json
+│   ├── queer_ai_digital_child.json
+│   ├── filters/                  # default + region-group filters
+│   └── url_dict/                 # static URL dictionaries (urls mode)
 │
-├── docs/
-│   ├── README.md
-│   ├── FIRST_RUN_ERRORS.md
-│   ├── DIRECTORY_STRUCTURE.md
-│   ├── FILE_NAMING_STANDARDS.md
-│   ├── DOC_TYPE_STANDARDS.md
-│   ├── ISO_MAPPING.md
-│   ├── METADATA_SCHEMA.md
-│   ├── SCRAPER_STRUCTURE.md
-│   ├── PIPELINE_LOGGING.md
-│   ├── PIPELINE_FLOW.md
-│   ├── RUNBOOK.md
-│   ├── PROCESSOR_TEST_RUN.md
-│   ├── TAGS_CONFIG_FORMAT.md
-│   ├── RECOMMENDATIONS_CONFIG_FORMAT.md
-│   ├── COMPARISON_CONFIG_FORMAT.md
-│   ├── COMPARISON_EXPORT_NOTES.md
-│   ├── TAGS_MAIN_NOTES.md
-│   ├── TAGS_EXPORT_NOTES.md
-│   ├── TAGS_VISUALIZATION_PLAN.md
-│   ├── ROADMAP.md
-│   ├── SOURCE_FEASIBILITY_CHECKLIST.md
-│   └── DOCS_INDEX.md
+├── data/                         # (gitignored except scorecard/)
+│   ├── raw/[source]/             # Scraped documents
+│   ├── processed/[region]/[org]/{text,json,ocr}/
+│   ├── metadata/metadata.json    # Tags + recommendations history
+│   ├── exports/                  # CSV summaries (pipeline output)
+│   ├── cache/                    # scorecard source hashes (diff checker)
+│   └── scorecard/                # scorecard_main.xlsx (canonical) +
+│                                 #   Global_QueerAI_Child_Scorecard_MASTER.xlsx (viz source)
 │
-├── tests/
-│   ├── test_year_extraction.py
-│   ├── test_csv_footer.py
-│   ├── test_logging.py
-│   ├── test_tagger.py
-│   ├── test_fallback_handler.py
-│   ├── test_metadata.py
-│   └── test_comparison.py
+├── docs/                         # GRIMdata site (MkDocs) + project docs
+│   ├── index.md, README.md, ROADMAP.md, DOCS_INDEX.md, ARCHITECTURE.md
+│   ├── website/                  # Home, getting-started, projects
+│   │   ├── javascripts/          # extra.js, scorecard.js, transparency.js
+│   │   └── stylesheets/extra.css
+│   ├── scorecard/                # index, design, data-access, visualization, explorer
+│   │   └── data/scorecard.json   # published viz dataset (generated)
+│   ├── transparency-watch/       # Source Transparency Watch
+│   │   ├── index.md
+│   │   └── data/transparency.json  # published watch dataset (generated)
+│   ├── api/                      # API documentation
+│   ├── guides/, standards/, notes/, planning/, reviews/
+│   └── maintenance/              # incl. SOURCE_AVAILABILITY_LOG.md (link-rot record)
+│
+├── tests/                        # 347 tests (pipeline + api/)
+│   └── api/                      # API integration tests
 │
 └── .github/
     └── workflows/
-        └── ci.yml
+        ├── ci.yml                # Tests + pre-commit (push/PR: main, homebase, basecamp)
+        ├── deploy-docs.yml       # Build + deploy MkDocs site to GitHub Pages (basecamp)
+        └── draft-pdf.yml         # JOSS paper PDF draft
