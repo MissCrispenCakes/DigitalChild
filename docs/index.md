@@ -123,7 +123,7 @@ DigitalChild/
   title = {DigitalChild / LittleRainbowRights: Child and LGBTQ+ Digital Rights Analysis Pipeline},
   author = {Vollmer, D.T. and Vollmer, S.C.},
   year = {2025},
-  version = {2.0.1},
+  version = {2.1.0},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
   doi = {10.5281/zenodo.18318098},
   license = {MIT}
@@ -132,6 +132,6 @@ DigitalChild/
 
 ---
 
-**Version:** 2.1.0 (live) · last archived release 2.0.1 (DOI: 10.5281/zenodo.18318098)
+**Version:** 2.1.0 (DOI: 10.5281/zenodo.18318098)
 **Last Updated:** June 2026
 **License:** MIT (code) / CC BY 4.0 (data)
