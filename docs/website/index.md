@@ -189,28 +189,11 @@ The **LittleRainbowRights** project is ready for use:
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
 [API Documentation](../api/){ .md-button }
 
-## Use Cases
+## Who it's for
 
-**For Researchers:**
-
-- Systematic literature reviews of human rights policies
-- Cross-country comparative analysis
-- Longitudinal policy tracking
-- Data-driven advocacy campaigns
-
-**For NGOs & Advocates:**
-
-- Evidence-based policy recommendations
-- Monitor country compliance with commitments
-- Identify gaps in protections
-- Track implementation progress
-
-**For Policy Makers:**
-
-- Benchmark against peer countries
-- Identify best practices
-- Gap analysis for policy development
-- Regional cooperation insights
+Researchers, advocates, and policymakers each use GRIMdata differently. The
+**[Start Here](getting-started/start-here.md)** page routes each to the right data, tools, and
+methodology — with the key cautions for responsible use.
 
 ## Publications & Outputs
 

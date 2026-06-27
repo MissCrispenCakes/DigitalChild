@@ -376,52 +376,12 @@ All changes tracked in scorecard_main.xlsx with:
 
 ---
 
-## Interpretation Guidelines
+## Interpreting the scores
 
-### For Researchers
-
-**Do:**
-- ✅ Verify source URLs before citing
-- ✅ Acknowledge limitations in methodology sections
-- ✅ Cross-reference with other datasets
-- ✅ Consider local context and lived experience
-- ✅ Report data completeness percentages
-
-**Don't:**
-- ❌ Treat scores as absolute truth
-- ❌ Compare countries without noting caveats
-- ❌ Ignore implementation gaps
-- ❌ Assume protection score = actual safety
-- ❌ Use for legal advice
-
-### For Advocates
-
-**Use scorecard to:**
-- Identify policy gaps in specific countries
-- Compare regional approaches
-- Track policy changes over time
-- Provide evidence for advocacy campaigns
-- Highlight intersectional risks
-
-**Always pair with:**
-- Qualitative research on lived experience
-- Local civil society perspectives
-- Enforcement data and case studies
-- Community feedback and testimonials
-
-### For Policymakers
-
-**Scorecard can inform:**
-- Gap analysis in national digital rights frameworks
-- Regional benchmarking
-- Priority setting for legislative reform
-- International cooperation on digital governance
-
-**Limitations for policy:**
-- Does not capture cultural context
-- Does not assess implementation quality
-- Does not reflect public opinion or political feasibility
-- Should be supplemented with stakeholder consultation
+How to use the scorecard well depends on your role. See
+**[Start Here](../website/getting-started/start-here.md)** for researcher / advocate /
+policymaker / developer guidance and the key caution for each. The methodology limits that
+apply to *everyone* are in the **Limitations & Caveats** section above.
 
 ---
 

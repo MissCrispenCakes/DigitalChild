@@ -170,6 +170,7 @@ nav:
 
   # ── Tutorials: learning-oriented, start here ─────────────────────────────
   - Tutorials:
+      - Start Here: website/getting-started/start-here.md
       - Install & First Run: website/getting-started/quickstart.md
       - Installation (detailed): website/getting-started/installation.md
       - API Quick Start: api/quickstart.md
