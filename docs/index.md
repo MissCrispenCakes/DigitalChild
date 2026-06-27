@@ -119,14 +119,14 @@ DigitalChild/
 ## Citation
 
 ```bibtex
-@software{littlerainbowrights2025,
-  title = {DigitalChild / LittleRainbowRights: Child and LGBTQ+ Digital Rights Analysis Pipeline},
-  author = {Vollmer, D.T. and Vollmer, S.C.},
+@software{digitalchild2025,
+  title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
+  author = {Vollmer, S.C. and Vollmer, D.T.},
   year = {2025},
   version = {2.1.0},
-  url = {https://github.com/MissCrispenCakes/DigitalChild},
   doi = {10.5281/zenodo.18318098},
-  license = {MIT}
+  url = {https://github.com/MissCrispenCakes/DigitalChild},
+  note = {Available at https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer), 0000-0002-5035-3395 (D.T. Vollmer)}
 }
 ```
 

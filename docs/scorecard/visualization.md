@@ -394,21 +394,22 @@ Found an error or have updated information?
 When using scorecard data in publications:
 
 ```bibtex
-@misc{littlerainbowrights2025,
+@misc{littlerainbowrights2025scorecard,
   title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, S.C.},
+  author = {Vollmer, D.T. and Vollmer, S.C.},
   year = {2025},
-  howpublished = {\url{https://github.com/MissCrispenCakes/DigitalChild}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
+  doi = {10.5281/zenodo.18318098},
+  howpublished = {\url{https://grimdata.org/scorecard/}},
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
 }
 ```
 
 Or:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators.
+> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*.
+> DOI: 10.5281/zenodo.18318098. Available at: https://grimdata.org/scorecard/.
 > Licensed under CC BY 4.0.
-> Available at: https://github.com/MissCrispenCakes/DigitalChild
-> ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
+> ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395) (D.T. Vollmer), [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
 ## Limitations & Disclaimers
 

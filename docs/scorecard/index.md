@@ -259,9 +259,9 @@ When using scorecard data in publications:
   title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
   author = {Vollmer, D.T. and Vollmer, S.C.},
   year = {2025},
+  doi = {10.5281/zenodo.18318098},
   howpublished = {\url{https://grimdata.org/scorecard/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810 (S.C. Vollmer)},
-  doi = {10.5281/zenodo.18318098}
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
 }
 ```
 

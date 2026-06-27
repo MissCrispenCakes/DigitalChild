@@ -267,21 +267,22 @@ Found an error in the scorecard data? Have updated information?
 When using LittleRainbowRights data:
 
 ```bibtex
-@misc{littlerainbowrights2025,
-  title = {LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard},
-  author = {Vollmer, S.C.},
+@misc{littlerainbowrights2025scorecard,
+  title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
+  author = {Vollmer, D.T. and Vollmer, S.C.},
   year = {2025},
-  howpublished = {\url{https://grimdata.org/projects/littlerainbowrights/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
+  doi = {10.5281/zenodo.18318098},
+  howpublished = {\url{https://grimdata.org/scorecard/}},
+  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
 }
 ```
 
 Or:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). LittleRainbowRights: Child and LGBTQ+ Digital Rights Scorecard.
-> Available at: https://grimdata.org/projects/littlerainbowrights/
+> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*.
+> DOI: 10.5281/zenodo.18318098. Available at: https://grimdata.org/scorecard/.
 > Licensed under CC BY 4.0.
-> ORCID: [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
+> ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395) (D.T. Vollmer), [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
 [Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 
