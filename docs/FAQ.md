@@ -4,7 +4,7 @@
 
 ### What is GRIMdata?
 
-**GRIMdata** (Global Rights Information Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Currently, GRIMdata features two projects:
+**GRIMdata** (Global Rights Index Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Currently, GRIMdata features two projects:
 
 1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
    - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
