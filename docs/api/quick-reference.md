@@ -316,26 +316,7 @@ print(f"Found {len(comprehensive)} countries with comprehensive data protection"
 
 ## Production Deployment
 
-Deploy with Docker:
-
-```bash
-# Clone repository
-git clone https://github.com/MissCrispenCakes/DigitalChild.git
-cd DigitalChild
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your API keys and settings
-
-# Start services (API + Redis + Nginx)
-docker-compose up -d
-
-# Check status
-docker-compose ps
-curl http://localhost:5000/api/health
-```
-
-**Complete deployment guide:** [Production Deployment](../guides/PRODUCTION_DEPLOYMENT.md)
+Deploying the API (Docker / Gunicorn / Nginx) is documented in **one** place — the [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md) *(how-to)*.
 
 ---
 
@@ -378,4 +359,4 @@ pytest tests/api/ -v
 
 ---
 
-**Last updated:** January 2026 (Phase 4 Complete - 14 endpoints operational)
+**Last updated:** June 2026 · 14 endpoints · version history in the [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md)

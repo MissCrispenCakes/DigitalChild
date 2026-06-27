@@ -134,75 +134,91 @@ extra:
       lang: en
 
 # Navigation
+# Nav is organised by the Diátaxis framework (https://diataxis.fr):
+#   Explore        — the live product (see the data)
+#   Tutorials      — learning-oriented, start here
+#   How-to guides  — task-oriented, get something done
+#   Reference      — information-oriented, look it up
+#   Explanation    — understanding-oriented, why it works this way
+# Plus Projects (project landing pages) and About. Pages are regrouped only —
+# file paths (and therefore URLs) are unchanged.
 nav:
   - GRIMdata Home: website/index.md
 
-  - Getting Started:
-      - Installation: website/getting-started/installation.md
-      - Quick Start: website/getting-started/quickstart.md
-      - First Run Errors: guides/FIRST_RUN_ERRORS.md
-      - FAQ: FAQ.md
-
-  - API:
-      - Overview: api/index.md
-      - Quick Start: api/quickstart.md
-      - Full Documentation: api/reference.md
-      - Quick Reference: api/quick-reference.md
-
-  - Scorecard:
-      - Overview: scorecard/index.md
-      - Design & Methodology: scorecard/design.md
-      - Data Access: scorecard/data-access.md
-      - Visualization: scorecard/visualization.md
+  # ── Explore: the live product, see the data ──────────────────────────────
+  - Explore:
+      - Scorecard Overview: scorecard/index.md
+      - Scorecard — Map & Charts: scorecard/visualization.md
       - Data Explorer: scorecard/explorer.md
+      - Transparency Watch: transparency-watch/index.md
 
-  - Transparency Watch: transparency-watch/index.md
+  # ── Tutorials: learning-oriented, start here ─────────────────────────────
+  - Tutorials:
+      - Install & First Run: website/getting-started/quickstart.md
+      - Installation (detailed): website/getting-started/installation.md
+      - API Quick Start: api/quickstart.md
 
+  # ── How-to guides: task-oriented ─────────────────────────────────────────
+  - How-to guides:
+      - Get the Data: scorecard/data-access.md
+      - Run the Pipeline (Runbook): guides/RUNBOOK.md
+      - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
+      - Use the Validators: guides/VALIDATORS_USAGE.md
+      - Deploy to Production: guides/PRODUCTION_DEPLOYMENT.md
+      - Troubleshoot First-Run Errors: guides/FIRST_RUN_ERRORS.md
+
+  # ── Reference: information-oriented, look it up ───────────────────────────
+  - Reference:
+      - API:
+          - Overview: api/index.md
+          - Endpoint Reference: api/reference.md
+          - Quick Reference (cheat sheet): api/quick-reference.md
+          - Implementation History: api/IMPLEMENTATION_HISTORY.md
+      - Glossary: GLOSSARY.md
+      - Standards:
+          - Metadata Schema: standards/METADATA_SCHEMA.md
+          - File Naming: standards/FILE_NAMING_STANDARDS.md
+          - Document Types: standards/DOC_TYPE_STANDARDS.md
+          - Scraper Structure: standards/SCRAPER_STRUCTURE.md
+          - Tags Config: standards/TAGS_CONFIG_FORMAT.md
+          - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
+          - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
+          - Filters Config: standards/FILTERS_CONFIG_FORMAT.md
+          - ISO Mapping: standards/ISO_MAPPING.md
+      - Notes:
+          - Directory Structure: notes/DIRECTORY_STRUCTURE.md
+          - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
+          - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
+          - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
+      - Docs Index: DOCS_INDEX.md
+
+  # ── Explanation: understanding-oriented, why it works this way ────────────
+  - Explanation:
+      - Scorecard Design & Methodology: scorecard/design.md
+      - Architecture: ARCHITECTURE.md
+      - Pipeline Flow: notes/PIPELINE_FLOW.md
+      - Pipeline Logging: notes/PIPELINE_LOGGING.md
+      - Data Governance: DATA_GOVERNANCE.md
+      - Research Context: RESEARCH_CONTEXT.md
+
+  # ── Projects: project landing pages ──────────────────────────────────────
   - Projects:
       - Overview: website/projects/index.md
-      - LittleRainbowRights:
-          - Project Overview: website/projects/littlerainbowrights/index.md
-          - User Guides:
-              - Runbook: guides/RUNBOOK.md
-              - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
-              - Validators Usage: guides/VALIDATORS_USAGE.md
-              - Production Deployment: guides/PRODUCTION_DEPLOYMENT.md
-          - Documentation:
-              - Architecture: ARCHITECTURE.md
-              - Glossary: GLOSSARY.md
-              - Data Governance: DATA_GOVERNANCE.md
-              - Docs Index: DOCS_INDEX.md
-          - Development:
-              - Roadmap: ROADMAP.md
-              - Standards:
-                  - Metadata Schema: standards/METADATA_SCHEMA.md
-                  - File Naming: standards/FILE_NAMING_STANDARDS.md
-                  - Document Types: standards/DOC_TYPE_STANDARDS.md
-                  - Scraper Structure: standards/SCRAPER_STRUCTURE.md
-                  - Tags Config: standards/TAGS_CONFIG_FORMAT.md
-                  - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
-                  - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
-                  - Filters Config: standards/FILTERS_CONFIG_FORMAT.md
-                  - ISO Mapping: standards/ISO_MAPPING.md
-              - Notes:
-                  - Directory Structure: notes/DIRECTORY_STRUCTURE.md
-                  - Pipeline Flow: notes/PIPELINE_FLOW.md
-                  - Pipeline Logging: notes/PIPELINE_LOGGING.md
-                  - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
-                  - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
-                  - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
-              - Planning:
-                  - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
-                  - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
-              - Reviews:
-                  - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
-                  - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
-      - SGBV-UPR:
-          - Project Overview: website/projects/sgbv/index.md
+      - LittleRainbowRights: website/projects/littlerainbowrights/index.md
+      - SGBV-UPR: website/projects/sgbv/index.md
 
+  # ── About: project meta, contributing, planning trail ────────────────────
   - About:
-      - Research Context: RESEARCH_CONTEXT.md
+      - Roadmap: ROADMAP.md
       - Contributing: CONTRIBUTING.md
+      - FAQ: FAQ.md
+      - Planning:
+          - Site IA — See vs Build: planning/SITE_IA_SEE_VS_BUILD_PLAN.md
+          - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
+          - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
+      - Reviews:
+          - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
+          - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
 
 # Custom CSS
 extra_css:

@@ -1,40 +1,6 @@
 # DigitalChild Flask API
 
-REST API backend for serving DigitalChild data to the Phase 4 research dashboard.
-
-## Quick Start
-
-### Installation
-
-```bash
-# Activate virtual environment
-source .LittleRainbow/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt -r api_requirements.txt
-
-# Create .env file from template
-cp .env.example .env
-# Edit .env and configure as needed
-```
-
-### Running the Development Server
-
-```bash
-python run_api.py
-```
-
-The API will be available at `http://127.0.0.1:5000`
-
-### Testing
-
-```bash
-# Test health check
-curl http://127.0.0.1:5000/api/health
-
-# Test system info
-curl http://127.0.0.1:5000/api/info
-```
+REST API **reference** — endpoints, parameters, and response formats. New to the API? Start with the [Quick Start](quickstart.md). To deploy it, see the [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md).
 
 ## API Endpoints
 
@@ -172,106 +138,11 @@ curl "http://localhost:5000/api/export/tags_summary?version=tags_v3" -o tags.csv
 
 All CSV exports include SPDX license headers (CC-BY-4.0) for data attribution.
 
-## Implementation Status
+## Implementation status
 
-### Week 1: Foundation ✅ COMPLETE
-
-1. ✅ API directory structure created
-2. ✅ Configuration management (development, production, testing)
-3. ✅ Flask extensions (CORS, Caching, Rate Limiting)
-4. ✅ Flask app factory pattern
-5. ✅ Metadata service layer with caching
-6. ✅ Scorecard service layer (works with pandas DataFrames)
-7. ✅ Health check routes
-8. ✅ Standard response formatting and error handling
-9. ✅ Request validators
-10. ✅ API requirements file
-11. ✅ Environment configuration template
-12. ✅ Development and production entry points
-
-### Week 2: Core APIs ✅ COMPLETE
-
-1. ✅ Documents API (list with filters, detail)
-2. ✅ Scorecard API (summary, country detail, statistics)
-3. ✅ Caching decorators (15min documents, 1hr scorecard)
-4. ✅ Request validation for all parameters
-5. ✅ Pagination support (configurable page size)
-6. ✅ Sorting support (any field, asc/desc)
-7. ✅ 104 test cases written (100% pass rate)
-8. ✅ All 14 endpoints working and tested
-
-### Week 3: Extended APIs ✅ COMPLETE
-
-1. ✅ Tags API (frequency analysis, version management)
-   - GET /api/tags (with filters)
-   - GET /api/tags/versions
-2. ✅ Timeline API (temporal analysis)
-   - GET /api/timeline/tags (year × tag matrix)
-3. ✅ Export API (CSV downloads)
-   - GET /api/export (list formats)
-   - GET /api/export/:format (download CSV)
-4. ✅ SPDX license headers in CSV exports
-5. ✅ 31 test cases written for Week 3 endpoints
-6. ✅ All 14 endpoints now working (76 total tests passing)
-
-### Week 4: Authentication & Rate Limiting ✅ COMPLETE
-
-1. ✅ API key authentication middleware
-   - `@require_api_key` decorator for protected endpoints
-   - `@optional_api_key` for flexible authentication
-   - X-API-Key header validation
-   - Development mode auto-allow for testing
-2. ✅ Rate limiting implementation
-   - Dynamic limits based on authentication status
-   - Public: 100 requests/hour default
-   - Authenticated: 1000 requests/hour default
-   - Custom limits for expensive operations (exports: 20/200 per hour)
-   - Search operations: 200/2000 per hour
-3. ✅ Flask-Limiter integration
-   - Custom rate limit key function (API key or IP)
-   - Redis storage for production
-   - Memory storage for development
-4. ✅ Applied to key endpoints
-   - Documents list with search rate limits
-   - Export downloads with strict limits
-   - Optional authentication throughout
-5. ✅ 28 test cases for authentication and rate limiting
-6. ✅ All 104 tests passing (100% success rate)
-
-### Week 5: Production Ready ✅ COMPLETE
-
-1. ✅ Docker deployment
-   - Multi-stage Dockerfile with security best practices
-   - docker-compose.yml with Redis and Nginx
-   - Health checks and non-root user
-2. ✅ Nginx configuration
-   - Reverse proxy setup
-   - SSL/TLS configuration
-   - Security headers
-   - Gzip compression
-3. ✅ Production deployment guide
-   - Complete setup instructions
-   - Docker and manual deployment options
-   - SSL certificate setup (Let's Encrypt)
-   - Monitoring and logging configuration
-   - Security checklist
-   - Troubleshooting guide
-4. ✅ Configuration management
-   - Environment-based settings
-   - Production validation
-   - API key management
-5. ✅ Ready for production deployment
-
-### API Features
-
-- ✅ Standard JSON response format
-- ✅ Error handling with custom exceptions
-- ✅ File modification time caching for metadata
-- ✅ Pandas DataFrame support for scorecard data
-- ✅ Environment-based configuration
-- ✅ CORS support for frontend integration
-- ✅ Rate limiting ready (in-memory for dev, Redis for prod)
-- ✅ Logging with configurable levels
+All 14 endpoints are operational. The week-by-week build trail (what was done, when) is
+preserved separately in [API Implementation History](IMPLEMENTATION_HISTORY.md) so this
+page stays a clean endpoint reference.
 
 ## Architecture
 
@@ -299,20 +170,7 @@ api/
 
 ### Service Layer Pattern
 
-Services wrap existing `processors/` modules with API-friendly formatting:
-
-```python
-# Example: metadata_service.py
-from processors.logger import get_logger
-
-def get_documents(filters, page, per_page):
-    """Load metadata.json, apply filters, paginate"""
-    metadata = load_metadata()  # With file mtime caching
-    docs = metadata.get("documents", [])
-    # Apply filters...
-    # Paginate...
-    return {"documents": [...], "pagination": {...}}
-```
+Services wrap the `processors/` modules with API-friendly formatting. The internal design rationale belongs to **Explanation**, not this endpoint reference — see [Architecture](../ARCHITECTURE.md).
 
 ### Response Format
 
@@ -352,83 +210,14 @@ Environment variables (see `.env.example`):
 - `METADATA_FILE`: Path to metadata.json
 - `SCORECARD_FILE`: Path to scorecard_main.xlsx
 
-## Phase 4 API: COMPLETE ✅
+## Beyond this reference
 
-All 5 weeks of the Phase 4 API implementation are complete:
+This page is the **endpoint reference** only (Diátaxis). For everything else:
 
-- ✅ **Week 1**: Foundation (app factory, config, extensions, middleware)
-- ✅ **Week 2**: Core APIs (documents, scorecard endpoints)
-- ✅ **Week 3**: Extended APIs (tags, timeline, exports)
-- ✅ **Week 4**: Authentication & rate limiting
-- ✅ **Week 5**: Production deployment ready
-
-**Final Statistics:**
-- **14 REST endpoints** operational
-- **104 integration tests** passing (100% success rate)
-- **Authentication**: API key based with flexible decorators
-- **Rate limiting**: Dynamic limits (100-2000 req/hr based on auth)
-- **Deployment**: Docker + docker-compose + Nginx ready
-- **Documentation**: Complete API docs + production guide
-
-## Future Enhancements
-
-Optional improvements for future iterations:
-
-### API Documentation
-- [ ] Swagger/OpenAPI specification
-- [ ] Interactive API explorer at /api/docs
-- [ ] Auto-generated client libraries
-
-### Advanced Features
-- [ ] GraphQL endpoint for flexible queries
-- [ ] Webhook support for data updates
-- [ ] Batch operations API
-- [ ] API versioning (v2)
-
-### Performance
-- [ ] Database integration (PostgreSQL)
-- [ ] Full-text search (Elasticsearch)
-- [ ] CDN integration for exports
-- [ ] Query result streaming
-
-### Analytics
-- [ ] API usage analytics dashboard
-- [ ] Per-endpoint performance metrics
-- [ ] User behavior tracking
-- [ ] Cost per API call analysis
-
-### Security
-- [ ] OAuth 2.0 / JWT authentication
-- [ ] IP whitelisting
-- [ ] Request signature validation
-- [ ] DDoS protection (Cloudflare integration)
-
-## Production Deployment
-
-### Using Gunicorn
-
-```bash
-# Install production dependencies
-pip install -r api_requirements.txt
-
-# Set environment
-export FLASK_ENV=production
-export SECRET_KEY=your-secret-key
-export API_KEYS=key1,key2,key3
-
-# Run with gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
-```
-
-### Using Docker
-
-```bash
-# Build image
-docker build -t digitalchild-api .
-
-# Run container
-docker run -p 5000:5000 --env-file .env digitalchild-api
-```
+- **Run / try the API:** [Quick Start](quickstart.md) *(tutorial)*
+- **Deploy to production** (Gunicorn / Docker / Nginx): [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md) *(how-to)*
+- **Internal architecture & design:** [Architecture](../ARCHITECTURE.md) *(explanation)*
+- **Release history & status, planned API work:** [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md) and [Roadmap](../ROADMAP.md)
 
 ## Development Notes
 
