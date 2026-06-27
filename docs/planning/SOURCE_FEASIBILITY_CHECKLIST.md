@@ -8,34 +8,34 @@ ______________________________________________________________________
 
 1. **Is there a public URL or portal for the documents?**
 
-   - Yes → proceed to scrape.
-   - No → manual ingestion required.
+- Yes → proceed to scrape.
+- No → manual ingestion required.
 
-1. **Does the site allow automated scraping?**
+2. **Does the site allow automated scraping?**
 
-   - Check robots.txt and terms of service.
-   - If blocked, use manual ingestion.
+- Check robots.txt and terms of service.
+- If blocked, use manual ingestion.
 
-1. **Is there an API or bulk download option?**
+3. **Is there an API or bulk download option?**
 
-   - If yes → preferred over scraping.
+- If yes → preferred over scraping.
 
-1. **Are documents PDFs, DOCX, HTML, or mixed?**
+4. **Are documents PDFs, DOCX, HTML, or mixed?**
 
-   - PDFs → use `pdf_to_text.py`.
-   - DOCX → use `docx_to_text.py`.
-   - HTML → use `html_to_text.py`.
-   - Mixed → use `fallback_handler.py`.
+- PDFs → use `pdf_to_text.py`.
+- DOCX → use `docx_to_text.py`.
+- HTML → use `html_to_text.py`.
+- Mixed → use `fallback_handler.py`.
 
-1. **Do file names include year/country?**
+5. **Do file names include year/country?**
 
-   - Yes → easier metadata extraction.
-   - No → rely on text scanning.
+- Yes → easier metadata extraction.
+- No → rely on text scanning.
 
-1. **Are there metadata pages (HTML tables, JSON endpoints)?**
+6. **Are there metadata pages (HTML tables, JSON endpoints)?**
 
-   - Yes → scrape for structured metadata.
-   - No → metadata must be inferred.
+- Yes → scrape for structured metadata.
+- No → metadata must be inferred.
 
 ______________________________________________________________________
 
