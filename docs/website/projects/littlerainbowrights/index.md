@@ -1,6 +1,6 @@
 # LittleRainbowRights
 
-[🌈 Visit LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary }
+[🌈 Visit LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:octicons-arrow-left-24: Back to All Projects](../index.md){ .md-button }
 
 ## Child and LGBTQ+ Digital Rights Research

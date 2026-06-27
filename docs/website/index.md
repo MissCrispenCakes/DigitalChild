@@ -39,7 +39,8 @@ ______________________________________________________________________
 
     **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
 
-    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
+    [🌈 LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary target="_blank" rel="noopener" }
+    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button }
 
 -   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
