@@ -720,3 +720,30 @@ table.sc-table td.sc-doc-warn,
 @media (max-width: 768px) {
   .tw-date { min-width: 0; }
 }
+
+/* ============================================================
+   Header sibling-project links (overrides/partials/header.html)
+   book icon -> GRIMdata -> [project links] -> empty space -> controls
+   ============================================================ */
+/* Keep Material's title (so "GRIMdata" stays visible & grows); links sit in the
+   open space after it, just before the palette/language/search/repo controls. */
+.md-header__projects {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-left: 1.2rem;
+  flex: 0 0 auto;
+}
+.md-header__project-link {
+  color: var(--md-primary-bg-color);
+  opacity: 0.9;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.md-header__project-link:hover { opacity: 1; text-decoration: underline; }
+/* Header is cramped on phones — hide there (link stays reachable via footer + project page). */
+@media (max-width: 76.1875em) {
+  .md-header__projects { display: none; }
+}
