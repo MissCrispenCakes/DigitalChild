@@ -7,11 +7,11 @@
 **GRIMdata** (Global Rights Index Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Currently, GRIMdata features two projects:
 
 1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
-   - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
-   - Tracks 10 indicators across 194 countries
-1. **SGBV-UPR** - Sexual and gender-based violence analysis
-   - Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - a broken laptop holds the full story :sweat_smile:)*
-   - UPR recommendations analysis
+- Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
+- Tracks 10 indicators across 194 countries
+2. **SGBV-UPR** - Sexual and gender-based violence analysis
+- Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - a broken laptop holds the full story :sweat_smile:)*
+- UPR recommendations analysis
 
 ### What is DigitalChild?
 
