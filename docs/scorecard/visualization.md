@@ -36,18 +36,8 @@ Interactive visualization of human rights indicators across 194 countries.
 
 ### Via REST API
 
-Get scorecard data programmatically:
-
-```bash
-# Get all countries
-curl http://localhost:5000/api/scorecard
-
-# Get specific country
-curl http://localhost:5000/api/scorecard/Kenya
-
-# Get indicator statistics
-curl http://localhost:5000/api/scorecard/indicators/statistics
-```
+Get scorecard data programmatically via the REST API — the copy-paste examples (health
+check, per-country, statistics, filtering) live in the API Quick Start:
 
 [:octicons-rocket-24: API Quick Start](../api/quickstart.md){ .md-button .md-button--primary }
 [:octicons-book-24: Full API Docs](../api/reference.md){ .md-button }
@@ -89,127 +79,12 @@ Explore the scorecard interactively below. Charts are rendered in your browser f
     - **1 (Middle)** - Partial protections or mixed implementation
     - **0 (Worst)** - No protections, harmful policies, or heightened risk
 
-    Categories are listed from best (2) to worst (0) below. Risk analysis examines **combinations** of indicators (e.g., LGBTQ criminalization × biometric ID linkage).
+    Risk analysis examines **combinations** of indicators (e.g., LGBTQ criminalization × biometric ID linkage).
 
-### 1. Data Protection Law (Data_Protection_Law)
-
-Existence of comprehensive data protection legislation governing personal data processing.
-
-**Sources:** UNCTAD Data Protection and Privacy Legislation Database; national statutes
-
-**Categories:**
-
-- **Comprehensive Law** (2) - Enacted data protection legislation with enforcement mechanisms
-- **Draft Legislation** (1) - Bill pending or under consultation
-- **No Specific Law** (0) - No comprehensive data protection law
-
-### 2. Data Protection Authority Independence (DPA_Independence)
-
-Whether the national Data Protection Authority operates independently from executive control.
-
-**Sources:** UNCTAD; DPA statutes; academic and regulatory analysis
-
-**Categories:**
-
-- **Independent Authority** (2) - DPA operates with full operational and financial independence
-- **Limited Independence** (1) - DPA exists but with constraints (appointments, budget, reporting)
-- **No DPA or Dependent Authority** (0) - No DPA established or DPA fully controlled by executive
-
-### 3. Children's Data Safeguards (Children_Data_Safeguards)
-
-Binding child-specific privacy/data-protection safeguards in law or regulation (not general child welfare law).
-
-**Sources:** National legislation; UNICEF; data protection laws
-
-**Categories:**
-
-- **Explicit Child Data Protections** (2) - Child-specific data governance provisions: limits on profiling/ads for children, heightened consent standards, age-appropriate design, "best interests of child" principle, retention/minimization rules, minors' rights (erase/access)
-- **General Protections Only** (1) - Children covered under general data protection but no child-specific data governance provisions
-- **No Specific Safeguards** (0) - No data protection framework or no child-specific safeguards
-
-### 4. Child Online Protection Strategy (COP_Strategy)
-
-National COP strategy/framework addressing online harms to children; may include parental tools/rights.
-
-**Sources:** UNICEF; ITU; national policy documents
-
-**Categories:**
-
-- **National COP Strategy** (2) - Comprehensive national COP framework: governance bodies, reporting/hotlines, digital literacy programs, platform safety guidance, sectoral online safety rules, parental empowerment measures
-- **Partial / Sectoral Measures** (1) - Sectoral initiatives, pilot programs, awareness campaigns, or piecemeal safety measures
-- **No Strategy** (0) - No national or sectoral child online protection strategy
-
-### 5. Sensitive Data Protections for SOGI (SOGI_Sensitive_Data)
-
-Whether sexual orientation and gender identity are legally recognized as sensitive personal data.
-
-**Sources:** Data protection statutes; ILGA World
-
-**Categories:**
-
-- **Explicitly Protected** (2) - Sexual orientation and/or gender identity explicitly listed as sensitive data
-- **Implicitly Covered** (1) - Covered under "sex life" or similar broader categories
-- **Not Recognized** (0) - SOGI not recognized as sensitive data or no data protection law
-
-### 6. LGBTQ+ Legal Status (LGBTQ_Legal_Status)
-
-Legal recognition and protection of LGBTQ+ individuals.
-
-**Sources:** ILGA World; Human Rights Watch
-
-**Categories:**
-
-- **Comprehensive Protections** (2) - Anti-discrimination laws, marriage recognition, constitutional protections
-- **Legal, No Specific Protections** (1) - Same-sex relations decriminalized but no anti-discrimination protections
-- **Criminalization** (0) - Same-sex relations criminalized under law
-
-### 7. LGBTQ+ Promotion / Propaganda Offences (Promotion_Propaganda_Offences)
-
-Laws restricting discussion, visibility, or advocacy related to LGBTQ+ identities.
-
-**Sources:** ILGA World; national criminal codes
-
-**Categories:**
-
-- **No Restrictions** (2) - No legal restrictions on LGBTQ+ expression, advocacy, or visibility
-- **Restrictive Measures** (1) - Administrative restrictions, morality codes, or broadcast regulations limiting LGBTQ+ expression
-- **Criminalized Promotion** (0) - Explicit propaganda laws or criminal penalties for LGBTQ+ advocacy/discussion
-
-### 8. AI Policy Status (AI_Policy_Status)
-
-Whether a country has adopted a national AI strategy or framework.
-
-**Sources:** UNESCO AI Policy Observatory; UNCTAD; national governments
-
-**Categories:**
-
-- **Comprehensive AI Strategy** (2) - Adopted national AI strategy with implementation plan and governance framework
-- **Framework or Guidelines** (1) - Draft strategy, policy guidelines, or AI addressed in broader digital transformation plans
-- **No Published Policy** (0) - No AI-specific strategy or framework
-
-### 9. DPIA Required for High-Risk AI (DPIA_Required_High_Risk_AI)
-
-Legal requirement to conduct Data Protection Impact Assessments for high-risk AI systems.
-
-**Sources:** AI laws; data protection statutes; regulatory guidance
-
-**Categories:**
-
-- **Explicitly Required** (2) - Law mandates DPIA for high-risk AI systems (profiling, automated decisions, biometric processing)
-- **Partially Required** (1) - DPIA required for certain processing but not specifically for AI, or optional/recommended
-- **Not Required** (0) - No DPIA requirement or no data protection framework
-
-### 10. SIM Card Biometric ID Linkage (SIM_Biometric_ID_Linkage)
-
-Requirement to provide biometric data when registering SIM cards, either directly or through linkage to biometric national ID systems.
-
-**Sources:** Privacy International; telecom regulators; media reports
-
-**Categories:**
-
-- **Not Required** (2) - No ID requirement or minimal registration without biometric linkage
-- **Non-biometric ID Required** (1) - ID number/passport required but NOT linked to biometric database (photo on card ≠ biometric unless in facial recognition database)
-- **Mandatory Biometric Registration** (0) - Biometric data (fingerprints, facial scans, iris) required directly OR SIM requires national ID that is biometrically backed
+The scorecard tracks **10 indicators** spanning data protection, child online safety, LGBTQ+
+rights, AI policy, and digital identification. The full definition, sources, and per-category
+(0/1/2) rubric for every indicator live on the **[Scorecard Design & Methodology](design.md#the-10-indicators)**
+page — the single source of truth, so the numbers here and the definitions there can't drift apart.
 
 ## Composite Scores
 
