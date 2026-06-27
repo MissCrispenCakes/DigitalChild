@@ -19,6 +19,50 @@
 
 ______________________________________________________________________
 
+## Current Projects
+
+<div class="grid cards" markdown>
+
+-   :rainbow:{ .lg .middle } __LittleRainbowRights__
+
+    ---
+
+    **Status:** Active | **Scope:** Global (194 countries)
+
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features an open-source pipeline, validated data sources, an **interactive scorecard** (choropleth map, indicator & regional charts, plus a filter/search/compare [data explorer](../scorecard/explorer.md)), a REST API, and a **[Source Transparency Watch](../transparency-watch/index.md)** tracking peer-organisation open-data adoption.
+
+    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
+
+    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)
+
+    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318098)
+
+    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
+
+    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
+
+-   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
+
+    ---
+
+    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
+
+    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
+
+    **Presented:** International Conference on The Responsiveness of the African Human Rights System to SGBV (September 2021, Session: Diverse Gender Identities)
+
+    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
+
+    **Repository:** [HumanRights] Under reconstruction (see project page for details)
+
+    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
+
+</div>
+
+[:octicons-apps-24: View All Projects](projects/index.md){ .md-button .md-button--primary }
+
+______________________________________________________________________
+
 ## Quick Links
 
 <div class="grid cards" markdown>
@@ -77,48 +121,6 @@ ______________________________________________________________________
 </div>
 
 ______________________________________________________________________
-
-## Current Projects
-
-<div class="grid cards" markdown>
-
--   :rainbow:{ .lg .middle } __LittleRainbowRights__
-
-    ---
-
-    **Status:** Active | **Scope:** Global (194 countries)
-
-    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features an open-source pipeline, validated data sources, an **interactive scorecard** (choropleth map, indicator & regional charts, plus a filter/search/compare [data explorer](../scorecard/explorer.md)), a REST API, and a **[Source Transparency Watch](../transparency-watch/index.md)** tracking peer-organisation open-data adoption.
-
-    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
-
-    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)
-
-    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318098)
-
-    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
-
-    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
-
--   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
-
-    ---
-
-    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
-
-    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
-
-    **Presented:** International Conference on The Responsiveness of the African Human Rights System to SGBV (September 2021, Session: Diverse Gender Identities)
-
-    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-
-    **Repository:** [HumanRights] Under reconstruction (see project page for details)
-
-    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
-
-</div>
-
-[:octicons-apps-24: View All Projects](projects/index.md){ .md-button .md-button--primary }
 
 ## Research Evolution
 
