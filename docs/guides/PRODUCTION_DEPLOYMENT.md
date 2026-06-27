@@ -10,7 +10,7 @@ Complete guide for deploying DigitalChild API to production.
 4. [Manual Deployment](#manual-deployment)
 5. [Nginx Configuration](#nginx-configuration)
 6. [SSL/TLS Setup](#ssltls-setup)
-7. [Monitoring & Logging](#monitoring--logging)
+7. [Monitoring & Logging](#monitoring-logging)
 8. [Security Checklist](#security-checklist)
 9. [Troubleshooting](#troubleshooting)
 

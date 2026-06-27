@@ -203,16 +203,8 @@ All 2,543 source URLs come from authoritative international organizations:
 
 ### API Access
 
-```bash
-# Get Kenya's scorecard
-curl http://localhost:5000/api/scorecard/Kenya
-
-# Get all African countries
-curl "http://localhost:5000/api/scorecard?region=Africa"
-
-# Get indicator statistics
-curl http://localhost:5000/api/scorecard/indicators/statistics
-```
+Query the scorecard via the REST API — copy-paste examples (per-country, region filters, and
+indicator statistics) live in the **[API Quick Start](../api/quickstart.md)**.
 
 ### Python Analysis
 

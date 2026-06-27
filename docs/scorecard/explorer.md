@@ -65,8 +65,6 @@ The explorer above reads the same underlying scored dataset you can pull program
 
     ```bash
     python run_api.py
-    curl http://localhost:5000/api/scorecard
-    curl http://localhost:5000/api/scorecard/Kenya
     ```
 
     The API is provided so anyone can run their own local data polling/extraction using the project's methods. See the [API docs](../api/index.md).

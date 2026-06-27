@@ -142,7 +142,7 @@ This research examines human rights policies across 194 countries with vastly di
 
 A project tracking LGBTQ+ criminalization and biometric data collection must acknowledge that while we document facts objectively, our analysis **explicitly focuses on protecting vulnerable populations from harm**. This is not value-neutral research—our research question is whether systems help or harm marginalized groups—but it is methodologically rigorous in separating measurement from interpretation.
 
-See [Data Governance: Cultural Sensitivity](DATA_GOVERNANCE.md#-cultural-sensitivity-research-stance) for full framework.
+See [Data Governance: Cultural Sensitivity](DATA_GOVERNANCE.md#cultural-sensitivity-research-stance) for full framework.
 
 ______________________________________________________________________
 

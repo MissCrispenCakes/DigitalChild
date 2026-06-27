@@ -247,7 +247,7 @@ Future expansion may include:
 - Native language processing
 - Cultural context preservation
 
-**Note:** See [Cultural Sensitivity & Research Stance](#-cultural-sensitivity-research-stance) section above for our methodology regarding cultural context and non-imposing analysis.
+**Note:** See [Cultural Sensitivity & Research Stance](#cultural-sensitivity-research-stance) section above for our methodology regarding cultural context and non-imposing analysis.
 
 ## 🔐 Security & Access Control
 

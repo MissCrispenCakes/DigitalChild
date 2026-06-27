@@ -720,3 +720,45 @@ table.sc-table td.sc-doc-warn,
 @media (max-width: 768px) {
   .tw-date { min-width: 0; }
 }
+
+/* ── Left-nav legibility ──────────────────────────────────────────────
+   The left sidebar mixed three things that looked identical: section
+   GROUPS (navigation.sections), page LINKS, and the current page's own
+   headings (toc.integrate). Style each distinctly so structure reads. */
+
+/* Section group headers (e.g. "API", "Standards", "Notes") read as labels */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: var(--md-default-fg-color--light);
+  margin-top: 1.1em;
+  margin-bottom: 0.15em;
+  opacity: 1;
+}
+
+/* Top-level page links sit a notch stronger than nested links */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  font-weight: 600;
+}
+.md-nav--primary > .md-nav__list > .md-nav__item {
+  margin-top: 0.15rem;
+}
+
+/* The current page's own headings (integrated TOC): indented, lighter, and
+   marked with a left rule so they read as "on this page", not navigation. */
+.md-nav--primary .md-nav--secondary {
+  border-left: 2px solid var(--md-primary-fg-color);
+  margin: 0.2rem 0 0.5rem 0.55rem;
+  padding-left: 0.55rem;
+}
+.md-nav--primary .md-nav--secondary .md-nav__link {
+  font-size: 0.66rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+.md-nav--primary .md-nav--secondary .md-nav__link--active {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}

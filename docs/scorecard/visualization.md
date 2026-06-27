@@ -122,47 +122,10 @@ In addition to the 10 individual indicators, the scorecard calculates composite 
 
 ## Exporting Data
 
-### Via REST API (Recommended)
+### Via REST API or CSV
 
-**NEW:** Access scorecard data programmatically via the REST API:
-
-```bash
-# Start the API server
-python run_api.py
-```
-
-Then query the data:
-
-```bash
-# Get all countries with scorecard data
-curl http://localhost:5000/api/scorecard
-
-# Get specific country
-curl http://localhost:5000/api/scorecard/Kenya
-
-# Get indicator statistics
-curl http://localhost:5000/api/scorecard/indicators/statistics
-
-# Filter by region
-curl "http://localhost:5000/api/scorecard?region=Africa"
-```
-
-**Python Example:**
-
-```python
-import requests
-import pandas as pd
-
-# Fetch scorecard data via API
-response = requests.get("http://localhost:5000/api/scorecard?per_page=200")
-data = response.json()["data"]["items"]
-
-# Convert to DataFrame
-df = pd.DataFrame(data)
-print(df[["country", "region", "indicator_count"]])
-```
-
-See [API Documentation](../api/reference.md) for complete endpoint reference.
+Access scorecard data programmatically (REST API) or as CSV exports — every method, with
+copy-paste examples in cURL / Python / R, is documented on the **[Data Access](data-access.md)** page.
 
 ### From the Pipeline
 
