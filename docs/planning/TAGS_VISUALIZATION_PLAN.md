@@ -16,28 +16,28 @@ ______________________________________________________________________
 
 1. **Tag Frequency Bar Chart**
 
-   - X-axis: Tags
-   - Y-axis: Count of documents
-   - Filter: Region/country
+- X-axis: Tags
+- Y-axis: Count of documents
+- Filter: Region/country
 
-1. **Timeline View**
+2. **Timeline View**
 
-   - X-axis: Year
-   - Y-axis: Count or % of documents
-   - Multiple lines for each tag
-   - Useful for trend analysis
+- X-axis: Year
+- Y-axis: Count or % of documents
+- Multiple lines for each tag
+- Useful for trend analysis
 
-1. **Heatmap**
+3. **Heatmap**
 
-   - Rows: Countries
-   - Columns: Tags
-   - Color intensity = frequency
-   - Highlights regional gaps
+- Rows: Countries
+- Columns: Tags
+- Color intensity = frequency
+- Highlights regional gaps
 
-1. **Comparison Mode**
+4. **Comparison Mode**
 
-   - Side-by-side view of v1 vs v3 (or other versions)
-   - Shows how new terms expanded coverage
+- Side-by-side view of v1 vs v3 (or other versions)
+- Shows how new terms expanded coverage
 
 ______________________________________________________________________
 
