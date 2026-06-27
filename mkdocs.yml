@@ -16,6 +16,22 @@ copyright: |
   LittleRainbowRights: <a href="https://github.com/MissCrispenCakes/DigitalChild">DigitalChild repo</a> |
   SGBV-UPR: <a href="https://github.com/MissCrispenCakes/HumanRights">HumanRights repo</a> (private - under construction - a broken laptop is to blame :sweat_smile:)
 
+# Internal/process docs kept in git for the working trail, but NOT published to the
+# live site (they were reachable by URL/search even though absent from the nav).
+# gitignore-style, relative to docs/. See docs/planning/SITE_IA_SEE_VS_BUILD_PLAN.md.
+exclude_docs: |
+  API_WEEK1_SUMMARY.md
+  API_WEEK2_SUMMARY.md
+  API_DEPENDENCY_UPDATE.md
+  UPDATE_SUMMARY_JAN2026.md
+  UPDATE_SUMMARY_JUN2026.md
+  WEBSITE_API_UPDATE.md
+  WEBSITE_RESTRUCTURE_PLAN.md
+  RELEASE_CORRECTIONS_NEEDED.md
+  NAVIGATION_IMPROVEMENTS.md
+  notes/NEXT_STEPS_PLAN.md
+  standards/DOC_CLASSIFIER.md
+
 # Theme
 theme:
   name: material
