@@ -1,27 +1,18 @@
+---
+description: GRIMdata's active human-rights research and upcoming Canadian project oversight and research continuity tracks.
+---
+
 # GRIMdata
 
 ## Global Rights Index Monitoring
 
-**GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries.
+**GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries. Upcoming streams extend this work to Canadian project and environmental oversight, and research provenance and institutional continuity.
 
 **Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
 
-!!! quote "Research Foundation"
-    "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
+## Research Projects — Active & Upcoming
 
-    — Vollmer & Vollmer (2022), *Stellenbosch Law Review* [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-
-**GRIMdata's response:** Decisions affecting marginalized populations' fundamental rights are being made RIGHT NOW with PERMANENT consequences—often by the wrong actors, based on assumptions rather than evidence. Both research tracks (SGBV-UPR for violence documentation, LittleRainbowRights for digital system deployments) use transparent tracking to replace assumptions with evidence BEFORE consequences become irreversible.
-
-**Core principle:** Evidence-based governance, not governance by assumption.
-
-[:octicons-book-16: Read Full Research Context](../RESEARCH_CONTEXT.md){ .md-button }
-
-______________________________________________________________________
-
-## Current Projects
-
-<div class="grid cards" markdown>
+<div class="grid cards grim-projects" markdown>
 
 -   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
@@ -58,9 +49,47 @@ ______________________________________________________________________
 
     [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
 
+-   :material-leaf:{ .lg .middle } __Canadian Projects & Environmental Oversight__
+
+    ---
+
+    **Status:** Coming soon | **Scope:** Canada first
+
+    **Working title: EthicalCarbon.** A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
+
+    Supporting needed housing, renewable energy, and infrastructure through transparent evidence about what is being built, how decisions are made, and who carries the long-term costs.
+
+    [Read the upcoming plan](projects/index.md#canadian-projects-environmental-oversight){ .md-button }
+
+-   :material-source-branch:{ .lg .middle } __Research Provenance & Institutional Continuity__
+
+    ---
+
+    **Status:** Proposed future research | **Scope:** Research across institutions and time
+
+    A planned extension of GRIMdata to trace research across grants, institutions, people, methods, and outputs. AI-assisted analysis with human verification will examine contribution histories, attribution, trainee transitions, and what enables research to continue when people or funding move on.
+
+    **Insight Grant track:** AI-Assisted Research Provenance, Institutional Continuation & Public Accountability. Funding is not confirmed.
+
+    [Read the future research plan](projects/index.md#research-provenance-institutional-continuity){ .md-button }
+
 </div>
 
 [:octicons-apps-24: View All Projects](projects/index.md){ .md-button .md-button--primary }
+
+______________________________________________________________________
+
+
+!!! quote "Research Foundation"
+    "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
+
+    — Vollmer & Vollmer (2022), *Stellenbosch Law Review* [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
+
+**GRIMdata's response:** Decisions affecting marginalized populations' fundamental rights are being made RIGHT NOW with PERMANENT consequences—often by the wrong actors, based on assumptions rather than evidence. Our established research tracks (SGBV-UPR for violence documentation, LittleRainbowRights for digital system deployments) use transparent tracking to replace assumptions with evidence BEFORE consequences become irreversible.
+
+**Core principle:** Evidence-based governance, not governance by assumption.
+
+[:octicons-book-16: Read Full Research Context](../RESEARCH_CONTEXT.md){ .md-button }
 
 ______________________________________________________________________
 
@@ -215,7 +244,7 @@ This dual licensing ensures maximum utility while giving credit to the research 
 
 ## About the Initiative
 
-GRIMdata is maintained by an independent researcher alongside other work. Both projects represent passion projects aimed at making human rights data more accessible and analysis more transparent.
+GRIMdata is maintained by an independent researcher alongside other work. The established and planned projects represent independent research initiatives aimed at making human rights data more accessible and analysis more transparent.
 
 !!! warning "Maintained by PhD Student"
     This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!

@@ -2,13 +2,13 @@
 
 [:octicons-home-24: Back to GRIMdata Home](../index.md){ .md-button }
 
-**Two complementary research tracks analyzing human rights through automated document analysis**
+**Established human-rights research and upcoming environmental oversight and research-continuity tracks**
 
 ______________________________________________________________________
 
-## Current Projects
+## Active & Upcoming Projects
 
-<div class="grid cards" markdown>
+<div class="grid cards grim-projects" markdown>
 
 -   :rainbow:{ .lg .middle } __LittleRainbowRights__
 
@@ -51,9 +51,64 @@ ______________________________________________________________________
 
     [:octicons-arrow-right-24: View Project](sgbv/index.md){ .md-button .md-button--primary }
 
+-   :material-leaf:{ .lg .middle } __Canadian Projects & Environmental Oversight__
+
+    ---
+
+    **Status:** Coming soon | **Scope:** Canada first
+
+    **Working title: EthicalCarbon.** A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
+
+    Supporting needed housing, renewable energy, and infrastructure through transparent evidence about what is being built, how decisions are made, and who carries the long-term costs.
+
+    [Read the upcoming plan](index.md#canadian-projects-environmental-oversight){ .md-button }
+
+-   :material-source-branch:{ .lg .middle } __Research Provenance & Institutional Continuity__
+
+    ---
+
+    **Status:** Proposed future research | **Scope:** Research across institutions and time
+
+    A planned extension of GRIMdata to trace research across grants, institutions, people, methods, and outputs. AI-assisted analysis with human verification will examine contribution histories, attribution, trainee transitions, and what enables research to continue when people or funding move on.
+
+    **Insight Grant track:** AI-Assisted Research Provenance, Institutional Continuation & Public Accountability. Funding is not confirmed.
+
+    [Read the future research plan](index.md#research-provenance-institutional-continuity){ .md-button }
+
 </div>
 
 ______________________________________________________________________
+
+
+## Canadian Projects & Environmental Oversight
+
+**Coming soon · Canada first · EthicalCarbon is a working title**
+
+This planned GRIMdata stream will track Build Canada projects and other major Canadian developments alongside the rules, evidence, and decisions shaping them. The aim is to support needed housing, renewable energy, and infrastructure while making ecological consequences, Indigenous rights, and public accountability visible.
+
+The planned work brings together:
+
+- **Project histories:** announcements, stated objectives, approval stages, public commitments, and subsequent changes.
+- **Environmental oversight:** assessment requirements, oversight mechanisms, regulatory changes, and evidence of implementation.
+- **Indigenous rights and land relationships:** documented consultation, consent-related commitments, and affected lands, with careful source attribution.
+- **Climate and affordability claims:** what proponents promise, what evidence supports those claims, and which costs or risks may be deferred.
+- **Change over time:** historical baselines, source-linked timelines, maps, and comparisons rather than isolated announcements.
+
+The intended outputs are an open, reproducible research workflow, documented sources, and public visualizations. Tracking and methods are in development; this announcement does not imply that a project database or assessment service is already available. The public name may change as the scope develops.
+
+## Research Provenance & Institutional Continuity
+
+**Proposed future research · Insight Grant track · Funding not confirmed**
+
+**AI-Assisted Research Provenance, Institutional Continuation & Public Accountability** is a proposed research direction extending GRIMdata's existing open-source document-analysis framework.
+
+The project will investigate how research trajectories develop across grants, institutions, people, methods, outputs, and time—and what happens to contributions and knowledge when researchers, trainees, or funding leave an institution.
+
+Planned computational, qualitative, and comparative work will examine contribution provenance, attribution, handoffs, re-engagement, and onboarding and offboarding. AI will assist classification, entity resolution, and event identification, with human verification of research evidence.
+
+Drawing on **Viability.^.**, developed through doctoral research, this track will consider how unequal institutional power and continuity practices affect the futures available to research and its contributors.
+
+Intended outputs include a validated methodology, an open-source workflow, research-continuity guidance, and practical approaches to handoff and public accountability. This is an announcement of proposed work, not a funded-project or completed-results claim.
 
 ## Research Evolution
 

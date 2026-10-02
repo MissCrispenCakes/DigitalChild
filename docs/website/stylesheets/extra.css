@@ -762,3 +762,34 @@ table.sc-table td.sc-doc-warn,
   color: var(--md-primary-fg-color);
   font-weight: 600;
 }
+
+/* Active and upcoming research cards: readable on narrow screens and in both themes. */
+.md-typeset .grid.cards.grim-projects > ul {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.2rem !important;
+}
+.md-typeset .grid.cards.grim-projects > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-top: 3px solid var(--md-primary-fg-color) !important;
+  background: var(--md-default-bg-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06) !important;
+  padding: 1.25rem !important;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.md-typeset .grid.cards.grim-projects > ul > li:hover {
+  border-color: var(--md-accent-fg-color) !important;
+  transform: none !important;
+}
+.md-typeset .grid.cards.grim-projects a:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .md-typeset .grid.cards.grim-projects > ul {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > ul > li { transition: none !important; transform: none !important; }
+}
