@@ -57,7 +57,7 @@ ______________________________________________________________________
 
     **Status:** Coming soon | **Scope:** Canada first
 
-    **Working title: EthicalCarbon.** A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
+    A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
 
     Supporting needed housing, renewable energy, and infrastructure through transparent evidence about what is being built, how decisions are made, and who carries the long-term costs.
 
@@ -82,7 +82,7 @@ ______________________________________________________________________
 
 ## Canadian Projects & Environmental Oversight
 
-**Coming soon · Canada first · EthicalCarbon is a working title**
+**Coming soon · Canada first**
 
 This planned GRIMdata stream will track Build Canada projects and other major Canadian developments alongside the rules, evidence, and decisions shaping them. The aim is to support needed housing, renewable energy, and infrastructure while making ecological consequences, Indigenous rights, and public accountability visible.
 
@@ -94,7 +94,7 @@ The planned work brings together:
 - **Climate and affordability claims:** what proponents promise, what evidence supports those claims, and which costs or risks may be deferred.
 - **Change over time:** historical baselines, source-linked timelines, maps, and comparisons rather than isolated announcements.
 
-The intended outputs are an open, reproducible research workflow, documented sources, and public visualizations. Tracking and methods are in development; this announcement does not imply that a project database or assessment service is already available. The public name may change as the scope develops.
+The intended outputs are an open, reproducible research workflow, documented sources, and public visualizations. Tracking and methods are in development; this announcement does not imply that a project database or assessment service is already available.
 
 ## Research Provenance & Institutional Continuity
 

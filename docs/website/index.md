@@ -55,7 +55,7 @@ description: GRIMdata's active human-rights research and upcoming Canadian proje
 
     **Status:** Coming soon | **Scope:** Canada first
 
-    **Working title: EthicalCarbon.** A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
+    A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
 
     Supporting needed housing, renewable energy, and infrastructure through transparent evidence about what is being built, how decisions are made, and who carries the long-term costs.
 
