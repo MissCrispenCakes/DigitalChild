@@ -1,5 +1,7 @@
 # DigitalChild Documentation
 
+[:octicons-home-24: Back to GRIMdata Home](https://grimdata.org/website/){ .md-button }
+
 Welcome to the complete documentation for **DigitalChild** (LittleRainbowRights), a Python pipeline for analyzing human rights documents with focus on child and LGBTQ+ digital protections.
 
 ## Quick Links
