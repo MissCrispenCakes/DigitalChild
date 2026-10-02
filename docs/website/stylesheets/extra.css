@@ -793,4 +793,3 @@ table.sc-table td.sc-doc-warn,
 @media (prefers-reduced-motion: reduce) {
   .md-typeset .grid.cards > ul > li { transition: none !important; transform: none !important; }
 }
-
