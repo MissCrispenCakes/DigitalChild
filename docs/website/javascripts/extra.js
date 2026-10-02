@@ -1,37 +1,17 @@
 /* Custom JavaScript for GRIMdata website */
 
-// Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('GRIMdata website loaded (grimdata.org)');
-
-  // Add rainbow effect to specific elements
-  addRainbowEffects();
-
-  // Scorecard visualizations are handled by scorecard.js (loads Plotly + data
-  // only when scorecard chart containers are present on the page).
-
-  // Add copy button functionality to code blocks (if not already present)
+// Run page enhancements on initial load and Material instant navigation.
+function initializePageEnhancements() {
   enhanceCodeBlocks();
+  markExternalLinks();
+}
 
-  // Add external link indicators (debounced to avoid slowness on large pages)
-  setTimeout(markExternalLinks, 100);
-});
-
-/**
- * Add rainbow visual effects to specific elements
- */
-function addRainbowEffects() {
-  // Add rainbow underline to main headings
-  const mainHeadings = document.querySelectorAll('article h1:first-of-type');
-  mainHeadings.forEach(heading => {
-    if (!heading.classList.contains('no-rainbow') && !heading.querySelector('.rainbow-underline')) {
-      // Create a separate element for the rainbow effect to avoid layout issues
-      const underline = document.createElement('div');
-      underline.className = 'rainbow-underline';
-      underline.style.cssText = 'height: 4px; background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #24408e, #732982); margin-top: 0.5rem; margin-bottom: 1rem;';
-      heading.parentNode.insertBefore(underline, heading.nextSibling);
-    }
-  });
+if (window.document$ && typeof window.document$.subscribe === 'function') {
+  window.document$.subscribe(initializePageEnhancements);
+} else if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializePageEnhancements);
+} else {
+  initializePageEnhancements();
 }
 
 /**
@@ -50,7 +30,7 @@ function enhanceCodeBlocks() {
       label.style.cssText = 'position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0,0,0,0.3); padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.7rem; text-transform: uppercase;';
 
       const pre = block.parentElement;
-      if (pre.tagName === 'PRE') {
+      if (pre.tagName === 'PRE' && !pre.querySelector('.code-language-label')) {
         pre.style.position = 'relative';
         pre.appendChild(label);
       }
@@ -87,34 +67,13 @@ function markExternalLinks() {
   });
 }
 
-/**
- * Smooth scroll to anchors
- */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      e.preventDefault();
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-
-      // Update URL without triggering navigation
-      if (history.pushState) {
-        history.pushState(null, null, targetId);
-      }
-    }
-  });
-});
+// Anchor navigation is handled by Material and the browser.
 
 /**
  * Add "back to top" button functionality
  */
 function addBackToTopButton() {
+  if (document.querySelector('.back-to-top')) return;
   const button = document.createElement('button');
   button.innerHTML = '↑ Top';
   button.className = 'back-to-top';
