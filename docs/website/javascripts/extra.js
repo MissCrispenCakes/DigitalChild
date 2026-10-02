@@ -2,6 +2,7 @@
 
 // Run page enhancements on initial load and Material instant navigation.
 function initializePageEnhancements() {
+  addRainbowEffects();
   enhanceCodeBlocks();
   markExternalLinks();
 }
@@ -12,6 +13,21 @@ if (window.document$ && typeof window.document$.subscribe === 'function') {
   document.addEventListener('DOMContentLoaded', initializePageEnhancements);
 } else {
   initializePageEnhancements();
+}
+
+/**
+ * Add one divider per heading after every page transition.
+ */
+function addRainbowEffects() {
+  document.querySelectorAll('article h1:first-of-type').forEach(heading => {
+    if (heading.classList.contains('no-rainbow')) return;
+    const sibling = heading.nextElementSibling;
+    if (sibling && sibling.classList.contains('rainbow-underline')) return;
+    const underline = document.createElement('div');
+    underline.className = 'rainbow-underline';
+    underline.style.cssText = 'height: 4px; background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #24408e, #732982); margin-top: 0.5rem; margin-bottom: 1rem;';
+    heading.after(underline);
+  });
 }
 
 /**

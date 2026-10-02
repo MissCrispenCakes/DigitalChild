@@ -794,12 +794,3 @@ table.sc-table td.sc-doc-warn,
   .md-typeset .grid.cards > ul > li { transition: none !important; transform: none !important; }
 }
 
-/* Heading accent is rendered by CSS on full loads and instant navigation. */
-article.md-typeset h1:first-of-type:not(.no-rainbow)::after {
-  content: "";
-  display: block;
-  height: 4px;
-  background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #24408e, #732982);
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}

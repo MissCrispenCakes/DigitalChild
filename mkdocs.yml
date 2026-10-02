@@ -239,11 +239,11 @@ nav:
 
 # Custom CSS
 extra_css:
-  - website/stylesheets/extra.css?v=20261002-nav
+  - website/stylesheets/extra.css?v=20261002-nav2
 
 # Custom JavaScript
 extra_javascript:
-  - website/javascripts/extra.js?v=20261002-nav
+  - website/javascripts/extra.js?v=20261002-nav2
   - website/javascripts/scorecard.js
   - website/javascripts/transparency.js
   # Plotly is NOT loaded globally. scorecard.js loads it from CDN on demand,
