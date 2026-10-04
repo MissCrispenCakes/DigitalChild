@@ -239,7 +239,7 @@ nav:
 # Custom CSS
 extra_css:
   - website/stylesheets/extra.css?v=20261004-revamp2
-  - website/stylesheets/platform.css?v=20261004-revamp2
+  - website/stylesheets/platform.css?v=20261004-revamp3
 
 # Custom JavaScript
 extra_javascript:
