@@ -1,8 +1,8 @@
 # Quick Start
 
-Get started with DigitalChild in 5 minutes.
+Learn to run DigitalChild locally and inspect its outputs. Install the dependencies first; network downloads and machine setup can take longer than a few minutes.
 
-!!! tip "🚀 Fastest Way: Use the API"
+!!! tip "🚀 Alternative: run the self-hosted API"
     **Don't want to run the pipeline?** Access data directly via REST API:
 
     ```bash
@@ -89,7 +89,7 @@ ls data/processed/Africa/AU/text/
 
 ## Access Data via API (Alternative)
 
-**NEW:** Instead of running the pipeline, you can access the data programmatically via the REST API:
+After starting your own API server, instead of running the pipeline, you can access the data programmatically via the REST API:
 
 ```bash
 # Start the API server

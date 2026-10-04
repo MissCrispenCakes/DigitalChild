@@ -4,7 +4,7 @@
  * /scorecard/data/scorecard.json (built by utils/build_scorecard_viz_data.py).
  *
  * Pure static: no API/server required. Plotly is loaded from CDN on demand,
- * only when a scorecard container is present on the page. Designed to work
+ * only after the visitor explicitly enables charts on the current page. Designed to work
  * with Material for MkDocs "navigation.instant" via the document$ observable.
  */
 (function () {
@@ -13,11 +13,12 @@
   var PLOTLY_SRC = "https://cdn.plot.ly/plotly-2.27.0.min.js";
 
   // Score → colour (0 worst → 2 best). Used for table heatmap cells & bars.
-  var SCORE_COLORS = { 0: "#d64545", 1: "#e8a33d", 2: "#2e8b57" };
+  var SCORE_COLORS = { 0: "#a92f3b", 1: "#946000", 2: "#17633d" };
   var SCORE_LABELS = { 0: "0 — Worst", 1: "1 — Partial", 2: "2 — Best" };
 
   var _dataPromise = null;
   var _plotlyPromise = null;
+  var _comparisonNames = [];
 
   /* ---------- loaders (memoized) ---------- */
 
@@ -48,7 +49,7 @@
         var s = document.createElement("script");
         s.src = PLOTLY_SRC;
         s.onload = function () { resolve(window.Plotly); };
-        s.onerror = function () { reject(new Error("Failed to load Plotly")); };
+        s.onerror = function () { _plotlyPromise = null; s.remove(); reject(new Error("Failed to load Plotly")); };
         document.head.appendChild(s);
       });
     }
@@ -71,12 +72,13 @@
   }
 
   var PLOT_CFG = { responsive: true, displaylogo: false,
+    topojsonURL: "https://cdn.plot.ly/",
     modeBarButtonsToRemove: ["lasso2d", "select2d", "autoScale2d"] };
 
   /* ---------- charts ---------- */
 
-  var GREEN_TO_RED = [[0, "#d64545"], [0.5, "#e8a33d"], [1, "#2e8b57"]];
-  var RED_TO_GREEN = [[0, "#2e8b57"], [0.5, "#e8a33d"], [1, "#d64545"]];
+  var GREEN_TO_RED = [[0, "#a92f3b"], [0.5, "#946000"], [1, "#17633d"]];
+  var RED_TO_GREEN = [[0, "#17633d"], [0.5, "#946000"], [1, "#a92f3b"]];
   var MAP_METRICS = {
     protection_score: { title: "Protection Score", range: [0, 20], reverse: false },
     risk_index: { title: "Risk Index", range: [0, 100], reverse: true },
@@ -116,19 +118,19 @@
       marker: { line: { color: "rgba(120,120,120,0.4)", width: 0.4 } }
     };
 
-    Plotly.newPlot(node, [trace], plotlyLayout({
+    return Plotly.newPlot(node, [trace], plotlyLayout({
       title: "Digital Rights — " + cfg.title + " by Country",
       geo: { showframe: false, showcoastlines: false, projection: { type: "natural earth" }, bgcolor: "rgba(0,0,0,0)" },
       margin: { t: 40, r: 0, b: 0, l: 0 }, height: 460
-    }), PLOT_CFG);
-
-    // Click a country to open its detail panel (when a host exists on the page).
-    node.on("plotly_click", function (ev) {
-      if (ev && ev.points && ev.points.length) {
-        var name = ev.points[0].customdata;
-        if (name) showDetail(data, name);
-      }
+    }), PLOT_CFG).then(function () {
+      node.removeAllListeners("plotly_click");
+      node.on("plotly_click", function (ev) {
+        if (ev && ev.points && ev.points.length && ev.points[0].customdata) {
+          showDetail(data, ev.points[0].customdata);
+        }
+      });
     });
+
   }
 
   function renderIndicators(Plotly, data) {
@@ -153,7 +155,7 @@
         hovertemplate: "%{y}<br>" + SCORE_LABELS[s] + ": %{x} countries<extra></extra>"
       };
     });
-    Plotly.newPlot(node, traces, plotlyLayout({
+    return Plotly.newPlot(node, traces, plotlyLayout({
       title: "How countries score on each indicator",
       barmode: "stack", height: 420,
       xaxis: { title: "Number of countries" },
@@ -175,12 +177,12 @@
       return { region: r, avg: sums[r] / n[r], n: n[r] };
     }).sort(function (a, b) { return b.avg - a.avg; });
 
-    Plotly.newPlot(node, [{
+    return Plotly.newPlot(node, [{
       type: "bar",
       x: regions.map(function (r) { return r.region; }),
       y: regions.map(function (r) { return Math.round(r.avg * 10) / 10; }),
       marker: { color: regions.map(function (r) {
-        var t = r.avg / 20; return t < 0.4 ? "#d64545" : t < 0.65 ? "#e8a33d" : "#2e8b57"; }) },
+        var t = r.avg / 20; return t < 0.4 ? "#a92f3b" : t < 0.65 ? "#946000" : "#17633d"; }) },
       text: regions.map(function (r) { return (Math.round(r.avg * 10) / 10) + " (n=" + r.n + ")"; }),
       textposition: "outside",
       hovertemplate: "%{x}<br>Avg protection: %{y}/20<extra></extra>"
@@ -200,9 +202,9 @@
     var traces = (countryNames || []).map(function (name) {
       var c = byName[name];
       if (!c) return null;
-      var r = inds.map(function (i) { return c.scores[i.key] === null ? 0 : c.scores[i.key]; });
+      var r = inds.map(function (i) { return c.scores[i.key] == null ? null : c.scores[i.key]; });
       r.push(r[0]); var th = theta.concat([theta[0]]);  // close the loop
-      return { type: "scatterpolar", r: r, theta: th, fill: "toself", name: name };
+      return { type: "scatterpolar", r: r, theta: th, fill: "none", connectgaps: false, name: name };
     }).filter(Boolean);
 
     if (!traces.length) {
@@ -211,7 +213,7 @@
       return;
     }
     node.innerHTML = "";  // clear the placeholder hint before plotting
-    Plotly.newPlot(node, traces, plotlyLayout({
+    return Plotly.newPlot(node, traces, plotlyLayout({
       title: "Indicator profile comparison (0–2 per indicator)",
       height: 480,
       polar: { radialaxis: { visible: true, range: [0, 2], dtick: 1 } },
@@ -248,7 +250,7 @@
     return src.split(/\s*;\s*/).filter(Boolean).map(function (s, i) {
       s = s.trim();
       if (/^https?:\/\//i.test(s)) {
-        return '<a href="' + esc(s) + '" target="_blank" rel="noopener noreferrer">source' +
+        return '<a href="' + esc(s) + '" >source' +
           (i ? " " + (i + 1) : "") + " ↗</a>";
       }
       return '<span class="sc-src-note">' + esc(s) + "</span>";
@@ -267,7 +269,7 @@
     var nInd = inds.length;
     var body = rows.map(function (c) {
       var tr = '<tr data-country="' + esc(c.country) + '"><td class="sc-country">' +
-        esc(c.country) + "</td><td>" + esc(c.region || "—") + "</td>";
+        '<button type="button" class="sc-country-button">' + esc(c.country) + "</button></td><td>" + esc(c.region || "—") + "</td>";
       inds.forEach(function (i) { tr += cell(c.scores[i.key]); });
       tr += '<td class="sc-num">' + fmt(c.protection_score) + "</td>";
       tr += '<td class="sc-num">' + fmt(c.risk_index) + "</td>";
@@ -276,7 +278,11 @@
       return tr;
     }).join("");
 
-    return '<div class="sc-table-wrap"><table class="sc-table"><thead>' + head +
+    head = head.replace(/<th([^>]*)>(.*?)<\/th>/g, function (_, attrs, label) {
+      return '<th scope="col"' + attrs + '><button type="button" class="sc-sort" aria-label="Sort by ' +
+        esc(label.replace(/<[^>]*>/g, "")) + '">' + label + '</button></th>';
+    });
+    return '<div class="sc-table-wrap" tabindex="0" role="region" aria-label="Country assessments; scroll to see all indicators"><table class="sc-table"><caption class="grim-sr-only">Digital rights scores and documented assessments. Use a country button for evidence.</caption><thead>' + head +
       "</thead><tbody>" + body + "</tbody></table></div>";
   }
 
@@ -293,9 +299,10 @@
     var inds = data.meta.indicators;
     var gaps = inds.length - c.documented;
 
-    var html = '<div class="sc-detail-card">' +
-      '<button type="button" class="sc-detail-close" aria-label="Close">×</button>' +
-      '<h3 class="no-rainbow">' + esc(c.country) + "</h3>" +
+    var previousFocus = document.activeElement;
+    var html = '<div class="sc-detail-card" role="region" aria-labelledby="sc-detail-title" tabindex="-1">' +
+      '<button type="button" class="sc-detail-close" aria-label="Close country assessment">×</button>' +
+      '<h3 id="sc-detail-title" class="no-rainbow">' + esc(c.country) + "</h3>" +
       '<p class="sc-detail-sub">' + esc(c.region || "—") +
       (c.region_specific ? " · " + esc(c.region_specific) : "") + "</p>" +
       '<div class="sc-detail-stats">' +
@@ -324,16 +331,18 @@
     html += "</ul></div>";
     host.innerHTML = html;
     var close = host.querySelector(".sc-detail-close");
-    if (close) close.onclick = function () { host.innerHTML = ""; };
-    host.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (close) close.onclick = function () {
+      host.innerHTML = "";
+      if (previousFocus && previousFocus.isConnected) previousFocus.focus({ preventScroll: true });
+    };
+    host.querySelector(".sc-detail-card").focus({ preventScroll: true });
+    host.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
   }
 
   function wireRowClicks(data) {
-    document.querySelectorAll(".sc-table tbody tr").forEach(function (tr) {
-      tr.style.cursor = "pointer";
-      tr.onclick = function () {
-        var name = tr.getAttribute("data-country");
-        if (name) showDetail(data, name);
+    document.querySelectorAll(".sc-country-button").forEach(function (button) {
+      button.onclick = function () {
+        showDetail(data, button.closest("tr").getAttribute("data-country"));
       };
     });
   }
@@ -342,62 +351,70 @@
 
   function initExplorer(data) {
     var root = el("sc-explorer");
-    if (!root) return;
-
-    var state = { region: "all", indicator: "all", minScore: 0, q: "", onlyDocumented: false };
+    if (!root || root.dataset.initialized) return;
+    root.dataset.initialized = "1";
+    var state = { region: "all", indicator: "all", minScore: 0, q: "", onlyDocumented: false,
+      sortKey: "protection_score", ascending: false };
     var nInd = data.meta.indicators.length;
-
-    // Populate region & indicator selectors
     var regSel = el("sc-f-region");
-    if (regSel && !regSel.dataset.ready) {
-      data.meta.regions.forEach(function (r) {
-        var o = document.createElement("option"); o.value = r; o.textContent = r; regSel.appendChild(o);
-      });
-      regSel.dataset.ready = "1";
-    }
     var indSel = el("sc-f-indicator");
-    if (indSel && !indSel.dataset.ready) {
-      data.meta.indicators.forEach(function (i) {
-        var o = document.createElement("option"); o.value = i.key; o.textContent = i.label; indSel.appendChild(o);
-      });
-      indSel.dataset.ready = "1";
-    }
     var cmpSel = el("sc-compare");
-    if (cmpSel && !cmpSel.dataset.ready) {
-      data.countries.slice().sort(function (a, b) { return a.country.localeCompare(b.country); })
-        .forEach(function (c) {
-          var o = document.createElement("option"); o.value = c.country; o.textContent = c.country; cmpSel.appendChild(o);
-        });
-      cmpSel.dataset.ready = "1";
+    function option(select, value, label) {
+      if (!select) return;
+      var o = document.createElement("option"); o.value = value; o.textContent = label; select.appendChild(o);
     }
+    data.meta.regions.forEach(function (v) { option(regSel, v, v); });
+    data.meta.indicators.forEach(function (v) { option(indSel, v.key, v.label); });
+    data.countries.slice().sort(function (a, b) { return a.country.localeCompare(b.country); })
+      .forEach(function (c) { option(cmpSel, c.country, c.country); });
+    _comparisonNames = [];
 
-    function apply() {
+    function apply(focusKey) {
       var rows = data.countries.filter(function (c) {
         if (state.region !== "all" && c.region !== state.region) return false;
         if (state.q && c.country.toLowerCase().indexOf(state.q) < 0) return false;
         if (state.onlyDocumented && c.documented < nInd) return false;
-        if (state.indicator !== "all") {
-          var v = c.scores[state.indicator];
-          if (v === null || v === undefined || v < state.minScore) return false;
-        } else if (state.minScore > 0) {
-          if (c.protection_score === null || c.protection_score < state.minScore) return false;
-        }
+        var v = state.indicator === "all" ? c.protection_score : c.scores[state.indicator];
+        if (state.minScore > 0 && (v == null || v < state.minScore)) return false;
+        if (state.indicator !== "all" && v == null) return false;
         return true;
       });
       rows.sort(function (a, b) {
-        return (b.protection_score || 0) - (a.protection_score || 0) || a.country.localeCompare(b.country);
+        var k = state.sortKey, av = k in a ? a[k] : a.scores[k], bv = k in b ? b[k] : b.scores[k];
+        if (av == null && bv == null) return a.country.localeCompare(b.country);
+        if (av == null) return 1;
+        if (bv == null) return -1;
+        var cmp = typeof av === "string" ? String(av).localeCompare(String(bv)) : av - bv;
+        return (state.ascending ? cmp : -cmp) || a.country.localeCompare(b.country);
       });
-      var tableHost = el("sc-table");
-      if (tableHost) tableHost.innerHTML = buildTable(data, rows);
+      var host = el("sc-table");
+      if (host) host.innerHTML = buildTable(data, rows);
       var count = el("sc-count");
       if (count) count.textContent = rows.length + " of " + data.countries.length + " countries";
-      wireSort(data, rows);
+      if (!rows.length && host) host.insertAdjacentHTML("beforeend", '<p>No countries match. Try Reset or broaden the filters.</p>');
+      document.querySelectorAll(".sc-table th[data-k]").forEach(function (th) {
+        var k = th.getAttribute("data-k"), button = th.querySelector("button");
+        th.setAttribute("aria-sort", k === state.sortKey ? (state.ascending ? "ascending" : "descending") : "none");
+        if (k === state.sortKey) button.textContent += state.ascending ? " ↑" : " ↓";
+        button.onclick = function () {
+          state.ascending = state.sortKey === k ? !state.ascending : true;
+          state.sortKey = k;
+          apply(k);
+        };
+        if (focusKey === k) button.focus({ preventScroll: true });
+      });
       wireRowClicks(data);
     }
-
     function bind(id, ev, fn) { var n = el(id); if (n) n.addEventListener(ev, fn); }
+    function updateRange() {
+      var range = el("sc-f-minscore");
+      if (range) { range.max = state.indicator === "all" ? 20 : 2; range.value = state.minScore = 0; }
+      var out = el("sc-f-minscore-val"); if (out) out.textContent = "0";
+      var label = el("sc-f-minscore-label");
+      if (label) label.textContent = state.indicator === "all" ? "Minimum Protection Score (0–20)" : "Minimum indicator score (0–2)";
+    }
     bind("sc-f-region", "change", function (e) { state.region = e.target.value; apply(); });
-    bind("sc-f-indicator", "change", function (e) { state.indicator = e.target.value; apply(); });
+    bind("sc-f-indicator", "change", function (e) { state.indicator = e.target.value; updateRange(); apply(); });
     bind("sc-f-minscore", "input", function (e) {
       state.minScore = Number(e.target.value) || 0;
       var out = el("sc-f-minscore-val"); if (out) out.textContent = state.minScore;
@@ -406,47 +423,42 @@
     bind("sc-f-search", "input", function (e) { state.q = e.target.value.trim().toLowerCase(); apply(); });
     bind("sc-f-documented", "change", function (e) { state.onlyDocumented = e.target.checked; apply(); });
     bind("sc-f-reset", "click", function () {
-      state = { region: "all", indicator: "all", minScore: 0, q: "", onlyDocumented: false };
+      state = { region: "all", indicator: "all", minScore: 0, q: "", onlyDocumented: false,
+        sortKey: "protection_score", ascending: false };
       ["sc-f-region", "sc-f-indicator"].forEach(function (i) { var n = el(i); if (n) n.value = "all"; });
-      var ms = el("sc-f-minscore"); if (ms) ms.value = 0;
-      var msv = el("sc-f-minscore-val"); if (msv) msv.textContent = "0";
       var q = el("sc-f-search"); if (q) q.value = "";
       var dc = el("sc-f-documented"); if (dc) dc.checked = false;
-      apply();
+      var detail = el("sc-detail"); if (detail) detail.innerHTML = "";
+      updateRange(); apply();
     });
-
-    if (cmpSel) {
-      cmpSel.addEventListener("change", function () {
-        var chosen = Array.prototype.slice.call(cmpSel.selectedOptions).map(function (o) { return o.value; }).slice(0, 5);
-        loadPlotly().then(function (P) { renderRadar(P, data, chosen); });
+    function updateComparison() {
+      var host = el("sc-selected"); if (!host) return;
+      host.innerHTML = _comparisonNames.map(function (name) {
+        return '<button type="button" class="md-button sc-remove" data-country="' + esc(name) + '" aria-label="Remove ' + esc(name) + ' from comparison">' + esc(name) + ' ×</button>';
+      }).join(" ");
+      host.querySelectorAll("button").forEach(function (button) {
+        button.onclick = function () {
+          _comparisonNames = _comparisonNames.filter(function (n) { return n !== button.dataset.country; });
+          updateComparison();
+          if (cmpSel) cmpSel.focus();
+        };
       });
+      var status = el("sc-compare-status");
+      if (status) status.textContent = _comparisonNames.length + " of 5 countries selected. Missing values are gaps, not zero scores.";
+      var gate = el("sc-chart-permission");
+      if (gate && gate.dataset.enabled && window.Plotly) renderRadar(window.Plotly, data, _comparisonNames);
     }
-
-    apply();
-  }
-
-  // click-to-sort table headers
-  function wireSort(data, rows) {
-    var table = document.querySelector(".sc-table");
-    if (!table) return;
-    table.querySelectorAll("th").forEach(function (th) {
-      th.style.cursor = "pointer";
-      th.onclick = function () {
-        var k = th.getAttribute("data-k");
-        var asc = th.dataset.asc !== "1";
-        th.dataset.asc = asc ? "1" : "0";
-        var sorted = rows.slice().sort(function (a, b) {
-          var av = (k in a) ? a[k] : a.scores[k];
-          var bv = (k in b) ? b[k] : b.scores[k];
-          if (av === null || av === undefined) av = -Infinity;
-          if (bv === null || bv === undefined) bv = -Infinity;
-          if (typeof av === "string") return asc ? av.localeCompare(bv) : bv.localeCompare(av);
-          return asc ? av - bv : bv - av;
-        });
-        var host = el("sc-table");
-        if (host) { host.innerHTML = buildTable(data, sorted); wireSort(data, sorted); wireRowClicks(data); }
-      };
+    bind("sc-compare-add", "click", function () {
+      if (!cmpSel || !cmpSel.value) return;
+      if (_comparisonNames.indexOf(cmpSel.value) >= 0) {
+        el("sc-compare-status").textContent = "That country is already selected."; return;
+      }
+      if (_comparisonNames.length >= 5) {
+        el("sc-compare-status").textContent = "Five countries are selected. Remove one before adding another."; return;
+      }
+      _comparisonNames.push(cmpSel.value); updateComparison();
     });
+    updateRange(); updateComparison(); apply();
   }
 
   /* ---------- entry point ---------- */
@@ -456,45 +468,67 @@
       el("sc-table") || el("sc-explorer") || el("sc-radar");
   }
 
-  function init() {
-    if (!hasViz()) return;  // not a scorecard viz page — stay inert
-    var loading = el("sc-loading");
-    loadData()
-      .then(function (data) {
-        // stamp metadata line if present
-        var meta = el("sc-meta");
-        if (meta) {
-          meta.textContent = data.meta.country_count + " countries · " +
-            data.meta.indicators.length + " indicators · source verified " +
-            (data.meta.source_verified || "n/a").slice(0, 10);
-        }
-        // explorer is plain DOM/table — render even if Plotly fails
-        initExplorer(data);
-        var metricSel = el("sc-map-metric");
-        return loadPlotly().then(function (P) {
-          renderMap(P, data);
-          renderIndicators(P, data);
-          renderRegions(P, data);
-          renderRadar(P, data, []);
-          if (metricSel && !metricSel.dataset.ready) {
-            metricSel.addEventListener("change", function () { renderMap(P, data); });
-            metricSel.dataset.ready = "1";
-          }
-        });
-      })
-      .then(function () { if (loading) loading.style.display = "none"; })
-      .catch(function (err) {
-        console.error("Scorecard viz error:", err);
-        if (loading) {
-          loading.innerHTML = '<strong>Could not load the scorecard data.</strong> ' +
-            "Please refresh, or view the data via the API / CSV exports.";
-        }
-      });
+  function renderCharts(data) {
+    var P = window.Plotly;
+    return Promise.all([renderMap(P, data), renderIndicators(P, data), renderRegions(P, data),
+      renderRadar(P, data, _comparisonNames)]);
   }
 
+  function init() {
+    if (!hasViz()) return;
+    var loading = el("sc-loading"), gate = el("sc-chart-permission");
+    loadData().then(function (data) {
+      // Ignore a fetch finishing after its page has been replaced by instant navigation.
+      if (loading && !loading.isConnected) return;
+      var meta = el("sc-meta");
+      if (meta) meta.textContent = data.meta.country_count + " countries · " + data.meta.indicators.length +
+        " indicators · snapshot " + data.meta.generated_at.slice(0, 10) +
+        " · source-verification stamp " + (data.meta.source_verified || "n/a").slice(0, 10);
+      initExplorer(data);
+      if (loading) loading.hidden = true;
+      if (!gate || gate.dataset.initialized) return;
+      gate.dataset.initialized = "1";
+      var button = el("sc-load-charts"), status = el("sc-chart-status");
+      button.onclick = function () {
+        button.disabled = true; status.textContent = "Loading external chart assets…";
+        loadPlotly().then(function () {
+          if (!gate.isConnected) return;
+          gate.dataset.enabled = "1";
+          return renderCharts(data);
+        }).then(function () {
+          if (!gate.isConnected) return;
+          status.textContent = "Charts enabled on this page. The country table and downloads remain available.";
+          button.hidden = true;
+        }).catch(function () {
+          delete gate.dataset.enabled;
+          status.textContent = "Charts could not load. The table and published downloads still work. You can retry.";
+          button.disabled = false;
+        });
+      };
+      var metric = el("sc-map-metric");
+      if (metric) metric.onchange = function () {
+        if (gate.dataset.enabled) renderMap(window.Plotly, data).catch(function () {
+          status.textContent = "Map assets could not load. Use the country explorer or downloads.";
+        });
+      };
+    }).catch(function () {
+      if (loading && loading.isConnected) loading.textContent = "Could not load the scorecard snapshot. Please refresh or use the published JSON/CSV downloads.";
+    });
+  }
+
+  // Chart colours follow the actual current appearance, including instant navigation.
+  new MutationObserver(function () {
+    var gate = el("sc-chart-permission");
+    if (gate && gate.dataset.enabled && window.Plotly) {
+      loadData().then(renderCharts).catch(function () {});
+    }
+  }).observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+
   if (window.document$ && typeof window.document$.subscribe === "function") {
-    window.document$.subscribe(init);     // Material instant navigation
-  } else {
+    window.document$.subscribe(init);
+  } else if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
 })();

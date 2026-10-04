@@ -46,13 +46,13 @@ This scorecard was developed for the research paper *"Queer AI for the digital c
 
     ---
 
-    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF
+    Historical source inventory from UNESCO, UNCTAD, ILGA, UNICEF; inspect current country evidence
 
--   :material-update:{ .lg .middle } **January 2026**
+-   :material-update:{ .lg .middle } **26 June 2026**
 
     ---
 
-    Last updated with latest policy changes and new data
+    Visualization snapshot generated; source-verification stamp 9 September 2025
 
 </div>
 
@@ -267,7 +267,7 @@ Or in text:
 
 !!! warning "Important Considerations"
 
-    **Point-in-time data:** Reflects information as of January 2026. Policies change frequently.
+    **Point-in-time data:** The published visualization snapshot was generated 26 June 2026 and carries a 9 September 2025 source-verification stamp. Individual sources have their own dates. Policies change frequently.
 
     **Binary categorization:** Complex policies are simplified into discrete 0-1-2 categories for comparability.
 

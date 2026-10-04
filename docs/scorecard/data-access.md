@@ -1,5 +1,17 @@
 # Accessing Scorecard Data
 
+## Published snapshot downloads
+
+These files contain the **26 June 2026 visualization snapshot**, including scores, written assessments, and source links. The JSON retains nested indicator metadata; the CSV flattens each indicator into score, assessment, and sources columns. Both retain the snapshot and source-verification dates. They do not refresh automatically or include every pipeline document.
+
+[Download scorecard JSON](data/scorecard.json){ .md-button download="scorecard.json" }
+[Download scorecard CSV](data/scorecard.csv){ .md-button download="scorecard.csv" }
+
+CSV text starting with spreadsheet formula characters is prefixed with an apostrophe for safe spreadsheet opening. The original JSON retains the source text unchanged. Code: MIT; project data: CC BY 4.0. Cite the [research record](../docs/technical-overview.md#citation), snapshot date, and original sources; read the [methodology](design.md) and documentation gaps before reuse.
+
+The API described below is **self-hosted tooling**. No public hosted GRIMdata API endpoint is asserted here.
+
+
 **Multiple ways to access the Digital Rights Scorecard data based on your needs**
 
 ---

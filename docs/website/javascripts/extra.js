@@ -2,8 +2,15 @@
 
 // Run page enhancements on initial load and Material instant navigation.
 function initializePageEnhancements() {
+  // Preserve old root fragment destinations after relocating the technical home.
+  const legacy = document.querySelector('.grim-legacy');
+  let fragment = window.location.hash.slice(1);
+  try { fragment = decodeURIComponent(fragment); } catch (_) { /* Keep malformed fragments inert. */ }
+  if (legacy && fragment && Array.from(legacy.querySelectorAll('span[id]')).some(node => node.id === fragment)) {
+    window.location.replace(new URL('docs/technical-overview/#' + encodeURIComponent(fragment), window.location.href).href);
+    return;
+  }
   addRainbowEffects();
-  enhanceCodeBlocks();
   markExternalLinks();
 }
 
@@ -31,30 +38,6 @@ function addRainbowEffects() {
 }
 
 /**
- * Enhance code blocks with additional functionality
- */
-function enhanceCodeBlocks() {
-  const codeBlocks = document.querySelectorAll('pre code');
-
-  codeBlocks.forEach(block => {
-    // Add language label if detected
-    const language = block.className.match(/language-(\w+)/);
-    if (language && language[1]) {
-      const label = document.createElement('span');
-      label.className = 'code-language-label';
-      label.textContent = language[1];
-      label.style.cssText = 'position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(0,0,0,0.3); padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.7rem; text-transform: uppercase;';
-
-      const pre = block.parentElement;
-      if (pre.tagName === 'PRE' && !pre.querySelector('.code-language-label')) {
-        pre.style.position = 'relative';
-        pre.appendChild(label);
-      }
-    }
-  });
-}
-
-/**
  * Mark external links with an indicator icon
  */
 function markExternalLinks() {
@@ -67,14 +50,23 @@ function markExternalLinks() {
     if (linkDomain !== currentDomain) {
       // Add external link indicator
       link.classList.add('external-link');
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
+      // Preserve the visitor's and author's normal navigation choice.
+      if (link.target === '_blank') {
+        link.setAttribute('rel', 'noopener noreferrer');
+        if (!link.querySelector('.external-new-tab')) {
+          const notice = document.createElement('span');
+          notice.className = 'external-new-tab';
+          notice.textContent = ' (opens a new tab)';
+          link.appendChild(notice);
+        }
+      }
 
       // Add visual indicator
       if (!link.querySelector('.external-icon')) {
         const icon = document.createElement('span');
         icon.className = 'external-icon';
-        icon.innerHTML = ' ↗';
+        icon.textContent = ' ↗';
+        icon.setAttribute('aria-hidden', 'true');
         icon.style.fontSize = '0.8em';
         icon.style.opacity = '0.6';
         link.appendChild(icon);
@@ -85,38 +77,7 @@ function markExternalLinks() {
 
 // Anchor navigation is handled by Material and the browser.
 
-/**
- * Add "back to top" button functionality
- */
-function addBackToTopButton() {
-  if (document.querySelector('.back-to-top')) return;
-  const button = document.createElement('button');
-  button.innerHTML = '↑ Top';
-  button.className = 'back-to-top';
-  button.style.cssText = 'position: fixed; bottom: 2rem; right: 2rem; background: var(--md-primary-fg-color); color: white; border: none; padding: 0.75rem 1rem; border-radius: 4px; cursor: pointer; display: none; z-index: 1000; transition: opacity 0.3s;';
-
-  document.body.appendChild(button);
-
-  // Show/hide based on scroll position
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-      button.style.display = 'block';
-    } else {
-      button.style.display = 'none';
-    }
-  });
-
-  // Scroll to top on click
-  button.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
-
-// Initialize back to top button
-addBackToTopButton();
+// Material provides the single accessible back-to-top control.
 
 /**
  * Utility: Fetch and parse CSV data (for future use)
@@ -170,5 +131,3 @@ window.GRIMdata = {
   formatDate,
   debounce
 };
-
-console.log('GRIMdata utilities loaded');

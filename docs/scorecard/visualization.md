@@ -10,7 +10,7 @@ Interactive visualization of human rights indicators across 194 countries.
 
     ---
 
-    Comprehensive global coverage across all UN member states and territories
+    Countries represented in the published research snapshot
 
 -   :material-chart-line:{ .lg .middle } **10 Indicators**
 
@@ -18,23 +18,23 @@ Interactive visualization of human rights indicators across 194 countries.
 
     AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
 
--   :material-link:{ .lg .middle } **2,543 Source URLs**
+-   :material-link:{ .lg .middle } **132 Fully Documented**
 
     ---
 
-    Validated authoritative sources from UNESCO, UNCTAD, ILGA, UNICEF, etc.
+    Countries with written justifications for all ten scored indicators
 
--   :material-update:{ .lg .middle } **January 2026**
+-   :material-update:{ .lg .middle } **26 June 2026**
 
     ---
 
-    Last updated with latest policy changes and new data
+    Snapshot generated; source-verification stamp: 9 September 2025
 
 </div>
 
 ## Accessing Data
 
-### Via REST API
+### Via self-hosted REST API {#via-rest-api}
 
 Get scorecard data programmatically via the REST API — the copy-paste examples (health
 check, per-country, statistics, filtering) live in the API Quick Start:
@@ -45,6 +45,16 @@ check, per-country, statistics, filtering) live in the API Quick Start:
 ### Interactive Visualizations
 
 Explore the scorecard interactively below. Charts are rendered in your browser from a published static dataset — no server required. To filter, search, sort, and compare individual countries, use the [Data Explorer](explorer.md).
+
+<div id="sc-chart-permission" class="sc-chart-permission">
+  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. That provider receives normal request information. Your table filters run locally. This choice applies to this page only.</p>
+  <button type="button" id="sc-load-charts" class="md-button md-button--primary">Load interactive charts</button>
+  <a href="../../practices/">Data handling details</a>
+  <p id="sc-chart-status" role="status" aria-live="polite">Charts are off. Use the country table or downloads without them.</p>
+</div>
+
+[Use the country table instead](explorer.md){ .md-button }
+[Download the published snapshot](data-access.md#published-snapshot-downloads){ .md-button }
 
 <div class="sc-viz">
   <p id="sc-meta" class="sc-meta"></p>
@@ -122,7 +132,7 @@ In addition to the 10 individual indicators, the scorecard calculates composite 
 
 ## Exporting Data
 
-### Via REST API or CSV
+### Via self-hosted REST API or CSV {#via-rest-api-or-csv}
 
 Access scorecard data programmatically (REST API) or as CSV exports — every method, with
 copy-paste examples in cURL / Python / R, is documented on the **[Data Access](data-access.md)** page.
@@ -252,7 +262,7 @@ Or:
 ## Limitations & Disclaimers
 
 !!! warning "Important Considerations"
-    **Point-in-time data:** Reflects information as of January 2026
+    **Point-in-time data:** Snapshot generated 26 June 2026; source-verification stamp 9 September 2025. Individual sources have their own dates.
     **Binary categorization:** Complex policies simplified into discrete categories
     **Source availability:** Some countries lack accessible English-language sources
     **Implementation vs. policy:** Tracks official policy, not enforcement
@@ -274,7 +284,7 @@ Planned features (see [Roadmap](../ROADMAP.md)):
 - [x] **Interactive choropleth map, indicator & regional charts** ✅ **LIVE** (Plotly.js, this page)
 - [x] **Country comparison tool** ✅ **LIVE** (radar comparison in the [Data Explorer](explorer.md))
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready, see [API docs](../api/index.md))
+- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints implemented for self-hosting, see [API docs](../api/index.md))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)

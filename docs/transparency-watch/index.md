@@ -47,7 +47,7 @@ Are the organisations behind global digital-rights data adopting **primary-sourc
     <label class="sc-check"><input type="checkbox" id="tw-f-topical"> On-topic signals only (★)</label>
   </div>
 
-  <p id="tw-count" class="sc-count"></p>
+  <p id="tw-count" class="sc-count" role="status" aria-live="polite"></p>
 
   <h2>Adoption timeline</h2>
   <div id="tw-timeline"></div>

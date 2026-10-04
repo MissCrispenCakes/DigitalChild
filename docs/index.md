@@ -1,139 +1,150 @@
-# DigitalChild Documentation
+---
+title: GRIMdata — Evidence, rights, and public accountability
+description: Open research on digital rights, policy evidence, environmental oversight, and research continuity. Explore the data, methods, and research tracks.
+hide:
+  - navigation
+  - toc
+---
 
-[:octicons-home-24: Back to GRIMdata Home](https://grimdata.org/website/){ .md-button }
+<div class="grim-home" markdown="1">
+<div class="grim-hero">
+<div class="grim-hero-copy">
+<p class="grim-eyebrow">Global Rights Index Monitoring</p>
+<h1 class="no-rainbow">Evidence for rights.<br>Research you can trace.</h1>
+<p class="grim-lede">GRIMdata connects public documents, transparent methods, and open tools to help people examine decisions that shape human rights.</p>
+<div class="grim-actions"><a class="md-button md-button--primary" href="explore/">Explore the evidence →</a><a class="md-button" href="docs/">Find documentation</a></div>
+<p class="grim-hero-note">Independent research. Public evidence. Room to question the findings.</p>
+</div>
+<aside class="grim-snapshot" aria-label="Published digital rights scorecard snapshot">
+<p class="grim-eyebrow">Inside the research platform</p>
+<p class="grim-snapshot-number">194<span>countries in the digital rights scorecard</span></p>
+<div class="grim-snapshot-pair"><p><strong>10</strong><span>indicators</span></p><p><strong>132</strong><span>fully documented country assessments</span></p></div>
+<p class="grim-snapshot-note">Published snapshot · 26 June 2026<br>Source-verification stamp · 9 September 2025</p>
+<a href="scorecard/explorer/">Inspect scores, evidence, and gaps →</a>
+</aside>
+</div>
 
-Welcome to the complete documentation for **DigitalChild** (LittleRainbowRights), a Python pipeline for analyzing human rights documents with focus on child and LGBTQ+ digital protections.
+<div class="grim-section-heading" markdown>
 
-## Quick Links
+## Research with a public purpose
 
-<div class="grid cards" markdown>
-
--   :material-rocket-launch:{ .lg .middle } **Getting Started**
-
-    ---
-
-    Install and run your first pipeline
-
-    [:octicons-arrow-right-24: Quick Start](website/getting-started/quickstart.md)
-
--   :material-api:{ .lg .middle } **REST API**
-
-    ---
-
-    Access data programmatically via 14 endpoints
-
-    [:octicons-arrow-right-24: API Documentation](api/index.md)
-
--   :material-chart-bar:{ .lg .middle } **Scorecard**
-
-    ---
-
-    Explore 10 indicators across 194 countries
-
-    [:octicons-arrow-right-24: Digital Rights Scorecard](scorecard/index.md)
-
--   :material-help-circle:{ .lg .middle } **Help & Support**
-
-    ---
-
-    Common questions and troubleshooting
-
-    [:octicons-arrow-right-24: FAQ](FAQ.md)
+Our established human-rights research provides the foundation. Two planned streams extend the same attention to evidence, power, and accountability.
 
 </div>
 
-## Documentation Sections
+<div class="grid cards grim-tracks" markdown>
 
-### Getting Started
-- [Installation](website/getting-started/installation.md) - Set up DigitalChild on your system
-- [Quick Start](website/getting-started/quickstart.md) - Run your first pipeline in 5 minutes
-- [First Run Errors](guides/FIRST_RUN_ERRORS.md) - Troubleshooting guide
+-   <span class="grim-track-index">01 / Active research</span>
 
-### Core Guides
-- [Runbook](guides/RUNBOOK.md) - Complete pipeline operations guide
-- [Scorecard Workflow](guides/SCORECARD_WORKFLOW.md) - Country indicator system
-- [Production Deployment](guides/PRODUCTION_DEPLOYMENT.md) - Deploy the API in production
+    ### LittleRainbowRights
 
-### API Documentation
-- [API Overview](api/index.md) - REST API features and quickstart
-- [API Reference](api/reference.md) - All 14 endpoints with examples
-- [API Quick Reference](api/quick-reference.md) - Endpoint cheat sheet
+    Child and LGBTQ+ digital rights: source-linked scores, assessments, and methods across 194 countries.
 
-### Scorecard
-- [Scorecard Overview](scorecard/index.md) - What it tracks and why
-- [Design & Methodology](scorecard/design.md) - How indicators are defined
-- [Data Access](scorecard/data-access.md) - API, CSV, and file access
-- [Visualization](scorecard/visualization.md) - Interactive map, indicator & regional charts
-- [Data Explorer](scorecard/explorer.md) - Filter, search, sort & compare countries
+    [Explore the research →](website/projects/littlerainbowrights/index.md)
 
-### Transparency Watch
-- [Source Transparency Watch](transparency-watch/index.md) - When peer organisations adopt open-data transparency
+-   <span class="grim-track-index">02 / Published precursor</span>
 
-### Standards & Specifications
-- [Metadata Schema](standards/METADATA_SCHEMA.md) - Document metadata structure
-- [Tags Config Format](standards/TAGS_CONFIG_FORMAT.md) - Tagging system format
-- [Scraper Structure](standards/SCRAPER_STRUCTURE.md) - How to build scrapers
-- [File Naming Standards](standards/FILE_NAMING_STANDARDS.md) - Naming conventions
+    ### SGBV–UPR
 
-### Technical Architecture
-- [Architecture](ARCHITECTURE.md) - System design overview
-- [Roadmap](ROADMAP.md) - Development phases and progress
+    Sexual and gender-based violence research using Universal Periodic Review recommendations, beginning with SADC member states.
 
-### Project Information
-- [FAQ](FAQ.md) - Frequently asked questions
-- [Contributing](CONTRIBUTING.md) - How to contribute
-- [License](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE) - MIT License
+    [Read the published work →](website/projects/sgbv/index.md)
 
-## Project Structure
+-   <span class="grim-track-index">03 / Planned · Canada first</span>
 
-```
-DigitalChild/
-├── pipeline_runner.py      # Main entry point
-├── scrapers/               # Web scrapers for document sources
-├── processors/             # Text extraction and tagging
-├── api/                    # Flask REST API (Phase 4)
-├── data/
-│   ├── raw/               # Downloaded documents
-│   ├── processed/         # Extracted text
-│   ├── metadata/          # Document metadata with tags
-│   └── exports/           # CSV exports for analysis
-├── configs/               # Tag configurations and URL dictionaries
-├── docs/                  # This documentation
-└── tests/                 # Test suite (347 tests)
-```
+    ### Canadian Projects & Environmental Oversight
 
-## Key Features
+    Tracking Build Canada and other major projects: environmental decisions, Indigenous rights, climate and affordability claims.
 
-- **Document Pipeline:** Scrape → Process → Tag → Enrich → Export
-- **REST API:** 14 production endpoints with authentication and rate limiting
-- **Scorecard System:** 10 indicators × 194 countries for digital rights analysis
-- **Flexible Tagging:** Regex-based tagging with version control
-- **Data Quality:** Automated validation of 2,543 source URLs
-- **Open Source:** MIT license for code, CC BY 4.0 for data
+    [See the upcoming plan →](website/projects/index.md#canadian-projects-environmental-oversight)
 
-## Support
+-   <span class="grim-track-index">04 / Proposed · Funding unconfirmed</span>
 
-- **Issues & Bugs:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Questions:** [FAQ](FAQ.md)
-- **Website:** [grimdata.org](https://grimdata.org)
+    ### Research Provenance & Institutional Continuity
 
-## Citation
+    Tracing contributions, methods, outputs, and research handoffs across institutions and time. A proposed Insight Grant direction.
 
-```bibtex
-@software{digitalchild2025,
-  title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
-  author = {Vollmer, S.C. and Vollmer, D.T.},
-  year = {2025},
-  version = {2.1.0},
-  doi = {10.5281/zenodo.18318098},
-  url = {https://github.com/MissCrispenCakes/DigitalChild},
-  note = {Available at https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer), 0000-0002-5035-3395 (D.T. Vollmer)}
-}
-```
+    [Read the research proposal →](website/projects/index.md#research-provenance-institutional-continuity)
 
----
+</div>
 
-**Version:** 2.1.0 (DOI: 10.5281/zenodo.18318098)
-**Last Updated:** June 2026
-**License:** MIT (code) / CC BY 4.0 (data)
+<div class="grim-platform" markdown>
+
+## The ideas have a front door. The evidence lives here
+
+Project splash sites such as [LittleRainbowRights.com](https://littlerainbowrights.com) introduce the big idea. **GRIMdata is the shared research platform**: inspect the underlying evidence, use the tools, follow the methods, and reproduce the work.
+
+[Explore data & tools](explore/index.md){ .md-button .md-button--primary }
+[Understand the methods](scorecard/design.md){ .md-button }
+[Download the scorecard](scorecard/data-access.md#published-snapshot-downloads){ .md-button }
+
+</div>
+
+<div class="grim-section-heading" markdown>
+
+## Find the right kind of documentation
+
+The documentation follows **Diátaxis**. Learning, completing a task, looking something up, and understanding a method each have their own entrance.
+
+</div>
+
+<div class="grid cards grim-doc-choices" markdown>
+
+-   ### Tutorials
+
+    Learn through a guided first run.
+
+    [Start learning →](docs/index.md#tutorials)
+
+-   ### How-to guides
+
+    Download, validate, run, or deploy.
+
+    [Complete a task →](docs/index.md#how-to-guides)
+
+-   ### Reference
+
+    Look up endpoints, schemas, and standards.
+
+    [Find a specification →](docs/index.md#reference)
+
+-   ### Explanation
+
+    Understand the choices behind the research.
+
+    [Read the reasoning →](docs/index.md#explanation)
+
+</div>
+
+<div class="grim-principles" markdown>
+
+## Evidence deserves context. People deserve choices
+
+Scores are screening signals, not a substitute for lived experience. Read the source, check its date, and distinguish missing documentation from a finding. Public browsing and filtering need no account; external interactive charts load only when you choose them.
+
+[Data handling & participation](practices/index.md) · [Research context](RESEARCH_CONTEXT.md) · [Contributing](CONTRIBUTING.md)
+
+</div>
+
+<div class="grim-legacy" markdown>
+
+<span id="digitalchild-documentation"></span>
+<span id="quick-links"></span>
+<span id="documentation-sections"></span>
+<span id="getting-started"></span>
+<span id="core-guides"></span>
+<span id="api-documentation"></span>
+<span id="scorecard"></span>
+<span id="transparency-watch"></span>
+<span id="standards-specifications"></span>
+<span id="technical-architecture"></span>
+<span id="project-information"></span>
+<span id="project-structure"></span>
+<span id="key-features"></span>
+<span id="support"></span>
+<span id="citation"></span>
+
+Looking for the previous DigitalChild documentation home? Its technical overview, project structure, support information, and software citation are [preserved in full](docs/technical-overview.md). The earlier [GRIMdata overview at /website/](website/index.md) remains available.
+
+</div>
+</div>

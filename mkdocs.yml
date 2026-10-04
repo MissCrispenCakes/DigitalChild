@@ -12,14 +12,16 @@ edit_uri: edit/basecamp/docs/
 
 # Copyright
 copyright: |
-  &copy; 2026 GRIMdata<br>
-  LittleRainbowRights: <a href="https://github.com/MissCrispenCakes/DigitalChild">DigitalChild repo</a> |
-  SGBV-UPR: <a href="https://github.com/MissCrispenCakes/HumanRights">HumanRights repo</a> (private - under construction - a broken laptop is to blame :sweat_smile:)
+  &copy; 2026 GRIMdata · Independent open research<br>
+  <a href="/practices/">Site practices &amp; participation</a> ·
+  <a href="https://github.com/MissCrispenCakes/DigitalChild">Source &amp; contributions</a>
 
 # Internal/process docs kept in git for the working trail, but NOT published to the
 # live site (they were reachable by URL/search even though absent from the nav).
 # gitignore-style, relative to docs/. See docs/planning/SITE_IA_SEE_VS_BUILD_PLAN.md.
 exclude_docs: |
+  planning/REVAMP_VERIFICATION.md
+  README.md
   API_WEEK1_SUMMARY.md
   API_WEEK2_SUMMARY.md
   API_DEPENDENCY_UPDATE.md
@@ -53,9 +55,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
+  font: false
   features:
     - navigation.instant
     # Disabled: Too aggressive, causes slowness
@@ -83,7 +83,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
-    logo: material/book-open-page-variant
+    logo: material/chart-timeline-variant
 
 # Plugins
 plugins:
@@ -112,7 +112,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_generator: !!python/name:pymdownx.emoji.to_alt
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -159,73 +159,67 @@ extra:
 # Plus Projects (project landing pages) and About. Pages are regrouped only —
 # file paths (and therefore URLs) are unchanged.
 nav:
-  - GRIMdata Home: website/index.md
-
-  # ── Explore: the live product, see the data ──────────────────────────────
+  - Home: index.md
   - Explore:
+      - Explore Evidence: explore/index.md
       - Scorecard Overview: scorecard/index.md
-      - Scorecard — Map & Charts: scorecard/visualization.md
-      - Data Explorer: scorecard/explorer.md
-      - Transparency Watch: transparency-watch/index.md
-
-  # ── Tutorials: learning-oriented, start here ─────────────────────────────
-  - Tutorials:
-      - Start Here: website/getting-started/start-here.md
-      - Install & First Run: website/getting-started/quickstart.md
-      - Installation (detailed): website/getting-started/installation.md
-      - API Quick Start: api/quickstart.md
-
-  # ── How-to guides: task-oriented ─────────────────────────────────────────
-  - How-to guides:
-      - Get the Data: scorecard/data-access.md
-      - Run the Pipeline (Runbook): guides/RUNBOOK.md
-      - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
-      - Use the Validators: guides/VALIDATORS_USAGE.md
-      - Deploy to Production: guides/PRODUCTION_DEPLOYMENT.md
-      - Troubleshoot First-Run Errors: guides/FIRST_RUN_ERRORS.md
-
-  # ── Reference: information-oriented, look it up ───────────────────────────
-  - Reference:
-      - API:
-          - Overview: api/index.md
-          - Endpoint Reference: api/reference.md
-          - Quick Reference (cheat sheet): api/quick-reference.md
-          - Implementation History: api/IMPLEMENTATION_HISTORY.md
-      - Glossary: GLOSSARY.md
-      - Standards:
-          - Metadata Schema: standards/METADATA_SCHEMA.md
-          - File Naming: standards/FILE_NAMING_STANDARDS.md
-          - Document Types: standards/DOC_TYPE_STANDARDS.md
-          - Scraper Structure: standards/SCRAPER_STRUCTURE.md
-          - Tags Config: standards/TAGS_CONFIG_FORMAT.md
-          - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
-          - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
-          - Filters Config: standards/FILTERS_CONFIG_FORMAT.md
-          - ISO Mapping: standards/ISO_MAPPING.md
-      - Notes:
-          - Directory Structure: notes/DIRECTORY_STRUCTURE.md
-          - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
-          - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
-          - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
-      - Docs Index: DOCS_INDEX.md
-
-  # ── Explanation: understanding-oriented, why it works this way ────────────
-  - Explanation:
-      - Scorecard Design & Methodology: scorecard/design.md
-      - Architecture: ARCHITECTURE.md
-      - Pipeline Flow: notes/PIPELINE_FLOW.md
-      - Pipeline Logging: notes/PIPELINE_LOGGING.md
-      - Data Governance: DATA_GOVERNANCE.md
-      - Research Context: RESEARCH_CONTEXT.md
-
-  # ── Projects: project landing pages ──────────────────────────────────────
+      - Map & Charts: scorecard/visualization.md
+      - Country Explorer: scorecard/explorer.md
+      - Source Transparency Watch: transparency-watch/index.md
   - Projects:
-      - Overview: website/projects/index.md
+      - Research Tracks: projects/index.md
+      - Detailed Overview & Plans: website/projects/index.md
       - LittleRainbowRights: website/projects/littlerainbowrights/index.md
       - SGBV-UPR: website/projects/sgbv/index.md
-
-  # ── About: project meta, contributing, planning trail ────────────────────
+  - Documentation:
+      - Documentation Home: docs/index.md
+      - Start Here: website/getting-started/start-here.md
+      - Tutorials:
+          - First Country Assessment: tutorials/first-country.md
+          - Install & First Run: website/getting-started/quickstart.md
+      - How-to guides:
+          - Installation: website/getting-started/installation.md
+          - Self-hosted API Quick Start: api/quickstart.md
+          - Get the Data: scorecard/data-access.md
+          - Run the Pipeline (Runbook): guides/RUNBOOK.md
+          - Scorecard Workflow: guides/SCORECARD_WORKFLOW.md
+          - Use the Validators: guides/VALIDATORS_USAGE.md
+          - Deploy to Production: guides/PRODUCTION_DEPLOYMENT.md
+          - Troubleshoot First-Run Errors: guides/FIRST_RUN_ERRORS.md
+      - Reference:
+          - API:
+              - Overview: api/index.md
+              - Endpoint Reference: api/reference.md
+              - Quick Reference (cheat sheet): api/quick-reference.md
+          - Pipeline Logging: notes/PIPELINE_LOGGING.md
+          - Glossary: GLOSSARY.md
+          - Standards:
+              - Metadata Schema: standards/METADATA_SCHEMA.md
+              - File Naming: standards/FILE_NAMING_STANDARDS.md
+              - Document Types: standards/DOC_TYPE_STANDARDS.md
+              - Scraper Structure: standards/SCRAPER_STRUCTURE.md
+              - Tags Config: standards/TAGS_CONFIG_FORMAT.md
+              - Recommendations Config: standards/RECOMMENDATIONS_CONFIG_FORMAT.md
+              - Comparison Config: standards/COMPARISON_CONFIG_FORMAT.md
+              - Filters Config: standards/FILTERS_CONFIG_FORMAT.md
+              - ISO Mapping: standards/ISO_MAPPING.md
+          - Notes:
+              - Directory Structure: notes/DIRECTORY_STRUCTURE.md
+              - Tags Main Notes: notes/TAGS_MAIN_NOTES.md
+              - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
+              - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
+          - Docs Index: DOCS_INDEX.md
+      - Explanation:
+          - Scorecard Design & Methodology: scorecard/design.md
+          - Architecture: ARCHITECTURE.md
+          - Pipeline Flow: notes/PIPELINE_FLOW.md
+          - Site Practices & Participation: practices/index.md
+          - Data Governance: DATA_GOVERNANCE.md
+          - Research Context: RESEARCH_CONTEXT.md
+      - Technical Overview & Citation: docs/technical-overview.md
   - About:
+      - Development History: api/IMPLEMENTATION_HISTORY.md
+      - URL Migration Map: planning/URL_MIGRATION_MAP.md
       - Roadmap: ROADMAP.md
       - Contributing: CONTRIBUTING.md
       - FAQ: FAQ.md
@@ -239,12 +233,12 @@ nav:
 
 # Custom CSS
 extra_css:
-  - website/stylesheets/extra.css?v=20261002-nav2
+  - website/stylesheets/extra.css?v=20261004-revamp1
+  - website/stylesheets/platform.css?v=20261004-revamp1
 
 # Custom JavaScript
 extra_javascript:
-  - website/javascripts/extra.js?v=20261002-nav2
-  - website/javascripts/scorecard.js
-  - website/javascripts/transparency.js
-  # Plotly is NOT loaded globally. scorecard.js loads it from CDN on demand,
-  # only when scorecard chart containers are present (saves ~2.3MB elsewhere).
+  - website/javascripts/extra.js?v=20261004-revamp1
+  - website/javascripts/scorecard.js?v=20261004-revamp1
+  - website/javascripts/transparency.js?v=20261004-revamp1
+  # Plotly is requested only after explicit page-level chart loading.

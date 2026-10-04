@@ -13,8 +13,8 @@ Filter, search, sort, and compare the Digital Rights Scorecard across 194 countr
     <label>Indicator
       <select id="sc-f-indicator"><option value="all">All (use Protection Score)</option></select>
     </label>
-    <label>Min score
-      <input type="range" id="sc-f-minscore" min="0" max="2" step="1" value="0">
+    <label><span id="sc-f-minscore-label">Minimum Protection Score (0–20)</span>
+      <input type="range" id="sc-f-minscore" min="0" max="20" step="1" value="0">
       <span id="sc-f-minscore-val">0</span>
     </label>
     <label>Search country
@@ -26,30 +26,58 @@ Filter, search, sort, and compare the Digital Rights Scorecard across 194 countr
     <button type="button" id="sc-f-reset" class="md-button">Reset</button>
   </div>
 
-  <p id="sc-count" class="sc-count"></p>
+  <p id="sc-count" class="sc-count" role="status" aria-live="polite"></p>
   <div id="sc-table"></div>
   <div id="sc-detail" class="sc-detail"></div>
 </div>
 
 !!! info "Reading the table"
     Each indicator column (`AI`, `DP`, `ChildData`, …) shows the 0–2 score, colour-coded
-    **<span style="color:#2e8b57">2 = best</span> / <span style="color:#e8a33d">1 = partial</span> / <span style="color:#d64545">0 = worst</span>** (hover a column header for its full name). **Prot.** is the Protection Score (0–20); **Risk** is the Risk Index (0–100). **Doc** is data completeness — how many of the 10 indicators carry a documented justification (rows below 10/10 are flagged). **Click any row** to open a country detail panel with each indicator's assessment and sources; **click a column header** to sort. The "Min score" slider filters on the selected indicator, or on Protection Score when "All" is selected.
+    **2 = best / 1 = partial / 0 = worst** (see the indicator glossary below). **Prot.** is the Protection Score (0–20); **Risk** is the Risk Index (0–100). **Doc** is data completeness — how many of the 10 indicators carry a documented justification (rows below 10/10 are flagged). **Activate a country button** to open a country detail panel with each indicator's assessment and sources; **activate a column-header button** to sort. The "Min score" slider filters on the selected indicator, or on Protection Score when "All" is selected.
+
+## Indicator glossary
+
+Column abbreviations refer to the following measures:
+
+- **AI** — AI Policy Status
+- **DP** — Data Protection Law
+- **ChildData** — Children's Data Safeguards
+- **SOGI** — SOGI Sensitive Data
+- **DPA** — DPA Independence
+- **DPIA** — DPIA for High-Risk AI
+- **LGBTQ** — LGBTQ+ Legal Status
+- **Promo** — Anti-LGBT Propaganda Offences
+- **COP** — Child Online Protection
+- **SIM** — SIM–Biometric ID Linkage
 
 ## Compare countries
 
-Select up to five countries to overlay their indicator profiles (0–2 on each of the 10 indicators).
+Add up to five countries to compare their indicator profiles (0–2 on each of ten indicators). Missing values remain gaps. Enable the optional charts when you are ready.
+
+<div id="sc-chart-permission" class="sc-chart-permission">
+  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. That provider receives normal request information. Your table filters run locally. This choice applies to this page only.</p>
+  <button type="button" id="sc-load-charts" class="md-button md-button--primary">Load interactive charts</button>
+  <a href="../../practices/">Data handling details</a>
+  <p id="sc-chart-status" role="status" aria-live="polite">Charts are off. Use the country table or downloads without them.</p>
+</div>
+
 
 <div class="sc-explorer">
   <div class="sc-controls">
-    <label for="sc-compare">Countries (Ctrl/⌘-click for multiple):</label>
-    <select id="sc-compare" multiple size="6" style="min-width:14rem"></select>
+    <label for="sc-compare">Choose a country</label>
+    <select id="sc-compare"><option value="">Select a country</option></select>
+    <button type="button" id="sc-compare-add" class="md-button">Add to comparison</button>
   </div>
+  <div id="sc-selected" aria-label="Selected countries"></div>
+  <p id="sc-compare-status" role="status" aria-live="polite"></p>
   <div id="sc-radar" class="sc-chart"></div>
 </div>
 
 ## Other ways to access the data
 
 The explorer above reads the same underlying scored dataset you can pull programmatically.
+
+[Download this snapshot as JSON or CSV](data-access.md#published-snapshot-downloads){ .md-button }
 
 === "CSV export"
 

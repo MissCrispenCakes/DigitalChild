@@ -37,9 +37,9 @@
       esc(TYPE_LABEL[type] || type) + "</span>";
   }
 
-  function link(url) {
+  function link(url, label) {
     if (!url) return "";
-    return ' <a class="tw-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">↗</a>';
+    return ' <a class="tw-link" href="' + esc(url) + '" aria-label="' + esc(label || "Read source evidence") + '">↗</a>';
   }
 
   function getState() {
@@ -59,6 +59,8 @@
     if (!host || !_data) return;
     var st = getState();
     var events = _data.timeline.filter(function (e) { return passes(e, st); });
+    var count = el("tw-count");
+    if (count) count.textContent = events.length + " of " + _data.timeline.length + " signals";
     if (!events.length) {
       host.innerHTML = '<p class="sc-hint">No signals match the current filter.</p>';
       return;
@@ -70,7 +72,7 @@
         '<span class="tw-src">' + esc(e.source) + "</span>" +
         '<span class="tw-evlabel">' + esc(e.label) +
         (e.topical ? ' <span class="tw-star" title="On-topic for this source">★</span>' : "") +
-        "</span>" + link(e.url) + "</div>";
+        "</span>" + link(e.url, "Read evidence: " + e.label) + "</div>";
     }).join("");
     host.innerHTML = html;
     var c = el("tw-count");
@@ -96,12 +98,12 @@
           '<span class="tw-seen">since <strong>' + esc(sig.display_date) + "</strong>" +
           (sig.count > 1 ? ' · ' + sig.count + " captures" : "") + "</span>" +
           (sig.topical ? ' <span class="tw-star" title="On-topic">★</span>' : "") +
-          link(sig.display_url) + "</li>";
+          link(sig.display_url, "Read evidence: " + sig.label) + "</li>";
       }).join("") : empty;
       var span = (s.first_signal || "?") + " – " + (s.last_signal || "?");
       return '<div class="tw-card">' +
         '<div class="tw-card-head"><h3 class="no-rainbow">' + esc(s.name) + "</h3>" +
-        '<a class="tw-link" href="' + esc(s.homepage) + '" target="_blank" rel="noopener noreferrer">site ↗</a></div>' +
+        '<a class="tw-link" href="' + esc(s.homepage) + '" aria-label="Visit ' + esc(s.name) + ' website">site ↗</a></div>' +
         '<p class="tw-span">signals observed ' + esc(span) + "</p>" +
         '<ul class="tw-siglist">' + rows + "</ul></div>";
     }).join("");

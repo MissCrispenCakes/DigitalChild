@@ -39,7 +39,7 @@ See [Research Context](RESEARCH_CONTEXT.md) for detailed methodology including m
 
 ## 📜 Data Collection Principles
 
-### 1. Public Domain Documents Only
+### 1. Publicly Available Documents {#1-public-domain-documents-only}
 
 **What we collect:**
 
@@ -49,7 +49,7 @@ See [Research Context](RESEARCH_CONTEXT.md) for detailed methodology including m
 
 **What we DO NOT collect:**
 
-- Personal data from individuals
+- Participant submissions through this website
 - Leaked or confidential documents
 - Data obtained without permission
 - Information behind paywalls or authentication
@@ -80,19 +80,11 @@ Scrapers designed to:
 
 ### Personal Information
 
-**DigitalChild does NOT:**
+The public website provides static research pages and browser-based tools. Its actual behaviour, optional external chart requests, local theme preferences, and the limits of this review are described in [Site practices & participation](practices/index.md).
 
-- Collect user data from website visitors (future website will be static)
-- Track individual researchers using the tool
-- Store login credentials or authentication tokens
-- Share data with third parties
+Public availability does not mean a document is in the public domain or safe to republish without assessment. Original licensing, privacy risks, and source terms must be considered. The pipeline processes downloaded public documents; researchers must assess whether retaining identifiers is necessary and appropriate rather than assuming publication removes all privacy interests.
 
-**If documents contain personal information:**
-
-- We process publicly available documents as-is
-- We do not redact names from public reports (they're already public)
-- We do not extract personal information as separate data points
-- We comply with original publisher's privacy practices
+The separately self-hosted API can use authentication and request logs. Operators are responsible for its configuration and retention policies; the static site's browsing practices do not describe every private API deployment.
 
 ### Data Storage
 
@@ -190,7 +182,7 @@ Researchers can verify and replicate findings:
 
 Scorecard system includes:
 
-- 2,543 source URLs (as of January 2026)
+- Historical source inventories; the visualization snapshot records its own generation and source-verification dates
 - Automated validation (`scorecard_validator.py`)
 - Broken link detection
 - Change monitoring (`scorecard_diff.py`)
@@ -261,8 +253,8 @@ Future expansion may include:
 
 **No authentication required:**
 
-- Tool is CLI-based, no login system
-- Future website will be static (no user accounts)
+- Public static website browsing and its local exploration tools require no account
+- Local CLI use is separate from a self-hosted API, which can enforce authentication
 
 ### Security Measures
 
@@ -297,17 +289,17 @@ Data persists indefinitely on user's machine unless manually deleted.
 - Keep metadata.json and exports for reproducibility
 - Archive complete datasets before major version changes
 
-### Right to be Forgotten
+### Corrections and Removal Requests {#right-to-be-forgotten}
 
 If a document publisher requests removal:
 
 1. Verify authenticity of request
 1. Remove from future scrapes
-1. Delete from existing datasets
+1. Assess removal or correction in future published datasets
 1. Document removal in changelog
-1. Notify users via GitHub issue
+1. Publish a non-sensitive change note where appropriate
 
-**Note:** We cannot control what users have already downloaded.
+**Limits:** We cannot guarantee removal from versioned history, archives, citations, or copies already downloaded. Do not disclose a sensitive removal request in a public issue.
 
 ## 🧪 Research Ethics
 
@@ -389,7 +381,7 @@ When reporting data quality issues:
 
 **Documents:**
 
-- Most are public domain (government/UN publications)
+- Third-party documents retain their original publisher terms; public availability does not establish public-domain status
 - Some may have copyright restrictions
 - Check original source before redistribution
 
@@ -405,28 +397,9 @@ When reporting data quality issues:
 
 ### Data Protection Laws
 
-**Canada (PIPEDA & Provincial Laws):**
+Processing public documents can still create privacy and data-protection obligations. The website audit does not establish legal compliance for the research pipeline, original sources, hosting providers, or self-hosted deployments. Operators should assess applicable requirements, institutional policies, source terms, and sensitive categories for their use case.
 
-- No personal data collection from users
-- Public documents processed as already published
-- Compliance with federal PIPEDA and provincial privacy laws (Quebec Law 25, BC PIPA, AB PIPA)
-- Users responsible for their own institutional compliance
-
-**GDPR (European Union):**
-
-- No personal data collection from users
-- Public documents processed as published
-- Users responsible for their own compliance
-
-**CCPA (California):**
-
-- No sale of personal information
-- No tracking of website visitors
-
-**Other jurisdictions:**
-
-- Follow local data protection laws
-- Seek legal advice if processing sensitive categories
+See [Site practices & participation](practices/index.md) for the configured browsing behaviour and the limits of the audit.
 
 ### Freedom of Information
 
@@ -436,7 +409,7 @@ Documents often obtained via:
 - UN databases (publicly accessible)
 - NGO publications (openly shared)
 
-This constitutes legitimate research use of public information.
+Public accessibility alone does not establish permission for every research use or republication.
 
 ## 🔄 Updates & Versioning
 
@@ -477,11 +450,7 @@ Report via [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issu
 
 ### Ethical Concerns
 
-For sensitive matters not suitable for public issues:
-
-- Use [GitHub Security Advisories](https://github.com/MissCrispenCakes/DigitalChild/security) for vulnerability reporting
-- Use [GitHub Discussions (Security category)](https://github.com/MissCrispenCakes/DigitalChild/discussions/categories/security) for sensitive data governance concerns
-- Prefix discussion title with "[DATA GOVERNANCE]" for easy identification
+GitHub issues and discussions are public-facing channels. Do not post personal or sensitive details there. A public governance concern can be raised without identifying affected people. Use GitHub's private vulnerability-reporting feature only if the repository explicitly offers it; its availability was not verified in this website audit. No confidential governance intake is claimed through this website.
 
 ### Collaboration
 
@@ -507,4 +476,4 @@ This project exists to shine light on digital rights protections (or lack thereo
 
 ______________________________________________________________________
 
-**Last updated:** January 2026
+**Last reviewed:** 3 October 2026 (site practices and participation)

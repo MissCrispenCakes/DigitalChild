@@ -8,7 +8,7 @@
 
 The GRIMdata REST API provides programmatic access to the complete LittleRainbowRights dataset, including human rights documents, the Digital Rights Scorecard, tags analysis, and timeline data.
 
-**API Base URL:** `http://localhost:5000/api` (development) or `https://grimdata.org/api` (production)
+**Self-hosted API base URL:** `http://localhost:5000/api` for a local deployment. For production, use the hostname of your own deployed API. The `/api/` pages on GRIMdata are documentation, not a public hosted endpoint.
 
 ## Why Use the API?
 

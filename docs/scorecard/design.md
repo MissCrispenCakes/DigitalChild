@@ -272,7 +272,7 @@ Detects:
 
 ### 1. Point-in-Time Data
 
-**Limitation:** Reflects policy status as of January 2026. Laws change frequently.
+**Limitation:** The published visualization snapshot was generated 26 June 2026 and carries a 9 September 2025 source-verification stamp. These are not guarantees of current policy status. Laws change frequently.
 
 **Mitigation:**
 - Quarterly manual reviews

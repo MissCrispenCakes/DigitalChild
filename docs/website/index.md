@@ -4,6 +4,11 @@ description: GRIMdata's active human-rights research and upcoming Canadian proje
 
 # GRIMdata
 
+[← Back to GRIMdata Home](../index.md){ .md-button .md-button--primary }
+
+!!! info "The umbrella home is now at grimdata.org"
+    [Visit the new GRIMdata home](../index.md) for the main introduction. This overview remains available so earlier links, citations, and section anchors keep working.
+
 ## Global Rights Index Monitoring
 
 **GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries. Upcoming streams extend this work to Canadian project and environmental oversight, and research provenance and institutional continuity.
@@ -14,17 +19,17 @@ description: GRIMdata's active human-rights research and upcoming Canadian proje
 
 <div class="grid cards grim-projects" markdown>
 
--   :rainbow:{ .lg .middle } __LittleRainbowRights__
+-   :material-chart-timeline-variant:{ .lg .middle } __LittleRainbowRights__
 
     ---
 
     **Status:** Active | **Scope:** Global (194 countries)
 
-    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features an open-source pipeline, validated data sources, an **interactive scorecard** (choropleth map, indicator & regional charts, plus a filter/search/compare [data explorer](../scorecard/explorer.md)), a REST API, and a **[Source Transparency Watch](../transparency-watch/index.md)** tracking peer-organisation open-data adoption.
+    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features an open-source pipeline, source-linked research data, an **interactive scorecard** (choropleth map, indicator & regional charts, plus a filter/search/compare [data explorer](../scorecard/explorer.md)), a self-hosted REST API, and a **[Source Transparency Watch](../transparency-watch/index.md)** tracking peer-organisation open-data adoption.
 
     **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
 
-    **Published:** ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)
+    **Published:** [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
 
     [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318098)
 
@@ -109,7 +114,7 @@ ______________________________________________________________________
     curl http://localhost:5000/api/documents
     ```
 
-    [:octicons-arrow-right-24: API Docs](../api/){ .md-button }
+    [:octicons-arrow-right-24: API Docs](../api/index.md){ .md-button }
 
 -   :material-download:{ .lg .middle } **Install Pipeline**
 
@@ -135,7 +140,7 @@ ______________________________________________________________________
     - Document metadata
     - Source validation reports
 
-    [:octicons-arrow-right-24: View Scorecard](../scorecard/){ .md-button }
+    [:octicons-arrow-right-24: View Scorecard](../scorecard/index.md){ .md-button }
 
 -   :material-book-open:{ .lg .middle } **Read Research**
 
@@ -156,7 +161,7 @@ ______________________________________________________________________
 
 **SGBV-UPR** (2019-2022) demonstrated the feasibility of automated analysis of UPR recommendations at regional scale, focusing on SADC member states and SGBV themes. This work was published in academic literature and validated the core methodology.
 
-**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with 2,543 validated sources. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
+**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with a published source-linked dataset. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
 
 ## What GRIMdata Provides
 
@@ -211,12 +216,12 @@ The **LittleRainbowRights** project is ready for use:
 
 1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
 1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
-1. **[Access via API](../api/)** - REST API with 14 endpoints (Production-ready with authentication!)
-1. **[View Scorecard](../scorecard/)** - Browse 194-country dataset
+1. **[Access via API](../api/index.md)** - self-hosted API tooling with 14 endpoints
+1. **[View Scorecard](../scorecard/index.md)** - Browse 194-country dataset
 1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
 
 [Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
-[API Documentation](../api/){ .md-button }
+[API Documentation](../api/index.md){ .md-button }
 
 ## Who it's for
 
@@ -246,7 +251,7 @@ This dual licensing ensures maximum utility while giving credit to the research 
 
 GRIMdata is maintained by an independent researcher alongside other work. The established and planned projects represent independent research initiatives aimed at making human rights data more accessible and analysis more transparent.
 
-!!! warning "Maintained by PhD Student"
+!!! note "Independent maintenance"
     This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
 
 ## Contact & Contributing

@@ -2,13 +2,10 @@
 
 **New to GRIMdata?** This page points you to the right place based on what you want to do.
 
-GRIMdata is an open research initiative tracking digital rights and protections for vulnerable
-populations. The **live, interactive scorecard** — map, country comparison, and charts — is the
-streamlined product at **[littlerainbowrights.com ↗](https://littlerainbowrights.com)**. Come
-here when you want the full data, methods, API, and documentation behind it.
+GRIMdata houses the data, methods, tools, and documentation for its research tracks. [LittleRainbowRights.com](https://littlerainbowrights.com) is the public introduction to that project's big idea; the interactive scorecard and underlying evidence are here on GRIMdata.
 
 !!! tip "In a hurry?"
-    - **See the data** → [Scorecard map & charts](../../scorecard/visualization.md) · [Data Explorer](../../scorecard/explorer.md) · [live product ↗](https://littlerainbowrights.com)
+    - **See the data** → [Scorecard map & charts](../../scorecard/visualization.md) · [Data Explorer](../../scorecard/explorer.md) · [project introduction](https://littlerainbowrights.com)
     - **Get the data** → [Data Access (API + CSV)](../../scorecard/data-access.md)
     - **Understand it** → [Design & Methodology](../../scorecard/design.md)
     - **Run / build it** → [Install the pipeline](installation.md) · [API Quick Start](../../api/quickstart.md)
@@ -34,7 +31,7 @@ You probably want evidence for campaigns and a clear picture of gaps.
 - [Scorecard map & charts](../../scorecard/visualization.md) — protections and gaps at a glance
 - [LittleRainbowRights project](../projects/littlerainbowrights/index.md) — regional analysis and findings
 - [Source Transparency Watch](../../transparency-watch/index.md) — peer-organisation open-data tracking
-- [the live product ↗](https://littlerainbowrights.com)
+- [the project introduction](https://littlerainbowrights.com)
 
 **Always pair the scores** with qualitative research, local civil-society perspectives,
 enforcement data, and community testimony. The scorecard shows *where* to look — not lived experience.

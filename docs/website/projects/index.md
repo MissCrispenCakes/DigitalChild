@@ -1,6 +1,6 @@
 # GRIMdata Research Projects
 
-[:octicons-home-24: Back to GRIMdata Home](../index.md){ .md-button }
+[:octicons-home-24: Back to GRIMdata Home](../../index.md){ .md-button }
 
 **Established human-rights research and upcoming environmental oversight and research-continuity tracks**
 
@@ -10,26 +10,26 @@ ______________________________________________________________________
 
 <div class="grid cards grim-projects" markdown>
 
--   :rainbow:{ .lg .middle } __LittleRainbowRights__
+-   :material-chart-timeline-variant:{ .lg .middle } __LittleRainbowRights__
 
     ---
 
     **Status:** Active | **Scope:** Global (194 countries)
 
-    Child and LGBTQ+ digital rights research tracking 10 indicators across all countries. Features production-ready REST API with 14 endpoints, comprehensive scorecard, and 2,543 validated sources.
+    Child and LGBTQ+ digital rights research tracking 10 indicators across all countries. Includes a self-hosted API with 14 endpoints, a scorecard, and source-linked country assessments.
 
     **Key Features:**
 
     - 10 digital rights indicators
     - 194 countries tracked
-    - 2,543 validated source URLs
+    - Source-linked assessments
     - 14 REST API endpoints
     - Open-source Python pipeline
 
-    **Published:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18318098.svg)](https://doi.org/10.5281/zenodo.18318098)
+    **Published:** [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
 
     [:octicons-arrow-right-24: Explore Project](littlerainbowrights/index.md){ .md-button .md-button--primary }
-    [:octicons-database-24: View Scorecard](../../scorecard/){ .md-button }
+    [:octicons-database-24: View Scorecard](../../scorecard/index.md){ .md-button }
 
 -   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
 
@@ -84,6 +84,8 @@ ______________________________________________________________________
 
 **Coming soon · Canada first**
 
+EthicalCarbon is a separate resident-led community project group. This national GRIMdata research stream has its own scope and identity.
+
 This planned GRIMdata stream will track Build Canada projects and other major Canadian developments alongside the rules, evidence, and decisions shaping them. The aim is to support needed housing, renewable energy, and infrastructure while making ecological consequences, Indigenous rights, and public accountability visible.
 
 The planned work brings together:
@@ -114,7 +116,7 @@ Intended outputs include a validated methodology, an open-source workflow, resea
 
 **SGBV-UPR** (2019-2022) validated the core methodology for automated human rights document analysis at regional scale, focusing on SADC member states and SGBV themes. This foundational work was published in peer-reviewed literature.
 
-**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across 194 countries with comprehensive testing, production-ready API, and reproducible workflows.
+**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across 194 countries with comprehensive testing, self-hosted API tooling, and reproducible workflows.
 
 Both projects share the same commitment to:
 
