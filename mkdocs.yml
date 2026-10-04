@@ -85,6 +85,10 @@ theme:
     edit: material/pencil
     logo: material/chart-timeline-variant
 
+# Local SVG icons and Unicode emoji; no unsolicited emoji image requests.
+hooks:
+  - hooks/local_emoji.py
+
 # Plugins
 plugins:
   - search:
@@ -112,7 +116,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:pymdownx.emoji.to_alt
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -233,12 +237,12 @@ nav:
 
 # Custom CSS
 extra_css:
-  - website/stylesheets/extra.css?v=20261004-revamp1
-  - website/stylesheets/platform.css?v=20261004-revamp1
+  - website/stylesheets/extra.css?v=20261004-revamp2
+  - website/stylesheets/platform.css?v=20261004-revamp2
 
 # Custom JavaScript
 extra_javascript:
-  - website/javascripts/extra.js?v=20261004-revamp1
-  - website/javascripts/scorecard.js?v=20261004-revamp1
-  - website/javascripts/transparency.js?v=20261004-revamp1
+  - website/javascripts/extra.js?v=20261004-revamp2
+  - website/javascripts/scorecard.js?v=20261004-revamp2
+  - website/javascripts/transparency.js?v=20261004-revamp2
   # Plotly is requested only after explicit page-level chart loading.

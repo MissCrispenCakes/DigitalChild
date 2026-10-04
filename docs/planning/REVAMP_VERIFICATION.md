@@ -27,4 +27,22 @@ EthicalCarbon is a separate resident-led group. The Canadian oversight stream is
 
 ## Live verification
 
-To be completed after the production deployment: actual Plotly/geography rendering, browser navigation/refresh/history, documentation search, responsive layouts, theme switching, keyboard operation, and representative downloads/external links. Local preview infrastructure could not start: the supervisor's sandbox could not mount `/proc`. Focused DOM tests mock Plotly and fetch; they do not establish actual browser chart rendering.
+GitHub documentation deployment and CI both passed for the initial revamp commit. Live browser checks confirmed:
+
+- The new root, explicit documentation navigation, future-project scopes, and preserved root citation redirect.
+- Instant navigation from Home to Explorer to Maps to Watch; exactly one heading rainbow rule on research pages, matching refresh behaviour.
+- Keyboard country sorting ascending/descending, Canada filtering, detail focus, close/focus restoration, and reset.
+- Real Plotly comparison rendering; dark-theme switch; the map draws 194 country paths, indicator chart 30 bars, and regional chart five bars. Changing the map metric updates the title.
+- Watch initial 29 signals, API filter five signals, source-link labels, and refresh reset.
+- Documentation search returns the provenance track and correct deep links.
+- A downloaded live CSV matches the checked repository file byte-for-byte and contains 194 rows.
+
+The visual browser check found a low-contrast hero statistics panel and icon-only external links losing their names. A follow-up corrects the hero text colours, preserves descriptive social-link names, and uses a MkDocs hook to retain bundled SVG icons while emitting ordinary emoji as local Unicode text. No remote emoji images appear in the generated pages.
+
+## Remaining limits
+
+- Mobile grids and source-card overflow were reviewed in CSS. This browser interface provides no supported viewport/device emulation, so a physical phone layout was not exercised. Desktop and theme checks used the actual live browser.
+- Local preview infrastructure could not start because the supervisor sandbox could not mount `/proc`; live browser checks replaced that stage after the owner authorised publication.
+- The website review does not establish hosting-provider logging or retention practices.
+- The scorecard is the existing point-in-time snapshot, not a fresh policy validation. Both new research streams remain plans; no tracker database or confirmed grant is implied.
+- Generic Markdownlint still reports existing MkDocs formatting incompatibilities. The actual GitHub CI and documentation deployment passed; no unrelated repository-wide formatting overhaul was attempted.

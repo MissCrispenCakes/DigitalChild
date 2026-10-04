@@ -50,9 +50,13 @@ function markExternalLinks() {
     if (linkDomain !== currentDomain) {
       // Add external link indicator
       link.classList.add('external-link');
+      const iconOnly = !link.textContent.trim();
       // Preserve the visitor's and author's normal navigation choice.
       if (link.target === '_blank') {
         link.setAttribute('rel', 'noopener noreferrer');
+        if (iconOnly && !link.hasAttribute('aria-label')) {
+          link.setAttribute('aria-label', (link.title || linkDomain) + ' (opens a new tab)');
+        }
         if (!link.querySelector('.external-new-tab')) {
           const notice = document.createElement('span');
           notice.className = 'external-new-tab';
