@@ -23,7 +23,7 @@ The [URL migration map](URL_MIGRATION_MAP.md) records old/new destinations. A ba
 
 Removed automatic Google Fonts, Twemoji images, DOI badge requests, and the theme's GitHub repository-statistics fetch. The repository header remains a static link. Interactive charts require an explicit page-local choice to request Plotly/map assets from its provider. Table/watch filters remain browser-local against same-origin static JSON. External links retain normal navigation unless deliberately labelled as opening a new tab. Material may store appearance preferences locally. No configured analytics, account, visitor upload, or submission form was found; hosting logs and retention are not verified.
 
-EthicalCarbon is a separate resident-led group. The Canadian oversight stream is planned national research. Research provenance/institutional continuity is proposed; Insight Grant funding is explicitly unconfirmed.
+The Canadian oversight stream is planned national research. Research provenance/institutional continuity is proposed; Insight Grant funding is explicitly unconfirmed. Unrelated resident initiatives are omitted from public pages, and visitor guidance is kept distinct from internal audit notes.
 
 ## Live verification
 

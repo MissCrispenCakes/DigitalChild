@@ -84,8 +84,6 @@ ______________________________________________________________________
 
 **Coming soon · Canada first**
 
-EthicalCarbon is a separate resident-led community project group. This national GRIMdata research stream has its own scope and identity.
-
 This planned GRIMdata stream will track Build Canada projects and other major Canadian developments alongside the rules, evidence, and decisions shaping them. The aim is to support needed housing, renewable energy, and infrastructure while making ecological consequences, Indigenous rights, and public accountability visible.
 
 The planned work brings together:
@@ -96,7 +94,7 @@ The planned work brings together:
 - **Climate and affordability claims:** what proponents promise, what evidence supports those claims, and which costs or risks may be deferred.
 - **Change over time:** historical baselines, source-linked timelines, maps, and comparisons rather than isolated announcements.
 
-The intended outputs are an open, reproducible research workflow, documented sources, and public visualizations. Tracking and methods are in development; this announcement does not imply that a project database or assessment service is already available.
+The planned outputs are an open, reproducible research workflow, documented sources, and public visualizations. The tracker and methods are in development.
 
 ## Research Provenance & Institutional Continuity
 
@@ -110,7 +108,7 @@ Planned computational, qualitative, and comparative work will examine contributi
 
 Drawing on **Viability.^.**, developed through doctoral research, this track will consider how unequal institutional power and continuity practices affect the futures available to research and its contributors.
 
-Intended outputs include a validated methodology, an open-source workflow, research-continuity guidance, and practical approaches to handoff and public accountability. This is an announcement of proposed work, not a funded-project or completed-results claim.
+Planned outputs include a validated methodology, an open-source workflow, research-continuity guidance, and practical approaches to handoff and public accountability.
 
 ## Research Evolution
 

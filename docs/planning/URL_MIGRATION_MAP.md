@@ -23,7 +23,7 @@ This revamp keeps existing public file routes and adds umbrella entrances. No pr
 | New URL | Purpose |
 | --- | --- |
 | `/explore/` | Interactive data, source-watch tools, downloads, and limits |
-| `/projects/` | Concise established/planned track index; EthicalCarbon distinction |
+| `/projects/` | Concise established/planned research track index |
 | `/docs/` | Explicit Diátaxis hub: Tutorials, How-to guides, Reference, Explanation |
 | `/docs/technical-overview/` | Preserved former root technical content and software citation |
 | `/tutorials/first-country/` | Guided browser-only first assessment tutorial |
@@ -46,4 +46,4 @@ Material's instant navigation remains enabled. The rainbow-divider initializer s
 
 ## Publication boundary
 
-This change is prepared on a review branch. The owner subsequently authorised publication after successful checks without a separate offline review. The review branch is retained; production can be updated once navigation, compatibility, and build checks pass.
+The migration is live. Existing research routes remain available, and recognised legacy root fragments lead to the corresponding technical content.

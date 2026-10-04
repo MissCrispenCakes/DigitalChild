@@ -2,23 +2,23 @@
 
 [← GRIMdata Home](../index.md){ .md-button }
 
-These statements describe the site's configured behaviour and reviewed custom code. They are not a guarantee about hosting-provider logs or every external service.
+Browse the research freely, choose whether to load external charts, and see how sources and contributions are handled.
 
 ## Public browsing and understandable choices
 
-You can read the research, search documentation, filter the country table, and inspect Source Transparency Watch without a GRIMdata account. No analytics script, visitor submission form, or upload feature is configured in this site.
+You can read the research, search documentation, filter the country table, and explore Source Transparency Watch without an account. GRIMdata does not use analytics scripts or collect visitor submissions through this site.
 
 The table and watch tools fetch published JSON from this site's origin. Filtering and searching those tools happen in your browser. Documentation search uses a same-origin index and browser worker. A shared search link may contain your query in its URL; that query can be visible in browser history and to anyone you share the link with.
 
-The theme stores appearance preferences in browser local storage. Those preferences are not a research submission. Hosting providers may receive ordinary request information such as an IP address; their logging and retention practices have not been verified in this review.
+Your browser stores your appearance preferences locally. The hosting provider may receive request information such as your IP address; we have not verified its logging or retention practices.
 
 ## Optional external charts
 
 The table works without external charts. Selecting **Load interactive charts** requests Plotly from `cdn.plot.ly`; the world map also requests geographic assets from that provider. The provider receives normal request information. No country search terms or uploaded personal data are sent by GRIMdata's chart code.
 
-This choice applies only to the current page. Navigating to another chart page requires another choice. There is no stored chart-consent preference. Reloading does not automatically enable the charts. Once an external request has occurred, leaving the page cannot undo it.
+Charts stay off until you choose to load them. That choice lasts for the current page; navigating to another chart page or reloading asks you to choose again.
 
-The site uses system fonts, bundled SVG icons, browser-native emoji text, and text DOI links. The repository header is a static link and does not automatically fetch GitHub statistics. Links to publications, project splash sites, and GitHub take you to external services with their own practices. Links open normally unless explicitly labelled as opening a new tab.
+Links to publications, project sites, and GitHub take you to external services with their own privacy practices. Links open normally unless labelled as opening a new tab.
 
 ## Provenance, uncertainty, and attribution
 
@@ -28,10 +28,8 @@ Scores are screening signals. Inspect written justifications, original sources, 
 
 The [software citation](../docs/technical-overview.md#citation) and [project publications](../website/projects/index.md#publications) identify the research record. Code uses the MIT licence; the project's data and documentation use CC BY 4.0. Original third-party documents retain their own terms. See [data governance](../DATA_GOVERNANCE.md).
 
-## Contributing and future participation
+## Contributing {#contributing-and-future-participation}
 
-[GitHub issues and discussions](https://github.com/MissCrispenCakes/DigitalChild/issues) are external and may be public. Do not post personal, confidential, or sensitive information there. For a data correction, provide the country, indicator, proposed correction, and a public authoritative source; follow the [contributing guidance](../CONTRIBUTING.md).
+[Suggest a correction on GitHub](https://github.com/MissCrispenCakes/DigitalChild/issues). Include the country, indicator, proposed correction, and a public authoritative source. GitHub issues are public, so keep personal or confidential information out of your report.
 
-A contribution may enter a versioned public record and be attributed according to the project's contribution and licensing terms. Corrections or removal from future versions cannot guarantee removal from Git history, archives, citations, or copies already downloaded. Discuss attribution needs before submitting material.
-
-Planned community or participant research requires its own understandable terms for scope, recording, attribution, reuse, and withdrawal before collecting contributions. No participant recruitment or informed-consent process is claimed to be operating through this website. EthicalCarbon is a separate resident-led community group; its future participation arrangements should be described by that group.
+For code, documentation, or data contributions, read the [contributing guide](../CONTRIBUTING.md) and its licensing terms. Contributions become part of the project's public history; earlier versions and downloaded copies may remain available after a correction. Raise any attribution questions before contributing.

@@ -80,7 +80,7 @@ Scrapers designed to:
 
 ### Personal Information
 
-The public website provides static research pages and browser-based tools. Its actual behaviour, optional external chart requests, local theme preferences, and the limits of this review are described in [Site practices & participation](practices/index.md).
+The public website provides static research pages and browser-based tools. See [Site practices & participation](practices/index.md) for browsing privacy, optional charts, and contributions.
 
 Public availability does not mean a document is in the public domain or safe to republish without assessment. Original licensing, privacy risks, and source terms must be considered. The pipeline processes downloaded public documents; researchers must assess whether retaining identifiers is necessary and appropriate rather than assuming publication removes all privacy interests.
 
@@ -397,9 +397,9 @@ When reporting data quality issues:
 
 ### Data Protection Laws
 
-Processing public documents can still create privacy and data-protection obligations. The website audit does not establish legal compliance for the research pipeline, original sources, hosting providers, or self-hosted deployments. Operators should assess applicable requirements, institutional policies, source terms, and sensitive categories for their use case.
+Processing public documents can still create privacy and data-protection obligations. Researchers and deployment operators should assess applicable requirements, institutional policies, source terms, and sensitive categories for their use case.
 
-See [Site practices & participation](practices/index.md) for the configured browsing behaviour and the limits of the audit.
+See [Site practices & participation](practices/index.md) for the public site's browsing and contribution practices.
 
 ### Freedom of Information
 
@@ -450,7 +450,7 @@ Report via [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issu
 
 ### Ethical Concerns
 
-GitHub issues and discussions are public-facing channels. Do not post personal or sensitive details there. A public governance concern can be raised without identifying affected people. Use GitHub's private vulnerability-reporting feature only if the repository explicitly offers it; its availability was not verified in this website audit. No confidential governance intake is claimed through this website.
+GitHub issues are public. Describe governance concerns using public sources and omit personal or sensitive information about affected people. Do not submit confidential reports through GitHub issues.
 
 ### Collaboration
 

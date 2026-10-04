@@ -46,10 +46,8 @@ GRIMdata brings research evidence, tools, methods, and documentation together. P
 
 </div>
 
-## Community-led work has its own identity
-
-**EthicalCarbon is a distinct resident-led community project group.** GRIMdata's Canadian Projects & Environmental Oversight research stream is broader national project tracking. The planned stream does not imply that EthicalCarbon owns, operates, or endorses a national tracker.
+<span id="community-led-work-has-its-own-identity"></span>
 
 ## Research record
 
-The [established project overview](../website/projects/index.md) preserves the full planned scopes, research evolution, technical context, and publications. See also [research context](../RESEARCH_CONTEXT.md) and the [roadmap](../ROADMAP.md).
+Read the [full project descriptions and publications](../website/projects/index.md), [research context](../RESEARCH_CONTEXT.md), and [roadmap](../ROADMAP.md).
