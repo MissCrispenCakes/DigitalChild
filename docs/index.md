@@ -70,9 +70,9 @@ Our established human-rights research provides the foundation. Two planned strea
 
 <div class="grim-platform" markdown>
 
-## The ideas have a front door. The evidence lives here
+## Follow the evidence {#the-ideas-have-a-front-door-the-evidence-lives-here}
 
-Project splash sites such as [LittleRainbowRights.com](https://littlerainbowrights.com) introduce the big idea. **GRIMdata is the shared research platform**: inspect the underlying evidence, use the tools, follow the methods, and reproduce the work.
+Explore the questions behind [LittleRainbowRights](https://littlerainbowrights.com), then examine the evidence here. Compare assessments, read original sources, understand the methods, and reproduce the research.
 
 [Explore data & tools](explore/index.md){ .md-button .md-button--primary }
 [Understand the methods](scorecard/design.md){ .md-button }
@@ -188,7 +188,7 @@ Scores are screening signals, not a substitute for lived experience. Read the so
 <span id="support"></span>
 <span id="citation"></span>
 
-Looking for the previous DigitalChild documentation home? Its technical overview, project structure, support information, and software citation are [preserved in full](docs/technical-overview.md). The earlier [GRIMdata overview at /website/](website/index.md) remains available.
+Find the [technical overview and software citation](docs/technical-overview.md), or read [about GRIMdata](website/index.md).
 
 </div>
 </div>

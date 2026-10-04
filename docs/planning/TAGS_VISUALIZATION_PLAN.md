@@ -1,3 +1,8 @@
+---
+search:
+  exclude: true
+---
+
 # Tags Visualization Plan
 
 This document describes how tag data will be visualized for researchers.

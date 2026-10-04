@@ -1,3 +1,8 @@
+---
+search:
+  exclude: true
+---
+
 # Site IA Plan — Diátaxis everywhere ("See vs Build")
 
 **Date:** 2026-06-27

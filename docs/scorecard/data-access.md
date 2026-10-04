@@ -9,7 +9,7 @@ These files contain the **26 June 2026 visualization snapshot**, including score
 
 CSV text starting with spreadsheet formula characters is prefixed with an apostrophe for safe spreadsheet opening. The original JSON retains the source text unchanged. Code: MIT; project data: CC BY 4.0. Cite the [research record](../docs/technical-overview.md#citation), snapshot date, and original sources; read the [methodology](design.md) and documentation gaps before reuse.
 
-The API described below is **self-hosted tooling**. No public hosted GRIMdata API endpoint is asserted here.
+To use the API below, install and run it on your own computer or server. It reads your local research files.
 
 
 **Multiple ways to access the Digital Rights Scorecard data based on your needs**
@@ -31,7 +31,7 @@ The scorecard data is available through four access methods, each suited to diff
 
 ## Option 1: REST API (Recommended)
 
-**Best for:** Programmatic access, real-time queries, integration with other tools
+**Best for:** Programmatic queries against your local dataset and integration with other tools
 
 ### Quick Start
 
@@ -517,7 +517,7 @@ Choose the right method for your needs:
 
 | Feature | API | CSV Export | Direct File | Pipeline |
 |---------|-----|-----------|-------------|----------|
-| **Real-time data** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
+| **Data source** | Local input files | Exported snapshot | Local workbook | Pipeline inputs |
 | **Filtering** | ✅ Advanced | ⚠️ Manual | ⚠️ Manual | ⚠️ Limited |
 | **Pagination** | ✅ Yes | N/A | N/A | N/A |
 | **Requires API server** | ✅ Yes | ❌ No | ❌ No | ❌ No |
@@ -525,13 +525,13 @@ Choose the right method for your needs:
 | **Best for automation** | ✅ Excellent | ⚠️ OK | ❌ Poor | ✅ Excellent |
 | **Best for exploration** | ⚠️ OK | ✅ Excellent | ✅ Excellent | ❌ Poor |
 | **Source URLs** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Update frequency** | Real-time | On export | Manual | Auto |
+| **Update frequency** | When local inputs change | On export | When the file is updated | When the pipeline runs |
 
 ---
 
 ## Data Validation
 
-All access methods include validated data:
+Check source availability and review the underlying evidence before using an assessment. The following tools help identify broken links and changes; they do not establish whether a policy assessment is still accurate.
 
 ### Automated Validation
 

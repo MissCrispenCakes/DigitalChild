@@ -51,6 +51,6 @@ Choose by what you need to do. **Diátaxis** keeps four kinds of documentation d
 - [Data governance](../DATA_GOVERNANCE.md)
 - [Site practices, data handling, and participation](../practices/index.md)
 
-## Existing documentation and citations
+## Research record and citations {#existing-documentation-and-citations}
 
-All established reference URLs remain available. The [previous technical home](technical-overview.md) retains its research description, project structure, support links, and citation. Implementation history is available in [About](../api/IMPLEMENTATION_HISTORY.md).
+The [technical overview](technical-overview.md) describes the research pipeline and project structure, with support links and a software citation. See the [development history](../api/IMPLEMENTATION_HISTORY.md) for earlier implementation milestones.

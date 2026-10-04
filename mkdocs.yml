@@ -183,6 +183,7 @@ nav:
           - First Country Assessment: tutorials/first-country.md
           - Install & First Run: website/getting-started/quickstart.md
       - How-to guides:
+          - Assess a Source: planning/SOURCE_FEASIBILITY_CHECKLIST.md
           - Installation: website/getting-started/installation.md
           - Self-hosted API Quick Start: api/quickstart.md
           - Get the Data: scorecard/data-access.md
@@ -223,23 +224,17 @@ nav:
           - Research Context: RESEARCH_CONTEXT.md
       - Technical Overview & Citation: docs/technical-overview.md
   - About:
+      - About GRIMdata: website/index.md
       - Development History: api/IMPLEMENTATION_HISTORY.md
       - URL Migration Map: planning/URL_MIGRATION_MAP.md
       - Roadmap: ROADMAP.md
       - Contributing: CONTRIBUTING.md
       - FAQ: FAQ.md
-      - Planning:
-          - Site IA — See vs Build: planning/SITE_IA_SEE_VS_BUILD_PLAN.md
-          - Source Feasibility: planning/SOURCE_FEASIBILITY_CHECKLIST.md
-          - Tags Visualization: planning/TAGS_VISUALIZATION_PLAN.md
-      - Reviews:
-          - Scorecard Review: reviews/SCORECARD_REVIEW_SUMMARY.md
-          - Processor Tests: reviews/PROCESSOR_TEST_RUN.md
 
 # Custom CSS
 extra_css:
   - website/stylesheets/extra.css?v=20261004-revamp2
-  - website/stylesheets/platform.css?v=20261004-revamp3
+  - website/stylesheets/platform.css?v=20261004-review1
 
 # Custom JavaScript
 extra_javascript:

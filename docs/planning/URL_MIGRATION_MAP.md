@@ -5,7 +5,7 @@ This revamp keeps existing public file routes and adds umbrella entrances. No pr
 | Existing URL | Role after the revamp | Compatibility |
 | --- | --- | --- |
 | `/` | GRIMdata umbrella home: purpose, tracks, platform entrances | The old technical home is copied in full to `/docs/technical-overview/`; old root fragments redirect to the corresponding preserved section. |
-| `/website/` | Earlier GRIMdata overview | Full substantive content and heading fragments retained; prominent home button points to `/`. No automatic redirect that loses fragments. |
+| `/website/` | About GRIMdata and full research overview | The About tab opens this page. Full substantive content and heading fragments remain; the home button points to `/`. |
 | `/website/projects/` | Full project scopes and publications | Retained, including both future-project anchors; home button points to `/`. |
 | `/website/projects/littlerainbowrights/` | Digital rights research detail | Retained. Splash site is labelled as the public introduction. |
 | `/website/projects/sgbv/` | Published precursor and reconstruction context | Retained. |
@@ -17,6 +17,8 @@ This revamp keeps existing public file routes and adds umbrella entrances. No pr
 | `/api/*`, `/guides/*`, `/standards/*`, `/notes/*` | Established documentation | File routes preserved; navigation reorganised by purpose. API is accurately described as self-hosted. |
 | `/ARCHITECTURE/`, `/DATA_GOVERNANCE/`, `/RESEARCH_CONTEXT/`, `/ROADMAP/`, `/CONTRIBUTING/`, `/FAQ/`, `/GLOSSARY/`, `/DOCS_INDEX/` | Established research and technical record | Retained. |
 | `LittleRainbowRights.com` and future splash domains | Public big-idea introductions | No external domain changes or deployments in this review. GRIMdata houses the tools and evidence. |
+
+Historical planning notes and implementation test reports keep their existing URLs and content anchors, but are omitted from primary navigation and search. The source-feasibility checklist is available under How-to guides.
 
 ## New entrances
 

@@ -6,11 +6,10 @@
 
 **Foundational research demonstrating automated UPR analysis at regional scale**
 
-[:octicons-mark-github-16: GitHub Repository](https://github.com/MissCrispenCakes/HumanRights){ .md-button }
 [:material-book-open-variant: Published Paper](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
 
-!!! warning "Repository Under Construction"
-    The HumanRights repository is currently private and being retooled (Laptop problems). Check back soon for access to the updated codebase to be restored.
+!!! info "Code availability"
+    The original project code is not currently available as a public download. The published paper describes the study and its methods.
 
 ______________________________________________________________________
 
@@ -26,8 +25,7 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
 !!! info "Precursor to LittleRainbowRights"
     This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
 
-!!! note "Separate Repository (Under Construction)"
-    SGBV-UPR has its own codebase: [HumanRights repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - fixing a laptop first)*. Documentation lives here but the pipeline is maintained separately.
+SGBV-UPR uses the separate **HumanRights** codebase. The [DigitalChild pipeline](../../../docs/technical-overview.md) provides the public tools used by LittleRainbowRights.
 
 ## Project Status
 
@@ -41,7 +39,7 @@ The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analy
     - UPR Cycle 4 is currently in progress with new recommendations
     - New analytical lens available: Pandemic and forced confinement perspectives offer rich opportunities for additional data mining, examining how COVID-19 lockdowns and related policies intersected with SGBV  patterns and recommendations
     ```
-    The repository and analysis tools are ready for expansion to incorporate this new data and analytical framework.
+    An updated analysis would need to incorporate the newer recommendations and document its methods.
 
 ## Key Features
 
@@ -153,7 +151,7 @@ Interactive visualizations will include:
 Data and findings are available through:
 
 - **Journal publication** - [Vollmer & Vollmer (2022) in Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-- **GitHub repository** - [SGBV-UPR project repository](https://github.com/MissCrispenCakes/HumanRights) *(currently private - under construction - a laptop needs fixing)*
+- **Source code** — The HumanRights codebase is not currently available as a public download.
 
 ## Integration with GRIMdata
 
@@ -231,8 +229,8 @@ This project builds on and complements:
     - Visualization scripts
     ```
 
-!!! warning "Repository Under Construction"
-    **Repository:** [github.com/MissCrispenCakes/HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - laptop needs a fix)*
+!!! info "Public research access"
+    Read the [published study](https://doi.org/10.47348/SLR/2022/i1a1) for the original methodology and findings.
 
 ## Future Development
 

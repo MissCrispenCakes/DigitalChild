@@ -7,8 +7,8 @@
 
 **Analyzing digital protections for vulnerable populations through human rights document analysis**
 
-!!! example "🔌 Access via REST API"
-    **NEW:** Programmatic data access now available!
+!!! example "Use the self-hosted REST API"
+    [Install and start the API locally](../../../api/quickstart.md), then query your dataset:
 
     ```python
     import requests
@@ -309,7 +309,7 @@ This project follows strict ethical guidelines:
 ## Related Projects
 
 - **[GRIMdata](../../index.md)** - Main project hub
-- **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis ([GitHub](https://github.com/MissCrispenCakes/HumanRights) - *private, under construction - fixing the laptop that holds the originals :sweat_smile:*)
+- **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis and the published precursor study.
 - **[DigitalChild Pipeline](https://github.com/MissCrispenCakes/DigitalChild)** - Technical implementation
 
 ## Contact

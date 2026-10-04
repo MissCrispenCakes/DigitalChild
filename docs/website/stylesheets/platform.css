@@ -32,9 +32,9 @@
 .md-typeset .grid.cards > ul > li:hover { transform: none !important; box-shadow: none !important; border-color: #877cab !important; }
 .md-typeset .grid.cards > ul > li h3 { font-size: 1.15rem; line-height: 1.3; margin: .65rem 0; }
 .md-typeset .grid.cards > ul > li p { margin: .6rem 0; }
-.md-typeset .grim-tracks > ul { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-.md-typeset .grim-tracks > ul > li { display: flex !important; flex-direction: column; }
-.md-typeset .grim-tracks > ul > li p:last-child { margin-top: auto; padding-top: .4rem; }
+.md-typeset .grid.cards.grim-tracks > ul { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+.md-typeset .grid.cards.grim-tracks > ul > li { display: flex !important; flex-direction: column; }
+.md-typeset .grid.cards.grim-tracks > ul > li p:last-child { margin-top: auto; padding-top: .4rem; }
 .grim-track-index { color: var(--grim-muted); font-size: .66rem; font-weight: 700; letter-spacing: .025em; }
 .grim-home { max-width: 58rem; margin: 0 auto; }
 .grim-hero { display: grid; grid-template-columns: 1.65fr 1fr; background: #24233d; color: #f2f1fb; border-radius: .5rem; overflow: hidden; margin-top: .35rem; position: relative; }
@@ -63,9 +63,9 @@
 .grim-platform { background: var(--grim-surface); padding: 1.65rem 1.8rem; border-left: 4px solid #6f5ca1; margin: 2.2rem 0; }
 .md-typeset .grim-platform h2 { font-size: 1.4rem; margin: 0 0 .6rem; }
 .grim-platform .md-button { margin: .3rem .3rem .2rem 0; }
-.md-typeset .grim-doc-choices > ul { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: .65rem !important; }
-.md-typeset .grim-doc-choices > ul > li { padding: 1rem !important; }
-.md-typeset .grim-doc-choices > ul > li h3 { font-size: .93rem; margin-top: 0; }
+.md-typeset .grid.cards.grim-doc-choices > ul { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: .65rem !important; }
+.md-typeset .grid.cards.grim-doc-choices > ul > li { padding: 1rem !important; }
+.md-typeset .grid.cards.grim-doc-choices > ul > li h3 { font-size: .93rem; margin-top: 0; }
 .grim-doc-choices p { font-size: .73rem; }
 .grim-principles { max-width: 46rem; padding: 1.2rem 0 1rem; }
 .md-typeset .grim-principles h2 { font-size: 1.5rem; }
@@ -106,11 +106,11 @@
   .grim-snapshot-pair p { margin-bottom: .5rem; }
   .grim-section-heading { margin-top: 2rem; }
   .md-typeset .grim-section-heading h2 { font-size: 1.5rem; }
-  .md-typeset .grim-tracks > ul, .md-typeset .grim-doc-choices > ul { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .md-typeset .grid.cards.grim-tracks > ul, .md-typeset .grid.cards.grim-doc-choices > ul { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
   .grim-platform { padding: 1.3rem; }
 }
 @media (max-width: 500px) {
-  .md-typeset .grim-tracks > ul, .md-typeset .grim-doc-choices > ul { grid-template-columns: minmax(0,1fr) !important; }
+  .md-typeset .grid.cards.grim-tracks > ul, .md-typeset .grid.cards.grim-doc-choices > ul { grid-template-columns: minmax(0,1fr) !important; }
   .grim-actions { flex-direction: column; align-items: stretch; }
   .grim-actions .md-button { text-align: center; }
   .sc-detail-card { padding: 1rem; }

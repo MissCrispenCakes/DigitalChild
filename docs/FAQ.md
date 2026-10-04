@@ -10,7 +10,7 @@
 - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
 - Tracks 10 indicators across 194 countries
 2. **SGBV-UPR** - Sexual and gender-based violence analysis
-- Repository: [HumanRights](https://github.com/MissCrispenCakes/HumanRights) *(currently private - retooling in progress - a broken laptop holds the full story :sweat_smile:)*
+- Codebase: HumanRights; source code is not currently available as a public download. See the [published study and project documentation](website/projects/sgbv/index.md).
 - UPR recommendations analysis
 
 ### What is DigitalChild?

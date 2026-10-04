@@ -6,9 +6,6 @@ description: GRIMdata's active human-rights research and upcoming Canadian proje
 
 [← Back to GRIMdata Home](../index.md){ .md-button .md-button--primary }
 
-!!! info "The umbrella home is now at grimdata.org"
-    [Visit the new GRIMdata home](../index.md) for the main introduction. This overview remains available so earlier links, citations, and section anchors keep working.
-
 ## Global Rights Index Monitoring
 
 **GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries. Upcoming streams extend this work to Canadian project and environmental oversight, and research provenance and institutional continuity.

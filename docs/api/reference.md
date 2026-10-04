@@ -140,9 +140,7 @@ All CSV exports include SPDX license headers (CC-BY-4.0) for data attribution.
 
 ## Implementation status
 
-All 14 endpoints are operational. The week-by-week build trail (what was done, when) is
-preserved separately in [API Implementation History](IMPLEMENTATION_HISTORY.md) so this
-page stays a clean endpoint reference.
+The API provides 14 endpoints. See [API Implementation History](IMPLEMENTATION_HISTORY.md) for implementation milestones and earlier releases.
 
 ## Architecture
 

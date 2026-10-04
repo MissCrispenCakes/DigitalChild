@@ -1,3 +1,8 @@
+---
+search:
+  exclude: true
+---
+
 # Scorecard Implementation Review Summary
 
 **Date**: 2026-01-15\
