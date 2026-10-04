@@ -24,7 +24,7 @@ class Page(HTMLParser):
         anchor = attrs.get("id") or (attrs.get("name") if tag == "a" else None)
         if anchor:
             self.ids.add(anchor)
-            if self.in_article and not anchor.startswith("__"):
+            if self.in_article:
                 self.article_ids.add(anchor)
         target = attrs.get("href") if tag in {"a", "link"} else attrs.get("src")
         if target:

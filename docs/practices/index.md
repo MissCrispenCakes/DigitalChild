@@ -18,7 +18,7 @@ The table works without external charts. Selecting **Load interactive charts** r
 
 This choice applies only to the current page. Navigating to another chart page requires another choice. There is no stored chart-consent preference. Reloading does not automatically enable the charts. Once an external request has occurred, leaving the page cannot undo it.
 
-The site uses system fonts and text DOI links. Links to publications, project splash sites, and GitHub take you to external services with their own practices. Links open normally unless explicitly labelled as opening a new tab.
+The site uses system fonts, bundled SVG icons, browser-native emoji text, and text DOI links. The repository header is a static link and does not automatically fetch GitHub statistics. Links to publications, project splash sites, and GitHub take you to external services with their own practices. Links open normally unless explicitly labelled as opening a new tab.
 
 ## Provenance, uncertainty, and attribution
 

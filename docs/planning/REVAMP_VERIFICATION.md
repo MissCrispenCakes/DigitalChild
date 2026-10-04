@@ -6,7 +6,7 @@ Review branch: `revamp/grimdata-platform-2026-10`. Base source: `267f9c3393f7ae9
 
 The root is the umbrella home. Explore, Projects, and Documentation have separate entrances. Documentation explicitly groups Tutorials, How-to guides, Reference, and Explanation. The previous root technical home is preserved at `/docs/technical-overview/`; recognised legacy root fragments redirect to their corresponding sections. `/website/` and all other existing public routes retain their substantive content and anchors.
 
-The [URL migration map](URL_MIGRATION_MAP.md) records old/new destinations. A baseline build of the original source was compared against the new build: no public page routes or content anchors lost.
+The [URL migration map](URL_MIGRATION_MAP.md) records old/new destinations. A baseline build of the original source was compared against the new build: no public page routes or content anchors lost, including generated code-line anchors.
 
 ## Checks before publication
 
@@ -21,7 +21,7 @@ The [URL migration map](URL_MIGRATION_MAP.md) records old/new destinations. A ba
 
 ## Audited interaction changes
 
-Removed automatic Google Fonts, Twemoji images, and DOI badge requests. Interactive charts require an explicit page-local choice to request Plotly/map assets from its provider. Table/watch filters remain browser-local against same-origin static JSON. External links retain normal navigation unless deliberately labelled as opening a new tab. Material may store appearance preferences locally. No configured analytics, account, visitor upload, or submission form was found; hosting logs and retention are not verified.
+Removed automatic Google Fonts, Twemoji images, DOI badge requests, and the theme's GitHub repository-statistics fetch. The repository header remains a static link. Interactive charts require an explicit page-local choice to request Plotly/map assets from its provider. Table/watch filters remain browser-local against same-origin static JSON. External links retain normal navigation unless deliberately labelled as opening a new tab. Material may store appearance preferences locally. No configured analytics, account, visitor upload, or submission form was found; hosting logs and retention are not verified.
 
 EthicalCarbon is a separate resident-led group. The Canadian oversight stream is planned national research. Research provenance/institutional continuity is proposed; Insight Grant funding is explicitly unconfirmed.
 
@@ -37,7 +37,7 @@ GitHub documentation deployment and CI both passed for the initial revamp commit
 - Documentation search returns the provenance track and correct deep links.
 - A downloaded live CSV matches the checked repository file byte-for-byte and contains 194 rows.
 
-The visual browser check found a low-contrast hero statistics panel and icon-only external links losing their names. A follow-up corrects the hero text colours, preserves descriptive social-link names, and uses a MkDocs hook to retain bundled SVG icons while emitting ordinary emoji as local Unicode text. No remote emoji images appear in the generated pages.
+The visual browser check found a low-contrast hero statistics panel and icon-only external links losing their names. A follow-up corrects the hero text colours, preserves descriptive social-link names, and uses a MkDocs hook to retain bundled SVG icons while emitting ordinary emoji as local Unicode text. No remote emoji images appear in the generated pages. Light and dark live homepage contrast and descriptive social-link names were verified after the follow-up deployment. A final audit also removed the automatically fetched GitHub source statistics; no Mermaid diagrams are currently present, and modern browsers use their built-in ResizeObserver.
 
 ## Remaining limits
 

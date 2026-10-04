@@ -20,6 +20,7 @@ copyright: |
 # live site (they were reachable by URL/search even though absent from the nav).
 # gitignore-style, relative to docs/. See docs/planning/SITE_IA_SEE_VS_BUILD_PLAN.md.
 exclude_docs: |
+  overrides/partials/source.html
   planning/REVAMP_VERIFICATION.md
   README.md
   API_WEEK1_SUMMARY.md

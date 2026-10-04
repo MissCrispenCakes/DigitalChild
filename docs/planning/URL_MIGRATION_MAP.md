@@ -36,6 +36,8 @@ The original root fragments remain in a visible continuation section linking to 
 
 `#digitalchild-documentation`, `#quick-links`, `#documentation-sections`, `#getting-started`, `#core-guides`, `#api-documentation`, `#scorecard`, `#transparency-watch`, `#standards-specifications`, `#technical-architecture`, `#project-information`, `#project-structure`, `#key-features`, `#support`, `#citation`.
 
+Generated code-line anchors (`__span-*` and `__codelineno-*`) from the original root are also retained and redirect to the corresponding unchanged code blocks.
+
 The corresponding sections exist at `/docs/technical-overview/#<fragment>`. This preserves inbound links while making the root an umbrella home. Recognised root fragments redirect with `location.replace` to the corresponding technical-overview fragment, preserving the expected subject rather than landing on an unrelated home section. A visible continuation pointer also works without JavaScript.
 
 ## Navigation and refresh
