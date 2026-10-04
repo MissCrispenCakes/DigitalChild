@@ -122,3 +122,8 @@
 }
 
 [data-md-color-primary="indigo"] { --md-primary-fg-color: #34325f; }
+/* Icon links already include their destination and new-tab notice in aria-label. */
+.md-social__link .external-new-tab,
+.md-social__link .external-icon {
+  display: none;
+}
