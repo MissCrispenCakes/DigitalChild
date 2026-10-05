@@ -1,77 +1,70 @@
 ---
 title: Research history
-description: From early computational experiments to the SGBV–UPR study, LittleRainbowRights and future research.
+description: The SGBV–UPR study, LittleRainbowRights and the development of GRIMdata's methods.
 ---
 
 # Research history
 
 [← About GRIMdata](../website/index.md){ .md-button }
 
-I built the computational side of the SGBV–UPR inquiry with my brother, a human-rights lawyer. This is my account of how the work began, how our methods developed together, and where the research led next.
+My path into GRIMdata began with experimental computing, then a question my brother and I worked out together: how could we make human-rights documents easier to search and understand? The research grew through building, reading and following what the documents revealed.
+
+<span id="20142018-personal-explorations-in-ml-anns-and-embodied-ai"></span>
+
+Earlier experiments in machine learning, neural networks, sociophysics and embodied systems (2014–2018) formed part of the computational background to this work.
 
 ## Origins and milestones
 
 <div class="grim-timeline" markdown>
 
-### 2014–2018 · Earlier computational experiments {#20142018-personal-explorations-in-ml-anns-and-embodied-ai}
+### 2019 · SGBV–UPR inquiry {#2019-formulating-the-inquiry}
 
-I explored machine learning, artificial neural networks, Ising models and sociophysics. I also built an Arduino car that made driving decisions using proximity and button inputs and a personality model I wrote in Tcl. These experiments were part of my path into computational research, before the human-rights inquiry.
-
-### 2019 · Formulating the inquiry
-
-My brother and I began asking how computational methods might help us find and examine sexual and gender-based violence (SGBV) and related rights concerns in Universal Periodic Review (UPR) documents. We approached the question from different disciplines and worked out what each could contribute.
+The inquiry took shape around sexual and gender-based violence (SGBV) and related rights concerns in Universal Periodic Review (UPR) documents for Southern African Development Community (SADC) member states.
 
 <span id="before-the-2021-conference-a-concentrated-period-of-development"></span>
 
-### 2020 · Working with the documents {#2020-computational-exploration}
+### 2020 · Document analysis {#2020-computational-exploration}
 
-I began locating UPR sources, extracting text from inconsistent files, and developing search terms, patterns, tags and ways to rank passages. What the documents contained shaped those choices. Access was uneven, and many legal sources offered no straightforward API.
+The exploratory workflow brought together UPR source discovery, document retrieval, text extraction, search terms, tagging, frequency analysis and passage ranking. Documents were organized by country for legal examination. Inconsistent file formats and source access shaped the methods.
 
-### 2021 · Presenting and documenting the work {#2021-documenting-and-presenting-the-work}
+### 2021 · Conference presentation {#2021-documenting-and-presenting-the-work}
 
-We presented the inquiry at the International Conference on the Responsiveness of the African Human Rights System to SGBV in September 2021. I also began documenting the computational workflow in a dedicated repository so its methods and decisions could be examined and developed further.
+The research was presented at the International Conference on the Responsiveness of the African Human Rights System to SGBV in September 2021. Work also began to document the computational pipeline in a dedicated research repository.
 
-### 2022 · Law-journal publication
+### 2022 · Journal article {#2022-law-journal-publication}
 
-Our [study in *Stellenbosch Law Review*](https://doi.org/10.47348/SLR/2022/i1a1) examined SGBV and related rights concerns in UPR records for Southern African Development Community (SADC) member states. It joined computational document analysis with legal interpretation and discussed the practical difficulty of finding and working with varied, incomplete and changing source documents.
+[The study published in *Stellenbosch Law Review*](https://doi.org/10.47348/SLR/2022/i1a1) examined SGBV and related rights concerns in SADC UPR records. It combined computational document analysis with legal interpretation and discussed the practical challenges of retrieving and analysing documents whose formats, terminology and availability varied.
 
-[Read the article](https://doi.org/10.47348/SLR/2022/i1a1) · [SGBV–UPR project](../website/projects/sgbv/index.md)
+[Article and citation](../website/projects/sgbv/index.md#publications)
 
-### Subsequent work · LittleRainbowRights {#subsequent-work-littlerainbowrights}
+### 2025 · LittleRainbowRights {#subsequent-work-littlerainbowrights}
 
-[LittleRainbowRights](../website/projects/littlerainbowrights/index.md) extended the inquiry across countries and document sources, examining child and LGBTQ+ rights in relation to advanced digital technologies. The work was presented in 2025. Its public scorecard and tools make dated assessments, sources and gaps available to inspect.
+[LittleRainbowRights](../website/projects/littlerainbowrights/index.md) extended the inquiry across countries and document sources to child and LGBTQ+ rights in relation to advanced digital technologies. Its scorecard brings together dated assessments, sources and gaps for examination. The research was presented in 2025.
 
-[2025 research record](https://doi.org/10.5281/zenodo.18318098)
+[Research record](https://doi.org/10.5281/zenodo.18318098) · [Explore the scorecard](../scorecard/explorer.md)
 
-### Planned renewal · Returning to SGBV–UPR {#planned-renewal-returning-with-a-wider-approach}
+### Planned · SGBV–UPR renewal {#planned-renewal-returning-with-a-wider-approach}
 
-The next investigation aims to complete the original Cycle 3 coverage and extend Cycle 4 analysis across UPR countries. LittleRainbowRights showed what wider coverage could make possible, and how much collection, review and interpretation it requires.
+The next stage aims to complete the original Cycle 3 coverage and examine Cycle 4 across UPR countries. Wider coverage will require further collection, validation and legal interpretation.
 
 [Research directions](../research-directions/index.md)
 
 </div>
 
-## How the methods came together {#complementary-intellectual-contributions}
+## Methods and contributions {#complementary-intellectual-contributions}
 
-I chose how to retrieve documents, which language patterns to pursue, how to tag and compare passages, and what to bring forward for closer reading. I made those choices through exploration of the UPR material; they shaped what our inquiry could see.
+The computational work developed the retrieval and extraction approach, search terms, patterns, tags, comparisons and passage ranking through examination of the UPR documents. The legal work interpreted selected passages within the UPR process and in relation to specific legal texts and context. These methods developed together during the inquiry.
 
-My brother brought the legal analysis. He interpreted selected passages within the UPR process, connected them to relevant law and legal context, and examined what they meant for the questions we were asking. The computational and legal work developed in conversation, with each changing the questions we could put to the other.
+[Read the SGBV–UPR project methods](../website/projects/sgbv/index.md#methodology)
 
 <span id="the-emergence-of-the-index"></span>
 
-## Working with what was available {#documentation-under-constraint}
+## From documents to dated assessments {#documentation-under-constraint}
 
-!!! note "🍑 A question that stayed with me"
-    What useful work can a small team do with the computing power, connectivity and time it actually has?
+LittleRainbowRights expanded the number of countries and kinds of documents under examination. The index tracker grew from a need to retain a dated, source-linked account of documented conditions, including missing and uncertain information, as material changes over time. Experience of collective bargaining during three years as a public-employee union president also informed this emphasis on understanding actual conditions.
 
-Working with limited connectivity gave that question practical force. I became interested in tools that could help people save, document, compare and transmit evidence even as conditions destabilised. Edge and IoT devices were one possible way to carry some of that capacity into the field.
-
-LittleRainbowRights raised a related question: how do we preserve an account of what a situation *is*, including its sources, dates and unknowns, before deciding what ought to happen? That prompted the index tracker. My experience of collective bargaining as a public-employee union president also informed that insistence on understanding actual conditions.
-
-These concerns connect with [**Viability.^.**](https://isotopicity.com/): information can expand one person's capacity to act while exposing someone else or narrowing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension across GRIMdata's research.
+Working with uneven source access also informs a longer-term interest in documentation methods that small teams can use when connectivity and computing resources are limited. The question of what information makes possible—and whom it may expose—connects this work to [**Viability.^.**](https://isotopicity.com/) and the wider [Research Context](../RESEARCH_CONTEXT.md).
 
 ## Public research record
 
-The [2022 SGBV–UPR study](https://doi.org/10.47348/SLR/2022/i1a1) and [2025 LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) document the published work. The historical HumanRights research archive remains private.
-
-[SGBV–UPR project](../website/projects/sgbv/index.md) · [LittleRainbowRights project](../website/projects/littlerainbowrights/index.md) · [Data governance](../DATA_GOVERNANCE.md)
+[2022 SGBV–UPR article](https://doi.org/10.47348/SLR/2022/i1a1) · [2025 LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) · [Project pages](../projects/index.md)
