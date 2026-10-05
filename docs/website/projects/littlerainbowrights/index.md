@@ -1,7 +1,7 @@
 # LittleRainbowRights
 
 [🌈 Visit LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary target="_blank" rel="noopener" }
-[:octicons-arrow-left-24: Back to All Projects](../index.md){ .md-button }
+[:octicons-arrow-left-24: Research tracks](../../../projects/index.md){ .md-button }
 
 ## Child and LGBTQ+ Digital Rights Research
 
@@ -20,6 +20,14 @@
 
 ______________________________________________________________________
 
+## Methodological contributions
+
+LittleRainbowRights broadened the earlier inquiry across countries and multiple document sources. The computational researcher developed the retrieval and representation approach and identified a further need: an index that could preserve a dated, inspectable assessment of documented conditions, with sources, gaps and uncertainty available for examination.
+
+The public tools make those assessments easier to inspect and compare. Country coverage does not imply equal evidence completeness or validated accuracy. Global and multi-source work also revealed the substantial maintenance and interpretation demands on one computational researcher and one human-rights lawyer.
+
+[Research history](../../../research-history/index.md) · [Next investigations](../../../research-directions/index.md#littlerainbowrights)
+
 ## About This Project
 
 LittleRainbowRights is a focused research initiative within the broader GRIMdata framework, specifically examining:
@@ -28,9 +36,9 @@ LittleRainbowRights is a focused research initiative within the broader GRIMdata
 - **LGBTQ+ digital rights** - Legal protections, online discrimination, privacy concerns
 - **Intersectional analysis** - How policies affect vulnerable youth who are also LGBTQ+
 
-This project uses the DigitalChild pipeline to scrape, process, and analyze human rights documents from international organizations, tracking how well countries protect children and LGBTQ+ individuals in digital spaces.
+This project uses the DigitalChild pipeline to retrieve and process human-rights documents. Its scorecard describes selected legal and policy frameworks; it is a screening tool rather than a direct measure of lived protection or enforcement outcomes.
 
-## Key Findings
+## Published assessment scope {#key-findings}
 
 <div class="grid cards" markdown>
 
@@ -38,7 +46,7 @@ This project uses the DigitalChild pipeline to scrape, process, and analyze huma
 
     ---
 
-    Comprehensive global coverage of digital rights indicators
+    Country coverage in the published scorecard; documentation completeness varies
 
 -   :material-chart-line:{ .lg .middle } **10 Indicators**
 
@@ -135,12 +143,12 @@ All data sourced from authoritative international organizations:
 - **Privacy International** - Surveillance and privacy tracking
 - **Human Rights Watch** - Human rights monitoring
 
-Total: **2,543 validated source URLs** ensuring transparency and verification.
+The broader source register records **2,543 source URLs**. URL availability checks and substantive validation have different meanings; inspect the source and its date before drawing conclusions.
 
 ## Key Publications
 
 !!! info "Research Output"
-    Publications using LittleRainbowRights data will be listed here as they become available.
+    The 2025 conference research is recorded as *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa*. [Research record](https://doi.org/10.5281/zenodo.18318098).
 
 ## How to Use This Data
 
@@ -251,75 +259,47 @@ Insights for:
 
 </div>
 
-## Contributing
-
-Found an error in the scorecard data? Have updated information?
-
-1. **Check the source** - Verify the current value and source URL
-1. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with details
-1. **Provide evidence** - Include authoritative source URL
-1. **Track update** - Follow the issue for confirmation
-
-[Contributing Guidelines](../../../CONTRIBUTING.md){ .md-button }
+<span id="__span-3-1"></span>
+<span id="__codelineno-3-1"></span>
+<span id="__span-3-2"></span>
+<span id="__codelineno-3-2"></span>
+<span id="__span-3-3"></span>
+<span id="__codelineno-3-3"></span>
+<span id="__span-3-4"></span>
+<span id="__codelineno-3-4"></span>
+<span id="__span-3-5"></span>
+<span id="__codelineno-3-5"></span>
+<span id="__span-3-6"></span>
+<span id="__codelineno-3-6"></span>
+<span id="__span-3-7"></span>
+<span id="__codelineno-3-7"></span>
+<span id="__span-3-8"></span>
+<span id="__codelineno-3-8"></span>
 
 ## Citing This Work
 
-When using LittleRainbowRights data:
+**Conference research:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098).
 
-```bibtex
-@misc{littlerainbowrights2025scorecard,
-  title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, D.T. and Vollmer, S.C.},
-  year = {2025},
-  doi = {10.5281/zenodo.18318098},
-  howpublished = {\url{https://grimdata.org/scorecard/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
-}
-```
+**Public scorecard snapshot:** state the snapshot generation date (26 June 2026), access date and the particular source-linked assessments used. The source-verification stamp (9 September 2025) describes a different event. A citation to the conference record alone does not identify the version of a later download.
 
-Or:
+**Software:** use the [software citation and technical overview](../../../docs/technical-overview.md#citation) and [repository citation record](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*.
-> DOI: 10.5281/zenodo.18318098. Available at: https://grimdata.org/scorecard/.
-> Licensed under CC BY 4.0.
-> ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395) (D.T. Vollmer), [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
-
-[Full Citation Guide](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
+<span id="contributing"></span>
 
 ## Data Governance
 
-This project follows strict ethical guidelines:
+Published assessments represent selected aspects of a situation. Check source dates and written justifications, distinguish missing documentation from a finding, and consider how linked information can increase exposure for those described.
 
-- **Publicly available sources only** - No confidential or leaked documents
-- **Transparent methodology** - All processing steps documented
-- **Source attribution** - Every data point linked to authoritative source
-- **Regular validation** - Automated checking of 2,543 source URLs
-- **Community review** - Open to corrections and updates
+[Data Governance](../../../DATA_GOVERNANCE.md) · [Research Context](../../../RESEARCH_CONTEXT.md) · [Site practices](../../../practices/index.md)
 
-[Read Full Data Governance Policy](../../../DATA_GOVERNANCE.md)
-
-## Support This Work
-
-- ⭐ [Star the repository](https://github.com/MissCrispenCakes/DigitalChild)
-- 📢 Share with researchers and advocates
-- 🐛 Report data quality issues
-- 💻 Contribute code or documentation
-- 📝 Cite in your publications
+<span id="support-this-work"></span>
+<span id="contact"></span>
 
 ## Related Projects
 
-- **[GRIMdata](../../index.md)** - Main project hub
-- **[SGBV-UPR](../sgbv/index.md)** - Sexual and gender-based violence analysis and the published precursor study.
-- **[DigitalChild Pipeline](https://github.com/MissCrispenCakes/DigitalChild)** - Technical implementation
+- [GRIMdata](../../../index.md) — umbrella research programme.
+- [SGBV-UPR](../sgbv/index.md) — published legal and computational research with planned renewal.
+- [Research directions](../../../research-directions/index.md) — intended investigations across the programme.
+- [DigitalChild implementation](../../../docs/technical-overview.md) — public software, methods and instructions.
 
-## Contact
-
-- **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Collaboration:** Contact via GitHub
-
-______________________________________________________________________
-
-**LittleRainbowRights** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
-
-**Mission:** Protect vulnerable populations in the digital age through evidence-based research and advocacy.
+LittleRainbowRights is part of **Global Rights Index Monitoring**.

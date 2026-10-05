@@ -68,7 +68,7 @@ Add up to five countries to compare their indicator profiles (0–2 on each of t
     <select id="sc-compare"><option value="">Select a country</option></select>
     <button type="button" id="sc-compare-add" class="md-button">Add to comparison</button>
   </div>
-  <div id="sc-selected" aria-label="Selected countries"></div>
+  <div id="sc-selected" role="group" aria-label="Selected countries"></div>
   <p id="sc-compare-status" role="status" aria-live="polite"></p>
   <div id="sc-radar" class="sc-chart"></div>
 </div>
@@ -104,10 +104,6 @@ The explorer above reads the same underlying scored dataset you can pull program
 !!! note "About this data"
     Point-in-time data derived from the project's designated visualization dataset. Source-URL verification is an ongoing, separate workflow, so figures may be revised. See the [Design & Methodology](design.md) for indicator definitions and the 0-1-2 scoring rules.
 
-## Contribute
+## Assessment provenance {#contribute}
 
-Spotted an error or have an updated source? Please [open an issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with the country, indicator, current vs. corrected value, and an authoritative source URL.
-
-______________________________________________________________________
-
-For indicator definitions and scoring methodology, see [Design & Methodology](design.md). For the at-a-glance charts (map, distributions, regional comparison), see [Visualization](visualization.md).
+A correction changes a dated assessment; it should identify the indicator, interpretation and authoritative source. [Data Governance](../DATA_GOVERNANCE.md) explains provenance and versioning.

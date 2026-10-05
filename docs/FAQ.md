@@ -4,7 +4,7 @@
 
 ### What is GRIMdata?
 
-**GRIMdata** (Global Rights Index Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Currently, GRIMdata features two projects:
+**GRIMdata** (Global Rights Index Monitoring) is a research platform at **grimdata.org** hosting multiple human rights data analysis projects. Its established research includes:
 
 1. **LittleRainbowRights** - Child and LGBTQ+ digital rights research
 - Repository: [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild)
@@ -12,6 +12,8 @@
 2. **SGBV-UPR** - Sexual and gender-based violence analysis
 - Codebase: HumanRights; source code is not currently available as a public download. See the [published study and project documentation](website/projects/sgbv/index.md).
 - UPR recommendations analysis
+
+The planned Canadian Projects & Environmental Oversight stream and proposed Research Provenance & Institutional Continuity track extend the programme. [Research tracks](projects/index.md) distinguishes available work from proposed directions.
 
 ### What is DigitalChild?
 
@@ -27,7 +29,7 @@
 
 ### Is this free to use?
 
-Yes! The code is licensed under MIT (permissive, free for any use including commercial). The data and documentation are licensed under CC BY 4.0 (free to use with attribution).
+Yes! The code is licensed under MIT (permissive, free for any use including commercial). Project-authored DigitalChild data and documentation use CC BY 4.0 where specified. Third-party documents and published articles retain their own terms; the private historical SGBV archive is not released through this site.
 
 ### Can I use this for my research?
 
@@ -259,15 +261,10 @@ ______________________________________________________________________
 
 ## Contributing & Development
 
-### Can I contribute?
+### Repository development terms {#can-i-contribute}
 
-Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Contributions welcome:
+The [repository terms](CONTRIBUTING.md) document the existing development workflow, attribution and licensing. Public version histories can retain earlier material after a correction.
 
-- Bug reports
-- New scrapers
-- Documentation improvements
-- Test coverage
-- Visualization ideas
 
 ### I found a bug. What should I do?
 
@@ -342,6 +339,8 @@ The website is static and generated from docs. If it's not working:
 
 ______________________________________________________________________
 
+<span id="how-can-i-get-involved-in-research-collaborations"></span>
+
 ## Research & Citations
 
 ### How should I cite this project?
@@ -361,13 +360,9 @@ Check the project website at [grimdata.org](https://grimdata.org) for latest pub
 
 ### Can I use this for my thesis/dissertation?
 
-Absolutely! That's an intended use case. Please cite the project and consider contributing back improvements.
+Absolutely! That's an intended use case. Cite the relevant software or research record and state the output version and limitations.
 
-### How can I get involved in research collaborations?
-
-Open a [discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions) or reach out via the website contact form.
-
-______________________________________________________________________
+<span id="can-i-request-a-feature"></span>
 
 ## Future Development
 
@@ -383,42 +378,15 @@ See [ROADMAP.md](ROADMAP.md) for the full roadmap. Highlights:
 
 ### When will the research dashboard be ready?
 
-Target: Late 2026. It's in Phase 4 of the roadmap. Focus right now is on completing Phase 3 (advanced processing).
+The [country explorer](scorecard/explorer.md), [map and charts](scorecard/visualization.md) and [Source Transparency Watch](transparency-watch/index.md) are available as static browser tools. Additional software features are prospective; there is no confirmed delivery date.
 
-### Can I request a feature?
+<span id="how-do-i-get-help"></span>
+<span id="is-there-a-mailing-list-or-community-forum"></span>
+<span id="who-maintains-this-project"></span>
+<span id="how-can-i-support-the-project"></span>
 
-Yes! Open a [feature request issue](https://github.com/MissCrispenCakes/DigitalChild/issues/new) or discussion. No guarantees, but we're open to suggestions that align with the project mission.
+## Technical guidance {#contact-support}
 
-______________________________________________________________________
+Use the [documentation](docs/index.md), [first-run troubleshooting](guides/FIRST_RUN_ERRORS.md), [software roadmap](ROADMAP.md) and [methodology](scorecard/design.md) for technical questions and limitations. Programme history and future investigations are described separately in [Research history](research-history/index.md) and [Research directions](research-directions/index.md).
 
-## Contact & Support
-
-### How do I get help?
-
-1. **Documentation:** Check [the documentation](index.md)
-1. **FAQ:** This page
-1. **Issues:** Search [existing issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-1. **Discussions:** Ask in [discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-
-### Is there a mailing list or community forum?
-
-Not yet. Use GitHub Discussions for now. A community forum may be added in the future.
-
-### Who maintains this project?
-
-This project is maintained part-time by one person. Please be patient with response times!
-
-### How can I support the project?
-
-- ⭐ Star the repo on GitHub
-- 📢 Share it with researchers in your network
-- 🐛 Report bugs and issues
-- 💻 Contribute code or documentation
-- 📝 Cite it in your publications
-- 💰 Consider sponsoring (if/when GitHub Sponsors is enabled)
-
-______________________________________________________________________
-
-**Didn't find your answer?** Open a [discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions) or [issue](https://github.com/MissCrispenCakes/DigitalChild/issues).
-
-**Last updated:** January 2026
+*Reviewed: 5 October 2026.*

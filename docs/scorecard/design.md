@@ -454,12 +454,7 @@ For technical implementation details:
 
 ## Feedback & Contributions
 
-Help improve the methodology:
-
-- **Report errors:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Suggest indicators:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Provide sources:** Open pull request or issue with URLs
-- **Academic collaboration:** Contact via repository
+Methodological interpretation and limitations are described in [Research Context](../RESEARCH_CONTEXT.md) and [Data Governance](../DATA_GOVERNANCE.md).
 
 ---
 
@@ -473,4 +468,4 @@ This scorecard builds on and complements existing frameworks:
 - **ILGA World** - LGBTQ+ legal status mapping
 - **ITU ICT Development Index** - Digital infrastructure
 
-**Unique contribution:** First comprehensive intersection of digital governance and vulnerable populations (LGBTQ+ children).
+**Research contribution:** Bringing digital-governance indicators into an assessment framework focused on child and LGBTQ+ rights.

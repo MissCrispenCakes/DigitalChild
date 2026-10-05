@@ -1,6 +1,20 @@
-# Project Roadmap
+# DigitalChild / LittleRainbowRights Software Roadmap {#project-roadmap}
 
-This roadmap outlines the milestones for the GRIMdata / LittleRainbowRights pipeline.
+This page records technical development of the DigitalChild pipeline and LittleRainbowRights tools. Programme-wide research questions and intended investigations are described in [Research directions](research-directions/index.md).
+
+## Current software direction
+
+**Available implementation:** document retrieval and processing, rule-based tags and recommendations, versioned comparisons, scorecard exports, self-hosted API software, static browser exploration and optional interactive charts.
+
+**Current maintenance:** evidence freshness and coverage, source availability, interpretation, and reproducible outputs. A reachable source or working feature does not establish a complete or current country assessment.
+
+**Deferred or prospective:** NLP extraction, expanded document-source and language coverage, additional analytics and deployment automation. A React/Vue dashboard is not required for the existing static tools; no deadline is attached to these items.
+
+## Reading the development record
+
+The phases below preserve earlier implementation milestones and TODOs. Completed software facilities describe source functionality, not a public API deployment. Test counts and historical completion labels are records of the development stages, rather than fresh verification of every item.
+
+The original phase structure predates the broader GRIMdata programme. Global scorecard coverage and expansion of the document-source corpus are different milestones.
 
 ______________________________________________________________________
 
@@ -60,7 +74,9 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Phase 3: Advanced Processing (✅ COMPLETE - 8/9 Tasks)
+<span id="phase-3-advanced-processing-complete-89-tasks"></span>
+
+## Phase 3: Advanced Processing — Delivered and outstanding work
 
 ### Recommendations System
 
@@ -136,7 +152,7 @@ ______________________________________________________________________
 - [x] All pre-commit hooks passing
 - [x] Full endpoint coverage
 
-**Status:** 14 endpoints operational, production-ready with Docker deployment
+**Status:** self-hosted API implementation and deployment configuration available; this does not describe an API hosted by the public website.
 
 ______________________________________________________________________
 
@@ -202,12 +218,12 @@ ______________________________________________________________________
 
 ### Community & Documentation
 
-- [ ] Contributor guidelines
-- [ ] Research methodology documentation
-- [ ] User guides and tutorials
+- [x] Contributor guidelines — repository terms are documented
+- [x] Research methodology documentation — scorecard design and Research Context
+- [x] User guides and tutorials — Diátaxis documentation and first-country tutorial
 - [ ] Video walkthroughs
-- [ ] Academic publications and citations
-- [ ] Conference presentations
+- [x] Academic publications and citations — published research records linked from project pages
+- [x] Conference presentations — historical 2021 and 2025 milestones
 
 ### Quality & Maintenance
 
@@ -243,9 +259,9 @@ ______________________________________________________________________
 - ✅ Production deployment (Docker, Redis, Nginx, complete guide)
 - ✅ 104 integration tests passing (100% success rate)
 
-**Next Priority:**
+**Outstanding technical work:**
 
-- 🎯 **Phase 5: Dashboard frontend** (React/Vue.js with D3.js visualizations)
+- Review and maintain the shipped static exploration tools; a framework dashboard remains deferred
 - 🎯 Source reliability scoring
 - 🎯 Continue scorecard maintenance (Phases 2-4: 41 remaining stale entries)
 - 🎯 NLP-based recommendations extraction (advanced features)
@@ -270,18 +286,9 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Contributing
+## Repository development terms {#contributing}
 
-The project is actively developed. Contributions welcome in:
-
-1. **New scrapers** for additional sources
-1. **Enhanced processors** (OCR, image extraction)
-1. **Visualization components** for dashboard
-1. **Documentation** improvements and examples
-1. **Testing** coverage expansion
-1. **Performance** optimizations
-
-______________________________________________________________________
+[Repository terms](CONTRIBUTING.md) describe the existing development workflow and licensing. [Research directions](research-directions/index.md) describes planned programme work separately.
 
 ## Notes
 
@@ -304,4 +311,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-Last updated: June 2026
+Historical phase record: June 2026. Scope and current-direction notes reviewed: 5 October 2026.

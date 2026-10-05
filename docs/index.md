@@ -1,6 +1,6 @@
 ---
 title: GRIMdata — Evidence, rights, and public accountability
-description: Open research on digital rights, policy evidence, environmental oversight, and research continuity. Explore the data, methods, and research tracks.
+description: Research on rights, public decisions and research continuity. Explore published work, source-linked assessments, tools and methods.
 hide:
   - navigation
   - toc
@@ -10,61 +10,81 @@ hide:
 <div class="grim-hero">
 <div class="grim-hero-copy">
 <p class="grim-eyebrow">Global Rights Index Monitoring</p>
-<h1 class="no-rainbow">Evidence for rights.<br>Research you can trace.</h1>
-<p class="grim-lede">GRIMdata connects public documents, transparent methods, and open tools to help people examine decisions that shape human rights.</p>
-<div class="grim-actions"><a class="md-button md-button--primary" href="explore/">Explore the evidence →</a><a class="md-button" href="docs/">Find documentation</a></div>
-<p class="grim-hero-note">Independent research. Public evidence. Room to question the findings.</p>
+<span id="evidence-for-rightsresearch-you-can-trace"></span>
+
+<h1 class="no-rainbow">Understand the situation.<br>Trace the evidence.</h1>
+<p class="grim-lede">Research on rights and public decisions: finding, organizing and examining documentary evidence, with its sources, dates and uncertainties in view.</p>
+<div class="grim-actions"><a class="md-button md-button--primary" href="explore/">Explore the evidence →</a><a class="md-button" href="projects/">See the research</a></div>
+<p class="grim-hero-note">Computational methods. Legal interpretation. An evolving research programme.</p>
 </div>
-<aside class="grim-snapshot" aria-label="Published digital rights scorecard snapshot">
-<p class="grim-eyebrow">Inside the research platform</p>
-<p class="grim-snapshot-number">194<span>countries in the digital rights scorecard</span></p>
+<aside class="grim-snapshot" aria-label="LittleRainbowRights published scorecard snapshot">
+<p class="grim-eyebrow">LittleRainbowRights scorecard</p>
+<p class="grim-snapshot-number">194<span>countries represented in this snapshot</span></p>
 <div class="grim-snapshot-pair"><p><strong>10</strong><span>indicators</span></p><p><strong>132</strong><span>fully documented country assessments</span></p></div>
-<p class="grim-snapshot-note">Published snapshot · 26 June 2026<br>Source-verification stamp · 9 September 2025</p>
-<a href="scorecard/explorer/">Inspect scores, evidence, and gaps →</a>
+<p class="grim-snapshot-note">Snapshot generated · 26 June 2026<br>Source-verification stamp · 9 September 2025</p>
+<a href="scorecard/explorer/">Inspect assessments, evidence and gaps →</a>
 </aside>
 </div>
 
 <div class="grim-section-heading" markdown>
 
-## Research with a public purpose
+## Research you can examine
 
-Our established human-rights research provides the foundation. Two planned streams extend the same attention to evidence, power, and accountability.
+Published studies, public assessments and working tools form the programme's existing research record.
+
+</div>
+
+<div class="grim-record" markdown>
+
+- **2022 · Published SGBV-UPR study.** Computational document analysis and legal interpretation of sexual and gender-based violence and related rights concerns in SADC UPR records. [Read the study](https://doi.org/10.47348/SLR/2022/i1a1) · [Questions and methods](website/projects/sgbv/index.md)
+- **2025 · LittleRainbowRights research.** Child and LGBTQ+ rights in relation to advanced digital technologies, presented at the Second International Conference on Children's Rights. [Research record](https://doi.org/10.5281/zenodo.18318098) · [Project contributions](website/projects/littlerainbowrights/index.md#methodological-contributions)
+- **Available tools · Source-linked exploration.** Inspect country assessments, compare indicators, download the published scorecard snapshot and examine source-transparency signals. [Open the tools](explore/index.md)
+
+</div>
+
+<div class="grim-section-heading" markdown>
+
+<span id="research-with-a-public-purpose"></span>
+
+## Four research tracks
+
+Established investigations and planned directions ask how documentary evidence can make conditions and decisions easier to understand.
 
 </div>
 
 <div class="grid cards grim-tracks" markdown>
 
--   <span class="grim-track-index">01 / Active research</span>
-
-    ### LittleRainbowRights
-
-    Child and LGBTQ+ digital rights: source-linked scores, assessments, and methods across 194 countries.
-
-    [Explore the research →](website/projects/littlerainbowrights/index.md)
-
--   <span class="grim-track-index">02 / Published precursor</span>
+-   <span class="grim-track-index">01 / Published research · Planned renewal</span>
 
     ### SGBV–UPR
 
-    Sexual and gender-based violence research using Universal Periodic Review recommendations, beginning with SADC member states.
+    A legal and computational inquiry into SGBV and related rights concerns in SADC UPR records. Planned renewal: complete original Cycle 3 coverage and extend Cycle 4 analysis across all UPR countries.
 
-    [Read the published work →](website/projects/sgbv/index.md)
+    [Read the research →](website/projects/sgbv/index.md)
+
+-   <span class="grim-track-index">02 / Research & available tools</span>
+
+    ### LittleRainbowRights
+
+    Child and LGBTQ+ digital rights research spanning countries and document sources, with an index for examining dated, source-linked assessments.
+
+    [Explore the project →](website/projects/littlerainbowrights/index.md)
 
 -   <span class="grim-track-index">03 / Planned · Canada first</span>
 
     ### Canadian Projects & Environmental Oversight
 
-    Tracking Build Canada and other major projects: environmental decisions, Indigenous rights, climate and affordability claims.
+    Build Canada and other major projects: source-linked project histories, environmental oversight, Indigenous rights, climate and affordability claims.
 
-    [See the upcoming plan →](website/projects/index.md#canadian-projects-environmental-oversight)
+    [See the research direction →](research-directions/index.md#canadian-projects-environmental-oversight)
 
 -   <span class="grim-track-index">04 / Proposed · Funding unconfirmed</span>
 
     ### Research Provenance & Institutional Continuity
 
-    Tracing contributions, methods, outputs, and research handoffs across institutions and time. A proposed Insight Grant direction.
+    How contributions, methods and knowledge persist through institutional transitions and research handoffs. A proposed Insight Grant direction.
 
-    [Read the research proposal →](website/projects/index.md#research-provenance-institutional-continuity)
+    [Read the proposed direction →](research-directions/index.md#research-provenance-institutional-continuity)
 
 </div>
 
@@ -72,7 +92,7 @@ Our established human-rights research provides the foundation. Two planned strea
 
 ## Follow the evidence {#the-ideas-have-a-front-door-the-evidence-lives-here}
 
-Explore the questions behind [LittleRainbowRights](https://littlerainbowrights.com), then examine the evidence here. Compare assessments, read original sources, understand the methods, and reproduce the research.
+[LittleRainbowRights.com](https://littlerainbowrights.com) introduces the project's big ideas. Here, examine assessments and original sources, understand the methods, and use the public tools and instructions.
 
 [Explore data & tools](explore/index.md){ .md-button .md-button--primary }
 [Understand the methods](scorecard/design.md){ .md-button }
@@ -82,9 +102,37 @@ Explore the questions behind [LittleRainbowRights](https://littlerainbowrights.c
 
 <div class="grim-section-heading" markdown>
 
+## A research lineage, still developing
+
+The inquiry began in 2019 with a computational researcher and a human-rights lawyer asking how difficult-to-search legal documents could become more tractable. Computational exploration began in 2020; a conference presentation followed in 2021 and a law-journal publication in 2022.
+
+LittleRainbowRights extended the approach across countries and document sources. An index tracker emerged from the need to preserve an inspectable account of documented conditions. That experience now informs the planned return to SGBV-UPR and the programme's new directions.
+
+[Research history and contributions](research-history/index.md) · [Next investigations](research-directions/index.md)
+
+</div>
+
+<div class="grim-principles" markdown>
+
+<span id="evidence-deserves-context-people-deserve-choices"></span>
+
+## Understanding conditions carries responsibilities
+
+Knowing more can help people act, but it can also expose those described. GRIMdata examines institutional decisions and research claims while considering whose information is organized, who can use it and where disclosure should stop. An index describes selected aspects of a situation; it does not contain all the facts.
+
+[Read the research context](RESEARCH_CONTEXT.md) · [Data governance](DATA_GOVERNANCE.md)
+
+Scores are screening signals. Check sources and dates, distinguish missing documentation from a finding, and read the uncertainty alongside a comparison. Public browsing and filtering need no account; external interactive charts load only when you choose them.
+
+[Site practices and data handling](practices/index.md)
+
+</div>
+
+<div class="grim-section-heading" markdown>
+
 ## Find the right kind of documentation
 
-The documentation follows **Diátaxis**. Learning, completing a task, looking something up, and understanding a method each have their own entrance.
+**Diátaxis** provides four entrances for learning, completing a task, looking something up and understanding the reasoning.
 
 </div>
 
@@ -98,31 +146,21 @@ The documentation follows **Diátaxis**. Learning, completing a task, looking so
 
 -   ### How-to guides
 
-    Download, validate, run, or deploy.
+    Download, validate, run or deploy.
 
     [Complete a task →](docs/index.md#how-to-guides)
 
 -   ### Reference
 
-    Look up endpoints, schemas, and standards.
+    Look up endpoints, schemas and standards.
 
     [Find a specification →](docs/index.md#reference)
 
 -   ### Explanation
 
-    Understand the choices behind the research.
+    Understand choices, context and limits.
 
     [Read the reasoning →](docs/index.md#explanation)
-
-</div>
-
-<div class="grim-principles" markdown>
-
-## Evidence deserves context. People deserve choices
-
-Scores are screening signals, not a substitute for lived experience. Read the source, check its date, and distinguish missing documentation from a finding. Public browsing and filtering need no account; external interactive charts load only when you choose them.
-
-[Data handling & participation](practices/index.md) · [Research context](RESEARCH_CONTEXT.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 

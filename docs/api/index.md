@@ -329,7 +329,7 @@ response = requests.get(
 )
 ```
 
-Contact the project maintainers to request an API key for research purposes.
+For a self-hosted deployment, the operator configures API keys; this website does not issue keys for a public hosted API.
 
 ---
 

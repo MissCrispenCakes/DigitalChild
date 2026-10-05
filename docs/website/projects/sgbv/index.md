@@ -1,276 +1,180 @@
+---
+title: SGBV-UPR — Published research and planned renewal
+description: A collaborative computational and legal study of SGBV and related rights concerns in SADC UPR records, with planned global renewal.
+---
+
 # SGBV-UPR Project
 
-[:octicons-arrow-left-24: Back to All Projects](../index.md){ .md-button }
+[← Research tracks](../../../projects/index.md){ .md-button }
 
 ## Sexual and Gender-Based Violence Analysis
 
-**Foundational research demonstrating automated UPR analysis at regional scale**
+**Published research · Planned renewal**
 
-[:material-book-open-variant: Published Paper](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
+A collaborative legal and computational study of sexual and gender-based violence (SGBV) and related rights concerns in Southern African Development Community (SADC) Universal Periodic Review (UPR) records.
 
-!!! info "Code availability"
-    The original project code is not currently available as a public download. The published paper describes the study and its methods.
-
-______________________________________________________________________
+[Read the published study](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button .md-button--primary }
 
 ## About This Project
 
-The **SGBV-UPR project** was GRIMdata's foundational research (2019-2022), analyzing Universal Periodic Review (UPR) recommendations related to sexual and gender-based violence (SGBV) in **SADC member states**. This work:
+The inquiry was conceived in 2019; computational exploration began in 2020. The research was presented in 2021 and published in Stellenbosch Law Review in 2022. It joined exploratory document-analysis methods with legal interpretation of the excerpts and their context.
 
-- ✅ **Validated the methodology** for automated human rights document analysis
-- ✅ **Published in peer-reviewed literature** (Stellenbosch Law Review, 2022)
-- ✅ **Demonstrated regional-scale analysis** as proof of concept
-- ✅ **Informed the development** of the expanded LittleRainbowRights project
+The historical study concerned SADC member states and UPR cycles available during the research. Its original third-cycle coverage was incomplete at the time. It did not deliver present-day analysis of all countries or all cycles.
 
-!!! info "Precursor to LittleRainbowRights"
-    This regional SGBV analysis (SADC focus) established the core methodology that **LittleRainbowRights** now applies at global scale (194 countries) for digital rights indicators. The SGBV work proved the concept; LittleRainbowRights expands it.
+The project has its own research questions and methodological contributions. It also informed [LittleRainbowRights](../littlerainbowrights/index.md), which broadened geographic and source coverage. That later work now informs a planned return to SGBV-UPR.
 
-SGBV-UPR uses the separate **HumanRights** codebase. The [DigitalChild pipeline](../../../docs/technical-overview.md) provides the public tools used by LittleRainbowRights.
-
-## Project Status
-
-!!! success "Published Research"
-    **Vollmer, SC and Vollmer, DT.** (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [https://doi.org/10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-
-!!! warning "Update Needed - UPR Cycle Progress"
-    **Dataset requires updating:**
-    ```
-    - UPR Cycle 3 has now completed (original research based on Cycles 1-3)
-    - UPR Cycle 4 is currently in progress with new recommendations
-    - New analytical lens available: Pandemic and forced confinement perspectives offer rich opportunities for additional data mining, examining how COVID-19 lockdowns and related policies intersected with SGBV  patterns and recommendations
-    ```
-    An updated analysis would need to incorporate the newer recommendations and document its methods.
-
-## Key Features
-
-<div class="grid cards" markdown>
-
--   :material-file-document:{ .lg .middle } **UPR Document Analysis**
-
-    ---
-
-    Systematic analysis of UPR recommendations across countries
-
--   :material-tag-multiple:{ .lg .middle } **SGBV-Specific Tagging**
-
-    ---
-
-    Identification of SGBV-related recommendations and themes
-
--   :material-chart-timeline:{ .lg .middle } **Longitudinal Tracking**
-
-    ---
-
-    How SGBV recommendations evolve across UPR cycles
-
--   :material-earth:{ .lg .middle } **Global Coverage**
-
-    ---
-
-    Analysis across all UN member states
-
-</div>
+<span id="sgbv-categories-analyzed"></span>
 
 ## Research Questions
 
-This project addresses:
+The inquiry examines how SGBV and related SOGIESC and LGBTQ+ rights concerns appear in UPR documentary records, how relevant language can be identified for examination, and how those excerpts relate to the review process and legal context.
 
-1. **Frequency:** How often do UPR recommendations address SGBV?
-1. **Patterns:** What specific SGBV issues are most commonly raised?
-1. **Implementation:** How do countries respond to SGBV recommendations?
-1. **Gaps:** Which countries receive few or no SGBV recommendations despite known issues?
-1. **Evolution:** How have SGBV recommendations changed over UPR cycles?
+The computational problem includes retrieving documents from sources with inconsistent access, extracting text from varied formats, identifying useful language patterns and ranking material for human examination.
+
+SOGIESC refers to sexual orientation, gender identity and expression, and sex characteristics. Related terms can have different meanings across documents and legal contexts; selecting a search pattern is not the same as establishing a legal category.
+
+<span id="key-features"></span>
+<span id="acknowledgments"></span>
 
 ## Methodology
 
 ### Data Collection
 
-- **Source:** UPR database (OHCHR)
-- **Coverage:** All UPR cycles (2008-present)
-- **Countries:** All UN member states
-- **Focus:** Recommendations explicitly mentioning SGBV themes
+The study worked with OHCHR/UPR documentary sources organized by country and review cycle. The historical SADC scope and uneven availability constrain comparisons. Detailed study methods and findings are in the [published article](https://doi.org/10.47348/SLR/2022/i1a1).
 
 ### Analysis Approach
 
-1. **Text processing** - Extract and clean UPR recommendation text
-1. **Tagging** - Apply SGBV-specific tag rules
-1. **Categorization** - Group by SGBV sub-themes (domestic violence, trafficking, etc.)
-1. **Quantitative analysis** - Frequency counts, regional patterns
-1. **Qualitative analysis** - Content of recommendations, implementation status
+The historical workflow combined source discovery and document retrieval, PDF/text extraction, text processing, selected words and patterns, tagging, frequency analysis and passage ranking. It developed before widespread use of today's generative AI assistants.
+
+**Computational contribution:** helping formulate the inquiry and independently choosing methods for retrieval, extraction, terminology, patterning, tagging, comparison and ranking through exploration of the documents.
+
+**Legal contribution:** communicating what the excerpts meant within the UPR and the inquiry, and connecting them to specific legal texts and context.
+
+Neither contribution simply implemented a complete specification supplied by the other. Relevant computational matches require contextual interpretation; legal analysis depends on understanding how passages were selected.
+
+### Interpretation and limitations
+
+A textual mention, an extracted passage and a formal UPR recommendation are different units. Keyword frequency does not measure violence prevalence, severity or successful implementation of a recommendation. Absence of a match does not establish absence of violence or rights concerns.
+
+Extraction quality, document format, language, selected patterns and corpus coverage shape results. Any renewed comparison must make those choices and gaps explicit.
+
+<span id="__span-1-1"></span>
+<span id="__codelineno-1-1"></span>
+<span id="__span-1-2"></span>
+<span id="__codelineno-1-2"></span>
+<span id="__span-1-3"></span>
+<span id="__codelineno-1-3"></span>
+<span id="__span-1-4"></span>
+<span id="__codelineno-1-4"></span>
+<span id="__span-1-5"></span>
+<span id="__codelineno-1-5"></span>
 
 ## Key Findings
 
-!!! note "Summary"
-    Detailed findings are available in the published journal article.
+The published article provides the study's substantive legal analysis and discussion of methodological opportunities and limitations. The research demonstrates the usefulness of joining computational exploration with legal interpretation of difficult-to-search human-rights documents. Publication does not establish universal extraction accuracy or equal coverage across countries.
 
-    ```
-    Key insights include:
-    - Regional variation in SGBV recommendation frequency
-    - Common themes across recommendations
-    - Implementation challenges
-    - Best practice examples
-    ```
+[Read the findings in the article](https://doi.org/10.47348/SLR/2022/i1a1)
 
-## SGBV Categories Analyzed
+<span id="__span-0-1"></span>
+<span id="__codelineno-0-1"></span>
+<span id="__span-0-2"></span>
+<span id="__codelineno-0-2"></span>
+<span id="__span-0-3"></span>
+<span id="__codelineno-0-3"></span>
 
-1. **Domestic Violence** - Intimate partner violence, family violence
-1. **Sexual Violence** - Rape, sexual assault, harassment
-1. **Trafficking** - Human trafficking, forced labor, sexual exploitation
-1. **Harmful Practices** - Female genital mutilation, child marriage, honor crimes
-1. **Conflict-Related SGBV** - Wartime sexual violence, displacement-related violence
-1. **Legal Frameworks** - Criminalization, survivor protections, access to justice
-1. **Services** - Shelters, counseling, medical care for survivors
-1. **Prevention** - Education, awareness campaigns, perpetrator programs
+## Project Status
 
-!!! info "Emerging Analytical Lens"
-    **Pandemic and Forced Confinement Perspectives**
+The historical study is published. A renewal is planned to complete the original Cycle 3 coverage and extend Cycle 4 analysis across all UPR countries. Global expansion is an intended investigation, not an existing public dataset or operational tracker.
 
-The COVID-19 pandemic and associated lockdown measures created unique conditions that intersected with SGBV:
-
-- Increased domestic violence during lockdowns and quarantine measures
-- Reduced access to support services and escape routes for survivors
-- Digital SGBV and online harassment during remote work/schooling
-- Economic stressors and their relationship to SGBV rates
-- State responses to SGBV during emergency measures
-
-This lens offers rich opportunities for analyzing how UPR recommendations addressed (or failed to address) pandemic-era SGBV challenges and how countries adapted their responses during forced confinement periods.
-
-## Data & Visualizations
-
-### Coming Soon
-
-Interactive visualizations will include:
-
-- **Heatmaps** - SGBV recommendation frequency by country
-- **Timeline charts** - Evolution of recommendations across UPR cycles
-- **Category breakdown** - Distribution of SGBV sub-themes
-- **Regional comparisons** - Patterns across geographic regions
-
-### Current Access
-
-Data and findings are available through:
-
-- **Journal publication** - [Vollmer & Vollmer (2022) in Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-- **Source code** — The HumanRights codebase is not currently available as a public download.
-
-## Integration with GRIMdata
-
-The SGBV project will be fully integrated into the GRIMdata platform with:
-
-- **Unified interface** - Access SGBV data alongside other human rights indicators
-- **Cross-project analysis** - Compare SGBV patterns with digital rights indicators
-- **Shared tools** - Use the same pipeline and visualization tools
-- **Combined exports** - Download integrated datasets
-
-## Publications
-
-!!! example "Published Research"
-    **Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states**
-
-    **Authors:** Vollmer, SC and Vollmer, DT
-
-    **Journal:** Stellenbosch Law Review, Volume 33, Issue 1, 2022
-
-    **Pages:** 8–41
-
-    **DOI:** [10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-
-    **Abstract:** This research analyzes how the Universal Periodic Review (UPR) mechanism processes sexual and gender-based violence (SGBV) recommendations in Southern African Development Community (SADC) member states. The study examines patterns across UPR cycles, regional variation in SGBV recommendation frequency, and implementation challenges.
-
-    [Access full article](https://doi.org/10.47348/SLR/2022/i1a1){ .md-button }
-
-## How to Use This Data
-
-### For Researchers
-
-The SGBV-UPR dataset enables:
-
-- **Systematic reviews** - Comprehensive analysis of UPR SGBV recommendations
-- **Comparative studies** - Cross-country or regional comparisons
-- **Policy analysis** - Evaluate recommendation implementation
-- **Longitudinal research** - Track changes over time
-
-### For Advocates
-
-Use findings to:
-
-- **Inform advocacy** - Evidence-based campaigns for SGBV prevention
-- **Hold states accountable** - Track implementation of accepted recommendations
-- **Identify gaps** - Where recommendations are lacking despite need
-- **Share best practices** - Highlight effective approaches
-
-### For Policy Makers
-
-Insights for:
-
-- **UPR engagement** - Prepare for UPR review with evidence
-- **Policy development** - Learn from international recommendations
-- **Implementation planning** - Prioritize which recommendations to act on first
-- **Regional cooperation** - Coordinate with neighboring countries
-
-## Related Work
-
-This project builds on and complements:
-
-- **LittleRainbowRights** - Digital rights focus with some overlap on vulnerable populations
-- **UPR analysis** - Broader UPR research community
-- **SGBV research** - Academic and NGO work on violence against women and girls
-
-## Repository & Code
-
-!!! info "Separate Codebase"
-    The SGBV-UPR project has its own repository with specialized analysis tools.
-
-    The codebase includes:
-    ```
-    - UPR-specific scrapers
-    - SGBV tagging rules
-    - Longitudinal analysis tools
-    - Visualization scripts
-    ```
-
-!!! info "Public research access"
-    Read the [published study](https://doi.org/10.47348/SLR/2022/i1a1) for the original methodology and findings.
+<span id="immediate-updates-needed"></span>
+<span id="long-term-enhancements"></span>
 
 ## Future Development
 
-### Immediate Updates Needed
+### Planned renewal
 
-- [ ] **Update dataset with UPR Cycle 4 data** - Incorporate ongoing Cycle 4 recommendations
-- [ ] **Add pandemic/forced confinement analysis lens** - Analyze SGBV recommendations through COVID-19 lockdown and confinement policy perspectives
-- [ ] **Refresh Cycle 3 complete dataset** - Ensure all finalized Cycle 3 recommendations are included
-- [ ] **Expand SGBV categories** - Add pandemic-specific SGBV themes (domestic violence during lockdowns, digital SGBV, etc.)
+1. Define corpus coverage, country organization and historical comparison questions.
+2. Complete and validate the remaining original Cycle 3 collection and extraction.
+3. Extend Cycle 4 analysis across the UPR country universe, using practical batches while retaining the global goal.
+4. Evaluate interpretation, comparability and limitations before deciding what new findings or materials can be released.
 
-### Long-term Enhancements
+The public directions page describes the intended outputs and dependencies. There is no confirmed delivery date or public archival dataset release.
 
-- [ ] Interactive data explorer on GRIMdata.org
-- [ ] Real-time UPR recommendation tracking
-- [ ] Integration with LittleRainbowRights for intersectional analysis (LGBTQ+ youth + SGBV)
-- [ ] Expanded to other treaty body recommendations (CEDAW, CRC, etc.)
-- [ ] Machine learning for automatic SGBV recommendation identification
+[Programme directions](../../../research-directions/index.md#sgbv-upr-renewal)
+
+<span id="coming-soon"></span>
+<span id="how-to-use-this-data"></span>
+<span id="for-researchers"></span>
+<span id="for-advocates"></span>
+<span id="for-policy-makers"></span>
+<span id="repository-code"></span>
+<span id="__span-2-1"></span>
+<span id="__codelineno-2-1"></span>
+<span id="__span-2-2"></span>
+<span id="__codelineno-2-2"></span>
+<span id="__span-2-3"></span>
+<span id="__codelineno-2-3"></span>
+<span id="__span-2-4"></span>
+<span id="__codelineno-2-4"></span>
+
+## Data & Visualizations
+
+### Current Access
+
+The public research access is the [2022 journal article](https://doi.org/10.47348/SLR/2022/i1a1). The historical code, document collections, extracts, logs and datasets remain private. This site does not provide SGBV downloads, interactive charts or combined exports.
+
+## Publications
+
+**Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states**
+
+Vollmer, D. T., & Vollmer, S. C. (2022). Stellenbosch Law Review, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1).
+
+**Study summary:** the article joins computational exploration of SADC UPR documentary records with legal analysis of SGBV and related rights concerns, and considers the adaptability of this approach. This summary is not the article's verbatim abstract.
+
+<span id="__span-3-1"></span>
+<span id="__codelineno-3-1"></span>
+<span id="__span-3-2"></span>
+<span id="__codelineno-3-2"></span>
+<span id="__span-3-3"></span>
+<span id="__codelineno-3-3"></span>
+<span id="__span-3-4"></span>
+<span id="__codelineno-3-4"></span>
+<span id="__span-3-5"></span>
+<span id="__codelineno-3-5"></span>
+<span id="__span-3-6"></span>
+<span id="__codelineno-3-6"></span>
+<span id="__span-3-7"></span>
+<span id="__codelineno-3-7"></span>
+<span id="__span-4-1"></span>
+<span id="__codelineno-4-1"></span>
+<span id="__span-4-2"></span>
+<span id="__codelineno-4-2"></span>
+<span id="__span-4-3"></span>
+<span id="__codelineno-4-3"></span>
+<span id="__span-4-4"></span>
+<span id="__codelineno-4-4"></span>
+<span id="__span-4-5"></span>
+<span id="__codelineno-4-5"></span>
+<span id="__span-4-6"></span>
+<span id="__codelineno-4-6"></span>
+<span id="__span-4-7"></span>
+<span id="__codelineno-4-7"></span>
+<span id="__span-4-8"></span>
+<span id="__codelineno-4-8"></span>
+<span id="__span-4-9"></span>
+<span id="__codelineno-4-9"></span>
+<span id="__span-4-10"></span>
+<span id="__codelineno-4-10"></span>
+<span id="__span-4-11"></span>
+<span id="__codelineno-4-11"></span>
 
 ## Citing This Work
 
-### For the Dataset
-
-```bibtex
-@misc{sgbvupr2025,
-  title = {SGBV-UPR: Sexual and Gender-Based Violence in Universal Periodic Review Recommendations},
-  author = {Vollmer, S.C.},
-  year = {2025},
-  howpublished = {\url{https://grimdata.org/projects/sgbv/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-3359-2810}
-}
-```
-
 ### For the Journal Article
 
-**BibTeX:**
-
-```bibtex
-@article{vollmer2022sgbv,
+<div class="highlight"><pre><code class="language-bibtex">@article{vollmer2022sgbv,
   title = {Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states},
-  author = {Vollmer, SC and Vollmer, DT},
+  author = {Vollmer, DT and Vollmer, SC},
   journal = {Stellenbosch Law Review},
   volume = {33},
   number = {1},
@@ -278,59 +182,27 @@ This project builds on and complements:
   year = {2022},
   doi = {10.47348/SLR/2022/i1a1},
   url = {https://doi.org/10.47348/SLR/2022/i1a1}
-}
-```
+}</code></pre></div>
 
-**APA:**
+**APA:** Vollmer, D. T., & Vollmer, S. C. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, *33*(1), 8–41. https://doi.org/10.47348/SLR/2022/i1a1
 
-> Vollmer, S. C., & Vollmer, D. T. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, *33*(1), 8–41. https://doi.org/10.47348/SLR/2022/i1a1
+### Access and citation terms {#for-the-dataset}
 
-**MLA:**
+No separate public SGBV-UPR dataset is released through this site. Cite the article for the historical study; its publication terms do not establish licensing for the private research archive or original third-party documents.
 
-> Vollmer, SC, and DT Vollmer. "Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states." *Stellenbosch Law Review*, vol. 33, no. 1, 2022, pp. 8–41, https://doi.org/10.47348/SLR/2022/i1a1.
+<span id="integration-with-grimdata"></span>
 
-## Contributing
+## Related Work
 
-Interested in contributing to SGBV-UPR research?
+[LittleRainbowRights](../littlerainbowrights/index.md) extends the wider programme across countries and document sources. [Research history](../../../research-history/index.md) explains the exploratory origins and complementary intellectual contributions. [Research Context](../../../RESEARCH_CONTEXT.md) develops the concern with documenting conditions under constraint.
 
-- **Data updates** - Report changes in UPR recommendations
-- **Analysis** - Propose new research questions
-- **Visualization** - Suggest or build data visualizations
-- **Documentation** - Improve methodology documentation
-
-[Contributing Guidelines](../../../CONTRIBUTING.md){ .md-button }
+<span id="contributing"></span>
+<span id="support-contact"></span>
 
 ## Data Governance
 
-Ethical considerations for SGBV research:
+SGBV-related material may be sensitive even when its source is public. Research must consider necessary detail, exposure, interpretation and publication. Institutional accountability does not require making survivors or other individuals unnecessarily visible.
 
-- **Sensitivity** - Handling sensitive violence-related content
-- **Survivor-centered** - Research approaches that do no harm
-- **Confidentiality** - While UPR data is public, we are mindful of implications
-- **Responsible reporting** - Accurate representation of findings
+The historical archive remains private. Any future reuse or release requires separate consideration of privacy, attribution and source rights.
 
-[Full Data Governance Policy](../../../DATA_GOVERNANCE.md)
-
-## Support & Contact
-
-- **Questions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Collaboration:** Contact via GitHub
-
-## Acknowledgments
-
-This research benefits from:
-
-- **OHCHR** - Universal Periodic Review database
-- **UPR Info** - Additional UPR tracking and analysis
-- **SGBV advocates** - Feedback on research direction
-
-______________________________________________________________________
-
-**SGBV-UPR** is part of the GRIMdata (Global Rights Information Monitoring) initiative.
-
-**Mission:** Support evidence-based approaches to preventing and responding to sexual and gender-based violence worldwide.
-
-______________________________________________________________________
-
-_Note: This page will be updated as the SGBV project is fully integrated into the GRIMdata platform. Check back for interactive visualizations and data explorer tools._
+[Data Governance](../../../DATA_GOVERNANCE.md)

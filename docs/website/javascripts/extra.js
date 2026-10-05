@@ -12,6 +12,15 @@ function initializePageEnhancements() {
   }
   addRainbowEffects();
   markExternalLinks();
+  const progress = document.querySelector('.md-progress');
+  if (progress) progress.setAttribute('aria-label', 'Loading page');
+  document.querySelectorAll('.md-typeset__scrollwrap').forEach(wrapper => {
+    wrapper.tabIndex = 0;
+    wrapper.setAttribute('role', 'region');
+    const table = wrapper.querySelector('table');
+    const caption = table && table.querySelector('caption');
+    wrapper.setAttribute('aria-label', caption ? caption.textContent.trim() : 'Scrollable research table');
+  });
 }
 
 if (window.document$ && typeof window.document$.subscribe === 'function') {

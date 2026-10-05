@@ -49,8 +49,8 @@ Choose by what you need to do. **Diátaxis** keeps four kinds of documentation d
 - [Research context](../RESEARCH_CONTEXT.md)
 - [Architecture](../ARCHITECTURE.md) · [Pipeline flow](../notes/PIPELINE_FLOW.md)
 - [Data governance](../DATA_GOVERNANCE.md)
-- [Site practices, data handling, and participation](../practices/index.md)
+- [Site practices and data handling](../practices/index.md)
 
 ## Research record and citations {#existing-documentation-and-citations}
 
-The [technical overview](technical-overview.md) describes the research pipeline and project structure, with support links and a software citation. See the [development history](../api/IMPLEMENTATION_HISTORY.md) for earlier implementation milestones.
+The [technical overview](technical-overview.md) describes the research pipeline and project structure, with a software citation. See the [API implementation history](../api/IMPLEMENTATION_HISTORY.md) and [software roadmap](../ROADMAP.md) for technical development. Programme origins and planned investigations are in [Research history](../research-history/index.md) and [Research directions](../research-directions/index.md).

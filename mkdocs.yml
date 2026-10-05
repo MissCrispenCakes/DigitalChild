@@ -1,5 +1,5 @@
 site_name: GRIMdata
-site_description: Global Rights Index Monitoring - Open human-rights research, with upcoming Canadian project and environmental oversight and research provenance and continuity tracks
+site_description: Global Rights Index Monitoring — research on rights, public decisions and research continuity, with published studies, evidence tools and methods
 site_author: GRIMdata Project
 site_url: https://grimdata.org
 
@@ -13,8 +13,8 @@ edit_uri: edit/basecamp/docs/
 # Copyright
 copyright: |
   &copy; 2026 GRIMdata · Independent open research<br>
-  <a href="/practices/">Site practices &amp; participation</a> ·
-  <a href="https://github.com/MissCrispenCakes/DigitalChild">Source &amp; contributions</a>
+  <a href="/practices/">Site practices &amp; data handling</a> ·
+  <a href="https://github.com/MissCrispenCakes/DigitalChild">Source code</a>
 
 # Internal/process docs kept in git for the working trail, but NOT published to the
 # live site (they were reachable by URL/search even though absent from the nav).
@@ -22,6 +22,7 @@ copyright: |
 exclude_docs: |
   overrides/partials/source.html
   planning/REVAMP_VERIFICATION.md
+  planning/PROGRAMME_VERIFICATION.md
   README.md
   API_WEEK1_SUMMARY.md
   API_WEEK2_SUMMARY.md
@@ -173,7 +174,7 @@ nav:
       - Source Transparency Watch: transparency-watch/index.md
   - Projects:
       - Research Tracks: projects/index.md
-      - Detailed Overview & Plans: website/projects/index.md
+      - Research Directions: research-directions/index.md
       - LittleRainbowRights: website/projects/littlerainbowrights/index.md
       - SGBV-UPR: website/projects/sgbv/index.md
   - Documentation:
@@ -215,30 +216,34 @@ nav:
               - Tags Export Notes: notes/TAGS_EXPORT_NOTES.md
               - Comparison Export Notes: notes/COMPARISON_EXPORT_NOTES.md
           - Docs Index: DOCS_INDEX.md
+          - Development Records:
+              - DigitalChild/LRR Software Roadmap: ROADMAP.md
+              - API Implementation History: api/IMPLEMENTATION_HISTORY.md
+              - URL Compatibility Map: planning/URL_MIGRATION_MAP.md
+              - Repository Terms: CONTRIBUTING.md
       - Explanation:
           - Scorecard Design & Methodology: scorecard/design.md
           - Architecture: ARCHITECTURE.md
           - Pipeline Flow: notes/PIPELINE_FLOW.md
-          - Site Practices & Participation: practices/index.md
+          - Site Practices & Data Handling: practices/index.md
           - Data Governance: DATA_GOVERNANCE.md
           - Research Context: RESEARCH_CONTEXT.md
       - Technical Overview & Citation: docs/technical-overview.md
   - About:
       - About GRIMdata: website/index.md
-      - Development History: api/IMPLEMENTATION_HISTORY.md
-      - URL Migration Map: planning/URL_MIGRATION_MAP.md
-      - Roadmap: ROADMAP.md
-      - Contributing: CONTRIBUTING.md
+      - Research History: research-history/index.md
+      - Research Context: RESEARCH_CONTEXT.md
+      - Data Governance: DATA_GOVERNANCE.md
       - FAQ: FAQ.md
 
 # Custom CSS
 extra_css:
   - website/stylesheets/extra.css?v=20261004-revamp2
-  - website/stylesheets/platform.css?v=20261004-review1
+  - website/stylesheets/platform.css?v=20261005-programme1
 
 # Custom JavaScript
 extra_javascript:
-  - website/javascripts/extra.js?v=20261004-revamp2
+  - website/javascripts/extra.js?v=20261005-programme1
   - website/javascripts/scorecard.js?v=20261004-revamp2
   - website/javascripts/transparency.js?v=20261004-revamp2
   # Plotly is requested only after explicit page-level chart loading.

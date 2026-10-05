@@ -119,12 +119,9 @@ DigitalChild/
 - **Data Quality:** Automated validation of 2,543 source URLs
 - **Open Source:** MIT license for code, CC BY 4.0 for data
 
-## Support
+## Technical guidance {#support}
 
-- **Issues & Bugs:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Questions:** [FAQ](../FAQ.md)
-- **Website:** [grimdata.org](https://grimdata.org)
+[Documentation](index.md) · [First-run troubleshooting](../guides/FIRST_RUN_ERRORS.md) · [FAQ](../FAQ.md) · [Data governance](../DATA_GOVERNANCE.md)
 
 ## Citation
 

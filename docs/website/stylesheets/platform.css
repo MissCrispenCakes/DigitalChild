@@ -127,3 +127,42 @@
 .md-social__link .external-icon {
   display: none;
 }
+
+/* Research record and programme history. */
+.grim-record { border-block: 1px solid var(--grim-border); padding: .5rem 0; }
+.md-typeset .grim-record ul { list-style: none; margin: 0; }
+.md-typeset .grim-record li { margin: 0; padding: 1rem 0; }
+.md-typeset .grim-record li + li { border-top: 1px solid var(--grim-border); }
+.grim-timeline { border-left: 2px solid var(--grim-border); padding-left: 1.4rem; margin: 1.5rem 0; }
+.md-typeset .grim-timeline h3 { position: relative; margin-top: 2rem; }
+.grim-timeline h3::before { content: ""; position: absolute; left: -1.7rem; top: .4rem; width: .5rem; height: .5rem; background: var(--md-accent-fg-color); border-radius: 50%; }
+.grim-snapshot-note, .grim-hero-note { font-size: .7rem; }
+.grim-snapshot-pair span { font-size: .7rem; }
+.md-typeset [id] { scroll-margin-top: 7rem; }
+@media (max-width: 500px) {
+  .grim-timeline { padding-left: 1rem; }
+  .grim-timeline h3::before { left: -1.3rem; }
+}
+
+/* Distinguishable links and stable contrast in both appearance schemes. */
+body[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #5a3ba5;
+  --md-accent-fg-color: #5a3ba5;
+  --md-default-fg-color--light: #58576c;
+  --md-default-fg-color--lighter: #646477;
+}
+body[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #c1a7ff;
+  --md-accent-fg-color: #c1a7ff;
+  --md-default-fg-color--light: #bbbaca;
+  --md-default-fg-color--lighter: #aaa9bd;
+}
+.md-typeset :is(p,li,td) a:not(.md-button):not(.headerlink) {
+  text-decoration: underline;
+  text-underline-offset: .16em;
+}
+.md-copyright { color: #aaa; }
+.md-typeset .md-typeset__scrollwrap:focus-visible { outline: 3px solid var(--md-accent-fg-color); outline-offset: 2px; }
+body[data-md-color-scheme="slate"] .md-typeset a:not(.md-button) { color: #c1a7ff; }
+body[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) { color: #f0eff8; border-color: #bbbaca; }
+body[data-md-color-scheme="slate"] .highlight .nb { color: #bbb0ff; }

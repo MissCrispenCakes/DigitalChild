@@ -1,479 +1,186 @@
+---
+title: Data Governance
+description: Purpose, provenance, information vulnerability, access, retention and project-specific publication terms for GRIMdata research.
+---
+
 # Data Governance
 
-This document outlines the data governance policies, ethical considerations, and responsible research practices for the DigitalChild project.
+This page explains research responsibilities and the scope of the public DigitalChild/LittleRainbowRights materials. [Site practices](practices/index.md) describes public browsing and chart interactions. Planned tracks require their own decisions before collecting or releasing material.
 
-## 🎯 Purpose
+## Purpose
 
-DigitalChild collects, processes, and analyzes human rights documents to support research on child and LGBTQ+ digital protection. This governance framework ensures:
+The research uses documentary evidence to examine rights and public decisions. Governance asks what is necessary to collect, how a representation was produced, who can use it, and what exposure publication could create.
 
-1. **Ethical data collection** - Respecting source terms and permissions
-1. **Privacy protection** - Safeguarding any personal information
-1. **Transparency** - Clear documentation of data sources and methods
-1. **Reproducibility** - Enabling verification and replication of findings
-1. **Responsible use** - Supporting human rights research without causing harm
+Knowing more about a situation may help people act while making those described more vulnerable. Public accessibility does not make every aggregation, inference or republication appropriate.
 
-## 🌍 Cultural Sensitivity & Research Stance
+## Cultural Sensitivity & Research Stance
 
 ### Non-Imposing Methodology
 
-This project tracks digital rights policies across 194 countries with vastly different cultural, legal, and religious contexts. Human rights standards vary globally, and we recognize that imposing Western-centric values would undermine both academic credibility and ethical research.
+Separate description of laws and documents from analysis of enforcement mechanisms and evaluation of effects. Recognise legal and cultural context, language limitations and the perspectives embedded in classifications.
 
-**Our approach:**
+The research focuses on autonomy and vulnerable populations. That stance is explicit; numerical assessments are not value-free substitutes for legal interpretation or lived experience. [Research Context](RESEARCH_CONTEXT.md) explains the reasoning.
 
-- ✅ **Document facts without imposing values** - We track what laws exist, not what laws "should" exist
-- ✅ **Acknowledge cultural context** - Analysis recognizes regional differences in legal traditions and social norms
-- ✅ **Include diverse sources** - UN, African Union, regional bodies, and local organizations
-- ✅ **Evaluate mechanisms, not intent** - Focus on enforcement mechanisms (Verify → Register → Retain → Link → Deactivate) rather than stated policy goals
-- ✅ **Avoid oversimplification** - Complex issues are presented with nuance and context
-- ✅ **Transparent about perspective** - We acknowledge our research stance focuses on vulnerable populations' autonomy
-
-**Why this matters:**
-
-For a project examining LGBTQ+ rights and child protection policies—topics where cultural, religious, and legal perspectives differ dramatically—our methodology must distinguish between:
-
-1. **Documenting what policies exist** (objective measurement)
-2. **Analyzing enforcement mechanisms** (technical assessment)
-3. **Evaluating impact on vulnerable populations** (research focus)
-
-See [Research Context](RESEARCH_CONTEXT.md) for detailed methodology including mechanism-based risk analysis framework.
-
-## 📜 Data Collection Principles
+## Data Collection Principles
 
 ### 1. Publicly Available Documents {#1-public-domain-documents-only}
 
-**What we collect:**
+The public pipeline is designed around publicly available human-rights and policy documents. This website does not collect participant submissions. Original sources may still contain sensitive material or carry copyright and reuse restrictions.
 
-- Publicly available human rights documents
-- Policy statements from governments and international organizations
-- Reports published by UN bodies, regional organizations, and NGOs
-
-**What we DO NOT collect:**
-
-- Participant submissions through this website
-- Leaked or confidential documents
-- Data obtained without permission
-- Information behind paywalls or authentication
+Review source terms, authentication boundaries and the necessity of collection before adapting a scraper. Public access does not establish permission to bypass controls or redistribute the document.
 
 ### 2. Source Attribution
 
-Every document includes:
-
-- Original source URL
-- Publishing organization
-- Date of collection
-- Verification of public availability
-
-See `metadata.json` schema for attribution fields.
+Retain the original source URL, publisher, relevant dates and processing/version context where available. Distinguish a collection date, a verification date and the period a source describes. [Metadata schema](standards/METADATA_SCHEMA.md) documents the technical fields.
 
 ### 3. Respect for Terms of Service
 
-Scrapers designed to:
+Collection operators should assess source terms and applicable requirements, avoid bypassing access controls, and limit requests appropriately. Scraper settings and source behaviour must be checked for the particular deployment; the existence of code is not proof of compliance in every use.
 
-- ✅ Respect robots.txt directives
-- ✅ Implement rate limiting and timeouts
-- ✅ Identify as research tool (User-Agent headers)
-- ✅ Minimize server load
-- ❌ Never bypass authentication
-- ❌ Never ignore explicit blocking
-
-## 🔒 Privacy & Data Protection
+## Privacy & Data Protection
 
 ### Personal Information
 
-The public website provides static research pages and browser-based tools. See [Site practices & participation](practices/index.md) for browsing privacy, optional charts, and contributions.
-
-Public availability does not mean a document is in the public domain or safe to republish without assessment. Original licensing, privacy risks, and source terms must be considered. The pipeline processes downloaded public documents; researchers must assess whether retaining identifiers is necessary and appropriate rather than assuming publication removes all privacy interests.
-
-The separately self-hosted API can use authentication and request logs. Operators are responsible for its configuration and retention policies; the static site's browsing practices do not describe every private API deployment.
+Institutional records may mention survivors, defenders, officials or other individuals. Extracted text can preserve names even when no separate personal-data fields are created. Assess whether indexing, linking or disclosure increases exposure and whether less detail would answer the research question.
 
 ### Data Storage
 
-**Local storage (default):**
-
-- All data stored on user's machine
-- User controls access and retention
-- Gitignored by default (`data/`, `logs/`)
-
-**Users are responsible for:**
-
-- Securing their own machines
-- Controlling access to downloaded documents
-- Following their institution's data policies
-- Complying with local data protection laws (GDPR, CCPA, etc.)
+Local pipeline and API deployments are operated by their users. They determine storage location, access permissions and security. The public website serves published static research assets; it does not upload a visitor's local research corpus.
 
 ### Data Sharing
 
-**What can be shared:**
+Prefer the minimum necessary detail. Consider aggregation, purpose, access and likely downstream reuse. Some research material should remain restricted even where source documents are public.
 
-- ✅ Compiled analysis (CSV exports)
-- ✅ Tags and metadata (with attribution)
-- ✅ Scorecard data (CC BY 4.0 license)
-- ✅ Code and documentation (MIT license)
-
-**What requires caution:**
-
-- ⚠️ Raw downloaded documents (check original publisher's terms)
-- ⚠️ Bulk document collections (respect copyright)
-- ⚠️ Personal identifiers extracted from documents
-
-**Licensing:**
-
-- **Code:** MIT (free use, attribution appreciated)
-- **Data/Documentation:** CC BY 4.0 (attribution required)
-
-See [LICENSE](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE) and [LICENSE-DATA](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA) for details.
-
-## 🧭 Ethical Research Practices
+## Ethical Research Practices
 
 ### 1. Do No Harm
 
-This project analyzes human rights violations and protections. We must ensure our work does not:
-
-- ❌ Expose vulnerable individuals to retaliation
-- ❌ Enable surveillance or targeting of at-risk populations
-- ❌ Misrepresent data to support harmful policies
-- ❌ Weaponize findings against vulnerable communities
-
-**Best practices:**
-
-- Focus on systemic patterns, not individuals
-- Contextualize findings appropriately
-- Acknowledge limitations and uncertainties
-- Consider potential misuse of research outputs
+Treat harm reduction as a responsibility, not a guarantee. Examine risks of outing, selective enforcement, misclassification and exposing individuals. Institutional accountability does not require unnecessary visibility of affected people.
 
 ### 2. Transparency
 
-All aspects of this project are open:
-
-- ✅ Source code publicly available (GitHub)
-- ✅ Methodology documented
-- ✅ Data sources cited with URLs
-- ✅ Limitations acknowledged
-- ✅ Changes tracked via version control
+Explain selection rules, classifications, missingness and changes. Make consequential interface choices understandable where they occur, including optional external charts.
 
 ### 3. Reproducibility
 
-Researchers can verify and replicate findings:
-
-- Config files define tag rules
-- Metadata tracks processing history
-- Timestamps record when data was collected
-- Version control preserves historical states
+Preserve versions, processing context and references where disclosure is appropriate. Reproducibility does not require publishing sensitive information or third-party material without suitable rights.
 
 ### 4. Accountability
 
-**Maintainer responsibilities:**
+Research interpretations can be contested and revised. Retain the distinction between source evidence and authored judgment, and document material changes to public assessments.
 
-- Respond to data quality concerns
-- Correct errors when identified
-- Update sources as information changes
-- Credit contributors appropriately
-
-**User responsibilities:**
-
-- Verify findings before publication
-- Cite sources appropriately
-- Report errors and issues
-- Use data ethically and legally
-
-## 📊 Data Quality & Integrity
+## Data Quality & Integrity
 
 ### Source Validation
 
-Scorecard system includes:
+A reachable URL is not proof of source accuracy, present-day legal status or correct interpretation. Checks of availability, extraction and substantive meaning are different.
 
-- Historical source inventories; the visualization snapshot records its own generation and source-verification dates
-- Automated validation (`scorecard_validator.py`)
-- Broken link detection
-- Change monitoring (`scorecard_diff.py`)
+The visualization snapshot was generated **26 June 2026**; its metadata records source verification on **9 September 2025**. Interpret each date according to its meaning.
 
 ### Metadata Integrity
 
-Every document tracked with:
-
-- Unique ID (filename)
-- Source organization
-- Country/region (normalized)
-- Year extracted
-- Processing timestamps
-- Tags history (versioned)
-- Scorecard indicators (with sources)
+Preserve original values where normalization changes them, document transformations and keep gaps visible. Missing evidence must not silently become zero or a negative finding.
 
 ### Error Handling
 
-When processing fails:
+Record failed retrievals and extraction issues. A successful run does not establish a complete corpus. [Validation guidance](guides/VALIDATORS_USAGE.md) explains the available tools.
 
-- Errors logged to `logs/`
-- Documents marked with processing status
-- Fallback handlers attempt alternative methods
-- Manual review flagged for complex cases
-
-## 🌍 International Considerations
+## International Considerations
 
 ### Multi-Jurisdictional Data
 
-Documents originate from 194 countries with varying:
-
-- Copyright laws
-- Data protection regulations
-- Freedom of information standards
-- Cultural sensitivities
-
-**Our approach:**
-
-- Respect most restrictive interpretation
-- Defer to original publisher's terms
-- Acknowledge legal uncertainties
-- Seek legal advice for edge cases
+Interpretation and publication may have different consequences across jurisdictions. Legal and policy sources need contextual review; a common schema does not erase those differences.
 
 ### Language & Translation
 
-Current scope: English-language documents primarily
+Language coverage and translation affect retrieval and classification. Report language limits, preserve original references and validate translated interpretations where they matter.
 
-- African Union documents (English, French, Arabic)
-- UN documents (multiple languages available)
-
-Future expansion may include:
-
-- Machine translation with disclaimers
-- Native language processing
-- Cultural context preservation
-
-**Note:** See [Cultural Sensitivity & Research Stance](#cultural-sensitivity-research-stance) section above for our methodology regarding cultural context and non-imposing analysis.
-
-## 🔐 Security & Access Control
+## Security & Access Control
 
 ### Data Access
 
-**Who can access the data:**
-
-- Anyone who downloads and runs this open-source tool
-- Static website visitors (scorecard visualizations)
-- Researchers citing published findings
-
-**No authentication required:**
-
-- Public static website browsing and its local exploration tools require no account
-- Local CLI use is separate from a self-hosted API, which can enforce authentication
+Public site browsing, documentation search and table filtering need no account. The self-hosted API is separate software; its operator controls authentication, rate limits and access.
 
 ### Security Measures
 
-Code includes validators for:
-
-- Path traversal attacks (`validate_path()`)
-- URL injection (`validate_url()`)
-- File size limits
-- Extension whitelisting
-
-See [SECURITY.md](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md) for vulnerability reporting.
+DigitalChild contains validation and API security facilities. Their effectiveness depends on configuration, deployment and maintenance. Do not treat a documented feature as assurance for an unreviewed installation.
 
 ### Secure Deployment
 
-When deploying or using this tool:
+[Production deployment guidance](guides/PRODUCTION_DEPLOYMENT.md) covers the self-hosted service. The website does not imply that a public API service is deployed.
 
-1. Keep software updated (`git pull` regularly)
-1. Review dependencies for vulnerabilities (`pip install safety && safety check`)
-1. Limit access to downloaded documents
-1. Use HTTPS for all web requests
-1. Follow your institution's security policies
-
-## 📝 Data Retention & Deletion
+## Data Retention & Deletion
 
 ### Default Retention
 
-Data persists indefinitely on user's machine unless manually deleted.
-
-**Recommended practices:**
-
-- Delete raw documents after processing if storage limited
-- Keep metadata.json and exports for reproducibility
-- Archive complete datasets before major version changes
+Local research operators determine retention according to purpose, source rights and relevant obligations. Versioned public outputs can remain in Git history, archives and downloaded copies.
 
 ### Corrections and Removal Requests {#right-to-be-forgotten}
 
-If a document publisher requests removal:
+Correcting a future version does not guarantee removal from existing copies. Assess the need for a correction, restriction or removal without reproducing sensitive material in public records. Historical versions and their limitations should remain distinguishable from current assessments.
 
-1. Verify authenticity of request
-1. Remove from future scrapes
-1. Assess removal or correction in future published datasets
-1. Document removal in changelog
-1. Publish a non-sensitive change note where appropriate
-
-**Limits:** We cannot guarantee removal from versioned history, archives, citations, or copies already downloaded. Do not disclose a sensitive removal request in a public issue.
-
-## 🧪 Research Ethics
+## Research Ethics
 
 ### Human Subjects
 
-This project does NOT involve human subjects research:
-
-- No recruitment or consent procedures
-- No direct interaction with individuals
-- Documents are already public
-
-**However:**
-
-- Documents may contain names of human rights defenders, victims, or officials
-- We treat all individuals mentioned with respect and dignity
-- We do not extract personal data as separate fields
+Public-document research can still involve identifiable people and sensitive content. Any future participant work needs appropriate scope, ethics review and understandable terms before collection.
 
 ### Institutional Review Board (IRB)
 
-PhD research using this tool may require IRB approval depending on:
-
-- Your institution's policies
-- Your specific research questions
-- Whether you're analyzing individuals vs. systemic patterns
-
-**Recommendation:** Consult your IRB if unsure.
+Researchers must assess institutional review requirements for their own questions and methods. No participant recruitment or consent process operates through this website.
 
 ### Publication Ethics
 
-When publishing research using DigitalChild:
+Cite the relevant study or output version, explain the method, retain limitations and observe source/publication terms. The [technical overview](docs/technical-overview.md#citation) provides the software citation.
 
-- ✅ Cite the project (see [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff))
-- ✅ Describe methodology clearly
-- ✅ Acknowledge limitations
-- ✅ Share code and data where possible (within legal constraints)
-- ✅ Follow journal data sharing policies
+<span id="contributor-conduct"></span>
+<span id="issue-reporting"></span>
+<span id="user-expectations"></span>
 
-## 🤝 Community Standards
+## Community Standards
 
-### Contributor Conduct
+Existing [contribution terms](CONTRIBUTING.md) describe attribution and licensing for repository material. A public versioned record may retain earlier contributions after later changes. Personal or confidential material does not belong in public issue histories.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for code of conduct.
-
-**Core values:**
-
-- Respectful, inclusive collaboration
-- Constructive feedback
-- Focus on human rights mission
-- No harassment or discrimination
-
-### Issue Reporting
-
-When reporting data quality issues:
-
-- Provide specific examples (URLs, filenames)
-- Distinguish errors from design choices
-- Suggest corrections with sources
-- Assume good faith
-
-### User Expectations
-
-**What users can expect:**
-
-- Open, documented code
-- Best-effort data quality
-- Responsive issue handling (within maintainer capacity)
-- Academic citation and credit
-
-**What users should NOT expect:**
-
-- 24/7 support (maintained part-time)
-- Legal guarantees or warranties (MIT license)
-- Custom features on demand
-- Validation of all 2,543 source URLs in real-time
-
-## 📚 Compliance & Legal
+## Compliance & Legal
 
 ### Copyright
 
-**Documents:**
-
-- Third-party documents retain their original publisher terms; public availability does not establish public-domain status
-- Some may have copyright restrictions
-- Check original source before redistribution
-
-**Code:**
-
-- MIT License (see [LICENSE](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE))
-- Free use including commercial
-
-**Data/Documentation:**
-
-- CC BY 4.0 (see [LICENSE-DATA](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA))
-- Attribution required
+| Material | Access and terms |
+| --- | --- |
+| DigitalChild source code | MIT, as specified in the repository licence |
+| Project-authored DigitalChild data and documentation | CC BY 4.0 where specified; attribution required |
+| Original third-party documents | Publisher/source terms remain applicable |
+| Published articles and archival records | Their own publication terms; cite the actual work |
+| Historical HumanRights research archive | Private; no public download or general open licence is offered here |
+| Future project material | Access and release terms remain to be determined |
 
 ### Data Protection Laws
 
-Processing public documents can still create privacy and data-protection obligations. Researchers and deployment operators should assess applicable requirements, institutional policies, source terms, and sensitive categories for their use case.
-
-See [Site practices & participation](practices/index.md) for the public site's browsing and contribution practices.
+Public-document processing can create privacy and data-protection obligations. Deployment operators and researchers must assess applicable requirements, source terms and sensitive categories for their use.
 
 ### Freedom of Information
 
-Documents often obtained via:
+Access to a public record does not establish permission for every subsequent research use, inference or republication.
 
-- Government websites (public records)
-- UN databases (publicly accessible)
-- NGO publications (openly shared)
+<span id="contact-questions"></span>
+<span id="data-quality-issues"></span>
+<span id="ethical-concerns"></span>
+<span id="collaboration"></span>
 
-Public accessibility alone does not establish permission for every research use or republication.
-
-## 🔄 Updates & Versioning
+## Updates & Versioning
 
 ### Data Updates
 
-**Scorecard:**
-
-- Manually updated as new information available
-- Change monitoring (`scorecard_diff.py`)
-- Version tracked in exports (timestamped)
-
-**Documents:**
-
-- Scrapers can be re-run to fetch updates
-- Duplicate detection (skip existing files)
-- Metadata tracks last_processed timestamp
+Published scorecard snapshots have dates and version context. Pipeline tools support processing, comparison and exports; they do not establish uninterrupted or real-time monitoring of every source.
 
 ### Policy Updates
 
-This governance document reviewed annually or when:
+Governance decisions should be revisited when sources, purposes, access arrangements or research methods change. Git history records revisions to these public documents.
 
-- Major legal/regulatory changes occur
-- New data sources added
-- User feedback identifies gaps
-- Research ethics standards evolve
+## Mission Alignment
 
-**Version history:** Tracked via Git commits
+Inspectable evidence, contextual interpretation and proportionate disclosure support the programme's research purpose. The four tracks have different materials and stages of development; their governance practices must be assessed accordingly.
 
-## 📞 Contact & Questions
+[Research Context](RESEARCH_CONTEXT.md) · [Site practices](practices/index.md) · [Research directions](research-directions/index.md)
 
-### Data Quality Issues
-
-Report via [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
-
-- Specific data point or document
-- Expected vs. actual value
-- Source URL for verification
-
-### Ethical Concerns
-
-GitHub issues are public. Describe governance concerns using public sources and omit personal or sensitive information about affected people. Do not submit confidential reports through GitHub issues.
-
-### Collaboration
-
-Open to partnerships with:
-
-- Human rights organizations
-- Academic researchers
-- Policy analysts
-- Data scientists
-
-Use [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions) for collaboration proposals.
-
-## 🌈 Mission Alignment
-
-All data governance decisions prioritize:
-
-1. **Human Rights First** - Support research that advances protections
-1. **Open Science** - Maximize accessibility and reproducibility
-1. **Responsible Research** - Do no harm, ensure integrity
-1. **Community Benefit** - Serve researchers, advocates, and affected communities
-
-This project exists to shine light on digital rights protections (or lack thereof) for vulnerable populations. Every governance decision should serve that mission.
-
-______________________________________________________________________
-
-**Last reviewed:** 3 October 2026 (site practices and participation)
+*Reviewed: 5 October 2026.*

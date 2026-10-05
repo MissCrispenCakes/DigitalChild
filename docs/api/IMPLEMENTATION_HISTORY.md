@@ -1,10 +1,11 @@
 # API Implementation History
 
-This is the build trail for the Flask API — *what was done, week by week*. It is kept
-as a record (this project deliberately preserves the "how it got built" trail), separate
+This is the historical build record for the self-hosted Flask API, organized by implementation week. It is separate
 from the [Endpoint Reference](reference.md). For the current, authoritative endpoint list
 and parameters, always use the reference; for releases, see the
 [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md).
+
+Research programme history is described in [Research history](../research-history/index.md); intended investigations are in [Research directions](../research-directions/index.md). The week-by-week test counts below are historical records, not results from a new test run.
 
 ## Implementation Status
 

@@ -1,271 +1,93 @@
 ---
-description: GRIMdata's active human-rights research and upcoming Canadian project oversight and research continuity tracks.
+title: About GRIMdata
+description: The research programme, computational and legal contributions, history and research stance behind GRIMdata.
 ---
 
-# GRIMdata
+<span id="grimdata"></span>
+
+# About GRIMdata
 
 [← Back to GRIMdata Home](../index.md){ .md-button .md-button--primary }
 
 ## Global Rights Index Monitoring
 
-**GRIMdata** is an open research initiative analyzing human rights through automated document analysis pipelines. We develop tools to track digital rights, protections for vulnerable populations, and policy implementation across countries. Upcoming streams extend this work to Canadian project and environmental oversight, and research provenance and institutional continuity.
+GRIMdata brings computational document research and domain interpretation together to examine rights, public decisions and the conditions in which research continues. Public research outputs, tools, methods and instructions live here; individual project splash sites introduce their big ideas.
 
-**Mission:** Support evidence-based human rights research and advocacy through transparent, reproducible data analysis.
+The programme began with the SGBV-UPR inquiry and expanded through LittleRainbowRights. Its planned directions concern Canadian projects and environmental oversight, and research provenance and institutional continuity.
+
+<span id="quick-links"></span>
+<span id="__span-0-1"></span>
+<span id="__codelineno-0-1"></span>
+<span id="__span-0-2"></span>
+<span id="__codelineno-0-2"></span>
+<span id="__span-0-3"></span>
+<span id="__codelineno-0-3"></span>
+<span id="__span-1-1"></span>
+<span id="__codelineno-1-1"></span>
+<span id="__span-1-2"></span>
+<span id="__codelineno-1-2"></span>
+<span id="__span-1-3"></span>
+<span id="__codelineno-1-3"></span>
+
+## Research contributions
+
+The computational work includes helping formulate research questions and developing retrieval, extraction, language-pattern selection, tagging, comparison and passage ranking. These decisions emerged through exploration of the documents themselves. They are methodological contributions, alongside the software that implements them.
+
+The legal work interprets excerpts within the UPR process and the subject of inquiry, connecting documentary material to legal instruments and context. Finding a relevant passage and establishing its legal meaning involve complementary forms of judgment.
+
+[Explore the SGBV-UPR methods](projects/sgbv/index.md#methodology) · [LittleRainbowRights contributions](projects/littlerainbowrights/index.md#methodological-contributions)
+
+<span id="getting-started-with-littlerainbowrights"></span>
 
 ## Research Projects — Active & Upcoming
 
-<div class="grid cards grim-projects" markdown>
+The programme includes [SGBV-UPR](projects/sgbv/index.md), [LittleRainbowRights](projects/littlerainbowrights/index.md), the planned [Canadian oversight stream](../research-directions/index.md#canadian-projects-environmental-oversight) and proposed [research-continuity track](../research-directions/index.md#research-provenance-institutional-continuity). Their scope, available outputs and status differ.
 
--   :material-chart-timeline-variant:{ .lg .middle } __LittleRainbowRights__
-
-    ---
-
-    **Status:** Active | **Scope:** Global (194 countries)
-
-    Child and LGBTQ+ digital rights research tracking 10 indicators: AI policy, data protection, LGBTQ+ legal status, child online protection, and more. Features an open-source pipeline, source-linked research data, an **interactive scorecard** (choropleth map, indicator & regional charts, plus a filter/search/compare [data explorer](../scorecard/explorer.md)), a self-hosted REST API, and a **[Source Transparency Watch](../transparency-watch/index.md)** tracking peer-organisation open-data adoption.
-
-    **Presented:** 2nd International Conference on Children's Rights (Stellenbosch, September 9-11, 2025)
-
-    **Published:** [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098)
-
-    [Vollmer & Vollmer (2025), Zenodo](https://doi.org/10.5281/zenodo.18318098)
-
-    **Repository:** [DigitalChild](https://github.com/MissCrispenCakes/DigitalChild) (Python pipeline)
-
-    [🌈 LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary target="_blank" rel="noopener" }
-    [:octicons-arrow-right-24: Full Documentation](projects/littlerainbowrights/index.md){ .md-button }
-
--   :material-hand-heart:{ .lg .middle } __SGBV-UPR__
-
-    ---
-
-    **Status:** Published (2022) | **Scope:** SADC member states → Expanding globally
-
-    Sexual and gender-based violence analysis using Universal Periodic Review recommendations. Precursor research demonstrating methodology at regional scale. Updating for UPR Cycle 4 and global expansion.
-
-    **Presented:** International Conference on The Responsiveness of the African Human Rights System to SGBV (September 2021, Session: Diverse Gender Identities)
-
-    **Published:** [Vollmer & Vollmer (2022), Stellenbosch Law Review](https://doi.org/10.47348/SLR/2022/i1a1)
-
-    **Repository:** [HumanRights] Under reconstruction (see project page for details)
-
-    [:octicons-arrow-right-24: Project Overview](projects/sgbv/index.md){ .md-button }
-
--   :material-leaf:{ .lg .middle } __Canadian Projects & Environmental Oversight__
-
-    ---
-
-    **Status:** Coming soon | **Scope:** Canada first
-
-    A planned public-interest tracker for Build Canada and other major Canadian projects: environmental oversight, Indigenous rights and land relationships, climate commitments, affordability claims, and changes over time.
-
-    Supporting needed housing, renewable energy, and infrastructure through transparent evidence about what is being built, how decisions are made, and who carries the long-term costs.
-
-    [Read the upcoming plan](projects/index.md#canadian-projects-environmental-oversight){ .md-button }
-
--   :material-source-branch:{ .lg .middle } __Research Provenance & Institutional Continuity__
-
-    ---
-
-    **Status:** Proposed future research | **Scope:** Research across institutions and time
-
-    A planned extension of GRIMdata to trace research across grants, institutions, people, methods, and outputs. AI-assisted analysis with human verification will examine contribution histories, attribution, trainee transitions, and what enables research to continue when people or funding move on.
-
-    **Insight Grant track:** AI-Assisted Research Provenance, Institutional Continuation & Public Accountability. Funding is not confirmed.
-
-    [Read the future research plan](projects/index.md#research-provenance-institutional-continuity){ .md-button }
-
-</div>
-
-[:octicons-apps-24: View All Projects](projects/index.md){ .md-button .md-button--primary }
-
-______________________________________________________________________
-
-
-!!! quote "Research Foundation"
-    "During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."
-
-    — Vollmer & Vollmer (2022), *Stellenbosch Law Review* [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-
-**GRIMdata's response:** Decisions affecting marginalized populations' fundamental rights are being made RIGHT NOW with PERMANENT consequences—often by the wrong actors, based on assumptions rather than evidence. Our established research tracks (SGBV-UPR for violence documentation, LittleRainbowRights for digital system deployments) use transparent tracking to replace assumptions with evidence BEFORE consequences become irreversible.
-
-**Core principle:** Evidence-based governance, not governance by assumption.
-
-[:octicons-book-16: Read Full Research Context](../RESEARCH_CONTEXT.md){ .md-button }
-
-______________________________________________________________________
-
-## Quick Links
-
-<div class="grid cards" markdown>
-
--   :octicons-rocket-24:{ .lg .middle } **API Quick Start**
-
-    ---
-
-    Get started with the REST API in 2 minutes
-
-    ```bash
-    pip install -r api_requirements.txt
-    python run_api.py
-    curl http://localhost:5000/api/documents
-    ```
-
-    [:octicons-arrow-right-24: API Docs](../api/index.md){ .md-button }
-
--   :material-download:{ .lg .middle } **Install Pipeline**
-
-    ---
-
-    Install the data pipeline locally
-
-    ```bash
-    git clone https://github.com/MissCrispenCakes/DigitalChild.git
-    cd DigitalChild
-    pip install -r requirements.txt
-    ```
-
-    [:octicons-arrow-right-24: Installation](getting-started/installation.md){ .md-button }
-
--   :material-database-export:{ .lg .middle } **Download Data**
-
-    ---
-
-    Access pre-generated CSV exports
-
-    - Scorecard summary (194 countries)
-    - Document metadata
-    - Source validation reports
-
-    [:octicons-arrow-right-24: View Scorecard](../scorecard/index.md){ .md-button }
-
--   :material-book-open:{ .lg .middle } **Read Research**
-
-    ---
-
-    Published research and methodology
-
-    - Zenodo DOI: 10.5281/zenodo.18318098
-    - Stellenbosch Law Review (2022)
-
-    [:octicons-arrow-right-24: Research Context](../RESEARCH_CONTEXT.md){ .md-button }
-
-</div>
-
-______________________________________________________________________
+[Compare the four research tracks](../projects/index.md){ .md-button }
 
 ## Research Evolution
 
-**SGBV-UPR** (2019-2022) demonstrated the feasibility of automated analysis of UPR recommendations at regional scale, focusing on SADC member states and SGBV themes. This work was published in academic literature and validated the core methodology.
+- **2019–2020:** The human-rights inquiry was conceived in 2019; computational exploration began in 2020.
+- **2021–2022:** Dedicated documentation and a 2021 conference presentation preceded the 2022 law-journal publication.
+- **Subsequent work:** LittleRainbowRights broadened country and source coverage. An index tracker emerged to preserve dated assessments with inspectable evidence.
+- **Next directions:** Renew SGBV-UPR analysis, examine major Canadian projects, and investigate how research knowledge and contributions persist through institutional transitions.
 
-**LittleRainbowRights** (2025-present) expands this approach to global digital rights analysis, tracking 10 indicators across all 194 countries with a published source-linked dataset. The project advances the pipeline with comprehensive testing, security frameworks, and reproducible workflows.
+The earlier computational background includes ML, pattern recognition, sociophysics and physical robotics experiments in 2014–2016. The programme's [research history](../research-history/index.md) explains the later inquiry, its exploratory origins and scholarly milestones.
 
-## What GRIMdata Provides
+<span id="who-its-for"></span>
 
-<div class="grid cards" markdown>
+## Research stance
 
--   :material-database:{ .lg .middle } __Open Data__
+Understanding what a situation is provides a basis for deciding how to act within it. That requires attention to dates, gaps, interpretation and the limits of a representation. It also requires recognising that having facts about people can make them vulnerable.
 
-    ---
+GRIMdata's concern is with autonomy, rights and the consequences of institutional decisions. Documenting a policy, examining its enforcement mechanism and evaluating its effects are distinct analytical tasks.
 
-    All datasets include authoritative source URLs, validation status, and transparent provenance. Data licensed under CC BY 4.0 for academic and advocacy use.
+[Read the full Research Context](../RESEARCH_CONTEXT.md) · [Future research directions](../research-directions/index.md)
 
--   :material-api:{ .lg .middle } __REST API__
+## Data governance
 
-    ---
+Combining public information can create new exposure. Governance considers purpose, necessary detail, aggregation, access, retention and publication. The public DigitalChild tools, source documents and published studies have different access and licensing terms.
 
-    Flask REST API with 14 endpoints for programmatic data access. Features authentication, rate limiting, and production deployment. Filter, paginate, and query documents, scorecard, tags, and timeline data via HTTP.
-
--   :material-code-tags:{ .lg .middle } __Open Source Code__
-
-    ---
-
-    Complete pipelines available on GitHub with MIT licensing. Modular design enables adaptation for other human rights research projects.
-
--   :material-book-open-variant:{ .lg .middle } __Documentation__
-
-    ---
-
-    Comprehensive guides covering installation, usage, methodology, and standards. Full architectural documentation for researchers and developers.
-
--   :material-shield-check:{ .lg .middle } __Research Quality__
-
-    ---
-
-    Security testing, input validation, automated source monitoring, and version control ensure data integrity and reproducibility.
-
-</div>
-
-## Technology Stack
-
-- **Python 3.12** - Core language
-- **BeautifulSoup4 & Selenium** - Web scraping
-- **pandas** - Data analysis
-- **Flask** - REST API backend (Phase 4)
-- **pytest** - Testing framework (347 tests)
-- **MkDocs Material** - Documentation
-
-All pipelines follow best practices for security, validation, and error handling. The REST API provides programmatic data access with filtering, pagination, and caching.
-
-## Getting Started with LittleRainbowRights
-
-The **LittleRainbowRights** project is ready for use:
-
-1. **[Install the pipeline](getting-started/installation.md)** - Setup in ~5 minutes
-1. **[Quick start guide](getting-started/quickstart.md)** - Run your first analysis
-1. **[Access via API](../api/index.md)** - self-hosted API tooling with 14 endpoints
-1. **[View Scorecard](../scorecard/index.md)** - Browse 194-country dataset
-1. **[Read the documentation](projects/littlerainbowrights/index.md)** - Complete project overview
-
-[Get Started with LittleRainbowRights](projects/littlerainbowrights/index.md){ .md-button .md-button--primary }
-[API Documentation](../api/index.md){ .md-button }
-
-## Who it's for
-
-Researchers, advocates, and policymakers each use GRIMdata differently. The
-**[Start Here](getting-started/start-here.md)** page routes each to the right data, tools, and
-methodology — with the key cautions for responsible use.
+The public tools allow account-free browsing. External chart resources load only after a choice on the chart page. [Site practices](../practices/index.md) explains the actual interactions; [Data Governance](../DATA_GOVERNANCE.md) explains the research responsibilities.
 
 ## Publications & Outputs
 
-**SGBV-UPR Research:**
+- **SGBV-UPR:** Vollmer, D. T., & Vollmer, S. C. (2022). *Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states.* Stellenbosch Law Review, 33(1), 8–41. [Published article](https://doi.org/10.47348/SLR/2022/i1a1).
+- **LittleRainbowRights:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [Research record](https://doi.org/10.5281/zenodo.18318098).
+- **Public tools:** [Scorecard explorer](../scorecard/explorer.md), [map and charts](../scorecard/visualization.md), [downloads](../scorecard/data-access.md) and [Source Transparency Watch](../transparency-watch/index.md).
 
-- Vollmer, S.C., & Vollmer, D.T. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
-
-**LittleRainbowRights Research:**
-
-- Vollmer, D.T., & Vollmer, S.C. (2025). Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa. Presented at the Second International Conference on Children's Rights, Stellenbosch, South Africa, September 9-11, 2025.
+<span id="what-grimdata-provides"></span>
+<span id="technology-stack"></span>
+<span id="contact-contributing"></span>
 
 ## Open Source & Licensing
 
-**Code:** MIT License - Free for any use including commercial applications
+DigitalChild provides the public LittleRainbowRights pipeline and self-hosted API. Its code uses MIT licensing; project-authored data and documentation use CC BY 4.0 where specified. Third-party material retains its own terms. The historical SGBV-UPR code and research archive are not offered as public downloads.
 
-**Data & Documentation:** CC BY 4.0 - Attribution required
+[Software overview and citation](../docs/technical-overview.md) · [Project-specific governance](../DATA_GOVERNANCE.md)
 
-This dual licensing ensures maximum utility while giving credit to the research effort.
+<span id="support-this-work"></span>
 
 ## About the Initiative
 
-GRIMdata is maintained by an independent researcher alongside other work. The established and planned projects represent independent research initiatives aimed at making human rights data more accessible and analysis more transparent.
-
-!!! note "Independent maintenance"
-    This project is maintained part-time by one person alongside PhD research. Response times may vary. Your patience is appreciated!
-
-## Contact & Contributing
-
-- **GitHub (LittleRainbowRights):** [DigitalChild Repository](https://github.com/MissCrispenCakes/DigitalChild)
-- **GitHub (SGBV-UPR):** Repository under reconstruction (see [SGBV project page](projects/sgbv/index.md))
-- **Issues & Discussions:** Use [DigitalChild repository](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Contributing:** See [Contributing Guidelines](../CONTRIBUTING.md)
-
-## Support This Work
-
-- ⭐ Star the repositories on GitHub
-- 📢 Share with researchers and advocates in your network
-- 🐛 Report data quality issues or bugs
-- 💻 Contribute code or documentation improvements
-- 📝 Cite in your publications and presentations
-
-______________________________________________________________________
-
-**Making human rights data accessible, transparent, and actionable.**
+The work developed through a small computational and legal research team. Its exploratory methods, published studies and public tools form an evolving programme rather than a single uniform dataset or already deployed pipeline for every track.

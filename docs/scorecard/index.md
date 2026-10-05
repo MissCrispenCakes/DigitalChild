@@ -295,7 +295,7 @@ Or in text:
 
 Planned features (see [Roadmap](../ROADMAP.md)):
 
-- [x] **REST API for programmatic access** ✅ **COMPLETE** (14 endpoints live, production-ready)
+- [x] **REST API software for self-hosted programmatic access** — implementation available; separate from the public static website
 - [x] **Interactive map & charts (Plotly.js)** ✅ **LIVE** (see [Visualization](visualization.md))
 - [x] **Country comparison tool** ✅ **LIVE** (radar comparison in the [Data Explorer](explorer.md))
 - [x] **Source transparency monitoring** ✅ **LIVE** (see [Transparency Watch](../transparency-watch/index.md))
@@ -307,23 +307,9 @@ Planned features (see [Roadmap](../ROADMAP.md)):
 
 ---
 
-## Contributing
+## Assessment records {#contributing}
 
-Found an error or have updated information?
-
-**Report Issues:**
-1. Verify the source URL in `scorecard_main.xlsx`
-2. Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
-   - Country name
-   - Indicator
-   - Current value vs. correct value
-   - Authoritative source URL
-3. Maintainer reviews and updates
-4. Updated data regenerated and published
-
-**Contribute Code:**
-- See [Contributing Guide](../CONTRIBUTING.md)
-- Check [open issues](https://github.com/MissCrispenCakes/DigitalChild/issues?q=is%3Aissue+is%3Aopen+label%3Ascorecard)
+Source-linked assessments and published versions should retain dates, interpretation and limitations. [Data Governance](../DATA_GOVERNANCE.md) describes these responsibilities.
 
 ---
 
@@ -338,12 +324,9 @@ For developers and researchers working with the scorecard system:
 
 ---
 
-## Support & Feedback
+## Interpretation and guidance {#support-feedback}
 
-- **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../FAQ.md)
-- **Research collaboration:** Contact via [GitHub](https://github.com/MissCrispenCakes/DigitalChild)
+[Scorecard methods](design.md) · [Documentation](../docs/index.md) · [Data Governance](../DATA_GOVERNANCE.md) · [FAQ](../FAQ.md)
 
 ---
 

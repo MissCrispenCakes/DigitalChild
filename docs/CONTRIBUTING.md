@@ -10,13 +10,9 @@ For detailed contribution guidelines, please see the [Contributing Guide](https:
 - **[Citation Guide (CITATION.cff)](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)** - How to cite this work
 - **[Security Policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md)** - Reporting security issues
 
-## Ways to Contribute
+## Development scope {#ways-to-contribute}
 
-1. **Report Issues** - Found a bug? [Open an issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
-1. **Improve Documentation** - Help make these docs better
-1. **Fix Bugs** - Submit pull requests for bug fixes
-1. **Add Features** - Propose and implement new features
-1. **Update Data** - Report outdated scorecard information
+The repository guide documents the existing workflow for software, documentation and data changes. Public contributions have attribution and licensing implications; personal or confidential information should not enter a public issue or version history.
 
 ## Getting Started
 
