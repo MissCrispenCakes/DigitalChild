@@ -76,7 +76,7 @@ Its questions include:
 
 **Intended outputs:** a validated methodology, research-continuity guidance and reproducible workflow components.
 
-The connection to **Viability.^.** concerns how continuity arrangements expand or restrict the possibilities available to research and its contributors.
+The connection to [**Viability.^.**](https://isotopicity.com/) concerns how continuity arrangements expand or restrict the possibilities available to research and its contributors.
 
 **What enables it:** institutional arrangements, funding, research capacity and appropriate terms for any participant research.
 

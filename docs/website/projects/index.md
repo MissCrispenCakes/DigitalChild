@@ -31,7 +31,7 @@ Planned outputs include documented sources and methods, dated project histories 
 
 This proposed track examines contributions, methods, outputs and research trajectories across institutions and time. It asks how handoffs and institutional transitions preserve or interrupt research, with AI-assisted analysis subject to human verification.
 
-The connection to **Viability.^.** concerns how continuity practices and institutional power affect the futures available to research and its contributors.
+The connection to [**Viability.^.**](https://isotopicity.com/) concerns how continuity practices and institutional power affect the futures available to research and its contributors.
 
 [Questions and proposed approach](../../research-directions/index.md#research-provenance-institutional-continuity)
 

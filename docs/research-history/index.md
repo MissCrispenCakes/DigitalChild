@@ -7,27 +7,34 @@ description: The exploratory origins, complementary computational and legal cont
 
 [← About GRIMdata](../website/index.md){ .md-button }
 
-GRIMdata began as an exploratory legal and computational inquiry and grew into wider research on digital rights. Research questions, document selection and computational methods developed together through close engagement with the source material.
+My path into GRIMdata began with experimental computing, then a question my brother and I worked out together: how could we make human-rights documents easier to search and understand? The research grew through building, reading and following what the documents revealed.
 
 ## Origins and milestones
 
 <div class="grim-timeline" markdown>
 
+### 2014–2018 · Personal explorations in ML, ANNs and embodied AI
+
+I explored machine learning, artificial neural networks, Ising models and sociophysics, alongside experiments in embodied AI. These included recognizing coloured regions on a two-dimensional plane and building an Arduino car whose movement responded to proximity, button interactions and a changing “personality”—with a Turing model I wrote in Tcl.
+
+These playful experiments formed part of my computational background before the human-rights inquiry.
+
+<!-- Future personal-project site: link a fuller account of the 2014–2018 explorations here when available. -->
+
 ### 2019 · Formulating the inquiry
 
-The HumanRights inquiry began through conversations between a computational researcher and a human-rights lawyer. They approached the problem with different expertise and without a complete specification for how those approaches could work together.
+The HumanRights inquiry began in conversations on my brother's kitchen floor. He brought human-rights law; I brought computational thinking. We worked out the questions and possible methods together.
 
 ### 2020 · Computational exploration
 
 Exploration began with the documents: locating sources, working through inconsistent formats and language, and developing ways to extract, search, organize, tag, compare and rank passages for examination. The aim included making difficult-to-access sources more tractable for small teams without dependable API access.
 
-### Before the 2021 conference · A concentrated period of development
+### Before the 2021 conference · Working with limited capacity {#before-the-2021-conference-a-concentrated-period-of-development}
 
-From the computational researcher's account:
+!!! note "🍑 Working with what’s available"
+    Working with limited connectivity sharpened a question that has stayed with me: what useful work can a small team do with the computing power, time and resources available to them?
 
-> The inquiry began in conversations on my brother's kitchen floor. He brought legal expertise; I brought computational thinking. Later, a concentrated period of development took place over roughly a week on a peach farm, with unreliable internet. I worked through the documents to identify useful language patterns and ways to search, extract and rank material for examination.
-
-The concentrated development built on the earlier inquiry and continued into documentation, presentation and publication.
+I explored ways to make finding and examining evidence more practical under those constraints. That experience helped shape the later direction toward low-capacity tools for rapidly destabilising conditions.
 
 ### 2021 · Documenting and presenting the work
 
@@ -55,23 +62,23 @@ The intended SGBV-UPR revisit will complete original Cycle 3 coverage and extend
 
 ## Complementary intellectual contributions
 
-**Computational contribution:** helping formulate the problem; choosing retrieval and extraction approaches; developing terminology, patterns, tags, comparisons and passage ranking through engagement with the documents. These choices shaped what could be found and examined.
+**Computational exploration.** I helped formulate the problem and developed the retrieval, extraction, search terms, patterns, tags and ranking through working with the documents. These were choices about language and what might be useful to examine, shaped by what I found.
 
-**Legal contribution:** interpreting excerpts in relation to the UPR process and the inquiry, and linking their meaning to legal instruments and context. This interpretation connected the selected passages to the legal questions under investigation.
+**Legal interpretation.** My brother explained what the excerpts meant within the UPR and our inquiry, connecting them to specific legal texts and their context.
 
-Developed in 2020, the workflow combined computational document analysis with legal interpretation. Retrieval, language patterns and passage ranking made difficult-to-search UPR records available for focused examination.
+The two approaches informed each other as the work developed.
 
 ## The emergence of the index
 
-As LittleRainbowRights developed, the computational researcher identified a need to preserve a dated, inspectable account of documented conditions. The resulting index tracker supports comparison while keeping sources, uncertainty and missing evidence available for examination.
+As LittleRainbowRights developed, I kept returning to the need to record what a situation *is*: what the documents show, when they show it, and what remains unknown. That became the idea for an index tracker. Three years of collective bargaining as a public-employee union president had also made the importance of understanding actual conditions very concrete for me.
 
-Expanding across countries and source types was useful, but also demanding for one computational researcher and one human-rights lawyer. Evidence coverage varies across countries; the index keeps those gaps visible.
+Expanding across countries and document sources showed how useful the approach could be—and how much work it involved for the two of us. The index gives that growing evidence a form people can inspect and compare, including its gaps.
 
 ## Documentation under constraint
 
-An early motivating vision was for small, resource-constrained teams to retain enough computational capacity to save, document, compare, analyse and transmit evidence under destabilising conditions. Edge and IoT devices offered a possible direction for carrying that capacity into the field.
+I imagined small teams carrying enough computing capacity to save, document, compare, analyse and transmit evidence as conditions destabilised. Edge and IoT devices offered a way to take those capabilities into the field: enough power and connectivity to do what was possible, when it was possible.
 
-This concern later connects with **Viability.^.**: information can expand one actor's capacity to act while increasing another person's exposure or reducing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension and its implications for governance.
+This concern later connects with [**Viability.^.**](https://isotopicity.com/): information can expand one actor's capacity to act while increasing another person's exposure or reducing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension and its implications for governance.
 
 ## Public research record
 

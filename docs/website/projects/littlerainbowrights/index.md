@@ -22,9 +22,9 @@ ______________________________________________________________________
 
 ## Methodological contributions
 
-LittleRainbowRights broadened the earlier inquiry across countries and multiple document sources. The computational researcher developed the retrieval and representation approach and identified a further need: an index that could preserve a dated, inspectable assessment of documented conditions, with sources, gaps and uncertainty available for examination.
+LittleRainbowRights broadened the earlier inquiry across countries and multiple document sources. Working through that material prompted the development of an index: a way to keep a dated account of documented conditions, with the sources and gaps available to examine.
 
-The public tools make those assessments easier to inspect and compare. The assessments show the evidence available for each country and where documentation is missing. Global and multi-source work also revealed the substantial maintenance and interpretation demands on one computational researcher and one human-rights lawyer.
+The public tools let readers follow those sources, compare assessments and see where documentation is missing. Maintaining that global coverage remains a substantial part of the research.
 
 [Research history](../../../research-history/index.md) · [Next investigations](../../../research-directions/index.md#littlerainbowrights)
 

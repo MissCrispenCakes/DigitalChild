@@ -21,18 +21,34 @@ An index represents selected aspects of a situation. Sources, dates, omissions, 
 
 ## The Pattern: First Rights Erode During Volatility
 
-The [2022 SGBV-UPR study](https://doi.org/10.47348/SLR/2022/i1a1) discusses threats to autonomy and human dignity during political and economic instability, including concerns affecting women and LGBTQ+ people. Its discussion motivates the attention to documentation and institutional accountability in this programme.
+!!! quote "From Published Research"
+    **"During periods of political and economic instability, some of the first rights to be infringed are specifically those which allow for women, LGBTQ+ members, and often specifically trans individuals, to assert their independence and retain self-autonomy and respect."**
 
-Local conditions, sources and legal context shape how these pressures are experienced and understood.
+    **"Consequently, the erasure of gendered human dignity becomes a repeatedly expected, and therefore accepted, outcome."**
+
+    — Vollmer & Vollmer (2022), *Stellenbosch Law Review*, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1)
+
+Documentation makes these changes available for examination: whose rights are eroding, under what conditions, and how institutions respond.
 
 <span id="two-contexts-same-governance-challenge"></span>
 <span id="the-shared-problem-irreversible-decisions-based-on-assumptions"></span>
 
 ## The Documentation Crisis: When Evidence Matters Most, Systems Fail
 
+!!! danger "Decisions Without Evidence"
+    "Measuring the prevalence of SGBV is difficult, in general, due to typical factors affecting reporting, documenting, and maintaining data on incidences of occurrences. **This is further exacerbated where instability exists.**"
+    — Vollmer & Vollmer (2022), [Section 4.3](https://doi.org/10.47348/SLR/2022/i1a1)
+
 Evidence may be fragmented by institutions, geography, language, time and incompatible formats. Resource-constrained teams can struggle to retrieve and examine the relevant material, particularly under destabilising conditions.
 
 ### Why Computational Methods Matter
+
+!!! info "Automation Enables Evidence, Not Just Efficiency"
+    "Harnessing AI and data scraping technology to quickly extract information from online human rights sources such as the UPR provides an important tool to reduce costs associated with research and advocacy and may improve and accelerate access to justice for many victims of human rights violations."
+
+    "**It is therefore vital for computational models to handle what data does exist and to streamline all formats of data when incidents are documented.**"
+
+    — Vollmer & Vollmer (2022), [Section 4.3](https://doi.org/10.47348/SLR/2022/i1a1)
 
 Retrieval, extraction, pattern-based selection and comparison can make large document collections more tractable. They can reduce repetitive work and support human examination. Legal and contextual interpretation gives the retrieved material its research meaning.
 
@@ -44,7 +60,7 @@ The original SGBV-UPR inquiry developed an exploratory computational approach al
 
 Preserve an inspectable account of documented conditions before reducing it to a recommendation about what should happen. Record how information was selected and interpreted so that research claims can be examined and challenged.
 
-The concern also reflects the computational researcher's experience of collective bargaining during three years as a public-employee union president: understanding actual conditions, rather than assuming what they are, matters to problem-solving.
+This emphasis on understanding actual conditions also grew through three years of collective bargaining as a public-employee union president. [Research history](research-history/index.md#the-emergence-of-the-index) connects that experience to the index.
 
 ### Cultural Sensitivity and Non-Imposing Analysis
 
@@ -53,6 +69,9 @@ Documenting a policy, assessing its enforcement mechanism and evaluating its eff
 GRIMdata focuses on autonomy and vulnerable populations. The choice of sources, categories and comparison rules shapes the analysis. Recording those choices alongside the evidence makes the research open to examination and challenge.
 
 ## Mechanism-Based Risk Analysis: When “Safety” Becomes Identity Enforcement
+
+!!! warning "Evaluate Mechanisms, Not Just Intent"
+    Do not evaluate policies only by what they claim to do. Evaluate them by **what they require in order to be enforced at scale.**
 
 A stated goal such as protecting children does not fully describe how a policy works. Examine the requirements that make it enforceable, the information it collects and the routes through which that information can be reused.
 
@@ -74,7 +93,14 @@ Following these mechanisms shows what information a policy requires, where it tr
 
 LittleRainbowRights includes indicators concerning LGBTQ+ legal status, promotion/propaganda offences, biometric SIM registration, children's data safeguards and protection of sensitive SOGI data.
 
-A combination of legal exposure and identity linkage can warrant closer investigation of exclusion, outing or selective enforcement. Assessing the effects in a particular case requires source dates, enforcement evidence and lived context.
+!!! danger "High-Risk Indicator Combination"
+    **Criminalization or restrictions on LGBTQ+ expression**
+
+    **+ mandatory biometric linkage for digital access**
+
+    **→ A route from identity verification to selective enforcement or exclusion.**
+
+The combination is a prompt to examine how the systems connect: who can identify a person, who can access those records, and what powers they can exercise. Country assessments provide the sources and dates for that investigation.
 
 [Scorecard methods](scorecard/design.md) · [Country assessments](scorecard/explorer.md)
 
@@ -126,7 +152,14 @@ These tracks share concerns with inspectable evidence and judgment, working with
 
 ### On Format Inconsistencies
 
-The historical study discusses varied document formats, broken links and cycle-dependent changes in terminology and structure. Methods need to handle the material available while recording what extraction misses or changes.
+!!! info "Cycle-Dependent Refinement"
+    "At present the UPR documents are not consistent in terms of presentation: individual member states may respond to the Working Group in multiple accepted formats, document files are displayed in PDF or Word Documents, several broken links were identified... terminology and textual structure of responses and recommendations vary from cycle to cycle."
+
+    However, "updates to the UPR documents were actively occurring to remedy some of these issues. Changes within the documentation itself are noted as 'cycle dependent' in that each cycle of the UPR demonstrates refinement in the format of responses and recommendations where consistent language is being favoured."
+
+    — Vollmer & Vollmer (2022), [Section 4.2](https://doi.org/10.47348/SLR/2022/i1a1)
+
+Methods need to work with the documents available, recording what extraction misses or changes as formats evolve.
 
 ### On Multi-Language Accessibility
 
@@ -138,9 +171,14 @@ Further language analysis could help identify context-specific judgments or them
 
 ## SOGIESC Rights: The Transitive Nature Challenge
 
-SOGIESC means sexual orientation, gender identity and expression, and sex characteristics. The published study discusses how recognition and protection can shift with social and cultural conditions. Dated assessments provide a record against which later changes can be examined.
+!!! warning "Volatile and Impermanent Standards"
+    "In particular, the unique nature of SOGIESC rights is, at present, **transitive in nature** with regards to gaining or losing traction on human rights and is often dependent on **volatile and impermanent social and cultural standards** for acceptance or understanding."
 
-Changing laws, access mechanisms and privacy safeguards can interact. A historical snapshot helps establish a comparison point, but assessing change requires new evidence and contextual review.
+    — Vollmer & Vollmer (2022), [Section 4.3](https://doi.org/10.47348/SLR/2022/i1a1)
+
+**SOGIESC:** sexual orientation, gender identity and expression, and sex characteristics.
+
+Recognition and protection can shift between review cycles. Keeping dated assessments lets us examine those changes alongside developments in digital access, identity and privacy.
 
 <span id="1-transparency-over-opacity"></span>
 <span id="2-resilience-over-efficiency"></span>
@@ -169,7 +207,7 @@ The article examines how automation can reduce the effort of research and advoca
 
 ## The Unified Mission
 
-The programme seeks to make research claims and institutional decisions easier to examine while considering the consequences of making people more visible. The connection to **Viability.^.** concerns how information and institutional arrangements expand or restrict the possibilities available to different actors.
+The programme seeks to make research claims and institutional decisions easier to examine while considering the consequences of making people more visible. The connection to [**Viability.^.**](https://isotopicity.com/) concerns how information and institutional arrangements expand or restrict the possibilities available to different actors.
 
 [Programme history](research-history/index.md) · [Research directions](research-directions/index.md) · [Data Governance](DATA_GOVERNANCE.md)
 

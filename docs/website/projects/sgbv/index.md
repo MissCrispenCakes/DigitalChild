@@ -46,11 +46,7 @@ The study worked with OHCHR/UPR documentary sources organized by country and rev
 
 The historical workflow combined source discovery and document retrieval, PDF/text extraction, text processing, selected words and patterns, tagging, frequency analysis and passage ranking. It developed before widespread use of today's generative AI assistants.
 
-**Computational contribution:** helping formulate the inquiry and independently choosing methods for retrieval, extraction, terminology, patterning, tagging, comparison and ranking through exploration of the documents.
-
-**Legal contribution:** communicating what the excerpts meant within the UPR and the inquiry, and connecting them to specific legal texts and context.
-
-The two approaches developed together: computational exploration shaped what could be found, while legal interpretation connected the selected passages to the inquiry.
+The methods developed through repeated examination of the source material: finding useful language patterns, retrieving passages, then interpreting them in relation to the UPR and specific legal texts. [Research history](../../../research-history/index.md#complementary-intellectual-contributions) describes how we developed those contributions.
 
 ### Interpretation and limitations
 
