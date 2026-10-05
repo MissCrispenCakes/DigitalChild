@@ -44,7 +44,7 @@ The original SGBV-UPR inquiry developed an exploratory computational approach al
 
 Preserve an inspectable account of documented conditions before reducing it to a recommendation about what should happen. Record how information was selected and interpreted so that research claims can be examined and challenged.
 
-The concern also reflects the computational researcher's experience of collective bargaining during three years as a public-employee union president: understanding actual conditions, rather than assuming what they are, matters to problem-solving. This is an influence on the research stance, not validation of a computational method.
+The concern also reflects the computational researcher's experience of collective bargaining during three years as a public-employee union president: understanding actual conditions, rather than assuming what they are, matters to problem-solving.
 
 ### Cultural Sensitivity and Non-Imposing Analysis
 
@@ -118,7 +118,7 @@ A combination of legal exposure and identity linkage can warrant closer investig
 | Canadian Projects & Environmental Oversight | Comparing project commitments, decisions and oversight with documented conditions | Planned source-linked project histories and comparisons |
 | Research Provenance & Institutional Continuity | Understanding how contributions and knowledge persist through institutional transitions | Proposed computational, qualitative and comparative investigation; funding unconfirmed |
 
-These tracks share concerns with inspectable evidence and judgment. They do not yet share one deployed pipeline, uniform licensing or equivalent data availability.
+These tracks share concerns with inspectable evidence and judgment, working with different source collections, methods and research questions.
 
 <span id="on-sentiment-analysis-imperative"></span>
 
@@ -130,11 +130,11 @@ The historical study discusses varied document formats, broken links and cycle-d
 
 ### On Multi-Language Accessibility
 
-Broader language coverage is a methodological direction, not a completed capability across all sources. Translation and language-specific patterns require validation and legal interpretation; English-only retrieval can limit the picture.
+Broader language coverage would bring more source material into view. Translation and language-specific patterns require validation and legal interpretation; English-only retrieval can limit the picture.
 
 ### On Language Interpretation
 
-Further language analysis could help identify context-specific judgments or themes. Sentiment labels alone do not establish legal significance, urgency or the effect of a recommendation. Such methods belong to future validation rather than claims of existing capabilities.
+Further language analysis could help identify context-specific judgments or themes. Sentiment labels alone do not establish legal significance, urgency or the effect of a recommendation. Evaluating these methods will require contextual and legal review.
 
 ## SOGIESC Rights: The Transitive Nature Challenge
 
@@ -154,7 +154,7 @@ Changing laws, access mechanisms and privacy safeguards can interact. A historic
 2. **Resilience:** work with inconsistent sources while recording extraction failures and gaps.
 3. **Provenance:** retain source identifiers, relevant dates and version context.
 4. **Accessibility:** provide understandable public tools and instructions appropriate to the material's access terms.
-5. **Continuity:** preserve methodological knowledge and research history without claiming uninterrupted monitoring.
+5. **Continuity:** preserve methodological knowledge and research history across changes in people, tools and institutions.
 6. **Proportional disclosure:** ask whether added detail improves understanding enough to justify increased exposure.
 
 <span id="1-automate-data-collection"></span>
@@ -165,11 +165,11 @@ Changing laws, access mechanisms and privacy safeguards can interact. A historic
 
 ## Recommendations from Published Research
 
-The article discusses automation, varied formats, dispersed information and reducing the effort involved in research and advocacy. These are methodological possibilities whose usefulness depends on the corpus, resources and validation. They do not guarantee access to justice, prevention of harm or correct decisions.
+The article examines how automation can reduce the effort of research and advocacy across varied document formats and dispersed institutions. Source coverage, extraction quality and contextual interpretation shape how useful those methods become.
 
 ## The Unified Mission
 
-The programme seeks to make research claims and institutional decisions easier to examine while considering the consequences of making people more visible. The retrospective connection to **Viability.^.** concerns how information and institutional arrangements expand or restrict the possibilities available to different actors.
+The programme seeks to make research claims and institutional decisions easier to examine while considering the consequences of making people more visible. The connection to **Viability.^.** concerns how information and institutional arrangements expand or restrict the possibilities available to different actors.
 
 [Programme history](research-history/index.md) · [Research directions](research-directions/index.md) · [Data Governance](DATA_GOVERNANCE.md)
 
@@ -177,7 +177,7 @@ The programme seeks to make research claims and institutional decisions easier t
 
 Vollmer, D. T., & Vollmer, S. C. (2022). *Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states.* Stellenbosch Law Review, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1).
 
-The programme's broader history, motivations and future directions also draw on the computational researcher's firsthand account. They are distinguished here from the article's historical study.
+[Research history](research-history/index.md) traces the inquiry's origins and subsequent development.
 
 <span id="__span-1-1"></span>
 <span id="__codelineno-1-1"></span>

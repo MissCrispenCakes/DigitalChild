@@ -7,7 +7,7 @@ description: The exploratory origins, complementary computational and legal cont
 
 [← About GRIMdata](../website/index.md){ .md-button }
 
-GRIMdata developed through an exploratory legal and computational inquiry, followed by wider research into digital rights. The history matters because problem formulation, document selection and representations were research decisions, not simply steps in implementing a finished specification.
+GRIMdata began as an exploratory legal and computational inquiry and grew into wider research on digital rights. Research questions, document selection and computational methods developed together through close engagement with the source material.
 
 ## Origins and milestones
 
@@ -23,11 +23,11 @@ Exploration began with the documents: locating sources, working through inconsis
 
 ### Before the 2021 conference · A concentrated period of development
 
-A short firsthand account from the computational researcher:
+From the computational researcher's account:
 
 > The inquiry began in conversations on my brother's kitchen floor. He brought legal expertise; I brought computational thinking. Later, a concentrated period of development took place over roughly a week on a peach farm, with unreliable internet. I worked through the documents to identify useful language patterns and ways to search, extract and rank material for examination.
 
-That week was part of the project's development. The wider conceptual and research effort preceded and continued beyond it.
+The concentrated development built on the earlier inquiry and continued into documentation, presentation and publication.
 
 ### 2021 · Documenting and presenting the work
 
@@ -59,22 +59,22 @@ The intended SGBV-UPR revisit will complete original Cycle 3 coverage and extend
 
 **Legal contribution:** interpreting excerpts in relation to the UPR process and the inquiry, and linking their meaning to legal instruments and context. Computational relevance alone does not establish a passage's legal meaning.
 
-The original workflow developed before widespread use of today's generative AI assistants. It should be understood through its exploratory document-analysis methods, rather than described retrospectively as an LLM. Its significance lies in the research questions, authored methodological decisions and published collaborative work.
+Developed in 2020, the workflow combined computational document analysis with legal interpretation. Retrieval, language patterns and passage ranking made difficult-to-search UPR records available for focused examination.
 
 ## The emergence of the index
 
 As LittleRainbowRights developed, the computational researcher identified a need to preserve a dated, inspectable account of documented conditions. The resulting index tracker supports comparison while keeping sources, uncertainty and missing evidence available for examination.
 
-Expanding across countries and source types was useful, but also demanding for one computational researcher and one human-rights lawyer. Geographic scope does not establish equal evidence completeness or validation across every country.
+Expanding across countries and source types was useful, but also demanding for one computational researcher and one human-rights lawyer. Evidence coverage varies across countries; the index keeps those gaps visible.
 
 ## Documentation under constraint
 
-An early motivating vision was for small, resource-constrained teams to retain enough computational capacity to save, document, compare, analyse and transmit evidence under destabilising conditions, potentially through edge or IoT devices. This was an ambition for future systems, rather than a deployed capability of the original pipeline.
+An early motivating vision was for small, resource-constrained teams to retain enough computational capacity to save, document, compare, analyse and transmit evidence under destabilising conditions. Edge and IoT devices offered a possible direction for carrying that capacity into the field.
 
-The later connection to **Viability.^.** is retrospective: information can expand one actor's capacity to act while increasing another person's exposure or reducing their options. The [Research Context](../RESEARCH_CONTEXT.md) explains that tension and its implications for governance.
+This concern later connects with **Viability.^.**: information can expand one actor's capacity to act while increasing another person's exposure or reducing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension and its implications for governance.
 
 ## Public research record
 
-The published studies and authorised firsthand history establish the public account on this site. The historical HumanRights research archive remains private; its code, source collections, extracts and logs are not offered here.
+The studies below document the published research. The HumanRights research archive is private.
 
 [Published SGBV-UPR study](https://doi.org/10.47348/SLR/2022/i1a1) · [LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) · [Data governance](../DATA_GOVERNANCE.md)

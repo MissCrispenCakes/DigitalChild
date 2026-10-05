@@ -11,7 +11,7 @@ description: The research programme, computational and legal contributions, hist
 
 ## Global Rights Index Monitoring
 
-GRIMdata brings computational document research and domain interpretation together to examine rights, public decisions and the conditions in which research continues. Public research outputs, tools, methods and instructions live here; individual project splash sites introduce their big ideas.
+GRIMdata brings computational document research and domain interpretation together to examine rights, public decisions and the conditions in which research continues. Explore the research outputs, tools, methods and instructions here.
 
 The programme began with the SGBV-UPR inquiry and expanded through LittleRainbowRights. Its planned directions concern Canadian projects and environmental oversight, and research provenance and institutional continuity.
 
@@ -41,7 +41,7 @@ The legal work interprets excerpts within the UPR process and the subject of inq
 
 ## Research Projects — Active & Upcoming
 
-The programme includes [SGBV-UPR](projects/sgbv/index.md), [LittleRainbowRights](projects/littlerainbowrights/index.md), the planned [Canadian oversight stream](../research-directions/index.md#canadian-projects-environmental-oversight) and proposed [research-continuity track](../research-directions/index.md#research-provenance-institutional-continuity). Their scope, available outputs and status differ.
+The programme includes [SGBV-UPR](projects/sgbv/index.md), [LittleRainbowRights](projects/littlerainbowrights/index.md), the planned [Canadian oversight stream](../research-directions/index.md#canadian-projects-environmental-oversight) and proposed [research-continuity track](../research-directions/index.md#research-provenance-institutional-continuity).
 
 [Compare the four research tracks](../projects/index.md){ .md-button }
 
@@ -82,7 +82,7 @@ The public tools allow account-free browsing. External chart resources load only
 
 ## Open Source & Licensing
 
-DigitalChild provides the public LittleRainbowRights pipeline and self-hosted API. Its code uses MIT licensing; project-authored data and documentation use CC BY 4.0 where specified. Third-party material retains its own terms. The historical SGBV-UPR code and research archive are not offered as public downloads.
+DigitalChild provides the public LittleRainbowRights pipeline and self-hosted API. Its code uses MIT licensing; project-authored data and documentation use CC BY 4.0 where specified. Third-party material retains its own terms. The historical HumanRights research archive is private.
 
 [Software overview and citation](../docs/technical-overview.md) · [Project-specific governance](../DATA_GOVERNANCE.md)
 
@@ -90,4 +90,4 @@ DigitalChild provides the public LittleRainbowRights pipeline and self-hosted AP
 
 ## About the Initiative
 
-The work developed through a small computational and legal research team. Its exploratory methods, published studies and public tools form an evolving programme rather than a single uniform dataset or already deployed pipeline for every track.
+A small computational and legal research team developed the work through exploration, methodological experimentation and publication. The programme continues to grow from those foundations.

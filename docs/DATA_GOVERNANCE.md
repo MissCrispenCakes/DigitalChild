@@ -5,7 +5,7 @@ description: Purpose, provenance, information vulnerability, access, retention a
 
 # Data Governance
 
-This page explains research responsibilities and the scope of the public DigitalChild/LittleRainbowRights materials. [Site practices](practices/index.md) describes public browsing and chart interactions. Planned tracks require their own decisions before collecting or releasing material.
+GRIMdata's research responsibilities cover purpose, source attribution, privacy, access and publication. [Site practices](practices/index.md) explains public browsing and optional charts.
 
 ## Purpose
 
@@ -35,7 +35,7 @@ Retain the original source URL, publisher, relevant dates and processing/version
 
 ### 3. Respect for Terms of Service
 
-Collection operators should assess source terms and applicable requirements, avoid bypassing access controls, and limit requests appropriately. Scraper settings and source behaviour must be checked for the particular deployment; the existence of code is not proof of compliance in every use.
+Collection operators should assess source terms and applicable requirements, avoid bypassing access controls, and limit requests appropriately. Check scraper settings and source requirements for each deployment.
 
 ## Privacy & Data Protection
 
@@ -55,7 +55,7 @@ Prefer the minimum necessary detail. Consider aggregation, purpose, access and l
 
 ### 1. Do No Harm
 
-Treat harm reduction as a responsibility, not a guarantee. Examine risks of outing, selective enforcement, misclassification and exposing individuals. Institutional accountability does not require unnecessary visibility of affected people.
+Examine risks of outing, selective enforcement, misclassification and exposing individuals. Institutional accountability does not require unnecessary visibility of affected people.
 
 ### 2. Transparency
 
@@ -103,11 +103,11 @@ Public site browsing, documentation search and table filtering need no account. 
 
 ### Security Measures
 
-DigitalChild contains validation and API security facilities. Their effectiveness depends on configuration, deployment and maintenance. Do not treat a documented feature as assurance for an unreviewed installation.
+DigitalChild contains validation and API security facilities. Operators need to configure, maintain and review those facilities for their deployment.
 
 ### Secure Deployment
 
-[Production deployment guidance](guides/PRODUCTION_DEPLOYMENT.md) covers the self-hosted service. The website does not imply that a public API service is deployed.
+[Production deployment guidance](guides/PRODUCTION_DEPLOYMENT.md) covers running and securing a self-hosted API.
 
 ## Data Retention & Deletion
 
@@ -127,7 +127,7 @@ Public-document research can still involve identifiable people and sensitive con
 
 ### Institutional Review Board (IRB)
 
-Researchers must assess institutional review requirements for their own questions and methods. No participant recruitment or consent process operates through this website.
+Researchers must assess institutional review requirements for their questions and methods before collecting participant material.
 
 ### Publication Ethics
 
@@ -151,7 +151,7 @@ Existing [contribution terms](CONTRIBUTING.md) describe attribution and licensin
 | Project-authored DigitalChild data and documentation | CC BY 4.0 where specified; attribution required |
 | Original third-party documents | Publisher/source terms remain applicable |
 | Published articles and archival records | Their own publication terms; cite the actual work |
-| Historical HumanRights research archive | Private; no public download or general open licence is offered here |
+| Historical HumanRights research archive | Private archive |
 | Future project material | Access and release terms remain to be determined |
 
 ### Data Protection Laws

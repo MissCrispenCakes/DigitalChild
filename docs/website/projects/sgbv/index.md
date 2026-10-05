@@ -203,6 +203,6 @@ No separate public SGBV-UPR dataset is released through this site. Cite the arti
 
 SGBV-related material may be sensitive even when its source is public. Research must consider necessary detail, exposure, interpretation and publication. Institutional accountability does not require making survivors or other individuals unnecessarily visible.
 
-The historical archive remains private. Any future reuse or release requires separate consideration of privacy, attribution and source rights.
+The historical HumanRights research archive is private.
 
 [Data Governance](../../../DATA_GOVERNANCE.md)

@@ -26,7 +26,7 @@ The published visualization snapshot was generated **26 June 2026** from `Global
 
 Scores are screening signals. Inspect written justifications, original sources, and the [methodology](../scorecard/design.md). Missing values remain missing in comparisons. Cite the version/date and relevant sources, state documentation gaps, and pair numerical comparisons with contextual research.
 
-The [software citation](../docs/technical-overview.md#citation) and [project publications](../website/projects/index.md#publications) identify the research record. DigitalChild code uses MIT; its project-authored data and documentation use CC BY 4.0 where specified. These terms do not license the private historical SGBV archive. Original third-party documents retain their own terms. See [data governance](../DATA_GOVERNANCE.md).
+The [software citation](../docs/technical-overview.md#citation) and [project publications](../website/projects/index.md#publications) identify the research record. DigitalChild code uses MIT; its project-authored data and documentation use CC BY 4.0 where specified. Original third-party documents retain their own terms. See [data governance](../DATA_GOVERNANCE.md).
 
 ## Public contribution records {#contributing-and-future-participation}
 

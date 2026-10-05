@@ -8,7 +8,7 @@ title: Research tracks
 
 [← GRIMdata Home](../index.md){ .md-button }
 
-Four investigations connect documentary evidence, methodological judgment and public accountability. Published and available work is distinguished from planned research.
+Four investigations connect documentary evidence, methodological judgment and public accountability.
 
 <div class="grid cards grim-tracks" markdown>
 

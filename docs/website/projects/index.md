@@ -21,7 +21,7 @@ Published human-rights research, available tools and planned investigations sit 
 
 The planned stream will examine Build Canada and other major projects through public sources, project commitments, approval stages, oversight requirements and changes over time. Environmental consequences, Indigenous rights and land relationships, climate commitments and affordability claims require contextual analysis rather than relying on announcements alone.
 
-Intended outputs include documented sources and methods, dated project histories and comparisons. No operational public tracker is claimed yet.
+Planned outputs include documented sources and methods, dated project histories and comparisons.
 
 [Questions, intended outputs and next stages](../../research-directions/index.md#canadian-projects-environmental-oversight)
 
@@ -43,7 +43,7 @@ The SGBV-UPR inquiry began conceptually in 2019, with computational exploration 
 
 ## Technical Stack
 
-DigitalChild is the public LittleRainbowRights implementation, including document processing, rule-based analysis, scorecard tools and a self-hosted Flask API. The historical SGBV-UPR codebase is separate and private. The planned tracks do not yet share a deployed operational pipeline.
+DigitalChild is the public LittleRainbowRights implementation, including document processing, rule-based analysis, scorecard tools and a self-hosted Flask API. The historical SGBV-UPR codebase is separate and private.
 
 [Technical overview](../../docs/technical-overview.md) · [Software roadmap](../../ROADMAP.md)
 

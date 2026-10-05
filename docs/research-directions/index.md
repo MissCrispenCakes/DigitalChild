@@ -7,7 +7,7 @@ description: Available work, next investigations and dependencies across GRIMdat
 
 [← Research tracks](../projects/index.md){ .md-button }
 
-GRIMdata's directions develop from published research and available tools. The stages below describe intended investigations, not confirmed delivery dates or funded activity.
+GRIMdata's next investigations build on the published studies, documentary methods and public tools developed through SGBV-UPR and LittleRainbowRights.
 
 ## SGBV-UPR renewal
 
@@ -22,9 +22,9 @@ GRIMdata's directions develop from published research and available tools. The s
 | Define coverage and comparison questions | Corpus specification, source register and explicit historical comparison scope | Legal and computational review |
 | Complete original Cycle 3 coverage | Documented collection and validated extraction with gaps recorded | Source access, research time and format handling |
 | Extend Cycle 4 analysis globally | Country-organized analysis with contextual review and coverage accounting | Computational capacity and legal interpretation |
-| Evaluate comparisons and publication | Methods, limitations and research findings; a separate decision on any data release | Validation, privacy, attribution and source-rights review |
+| Evaluate comparisons and publication | Methods, limitations and research findings | Validation, privacy, attribution and source-rights review |
 
-Global coverage is the intended scope. Working in batches can make that scope tractable without redefining it as a small pilot. No public archival dataset release or automatic real-time service is promised.
+The planned global analysis will proceed in batches, with country coverage and extraction gaps recorded throughout.
 
 [Historical study and contributions](../website/projects/sgbv/index.md) · [Research history](../research-history/index.md)
 
@@ -34,7 +34,7 @@ Global coverage is the intended scope. Working in batches can make that scope tr
 
 **Available now:** source-linked country assessments, the published scorecard snapshot, charts, comparisons, downloads, source-transparency tools and DigitalChild documentation.
 
-**Next investigation:** maintain dated evidence, examine coverage gaps and interpretations, and develop the index's usefulness across document sources. Review of meanings and limitations remains distinct from checking whether a URL works.
+**Next investigation:** maintain dated evidence, examine coverage gaps and interpretations, and develop the index's usefulness across document sources. Source maintenance will pair availability checks with review of legal meaning and interpretation.
 
 **What enables it:** time for source maintenance, methodological review, domain interpretation and reproducible processing. The [software roadmap](../ROADMAP.md) records technical work separately from the research questions.
 
@@ -55,7 +55,7 @@ The inquiry asks:
 
 **Next investigation:** define the project/source register and comparison questions, then develop dated project histories that distinguish commitments, decisions and evidence of implementation.
 
-**Intended outputs:** documented methods, source-linked timelines and comparisons, with visualizations where the evidence supports them. The tracker is planned; public tools are not yet available for this stream.
+**Intended outputs:** documented methods, source-linked timelines, comparisons and visualizations.
 
 **What enables it:** source access, appropriate legal and policy interpretation, research time and careful treatment of rights and affected communities.
 
@@ -74,11 +74,11 @@ Its questions include:
 
 **Next investigation:** define case-study boundaries, evidence and attribution practices, then test a combined computational, qualitative and comparative approach. AI-assisted classification, entity resolution or event identification would require human verification.
 
-**Intended outputs:** a validated methodology, research-continuity guidance and reproducible workflow components where release is appropriate. These remain proposed outputs.
+**Intended outputs:** a validated methodology, research-continuity guidance and reproducible workflow components.
 
 The connection to **Viability.^.** concerns how continuity arrangements expand or restrict the possibilities available to research and its contributors.
 
-**What enables it:** institutional arrangements, funding, research capacity and appropriate terms for any participant research. No participant recruitment operates through this site.
+**What enables it:** institutional arrangements, funding, research capacity and appropriate terms for any participant research.
 
 ## Programme progress and software history
 
