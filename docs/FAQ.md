@@ -29,11 +29,11 @@ The planned Canadian Projects & Environmental Oversight stream and proposed Rese
 
 ### Is this free to use?
 
-Yes! The code is licensed under MIT (permissive, free for any use including commercial). Project-authored DigitalChild data and documentation use CC BY 4.0 where specified. Third-party documents and published articles retain their own terms; the private historical SGBV archive is not released through this site.
+Yes. DigitalChild code uses MIT licensing, and project-authored data and documentation use CC BY 4.0 where specified. Third-party documents and published articles retain their own terms.
 
 ### Can I use this for my research?
 
-Absolutely! That's the intended purpose. Please cite the project using the format in [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
+Yes. Cite the project using [CITATION.cff](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
 
 ______________________________________________________________________
 
@@ -241,13 +241,13 @@ See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for details.
 
 ### Can I share the scraped documents?
 
-The documents themselves are typically public domain (government/UN publications). However:
+Check the reuse terms of each publisher before sharing source documents:
 
 - Check the original source's terms
 - Respect copyright if applicable
 - Attribute the original publishers
 
-Your **compiled dataset** (scorecard, tags, analysis) is licensed CC BY 4.0 (requires attribution).
+Project-authored DigitalChild data uses CC BY 4.0 where specified; credit the project and retain the original source attributions.
 
 ### How often is the scorecard data updated?
 
@@ -360,7 +360,7 @@ Check the project website at [grimdata.org](https://grimdata.org) for latest pub
 
 ### Can I use this for my thesis/dissertation?
 
-Absolutely! That's an intended use case. Cite the relevant software or research record and state the output version and limitations.
+Yes. Cite the relevant software or research record and identify the output version you used.
 
 <span id="can-i-request-a-feature"></span>
 
@@ -378,7 +378,7 @@ See [ROADMAP.md](ROADMAP.md) for the full roadmap. Highlights:
 
 ### When will the research dashboard be ready?
 
-The [country explorer](scorecard/explorer.md), [map and charts](scorecard/visualization.md) and [Source Transparency Watch](transparency-watch/index.md) are available as static browser tools. Additional software features are prospective; there is no confirmed delivery date.
+The [country explorer](scorecard/explorer.md), [map and charts](scorecard/visualization.md) and [Source Transparency Watch](transparency-watch/index.md) are available as static browser tools. Further features are listed in the [software roadmap](ROADMAP.md).
 
 <span id="how-do-i-get-help"></span>
 <span id="is-there-a-mailing-list-or-community-forum"></span>
@@ -388,5 +388,3 @@ The [country explorer](scorecard/explorer.md), [map and charts](scorecard/visual
 ## Technical guidance {#contact-support}
 
 Use the [documentation](docs/index.md), [first-run troubleshooting](guides/FIRST_RUN_ERRORS.md), [software roadmap](ROADMAP.md) and [methodology](scorecard/design.md) for technical questions and limitations. Programme history and future investigations are described separately in [Research history](research-history/index.md) and [Research directions](research-directions/index.md).
-
-*Reviewed: 5 October 2026.*

@@ -11,7 +11,7 @@ Published human-rights research, available tools and planned investigations sit 
 | [SGBV-UPR](sgbv/index.md) | Published SADC legal and computational study (2022) | Complete original Cycle 3 coverage and extend Cycle 4 analysis globally |
 | [LittleRainbowRights](littlerainbowrights/index.md) | Research record, source-linked scorecard and public tools | Maintain evidence and evaluate coverage, interpretation and index methods |
 | Canadian Projects & Environmental Oversight | Planned research | Build Canada and other major-project histories and oversight |
-| Research Provenance & Institutional Continuity | Proposed research, funding unconfirmed | Contributions, institutional transitions and research handoffs |
+| Research Provenance & Institutional Continuity | Proposed research | Contributions, institutional transitions and research handoffs |
 
 [Research track catalogue](../../projects/index.md){ .md-button } [Programme directions](../../research-directions/index.md){ .md-button }
 
@@ -27,7 +27,7 @@ Planned outputs include documented sources and methods, dated project histories 
 
 ## Research Provenance & Institutional Continuity
 
-**Proposed · Insight Grant direction · Funding unconfirmed**
+**Proposed · Insight Grant direction**
 
 This proposed track examines contributions, methods, outputs and research trajectories across institutions and time. It asks how handoffs and institutional transitions preserve or interrupt research, with AI-assisted analysis subject to human verification.
 

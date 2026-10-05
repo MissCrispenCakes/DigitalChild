@@ -101,7 +101,9 @@ Run validation to ensure no broken links:
 python pipeline_runner.py --mode scorecard --scorecard-action validate
 ```
 
-## Priority Countries for Update
+## January 2026 review priorities {#priority-countries-for-update}
+
+The following list records the original maintenance priorities. [Phase 1 updates](SCORECARD_PHASE1_UPDATES.md) records the subsequent changes.
 
 ### Phase 1 (Immediate - 20+ years old)
 1. Tunisia - Data Protection Law (2004)
@@ -151,7 +153,7 @@ No — voluntary registration
 
 Before saving changes:
 - [ ] Value format matches existing entries
-- [ ] Year is current (2024-2026)
+- [ ] Policy date and source access date are recorded accurately
 - [ ] Source is cited with access date
 - [ ] Cross-referenced with 2+ sources where possible
 - [ ] Notes capture important context (enforcement, amendments)

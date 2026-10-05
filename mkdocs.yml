@@ -244,6 +244,6 @@ extra_css:
 # Custom JavaScript
 extra_javascript:
   - website/javascripts/extra.js?v=20261005-programme1
-  - website/javascripts/scorecard.js?v=20261004-revamp2
+  - website/javascripts/scorecard.js?v=20261005-editorial
   - website/javascripts/transparency.js?v=20261004-revamp2
   # Plotly is requested only after explicit page-level chart loading.

@@ -8,7 +8,7 @@ Open the [country evidence explorer](../scorecard/explorer.md). Wait for the cou
 
 ## 2. Read the summary
 
-Read Canada's Protection Score, Risk Index, and Doc count. Protection ranges from 0 to 20, Risk from 0 to 100, and Doc counts documented justifications out of ten. These measures describe this research snapshot, not every dimension of life in Canada.
+Read Canada's Protection Score, Risk Index, and Doc count. Protection ranges from 0 to 20, Risk from 0 to 100, and Doc counts documented justifications out of ten. The indicator definitions explain how those values are calculated.
 
 ## 3. Open the assessment
 
@@ -18,7 +18,7 @@ If an indicator has no written assessment, the panel says so. A missing justific
 
 ## 4. Check the source and date
 
-Follow one source link when you are ready to leave GRIMdata. Compare the document's date and scope with the written assessment. The explorer's metadata distinguishes when this snapshot was generated from its source-verification stamp. Neither guarantees that current policy is unchanged.
+Follow one source link when you are ready to leave GRIMdata. Compare the document's date and scope with the written assessment. The explorer's metadata distinguishes when this snapshot was generated from its source-verification stamp. Compare these dates with any later policy changes relevant to your question.
 
 ## 5. Return to the whole dataset
 

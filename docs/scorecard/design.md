@@ -248,11 +248,10 @@ All sources must meet these requirements:
 - Redirect chain tracking
 - SSL certificate verification
 
-**Manual reviews:**
-- Quarterly verification of all 2,543 URLs
-- Content change detection
-- Policy updates
-- Source replacement when links break
+**Evidence review:**
+- Review sources and their publication dates
+- Examine content changes and policy updates
+- Replace broken source links where an authoritative replacement is available
 
 **Change detection:**
 ```bash
@@ -268,19 +267,18 @@ Detects:
 
 ---
 
-## Limitations & Caveats
+## Scope and interpretation {#limitations-caveats}
 
 ### 1. Point-in-Time Data
 
-**Limitation:** The published visualization snapshot was generated 26 June 2026 and carries a 9 September 2025 source-verification stamp. These are not guarantees of current policy status. Laws change frequently.
+**Limitation:** The published visualization snapshot was generated 26 June 2026 and carries a 9 September 2025 source-verification stamp. Check the dates of the underlying sources when comparing later policy changes.
 
 **Mitigation:**
-- Quarterly manual reviews
-- Automated change detection
-- Community contributions via GitHub
+- Dated source reviews
+- Content comparisons between runs
 - Timestamp tracking in metadata
 
-### 2. Binary Categorization
+### 2. Three-point categories {#2-binary-categorization}
 
 **Limitation:** Complex policies simplified into 0-1-2 categories. Loses nuance.
 
@@ -309,7 +307,7 @@ Detects:
 **Example:** Country may have anti-discrimination laws on paper but poor enforcement.
 
 **Mitigation:**
-- Explicitly state this limitation in publications
+- Describe the assessment scope in publications
 - Combine with qualitative research on lived experience
 - Cross-reference with enforcement reports from HRW, Amnesty, local NGOs
 
@@ -378,10 +376,7 @@ All changes tracked in scorecard_main.xlsx with:
 
 ## Interpreting the scores
 
-How to use the scorecard well depends on your role. See
-**[Start Here](../website/getting-started/start-here.md)** for researcher / advocate /
-policymaker / developer guidance and the key caution for each. The methodology limits that
-apply to *everyone* are in the **Limitations & Caveats** section above.
+**[Start Here](../website/getting-started/start-here.md)** provides routes for researchers, advocates, policymakers and developers. The sections above explain the scope of the indicators and the evidence needed to interpret comparisons.
 
 ---
 

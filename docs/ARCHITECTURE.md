@@ -436,7 +436,7 @@ api/
 - **Caching** (15min documents, 1hr scorecard/tags)
 - **Validation** (all query parameters validated)
 - **Standard responses** (success, error, paginated formats)
-- **Production ready** (Docker, docker-compose, Nginx, Redis)
+- **Deployment configuration** (Docker, docker-compose, Nginx, Redis)
 
 **Entry Point:**
 
@@ -465,7 +465,7 @@ See [API Documentation](api/index.md) for complete API documentation and [Produc
 - 20 scorecard tests (load, enrich, export, validate)
 - 36 pipeline tests (tagger, processors, metadata, logging)
 - 46 other pipeline tests
-- 104 API tests (unit + integration, 100% pass rate)
+- API unit and integration tests
   - Authentication and rate limiting tests
   - Route integration tests
   - Service layer tests
@@ -553,14 +553,14 @@ All external inputs validated through `validators.py`:
 - No user authentication (static site deployment)
 - No database (JSON-based metadata)
 - No eval/exec of untrusted code
-- Sandboxed scraping (timeout limits)
+- Request timeouts for scraping
 
-**Protected against:**
+**Security controls cover:**
 
 - Path traversal attacks
 - Malicious URL injection
 - File upload vulnerabilities
-- XSS (no dynamic web content)
+- Escaping of values displayed by the browser tools
 
 ## 🌍 Deployment Architecture
 
@@ -619,7 +619,7 @@ GitHub Repository
 
 - MkDocs (site generation)
 - Material theme
-- 25 markdown files
+- Tutorials, how-to guides, reference and explanation
 
 **Deployment:**
 
@@ -666,9 +666,7 @@ GitHub Repository
 
 ### APIs
 
-**Current:** None (CLI-based)
-
-**Planned:** REST API for:
+The self-hosted REST API includes:
 
 - `/api/documents` - Search and filter
 - `/api/scorecard` - Query indicators

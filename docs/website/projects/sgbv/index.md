@@ -19,9 +19,9 @@ A collaborative legal and computational study of sexual and gender-based violenc
 
 The inquiry was conceived in 2019; computational exploration began in 2020. The research was presented in 2021 and published in Stellenbosch Law Review in 2022. It joined exploratory document-analysis methods with legal interpretation of the excerpts and their context.
 
-The historical study concerned SADC member states and UPR cycles available during the research. Its original third-cycle coverage was incomplete at the time. It did not deliver present-day analysis of all countries or all cycles.
+The historical study concerned SADC member states and UPR cycles available during the research. Its original third-cycle coverage was incomplete at the time; completing that coverage is part of the planned renewal.
 
-The project has its own research questions and methodological contributions. It also informed [LittleRainbowRights](../littlerainbowrights/index.md), which broadened geographic and source coverage. That later work now informs a planned return to SGBV-UPR.
+The inquiry also informed [LittleRainbowRights](../littlerainbowrights/index.md), which broadened geographic and source coverage. That later work now informs a planned return to SGBV-UPR.
 
 <span id="sgbv-categories-analyzed"></span>
 
@@ -31,7 +31,7 @@ The inquiry examines how SGBV and related SOGIESC and LGBTQ+ rights concerns app
 
 The computational problem includes retrieving documents from sources with inconsistent access, extracting text from varied formats, identifying useful language patterns and ranking material for human examination.
 
-SOGIESC refers to sexual orientation, gender identity and expression, and sex characteristics. Related terms can have different meanings across documents and legal contexts; selecting a search pattern is not the same as establishing a legal category.
+SOGIESC refers to sexual orientation, gender identity and expression, and sex characteristics. The analysis examines how these terms vary across documents and legal contexts.
 
 <span id="key-features"></span>
 <span id="acknowledgments"></span>
@@ -50,7 +50,7 @@ The historical workflow combined source discovery and document retrieval, PDF/te
 
 **Legal contribution:** communicating what the excerpts meant within the UPR and the inquiry, and connecting them to specific legal texts and context.
 
-Neither contribution simply implemented a complete specification supplied by the other. Relevant computational matches require contextual interpretation; legal analysis depends on understanding how passages were selected.
+The two approaches developed together: computational exploration shaped what could be found, while legal interpretation connected the selected passages to the inquiry.
 
 ### Interpretation and limitations
 
@@ -71,7 +71,7 @@ Extraction quality, document format, language, selected patterns and corpus cove
 
 ## Key Findings
 
-The published article provides the study's substantive legal analysis and discussion of methodological opportunities and limitations. The research demonstrates the usefulness of joining computational exploration with legal interpretation of difficult-to-search human-rights documents. Publication does not establish universal extraction accuracy or equal coverage across countries.
+The published article provides the study's substantive legal analysis and discussion of methodological opportunities and limitations. The research demonstrates the usefulness of joining computational exploration with legal interpretation of difficult-to-search human-rights documents.
 
 [Read the findings in the article](https://doi.org/10.47348/SLR/2022/i1a1)
 
@@ -84,7 +84,7 @@ The published article provides the study's substantive legal analysis and discus
 
 ## Project Status
 
-The historical study is published. A renewal is planned to complete the original Cycle 3 coverage and extend Cycle 4 analysis across all UPR countries. Global expansion is an intended investigation, not an existing public dataset or operational tracker.
+The historical study is published. A renewal is planned to complete the original Cycle 3 coverage and extend Cycle 4 analysis across all UPR countries.
 
 <span id="immediate-updates-needed"></span>
 <span id="long-term-enhancements"></span>
@@ -98,7 +98,7 @@ The historical study is published. A renewal is planned to complete the original
 3. Extend Cycle 4 analysis across the UPR country universe, using practical batches while retaining the global goal.
 4. Evaluate interpretation, comparability and limitations before deciding what new findings or materials can be released.
 
-The public directions page describes the intended outputs and dependencies. There is no confirmed delivery date or public archival dataset release.
+The [research directions](../../../research-directions/index.md#sgbv-upr-renewal) set out the next investigations and the resources they need.
 
 [Programme directions](../../../research-directions/index.md#sgbv-upr-renewal)
 
@@ -121,7 +121,7 @@ The public directions page describes the intended outputs and dependencies. Ther
 
 ### Current Access
 
-The public research access is the [2022 journal article](https://doi.org/10.47348/SLR/2022/i1a1). The historical code, document collections, extracts, logs and datasets remain private. This site does not provide SGBV downloads, interactive charts or combined exports.
+Read the methods and findings in the [2022 journal article](https://doi.org/10.47348/SLR/2022/i1a1). The historical HumanRights research archive is private.
 
 ## Publications
 
@@ -129,7 +129,7 @@ The public research access is the [2022 journal article](https://doi.org/10.4734
 
 Vollmer, D. T., & Vollmer, S. C. (2022). Stellenbosch Law Review, 33(1), 8–41. [DOI: 10.47348/SLR/2022/i1a1](https://doi.org/10.47348/SLR/2022/i1a1).
 
-**Study summary:** the article joins computational exploration of SADC UPR documentary records with legal analysis of SGBV and related rights concerns, and considers the adaptability of this approach. This summary is not the article's verbatim abstract.
+**Study summary:** the article joins computational exploration of SADC UPR documentary records with legal analysis of SGBV and related rights concerns, and considers the adaptability of this approach.
 
 <span id="__span-3-1"></span>
 <span id="__codelineno-3-1"></span>
@@ -188,7 +188,7 @@ Vollmer, D. T., & Vollmer, S. C. (2022). Stellenbosch Law Review, 33(1), 8–41.
 
 ### Access and citation terms {#for-the-dataset}
 
-No separate public SGBV-UPR dataset is released through this site. Cite the article for the historical study; its publication terms do not establish licensing for the private research archive or original third-party documents.
+Cite the 2022 article for the historical study. The article and its cited sources retain their respective publication and reuse terms.
 
 <span id="integration-with-grimdata"></span>
 

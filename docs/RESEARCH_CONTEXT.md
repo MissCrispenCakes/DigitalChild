@@ -15,7 +15,7 @@ Having more facts can increase the capacity to act. It can also make the people 
 
 An ethical approach therefore considers both how information is used and whether it should be gathered, connected or exposed at all. Accountability for institutions and decision-makers must be distinguished from unnecessary exposure of individuals.
 
-An index represents selected aspects of a situation. It does not contain all the facts. Sources, dates, omissions, interpretations and uncertain classifications belong alongside its numerical results.
+An index represents selected aspects of a situation. Sources, dates, omissions, interpretations and uncertain classifications belong alongside its numerical results.
 
 [Data Governance](DATA_GOVERNANCE.md) translates these concerns into decisions about purpose, necessary detail, aggregation, access, retention and publication.
 
@@ -23,7 +23,7 @@ An index represents selected aspects of a situation. It does not contain all the
 
 The [2022 SGBV-UPR study](https://doi.org/10.47348/SLR/2022/i1a1) discusses threats to autonomy and human dignity during political and economic instability, including concerns affecting women and LGBTQ+ people. Its discussion motivates the attention to documentation and institutional accountability in this programme.
 
-This does not mean every population faces the same conditions or that documentary analysis alone establishes who is most affected in every crisis. The sources and legal context remain necessary to interpretation.
+Local conditions, sources and legal context shape how these pressures are experienced and understood.
 
 <span id="two-contexts-same-governance-challenge"></span>
 <span id="the-shared-problem-irreversible-decisions-based-on-assumptions"></span>
@@ -34,7 +34,7 @@ Evidence may be fragmented by institutions, geography, language, time and incomp
 
 ### Why Computational Methods Matter
 
-Retrieval, extraction, pattern-based selection and comparison can make large document collections more tractable. They can reduce repetitive work and support human examination. They do not substitute for contextual knowledge or make a source complete simply because its text can be processed.
+Retrieval, extraction, pattern-based selection and comparison can make large document collections more tractable. They can reduce repetitive work and support human examination. Legal and contextual interpretation gives the retrieved material its research meaning.
 
 The original SGBV-UPR inquiry developed an exploratory computational approach alongside legal interpretation. [Research history](research-history/index.md) explains the problem formulation, intellectual contributions and early vision of documentation under constraint.
 
@@ -50,7 +50,7 @@ The concern also reflects the computational researcher's experience of collectiv
 
 Documenting a policy, assessing its enforcement mechanism and evaluating its effects are different tasks. Legal and cultural contexts vary, and terminology may not map cleanly across jurisdictions.
 
-GRIMdata's focus on autonomy and vulnerable populations is an explicit research stance. Classifications are authored choices, not value-free measurements. The work should distinguish source description from interpretation, make those choices inspectable and avoid treating complex contexts as a single score.
+GRIMdata focuses on autonomy and vulnerable populations. The choice of sources, categories and comparison rules shapes the analysis. Recording those choices alongside the evidence makes the research open to examination and challenge.
 
 ## Mechanism-Based Risk Analysis: When “Safety” Becomes Identity Enforcement
 
@@ -68,13 +68,13 @@ A system may move from self-declared age toward stronger identity verification, 
 - **Link:** connect accounts, telecom records, registries or biometric systems.
 - **Deactivate:** remove access following a rule or compliance decision.
 
-These are analytical questions about a mechanism. Their presence does not by itself establish harmful intent, actual misuse or a population-level outcome.
+Following these mechanisms shows what information a policy requires, where it travels and who can act on it. Evidence of implementation and effects completes that analysis.
 
 ### Reading indicator combinations
 
 LittleRainbowRights includes indicators concerning LGBTQ+ legal status, promotion/propaganda offences, biometric SIM registration, children's data safeguards and protection of sensitive SOGI data.
 
-A combination of legal exposure and identity linkage can warrant closer investigation of exclusion, outing or selective enforcement. It is a screening signal, not a validated prediction of harm. Source dates, enforcement evidence and lived context are needed to assess a particular case.
+A combination of legal exposure and identity linkage can warrant closer investigation of exclusion, outing or selective enforcement. Assessing the effects in a particular case requires source dates, enforcement evidence and lived context.
 
 [Scorecard methods](scorecard/design.md) · [Country assessments](scorecard/explorer.md)
 
@@ -116,7 +116,7 @@ A combination of legal exposure and identity linkage can warrant closer investig
 | SGBV-UPR | Making rights-related UPR documentary material tractable for computational and legal examination | Published SADC study; planned Cycle 3 completion and global Cycle 4 renewal |
 | LittleRainbowRights | Understanding digital rights, access, identity and protection frameworks | Public dated assessments, index and exploration tools spanning countries and sources |
 | Canadian Projects & Environmental Oversight | Comparing project commitments, decisions and oversight with documented conditions | Planned source-linked project histories and comparisons |
-| Research Provenance & Institutional Continuity | Understanding how contributions and knowledge persist through institutional transitions | Proposed computational, qualitative and comparative investigation; funding unconfirmed |
+| Research Provenance & Institutional Continuity | Understanding how contributions and knowledge persist through institutional transitions | Proposed computational, qualitative and comparative investigation |
 
 These tracks share concerns with inspectable evidence and judgment, working with different source collections, methods and research questions.
 
@@ -138,7 +138,7 @@ Further language analysis could help identify context-specific judgments or them
 
 ## SOGIESC Rights: The Transitive Nature Challenge
 
-SOGIESC means sexual orientation, gender identity and expression, and sex characteristics. The published study discusses how recognition and protection can shift with social and cultural conditions. A dated assessment should therefore not be mistaken for a permanent account of a country's situation.
+SOGIESC means sexual orientation, gender identity and expression, and sex characteristics. The published study discusses how recognition and protection can shift with social and cultural conditions. Dated assessments provide a record against which later changes can be examined.
 
 Changing laws, access mechanisms and privacy safeguards can interact. A historical snapshot helps establish a comparison point, but assessing change requires new evidence and contextual review.
 
@@ -221,5 +221,3 @@ Vollmer, D. T., & Vollmer, S. C. (2022). *Global perspectives of Africa: Harness
 ### APA
 
 Vollmer, D. T., & Vollmer, S. C. (2022). Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states. *Stellenbosch Law Review*, *33*(1), 8–41. https://doi.org/10.47348/SLR/2022/i1a1
-
-*Reviewed: 5 October 2026.*

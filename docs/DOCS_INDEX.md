@@ -1,169 +1,65 @@
 # Documentation Index
 
-This index lists all documentation files in `docs/` organized by category.
-
-**Total: 64 documentation files** (updated June 2026)
-
-______________________________________________________________________
+Find research pages, working tools, instructions and technical reference.
 
 ## 📚 Core Documentation (Root)
 
-- `index.md` → GRIMdata homepage (landing page)
-- `README.md` → Documentation overview and navigation
-- `DOCS_INDEX.md` → This index
-- `ARCHITECTURE.md` → System architecture and components
-- `FAQ.md` → Frequently asked questions
-- `GLOSSARY.md` → Definitions of key terms
-- `DATA_GOVERNANCE.md` → Privacy, ethics, data handling policies
-- `ROADMAP.md` → Project roadmap and phases
-- `CONTRIBUTING.md` → Contribution guidelines (also in root)
+[Home](index.md) · [About](website/index.md) · [Research history](research-history/index.md) · [Research directions](research-directions/index.md)
 
-______________________________________________________________________
+[Research Context](RESEARCH_CONTEXT.md) · [Data Governance](DATA_GOVERNANCE.md) · [FAQ](FAQ.md) · [Glossary](GLOSSARY.md)
+
+[Architecture](ARCHITECTURE.md) · [Software roadmap](ROADMAP.md) · [Repository terms](CONTRIBUTING.md)
 
 ## 🚀 Getting Started (getting-started/)
 
-New user guides:
-
-- `getting-started/installation.md` → Installation and setup instructions
-- `getting-started/quickstart.md` → Quick start guide for first-time users
-
-______________________________________________________________________
+[Start Here](website/getting-started/start-here.md) · [Installation](website/getting-started/installation.md) · [First pipeline run](website/getting-started/quickstart.md) · [First country assessment](tutorials/first-country.md)
 
 ## 📖 User Guides (guides/)
 
-Operational guides for users:
-
-- `guides/RUNBOOK.md` → Comprehensive commands for all operations
-- `guides/FIRST_RUN_ERRORS.md` → Troubleshooting first-run issues
-- `guides/SCORECARD_WORKFLOW.md` → Complete scorecard system guide
-- `guides/VALIDATORS_USAGE.md` → Using the validation framework
+[Pipeline Runbook](guides/RUNBOOK.md) · [First-run troubleshooting](guides/FIRST_RUN_ERRORS.md) · [Scorecard Workflow](guides/SCORECARD_WORKFLOW.md) · [Validators](guides/VALIDATORS_USAGE.md) · [Production Deployment](guides/PRODUCTION_DEPLOYMENT.md)
 
 ## 🌐 API Documentation (../api/)
 
-REST API backend documentation (Phase 4 - Complete):
-
-- `api/README.md` → Complete API documentation, endpoints, usage (14 endpoints)
-- `../api/QUICK_START.md` → Fast reference guide for API usage
-- `API_WEEK1_SUMMARY.md` → Week 1 implementation summary (foundation)
-- `API_WEEK2_SUMMARY.md` → Week 2 implementation summary (core endpoints)
-- `API_DEPENDENCY_UPDATE.md` → Dependency updates and security patches (Jan 2026)
-- `../test_api.py` → API health check script
-- `../test_dependency_updates.sh` → Dependency update verification script
-- `guides/PRODUCTION_DEPLOYMENT.md` → Complete production deployment guide (Docker, Redis, Nginx)
-
-______________________________________________________________________
+[API overview](api/index.md) · [Quick Start](api/quickstart.md) · [Endpoint Reference](api/reference.md) · [Quick Reference](api/quick-reference.md) · [Implementation History](api/IMPLEMENTATION_HISTORY.md)
 
 ## 🌈 Projects (projects/)
 
-Project-specific documentation:
-
-- `projects/littlerainbowrights/index.md` → LittleRainbowRights project overview
-- `projects/sgbv/index.md` → SGBV-UPR project overview
-
-______________________________________________________________________
+[Research tracks](projects/index.md) · [LittleRainbowRights](website/projects/littlerainbowrights/index.md) · [SGBV-UPR](website/projects/sgbv/index.md) · [Research directions](research-directions/index.md)
 
 ## 📊 Scorecard (scorecard/)
 
-Scorecard visualization and data:
-
-- `scorecard/index.md` → Scorecard overview and indicators
-- `scorecard/design.md` → Design & methodology (0–2 scoring rules)
-- `scorecard/data-access.md` → API, CSV, and direct file access
-- `scorecard/visualization.md` → Interactive map, indicator & regional charts
-- `scorecard/explorer.md` → Filter/search/sort explorer, country comparison & detail
-
-______________________________________________________________________
+[Scorecard overview](scorecard/index.md) · [Design & Methodology](scorecard/design.md) · [Data Access](scorecard/data-access.md) · [Map & Charts](scorecard/visualization.md) · [Country Explorer](scorecard/explorer.md)
 
 ## 🛰️ Transparency Watch (transparency-watch/)
 
-Monitoring peer organisations for open-data / primary-source transparency adoption:
-
-- `transparency-watch/index.md` → Adoption timeline + per-source cards (dated via Wayback)
-- `maintenance/SOURCE_AVAILABILITY_LOG.md` → Log of previously-available sources now gone (link rot)
-
-______________________________________________________________________
+[Source Transparency Watch](transparency-watch/index.md) · [Source Availability Log](maintenance/SOURCE_AVAILABILITY_LOG.md)
 
 ## 📋 Planning (planning/)
 
-Planning and feasibility documents:
-
-- `planning/SOURCE_FEASIBILITY_CHECKLIST.md` → Evaluating new data sources
-- `planning/TAGS_VISUALIZATION_PLAN.md` → Future visualization features
-
-______________________________________________________________________
+[Source Feasibility Checklist](planning/SOURCE_FEASIBILITY_CHECKLIST.md) · [Tag visualization directions](planning/TAGS_VISUALIZATION_PLAN.md) · [Site navigation](planning/SITE_IA_SEE_VS_BUILD_PLAN.md) · [URL map](planning/URL_MIGRATION_MAP.md)
 
 ## 🔍 Reviews (reviews/)
 
-Test runs and review summaries:
-
-- `reviews/SCORECARD_REVIEW_SUMMARY.md` → Scorecard analysis and review
-- `reviews/PROCESSOR_TEST_RUN.md` → Processor testing commands and results
-
-______________________________________________________________________
+[Scorecard implementation notes](reviews/SCORECARD_REVIEW_SUMMARY.md) · [Processor tests](reviews/PROCESSOR_TEST_RUN.md)
 
 ## 📏 Standards (standards/)
 
-Technical standards and schemas:
+[Metadata Schema](standards/METADATA_SCHEMA.md) · [File naming](standards/FILE_NAMING_STANDARDS.md) · [Document types](standards/DOC_TYPE_STANDARDS.md) · [ISO mapping](standards/ISO_MAPPING.md)
 
-- `standards/METADATA_SCHEMA.md` → Document metadata structure
-- `standards/FILE_NAMING_STANDARDS.md` → File naming conventions
-- `standards/DOC_TYPE_STANDARDS.md` → Document type categorization
-- `standards/ISO_MAPPING.md` → Country/region normalization
-- `standards/TAGS_CONFIG_FORMAT.md` → Tag configuration structure
-- `standards/RECOMMENDATIONS_CONFIG_FORMAT.md` → Recommendations config format
-- `standards/COMPARISON_CONFIG_FORMAT.md` → Comparison config format
-- `standards/FILTERS_CONFIG_FORMAT.md` → Filters configuration format
-- `standards/SCRAPER_STRUCTURE.md` → Scraper implementation guide
-
-______________________________________________________________________
+[Tags configuration](standards/TAGS_CONFIG_FORMAT.md) · [Recommendations configuration](standards/RECOMMENDATIONS_CONFIG_FORMAT.md) · [Comparison configuration](standards/COMPARISON_CONFIG_FORMAT.md) · [Filters configuration](standards/FILTERS_CONFIG_FORMAT.md) · [Scraper structure](standards/SCRAPER_STRUCTURE.md)
 
 ## 📝 Notes (notes/)
 
-Internal development notes:
-
-- `notes/DIRECTORY_STRUCTURE.md` → Codebase folder organization
-- `notes/PIPELINE_FLOW.md` → End-to-end pipeline execution
-- `notes/PIPELINE_LOGGING.md` → Logging system details
-- `notes/TAGS_MAIN_NOTES.md` → Tag version management
-- `notes/TAGS_EXPORT_NOTES.md` → Tag summary CSV interpretation
-- `notes/COMPARISON_EXPORT_NOTES.md` → Comparison export format
-- `notes/NEXT_STEPS_PLAN.md` → Future development priorities
-
-______________________________________________________________________
+[Directory structure](notes/DIRECTORY_STRUCTURE.md) · [Pipeline flow](notes/PIPELINE_FLOW.md) · [Logging](notes/PIPELINE_LOGGING.md) · [Tag versions](notes/TAGS_MAIN_NOTES.md) · [Tag exports](notes/TAGS_EXPORT_NOTES.md) · [Comparison exports](notes/COMPARISON_EXPORT_NOTES.md)
 
 ## 🔗 Related Root Files
 
-These files live in the project root, not docs/:
-
-- `../LICENSE` → MIT License for code
-- `../LICENSE-DATA` → CC BY 4.0 License for data/docs
-- `../SECURITY.md` → Security policies and vulnerability reporting
-- `../CITATION.cff` → Academic citation format
-- `../DEPLOYMENT_GUIDE.md` → Deployment instructions
-
-______________________________________________________________________
+[Code licence](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE) · [Data licence](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE-DATA) · [Security policy](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/SECURITY.md) · [Software citation](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff)
 
 ## 🛠 Maintenance (maintenance/)
 
-Scorecard maintenance documentation:
-
-- `maintenance/SCORECARD_MAINTENANCE_REPORT.md` → Analysis of scorecard data staleness
-- `maintenance/SCORECARD_UPDATE_GUIDE.md` → Step-by-step update procedures
-- `maintenance/SCORECARD_PHASE1_UPDATES.md` → Phase 1 critical updates log
-
-______________________________________________________________________
+[Maintenance report](maintenance/SCORECARD_MAINTENANCE_REPORT.md) · [Update guide](maintenance/SCORECARD_UPDATE_GUIDE.md) · [January 2026 update record](maintenance/SCORECARD_PHASE1_UPDATES.md)
 
 ## Notes
 
-- Documentation reorganized January 2026 for better navigation
-- Phase 4 API documentation complete January 2026 (14 endpoints operational, production-ready)
-- getting-started/ = new user onboarding
-- guides/ = operational how-tos
-- projects/ = project-specific overviews
-- scorecard/ = data visualization and exploration
-- planning/ = future features and feasibility
-- reviews/ = analysis and test summaries
-- standards/ = technical specifications
-- notes/ = internal development notes
-- maintenance/ = scorecard update tracking
-- api/ = REST API backend (Flask with authentication, rate limiting, Docker deployment)
+For a guided route through the documentation, use the [Diátaxis documentation home](docs/index.md).

@@ -8,7 +8,7 @@
 
 The GRIMdata REST API provides programmatic access to the complete LittleRainbowRights dataset, including human rights documents, the Digital Rights Scorecard, tags analysis, and timeline data.
 
-**Self-hosted API base URL:** `http://localhost:5000/api` for a local deployment. For production, use the hostname of your own deployed API. The `/api/` pages on GRIMdata are documentation, not a public hosted endpoint.
+**Self-hosted API base URL:** `http://localhost:5000/api` for a local deployment. For production, use the hostname of your own deployed API. Follow the [Quick Start](quickstart.md) to run your own instance.
 
 ## Why Use the API?
 
@@ -26,11 +26,11 @@ The GRIMdata REST API provides programmatic access to the complete LittleRainbow
 
     Filter by country, region, tags, year ranges, document type, and more
 
--   :material-update:{ .lg .middle } **Real-Time Data**
+-   :material-update:{ .lg .middle } **Query Your Dataset**
 
     ---
 
-    Always get the latest data without downloading CSV files manually
+    Query your local data files and retrieve filtered results
 
 -   :material-api:{ .lg .middle } **Integration Ready**
 
@@ -84,7 +84,7 @@ Choose the right access method for your needs:
 
 ## Features
 
-### 14 Production-Ready Endpoints
+### API endpoints {#14-production-ready-endpoints}
 
 **Health & Info:**
 - System status and data statistics
@@ -146,11 +146,11 @@ Choose the right access method for your needs:
 
     Complete deployment with Redis and Nginx
 
--   :material-test-tube:{ .lg .middle } **100% Tested**
+-   :material-test-tube:{ .lg .middle } **Integration Tests**
 
     ---
 
-    104 integration tests (100% pass rate)
+    Tests cover routes, services, authentication and rate limits
 
 </div>
 
@@ -329,7 +329,7 @@ response = requests.get(
 )
 ```
 
-For a self-hosted deployment, the operator configures API keys; this website does not issue keys for a public hosted API.
+Configure API keys for your instance using the [deployment guide](../guides/PRODUCTION_DEPLOYMENT.md).
 
 ---
 
@@ -447,7 +447,7 @@ See the [Production Deployment Guide](../guides/PRODUCTION_DEPLOYMENT.md) for co
 - **Caching:** Redis
 - **Web Server:** Nginx (production)
 - **Container:** Docker + docker-compose
-- **Testing:** pytest (104 tests, 100% pass rate)
+- **Testing:** pytest unit and integration tests
 
 ---
 

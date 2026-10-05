@@ -34,7 +34,7 @@ The scorecard tracks 10 indicators (each with value + source URL):
 
 The scorecard Excel file contains multiple sheets:
 
-- **UN_194** (primary sheet): 194 UN member states with all 10 indicators
+- **UN_194** (primary sheet): 194 scorecard countries with all 10 indicators
 - **SADC**: 16 SADC member states (regional subset)
 - **ECOWAS**: 13 ECOWAS member states (regional subset)
 - **Global**: Scoring rules and methodology documentation

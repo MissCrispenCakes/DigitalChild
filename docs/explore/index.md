@@ -6,7 +6,7 @@ title: Explore evidence
 
 [← GRIMdata Home](../index.md){ .md-button }
 
-Inspect published evidence before drawing conclusions. These tools use static research snapshots; they do not provide live policy monitoring.
+Explore country assessments, compare indicators and follow the sources behind the published research snapshots.
 
 ## Tools and published data
 
@@ -26,7 +26,7 @@ Inspect published evidence before drawing conclusions. These tools use static re
 
 -   ### Source Transparency Watch
 
-    Explore dated archive signals about peer organisations' publication practices. A detected signal is evidence of availability, not a judgment of institutional transparency.
+    Explore archived appearances of datasets, primary documents, APIs and data portals from the organisations behind the research sources.
 
     [Inspect the archive signals →](../transparency-watch/index.md)
 
@@ -40,6 +40,6 @@ Inspect published evidence before drawing conclusions. These tools use static re
 
 ## Know what the snapshot can tell you
 
-The scorecard JSON was generated **26 June 2026** and carries a **9 September 2025** source-verification stamp. Of 194 scored countries, **132 have documented justifications for all ten indicators**. A working source URL is not proof that an assessment is still current.
+The scorecard JSON was generated **26 June 2026** and carries a **9 September 2025** source-verification stamp. Of 194 scored countries, **132 have documented justifications for all ten indicators**. Open the country assessments to examine their sources, dates and documentation gaps.
 
-Read the [scoring methodology](../scorecard/design.md), inspect country-level sources, and report the snapshot date and documentation gaps when citing. See [data handling and participation](../practices/index.md) before contributing evidence.
+Read the [scoring methodology](../scorecard/design.md), inspect country-level sources, and report the snapshot date and documentation gaps when citing. [Site practices](../practices/index.md) explains browsing, optional charts and data handling.

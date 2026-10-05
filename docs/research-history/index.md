@@ -57,7 +57,7 @@ The intended SGBV-UPR revisit will complete original Cycle 3 coverage and extend
 
 **Computational contribution:** helping formulate the problem; choosing retrieval and extraction approaches; developing terminology, patterns, tags, comparisons and passage ranking through engagement with the documents. These choices shaped what could be found and examined.
 
-**Legal contribution:** interpreting excerpts in relation to the UPR process and the inquiry, and linking their meaning to legal instruments and context. Computational relevance alone does not establish a passage's legal meaning.
+**Legal contribution:** interpreting excerpts in relation to the UPR process and the inquiry, and linking their meaning to legal instruments and context. This interpretation connected the selected passages to the legal questions under investigation.
 
 Developed in 2020, the workflow combined computational document analysis with legal interpretation. Retrieval, language patterns and passage ranking made difficult-to-search UPR records available for focused examination.
 

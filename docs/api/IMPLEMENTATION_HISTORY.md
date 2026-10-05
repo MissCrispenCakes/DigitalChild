@@ -5,7 +5,7 @@ from the [Endpoint Reference](reference.md). For the current, authoritative endp
 and parameters, always use the reference; for releases, see the
 [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md).
 
-Research programme history is described in [Research history](../research-history/index.md); intended investigations are in [Research directions](../research-directions/index.md). The week-by-week test counts below are historical records, not results from a new test run.
+Research programme history is described in [Research history](../research-history/index.md); intended investigations are in [Research directions](../research-directions/index.md). Implementation milestones and test counts are recorded below by development week.
 
 ## Implementation Status
 

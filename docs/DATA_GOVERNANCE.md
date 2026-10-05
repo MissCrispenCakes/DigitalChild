@@ -1,186 +1,128 @@
 ---
 title: Data Governance
-description: Purpose, provenance, information vulnerability, access, retention and project-specific publication terms for GRIMdata research.
+description: How GRIMdata handles sources, interpretation, privacy and the research record.
 ---
 
 # Data Governance
 
-GRIMdata's research responsibilities cover purpose, source attribution, privacy, access and publication. [Site practices](practices/index.md) explains public browsing and optional charts.
+Good research needs a clear account of where evidence came from, how it was interpreted and what happens when it is shared. For GRIMdata, that also means asking who becomes more visible when information is collected, connected or published.
 
-## Purpose
+## Purpose {#purpose}
 
-The research uses documentary evidence to examine rights and public decisions. Governance asks what is necessary to collect, how a representation was produced, who can use it, and what exposure publication could create.
+<span id="mission-alignment"></span>
 
-Knowing more about a situation may help people act while making those described more vulnerable. Public accessibility does not make every aggregation, inference or republication appropriate.
+The research examines documented conditions, rights and public decisions. Each inquiry starts with a question: what information is needed to understand this situation, and what detail serves that purpose?
 
-## Cultural Sensitivity & Research Stance
+An accessible document can become much more revealing when it is indexed or linked to other records. The value of a comparison needs to be considered alongside the exposure it creates.
 
-### Non-Imposing Methodology
+## Methods and interpretation {#methods-and-interpretation}
 
-Separate description of laws and documents from analysis of enforcement mechanisms and evaluation of effects. Recognise legal and cultural context, language limitations and the perspectives embedded in classifications.
+<span id="cultural-sensitivity-research-stance"></span>
+<span id="non-imposing-methodology"></span>
+<span id="ethical-research-practices"></span>
+<span id="1-do-no-harm"></span>
+<span id="2-transparency"></span>
+<span id="3-reproducibility"></span>
+<span id="4-accountability"></span>
+<span id="international-considerations"></span>
+<span id="multi-jurisdictional-data"></span>
+<span id="language-translation"></span>
 
-The research focuses on autonomy and vulnerable populations. That stance is explicit; numerical assessments are not value-free substitutes for legal interpretation or lived experience. [Research Context](RESEARCH_CONTEXT.md) explains the reasoning.
+Document selection, search terms, classifications and scoring rules are research choices. Record those choices, explain ambiguous cases and keep the source material distinguishable from the interpretation.
 
-## Data Collection Principles
+Legal and cultural context matters. Country-level comparisons sit alongside document-level evidence, source dates, language coverage and written assessments. Missing evidence stays visible as a gap.
 
-### 1. Publicly Available Documents {#1-public-domain-documents-only}
+[Research Context](RESEARCH_CONTEXT.md) develops these ideas; [Scorecard Design & Methodology](scorecard/design.md) explains the current indicators.
 
-The public pipeline is designed around publicly available human-rights and policy documents. This website does not collect participant submissions. Original sources may still contain sensitive material or carry copyright and reuse restrictions.
+## Sources and attribution {#sources-and-attribution}
 
-Review source terms, authentication boundaries and the necessity of collection before adapting a scraper. Public access does not establish permission to bypass controls or redistribute the document.
+<span id="data-collection-principles"></span>
+<span id="1-public-domain-documents-only"></span>
+<span id="2-source-attribution"></span>
+<span id="3-respect-for-terms-of-service"></span>
 
-### 2. Source Attribution
+The DigitalChild pipeline works with publicly available human-rights and policy documents. Record the publisher, source URL, document date, access date and processing version where available. Keep the original reference when translating or normalizing material.
 
-Retain the original source URL, publisher, relevant dates and processing/version context where available. Distinguish a collection date, a verification date and the period a source describes. [Metadata schema](standards/METADATA_SCHEMA.md) documents the technical fields.
+Source terms guide collection and reuse. Check the publisher's permissions, use an API or bulk download where available, and configure scraping requests for the source. [Metadata Schema](standards/METADATA_SCHEMA.md) describes the fields used to record provenance.
 
-### 3. Respect for Terms of Service
+## People and privacy {#people-and-privacy}
 
-Collection operators should assess source terms and applicable requirements, avoid bypassing access controls, and limit requests appropriately. Check scraper settings and source requirements for each deployment.
-
-## Privacy & Data Protection
-
-### Personal Information
-
-Institutional records may mention survivors, defenders, officials or other individuals. Extracted text can preserve names even when no separate personal-data fields are created. Assess whether indexing, linking or disclosure increases exposure and whether less detail would answer the research question.
-
-### Data Storage
-
-Local pipeline and API deployments are operated by their users. They determine storage location, access permissions and security. The public website serves published static research assets; it does not upload a visitor's local research corpus.
-
-### Data Sharing
-
-Prefer the minimum necessary detail. Consider aggregation, purpose, access and likely downstream reuse. Some research material should remain restricted even where source documents are public.
-
-## Ethical Research Practices
-
-### 1. Do No Harm
-
-Examine risks of outing, selective enforcement, misclassification and exposing individuals. Institutional accountability does not require unnecessary visibility of affected people.
-
-### 2. Transparency
-
-Explain selection rules, classifications, missingness and changes. Make consequential interface choices understandable where they occur, including optional external charts.
-
-### 3. Reproducibility
-
-Preserve versions, processing context and references where disclosure is appropriate. Reproducibility does not require publishing sensitive information or third-party material without suitable rights.
-
-### 4. Accountability
-
-Research interpretations can be contested and revised. Retain the distinction between source evidence and authored judgment, and document material changes to public assessments.
-
-## Data Quality & Integrity
-
-### Source Validation
-
-A reachable URL is not proof of source accuracy, present-day legal status or correct interpretation. Checks of availability, extraction and substantive meaning are different.
-
-The visualization snapshot was generated **26 June 2026**; its metadata records source verification on **9 September 2025**. Interpret each date according to its meaning.
-
-### Metadata Integrity
-
-Preserve original values where normalization changes them, document transformations and keep gaps visible. Missing evidence must not silently become zero or a negative finding.
-
-### Error Handling
-
-Record failed retrievals and extraction issues. A successful run does not establish a complete corpus. [Validation guidance](guides/VALIDATORS_USAGE.md) explains the available tools.
-
-## International Considerations
-
-### Multi-Jurisdictional Data
-
-Interpretation and publication may have different consequences across jurisdictions. Legal and policy sources need contextual review; a common schema does not erase those differences.
-
-### Language & Translation
-
-Language coverage and translation affect retrieval and classification. Report language limits, preserve original references and validate translated interpretations where they matter.
-
-## Security & Access Control
-
-### Data Access
-
-Public site browsing, documentation search and table filtering need no account. The self-hosted API is separate software; its operator controls authentication, rate limits and access.
-
-### Security Measures
-
-DigitalChild contains validation and API security facilities. Operators need to configure, maintain and review those facilities for their deployment.
-
-### Secure Deployment
-
-[Production deployment guidance](guides/PRODUCTION_DEPLOYMENT.md) covers running and securing a self-hosted API.
-
-## Data Retention & Deletion
-
-### Default Retention
-
-Local research operators determine retention according to purpose, source rights and relevant obligations. Versioned public outputs can remain in Git history, archives and downloaded copies.
-
-### Corrections and Removal Requests {#right-to-be-forgotten}
-
-Correcting a future version does not guarantee removal from existing copies. Assess the need for a correction, restriction or removal without reproducing sensitive material in public records. Historical versions and their limitations should remain distinguishable from current assessments.
-
-## Research Ethics
-
-### Human Subjects
-
-Public-document research can still involve identifiable people and sensitive content. Any future participant work needs appropriate scope, ethics review and understandable terms before collection.
-
-### Institutional Review Board (IRB)
-
-Researchers must assess institutional review requirements for their questions and methods before collecting participant material.
-
-### Publication Ethics
-
-Cite the relevant study or output version, explain the method, retain limitations and observe source/publication terms. The [technical overview](docs/technical-overview.md#citation) provides the software citation.
-
+<span id="privacy-data-protection"></span>
+<span id="personal-information"></span>
+<span id="data-storage"></span>
+<span id="data-sharing"></span>
+<span id="research-ethics"></span>
+<span id="human-subjects"></span>
+<span id="institutional-review-board-irb"></span>
+<span id="publication-ethics"></span>
 <span id="contributor-conduct"></span>
 <span id="issue-reporting"></span>
 <span id="user-expectations"></span>
 
-## Community Standards
+Human-rights documents may identify survivors, defenders or other individuals. Search, extraction and aggregation can increase their exposure even when the original document was public.
 
-Existing [contribution terms](CONTRIBUTING.md) describe attribution and licensing for repository material. A public versioned record may retain earlier contributions after later changes. Personal or confidential material does not belong in public issue histories.
+Use the detail needed to answer the research question. Consider whether an aggregate, a source reference or restricted access would serve it better than publishing an identifiable extract. Pay particular attention to outing, selective enforcement and misclassification.
 
-## Compliance & Legal
+GRIMdata's public website accepts no participant submissions. Any future work with participants will need a clear research scope, appropriate ethics review and understandable choices about recording, attribution, reuse and withdrawal.
 
-### Copyright
+## Storage and access {#storage-and-access}
 
-| Material | Access and terms |
-| --- | --- |
-| DigitalChild source code | MIT, as specified in the repository licence |
-| Project-authored DigitalChild data and documentation | CC BY 4.0 where specified; attribution required |
-| Original third-party documents | Publisher/source terms remain applicable |
-| Published articles and archival records | Their own publication terms; cite the actual work |
-| Historical HumanRights research archive | Private archive |
-| Future project material | Access and release terms remain to be determined |
+<span id="security-access-control"></span>
+<span id="data-access"></span>
+<span id="security-measures"></span>
+<span id="secure-deployment"></span>
 
-### Data Protection Laws
+Public browsing, documentation search and table filtering need no account. The site serves published research files; search and filtering happen in the browser. External charts load when you choose them. [Site practices](practices/index.md) explains those interactions and the information involved.
 
-Public-document processing can create privacy and data-protection obligations. Deployment operators and researchers must assess applicable requirements, source terms and sensitive categories for their use.
+Researchers running DigitalChild locally manage their own files, access permissions, backups and retention. The self-hosted API includes authentication, rate limits and validation settings. [Production deployment guidance](guides/PRODUCTION_DEPLOYMENT.md) covers configuring that service.
 
-### Freedom of Information
+## Quality and revisions {#quality-and-revisions}
 
-Access to a public record does not establish permission for every subsequent research use, inference or republication.
+<span id="data-quality-integrity"></span>
+<span id="source-validation"></span>
+<span id="metadata-integrity"></span>
+<span id="error-handling"></span>
+<span id="updates-versioning"></span>
+<span id="data-updates"></span>
+<span id="policy-updates"></span>
 
+Review source availability, extraction quality, document dates and interpretation. Record retrieval failures and coverage gaps, and retain original values when normalization changes them. [Validation guidance](guides/VALIDATORS_USAGE.md) describes the available checks.
+
+The published scorecard snapshot was generated on **26 June 2026**. Its metadata records source verification on **9 September 2025**. These dates identify the export and source-review stages respectively.
+
+A revised assessment should record what changed, why and which source supports it. Keep the relevant version and date with published outputs so later work can be compared with the earlier record.
+
+## Retention and corrections {#retention-and-corrections}
+
+<span id="data-retention-deletion"></span>
+<span id="default-retention"></span>
+<span id="right-to-be-forgotten"></span>
+<span id="community-standards"></span>
+
+Retain research material for a defined purpose, taking account of source rights and the people represented in it. Revisit access and retention when the research question or use changes.
+
+Corrections should explain the change without repeating sensitive material. Earlier versions may remain in repository history, archives and downloaded copies. [Repository terms](CONTRIBUTING.md) describes contribution attribution and licensing; public issue records are unsuitable for personal or confidential material.
+
+## Publication and reuse {#publication-and-reuse}
+
+<span id="compliance-legal"></span>
+<span id="copyright"></span>
+<span id="data-protection-laws"></span>
+<span id="freedom-of-information"></span>
 <span id="contact-questions"></span>
 <span id="data-quality-issues"></span>
 <span id="ethical-concerns"></span>
 <span id="collaboration"></span>
 
-## Updates & Versioning
+| Material | Access and terms |
+| --- | --- |
+| DigitalChild source code | MIT, as specified in the repository licence |
+| Project-authored DigitalChild data and documentation | CC BY 4.0 where specified; credit the work and its sources |
+| Third-party documents | Original publisher and source terms |
+| Published articles | Their respective publication terms |
+| Historical HumanRights research archive | Private archive |
+| Future project material | Terms will follow the sources, methods and people involved |
 
-### Data Updates
-
-Published scorecard snapshots have dates and version context. Pipeline tools support processing, comparison and exports; they do not establish uninterrupted or real-time monitoring of every source.
-
-### Policy Updates
-
-Governance decisions should be revisited when sources, purposes, access arrangements or research methods change. Git history records revisions to these public documents.
-
-## Mission Alignment
-
-Inspectable evidence, contextual interpretation and proportionate disclosure support the programme's research purpose. The four tracks have different materials and stages of development; their governance practices must be assessed accordingly.
+Cite the research or output version you used. The [technical overview](docs/technical-overview.md#citation) provides the software citation, and the [project pages](projects/index.md) link to the published studies.
 
 [Research Context](RESEARCH_CONTEXT.md) · [Site practices](practices/index.md) · [Research directions](research-directions/index.md)
-
-*Reviewed: 5 October 2026.*

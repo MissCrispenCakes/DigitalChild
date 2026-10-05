@@ -36,7 +36,7 @@ Four investigations connect documentary evidence, methodological judgment and pu
 
     [Scope and next investigation →](../research-directions/index.md#canadian-projects-environmental-oversight)
 
--   <span class="grim-track-index">04 / Proposed · Funding unconfirmed</span>
+-   <span class="grim-track-index">04 / Proposed research</span>
 
     ### Research Provenance & Institutional Continuity
 

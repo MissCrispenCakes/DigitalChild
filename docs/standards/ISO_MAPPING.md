@@ -2,7 +2,7 @@
 
 ## Overview
 
-The DigitalChild project uses a complete ISO 3166-1 alpha-2 country code mapping for all 194 UN member states. This standardized mapping ensures consistent country identification across all data sources, exports, and visualizations.
+The DigitalChild project uses a complete ISO 3166-1 alpha-2 country code mapping for all 194 countries in the scorecard. This standardized mapping ensures consistent country identification across all data sources, exports, and visualizations.
 
 ## Location
 
@@ -12,7 +12,7 @@ The DigitalChild project uses a complete ISO 3166-1 alpha-2 country code mapping
 
 ## Coverage
 
-- **Total Countries**: 194 UN member states
+- **Total Countries**: 194 scorecard countries
 - **Standard**: ISO 3166-1 alpha-2 (two-letter codes)
 - **Source**: Generated using `pycountry` library with manual overrides for UN-specific naming conventions
 
@@ -133,7 +133,7 @@ The ISO mapping ensures consistency across:
 
 The ISO mapping was generated using the following approach:
 
-1. Load all 194 UN member states from scorecard_main.xlsx
+1. Load all 194 countries in the scorecard from scorecard_main.xlsx
 2. Use `pycountry.countries.get()` to find ISO codes
 3. Apply manual overrides for UN-specific naming:
    - "Viet Nam" → VN (pycountry uses "Vietnam")
@@ -149,7 +149,7 @@ The ISO mapping was generated using the following approach:
 Some country names use special Unicode characters:
 
 - **Côte d'Ivoire**: Uses curly apostrophe (U+2019: ')
-- **Türkiye**: Uses Turkish lowercase i with dot (U+00FC: ü)
+- **Türkiye**: Uses lowercase u with diaeresis (U+00FC: ü)
 
 These characters must match exactly for lookups to work. The test suite validates these special cases.
 

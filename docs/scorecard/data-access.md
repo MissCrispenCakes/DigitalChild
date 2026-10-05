@@ -2,7 +2,7 @@
 
 ## Published snapshot downloads
 
-These files contain the **26 June 2026 visualization snapshot**, including scores, written assessments, and source links. The JSON retains nested indicator metadata; the CSV flattens each indicator into score, assessment, and sources columns. Both retain the snapshot and source-verification dates. They do not refresh automatically or include every pipeline document.
+These files contain the **26 June 2026 visualization snapshot**, including scores, written assessments, and source links. The JSON retains nested indicator metadata; the CSV flattens each indicator into score, assessment, and sources columns. Both retain the snapshot and source-verification dates. For other pipeline outputs, use the export and local-file options below.
 
 [Download scorecard JSON](data/scorecard.json){ .md-button download="scorecard.json" }
 [Download scorecard CSV](data/scorecard.csv){ .md-button download="scorecard.csv" }
@@ -531,7 +531,7 @@ Choose the right method for your needs:
 
 ## Data Validation
 
-Check source availability and review the underlying evidence before using an assessment. The following tools help identify broken links and changes; they do not establish whether a policy assessment is still accurate.
+Check source availability and review the underlying evidence before using an assessment. The tools below identify broken links and source changes for follow-up review.
 
 ### Automated Validation
 

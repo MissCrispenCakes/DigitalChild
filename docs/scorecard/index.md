@@ -19,7 +19,7 @@ As digital technologies—especially artificial intelligence, biometric systems,
 **The gap this addresses:**
 - Existing digital rights indices focus on general privacy or internet freedom
 - Few track LGBTQ+-specific or child-specific digital protections
-- No comprehensive dataset examines the **intersection** of digital governance and vulnerable populations
+- This scorecard brings child and LGBTQ+ rights into the same comparative framework for examining digital governance
 
 **Research foundation:**
 This scorecard was developed for the research paper *"Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa"* presented at the 2nd International Conference on Children's Rights (Stellenbosch, September 2025).
@@ -34,7 +34,7 @@ This scorecard was developed for the research paper *"Queer AI for the digital c
 
     ---
 
-    Comprehensive global coverage across all UN member states and territories
+    Country assessments spanning the published scorecard
 
 -   :material-chart-line:{ .lg .middle } **10 Indicators**
 
@@ -187,10 +187,9 @@ All 2,543 source URLs come from authoritative international organizations:
 ### Validation & Monitoring
 
 **Quality Assurance:**
-- All 2,543 URLs automatically validated (HTTP status, redirects, link rot)
-- Change detection monitors when source content updates
-- Manual quarterly review by researchers
-- Community contributions via GitHub issues
+- URL checks record HTTP status, redirects and broken links
+- Change detection compares source content between runs
+- Country assessments bring together source evidence and interpretation
 
 **Transparency:**
 - Every indicator value links to its authoritative source URL
@@ -263,31 +262,16 @@ Or in text:
 
 ---
 
-## Limitations & Disclaimers
+## Reading the assessments {#limitations-disclaimers}
 
-!!! warning "Important Considerations"
+The scorecard compares documented laws and policy frameworks using a three-point scale. Read the country assessments alongside their original sources, with attention to:
 
-    **Point-in-time data:** The published visualization snapshot was generated 26 June 2026 and carries a 9 September 2025 source-verification stamp. Individual sources have their own dates. Policies change frequently.
+- **Dates:** the snapshot was generated on 26 June 2026; the source-verification stamp is 9 September 2025.
+- **Coverage:** written justifications and accessible sources vary across countries and indicators.
+- **Context:** enforcement, local experience and differences within federal systems add detail beyond a national comparison.
+- **Relationships:** indicators such as criminalization and biometric identification may interact in ways that merit closer study.
 
-    **Binary categorization:** Complex policies are simplified into discrete 0-1-2 categories for comparability.
-
-    **Source availability:** Some countries lack accessible English-language sources or transparent policy documentation.
-
-    **Implementation vs. policy:** Tracks official policy and law, not enforcement effectiveness or lived experience.
-
-    **Regional variation:** Federal systems may have significant state/provincial differences not captured at national level.
-
-    **Intersectional risk:** Real-world risk is determined by **combinations** of indicators (e.g., LGBTQ+ criminalization + biometric SIM requirements), not single indicators in isolation.
-
-!!! info "Use Responsibly"
-
-    This scorecard is a **research tool**, not legal advice. Always:
-
-    - Verify source URLs before citing in publications
-    - Consider local context, enforcement patterns, and lived experience
-    - Acknowledge limitations in research methodology sections
-    - Cross-reference with other datasets and qualitative research
-    - Consult local human rights organizations for on-the-ground context
+[Design & Methodology](design.md) explains the scoring rules and analytical scope. Include the snapshot date and relevant sources when citing an assessment.
 
 ---
 

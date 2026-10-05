@@ -24,7 +24,7 @@ ______________________________________________________________________
 
 LittleRainbowRights broadened the earlier inquiry across countries and multiple document sources. The computational researcher developed the retrieval and representation approach and identified a further need: an index that could preserve a dated, inspectable assessment of documented conditions, with sources, gaps and uncertainty available for examination.
 
-The public tools make those assessments easier to inspect and compare. Country coverage does not imply equal evidence completeness or validated accuracy. Global and multi-source work also revealed the substantial maintenance and interpretation demands on one computational researcher and one human-rights lawyer.
+The public tools make those assessments easier to inspect and compare. The assessments show the evidence available for each country and where documentation is missing. Global and multi-source work also revealed the substantial maintenance and interpretation demands on one computational researcher and one human-rights lawyer.
 
 [Research history](../../../research-history/index.md) · [Next investigations](../../../research-directions/index.md#littlerainbowrights)
 
@@ -36,7 +36,7 @@ LittleRainbowRights is a focused research initiative within the broader GRIMdata
 - **LGBTQ+ digital rights** - Legal protections, online discrimination, privacy concerns
 - **Intersectional analysis** - How policies affect vulnerable youth who are also LGBTQ+
 
-This project uses the DigitalChild pipeline to retrieve and process human-rights documents. Its scorecard describes selected legal and policy frameworks; it is a screening tool rather than a direct measure of lived protection or enforcement outcomes.
+This project uses the DigitalChild pipeline to retrieve and process human-rights documents. Its scorecard compares selected legal and policy frameworks, with written assessments and sources for further examination.
 
 ## Published assessment scope {#key-findings}
 
@@ -143,7 +143,7 @@ All data sourced from authoritative international organizations:
 - **Privacy International** - Surveillance and privacy tracking
 - **Human Rights Watch** - Human rights monitoring
 
-The broader source register records **2,543 source URLs**. URL availability checks and substantive validation have different meanings; inspect the source and its date before drawing conclusions.
+The broader source register records **2,543 source URLs**. Country assessments link to the evidence and dates used in the analysis.
 
 ## Key Publications
 
@@ -280,7 +280,7 @@ Insights for:
 
 **Conference research:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098).
 
-**Public scorecard snapshot:** state the snapshot generation date (26 June 2026), access date and the particular source-linked assessments used. The source-verification stamp (9 September 2025) describes a different event. A citation to the conference record alone does not identify the version of a later download.
+**Public scorecard snapshot:** state the snapshot generation date (26 June 2026), access date and the particular source-linked assessments used. Include the source-verification date (9 September 2025) when discussing evidence freshness.
 
 **Software:** use the [software citation and technical overview](../../../docs/technical-overview.md#citation) and [repository citation record](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
 

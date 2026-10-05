@@ -312,7 +312,7 @@
       "</strong> / " + inds.length + " documented</span></div>";
     if (gaps > 0) {
       html += '<p class="sc-detail-flag">⚠ ' + gaps + " indicator" + (gaps > 1 ? "s" : "") +
-        " scored without a documented justification — interpret with caution while source validation is ongoing.</p>";
+        " scored without a written justification in this snapshot. Review the indicator details and linked sources below.</p>";
     }
     html += '<ul class="sc-detail-list">';
     inds.forEach(function (ind) {

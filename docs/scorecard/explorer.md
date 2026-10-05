@@ -1,6 +1,6 @@
 # Data Explorer
 
-Filter, search, sort, and compare the Digital Rights Scorecard across 194 countries — entirely in your browser, from a published static dataset (no server required).
+Filter, search, sort and compare the Digital Rights Scorecard across 194 countries using the published research snapshot.
 
 <div class="sc-explorer" id="sc-explorer">
   <p id="sc-meta" class="sc-meta"></p>
@@ -55,7 +55,7 @@ Column abbreviations refer to the following measures:
 Add up to five countries to compare their indicator profiles (0–2 on each of ten indicators). Missing values remain gaps. Enable the optional charts when you are ready.
 
 <div id="sc-chart-permission" class="sc-chart-permission">
-  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. That provider receives normal request information. Your table filters run locally. This choice applies to this page only.</p>
+  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. Your browser sends that service a request, including your IP address. Table filters stay in your browser. This choice applies to this page only.</p>
   <button type="button" id="sc-load-charts" class="md-button md-button--primary">Load interactive charts</button>
   <a href="../../practices/">Data handling details</a>
   <p id="sc-chart-status" role="status" aria-live="polite">Charts are off. Use the country table or downloads without them.</p>
@@ -102,7 +102,7 @@ The explorer above reads the same underlying scored dataset you can pull program
     Open `data/scorecard/scorecard_main.xlsx` (canonical) for the full data with source URLs, or `Global_QueerAI_Child_Scorecard_MASTER.xlsx` for the clean scored visualization view.
 
 !!! note "About this data"
-    Point-in-time data derived from the project's designated visualization dataset. Source-URL verification is an ongoing, separate workflow, so figures may be revised. See the [Design & Methodology](design.md) for indicator definitions and the 0-1-2 scoring rules.
+    This explorer uses the published scorecard snapshot, with source dates and written assessments available in each country panel. See the [Design & Methodology](design.md) for indicator definitions and the 0-1-2 scoring rules.
 
 ## Assessment provenance {#contribute}
 

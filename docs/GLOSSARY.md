@@ -102,8 +102,8 @@ Committee of independent experts monitoring implementation of international huma
 
 Set of protocols allowing software applications to communicate
 
-- In this project: Future feature for accessing data programmatically
-- Currently: CLI-based (no API yet)
+- In this project: a self-hosted Flask API for querying documents, scorecards, tags and timelines
+- See the [API reference](api/reference.md) for endpoints and parameters
 
 ### BeautifulSoup4
 
@@ -174,7 +174,7 @@ Python library for reading and manipulating PDF files
 
 Python testing framework
 
-- Used to run 124 tests in DigitalChild
+- Used to test DigitalChild processors, configuration and API behaviour
 - Supports fixtures, parameterization, coverage reporting
 
 ### Regex (Regular Expression)
@@ -211,8 +211,8 @@ Main development branch for DigitalChild project
 
 Official name of this data pipeline project
 
-- Also known as GRIMdata (research umbrella)
-- Also known as LittleRainbowRights (child/LGBTQ+ focus)
+- Implements the LittleRainbowRights document pipeline
+- Part of the GRIMdata research programme
 
 ### Document Metadata
 
@@ -234,11 +234,11 @@ Process of adding scorecard indicator data to document metadata
 
 ### GRIMdata
 
-**Global Rights Information Monitoring**
+**Global Rights Index Monitoring**
 
 - Umbrella project name
 - Website: GRIMdata.org
-- Includes DigitalChild and future SGBV-UPR integration
+- Includes SGBV-UPR, LittleRainbowRights and the [planned research directions](research-directions/index.md)
 
 ### Indicator
 
@@ -318,7 +318,7 @@ Security module for input validation
 
 - Validates URLs, file paths, configs, schemas
 - Prevents path traversal and injection attacks
-- 68 tests ensure comprehensive security
+- Tests cover valid inputs, rejected values and error handling
 
 ## Data Analysis Terms
 

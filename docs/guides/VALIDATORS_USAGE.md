@@ -8,7 +8,7 @@ The `processors/validators.py` module provides centralized validation functions 
 - **Consistent**: Same validation rules across the codebase
 - **Secure**: Prevents path traversal, validates input types, checks bounds
 - **Clear Errors**: Custom exception classes with descriptive messages
-- **Well-Tested**: 68 comprehensive tests ensuring reliability
+- **Test coverage**: validator tests cover accepted values, invalid inputs and error handling
 
 ## Exception Hierarchy
 

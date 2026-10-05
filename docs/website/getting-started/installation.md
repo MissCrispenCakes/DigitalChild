@@ -1,9 +1,9 @@
 # Installation
 
-This guide walks you through installing DigitalChild on your system.
+Install DigitalChild to run the pipeline on your system. For browser access, use the [Country Explorer](../../scorecard/explorer.md) or [download the published data](../../scorecard/data-access.md#published-snapshot-downloads).
 
-!!! success "Just want to access the data?"
-    **Skip installation!** Use the REST API instead:
+!!! tip "Using the API"
+    To query local data through the API, install its dependencies and start the service:
 
     ```bash
     # Install API only

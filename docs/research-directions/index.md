@@ -61,7 +61,7 @@ The inquiry asks:
 
 ## Research Provenance & Institutional Continuity
 
-**Proposed · Insight Grant direction · Funding unconfirmed**
+**Proposed · Insight Grant direction**
 
 The proposed *AI-Assisted Research Provenance, Institutional Continuation & Public Accountability* track examines how contributions, methods and knowledge persist across grants, institutions, people and outputs.
 
@@ -85,5 +85,3 @@ The connection to **Viability.^.** concerns how continuity arrangements expand o
 Research questions and available outputs are described on each project page. Software development is recorded in the [DigitalChild/LRR roadmap](../ROADMAP.md) and [API implementation history](../api/IMPLEMENTATION_HISTORY.md).
 
 [Research context](../RESEARCH_CONTEXT.md) · [Data governance](../DATA_GOVERNANCE.md)
-
-*Directions reviewed: 5 October 2026.*

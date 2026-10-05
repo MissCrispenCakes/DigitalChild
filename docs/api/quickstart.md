@@ -276,4 +276,4 @@ python init_project.py
 
 - See [Full API Documentation](reference.md) for complete API documentation (all 14 endpoints)
 - See `.env.example` for configuration options
-- Check test coverage: `pytest tests/api/ -v` (76 tests passing)
+- Check test coverage: `pytest tests/api/ -v`

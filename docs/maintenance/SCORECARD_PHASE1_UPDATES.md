@@ -178,12 +178,12 @@ All exports passed validation:
 ### Phase 2: High Priority (10-15 Years Old)
 - 8 entries remaining
 - Focus: Data protection laws from 2010-2016
-- Timeline: Next 2-3 weeks
+- Original planning estimate: 2–3 weeks
 
 ### Phase 3: Medium Priority (6-10 Years Old)
 - 18 entries remaining
 - Focus: Batch processing by region
-- Timeline: 4-6 weeks
+- Original planning estimate: 4–6 weeks
 
 ### Phase 4: Low Priority (3-5 Years Old)
 - 15 entries remaining
@@ -232,17 +232,13 @@ All exports passed validation:
 
 ## Next Review Date
 
-**Recommended**: 2026-04-25 (Quarterly review)
-**Next Phase Start**: 2026-02-01 (Phase 2 - High Priority)
+The January maintenance plan scheduled a further phase for February 2026 and a review for April 2026. See the [software roadmap](../ROADMAP.md) for current priorities.
 
 ---
 
-## Approval
+## Update record {#approval}
 
-**Updated By**: Automated scorecard maintenance process
-**Reviewed By**: [Pending user review]
-**Approved By**: [Pending]
-**Date**: 2026-01-25
+Automated maintenance record dated 25 January 2026. The country entries, sources and export checks above describe that update.
 
 ---
 

@@ -5,9 +5,9 @@ search:
 
 # URL migration map
 
-This revamp keeps existing public file routes and adds umbrella entrances. No production domain swap or path-wide rewrite is required. Only recognised legacy root fragments redirect to their corresponding preserved technical sections. Old overview URLs remain explicit compatibility pages to preserve fragments and the research record.
+This reference lists current page locations and the destinations of earlier GRIMdata links. Existing page routes remain available; older root fragments lead to their corresponding sections in the technical overview.
 
-| Existing URL | Role after the revamp | Compatibility |
+| Existing URL | Current content | Compatibility |
 | --- | --- | --- |
 | `/` | GRIMdata umbrella home: purpose, tracks, platform entrances | The old technical home is copied in full to `/docs/technical-overview/`; old root fragments redirect to the corresponding preserved section. |
 | `/website/` | About GRIMdata: contributions, stance, history and publications | The About tab opens this page. Relevant content and existing heading fragments remain; technical detail is linked from its documentation; the home button points to `/`. |
@@ -21,9 +21,9 @@ This revamp keeps existing public file routes and adds umbrella entrances. No pr
 | `/transparency-watch/` | Interactive archive-signal exploration | Retained with keyboard-accessible filters and source labels. |
 | `/api/*`, `/guides/*`, `/standards/*`, `/notes/*` | Established documentation | File routes preserved; navigation reorganised by purpose. API is accurately described as self-hosted. |
 | `/ARCHITECTURE/`, `/DATA_GOVERNANCE/`, `/RESEARCH_CONTEXT/`, `/ROADMAP/`, `/CONTRIBUTING/`, `/FAQ/`, `/GLOSSARY/`, `/DOCS_INDEX/` | Established research and technical record | Retained. |
-| `LittleRainbowRights.com` and future splash domains | Public big-idea introductions | No external domain changes or deployments in this review. GRIMdata houses the tools and evidence. |
+| `LittleRainbowRights.com` and future splash domains | Public big-idea introductions | Project introductions link to GRIMdata for tools, methods and evidence. |
 
-Historical planning notes and implementation test reports keep their existing URLs and content anchors, but are omitted from primary navigation and search. The source-feasibility checklist is available under How-to guides.
+Historical development pages retain their URLs and anchors. Longer planning and review records are linked from their summaries. The source-feasibility checklist is available under How-to guides.
 
 ## Research programme additions
 
@@ -35,7 +35,7 @@ Historical planning notes and implementation test reports keep their existing UR
 | `/ROADMAP/` | DigitalChild/LRR software milestones and outstanding technical work | Documentation → Reference → Development Records |
 | `/api/IMPLEMENTATION_HISTORY/` | Historical self-hosted API build record | Documentation → Reference → Development Records |
 
-Research Context and Data Governance keep their URLs and full explanations, with concise excerpts and contextual links on Home, About and project pages. Old topic anchors remain beside the corresponding accurate sections. Retired contact/support sections retain compatibility anchors beside neutral research-record, licensing or technical-guidance content; no invitations or contact cards are introduced.
+Research Context and Data Governance keep their URLs and full explanations, with concise excerpts and contextual links on Home, About and project pages. Earlier topic anchors lead to the corresponding research, licensing or technical guidance.
 
 ## New entrances
 
@@ -46,7 +46,7 @@ Research Context and Data Governance keep their URLs and full explanations, with
 | `/docs/` | Explicit Diátaxis hub: Tutorials, How-to guides, Reference, Explanation |
 | `/docs/technical-overview/` | Preserved former root technical content and software citation |
 | `/tutorials/first-country/` | Guided browser-only first assessment tutorial |
-| `/practices/` | Reviewed site behaviour, optional charts, data handling, participation and uncertainty |
+| `/practices/` | Browsing choices, optional charts, data handling and attribution |
 | `/scorecard/data/scorecard.csv` | Download of the existing published visualization snapshot, with evidence columns |
 
 ## Root fragment compatibility
@@ -57,7 +57,7 @@ The original root fragments remain in a visible continuation section linking to 
 
 Generated code-line anchors (`__span-*` and `__codelineno-*`) from the original root are also retained and redirect to the corresponding unchanged code blocks.
 
-The corresponding sections exist at `/docs/technical-overview/#<fragment>`. This preserves inbound links while making the root an umbrella home. Recognised root fragments redirect with `location.replace` to the corresponding technical-overview fragment, preserving the expected subject rather than landing on an unrelated home section. A visible continuation pointer also works without JavaScript.
+The corresponding sections exist at `/docs/technical-overview/#<fragment>`. Recognised root fragments redirect with `location.replace` to the corresponding technical-overview fragment. A visible continuation pointer also works without JavaScript.
 
 ## Navigation and refresh
 
@@ -65,4 +65,4 @@ Material's instant navigation remains enabled. The rainbow-divider initializer s
 
 ## Publication boundary
 
-The programme update preserves existing research routes and fragments. Recognised legacy root fragments continue to lead to the corresponding technical content. No existing path is redirected to an unrelated homepage.
+Research routes and fragments remain available. Recognised legacy root fragments lead to the corresponding technical content.

@@ -168,7 +168,7 @@ api/
 
 ### Service Layer Pattern
 
-Services wrap the `processors/` modules with API-friendly formatting. The internal design rationale belongs to **Explanation**, not this endpoint reference — see [Architecture](../ARCHITECTURE.md).
+Services wrap the `processors/` modules with API-friendly formatting. [Architecture](../ARCHITECTURE.md) explains how the service layer fits into the pipeline.
 
 ### Response Format
 
@@ -210,7 +210,7 @@ Environment variables (see `.env.example`):
 
 ## Beyond this reference
 
-This page is the **endpoint reference** only (Diátaxis). For everything else:
+Related guides:
 
 - **Run / try the API:** [Quick Start](quickstart.md) *(tutorial)*
 - **Deploy to production** (Gunicorn / Docker / Nginx): [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md) *(how-to)*

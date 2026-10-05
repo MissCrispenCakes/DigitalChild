@@ -1,6 +1,6 @@
 # Start Here
 
-**New to GRIMdata?** This page points you to the right place based on what you want to do.
+Find the data, methods or instructions you need.
 
 GRIMdata houses the data, methods, tools, and documentation for its research tracks. [LittleRainbowRights.com](https://littlerainbowrights.com) is the public introduction to that project's big idea; the interactive scorecard and underlying evidence are here on GRIMdata.
 
@@ -14,42 +14,39 @@ ______________________________________________________________________
 
 ## I'm a researcher
 
-You probably want the data, the methodology, and citable provenance.
+Find assessments, methods and citation details.
 
 - [Data Access](../../scorecard/data-access.md) — API endpoints and CSV exports
 - [API Quick Start](../../api/quickstart.md) — your first query in a couple of minutes
 - [Design & Methodology](../../scorecard/design.md) — the 10 indicators and the 0/1/2 scoring rubric
 - [Data Explorer](../../scorecard/explorer.md) — filter, search, and compare countries
 
-**Good practice:** verify source URLs before citing, report data-completeness, cross-reference
-with other datasets, and treat a score as a screening signal — not absolute truth, and not legal advice.
+When citing an assessment, include its snapshot date and documentation coverage. Follow the source links and compare the findings with other relevant research.
 
 ## I'm an advocate
 
-You probably want evidence for campaigns and a clear picture of gaps.
+Examine documented policies, protections and gaps.
 
 - [Scorecard map & charts](../../scorecard/visualization.md) — protections and gaps at a glance
 - [LittleRainbowRights project](../projects/littlerainbowrights/index.md) — regional analysis and findings
 - [Source Transparency Watch](../../transparency-watch/index.md) — peer-organisation open-data tracking
 - [the project introduction](https://littlerainbowrights.com)
 
-**Always pair the scores** with qualitative research, local civil-society perspectives,
-enforcement data, and community testimony. The scorecard shows *where* to look — not lived experience.
+Use the country comparisons alongside qualitative research, local civil-society perspectives, enforcement data and community testimony.
 
 ## I'm a policymaker
 
-You probably want benchmarking and gap analysis.
+Compare frameworks and investigate policy gaps.
 
 - [Scorecard map & charts](../../scorecard/visualization.md) — regional benchmarking
 - [Design & Methodology](../../scorecard/design.md) — what each indicator does and does not measure
 - [LittleRainbowRights project](../projects/littlerainbowrights/index.md) — regional strengths, gaps, and leaders
 
-**Keep in mind:** the scorecard does not capture implementation quality, cultural context, or
-political feasibility. Use it to inform priorities, and supplement it with stakeholder consultation.
+Compare the documented frameworks, then examine implementation, cultural context and political feasibility through local research and stakeholder consultation.
 
 ## I'm a developer
 
-You probably want to run the pipeline or call the API.
+Run the pipeline, query your data or extend the tools.
 
 - [Install the pipeline](installation.md) and [Quick Start](quickstart.md) — run an analysis locally
 - [API Quick Start](../../api/quickstart.md) and [Endpoint Reference](../../api/reference.md)

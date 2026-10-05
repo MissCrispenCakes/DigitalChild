@@ -269,7 +269,7 @@ ______________________________________________________________________
 
 ## Tests (`tests/`)
 
-Comprehensive test suite (124 tests, 100% passing).
+Tests cover the processors, metadata, tagging, exports and API.
 
 ### Test Files
 

@@ -6,7 +6,7 @@ title: Documentation
 
 [← GRIMdata Home](../index.md){ .md-button }
 
-Choose by what you need to do. **Diátaxis** keeps four kinds of documentation distinct; project introductions and interactive exploration have their own places.
+The documentation follows **Diátaxis**: learn through tutorials, complete tasks with how-to guides, look up reference material or explore the reasoning in Explanation.
 
 [New here? Find your starting point](../website/getting-started/start-here.md) · [Explore data & tools](../explore/index.md) · [Research projects](../projects/index.md)
 

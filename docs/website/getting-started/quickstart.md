@@ -1,6 +1,6 @@
 # Quick Start
 
-Learn to run DigitalChild locally and inspect its outputs. Install the dependencies first; network downloads and machine setup can take longer than a few minutes.
+Learn to run DigitalChild locally and inspect its outputs. Begin with the [installation guide](installation.md), then follow the steps below.
 
 !!! tip "🚀 Alternative: run the self-hosted API"
     **Don't want to run the pipeline?** Access data directly via REST API:
@@ -393,5 +393,3 @@ See [First Run Errors](../../guides/FIRST_RUN_ERRORS.md) for comprehensive troub
 - **FAQ:** [Common questions](../../FAQ.md)
 - **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-
-Happy analyzing! 🌈

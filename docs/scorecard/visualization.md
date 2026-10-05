@@ -47,7 +47,7 @@ check, per-country, statistics, filtering) live in the API Quick Start:
 Explore the scorecard interactively below. Charts are rendered in your browser from a published static dataset — no server required. To filter, search, sort, and compare individual countries, use the [Data Explorer](explorer.md).
 
 <div id="sc-chart-permission" class="sc-chart-permission">
-  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. That provider receives normal request information. Your table filters run locally. This choice applies to this page only.</p>
+  <p><strong>Optional interactive charts</strong> load Plotly and map assets from <code>cdn.plot.ly</code>. Your browser sends that service a request, including your IP address. Table filters stay in your browser. This choice applies to this page only.</p>
   <button type="button" id="sc-load-charts" class="md-button md-button--primary">Load interactive charts</button>
   <a href="../../practices/">Data handling details</a>
   <p id="sc-chart-status" role="status" aria-live="polite">Charts are off. Use the country table or downloads without them.</p>
@@ -128,7 +128,7 @@ In addition to the 10 individual indicators, the scorecard calculates composite 
 - **Minimum:** 0% (no indicator data available)
 - **Interpretation:** Percentage of metrics with verified data for the country
 
-**Note:** Countries with low data completeness (<50%) should be interpreted cautiously as composite scores may not reflect full picture.
+Use the completeness measure to identify countries where more source research is needed before comparison.
 
 ## Exporting Data
 
@@ -216,41 +216,38 @@ Detects:
 - ITU - Telecom regulations
 - Privacy International - Surveillance measures
 
-**Update Frequency:**
+**Updating assessments:**
 
-- Manually reviewed quarterly
-- Automated monitoring alerts when sources change
-- Community contributions via GitHub issues
+Source checks and content comparisons identify material for review. Changes to an assessment are recorded with the supporting source and date.
 
-## Contributing Data
+<span id="__span-3-1"></span>
+<span id="__codelineno-3-1"></span>
+<span id="__span-3-2"></span>
+<span id="__codelineno-3-2"></span>
+<span id="__span-3-3"></span>
+<span id="__codelineno-3-3"></span>
+<span id="__span-3-4"></span>
+<span id="__codelineno-3-4"></span>
 
-Found an error or have updated information?
+## Updating an assessment {#contributing-data}
 
-1. **Verify** - Check the source URL in `scorecard_main.xlsx`
-2. **Report** - Open [GitHub Issue](https://github.com/MissCrispenCakes/DigitalChild/issues) with:
-    ```txt
-    - Country name
-    - Indicator
-    - Current value vs. correct value
-    - Authoritative source URL
-    ```
-3. **Update** - Maintainer reviews and updates
-4. **Re-export** - Updated data regenerated
+Record the country, indicator, existing value, proposed correction and source. After reviewing the evidence, update the workbook and regenerate the exports using the [Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md).
+
+[Data Governance](../DATA_GOVERNANCE.md) explains how sources and revisions are recorded.
 
 ## Citing Scorecard Data
 
 When using scorecard data in publications:
 
-```bibtex
-@misc{littlerainbowrights2025scorecard,
-  title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, D.T. and Vollmer, S.C.},
-  year = {2025},
-  doi = {10.5281/zenodo.18318098},
-  howpublished = {\url{https://grimdata.org/scorecard/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
-}
-```
+<div class="language-bibtex highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nc">@misc</span><span class="p">{</span><span class="nl">littlerainbowrights2025scorecard</span><span class="p">,</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators}</span><span class="p">,</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Vollmer, D.T. and Vollmer, S.C.}</span><span class="p">,</span>
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2025}</span><span class="p">,</span>
+</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{10.5281/zenodo.18318098}</span><span class="p">,</span>
+</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">  </span><span class="na">howpublished</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{\url{https://grimdata.org/scorecard/}}</span><span class="p">,</span>
+</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}</span>
+</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="p">}</span>
+</span></code></pre></div>
 
 Or:
 
@@ -259,23 +256,27 @@ Or:
 > Licensed under CC BY 4.0.
 > ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395) (D.T. Vollmer), [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
 
-## Limitations & Disclaimers
+<span id="__span-5-1"></span>
+<span id="__codelineno-5-1"></span>
+<span id="__span-5-2"></span>
+<span id="__codelineno-5-2"></span>
+<span id="__span-5-3"></span>
+<span id="__codelineno-5-3"></span>
+<span id="__span-5-4"></span>
+<span id="__codelineno-5-4"></span>
 
-!!! warning "Important Considerations"
-    **Point-in-time data:** Snapshot generated 26 June 2026; source-verification stamp 9 September 2025. Individual sources have their own dates.
-    **Binary categorization:** Complex policies simplified into discrete categories
-    **Source availability:** Some countries lack accessible English-language sources
-    **Implementation vs. policy:** Tracks official policy, not enforcement
-    **Regional variation:** Federal systems may have state/provincial differences
+## Reading the assessments {#limitations-disclaimers}
 
-!!! info "Use Responsibly"
-    This scorecard is a research tool, not legal advice. Always:
-    ```txt
-    - Verify source URLs before citing
-    - Consider local context and nuance
-    - Acknowledge limitations in publications
-    - Cross-reference with other datasets
-    ```
+The scorecard compares documented laws and policy frameworks using a three-point scale. Read the country assessments alongside their original sources, with attention to:
+
+- **Dates:** the snapshot was generated on 26 June 2026; the source-verification stamp is 9 September 2025.
+- **Coverage:** written justifications and accessible sources vary across countries and indicators.
+- **Context:** enforcement, local experience and differences within federal systems add detail beyond a national comparison.
+- **Relationships:** indicators such as criminalization and biometric identification may interact in ways that merit closer study.
+
+[Design & Methodology](design.md) explains the scoring rules and analytical scope. Include the snapshot date and relevant sources when citing an assessment.
+
+---
 
 ## Future Enhancements
 
@@ -297,12 +298,10 @@ For technical documentation:
 - [Metadata Schema](../standards/METADATA_SCHEMA.md) - Data structure
 - [Architecture](../ARCHITECTURE.md) - System design
 
-## Support & Feedback
+## Further guidance {#support-feedback}
 
-- **Data quality issues:** [Open Issue](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Feature requests:** [Start Discussion](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **General questions:** [FAQ](../FAQ.md)
+[Methodology](design.md) · [Data access](data-access.md) · [FAQ](../FAQ.md)
 
 ______________________________________________________________________
 
-**Note:** Interactive visualizations are under active development. Check back for updates or [watch the repository](https://github.com/MissCrispenCakes/DigitalChild) for notifications.
+Software development is recorded in the [repository](https://github.com/MissCrispenCakes/DigitalChild) and [roadmap](../ROADMAP.md).

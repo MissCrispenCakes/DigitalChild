@@ -78,7 +78,7 @@ Established investigations and planned directions ask how documentary evidence c
 
     [See the research direction →](research-directions/index.md#canadian-projects-environmental-oversight)
 
--   <span class="grim-track-index">04 / Proposed · Funding unconfirmed</span>
+-   <span class="grim-track-index">04 / Proposed research</span>
 
     ### Research Provenance & Institutional Continuity
 
@@ -118,7 +118,7 @@ LittleRainbowRights extended the approach across countries and document sources.
 
 ## Understanding conditions carries responsibilities
 
-Knowing more can help people act, but it can also expose those described. GRIMdata examines institutional decisions and research claims while considering whose information is organized, who can use it and where disclosure should stop. An index describes selected aspects of a situation; it does not contain all the facts.
+Knowing more can help people act, but it can also expose those described. GRIMdata examines institutional decisions and research claims while considering whose information is organized, who can use it and where disclosure should stop. Each assessment brings together selected indicators, their sources and the gaps in the available evidence.
 
 [Read the research context](RESEARCH_CONTEXT.md) · [Data governance](DATA_GOVERNANCE.md)
 

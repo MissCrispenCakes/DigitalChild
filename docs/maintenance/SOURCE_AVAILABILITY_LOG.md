@@ -15,7 +15,7 @@ Each entry captures, as far as can be established:
 - **Noted** — date this disappearance was recorded.
 - **Action** — what was done (removed from active set, replaced with a mirror, archived copy located, etc.).
 
-> Wayback "last-seen" dates are an upper bound and may be absent if the URL was never archived. Combine with our own repo history.
+> An archived capture records that the source was available on that date. Later availability or removal may fall between captures; repository download records provide additional evidence.
 
 ## Entries
 

@@ -57,14 +57,14 @@ Are the organisations behind global digital-rights data adopting **primary-sourc
 </div>
 
 !!! info "How to read this"
-    Each entry is the **first archived appearance** of a transparency signal on that source's site — a reproducible, bot-friendly proxy for "first offered publicly," drawn from the Internet Archive's capture history. A **★** marks signals that are *on-topic* for that source (e.g. a data-protection dataset on UNCTAD, rather than an unrelated dashboard).
+    Each entry is the **first archived appearance** of a transparency signal on that source's site — a dated record of when that signal appears in the available captures, drawn from the Internet Archive's capture history. A **★** marks signals that are *on-topic* for that source (e.g. a data-protection dataset on UNCTAD, rather than an unrelated dashboard).
 
-!!! warning "Caveats — read before citing"
-    Web-archive coverage is incomplete, so a first-seen date is an **upper bound** on adoption: an organisation may have offered something earlier without it being archived, and the absence of a signal is **not** proof it never existed. Treat these as indicative leads, and verify the underlying page before citing. This watch is regenerated from the live archive — see [methodology](#methodology) below.
+!!! info "Archive coverage"
+    A first-seen date is the earliest capture found by this query. The source may have offered the material earlier, and gaps in the archive can leave signals unrecorded. Follow the archived page to examine the evidence. The [methodology](#methodology) explains how the watch is generated.
 
 ## Why this matters
 
-Our project publishes its scorecard data, scoring rules, and sources openly. This watch holds the wider field to the same standard — surfacing when peer organisations move from closed summaries toward downloadable data, primary-document access, and open APIs. It also doubles as an early-warning system for our own pipeline: when a source restructures its URLs or relocates its data, that shows up here first.
+Access to source documents and downloadable data makes research easier to examine and reproduce. The watch helps trace those access points over time and identify changes to the portals and URLs used by the pipeline.
 
 ## Methodology
 

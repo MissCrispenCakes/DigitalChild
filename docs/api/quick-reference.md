@@ -19,7 +19,7 @@ Server runs at: `http://localhost:5000`
 
 ---
 
-## 14 Production-Ready Endpoints
+## API endpoints {#14-production-ready-endpoints}
 
 ### Health & Info
 
@@ -316,7 +316,7 @@ print(f"Found {len(comprehensive)} countries with comprehensive data protection"
 
 ## Production Deployment
 
-Deploying the API (Docker / Gunicorn / Nginx) is documented in **one** place — the [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md) *(how-to)*.
+Use the [Production Deployment guide](../guides/PRODUCTION_DEPLOYMENT.md) to configure Docker, Gunicorn and Nginx.
 
 ---
 
@@ -350,7 +350,7 @@ curl http://localhost:5000/api/tags
 curl http://localhost:5000/api/export
 ```
 
-**All 104 integration tests passing (100% success rate)**
+Run the API integration tests:
 
 ```bash
 # Run test suite

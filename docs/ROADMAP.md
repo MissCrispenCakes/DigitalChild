@@ -1,18 +1,18 @@
 # DigitalChild / LittleRainbowRights Software Roadmap {#project-roadmap}
 
-This page records technical development of the DigitalChild pipeline and LittleRainbowRights tools. Programme-wide research questions and intended investigations are described in [Research directions](research-directions/index.md).
+DigitalChild provides the document pipeline and LittleRainbowRights research tools. Programme-wide research questions and intended investigations are described in [Research directions](research-directions/index.md).
 
 ## Current software direction
 
 **Available implementation:** document retrieval and processing, rule-based tags and recommendations, versioned comparisons, scorecard exports, self-hosted API software, static browser exploration and optional interactive charts.
 
-**Current maintenance:** evidence freshness and coverage, source availability, interpretation, and reproducible outputs. A reachable source or working feature does not establish a complete or current country assessment.
+**Current maintenance:** evidence freshness and coverage, source availability, interpretation, and reproducible outputs. Maintenance pairs source checks with review of country assessments and their supporting evidence.
 
-**Deferred or prospective:** NLP extraction, expanded document-source and language coverage, additional analytics and deployment automation. A React/Vue dashboard is not required for the existing static tools; no deadline is attached to these items.
+**Deferred or prospective:** NLP extraction, expanded document-source and language coverage, additional analytics and deployment automation. The current browser tools use a static interface; a framework-based dashboard remains deferred.
 
 ## Reading the development record
 
-The phases below preserve earlier implementation milestones and TODOs. Completed software facilities describe source functionality, not a public API deployment. Test counts and historical completion labels are records of the development stages, rather than fresh verification of every item.
+The phase record below traces DigitalChild development through June 2026, including completed milestones, test results and outstanding work. The API is available for self-hosting.
 
 The original phase structure predates the broader GRIMdata programme. Global scorecard coverage and expansion of the document-source corpus are different milestones.
 
@@ -152,13 +152,13 @@ ______________________________________________________________________
 - [x] All pre-commit hooks passing
 - [x] Full endpoint coverage
 
-**Status:** self-hosted API implementation and deployment configuration available; this does not describe an API hosted by the public website.
+**Status:** self-hosted API software and deployment configuration available.
 
 ______________________________________________________________________
 
 ## Phase 5: Visualization Dashboard (🚧 IN PROGRESS)
 
-**Delivered (June 2026), as a static, server-free implementation (Plotly.js + vanilla JS on the MkDocs site) rather than a JS-framework SPA:** the scorecard interactive choropleth map, indicator-distribution and regional charts, a filter/search/sort Data Explorer with per-country detail panels, a country-comparison radar, and a [Source Transparency Watch](transparency-watch/index.md). Remaining items below target a fuller dashboard.
+**Delivered (June 2026), using Plotly.js and JavaScript on the static website:** the scorecard interactive choropleth map, indicator-distribution and regional charts, a filter/search/sort Data Explorer with per-country detail panels, a country-comparison radar, and a [Source Transparency Watch](transparency-watch/index.md). Remaining items below target a fuller dashboard.
 
 ### Interactive Frontend
 
@@ -292,11 +292,9 @@ ______________________________________________________________________
 
 ## Notes
 
-- End-to-end pipeline is production-ready for AU Policy + scorecard workflow
-- Future work focuses on expanding analytics and building research dashboard
-- All core infrastructure is stable and well-tested (170 tests passing in ~106 seconds)
-- Documentation is comprehensive and up-to-date
-- **Recent Completions (January 2026):**
+- The pipeline supports the AU Policy and scorecard workflows
+- Further software directions include expanded analytics and dashboard features
+- **January 2026 milestones:**
   - Migrated from PyPDF2 to pypdf - no more deprecation warnings
   - ISO 3166-1 alpha-2 mapping for all 194 countries
   - Document type classifier (multi-stage rules-based)
