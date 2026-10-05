@@ -1,87 +1,77 @@
 ---
 title: Research history
-description: The exploratory origins, complementary computational and legal contributions, and published milestones behind GRIMdata.
+description: From early computational experiments to the SGBV–UPR study, LittleRainbowRights and future research.
 ---
 
 # Research history
 
 [← About GRIMdata](../website/index.md){ .md-button }
 
-My path into GRIMdata began with experimental computing, then a question my brother and I worked out together: how could we make human-rights documents easier to search and understand? The research grew through building, reading and following what the documents revealed.
+I built the computational side of the SGBV–UPR inquiry with my brother, a human-rights lawyer. This is my account of how the work began, how our methods developed together, and where the research led next.
 
 ## Origins and milestones
 
 <div class="grim-timeline" markdown>
 
-### 2014–2018 · Personal explorations in ML, ANNs and embodied AI
+### 2014–2018 · Earlier computational experiments {#20142018-personal-explorations-in-ml-anns-and-embodied-ai}
 
-I explored machine learning, artificial neural networks, Ising models and sociophysics, alongside experiments in embodied AI. These included recognizing coloured regions on a two-dimensional plane and building an Arduino car whose movement responded to proximity, button interactions and a changing “personality”—with a Turing model I wrote in Tcl.
-
-These playful experiments formed part of my computational background before the human-rights inquiry.
-
-<!-- Future personal-project site: link a fuller account of the 2014–2018 explorations here when available. -->
+I explored machine learning, artificial neural networks, Ising models and sociophysics. I also built an Arduino car that made driving decisions using proximity and button inputs and a personality model I wrote in Tcl. These experiments were part of my path into computational research, before the human-rights inquiry.
 
 ### 2019 · Formulating the inquiry
 
-The HumanRights inquiry began in conversations on my brother's kitchen floor. He brought human-rights law; I brought computational thinking. We worked out the questions and possible methods together.
+My brother and I began asking how computational methods might help us find and examine sexual and gender-based violence (SGBV) and related rights concerns in Universal Periodic Review (UPR) documents. We approached the question from different disciplines and worked out what each could contribute.
 
-### 2020 · Computational exploration
+<span id="before-the-2021-conference-a-concentrated-period-of-development"></span>
 
-Exploration began with the documents: locating sources, working through inconsistent formats and language, and developing ways to extract, search, organize, tag, compare and rank passages for examination. The aim included making difficult-to-access sources more tractable for small teams without dependable API access.
+### 2020 · Working with the documents {#2020-computational-exploration}
 
-### Before the 2021 conference · Working with limited capacity {#before-the-2021-conference-a-concentrated-period-of-development}
+I began locating UPR sources, extracting text from inconsistent files, and developing search terms, patterns, tags and ways to rank passages. What the documents contained shaped those choices. Access was uneven, and many legal sources offered no straightforward API.
 
-!!! note "🍑 Working with what’s available"
-    Working with limited connectivity sharpened a question that has stayed with me: what useful work can a small team do with the computing power, time and resources available to them?
+### 2021 · Presenting and documenting the work {#2021-documenting-and-presenting-the-work}
 
-I explored ways to make finding and examining evidence more practical under those constraints. That experience helped shape the later direction toward low-capacity tools for rapidly destabilising conditions.
-
-### 2021 · Documenting and presenting the work
-
-Dedicated repository documentation began as the method's research significance became clearer. The work was presented at the International Conference on the Responsiveness of the African Human Rights System to SGBV in September 2021.
+We presented the inquiry at the International Conference on the Responsiveness of the African Human Rights System to SGBV in September 2021. I also began documenting the computational workflow in a dedicated repository so its methods and decisions could be examined and developed further.
 
 ### 2022 · Law-journal publication
 
-The collaborative study appeared in Stellenbosch Law Review, 33(1), 8–41. Its historical focus was SADC member states and UPR records; broader coverage is a future investigation.
+Our [study in *Stellenbosch Law Review*](https://doi.org/10.47348/SLR/2022/i1a1) examined SGBV and related rights concerns in UPR records for Southern African Development Community (SADC) member states. It joined computational document analysis with legal interpretation and discussed the practical difficulty of finding and working with varied, incomplete and changing source documents.
 
-[Read the published study](https://doi.org/10.47348/SLR/2022/i1a1) · [Project methods and scope](../website/projects/sgbv/index.md)
+[Read the article](https://doi.org/10.47348/SLR/2022/i1a1) · [SGBV–UPR project](../website/projects/sgbv/index.md)
 
-### Subsequent work · LittleRainbowRights
+### Subsequent work · LittleRainbowRights {#subsequent-work-littlerainbowrights}
 
-LittleRainbowRights broadened geographic coverage and document sources. Research on child and LGBTQ+ rights in relation to advanced digital technologies was presented in 2025. The public scorecard offers a dated assessment framework and tools for inspecting evidence and gaps.
+[LittleRainbowRights](../website/projects/littlerainbowrights/index.md) extended the inquiry across countries and document sources, examining child and LGBTQ+ rights in relation to advanced digital technologies. The work was presented in 2025. Its public scorecard and tools make dated assessments, sources and gaps available to inspect.
 
-[LittleRainbowRights research](../website/projects/littlerainbowrights/index.md) · [2025 research record](https://doi.org/10.5281/zenodo.18318098)
+[2025 research record](https://doi.org/10.5281/zenodo.18318098)
 
-### Planned renewal · Returning with a wider approach
+### Planned renewal · Returning to SGBV–UPR {#planned-renewal-returning-with-a-wider-approach}
 
-The intended SGBV-UPR revisit will complete original Cycle 3 coverage and extend Cycle 4 analysis across all UPR countries. LRR's wider scope informs this ambition while showing how much evidence maintenance and interpretation global work requires.
+The next investigation aims to complete the original Cycle 3 coverage and extend Cycle 4 analysis across UPR countries. LittleRainbowRights showed what wider coverage could make possible, and how much collection, review and interpretation it requires.
 
-[Research directions and next stages](../research-directions/index.md)
+[Research directions](../research-directions/index.md)
 
 </div>
 
-## Complementary intellectual contributions
+## How the methods came together {#complementary-intellectual-contributions}
 
-**Computational exploration.** I helped formulate the problem and developed the retrieval, extraction, search terms, patterns, tags and ranking through working with the documents. These were choices about language and what might be useful to examine, shaped by what I found.
+I chose how to retrieve documents, which language patterns to pursue, how to tag and compare passages, and what to bring forward for closer reading. I made those choices through exploration of the UPR material; they shaped what our inquiry could see.
 
-**Legal interpretation.** My brother explained what the excerpts meant within the UPR and our inquiry, connecting them to specific legal texts and their context.
+My brother brought the legal analysis. He interpreted selected passages within the UPR process, connected them to relevant law and legal context, and examined what they meant for the questions we were asking. The computational and legal work developed in conversation, with each changing the questions we could put to the other.
 
-The two approaches informed each other as the work developed.
+<span id="the-emergence-of-the-index"></span>
 
-## The emergence of the index
+## Working with what was available {#documentation-under-constraint}
 
-As LittleRainbowRights developed, I kept returning to the need to record what a situation *is*: what the documents show, when they show it, and what remains unknown. That became the idea for an index tracker. Three years of collective bargaining as a public-employee union president had also made the importance of understanding actual conditions very concrete for me.
+!!! note "🍑 A question that stayed with me"
+    What useful work can a small team do with the computing power, connectivity and time it actually has?
 
-Expanding across countries and document sources showed how useful the approach could be—and how much work it involved for the two of us. The index gives that growing evidence a form people can inspect and compare, including its gaps.
+Working with limited connectivity gave that question practical force. I became interested in tools that could help people save, document, compare and transmit evidence even as conditions destabilised. Edge and IoT devices were one possible way to carry some of that capacity into the field.
 
-## Documentation under constraint
+LittleRainbowRights raised a related question: how do we preserve an account of what a situation *is*, including its sources, dates and unknowns, before deciding what ought to happen? That prompted the index tracker. My experience of collective bargaining as a public-employee union president also informed that insistence on understanding actual conditions.
 
-I imagined small teams carrying enough computing capacity to save, document, compare, analyse and transmit evidence as conditions destabilised. Edge and IoT devices offered a way to take those capabilities into the field: enough power and connectivity to do what was possible, when it was possible.
-
-This concern later connects with [**Viability.^.**](https://isotopicity.com/): information can expand one actor's capacity to act while increasing another person's exposure or reducing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension and its implications for governance.
+These concerns connect with [**Viability.^.**](https://isotopicity.com/): information can expand one person's capacity to act while exposing someone else or narrowing their options. [Research Context](../RESEARCH_CONTEXT.md) explores that tension across GRIMdata's research.
 
 ## Public research record
 
-The studies below document the published research. The HumanRights research archive is private.
+The [2022 SGBV–UPR study](https://doi.org/10.47348/SLR/2022/i1a1) and [2025 LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) document the published work. The historical HumanRights research archive remains private.
 
-[Published SGBV-UPR study](https://doi.org/10.47348/SLR/2022/i1a1) · [LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) · [Data governance](../DATA_GOVERNANCE.md)
+[SGBV–UPR project](../website/projects/sgbv/index.md) · [LittleRainbowRights project](../website/projects/littlerainbowrights/index.md) · [Data governance](../DATA_GOVERNANCE.md)
