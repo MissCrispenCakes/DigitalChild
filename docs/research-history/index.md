@@ -47,7 +47,19 @@ The research was presented at the International Conference on the Responsiveness
 
 The next stage aims to complete the original Cycle 3 coverage and examine Cycle 4 across UPR countries. Wider coverage will require further collection, validation and legal interpretation.
 
-[Research directions](../research-directions/index.md)
+[Renewal plans](../research-directions/index.md#sgbv-upr-renewal)
+
+### Planned · Canadian Projects & Environmental Oversight
+
+Build Canada and other major Canadian projects form the next oversight direction: tracking commitments, decisions and implementation alongside environmental consequences, Indigenous rights, climate and affordability claims.
+
+[Canadian research direction](../research-directions/index.md#canadian-projects-environmental-oversight)
+
+### Proposed · Research Provenance & Institutional Continuity
+
+A proposed Insight Grant direction examines how research contributions, funding and knowledge move across grants, institutions and teams, and what helps methods and work continue through those transitions.
+
+[Provenance and continuity research](../research-directions/index.md#research-provenance-institutional-continuity)
 
 </div>
 
