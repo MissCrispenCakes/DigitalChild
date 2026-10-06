@@ -274,6 +274,6 @@ python init_project.py
 
 ## Next Steps
 
-- See [Full API Documentation](reference.md) for complete API documentation (all 14 endpoints)
+- See [Full API Documentation](reference.md) for complete API documentation (all 12 endpoints)
 - See `.env.example` for configuration options
 - Check test coverage: `pytest tests/api/ -v`

@@ -39,7 +39,7 @@ The connection to [**Viability.^.**](https://isotopicity.com/) concerns how cont
 
 The SGBV-UPR inquiry began conceptually in 2019, with computational exploration in 2020, presentation in 2021 and publication in 2022. LittleRainbowRights broadened geographic and source coverage; the index tracker emerged through reflection on the documented conditions.
 
-[Research history and authorship](../../research-history/index.md) · [Research context](../../RESEARCH_CONTEXT.md)
+[Research history](../../research-history/index.md) · [Research context](../../RESEARCH_CONTEXT.md)
 
 ## Technical Stack
 
@@ -51,7 +51,7 @@ DigitalChild is the public LittleRainbowRights implementation, including documen
 
 ### LittleRainbowRights
 
-Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [Research record](https://doi.org/10.5281/zenodo.18318098).
+Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [Project research and outputs](littlerainbowrights/index.md#key-publications).
 
 ### SGBV-UPR
 

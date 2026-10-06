@@ -7,6 +7,8 @@ and parameters, always use the reference; for releases, see the
 
 Research programme history is described in [Research history](../research-history/index.md); intended investigations are in [Research directions](../research-directions/index.md). Implementation milestones and test counts are recorded below by development week.
 
+The original weekly notes report “14 endpoints.” The current source defines **12 GET routes**, listed in the [endpoint reference](reference.md); framework-provided static routes and HTTP methods are separate from that count. Historical test totals below refer to their recorded runs.
+
 ## Implementation Status
 
 ### Week 1: Foundation ✅ COMPLETE

@@ -91,11 +91,11 @@
       });
       var empty = (s.query_ok === false)
         ? '<li class="sc-hint">Archive query incomplete — not yet assessed.</li>'
-        : '<li class="sc-hint">No transparency signals detected yet.</li>';
+        : '<li class="sc-hint">No signals match this filter in the available archive results.</li>';
       var rows = sigs.length ? sigs.map(function (sig) {
         return "<li>" + badge(sig.type) +
           '<span class="tw-evlabel">' + esc(sig.label) + "</span>" +
-          '<span class="tw-seen">since <strong>' + esc(sig.display_date) + "</strong>" +
+          '<span class="tw-seen">first captured <strong>' + esc(sig.display_date) + "</strong>" +
           (sig.count > 1 ? ' · ' + sig.count + " captures" : "") + "</span>" +
           (sig.topical ? ' <span class="tw-star" title="On-topic">★</span>' : "") +
           link(sig.display_url, "Read evidence: " + sig.label) + "</li>";

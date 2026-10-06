@@ -17,9 +17,9 @@ ______________________________________________________________________
 
 - **Scrapers** pull content from:
 
-  - AU policy PDFs (demo implemented)
-  - OHCHR Treaty Body Database (planned)
-  - UPR, UNICEF, ACERWC, ACHPR (planned)
+  - AU policy documents
+  - OHCHR Treaty Body Database
+  - UPR, UNICEF, ACERWC and ACHPR
 
 - **Manual files** can be dropped into `data/raw/manual/`.
 
@@ -44,7 +44,7 @@ ______________________________________________________________________
   Tags are stored in `tags_history` in `metadata.json`.
 
 - **Recommendations**
-  (future) Config-driven extraction of recommendations.
+  Config-driven, regex-based extraction of recommendations.
 
 ______________________________________________________________________
 
@@ -62,8 +62,8 @@ ______________________________________________________________________
 ## 4. Exports
 
 - `tags_summary.py` → counts tags, outputs CSV with branding footer
-- `tags_timeline*.py` → (future) timeline exports
-- `comparison.py` → (future) compare tagging/recommendations across versions
+- `tags_timeline*.py` → timeline exports
+- `comparison.py` → compare tagging/recommendations across versions
 
 ______________________________________________________________________
 

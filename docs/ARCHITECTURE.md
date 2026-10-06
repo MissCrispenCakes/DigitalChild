@@ -206,13 +206,13 @@ python pipeline_runner.py --source au_policy --tags-version latest
 1. AI_Policy_Status
 1. Data_Protection_Law
 1. LGBTQ_Legal_Status
-1. Child_Online_Protection
-1. SIM_Biometric
-1. Encryption_Backdoors
-1. Promotion_Propaganda
+1. COP_Strategy
+1. SIM_Biometric_ID_Linkage
+1. Children_Data_Safeguards
+1. Promotion_Propaganda_Offences
 1. DPA_Independence
-1. Content_Moderation
-1. Age_Verification
+1. SOGI_Sensitive_Data
+1. DPIA_Required_High_Risk_AI
 
 ### 6. Validators (`processors/validators.py`)
 
@@ -262,7 +262,7 @@ python pipeline_runner.py --source au_policy --tags-version latest
 
 - Document metadata (source, country, year)
 - Tags history (versions, timestamps)
-- Recommendations (future)
+- Regex-based recommendations and their version history
 - Scorecard indicators
 - Processing timestamps
 
@@ -427,7 +427,7 @@ api/
 
 **Key Features:**
 
-- **14 REST endpoints** (health, info, documents × 2, scorecard × 3, tags × 2, timeline × 1, export × 2)
+- **12 REST endpoints** (health, info, documents × 2, scorecard × 3, tags × 2, timeline × 1, export × 2)
 - **Authentication** (API key via X-API-Key header, optional)
 - **Rate limiting** (100 req/hr public, 1000 req/hr authenticated, custom limits for exports/search)
 - **Advanced filtering** (country, region, tags, year, source, doc_type)
@@ -451,7 +451,7 @@ docker-compose up -d  # API + Redis + Nginx
 **Testing:**
 
 ```bash
-python test_api.py  # Quick health check (14/14 endpoints)
+python test_api.py  # Quick health check (14/12 endpoints)
 pytest tests/api/ -v  # Full test suite (104 tests)
 ```
 
@@ -495,7 +495,7 @@ pytest tests/ -v                      # All tests (pipeline + API, 274 total)
 pytest tests/test_validators.py -v   # Specific module
 pytest tests/api/ -v                  # All API tests (104 tests)
 pytest tests/ --cov                   # With coverage
-python test_api.py                    # Quick API health check (14 endpoints)
+python test_api.py                    # Quick API health check (12 endpoints)
 ```
 
 ## 📊 Performance Considerations
@@ -574,7 +574,7 @@ Local Machine
 └── Pytest for testing
 ```
 
-### Production (Planned)
+### Self-hosted production configuration {#production-planned}
 
 ```
 GitHub Repository
@@ -632,15 +632,12 @@ GitHub Repository
 ### Phase 3: Advanced Processing
 
 - Recommendations extraction (NLP-based)
-- Timeline analysis
-- Comparison across versions
+- Timeline exports and version comparisons are implemented; further NLP analysis is prospective
 
 ### Phase 4: Research Dashboard
 
-- Flask backend (REST API)
-- React/Vue frontend
-- Interactive visualizations (D3.js, Plotly)
-- Database migration (PostgreSQL)
+- Self-hosted Flask API and static browser visualizations are available
+- A React/Vue dashboard and database migration remain prospective
 
 ### Phase 5: Global Expansion
 

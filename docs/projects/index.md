@@ -40,7 +40,7 @@ Four investigations connect documentary evidence, methodological judgment and pu
 
     ### Research Provenance & Institutional Continuity
 
-    Contribution histories, methods, outputs and handoffs across institutions and time. A proposed Insight Grant direction.
+    Contribution histories, methods, outputs and handoffs across institutions and time. A proposed research direction.
 
     [Research questions and intended outputs →](../research-directions/index.md#research-provenance-institutional-continuity)
 

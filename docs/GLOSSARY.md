@@ -484,7 +484,7 @@ Extended vision encompassing all vulnerable populations
 
 - Future expansion beyond children and LGBTQ+
 - Includes elderly, disabled, refugees, indigenous peoples
-- Phase 5 roadmap goal
+- Earlier expansion idea; current programme directions are described in [Research directions](research-directions/index.md)
 
 ### SGBV-UPR
 
@@ -492,7 +492,7 @@ Extended vision encompassing all vulnerable populations
 
 - Separate research project
 - Already published in academic journal
-- To be integrated into GRIMdata.org website
+- [Published study and planned renewal](website/projects/sgbv/index.md)
 
 ______________________________________________________________________
 

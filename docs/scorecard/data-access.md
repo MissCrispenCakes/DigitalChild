@@ -2,635 +2,801 @@
 
 ## Published snapshot downloads
 
-These files contain the **26 June 2026 visualization snapshot**, including scores, written assessments, and source links. The JSON retains nested indicator metadata; the CSV flattens each indicator into score, assessment, and sources columns. Both retain the snapshot and source-verification dates. For other pipeline outputs, use the export and local-file options below.
+Download the **26 June 2026 visualization snapshot**, including scores, written assessments and source links. JSON retains nested indicator metadata; CSV puts each indicator's score, assessment and sources into columns. Both retain the generation date and **9 September 2025** source-verification stamp.
 
 [Download scorecard JSON](data/scorecard.json){ .md-button download="scorecard.json" }
 [Download scorecard CSV](data/scorecard.csv){ .md-button download="scorecard.csv" }
 
-CSV text starting with spreadsheet formula characters is prefixed with an apostrophe for safe spreadsheet opening. The original JSON retains the source text unchanged. Code: MIT; project data: CC BY 4.0. Cite the [research record](../docs/technical-overview.md#citation), snapshot date, and original sources; read the [methodology](design.md) and documentation gaps before reuse.
-
-To use the API below, install and run it on your own computer or server. It reads your local research files.
-
-
-**Multiple ways to access the Digital Rights Scorecard data based on your needs**
-
----
+CSV text beginning with spreadsheet formula characters is prefixed with an apostrophe. JSON retains the original text. Identify the snapshot date and assessments used when citing the data; see [citation guidance](../website/projects/littlerainbowrights/index.md#citing-this-work).
 
 ## Overview
 
-The scorecard data is available through four access methods, each suited to different use cases:
+The published browser snapshot and local pipeline workbook are distinct research outputs:
 
-| Method | Best For | Setup Time | Flexibility |
-|--------|----------|------------|-------------|
-| **REST API** | Programmatic access, automation, integration | 5 minutes | High |
-| **CSV Export** | Excel analysis, R/Python dataframes | 2 minutes | Medium |
-| **Direct File** | Manual exploration, full data access | Immediate | High |
-| **Pipeline Integration** | Document enrichment, automated workflows | N/A | High |
+| Material | Location | Contents |
+| --- | --- | --- |
+| Published visualization snapshot | Downloads above | Three-point scores, written assessments, sources and documentation counts |
+| Canonical pipeline workbook | `data/scorecard/scorecard_main.xlsx`, sheet `UN_194` | Country indicator values and paired source columns |
+| Visualization workbook | `data/scorecard/Global_QueerAI_Child_Scorecard_MASTER.xlsx`, sheet `Scorecard` | Scored visualization input |
+| Convenience exports | Root `scorecard.xlsx`, `.csv`, `.ods` | Copies generated from the canonical workbook |
 
----
+The self-hosted API reads the canonical workbook. It does not return the same schema as the scored browser snapshot.
 
-## Option 1: REST API (Recommended)
+## Option 1: REST API (self-hosted) {#option-1-rest-api-recommended}
 
-**Best for:** Programmatic queries against your local dataset and integration with other tools
+<span id="__span-0-4"></span>
+<span id="__codelineno-0-4"></span>
+<span id="__span-0-5"></span>
+<span id="__codelineno-0-5"></span>
 
 ### Quick Start
 
-```bash
-# Install and run the API
-pip install -r api_requirements.txt
-python run_api.py
-
-# API available at http://localhost:5000
-```
-
-### Scorecard Endpoints
-
-**GET /api/scorecard** - List all countries with scorecard data
+Follow the [API Quick Start](../api/quickstart.md) to install dependencies and start your instance, then query it:
 
 ```bash
-# Get all countries
-curl http://localhost:5000/api/scorecard
-
-# Filter by region
-curl "http://localhost:5000/api/scorecard?region=Africa"
-
-# Pagination
-curl "http://localhost:5000/api/scorecard?page=1&per_page=50"
-```
-
-**Response:**
-```json
-{
-  "status": "success",
-  "data": {
-    "items": [
-      {
-        "country": "Kenya",
-        "region": "Africa",
-        "indicator_count": 10,
-        "AI_Policy_Status": "Framework",
-        "Data_Protection_Law": "Comprehensive Law",
-        "LGBTQ_Legal_Status": "Legal, No Protections",
-        ...
-      }
-    ],
-    "pagination": {
-      "page": 1,
-      "per_page": 20,
-      "total": 194,
-      "total_pages": 10
-    }
-  }
-}
-```
-
-**GET /api/scorecard/:country** - Get detailed scorecard for specific country
-
-```bash
-# Get Kenya's full scorecard
+curl http://localhost:5000/api/health
+curl 'http://localhost:5000/api/scorecard?region=Africa&per_page=100'
 curl http://localhost:5000/api/scorecard/Kenya
 ```
 
-**Response:**
-```json
-{
-  "status": "success",
-  "data": {
-    "country": "Kenya",
-    "region": "Africa",
-    "indicators": {
-      "AI_Policy_Status": {
-        "value": "Framework",
-        "score": 1,
-        "source": "https://unesco.org/...",
-        "last_updated": "2025-11-15"
-      },
-      "Data_Protection_Law": {
-        "value": "Comprehensive Law",
-        "score": 2,
-        "source": "https://unctad.org/...",
-        "last_updated": "2024-09-10"
-      },
-      ...
-    },
-    "composite_scores": {
-      "protection_score": 14,
-      "risk_index": 30,
-      "data_completeness": 100
-    }
-  }
-}
-```
+<span id="__span-2-5"></span>
+<span id="__codelineno-2-5"></span>
+<span id="__span-2-6"></span>
+<span id="__codelineno-2-6"></span>
+<span id="__span-2-7"></span>
+<span id="__codelineno-2-7"></span>
+<span id="__span-2-8"></span>
+<span id="__codelineno-2-8"></span>
+<span id="__span-2-9"></span>
+<span id="__codelineno-2-9"></span>
+<span id="__span-2-10"></span>
+<span id="__codelineno-2-10"></span>
+<span id="__span-2-11"></span>
+<span id="__codelineno-2-11"></span>
+<span id="__span-2-12"></span>
+<span id="__codelineno-2-12"></span>
+<span id="__span-2-13"></span>
+<span id="__codelineno-2-13"></span>
+<span id="__span-2-14"></span>
+<span id="__codelineno-2-14"></span>
+<span id="__span-2-15"></span>
+<span id="__codelineno-2-15"></span>
+<span id="__span-2-16"></span>
+<span id="__codelineno-2-16"></span>
+<span id="__span-2-17"></span>
+<span id="__codelineno-2-17"></span>
+<span id="__span-2-18"></span>
+<span id="__codelineno-2-18"></span>
+<span id="__span-2-19"></span>
+<span id="__codelineno-2-19"></span>
+<span id="__span-2-20"></span>
+<span id="__codelineno-2-20"></span>
+<span id="__span-2-21"></span>
+<span id="__codelineno-2-21"></span>
+<span id="__span-2-22"></span>
+<span id="__codelineno-2-22"></span>
+<span id="__span-4-2"></span>
+<span id="__codelineno-4-2"></span>
+<span id="__span-4-3"></span>
+<span id="__codelineno-4-3"></span>
+<span id="__span-4-4"></span>
+<span id="__codelineno-4-4"></span>
+<span id="__span-4-5"></span>
+<span id="__codelineno-4-5"></span>
+<span id="__span-4-6"></span>
+<span id="__codelineno-4-6"></span>
+<span id="__span-4-7"></span>
+<span id="__codelineno-4-7"></span>
+<span id="__span-4-8"></span>
+<span id="__codelineno-4-8"></span>
+<span id="__span-4-9"></span>
+<span id="__codelineno-4-9"></span>
+<span id="__span-4-10"></span>
+<span id="__codelineno-4-10"></span>
+<span id="__span-4-11"></span>
+<span id="__codelineno-4-11"></span>
+<span id="__span-4-12"></span>
+<span id="__codelineno-4-12"></span>
+<span id="__span-4-13"></span>
+<span id="__codelineno-4-13"></span>
+<span id="__span-4-14"></span>
+<span id="__codelineno-4-14"></span>
+<span id="__span-4-15"></span>
+<span id="__codelineno-4-15"></span>
+<span id="__span-4-16"></span>
+<span id="__codelineno-4-16"></span>
+<span id="__span-4-17"></span>
+<span id="__codelineno-4-17"></span>
+<span id="__span-4-18"></span>
+<span id="__codelineno-4-18"></span>
+<span id="__span-4-19"></span>
+<span id="__codelineno-4-19"></span>
+<span id="__span-4-20"></span>
+<span id="__codelineno-4-20"></span>
+<span id="__span-4-21"></span>
+<span id="__codelineno-4-21"></span>
+<span id="__span-4-22"></span>
+<span id="__codelineno-4-22"></span>
+<span id="__span-4-23"></span>
+<span id="__codelineno-4-23"></span>
+<span id="__span-4-24"></span>
+<span id="__codelineno-4-24"></span>
+<span id="__span-4-25"></span>
+<span id="__codelineno-4-25"></span>
+<span id="__span-4-26"></span>
+<span id="__codelineno-4-26"></span>
+<span id="__span-4-27"></span>
+<span id="__codelineno-4-27"></span>
+<span id="__span-6-5"></span>
+<span id="__codelineno-6-5"></span>
+<span id="__span-6-6"></span>
+<span id="__codelineno-6-6"></span>
+<span id="__span-6-7"></span>
+<span id="__codelineno-6-7"></span>
+<span id="__span-6-8"></span>
+<span id="__codelineno-6-8"></span>
+<span id="__span-6-9"></span>
+<span id="__codelineno-6-9"></span>
+<span id="__span-6-10"></span>
+<span id="__codelineno-6-10"></span>
+<span id="__span-6-11"></span>
+<span id="__codelineno-6-11"></span>
+<span id="__span-6-12"></span>
+<span id="__codelineno-6-12"></span>
+<span id="__span-6-13"></span>
+<span id="__codelineno-6-13"></span>
+<span id="__span-6-14"></span>
+<span id="__codelineno-6-14"></span>
+<span id="__span-6-15"></span>
+<span id="__codelineno-6-15"></span>
+<span id="__span-6-16"></span>
+<span id="__codelineno-6-16"></span>
 
-**GET /api/scorecard/indicators/statistics** - Get indicator statistics across all countries
+### Scorecard Endpoints
 
-```bash
-# Get statistics for all indicators
-curl http://localhost:5000/api/scorecard/indicators/statistics
-```
+| Endpoint | Response under `data` |
+| --- | --- |
+| `/api/scorecard` | `items` containing country, region, region-specific label and indicator count; `pagination` describes the result pages |
+| `/api/scorecard/:country` | Country details and `indicators`; each indicator contains `value` and `source` |
+| `/api/scorecard/indicators/statistics` | Per-field `total_countries` and `value_distribution` |
 
-**Response:**
-```json
-{
-  "status": "success",
-  "data": {
-    "AI_Policy_Status": {
-      "total_countries": 194,
-      "values": {
-        "Comprehensive Strategy": 45,
-        "Framework": 72,
-        "No Policy": 77
-      },
-      "average_score": 0.87,
-      "completeness": 100.0
-    },
-    ...
-  }
-}
-```
+The list endpoint returns summaries. Use country detail for indicator values and sources. The default maximum page size is **100**; follow pagination to retrieve the complete collection.
+
+<span id="__span-7-5"></span>
+<span id="__codelineno-7-5"></span>
+<span id="__span-7-6"></span>
+<span id="__codelineno-7-6"></span>
+<span id="__span-7-7"></span>
+<span id="__codelineno-7-7"></span>
+<span id="__span-7-8"></span>
+<span id="__codelineno-7-8"></span>
+<span id="__span-7-9"></span>
+<span id="__codelineno-7-9"></span>
+<span id="__span-7-10"></span>
+<span id="__codelineno-7-10"></span>
+<span id="__span-7-11"></span>
+<span id="__codelineno-7-11"></span>
+<span id="__span-7-12"></span>
+<span id="__codelineno-7-12"></span>
+<span id="__span-7-13"></span>
+<span id="__codelineno-7-13"></span>
+<span id="__span-8-2"></span>
+<span id="__codelineno-8-2"></span>
+<span id="__span-8-3"></span>
+<span id="__codelineno-8-3"></span>
+<span id="__span-8-4"></span>
+<span id="__codelineno-8-4"></span>
+<span id="__span-8-5"></span>
+<span id="__codelineno-8-5"></span>
+<span id="__span-8-6"></span>
+<span id="__codelineno-8-6"></span>
+<span id="__span-8-7"></span>
+<span id="__codelineno-8-7"></span>
+<span id="__span-8-8"></span>
+<span id="__codelineno-8-8"></span>
+<span id="__span-8-9"></span>
+<span id="__codelineno-8-9"></span>
+<span id="__span-8-10"></span>
+<span id="__codelineno-8-10"></span>
+<span id="__span-8-11"></span>
+<span id="__codelineno-8-11"></span>
+<span id="__span-8-12"></span>
+<span id="__codelineno-8-12"></span>
+<span id="__span-8-13"></span>
+<span id="__codelineno-8-13"></span>
+<span id="__span-8-14"></span>
+<span id="__codelineno-8-14"></span>
+<span id="__span-8-15"></span>
+<span id="__codelineno-8-15"></span>
+<span id="__span-8-16"></span>
+<span id="__codelineno-8-16"></span>
+<span id="__span-9-4"></span>
+<span id="__codelineno-9-4"></span>
+<span id="__span-9-5"></span>
+<span id="__codelineno-9-5"></span>
+<span id="__span-9-6"></span>
+<span id="__codelineno-9-6"></span>
+<span id="__span-9-7"></span>
+<span id="__codelineno-9-7"></span>
+<span id="__span-9-8"></span>
+<span id="__codelineno-9-8"></span>
+<span id="__span-9-9"></span>
+<span id="__codelineno-9-9"></span>
+<span id="__span-9-10"></span>
+<span id="__codelineno-9-10"></span>
+<span id="__span-9-11"></span>
+<span id="__codelineno-9-11"></span>
+<span id="__span-9-12"></span>
+<span id="__codelineno-9-12"></span>
+<span id="__span-9-13"></span>
+<span id="__codelineno-9-13"></span>
+<span id="__span-9-14"></span>
+<span id="__codelineno-9-14"></span>
+<span id="__span-9-15"></span>
+<span id="__codelineno-9-15"></span>
+<span id="__span-9-16"></span>
+<span id="__codelineno-9-16"></span>
+<span id="__span-9-17"></span>
+<span id="__codelineno-9-17"></span>
+<span id="__span-9-18"></span>
+<span id="__codelineno-9-18"></span>
+<span id="__span-9-19"></span>
+<span id="__codelineno-9-19"></span>
+<span id="__span-9-20"></span>
+<span id="__codelineno-9-20"></span>
+<span id="__span-9-21"></span>
+<span id="__codelineno-9-21"></span>
 
 ### Python Examples
 
-**Fetch all African countries:**
-
-```python
-import requests
-import pandas as pd
-
-# Fetch scorecard data
-response = requests.get(
-    "http://localhost:5000/api/scorecard",
-    params={"region": "Africa", "per_page": 100}
-)
-data = response.json()["data"]["items"]
-
-# Convert to DataFrame
-df = pd.DataFrame(data)
-print(df[["country", "AI_Policy_Status", "Data_Protection_Law"]])
-```
-
-**Analyze LGBTQ+ risk patterns:**
+Fetch all country summaries, then inspect one country's indicators:
 
 ```python
 import requests
 
-# Get all countries
-response = requests.get("http://localhost:5000/api/scorecard?per_page=200")
-countries = response.json()["data"]["items"]
-
-# Find countries with LGBTQ+ criminalization AND biometric SIM requirements
-at_risk = [
-    c for c in countries
-    if c.get("LGBTQ_Legal_Status") == "Criminalization"
-    and c.get("SIM_Biometric_ID_Linkage") == "Mandatory Biometric Registration"
-]
-
-print(f"Found {len(at_risk)} countries with heightened surveillance risk:")
-for country in at_risk:
-    print(f"  - {country['country']} ({country['region']})")
-```
-
-**Download all scorecard data:**
-
-```python
-import requests
-import pandas as pd
-
-# Fetch all pages
-all_countries = []
+base = "http://localhost:5000/api"
+countries = []
 page = 1
 while True:
     response = requests.get(
-        f"http://localhost:5000/api/scorecard?page={page}&per_page=100"
+        f"{base}/scorecard", params={"page": page, "per_page": 100}, timeout=30
     )
-    data = response.json()["data"]
-    all_countries.extend(data["items"])
-
-    if not data["pagination"]["has_next"]:
+    response.raise_for_status()
+    result = response.json()["data"]
+    countries.extend(result["items"])
+    if not result["pagination"]["has_next"]:
         break
     page += 1
 
-# Convert to DataFrame and save
-df = pd.DataFrame(all_countries)
-df.to_csv("scorecard_all_countries.csv", index=False)
-print(f"Downloaded {len(df)} countries")
+response = requests.get(f"{base}/scorecard/Kenya", timeout=30)
+response.raise_for_status()
+kenya = response.json()["data"]
+print(kenya["indicators"]["LGBTQ_Legal_Status"])
+print(len(countries))
 ```
+
+<span id="__span-10-2"></span>
+<span id="__codelineno-10-2"></span>
+<span id="__span-10-3"></span>
+<span id="__codelineno-10-3"></span>
+<span id="__span-10-4"></span>
+<span id="__codelineno-10-4"></span>
+<span id="__span-10-5"></span>
+<span id="__codelineno-10-5"></span>
+<span id="__span-10-6"></span>
+<span id="__codelineno-10-6"></span>
+<span id="__span-10-7"></span>
+<span id="__codelineno-10-7"></span>
+<span id="__span-10-8"></span>
+<span id="__codelineno-10-8"></span>
+<span id="__span-10-9"></span>
+<span id="__codelineno-10-9"></span>
+<span id="__span-10-10"></span>
+<span id="__codelineno-10-10"></span>
+<span id="__span-10-11"></span>
+<span id="__codelineno-10-11"></span>
+<span id="__span-10-12"></span>
+<span id="__codelineno-10-12"></span>
+<span id="__span-10-13"></span>
+<span id="__codelineno-10-13"></span>
+<span id="__span-10-14"></span>
+<span id="__codelineno-10-14"></span>
+<span id="__span-10-15"></span>
+<span id="__codelineno-10-15"></span>
+<span id="__span-10-16"></span>
+<span id="__codelineno-10-16"></span>
+<span id="__span-10-17"></span>
+<span id="__codelineno-10-17"></span>
+<span id="__span-10-18"></span>
+<span id="__codelineno-10-18"></span>
+<span id="__span-10-19"></span>
+<span id="__codelineno-10-19"></span>
+<span id="__span-10-20"></span>
+<span id="__codelineno-10-20"></span>
+<span id="__span-10-21"></span>
+<span id="__codelineno-10-21"></span>
+<span id="__span-10-22"></span>
+<span id="__codelineno-10-22"></span>
+<span id="__span-10-23"></span>
+<span id="__codelineno-10-23"></span>
 
 ### JavaScript Example
 
+Query one country's indicator values from your locally running service:
+
 ```javascript
-// Fetch scorecard data for visualization
-async function getScorecard() {
-  const response = await fetch('http://localhost:5000/api/scorecard?per_page=200');
-  const data = await response.json();
-  return data.data.items;
-}
-
-// Get specific country
-async function getCountryScorecard(country) {
-  const response = await fetch(`http://localhost:5000/api/scorecard/${country}`);
-  const data = await response.json();
-  return data.data;
-}
-
-// Example: Create heatmap
-getScorecard().then(countries => {
-  // Use Plotly, D3, or other viz library
-  const riskData = countries.map(c => ({
-    country: c.country,
-    risk: c.risk_index
-  }));
-  // Render visualization...
-});
+const response = await fetch('http://localhost:5000/api/scorecard/Kenya');
+if (!response.ok) throw new Error(`HTTP ${response.status}`);
+const { data } = await response.json();
+console.log(data.indicators.LGBTQ_Legal_Status);
 ```
+
+<span id="__span-11-2"></span>
+<span id="__codelineno-11-2"></span>
+<span id="__span-11-3"></span>
+<span id="__codelineno-11-3"></span>
+<span id="__span-11-4"></span>
+<span id="__codelineno-11-4"></span>
+<span id="__span-11-5"></span>
+<span id="__codelineno-11-5"></span>
+<span id="__span-11-6"></span>
+<span id="__codelineno-11-6"></span>
+<span id="__span-11-7"></span>
+<span id="__codelineno-11-7"></span>
+<span id="__span-11-8"></span>
+<span id="__codelineno-11-8"></span>
+<span id="__span-11-9"></span>
+<span id="__codelineno-11-9"></span>
+<span id="__span-11-10"></span>
+<span id="__codelineno-11-10"></span>
+<span id="__span-11-11"></span>
+<span id="__codelineno-11-11"></span>
+<span id="__span-11-12"></span>
+<span id="__codelineno-11-12"></span>
+<span id="__span-11-13"></span>
+<span id="__codelineno-11-13"></span>
+<span id="__span-11-14"></span>
+<span id="__codelineno-11-14"></span>
+<span id="__span-11-15"></span>
+<span id="__codelineno-11-15"></span>
+<span id="__span-11-16"></span>
+<span id="__codelineno-11-16"></span>
+<span id="__span-11-17"></span>
+<span id="__codelineno-11-17"></span>
 
 ### R Example
 
 ```r
 library(httr)
-library(jsonlite)
-library(dplyr)
-
-# Fetch scorecard data
-response <- GET("http://localhost:5000/api/scorecard?per_page=200")
-scorecard <- content(response, as = "parsed")$data$items
-
-# Convert to dataframe
-df <- do.call(rbind, lapply(scorecard, as.data.frame))
-
-# Analysis
-african_countries <- df %>%
-  filter(region == "Africa") %>%
-  select(country, AI_Policy_Status, Data_Protection_Law, LGBTQ_Legal_Status)
-
-print(african_countries)
+response <- GET("http://localhost:5000/api/scorecard/Kenya")
+stop_for_status(response)
+kenya <- content(response, as = "parsed")$data
+print(kenya$indicators$LGBTQ_Legal_Status)
 ```
 
 ### Rate Limits
 
-- **Public (no API key):** 100 requests/hour
-- **Authenticated (with API key):** 1000 requests/hour
-
-To request an API key, see the [API documentation](../api/index.md).
-
----
+Default limits are 100 requests/hour without a key and 1,000 with a key; some routes use different limits. The instance operator configures keys and limits through the [deployment guide](../guides/PRODUCTION_DEPLOYMENT.md).
 
 ## Option 2: CSV Export
 
-**Best for:** One-time analysis, Excel, R dataframes, statistical analysis
-
 ### Generate Exports
 
+Run from the repository root:
+
 ```bash
-# Run scorecard export
 python pipeline_runner.py --mode scorecard --scorecard-action export
 ```
 
 ### Generated Files
 
-**Location:** `data/exports/`
+The standard export writes:
 
-1. **scorecard_summary.csv** - Countries × Indicators matrix
+- `data/exports/scorecard_summary.csv`: country, region and indicator values.
+- `data/exports/scorecard_sources.csv`: `country`, `indicator` and `url` for each extracted source URL.
+- `data/exports/scorecard_indicator_counts.csv`: indicator, status and count.
 
-   | Country | AI_Policy_Status | Data_Protection_Law | LGBTQ_Legal_Status | ... |
-   |---------|------------------|---------------------|---------------------|-----|
-   | Kenya   | Framework        | Comprehensive Law   | Legal, No Protections | ... |
-   | South Africa | Comprehensive Strategy | Comprehensive Law | Comprehensive Protections | ... |
+Regional and individual-indicator exports are separate operations:
 
-2. **scorecard_sources.csv** - All source URLs with validation status
+```python
+from processors.scorecard_export import ScorecardExporter
 
-   | Country | Indicator | Value | Source_URL | Validated | Last_Checked |
-   |---------|-----------|-------|------------|-----------|--------------|
-   | Kenya | AI_Policy_Status | Framework | https://... | ✅ | 2026-01-15 |
+exporter = ScorecardExporter()
+exporter.export_by_region("Africa")
+exporter.export_by_indicator("AI_Policy_Status")
+```
 
-3. **scorecard_by_indicator.csv** - Grouped by indicator
-
-   | Indicator | Category | Countries | Percentage |
-   |-----------|----------|-----------|------------|
-   | AI_Policy_Status | Comprehensive Strategy | 45 | 23.2% |
-   | AI_Policy_Status | Framework | 72 | 37.1% |
-
-4. **scorecard_by_region.csv** - Regional aggregations
-
-   | Region | Avg_Protection_Score | Countries_with_Data_Protection | ... |
-   |--------|----------------------|--------------------------------|-----|
-   | Africa | 11.2 | 32 | ... |
+<span id="__span-13-1"></span>
+<span id="__codelineno-13-1"></span>
+<span id="__span-13-2"></span>
+<span id="__codelineno-13-2"></span>
+<span id="__span-13-3"></span>
+<span id="__codelineno-13-3"></span>
+<span id="__span-13-4"></span>
+<span id="__codelineno-13-4"></span>
+<span id="__span-14-1"></span>
+<span id="__codelineno-14-1"></span>
+<span id="__span-14-2"></span>
+<span id="__codelineno-14-2"></span>
+<span id="__span-14-3"></span>
+<span id="__codelineno-14-3"></span>
+<span id="__span-14-4"></span>
+<span id="__codelineno-14-4"></span>
+<span id="__span-14-5"></span>
+<span id="__codelineno-14-5"></span>
+<span id="__span-14-6"></span>
+<span id="__codelineno-14-6"></span>
+<span id="__span-14-7"></span>
+<span id="__codelineno-14-7"></span>
+<span id="__span-14-8"></span>
+<span id="__codelineno-14-8"></span>
+<span id="__span-14-9"></span>
+<span id="__codelineno-14-9"></span>
+<span id="__span-14-10"></span>
+<span id="__codelineno-14-10"></span>
+<span id="__span-14-11"></span>
+<span id="__codelineno-14-11"></span>
+<span id="__span-14-12"></span>
+<span id="__codelineno-14-12"></span>
+<span id="__span-15-1"></span>
+<span id="__codelineno-15-1"></span>
+<span id="__span-15-2"></span>
+<span id="__codelineno-15-2"></span>
+<span id="__span-15-3"></span>
+<span id="__codelineno-15-3"></span>
+<span id="__span-15-4"></span>
+<span id="__codelineno-15-4"></span>
+<span id="__span-15-5"></span>
+<span id="__codelineno-15-5"></span>
+<span id="__span-15-6"></span>
+<span id="__codelineno-15-6"></span>
+<span id="__span-15-7"></span>
+<span id="__codelineno-15-7"></span>
+<span id="__span-15-8"></span>
+<span id="__codelineno-15-8"></span>
+<span id="__span-15-9"></span>
+<span id="__codelineno-15-9"></span>
+<span id="__span-15-10"></span>
+<span id="__codelineno-15-10"></span>
+<span id="__span-15-11"></span>
+<span id="__codelineno-15-11"></span>
+<span id="__span-15-12"></span>
+<span id="__codelineno-15-12"></span>
+<span id="__span-15-13"></span>
+<span id="__codelineno-15-13"></span>
+<span id="__span-15-14"></span>
+<span id="__codelineno-15-14"></span>
+<span id="__span-15-15"></span>
+<span id="__codelineno-15-15"></span>
 
 ### Using CSV Exports
 
-**Excel/Google Sheets:**
-```
-1. Open scorecard_summary.csv in Excel
-2. Create pivot tables for analysis
-3. Use conditional formatting for heatmaps
-4. Export charts for presentations
-```
-
-**Python pandas:**
 ```python
 import pandas as pd
 
-# Load scorecard data
 df = pd.read_csv("data/exports/scorecard_summary.csv")
-
-# Filter and analyze
-africa = df[df["region"] == "Africa"]
-print(africa.describe())
-
-# Find countries with comprehensive protections
-comprehensive = df[df["Data_Protection_Law"] == "Comprehensive Law"]
-print(f"Countries with comprehensive data protection: {len(comprehensive)}")
+print(df[["Country", "AI_Policy_Status", "Data_Protection_Law"]].head())
 ```
-
-**R:**
-```r
-library(readr)
-library(dplyr)
-
-# Load data
-scorecard <- read_csv("data/exports/scorecard_summary.csv")
-
-# Analysis
-summary_stats <- scorecard %>%
-  group_by(region) %>%
-  summarize(
-    avg_protection = mean(protection_score, na.rm = TRUE),
-    countries = n()
-  )
-
-print(summary_stats)
-```
-
----
 
 ## Option 3: Direct File Access
 
-**Best for:** Manual exploration, custom processing, full data access
-
 ### Primary File
 
-**Location:** `scorecard_main.xlsx`
+Open `data/scorecard/scorecard_main.xlsx`, sheet **UN_194**, for the canonical pipeline inputs.
 
-**Contains:**
-- All 194 countries
-- All 10 indicators with values and scores
-- Source URLs for every indicator
-- Validation timestamps
-- Composite scores (Protection Score, Risk Index, Data Completeness)
+<span id="__span-16-1"></span>
+<span id="__codelineno-16-1"></span>
+<span id="__span-16-2"></span>
+<span id="__codelineno-16-2"></span>
+<span id="__span-16-3"></span>
+<span id="__codelineno-16-3"></span>
+<span id="__span-16-4"></span>
+<span id="__codelineno-16-4"></span>
+<span id="__span-17-1"></span>
+<span id="__codelineno-17-1"></span>
+<span id="__span-17-2"></span>
+<span id="__codelineno-17-2"></span>
+<span id="__span-17-3"></span>
+<span id="__codelineno-17-3"></span>
+<span id="__span-17-4"></span>
+<span id="__codelineno-17-4"></span>
+<span id="__span-17-5"></span>
+<span id="__codelineno-17-5"></span>
+<span id="__span-17-6"></span>
+<span id="__codelineno-17-6"></span>
+<span id="__span-17-7"></span>
+<span id="__codelineno-17-7"></span>
+<span id="__span-17-8"></span>
+<span id="__codelineno-17-8"></span>
+<span id="__span-17-9"></span>
+<span id="__codelineno-17-9"></span>
+<span id="__span-17-10"></span>
+<span id="__codelineno-17-10"></span>
+<span id="__span-17-11"></span>
+<span id="__codelineno-17-11"></span>
+<span id="__span-17-12"></span>
+<span id="__codelineno-17-12"></span>
+<span id="__span-18-1"></span>
+<span id="__codelineno-18-1"></span>
+<span id="__span-18-2"></span>
+<span id="__codelineno-18-2"></span>
+<span id="__span-18-3"></span>
+<span id="__codelineno-18-3"></span>
+<span id="__span-18-4"></span>
+<span id="__codelineno-18-4"></span>
+<span id="__span-18-5"></span>
+<span id="__codelineno-18-5"></span>
+<span id="__span-18-6"></span>
+<span id="__codelineno-18-6"></span>
+<span id="__span-18-7"></span>
+<span id="__codelineno-18-7"></span>
+<span id="__span-18-8"></span>
+<span id="__codelineno-18-8"></span>
+<span id="__span-18-9"></span>
+<span id="__codelineno-18-9"></span>
+<span id="__span-18-10"></span>
+<span id="__codelineno-18-10"></span>
+<span id="__span-18-11"></span>
+<span id="__codelineno-18-11"></span>
+<span id="__span-18-12"></span>
+<span id="__codelineno-18-12"></span>
+<span id="__span-18-13"></span>
+<span id="__codelineno-18-13"></span>
+<span id="__span-18-14"></span>
+<span id="__codelineno-18-14"></span>
+<span id="__span-18-15"></span>
+<span id="__codelineno-18-15"></span>
 
 ### Using the File
 
-**Excel:**
-```
-1. Open scorecard_main.xlsx
-2. Navigate to "Indicators" sheet
-3. Use filters to explore data
-4. Verify sources in "Sources" sheet
-```
-
-**Python with openpyxl:**
 ```python
 import pandas as pd
 
-# Read Excel file
-df = pd.read_excel("scorecard_main.xlsx", sheet_name="Indicators")
-
-# Explore
-print(df.head())
-print(df.columns.tolist())
-
-# Filter
-kenya = df[df["Country"] == "Kenya"]
-print(kenya.T)  # Transpose for readability
-```
-
-**Python with pandas:**
-```python
-import pandas as pd
-
-# Load all sheets
-scorecard = pd.read_excel(
-    "scorecard_main.xlsx",
-    sheet_name=None  # Load all sheets
-)
-
-# Access sheets
-indicators = scorecard["Indicators"]
-sources = scorecard["Sources"]
-
-# Analysis
-print(f"Total countries: {len(indicators)}")
-print(f"Total sources: {len(sources)}")
+df = pd.read_excel("data/scorecard/scorecard_main.xlsx", sheet_name="UN_194")
+print(df[["Country", "LGBTQ_Legal_Status", "LGBTQ_Legal_Status_Source"]].head())
 ```
 
 ### File Structure
 
-**Indicators sheet:**
-- Country, Region, ISO3
-- 10 indicator columns (values)
-- 10 score columns (0-1-2)
-- Composite scores (Protection Score, Risk Index)
-- Data completeness percentage
-- Last updated timestamp
-
-**Sources sheet:**
-- Country
-- Indicator name
-- Source URL
-- Last validated
-- Validation status
-- Notes
-
----
+Country and region columns sit alongside indicator values and paired `_Source` columns. The current canonical workbook has one sheet; supporting visualization material is in the separate visualization workbook. For the browser's numerical scores and written justifications, use the published JSON/CSV or the visualization workbook rather than assuming the pipeline workbook has that schema.
 
 ## Option 4: Pipeline Integration
 
-**Best for:** Automated workflows, document enrichment, batch processing
+<span id="__span-19-1"></span>
+<span id="__codelineno-19-1"></span>
+<span id="__span-19-2"></span>
+<span id="__codelineno-19-2"></span>
 
 ### Enrichment Process
 
-The scorecard automatically enriches document metadata during pipeline runs:
+Document processing adds country indicators where a country match is available. Refresh enrichment in an existing metadata collection with:
 
 ```bash
-# Run pipeline with scorecard enrichment
-python pipeline_runner.py --source au_policy
+python pipeline_runner.py --mode scorecard --scorecard-action enrich
 ```
+
+<span id="__span-20-1"></span>
+<span id="__codelineno-20-1"></span>
+<span id="__span-20-2"></span>
+<span id="__codelineno-20-2"></span>
+<span id="__span-20-3"></span>
+<span id="__codelineno-20-3"></span>
+<span id="__span-20-4"></span>
+<span id="__codelineno-20-4"></span>
+<span id="__span-20-5"></span>
+<span id="__codelineno-20-5"></span>
+<span id="__span-20-6"></span>
+<span id="__codelineno-20-6"></span>
+<span id="__span-20-7"></span>
+<span id="__codelineno-20-7"></span>
+<span id="__span-20-8"></span>
+<span id="__codelineno-20-8"></span>
+<span id="__span-20-9"></span>
+<span id="__codelineno-20-9"></span>
+<span id="__span-20-10"></span>
+<span id="__codelineno-20-10"></span>
+<span id="__span-20-11"></span>
+<span id="__codelineno-20-11"></span>
+<span id="__span-20-12"></span>
+<span id="__codelineno-20-12"></span>
+<span id="__span-20-13"></span>
+<span id="__codelineno-20-13"></span>
+<span id="__span-20-14"></span>
+<span id="__codelineno-20-14"></span>
+<span id="__span-20-15"></span>
+<span id="__codelineno-20-15"></span>
+<span id="__span-20-16"></span>
+<span id="__codelineno-20-16"></span>
+<span id="__span-20-17"></span>
+<span id="__codelineno-20-17"></span>
+<span id="__span-20-18"></span>
+<span id="__codelineno-20-18"></span>
+<span id="__span-20-19"></span>
+<span id="__codelineno-20-19"></span>
+<span id="__span-20-20"></span>
+<span id="__codelineno-20-20"></span>
+<span id="__span-20-21"></span>
+<span id="__codelineno-20-21"></span>
+<span id="__span-20-22"></span>
+<span id="__codelineno-20-22"></span>
+<span id="__span-20-23"></span>
+<span id="__codelineno-20-23"></span>
 
 ### Enriched Metadata
 
-Documents in `data/metadata/metadata.json` include scorecard data:
+A document's `scorecard` object records the matched country, enrichment timestamp and indicator values/sources. [Metadata Schema](../standards/METADATA_SCHEMA.md#scorecard-integration) describes these fields.
 
-```json
-{
-  "id": "Kenya_Digital_Policy_2024.pdf",
-  "country": "Kenya",
-  "scorecard": {
-    "matched_country": "Kenya",
-    "enriched_at": "2026-01-26T10:30:00Z",
-    "indicators": {
-      "AI_Policy_Status": {
-        "value": "Framework",
-        "score": 1,
-        "source": "https://..."
-      },
-      "Data_Protection_Law": {
-        "value": "Comprehensive Law",
-        "score": 2,
-        "source": "https://..."
-      },
-      ...
-    },
-    "protection_score": 14,
-    "risk_index": 30
-  }
-}
-```
+<span id="__span-21-1"></span>
+<span id="__codelineno-21-1"></span>
+<span id="__span-21-2"></span>
+<span id="__codelineno-21-2"></span>
+<span id="__span-21-3"></span>
+<span id="__codelineno-21-3"></span>
+<span id="__span-21-4"></span>
+<span id="__codelineno-21-4"></span>
+<span id="__span-21-5"></span>
+<span id="__codelineno-21-5"></span>
+<span id="__span-21-6"></span>
+<span id="__codelineno-21-6"></span>
+<span id="__span-21-7"></span>
+<span id="__codelineno-21-7"></span>
+<span id="__span-21-8"></span>
+<span id="__codelineno-21-8"></span>
+<span id="__span-21-9"></span>
+<span id="__codelineno-21-9"></span>
+<span id="__span-21-10"></span>
+<span id="__codelineno-21-10"></span>
+<span id="__span-21-11"></span>
+<span id="__codelineno-21-11"></span>
+<span id="__span-21-12"></span>
+<span id="__codelineno-21-12"></span>
+<span id="__span-21-13"></span>
+<span id="__codelineno-21-13"></span>
+<span id="__span-21-14"></span>
+<span id="__codelineno-21-14"></span>
+<span id="__span-21-15"></span>
+<span id="__codelineno-21-15"></span>
+<span id="__span-21-16"></span>
+<span id="__codelineno-21-16"></span>
+<span id="__span-21-17"></span>
+<span id="__codelineno-21-17"></span>
+<span id="__span-21-18"></span>
+<span id="__codelineno-21-18"></span>
 
 ### Programmatic Access
 
 ```python
-import json
+from processors.scorecard import get_all_indicators
 
-# Load metadata
-with open("data/metadata/metadata.json", "r") as f:
-    metadata = json.load(f)
-
-# Filter documents with scorecard data
-enriched_docs = [
-    doc for doc in metadata["documents"]
-    if "scorecard" in doc
-]
-
-print(f"Found {len(enriched_docs)} documents with scorecard enrichment")
-
-# Analyze by country
-from collections import Counter
-countries = Counter(doc["scorecard"]["matched_country"] for doc in enriched_docs)
-print(countries.most_common(10))
+print(get_all_indicators("Kenya"))
 ```
-
----
 
 ## Comparison Matrix
 
-Choose the right method for your needs:
-
-| Feature | API | CSV Export | Direct File | Pipeline |
-|---------|-----|-----------|-------------|----------|
-| **Data source** | Local input files | Exported snapshot | Local workbook | Pipeline inputs |
-| **Filtering** | ✅ Advanced | ⚠️ Manual | ⚠️ Manual | ⚠️ Limited |
-| **Pagination** | ✅ Yes | N/A | N/A | N/A |
-| **Requires API server** | ✅ Yes | ❌ No | ❌ No | ❌ No |
-| **Programming required** | ⚠️ Optional | ⚠️ Optional | ⚠️ Optional | ✅ Yes |
-| **Best for automation** | ✅ Excellent | ⚠️ OK | ❌ Poor | ✅ Excellent |
-| **Best for exploration** | ⚠️ OK | ✅ Excellent | ✅ Excellent | ❌ Poor |
-| **Source URLs** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Update frequency** | When local inputs change | On export | When the file is updated | When the pipeline runs |
-
----
+| Need | Use |
+| --- | --- |
+| Browser snapshot scores and written assessments | Published JSON/CSV |
+| Local country values and sources through HTTP | Self-hosted API country detail |
+| Workbook research and editing | Canonical `UN_194` sheet |
+| Generated summaries and source lists | Pipeline exports |
+| Add country context to processed documents | Pipeline enrichment |
 
 ## Data Validation
 
-Check source availability and review the underlying evidence before using an assessment. The tools below identify broken links and source changes for follow-up review.
+<span id="__span-22-1"></span>
+<span id="__codelineno-22-1"></span>
+<span id="__span-22-2"></span>
+<span id="__codelineno-22-2"></span>
 
 ### Automated Validation
 
 ```bash
-# Validate all 2,543 source URLs
-python pipeline_runner.py --mode scorecard --scorecard-action validate
+python processors/scorecard_validator.py --workers 10
 ```
 
-**Checks:**
-- HTTP status codes
-- Redirect chains
-- Response times
-- SSL certificates
-- Link rot detection
+URL checks record reachability, redirects and errors. They do not establish whether a legal interpretation is correct. Outputs are documented in the [Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md#4-validate-source-urls).
 
-**Output:** `data/scorecard/validation_report.csv`
+<span id="__span-23-1"></span>
+<span id="__codelineno-23-1"></span>
+<span id="__span-23-2"></span>
+<span id="__codelineno-23-2"></span>
 
 ### Change Detection
 
 ```bash
-# Detect content changes in sources
 python processors/scorecard_diff.py
 ```
 
-**Detects:**
-- Content changes (via hashing)
-- Policy updates
-- Broken links
-- New data availability
-
----
+Content hashes identify changed source pages for review. Years found in assessment text flag possible review candidates; a law's age alone does not make its current status obsolete.
 
 ## Common Queries
 
+<span id="__span-24-1"></span>
+<span id="__codelineno-24-1"></span>
+<span id="__span-24-2"></span>
+<span id="__codelineno-24-2"></span>
+<span id="__span-25-1"></span>
+<span id="__codelineno-25-1"></span>
+<span id="__span-25-2"></span>
+<span id="__codelineno-25-2"></span>
+<span id="__span-25-3"></span>
+<span id="__codelineno-25-3"></span>
+<span id="__span-25-4"></span>
+<span id="__codelineno-25-4"></span>
+<span id="__span-25-5"></span>
+<span id="__codelineno-25-5"></span>
+
 ### Find countries with specific indicators
 
-**API:**
-```bash
-# Countries with comprehensive data protection
-curl "http://localhost:5000/api/scorecard" | jq '.data.items[] | select(.Data_Protection_Law == "Comprehensive Law") | .country'
-```
+For the browser snapshot, use its scored fields directly:
 
-**Python:**
 ```python
-import pandas as pd
+import requests
 
-df = pd.read_csv("data/exports/scorecard_summary.csv")
-comprehensive = df[df["Data_Protection_Law"] == "Comprehensive Law"]
-print(comprehensive["Country"].tolist())
+response = requests.get("https://grimdata.org/scorecard/data/scorecard.json", timeout=30)
+response.raise_for_status()
+snapshot = response.json()
+countries = [
+    c["country"] for c in snapshot["countries"]
+    if c["scores"].get("LGBTQ") == 0 and c["scores"].get("SIM") == 0
+]
+print(countries)
 ```
+
+This selects countries assigned zero on both indicators in this snapshot. Open their written assessments to examine the classification.
+
+<span id="__span-26-1"></span>
+<span id="__codelineno-26-1"></span>
+<span id="__span-26-2"></span>
+<span id="__codelineno-26-2"></span>
+<span id="__span-27-1"></span>
+<span id="__codelineno-27-1"></span>
+<span id="__span-27-2"></span>
+<span id="__codelineno-27-2"></span>
+<span id="__span-27-3"></span>
+<span id="__codelineno-27-3"></span>
+<span id="__span-27-4"></span>
+<span id="__codelineno-27-4"></span>
+<span id="__span-27-5"></span>
+<span id="__codelineno-27-5"></span>
 
 ### Regional analysis
 
-**API:**
-```bash
-# Get all African countries
-curl "http://localhost:5000/api/scorecard?region=Africa&per_page=100"
-```
+Filter by region in the [country explorer](explorer.md), or pass `region=Africa` to the API summary endpoint.
 
-**Python:**
-```python
-import pandas as pd
-
-df = pd.read_csv("data/exports/scorecard_summary.csv")
-africa = df[df["region"] == "Africa"]
-print(africa[["Country", "protection_score", "risk_index"]].sort_values("risk_index"))
-```
+<span id="__span-28-1"></span>
+<span id="__codelineno-28-1"></span>
+<span id="__span-28-2"></span>
+<span id="__codelineno-28-2"></span>
+<span id="__span-28-3"></span>
+<span id="__codelineno-28-3"></span>
+<span id="__span-28-4"></span>
+<span id="__codelineno-28-4"></span>
+<span id="__span-28-5"></span>
+<span id="__codelineno-28-5"></span>
+<span id="__span-28-6"></span>
+<span id="__codelineno-28-6"></span>
+<span id="__span-28-7"></span>
+<span id="__codelineno-28-7"></span>
+<span id="__span-28-8"></span>
+<span id="__codelineno-28-8"></span>
+<span id="__span-28-9"></span>
+<span id="__codelineno-28-9"></span>
+<span id="__span-28-10"></span>
+<span id="__codelineno-28-10"></span>
+<span id="__span-28-11"></span>
+<span id="__codelineno-28-11"></span>
+<span id="__span-28-12"></span>
+<span id="__codelineno-28-12"></span>
 
 ### Intersectional risk analysis
 
-```python
-import pandas as pd
-
-df = pd.read_csv("data/exports/scorecard_summary.csv")
-
-# Find countries with LGBTQ+ criminalization AND biometric SIM requirements
-at_risk = df[
-    (df["LGBTQ_Legal_Status"] == "Criminalization") &
-    (df["SIM_Biometric_ID_Linkage"] == "Mandatory Biometric Registration")
-]
-
-print(f"\nCountries with heightened surveillance risk for LGBTQ+ individuals:")
-print(at_risk[["Country", "region", "protection_score"]].to_string(index=False))
-```
-
----
+[Research Context](../RESEARCH_CONTEXT.md#reading-indicator-combinations) explains how identification requirements and restrictions on LGBTQ+ expression can interact. The additive score does not calculate those interactions.
 
 ## Support
 
-- **API Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Data Questions:** [FAQ](../FAQ.md)
-- **Export Problems:** [Scorecard Workflow Guide](../guides/SCORECARD_WORKFLOW.md)
-
----
+[API reference](../api/reference.md) · [Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md) · [FAQ](../FAQ.md)
 
 ## Documentation
 
-- [Scorecard Overview](index.md) - What the scorecard is and why it exists
-- [Design & Methodology](design.md) - How indicators are defined and scored
-- [Visualization](visualization.md) - Charts and visual exports
-- [Data Explorer](explorer.md) - Interactive exploration tool
-- [API Documentation](../api/index.md) - Complete API reference
+[Scorecard overview](index.md) · [Methodology](design.md) · [Visualization](visualization.md) · [Country explorer](explorer.md)

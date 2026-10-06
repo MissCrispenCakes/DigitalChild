@@ -13,9 +13,9 @@ hide:
 <span id="evidence-for-rightsresearch-you-can-trace"></span>
 
 <h1 class="no-rainbow">Understand the situation.<br>Trace the evidence.</h1>
-<p class="grim-lede">Research on rights and public decisions: finding, organizing and examining documentary evidence, with its sources, dates and uncertainties in view.</p>
+<p class="grim-lede">How rights are documented, how public decisions work, and what the evidence reveals. Explore the studies, country assessments and tools behind GRIMdata.</p>
 <div class="grim-actions"><a class="md-button md-button--primary" href="explore/">Explore the evidence →</a><a class="md-button" href="projects/">See the research</a></div>
-<p class="grim-hero-note">Computational methods. Legal interpretation. An evolving research programme.</p>
+<p class="grim-hero-note">Human-rights research through computational exploration and legal analysis.</p>
 </div>
 <aside class="grim-snapshot" aria-label="LittleRainbowRights published scorecard snapshot">
 <p class="grim-eyebrow">LittleRainbowRights scorecard</p>
@@ -30,14 +30,14 @@ hide:
 
 ## Research you can examine
 
-Published studies, public assessments and working tools form the programme's existing research record.
+From searching UPR documents to examining digital rights across 194 countries.
 
 </div>
 
 <div class="grim-record" markdown>
 
 - **2022 · Published SGBV-UPR study.** Computational document analysis and legal interpretation of sexual and gender-based violence and related rights concerns in SADC UPR records. [Read the study](https://doi.org/10.47348/SLR/2022/i1a1) · [Questions and methods](website/projects/sgbv/index.md)
-- **2025 · LittleRainbowRights research.** Child and LGBTQ+ rights in relation to advanced digital technologies, presented at the Second International Conference on Children's Rights. [Research record](https://doi.org/10.5281/zenodo.18318098) · [Project contributions](website/projects/littlerainbowrights/index.md#methodological-contributions)
+- **2025 · LittleRainbowRights research.** Child and LGBTQ+ rights in relation to advanced digital technologies, presented at the Second International Conference on Children's Rights. [Conference contribution](website/projects/littlerainbowrights/index.md#key-publications) · [Project contributions](website/projects/littlerainbowrights/index.md#methodological-contributions)
 - **Available tools · Source-linked exploration.** Inspect country assessments, compare indicators, download the published scorecard snapshot and examine source-transparency signals. [Open the tools](explore/index.md)
 
 </div>
@@ -82,7 +82,7 @@ Established investigations and planned directions ask how documentary evidence c
 
     ### Research Provenance & Institutional Continuity
 
-    How contributions, methods and knowledge persist through institutional transitions and research handoffs. A proposed Insight Grant direction.
+    How contributions, methods and knowledge persist through institutional transitions and research handoffs. A proposed research direction.
 
     [Read the proposed direction →](research-directions/index.md#research-provenance-institutional-continuity)
 
@@ -102,11 +102,11 @@ Established investigations and planned directions ask how documentary evidence c
 
 <div class="grim-section-heading" markdown>
 
-## A research lineage, still developing
+## From UPR documents to a wider research programme {#a-research-lineage-still-developing}
 
-The inquiry began in 2019 with a computational researcher and a human-rights lawyer asking how difficult-to-search legal documents could become more tractable. Computational exploration began in 2020; a conference presentation followed in 2021 and a law-journal publication in 2022.
+The inquiry began in 2019 with a question: how could human-rights documents become easier to search and understand? Computational exploration began in 2020, followed by a conference presentation in 2021 and a law-journal article in 2022.
 
-LittleRainbowRights extended the approach across countries and document sources. An index tracker emerged from the need to preserve an inspectable account of documented conditions. That experience now informs the planned return to SGBV-UPR and the programme's new directions.
+LittleRainbowRights extended the approach across countries and document sources. The index grew from a need to retain an account of conditions as sources and policies change. That experience now informs the planned return to SGBV-UPR and the programme's new directions.
 
 [Research history and contributions](research-history/index.md) · [Next investigations](research-directions/index.md)
 
@@ -122,7 +122,7 @@ Knowing more can help people act, but it can also expose those described. GRIMda
 
 [Read the research context](RESEARCH_CONTEXT.md) · [Data governance](DATA_GOVERNANCE.md)
 
-Scores are screening signals. Check sources and dates, distinguish missing documentation from a finding, and read the uncertainty alongside a comparison. Public browsing and filtering need no account; external interactive charts load only when you choose them.
+Country assessments pair scores with sources and written reasoning. Public browsing and filtering need no account; external interactive charts load when you choose them.
 
 [Site practices and data handling](practices/index.md)
 

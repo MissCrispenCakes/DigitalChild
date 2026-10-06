@@ -21,8 +21,6 @@ Find assessments, methods and citation details.
 - [Design & Methodology](../../scorecard/design.md) — the 10 indicators and the 0/1/2 scoring rubric
 - [Data Explorer](../../scorecard/explorer.md) — filter, search, and compare countries
 
-When citing an assessment, include its snapshot date and documentation coverage. Follow the source links and compare the findings with other relevant research.
-
 ## I'm an advocate
 
 Examine documented policies, protections and gaps.
@@ -32,17 +30,13 @@ Examine documented policies, protections and gaps.
 - [Source Transparency Watch](../../transparency-watch/index.md) — peer-organisation open-data tracking
 - [the project introduction](https://littlerainbowrights.com)
 
-Use the country comparisons alongside qualitative research, local civil-society perspectives, enforcement data and community testimony.
-
 ## I'm a policymaker
 
 Compare frameworks and investigate policy gaps.
 
 - [Scorecard map & charts](../../scorecard/visualization.md) — regional benchmarking
 - [Design & Methodology](../../scorecard/design.md) — what each indicator does and does not measure
-- [LittleRainbowRights project](../projects/littlerainbowrights/index.md) — regional strengths, gaps, and leaders
-
-Compare the documented frameworks, then examine implementation, cultural context and political feasibility through local research and stakeholder consultation.
+- [LittleRainbowRights project](../projects/littlerainbowrights/index.md) — research questions, assessments and tools
 
 ## I'm a developer
 

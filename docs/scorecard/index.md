@@ -42,11 +42,11 @@ This scorecard was developed for the research paper *"Queer AI for the digital c
 
     AI Policy, Data Protection, LGBTQ+ Status, Child Protection, and more
 
--   :material-link:{ .lg .middle } **2,543 Source URLs**
+-   :material-link:{ .lg .middle } **2,581 Source Links**
 
     ---
 
-    Historical source inventory from UNESCO, UNCTAD, ILGA, UNICEF; inspect current country evidence
+    Links exported from the canonical workbook; inspect each country’s evidence
 
 -   :material-update:{ .lg .middle } **26 June 2026**
 
@@ -83,7 +83,7 @@ This scorecard was developed for the research paper *"Queer AI for the digital c
 **Composite Metrics:**
 - **Protection Score:** Sum of all 10 indicators (0-20 scale)
 - **Risk Index:** 100 − (Protection Score / 20 × 100) [inverted scale]
-- **Data Completeness:** Percentage of indicators with verified data
+- **Data Completeness:** Percentage of indicators with written justifications in the published visualization snapshot
 
 ---
 
@@ -174,7 +174,7 @@ Provide data-backed evidence for human rights advocacy
 
 ### Authoritative Sources
 
-All 2,543 source URLs come from authoritative international organizations:
+Sources include national laws and policy documents as well as international organizations and rights groups:
 
 - **UNESCO** - AI Policy Observatory
 - **UNCTAD** - Data Protection and Privacy Legislation Database
@@ -192,8 +192,8 @@ All 2,543 source URLs come from authoritative international organizations:
 - Country assessments bring together source evidence and interpretation
 
 **Transparency:**
-- Every indicator value links to its authoritative source URL
-- Validation reports available in `data/scorecard/validation_report.csv`
+- Country panels display source links and written assessments where available
+- Local URL-check outputs are documented in the [Scorecard Workflow](../guides/SCORECARD_WORKFLOW.md#4-validate-source-urls)
 - Full methodology documented in [Design & Methodology](design.md)
 
 ---
@@ -205,26 +205,45 @@ All 2,543 source URLs come from authoritative international organizations:
 Query the scorecard via the REST API — copy-paste examples (per-country, region filters, and
 indicator statistics) live in the **[API Quick Start](../api/quickstart.md)**.
 
+<span id="__span-0-8"></span>
+<span id="__codelineno-0-8"></span>
+<span id="__span-0-9"></span>
+<span id="__codelineno-0-9"></span>
+<span id="__span-0-10"></span>
+<span id="__codelineno-0-10"></span>
+<span id="__span-0-11"></span>
+<span id="__codelineno-0-11"></span>
+<span id="__span-0-12"></span>
+<span id="__codelineno-0-12"></span>
+<span id="__span-0-13"></span>
+<span id="__codelineno-0-13"></span>
+<span id="__span-0-14"></span>
+<span id="__codelineno-0-14"></span>
+<span id="__span-0-15"></span>
+<span id="__codelineno-0-15"></span>
+<span id="__span-0-16"></span>
+<span id="__codelineno-0-16"></span>
+
 ### Python Analysis
 
-```python
-import requests
-import pandas as pd
+Use the [snapshot query example](data-access.md#find-countries-with-specific-indicators) for scored indicator combinations, or the [API examples](data-access.md#python-examples) for local country values and sources.
 
-# Fetch scorecard data via API
-response = requests.get("http://localhost:5000/api/scorecard?per_page=200")
-countries = response.json()["data"]["items"]
-
-# Convert to DataFrame
-df = pd.DataFrame(countries)
-
-# Find countries with LGBTQ+ criminalization AND biometric SIM requirements
-at_risk = df[
-    (df["LGBTQ_Legal_Status"] == "Criminalization") &
-    (df["SIM_Biometric_ID_Linkage"] == "Mandatory Biometric Registration")
-]
-print(f"Found {len(at_risk)} countries with heightened surveillance risk for LGBTQ+ individuals")
-```
+<span id="__span-1-1"></span>
+<span id="__codelineno-1-1"></span>
+<span id="__span-1-2"></span>
+<span id="__codelineno-1-2"></span>
+<span id="__span-1-3"></span>
+<span id="__codelineno-1-3"></span>
+<span id="__span-1-4"></span>
+<span id="__codelineno-1-4"></span>
+<span id="__span-1-5"></span>
+<span id="__codelineno-1-5"></span>
+<span id="__span-1-6"></span>
+<span id="__codelineno-1-6"></span>
+<span id="__span-1-7"></span>
+<span id="__codelineno-1-7"></span>
+<span id="__span-1-8"></span>
+<span id="__codelineno-1-8"></span>
 
 ### CSV Export
 
@@ -235,32 +254,35 @@ python pipeline_runner.py --mode scorecard --scorecard-action export
 # Generates:
 # - data/exports/scorecard_summary.csv (countries × indicators)
 # - data/exports/scorecard_sources.csv (all source URLs)
-# - data/exports/scorecard_by_indicator.csv (grouped by indicator)
-# - data/exports/scorecard_by_region.csv (regional aggregations)
+# - data/exports/scorecard_indicator_counts.csv (status distributions)
 ```
 
 ---
+
+<span id="__span-2-1"></span>
+<span id="__codelineno-2-1"></span>
+<span id="__span-2-2"></span>
+<span id="__codelineno-2-2"></span>
+<span id="__span-2-3"></span>
+<span id="__codelineno-2-3"></span>
+<span id="__span-2-4"></span>
+<span id="__codelineno-2-4"></span>
+<span id="__span-2-5"></span>
+<span id="__codelineno-2-5"></span>
+<span id="__span-2-6"></span>
+<span id="__codelineno-2-6"></span>
+<span id="__span-2-7"></span>
+<span id="__codelineno-2-7"></span>
+<span id="__span-2-8"></span>
+<span id="__codelineno-2-8"></span>
 
 ## Citation
 
-When using scorecard data in publications:
+For the published scorecard, cite *LittleRainbowRights Scorecard*, snapshot generated **26 June 2026**, your access date and the source-linked assessments used. [Project citation guidance](../website/projects/littlerainbowrights/index.md#citing-this-work) distinguishes the research presentation, dataset and software.
 
-```bibtex
-@misc{littlerainbowrights2025scorecard,
-  title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, D.T. and Vollmer, S.C.},
-  year = {2025},
-  doi = {10.5281/zenodo.18318098},
-  howpublished = {\url{https://grimdata.org/scorecard/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
-}
-```
+The [DigitalChild release DOI](https://doi.org/10.5281/zenodo.20950631) identifies software. Project-authored scorecard data uses CC BY 4.0 where specified; third-party sources retain their own terms.
 
-Or in text:
 
-> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*. Available at: https://grimdata.org/scorecard/. DOI: 10.5281/zenodo.18318098. Licensed under CC BY 4.0.
-
----
 
 ## Reading the assessments {#limitations-disclaimers}
 

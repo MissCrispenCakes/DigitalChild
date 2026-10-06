@@ -31,9 +31,9 @@ The programme began with the SGBV-UPR inquiry and expanded through LittleRainbow
 
 ## Research contributions
 
-The computational work includes helping formulate research questions and developing retrieval, extraction, language-pattern selection, tagging, comparison and passage ranking. These decisions emerged through exploration of the documents themselves. They are methodological contributions, alongside the software that implements them.
+Research questions, language patterns, extraction, tagging and passage ranking developed through exploration of the documents. The software made it possible to retrieve material, compare it and revisit those choices.
 
-The legal work interprets excerpts within the UPR process and the subject of inquiry, connecting documentary material to legal instruments and context. Finding a relevant passage and establishing its legal meaning involve complementary forms of judgment.
+Legal interpretation connected the selected passages to the UPR process, legal instruments and the questions under investigation. Together, these methods made document collections useful for an inquiry that neither retrieval nor interpretation could complete alone.
 
 [Explore the SGBV-UPR methods](projects/sgbv/index.md#methodology) · [LittleRainbowRights contributions](projects/littlerainbowrights/index.md#methodological-contributions)
 
@@ -52,7 +52,7 @@ The programme includes [SGBV-UPR](projects/sgbv/index.md), [LittleRainbowRights]
 - **Subsequent work:** LittleRainbowRights broadened country and source coverage. An index tracker emerged to preserve dated assessments with inspectable evidence.
 - **Next directions:** Renew SGBV-UPR analysis, examine major Canadian projects, and investigate how research knowledge and contributions persist through institutional transitions.
 
-The earlier computational background includes ML, pattern recognition, sociophysics and physical robotics experiments in 2014–2016. The programme's [research history](../research-history/index.md) explains the later inquiry, its exploratory origins and scholarly milestones.
+The earlier computational background includes ML, pattern recognition, sociophysics and physical robotics experiments in 2014–2018. The programme's [research history](../research-history/index.md) explains the later inquiry, its exploratory origins and scholarly milestones.
 
 <span id="who-its-for"></span>
 
@@ -73,7 +73,7 @@ The public tools allow account-free browsing. External chart resources load only
 ## Publications & Outputs
 
 - **SGBV-UPR:** Vollmer, D. T., & Vollmer, S. C. (2022). *Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states.* Stellenbosch Law Review, 33(1), 8–41. [Published article](https://doi.org/10.47348/SLR/2022/i1a1).
-- **LittleRainbowRights:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [Research record](https://doi.org/10.5281/zenodo.18318098).
+- **LittleRainbowRights:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [Project research and outputs](projects/littlerainbowrights/index.md#key-publications).
 - **Public tools:** [Scorecard explorer](../scorecard/explorer.md), [map and charts](../scorecard/visualization.md), [downloads](../scorecard/data-access.md) and [Source Transparency Watch](../transparency-watch/index.md).
 
 <span id="what-grimdata-provides"></span>
@@ -88,6 +88,4 @@ DigitalChild provides the public LittleRainbowRights pipeline and self-hosted AP
 
 <span id="support-this-work"></span>
 
-## About the Initiative
-
-A small computational and legal research team developed the work through exploration, methodological experimentation and publication. The programme continues to grow from those foundations.
+<span id="about-the-initiative"></span>

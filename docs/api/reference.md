@@ -140,7 +140,7 @@ All CSV exports include SPDX license headers (CC-BY-4.0) for data attribution.
 
 ## Implementation status
 
-The API provides 14 endpoints. See [API Implementation History](IMPLEMENTATION_HISTORY.md) for implementation milestones and earlier releases.
+The API provides 12 endpoints. See [API Implementation History](IMPLEMENTATION_HISTORY.md) for implementation milestones and earlier releases.
 
 ## Architecture
 
@@ -154,11 +154,11 @@ api/
 ├── extensions.py                # Flask extensions init
 ├── routes/                      # API endpoints
 │   ├── health.py               # Health & info endpoints
-│   └── ...                     # (More routes in Week 2+)
+│   └── ...                     # (documents, scorecard, tags, timeline and export routes)
 ├── services/                    # Business logic layer
 │   ├── metadata_service.py     # Document metadata
 │   ├── scorecard_service.py    # Scorecard data
-│   └── ...                     # (More services in Week 2+)
+│   └── ...                     # (tags, timeline and export services)
 ├── middleware/                  # Request/response processing
 │   └── error_handlers.py       # Exception handling
 └── utils/                       # Helper functions

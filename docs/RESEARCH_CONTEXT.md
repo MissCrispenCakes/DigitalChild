@@ -5,7 +5,7 @@ description: Understanding documented conditions, information vulnerability, enf
 
 # Research Context: Evidence-Based Governance for Vulnerable Populations
 
-Understanding what a situation is provides a basis for deciding how to act within it. GRIMdata asks how documentary evidence can make circumstances inspectable while preserving uncertainty, interpretation and the capacity to respond under constraint.
+Understanding what a situation is provides a basis for deciding how to act within it. GRIMdata develops ways to search, compare and understand documentary evidence, including when time, connectivity and computing resources are limited.
 
 That concern connects the published SGBV-UPR study, LittleRainbowRights and the planned Canadian oversight and research-continuity directions. Each has its own sources, questions and stage of development.
 
@@ -60,7 +60,7 @@ The original SGBV-UPR inquiry developed an exploratory computational approach al
 
 Preserve an inspectable account of documented conditions before reducing it to a recommendation about what should happen. Record how information was selected and interpreted so that research claims can be examined and challenged.
 
-This emphasis on understanding actual conditions also grew through three years of collective bargaining as a public-employee union president. [Research history](research-history/index.md#the-emergence-of-the-index) connects that experience to the index.
+[Research history](research-history/index.md#the-emergence-of-the-index) connects the index to document exploration and collective bargaining.
 
 ### Cultural Sensitivity and Non-Imposing Analysis
 
@@ -205,7 +205,7 @@ Recognition and protection can shift between review cycles. Keeping dated assess
 
 The article examines how automation can reduce the effort of research and advocacy across varied document formats and dispersed institutions. Source coverage, extraction quality and contextual interpretation shape how useful those methods become.
 
-## The Unified Mission
+## What connects the projects {#the-unified-mission}
 
 The programme seeks to make research claims and institutional decisions easier to examine while considering the consequences of making people more visible. The connection to [**Viability.^.**](https://isotopicity.com/) concerns how information and institutional arrangements expand or restrict the possibilities available to different actors.
 

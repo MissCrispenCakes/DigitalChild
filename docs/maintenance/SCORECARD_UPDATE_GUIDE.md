@@ -9,7 +9,7 @@ Run the diff report to identify stale entries:
 python pipeline_runner.py --mode scorecard --scorecard-action diff
 ```
 
-Review the report at: `data/exports/scorecard_diff_report.json`
+Review the report at: `data/exports/scorecard_diff_report.json`. A year found in a law or assessment is a review prompt, not evidence that its legal status is obsolete. Record the source-review date separately from enactment and amendment dates.
 
 ### Step 2: Research Updates
 
@@ -181,7 +181,7 @@ Before saving changes:
 
 - **Weekly**: Check for major legislative changes (news monitoring)
 - **Monthly**: Review changed sources from diff tool
-- **Quarterly**: Systematic update of oldest entries (>10 years)
+- **Quarterly**: Review assessments with old or missing source-review dates
 - **Annually**: Comprehensive review of all 194 countries
 
 ## Resources

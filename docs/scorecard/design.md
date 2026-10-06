@@ -182,7 +182,7 @@ Each indicator was selected based on:
 
 **Formula:** Sum of all 10 indicator scores
 
-**Range:** 0–20 (where 20 is maximum protection)
+**Range:** 0–20 (where 20 is the maximum under this rubric)
 
 **Interpretation:** Higher scores indicate stronger digital rights frameworks. A country scoring 20 would have comprehensive protections across all 10 indicators.
 
@@ -196,9 +196,9 @@ Protection Score = (7×2) + (2×1) + (1×0) = 14 + 2 + 0 = 16
 
 **Formula:** 100 − (Protection Score / 20 × 100)
 
-**Range:** 0–100 (where 100 is maximum risk)
+**Range:** 0–100 (the inverse of the Protection Score)
 
-**Interpretation:** Inverted scale where higher values indicate greater risk exposure. Useful for risk assessments and heatmaps.
+**Interpretation:** An inverted summary of the selected legal and policy indicators. It is not an estimated probability of harm.
 
 **Example:**
 ```
@@ -208,11 +208,11 @@ Risk Index = 100 − (16/20 × 100) = 100 − 80 = 20
 
 ### Data Completeness
 
-**Formula:** (Number of known indicators / 10) × 100
+**Formula:** (Indicators with written justifications / 10) × 100
 
 **Range:** 0–100%
 
-**Interpretation:** Percentage of indicators with verified data. Countries with low completeness (<50%) should be interpreted cautiously.
+**Interpretation:** Percentage of indicators with written justifications in the published visualization snapshot. Countries with low completeness (<50%) should be interpreted cautiously.
 
 **Use case:** Filter out countries with insufficient data for comparative analysis
 
@@ -226,7 +226,7 @@ All sources must meet these requirements:
 
 1. **Authoritative:** International organizations, national governments, established human rights NGOs
 2. **Public:** Accessible without paywalls or restricted access
-3. **Current:** Updated within past 3 years (or most recent available)
+3. **Dated:** Record publication and review dates; use the most relevant available evidence, including laws that remain in force
 4. **Documented:** Citable with stable URLs
 5. **Verifiable:** Claims can be cross-checked against primary sources
 
@@ -261,9 +261,9 @@ python processors/scorecard_diff.py
 
 Detects:
 - Content changes (via hashing)
-- Policy updates
+- Page changes requiring policy review
 - Broken links
-- New data availability
+- Changed access or content requiring review
 
 ---
 
@@ -330,7 +330,7 @@ Detects:
 
 **Mitigation:**
 - Risk analysis should examine combinations
-- Protection Score captures composite risk
+- The Protection Score adds indicator scores; it does not model interactions between them
 - Qualitative analysis essential for intersectional assessment
 
 ---
@@ -380,32 +380,30 @@ All changes tracked in scorecard_main.xlsx with:
 
 ---
 
+<span id="__span-4-1"></span>
+<span id="__codelineno-4-1"></span>
+<span id="__span-4-2"></span>
+<span id="__codelineno-4-2"></span>
+<span id="__span-4-3"></span>
+<span id="__codelineno-4-3"></span>
+<span id="__span-4-4"></span>
+<span id="__codelineno-4-4"></span>
+<span id="__span-4-5"></span>
+<span id="__codelineno-4-5"></span>
+<span id="__span-4-6"></span>
+<span id="__codelineno-4-6"></span>
+<span id="__span-4-7"></span>
+<span id="__codelineno-4-7"></span>
+<span id="__span-4-8"></span>
+<span id="__codelineno-4-8"></span>
+
 ## Citation & Attribution
 
-When using scorecard methodology or data:
+For the published scorecard, cite *LittleRainbowRights Scorecard*, snapshot generated **26 June 2026**, your access date and the source-linked assessments used. [Project citation guidance](../website/projects/littlerainbowrights/index.md#citing-this-work) distinguishes the research presentation, dataset and software.
 
-```bibtex
-@misc{littlerainbowrights2025scorecard,
-  title = {LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators},
-  author = {Vollmer, D.T. and Vollmer, S.C.},
-  year = {2025},
-  doi = {10.5281/zenodo.18318098},
-  howpublished = {\url{https://grimdata.org/scorecard/}},
-  note = {Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}
-}
-```
+The [DigitalChild release DOI](https://doi.org/10.5281/zenodo.20950631) identifies software. Project-authored scorecard data uses CC BY 4.0 where specified; third-party sources retain their own terms.
 
-**License:** CC BY 4.0 - You are free to:
-- Share, copy, redistribute
-- Adapt, remix, transform, build upon
 
-**Under these terms:**
-- Attribution required
-- Indicate if changes made
-- Link to license
-- No additional restrictions
-
----
 
 ## Future Methodology Enhancements
 

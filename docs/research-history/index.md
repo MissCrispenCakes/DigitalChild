@@ -41,7 +41,7 @@ The research was presented at the International Conference on the Responsiveness
 
 [LittleRainbowRights](../website/projects/littlerainbowrights/index.md) extended the inquiry across countries and document sources to child and LGBTQ+ rights in relation to advanced digital technologies. Its scorecard brings together dated assessments, sources and gaps for examination. The research was presented in 2025.
 
-[Research record](https://doi.org/10.5281/zenodo.18318098) · [Explore the scorecard](../scorecard/explorer.md)
+[Conference contribution](../website/projects/littlerainbowrights/index.md#key-publications) · [Explore the scorecard](../scorecard/explorer.md)
 
 ### Planned · SGBV–UPR renewal {#planned-renewal-returning-with-a-wider-approach}
 
@@ -57,7 +57,7 @@ Build Canada and other major Canadian projects form the next oversight direction
 
 ### Proposed · Research Provenance & Institutional Continuity
 
-A proposed Insight Grant direction examines how research contributions, funding and knowledge move across grants, institutions and teams, and what helps methods and work continue through those transitions.
+A proposed research direction examines how research contributions, funding and knowledge move across grants, institutions and teams, and what helps methods and work continue through those transitions.
 
 [Provenance and continuity research](../research-directions/index.md#research-provenance-institutional-continuity)
 
@@ -65,7 +65,7 @@ A proposed Insight Grant direction examines how research contributions, funding 
 
 ## Methods and contributions {#complementary-intellectual-contributions}
 
-The computational work developed the retrieval and extraction approach, search terms, patterns, tags, comparisons and passage ranking through examination of the UPR documents. The legal work interpreted selected passages within the UPR process and in relation to specific legal texts and context. These methods developed together during the inquiry.
+Retrieval, language-pattern selection and passage ranking developed through repeated examination of the UPR documents. Legal interpretation connected those passages to the review process and legal texts. The project methods describe how the two approaches worked together.
 
 [Read the SGBV–UPR project methods](../website/projects/sgbv/index.md#methodology)
 
@@ -73,10 +73,10 @@ The computational work developed the retrieval and extraction approach, search t
 
 ## From documents to dated assessments {#documentation-under-constraint}
 
-LittleRainbowRights expanded the number of countries and kinds of documents under examination. The index tracker grew from a need to retain a dated, source-linked account of documented conditions, including missing and uncertain information, as material changes over time. Experience of collective bargaining during three years as a public-employee union president also informed this emphasis on understanding actual conditions.
+LittleRainbowRights expanded the number of countries and kinds of documents under examination. The index tracker grew from a need to retain a dated, source-linked account of documented conditions, including missing and uncertain information, as material changes over time. My three years as a public-employee union president brought the same question into collective bargaining: what are the actual conditions we are working with?
 
 Working with uneven source access also informs a longer-term interest in documentation methods that small teams can use when connectivity and computing resources are limited. The question of what information makes possible—and whom it may expose—connects this work to [**Viability.^.**](https://isotopicity.com/) and the wider [Research Context](../RESEARCH_CONTEXT.md).
 
 ## Public research record
 
-[2022 SGBV–UPR article](https://doi.org/10.47348/SLR/2022/i1a1) · [2025 LittleRainbowRights record](https://doi.org/10.5281/zenodo.18318098) · [Project pages](../projects/index.md)
+[2022 SGBV–UPR article](https://doi.org/10.47348/SLR/2022/i1a1) · [2025 LittleRainbowRights contribution](../website/projects/littlerainbowrights/index.md#key-publications) · [DigitalChild software](https://doi.org/10.5281/zenodo.18318098) · [Project pages](../projects/index.md)

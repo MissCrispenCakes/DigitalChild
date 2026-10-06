@@ -8,6 +8,10 @@
 
 ---
 
+## Reading the update record
+
+The changes and checks below are reported by the automated January maintenance record. The age labels refer to dates found in assessment text, including law dates. They do not establish when a source was last reviewed. The 41 items in the remaining batches describe the listed examples, not a verified total of outstanding work.
+
 ## Update Summary
 
 This document records the Phase 1 critical updates to the scorecard, focusing on the 6 oldest entries (20+ years old). All updates have been verified from authoritative sources and exported to all formats.

@@ -20,7 +20,7 @@ Welcome to the complete documentation for **DigitalChild** (LittleRainbowRights)
 
     ---
 
-    Access data programmatically via 14 endpoints
+    Access data programmatically via 12 endpoints
 
     [:octicons-arrow-right-24: API Documentation](../api/index.md)
 
@@ -59,7 +59,7 @@ Welcome to the complete documentation for **DigitalChild** (LittleRainbowRights)
 ### API Documentation
 
 - [API Overview](../api/index.md) - REST API features and quickstart
-- [API Reference](../api/reference.md) - All 14 endpoints with examples
+- [API Reference](../api/reference.md) - All 12 endpoints with examples
 - [API Quick Reference](../api/quick-reference.md) - Endpoint cheat sheet
 
 ### Scorecard
@@ -113,10 +113,10 @@ DigitalChild/
 ## Key Features
 
 - **Document Pipeline:** Scrape → Process → Tag → Enrich → Export
-- **REST API:** 14 self-hosted API endpoints with authentication and rate limiting
+- **REST API:** 12 self-hosted API endpoints with authentication and rate limiting
 - **Scorecard System:** 10 indicators × 194 countries for digital rights analysis
 - **Flexible Tagging:** Regex-based tagging with version control
-- **Data Quality:** Automated validation of 2,543 source URLs
+- **Data Quality:** Source extraction and link checks; the canonical workbook currently exports 2,581 source links
 - **Open Source:** MIT license for code, CC BY 4.0 for data
 
 ## Technical guidance {#support}
@@ -129,9 +129,9 @@ DigitalChild/
 @software{digitalchild2025,
   title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
   author = {Vollmer, S.C. and Vollmer, D.T.},
-  year = {2025},
+  year = {2026},
   version = {2.1.0},
-  doi = {10.5281/zenodo.18318098},
+  doi = {10.5281/zenodo.20950631},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
   note = {Available at https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer), 0000-0002-5035-3395 (D.T. Vollmer)}
 }
@@ -139,6 +139,6 @@ DigitalChild/
 
 ---
 
-**Version:** 2.1.0 (DOI: 10.5281/zenodo.18318098)
+**Version:** 2.1.0 · [Release DOI](https://doi.org/10.5281/zenodo.20950631) · [Software series DOI](https://doi.org/10.5281/zenodo.18318098)
 **Last Updated:** June 2026
 **License:** MIT (code) / CC BY 4.0 (data)

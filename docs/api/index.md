@@ -1,12 +1,12 @@
 # GRIMdata REST API
 
-**Programmatic access to 78+ documents, 194-country scorecard, and temporal analysis**
+**Query document metadata, the 194-country canonical scorecard, tags and timelines**
 
 ---
 
 ## Overview
 
-The GRIMdata REST API provides programmatic access to the complete LittleRainbowRights dataset, including human rights documents, the Digital Rights Scorecard, tags analysis, and timeline data.
+The GRIMdata REST API queries your local document metadata, canonical scorecard workbook, tags and timelines. Document counts depend on the files in your instance. The [published visualization snapshot](../scorecard/data-access.md#published-snapshot-downloads) is a separate scored dataset.
 
 **Self-hosted API base URL:** `http://localhost:5000/api` for a local deployment. For production, use the hostname of your own deployed API. Follow the [Quick Start](quickstart.md) to run your own instance.
 
@@ -74,7 +74,7 @@ Choose the right access method for your needs:
 
     ---
 
-    Cheat sheet of all 14 endpoints
+    Cheat sheet of all 12 endpoints
 
     [:octicons-arrow-right-24: Endpoint Quick Reference](quick-reference.md)
 
@@ -409,7 +409,7 @@ See the [Production Deployment Guide](../guides/PRODUCTION_DEPLOYMENT.md) for co
 
     ---
 
-    All 14 endpoints with parameters, examples, and response schemas
+    All 12 endpoints with parameters, examples, and response schemas
 
     [View Reference →](reference.md)
 
@@ -443,7 +443,7 @@ See the [Production Deployment Guide](../guides/PRODUCTION_DEPLOYMENT.md) for co
 
 ## Technical Stack
 
-- **Framework:** Flask 3.0
+- **Framework:** Flask (version pinned in `api_requirements.txt`)
 - **Caching:** Redis
 - **Web Server:** Nginx (production)
 - **Container:** Docker + docker-compose

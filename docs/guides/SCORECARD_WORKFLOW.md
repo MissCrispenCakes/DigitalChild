@@ -32,14 +32,7 @@ The scorecard tracks 10 indicators (each with value + source URL):
 
 **File**: `data/scorecard/scorecard_main.xlsx`
 
-The scorecard Excel file contains multiple sheets:
-
-- **UN_194** (primary sheet): 194 scorecard countries with all 10 indicators
-- **SADC**: 16 SADC member states (regional subset)
-- **ECOWAS**: 13 ECOWAS member states (regional subset)
-- **Global**: Scoring rules and methodology documentation
-
-**IMPORTANT**: The `scorecard.py` loader reads from the **UN_194** sheet by default. This sheet contains the complete dataset for all 194 countries.
+The current canonical workbook contains the **UN_194** sheet with country indicator values and paired source columns. The loader reads this sheet by default. The separate visualization workbook has `Scorecard`, `Heatmap`, `Coverage`, `Sources` and `Legend` sheets.
 
 **Sheet Structure (UN_194)**:
 - Column 1: RowNumber
@@ -240,7 +233,7 @@ results = check_country_sources("Kenya")
 
 ## Integration with Pipeline
 
-The scorecard enrichment is **not** part of the main pipeline (`pipeline_runner.py`) by default. It's a separate step run after documents are processed.
+The pipeline enriches documents with country indicators during processing. The separate scorecard mode can re-enrich an existing metadata collection, export the workbook or validate its source URLs.
 
 **Typical workflow:**
 
@@ -255,21 +248,12 @@ python processors/scorecard_enricher.py
 python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"
 ```
 
-## Adding to Pipeline (Optional)
+<span id="__span-12-9"></span>
+<span id="__codelineno-12-9"></span>
 
-To integrate scorecard enrichment into the pipeline:
+## Pipeline integration details {#adding-to-pipeline-optional}
 
-```python
-# In pipeline_runner.py, after process_documents():
-
-from processors.scorecard_enricher import enrich_all_metadata
-
-# After processing is complete
-if args.enrich_scorecard:
-    logger.info("Enriching metadata with scorecard indicators...")
-    stats = enrich_all_metadata(save=True)
-    logger.info(f"Enriched {stats['enriched']} documents")
-```
+`pipeline_runner.py` calls `enrich_document` during document processing. Use `--mode scorecard --scorecard-action enrich` to refresh country indicators in an existing metadata collection.
 
 ## Maintenance Tasks
 
@@ -279,6 +263,15 @@ if args.enrich_scorecard:
 1. Force reload: `load_scorecard(force_reload=True)`
 1. Re-enrich metadata: `python processors/scorecard_enricher.py`
 1. Re-export: `python -c "from processors.scorecard_export import export_scorecard; export_scorecard()"`
+
+<span id="__span-13-5"></span>
+<span id="__codelineno-13-5"></span>
+<span id="__span-13-6"></span>
+<span id="__codelineno-13-6"></span>
+<span id="__span-13-7"></span>
+<span id="__codelineno-13-7"></span>
+<span id="__span-13-8"></span>
+<span id="__codelineno-13-8"></span>
 
 ### Verify Data Quality
 
@@ -313,11 +306,26 @@ pytest tests/test_scorecard.py -v
 
 ## File Locations
 
-- **Source Data**: `scorecard_main.xlsx` (project root)
+- **Source Data**: `data/scorecard/scorecard_main.xlsx` (`UN_194` sheet)
 - **Exports**: `data/exports/scorecard_*.csv`
 - **Validation Reports**: `data/exports/scorecard_url_validation.json`
 - **Diff Reports**: `data/exports/scorecard_diff_report.json`
 - **Cache**: `data/cache/scorecard_sources/*.json`
+
+<span id="__span-15-2"></span>
+<span id="__codelineno-15-2"></span>
+<span id="__span-15-3"></span>
+<span id="__codelineno-15-3"></span>
+<span id="__span-15-4"></span>
+<span id="__codelineno-15-4"></span>
+<span id="__span-15-5"></span>
+<span id="__codelineno-15-5"></span>
+<span id="__span-15-6"></span>
+<span id="__codelineno-15-6"></span>
+<span id="__span-15-7"></span>
+<span id="__codelineno-15-7"></span>
+<span id="__span-15-8"></span>
+<span id="__codelineno-15-8"></span>
 
 ## Testing
 
@@ -338,7 +346,7 @@ pytest tests/test_scorecard.py --cov=processors/scorecard --cov-report=html
 
 **Problem**: `ValueError: Worksheet named 'X' not found`
 
-**Solution**: The scorecard file has multiple sheets. The loader expects the **UN_194** sheet by default (as of 2026-01-24). If you see this error:
+**Solution**: The loader expects the **UN_194** sheet by default (as of 2026-01-24). If you see this error:
 
 1. Check that `scorecard_main.xlsx` contains a sheet named "UN_194"
 2. Verify the sheet has 194 rows (countries) with all indicator columns
@@ -348,6 +356,9 @@ pytest tests/test_scorecard.py --cov=processors/scorecard --cov-report=html
    ```
 
 **Historical Note**: Prior to 2026-01-24, the code expected a sheet named "Sheet1". This was updated to use the properly named "UN_194" sheet for clarity.
+
+<span id="__span-17-4"></span>
+<span id="__codelineno-17-4"></span>
 
 ### Country Not Found
 
@@ -374,6 +385,13 @@ print(countries)  # List all scorecard countries
 
 **Solution**: Check for empty cells in `scorecard_main.xlsx`. Empty values are skipped.
 
+<span id="__span-18-1"></span>
+<span id="__codelineno-18-1"></span>
+<span id="__span-18-2"></span>
+<span id="__codelineno-18-2"></span>
+<span id="__span-18-3"></span>
+<span id="__codelineno-18-3"></span>
+
 ### Validation Timeouts
 
 **Problem**: URL validation takes too long
@@ -390,9 +408,7 @@ report = validate_all_urls(max_workers=5)  # Slower but more reliable
 
 1. **Auto-update from sources**: Automatically scrape monitored sources and update scorecard
 1. **Version tracking**: Track scorecard changes over time
-1. **API endpoint**: Serve scorecard data via REST API for website
-1. **Visualization**: Generate charts/maps from scorecard data
-1. **Comparison mode**: Compare countries side-by-side
+The self-hosted [API](../api/index.md), [browser charts](../scorecard/visualization.md) and [country comparison](../scorecard/explorer.md) are available. The website reads a published visualization snapshot separately from local API inputs.
 1. **Timeline view**: Show indicator changes over time per country
 
 ## Related Documentation

@@ -36,8 +36,6 @@ The planned global analysis will proceed in batches, with country coverage and e
 
 **Next investigation:** maintain dated evidence, examine coverage gaps and interpretations, and develop the index's usefulness across document sources. Source maintenance will pair availability checks with review of legal meaning and interpretation.
 
-**What enables it:** time for source maintenance, methodological review, domain interpretation and reproducible processing. The [software roadmap](../ROADMAP.md) records technical work separately from the research questions.
-
 [Project contributions](../website/projects/littlerainbowrights/index.md#methodological-contributions) · [Explore evidence](../explore/index.md)
 
 ## Canadian Projects & Environmental Oversight
@@ -57,11 +55,9 @@ The inquiry asks:
 
 **Intended outputs:** documented methods, source-linked timelines, comparisons and visualizations.
 
-**What enables it:** source access, appropriate legal and policy interpretation, research time and careful treatment of rights and affected communities.
-
 ## Research Provenance & Institutional Continuity
 
-**Proposed · Insight Grant direction**
+**Proposed research**
 
 The proposed *AI-Assisted Research Provenance, Institutional Continuation & Public Accountability* track examines how contributions, methods and knowledge persist across grants, institutions, people and outputs.
 
@@ -72,13 +68,11 @@ Its questions include:
 - Which onboarding, handoff and offboarding practices help research continue?
 - How do institutional power and access shape the futures available to contributors?
 
-**Next investigation:** define case-study boundaries, evidence and attribution practices, then test a combined computational, qualitative and comparative approach. AI-assisted classification, entity resolution or event identification would require human verification.
+**Next investigation:** define case-study boundaries, evidence and attribution practices, then test a combined computational, qualitative and comparative approach. The approach combines AI-assisted classification, entity resolution or event identification with examination of the underlying records.
 
 **Intended outputs:** a validated methodology, research-continuity guidance and reproducible workflow components.
 
 The connection to [**Viability.^.**](https://isotopicity.com/) concerns how continuity arrangements expand or restrict the possibilities available to research and its contributors.
-
-**What enables it:** institutional arrangements, funding, research capacity and appropriate terms for any participant research.
 
 ## Programme progress and software history
 

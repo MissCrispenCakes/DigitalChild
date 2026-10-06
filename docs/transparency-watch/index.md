@@ -49,7 +49,7 @@ Are the organisations behind global digital-rights data adopting **primary-sourc
 
   <p id="tw-count" class="sc-count" role="status" aria-live="polite"></p>
 
-  <h2>Adoption timeline</h2>
+  <h2 id="adoption-timeline">First archived appearances</h2>
   <div id="tw-timeline"></div>
 
   <h2>By source</h2>

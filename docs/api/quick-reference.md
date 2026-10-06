@@ -359,4 +359,4 @@ pytest tests/api/ -v
 
 ---
 
-**Last updated:** June 2026 · 14 endpoints · version history in the [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md)
+**Last updated:** June 2026 · 12 endpoints · version history in the [Changelog](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CHANGELOG.md)

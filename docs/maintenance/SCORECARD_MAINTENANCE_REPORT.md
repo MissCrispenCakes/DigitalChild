@@ -7,6 +7,12 @@
 
 ---
 
+## Reading this January 2026 record
+
+This automated report used years found in assessment text to flag entries for review. A law's enactment date does not establish that an assessment is out of date. The reported total of 339 and the age-distribution counts (50 in total) also cover different amounts of detail: the diff report includes at most 50 example entries. The listed batches cannot establish the number of unresolved assessments.
+
+The schedules and source-status observations below belong to the January run. Use the [update guide](SCORECARD_UPDATE_GUIDE.md) to check an assessment against its sources and record the review date.
+
 ## Executive Summary
 
 The scorecard analysis identified 3 key maintenance priorities:

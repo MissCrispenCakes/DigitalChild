@@ -208,13 +208,13 @@ ______________________________________________________________________
 1. **AI_Policy_Status** - National AI policy/strategy status
 1. **Data_Protection_Law** - Data protection legislation status
 1. **LGBTQ_Legal_Status** - Legal status of LGBTQ+ rights
-1. **Child_Online_Protection** - Child protection laws and policies
-1. **SIM_Biometric** - SIM card registration requirements
-1. **Encryption_Backdoors** - Government encryption/backdoor requirements
-1. **Promotion_Propaganda** - LGBTQ+ promotion/propaganda laws
+1. **COP_Strategy** - Child online protection strategy
+1. **SIM_Biometric_ID_Linkage** - SIM card registration requirements
+1. **Children_Data_Safeguards** - Child-specific privacy and data safeguards
+1. **Promotion_Propaganda_Offences** - LGBTQ+ promotion/propaganda laws
 1. **DPA_Independence** - Data Protection Authority independence
-1. **Content_Moderation** - Content moderation legal framework
-1. **Age_Verification** - Age verification requirements
+1. **SOGI_Sensitive_Data** - Sensitive-data protection for sexual orientation and gender identity
+1. **DPIA_Required_High_Risk_AI** - Data-protection impact assessments for high-risk AI
 
 **Notes:**
 

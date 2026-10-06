@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or data in your research, please cite it as below."
 type: software
 title: "DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection"
-abstract: "A Python data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection. Includes a REST API with 14 production endpoints, a comprehensive scorecard system tracking 10 indicators across 194 countries with 2,543 validated source URLs, complete Docker deployment infrastructure, an interactive web visualization layer (scorecard choropleth map, indicator and regional charts, and a country data explorer), and a Source Transparency Watch monitoring peer organisations' open-data adoption."
+abstract: "A Python data pipeline for scraping, processing, and analyzing human rights documents, policies, and reports with focus on child and LGBTQ+ digital protection. Includes a REST API with 12 GET routes, a scorecard system tracking 10 indicators across 194 countries with source-linked assessments, complete Docker deployment infrastructure, an interactive web visualization layer (scorecard choropleth map, indicator and regional charts, and a country data explorer), and a Source Transparency Watch monitoring peer organisations' open-data adoption."
 authors:
   - family-names: "Vollmer"
     given-names: "S.C."
@@ -31,7 +31,7 @@ license: MIT
 license-url: "https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/LICENSE"
 version: "2.1.0"
 date-released: "2026-06-26"
-doi: "10.5281/zenodo.18318098"
+doi: "10.5281/zenodo.20950631"
 
 # For the data specifically
 references:
@@ -63,11 +63,11 @@ related-publications:
     title: "Global perspectives of Africa: Harnessing the universal periodic review to process sexual and gender-based violence in SADC member states"
     authors:
       - family-names: "Vollmer"
-        given-names: "S.C."
-        orcid: "https://orcid.org/0000-0002-3359-2810"
-      - family-names: "Vollmer"
         given-names: "D.T."
         orcid: "https://orcid.org/0000-0002-5035-3395"
+      - family-names: "Vollmer"
+        given-names: "S.C."
+        orcid: "https://orcid.org/0000-0002-3359-2810"
     year: 2022
     journal: "Stellenbosch Law Review"
     volume: 33
@@ -108,6 +108,9 @@ related-publications:
       - child protection
 
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18318098"
+    description: "Software series DOI (all versions)"
   - type: url
     value: "https://github.com/MissCrispenCakes/DigitalChild"
     description: "GitHub Repository"
@@ -129,6 +132,8 @@ preferred-citation:
     - family-names: "Vollmer"
       given-names: "D.T."
       orcid: "https://orcid.org/0000-0002-5035-3395"
-  year: 2025
+  year: 2026
+  version: "2.1.0"
+  doi: "10.5281/zenodo.20950631"
   url: "https://github.com/MissCrispenCakes/DigitalChild"
   notes: "Available at: https://grimdata.org"

@@ -32,7 +32,7 @@ Complete guide for deploying DigitalChild API to production.
 
 ## Environment Setup
 
-###1. Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/MissCrispenCakes/DigitalChild.git
@@ -251,7 +251,7 @@ upstream digitalchild_api {
 
 server {
     listen 80;
-    server_name api.grimdata.org;
+    server_name api.example.org;
 
     # Let's Encrypt verification
     location /.well-known/acme-challenge/ {
@@ -266,11 +266,11 @@ server {
 
 server {
     listen 443 ssl http2;
-    server_name api.grimdata.org;
+    server_name api.example.org;
 
     # SSL certificates (managed by Certbot)
-    ssl_certificate /etc/letsencrypt/live/api.grimdata.org/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/api.grimdata.org/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/api.example.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/api.example.org/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
@@ -319,7 +319,7 @@ sudo systemctl reload nginx
 sudo apt-get install certbot python3-certbot-nginx
 
 # Obtain certificate
-sudo certbot --nginx -d api.grimdata.org
+sudo certbot --nginx -d api.example.org
 
 # Test auto-renewal
 sudo certbot renew --dry-run
@@ -563,7 +563,7 @@ cp .env .env.backup_$(date +%Y%m%d)
 
 ```bash
 # 1. Pull latest code
-git pull origin main
+git pull origin basecamp
 
 # 2. Activate virtual environment
 source .LittleRainbow/bin/activate
@@ -578,7 +578,7 @@ pytest tests/api/ -v
 sudo systemctl restart digitalchild-api
 
 # 6. Check health
-curl https://api.grimdata.org/api/health
+curl https://api.example.org/api/health
 ```
 
 ## Support

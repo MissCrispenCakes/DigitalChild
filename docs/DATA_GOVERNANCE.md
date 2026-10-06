@@ -63,7 +63,7 @@ Human-rights documents may identify survivors, defenders or other individuals. S
 
 Use the detail needed to answer the research question. Consider whether an aggregate, a source reference or restricted access would serve it better than publishing an identifiable extract. Pay particular attention to outing, selective enforcement and misclassification.
 
-GRIMdata's public website accepts no participant submissions. Any future work with participants will need a clear research scope, appropriate ethics review and understandable choices about recording, attribution, reuse and withdrawal.
+The public website provides research and exploration tools; it accepts no participant submissions.
 
 ## Storage and access {#storage-and-access}
 

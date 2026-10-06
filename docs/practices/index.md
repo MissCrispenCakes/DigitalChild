@@ -28,6 +28,6 @@ Scores are screening signals. Inspect written justifications, original sources, 
 
 The [software citation](../docs/technical-overview.md#citation) and [project publications](../website/projects/index.md#publications) identify the research record. DigitalChild code uses MIT; its project-authored data and documentation use CC BY 4.0 where specified. Original third-party documents retain their own terms. See [data governance](../DATA_GOVERNANCE.md).
 
-## Public contribution records {#contributing-and-future-participation}
+## Repository records {#contributing-and-future-participation}
 
 Existing [repository terms](../CONTRIBUTING.md) describe attribution and licensing. Contributions to a versioned repository become part of its public history; earlier versions and downloaded copies may remain after a correction. Public issue records can expose personal or confidential information, so they are unsuitable for sensitive material.

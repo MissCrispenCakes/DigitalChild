@@ -1,105 +1,91 @@
-# LittleRainbowRights
+# LittleRainbow<wbr>Rights
 
 [🌈 Visit LittleRainbowRights.com](https://littlerainbowrights.com){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:octicons-arrow-left-24: Research tracks](../../../projects/index.md){ .md-button }
 
+<span id="__span-0-1"></span>
+<span id="__codelineno-0-1"></span>
+<span id="__span-0-2"></span>
+<span id="__codelineno-0-2"></span>
+<span id="__span-0-3"></span>
+<span id="__codelineno-0-3"></span>
+
 ## Child and LGBTQ+ Digital Rights Research
 
-**Analyzing digital protections for vulnerable populations through human rights document analysis**
+How do digital-governance policies protect children and LGBTQ+ people—and what happens when protection depends on identifying them?
 
-!!! example "Use the self-hosted REST API"
-    [Install and start the API locally](../../../api/quickstart.md), then query your dataset:
+LittleRainbowRights examines the intersection of child rights, LGBTQ+ rights and advanced digital technologies. Its research connects legal and policy documents to country assessments, an index and tools for examining the evidence.
 
-    ```python
-    import requests
-    response = requests.get("http://localhost:5000/api/scorecard/Kenya")
-    data = response.json()["data"]
-    ```
-
-    [:octicons-rocket-24: API Documentation](../../../api/reference.md){ .md-button .md-button--primary }
-
-______________________________________________________________________
+[Explore country assessments](../../../scorecard/explorer.md){ .md-button .md-button--primary }
+[Maps & charts](../../../scorecard/visualization.md){ .md-button }
+[Download the data](../../../scorecard/data-access.md#published-snapshot-downloads){ .md-button }
 
 ## Methodological contributions
 
-LittleRainbowRights broadened the earlier inquiry across countries and multiple document sources. Working through that material prompted the development of an index: a way to keep a dated account of documented conditions, with the sources and gaps available to examine.
+LittleRainbowRights expanded the earlier SGBV-UPR inquiry across countries and multiple document sources. The index emerged through that work: a way to retain an account of documented conditions as policies, sources and terminology change.
 
-The public tools let readers follow those sources, compare assessments and see where documentation is missing. Maintaining that global coverage remains a substantial part of the research.
+The framework brings child and LGBTQ+ rights into the same comparison. It also examines relationships between indicators: a biometric identification requirement has different consequences where LGBTQ+ identities or expression are criminalized.
 
-[Research history](../../../research-history/index.md) · [Next investigations](../../../research-directions/index.md#littlerainbowrights)
+The DigitalChild pipeline supports retrieval, text extraction, versioned tagging, comparison and country-level enrichment. Maintaining worldwide coverage involves both computational processing and legal examination of what the documents mean.
+
+[Research history](../../../research-history/index.md) · [Research Context](../../../RESEARCH_CONTEXT.md#mechanism-based-risk-analysis-when-safety-becomes-identity-enforcement)
 
 ## About This Project
 
-LittleRainbowRights is a focused research initiative within the broader GRIMdata framework, specifically examining:
+The inquiry examines:
 
-- **Child digital rights** - Online safety, age verification, data protection for minors
-- **LGBTQ+ digital rights** - Legal protections, online discrimination, privacy concerns
-- **Intersectional analysis** - How policies affect vulnerable youth who are also LGBTQ+
+- **Children's digital rights:** online protection, identity requirements and child-specific data safeguards.
+- **LGBTQ+ digital rights:** legal status, expression, privacy and the treatment of sensitive data.
+- **Their intersection:** how governance mechanisms affect LGBTQ+ children and young people.
 
-This project uses the DigitalChild pipeline to retrieve and process human-rights documents. Its scorecard compares selected legal and policy frameworks, with written assessments and sources for further examination.
+The 2025 conference contribution, *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa*, presented the research at the Second International Conference on Children's Rights in Stellenbosch.
 
-## Published assessment scope {#key-findings}
+## Findings from the 2025 research {#key-findings}
+
+Presented at the Second International Conference on Children's Rights in September 2025, these findings describe the policies and source URLs examined for that research. They also form part of the revised, unpublished journal manuscript.
+
+- **Critical gaps identified:** Many countries lack specific child online protection frameworks.
+- **Best practices:** Leading countries demonstrate comprehensive approaches.
+
+The research recorded **2,543 source URLs**. The regional findings below retain that 2025 research context.
+
+## Published assessment scope
 
 <div class="grid cards" markdown>
 
--   :material-earth:{ .lg .middle } **194 Countries Tracked**
+-   :material-earth:{ .lg .middle } **194 countries**
 
-    ---
+    Countries represented in the published scorecard snapshot.
 
-    Country coverage in the published scorecard; documentation completeness varies
+-   :material-chart-line:{ .lg .middle } **10 indicators**
 
--   :material-chart-line:{ .lg .middle } **10 Indicators**
+    Data protection, child rights, LGBTQ+ rights, AI governance and digital identification.
 
-    ---
+-   :material-file-document-check:{ .lg .middle } **132 fully documented assessments**
 
-    AI Policy, Data Protection, LGBTQ+ Legal Status, Child Protection, and more
+    Countries with written justifications for all ten indicators in this snapshot.
 
--   :material-alert:{ .lg .middle } **Critical Gaps Identified**
+-   :material-calendar:{ .lg .middle } **26 June 2026**
 
-    ---
-
-    Many countries lack specific child online protection frameworks
-
--   :material-shield-check:{ .lg .middle } **Best Practices**
-
-    ---
-
-    Leading countries demonstrate comprehensive approaches
+    Snapshot generated; source-verification stamp: 9 September 2025.
 
 </div>
 
+<span id="data-protection-privacy"></span>
+<span id="child-protection"></span>
+<span id="lgbtq-rights"></span>
+<span id="emerging-technologies"></span>
+<span id="digital-identification"></span>
+
 ## Scorecard Overview
 
-The LittleRainbowRights scorecard tracks these key indicators:
+The indicators cover data protection law, DPA independence, children's data safeguards, sensitive SOGI data, child online protection, LGBTQ+ legal status, promotion/propaganda offences, AI policy, high-risk-AI impact assessments and biometric SIM linkage.
 
-### Data Protection & Privacy
+Each assessment pairs a three-point score with its written interpretation and source links. The country explorer makes documentation gaps visible alongside those scores.
 
-1. **Data Protection Law** - Comprehensive data protection legislation governing personal data processing
-2. **DPA Independence** - Data Protection Authority operates independently from executive control
-3. **Children's Data Safeguards** - Child-specific data governance safeguards in binding law (not general child welfare)
-4. **SOGI Sensitive Data** - Sexual orientation and gender identity recognized as sensitive personal data
+[Indicator definitions and scoring rules](../../../scorecard/design.md#the-10-indicators) · [Scorecard overview](../../../scorecard/index.md)
 
-### Child Protection
-
-5. **Child Online Protection Strategy** - National COP framework addressing online harms; may include parental tools/rights
-
-### LGBTQ+ Rights
-
-6. **LGBTQ+ Legal Status** - Legal recognition and protection of LGBTQ+ individuals
-7. **LGBTQ+ Promotion/Propaganda Offences** - Laws restricting discussion or advocacy of LGBTQ+ identities
-
-### Emerging Technologies
-
-8. **AI Policy Status** - National AI strategy or framework adoption
-9. **DPIA Required for High-Risk AI** - Data Protection Impact Assessments required for high-risk AI systems
-
-### Digital Identification
-
-10. **SIM Card Biometric ID Linkage** - Requirement to provide biometric data when registering SIM cards
-
-[View Scorecard](../../../scorecard/index.md){ .md-button .md-button--primary }
-
-## Regional Analysis
+## Regional Analysis — 2025 {#regional-analysis}
 
 ### Africa
 
@@ -131,133 +117,152 @@ The LittleRainbowRights scorecard tracks these key indicators:
 - **Challenges:** LGBTQ+ criminalization, limited digital rights frameworks
 - **Note:** Significant human rights concerns in many countries
 
+[Explore country assessments](../../../scorecard/explorer.md) · [Regional charts](../../../scorecard/visualization.md)
+
 ## Data Sources
 
-All data sourced from authoritative international organizations:
+Country assessments draw on national laws and policy documents, international sources and human-rights organizations, including UNESCO, UNCTAD, ILGA World, UNICEF, ITU, Privacy International and Human Rights Watch. The pipeline's document sources also include African Union and UN human-rights bodies.
 
-- **UNESCO** - AI policy observatory
-- **UNCTAD** - Data protection legislation tracking
-- **ILGA World** - LGBTQ+ legal status (State-Sponsored Homophobia report)
-- **UNICEF** - Child protection measures
-- **ITU** - Telecom and internet regulations
-- **Privacy International** - Surveillance and privacy tracking
-- **Human Rights Watch** - Human rights monitoring
-
-The broader source register records **2,543 source URLs**. Country assessments link to the evidence and dates used in the analysis.
+The canonical workbook exports **2,581 source links** across its country and indicator fields. The [explorer](../../../scorecard/explorer.md) links to the evidence used in each published assessment; [Source Transparency Watch](../../../transparency-watch/index.md) examines archived access to documents and data from source organizations.
 
 ## Key Publications
 
-!!! info "Research Output"
-    The 2025 conference research is recorded as *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa*. [Research record](https://doi.org/10.5281/zenodo.18318098).
+**Conference contribution:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025.
+
+**Journal manuscript:** a revised, unpublished draft develops the work further for a planned *Journal of Responsible Computing* paper.
+
+[Conference slides](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/presentations/QUEERAI.pdf) accompany the 2025 contribution.
+
+**Software:** [DigitalChild v2.1.0](https://doi.org/10.5281/zenodo.20950631) archives the pipeline and API. The [software series DOI](https://doi.org/10.5281/zenodo.18318098) covers its releases.
 
 ## How to Use This Data
 
+<span id="__span-1-1"></span>
+<span id="__codelineno-1-1"></span>
+<span id="__span-1-2"></span>
+<span id="__codelineno-1-2"></span>
+<span id="__span-1-3"></span>
+<span id="__codelineno-1-3"></span>
+<span id="__span-1-4"></span>
+<span id="__codelineno-1-4"></span>
+<span id="__span-1-5"></span>
+<span id="__codelineno-1-5"></span>
+<span id="__span-1-6"></span>
+<span id="__codelineno-1-6"></span>
+<span id="__span-1-7"></span>
+<span id="__codelineno-1-7"></span>
+<span id="__span-1-8"></span>
+<span id="__codelineno-1-8"></span>
+<span id="__span-1-9"></span>
+<span id="__codelineno-1-9"></span>
+<span id="__span-1-10"></span>
+<span id="__codelineno-1-10"></span>
+<span id="__span-1-11"></span>
+<span id="__codelineno-1-11"></span>
+<span id="__span-1-12"></span>
+<span id="__codelineno-1-12"></span>
+<span id="__span-1-13"></span>
+<span id="__codelineno-1-13"></span>
+<span id="__span-1-14"></span>
+<span id="__codelineno-1-14"></span>
+<span id="__span-1-15"></span>
+<span id="__codelineno-1-15"></span>
+<span id="__span-1-16"></span>
+<span id="__codelineno-1-16"></span>
+<span id="__span-1-17"></span>
+<span id="__codelineno-1-17"></span>
+<span id="__span-1-18"></span>
+<span id="__codelineno-1-18"></span>
+<span id="__span-2-1"></span>
+<span id="__codelineno-2-1"></span>
+<span id="__span-2-2"></span>
+<span id="__codelineno-2-2"></span>
+<span id="__span-2-3"></span>
+<span id="__codelineno-2-3"></span>
+<span id="__span-2-4"></span>
+<span id="__codelineno-2-4"></span>
+<span id="__span-2-5"></span>
+<span id="__codelineno-2-5"></span>
+<span id="__span-2-6"></span>
+<span id="__codelineno-2-6"></span>
+<span id="__span-2-7"></span>
+<span id="__codelineno-2-7"></span>
+<span id="__span-2-8"></span>
+<span id="__codelineno-2-8"></span>
+<span id="__span-2-9"></span>
+<span id="__codelineno-2-9"></span>
+<span id="__span-2-10"></span>
+<span id="__codelineno-2-10"></span>
+<span id="__span-2-11"></span>
+<span id="__codelineno-2-11"></span>
+<span id="__span-2-12"></span>
+<span id="__codelineno-2-12"></span>
+<span id="__span-2-13"></span>
+<span id="__codelineno-2-13"></span>
+<span id="__span-2-14"></span>
+<span id="__codelineno-2-14"></span>
+<span id="__span-2-15"></span>
+<span id="__codelineno-2-15"></span>
+<span id="__span-2-16"></span>
+<span id="__codelineno-2-16"></span>
+<span id="__span-2-17"></span>
+<span id="__codelineno-2-17"></span>
+
 ### For Researchers
 
-**Via REST API (Recommended):**
-
-```python
-import requests
-
-# Get all scorecard data
-response = requests.get("http://localhost:5000/api/scorecard")
-countries = response.json()["data"]["items"]
-
-# Filter for specific country
-response = requests.get("http://localhost:5000/api/scorecard/Kenya")
-kenya_data = response.json()["data"]
-print(kenya_data["indicators"])
-
-# Get documents filtered by tags
-response = requests.get("http://localhost:5000/api/documents?tags=ChildRights,LGBTQ")
-documents = response.json()["data"]["items"]
-
-# Filter by region
-response = requests.get("http://localhost:5000/api/scorecard?region=Africa&per_page=50")
-african_countries = response.json()["data"]["items"]
-```
-
-See [API Documentation](../../../api/reference.md) for all endpoints and filtering options.
-
-**Via Direct File Access:**
-
-```python
-# Load scorecard data
-import pandas as pd
-
-df = pd.read_excel('scorecard_main.xlsx', sheet_name='Indicators')
-
-# Filter for child protection analysis
-child_protection = df[['Country', 'Region', 'Child_Online_Protection', 'Age_Verification']]
-
-# Analyze LGBTQ+ protections
-lgbtq_analysis = df[['Country', 'LGBTQ_Legal_Status', 'Promotion_Propaganda']]
-
-# Regional aggregations
-regional_summary = df.groupby('Region').agg({
-    'AI_Policy_Status': lambda x: (x != 'No Policy').sum(),
-    'Data_Protection_Law': lambda x: (x == 'Comprehensive Law').sum(),
-    'Child_Online_Protection': lambda x: (x == 'Comprehensive Framework').sum()
-})
-```
-
-[Installation Guide](../../getting-started/installation.md) | [Quick Start](../../getting-started/quickstart.md)
+Start with the [published JSON or CSV snapshot](../../../scorecard/data-access.md#published-snapshot-downloads), country assessments and [methodology](../../../scorecard/design.md). For local processing, follow the [pipeline tutorial](../../getting-started/quickstart.md) or [self-hosted API quick start](../../../api/quickstart.md).
 
 ### For Advocates
 
-Use the data to:
-
-- **Build evidence-based campaigns** - Cite specific country policies and gaps
-- **Track policy changes** - Monitor improvements or regressions over time
-- **Compare approaches** - Identify best practices from leading countries
-- **Support litigation** - Evidence for human rights cases
+Find relevant policies and source documents, compare provisions and examine the mechanisms behind an apparent protection or restriction.
 
 ### For Policy Makers
 
-Insights for:
-
-- **Benchmarking** - Compare your country's policies against regional peers
-- **Policy design** - Learn from comprehensive frameworks in other countries
-- **Gap analysis** - Identify missing protections in your jurisdiction
-- **International cooperation** - Coordinate with countries facing similar challenges
+Compare selected legal frameworks and investigate how their access, identity and data requirements interact.
 
 ## Interactive Tools
 
 <div class="grid cards" markdown>
 
--   :material-chart-box:{ .lg .middle } **Scorecard Visualization**
+-   ### Maps & charts
 
-    ---
+    Examine indicator distributions and regional comparisons.
 
-    Interactive charts showing indicators across countries
+    [Open charts →](../../../scorecard/visualization.md)
 
-    [:octicons-arrow-right-24: View Scorecard](../../../scorecard/index.md)
+-   ### Country explorer
 
--   :material-table-search:{ .lg .middle } **Data Explorer**
+    Filter, sort and open source-linked assessments.
 
-    ---
+    [Explore countries →](../../../scorecard/explorer.md)
 
-    Filter and search through all indicators
+-   ### Download data
 
-    [:octicons-arrow-right-24: Search Data](../../../scorecard/explorer.md)
+    Get the published snapshot as JSON or CSV.
 
--   :material-download:{ .lg .middle } **Export Data**
+    [Get data →](../../../scorecard/data-access.md#published-snapshot-downloads)
 
-    ---
+-   ### Run DigitalChild
 
-    Download CSV files for your own analysis
+    Retrieve and process documents on your own machine.
 
-    [:octicons-arrow-right-24: Get Data](../../../guides/RUNBOOK.md)
-
--   :material-code-tags:{ .lg .middle } **Use the Pipeline**
-
-    ---
-
-    Run the analysis yourself on your own machine
-
-    [:octicons-arrow-right-24: Quick Start](../../getting-started/quickstart.md)
+    [First pipeline run →](../../getting-started/quickstart.md)
 
 </div>
+
+## Citing This Work
+
+Cite the conference contribution for the 2025 research presentation, and [DigitalChild's software record](../../../docs/technical-overview.md#citation) for the implementation.
+
+For the public scorecard, identify **LittleRainbowRights**, the snapshot generation date (**26 June 2026**), your access date and the assessments used. Its source-verification stamp is **9 September 2025**; individual sources retain their own dates.
+
+## Data Governance
+
+The inquiry considers how information about people can become more exposing when linked, indexed or made searchable. [Data Governance](../../../DATA_GOVERNANCE.md) develops that concern; [Site practices](../../../practices/index.md) describes browsing and optional external charts.
+
+## Related Projects
+
+[GRIMdata](../../../index.md) · [SGBV-UPR](../sgbv/index.md) · [Next investigations](../../../research-directions/index.md#littlerainbowrights) · [DigitalChild documentation](../../../docs/index.md)
 
 <span id="__span-3-1"></span>
 <span id="__codelineno-3-1"></span>
@@ -275,31 +280,6 @@ Insights for:
 <span id="__codelineno-3-7"></span>
 <span id="__span-3-8"></span>
 <span id="__codelineno-3-8"></span>
-
-## Citing This Work
-
-**Conference research:** Vollmer, D. T., & Vollmer, S. C. (2025). *Queer AI for the digital child: Examining the response to advanced digital technologies on the human rights of LGBTQ+ children in Africa.* Second International Conference on Children's Rights, Stellenbosch, September 2025. [DOI: 10.5281/zenodo.18318098](https://doi.org/10.5281/zenodo.18318098).
-
-**Public scorecard snapshot:** state the snapshot generation date (26 June 2026), access date and the particular source-linked assessments used. Include the source-verification date (9 September 2025) when discussing evidence freshness.
-
-**Software:** use the [software citation and technical overview](../../../docs/technical-overview.md#citation) and [repository citation record](https://github.com/MissCrispenCakes/DigitalChild/blob/basecamp/CITATION.cff).
-
 <span id="contributing"></span>
-
-## Data Governance
-
-Published assessments represent selected aspects of a situation. Check source dates and written justifications, distinguish missing documentation from a finding, and consider how linked information can increase exposure for those described.
-
-[Data Governance](../../../DATA_GOVERNANCE.md) · [Research Context](../../../RESEARCH_CONTEXT.md) · [Site practices](../../../practices/index.md)
-
 <span id="support-this-work"></span>
 <span id="contact"></span>
-
-## Related Projects
-
-- [GRIMdata](../../../index.md) — umbrella research programme.
-- [SGBV-UPR](../sgbv/index.md) — published legal and computational research with planned renewal.
-- [Research directions](../../../research-directions/index.md) — intended investigations across the programme.
-- [DigitalChild implementation](../../../docs/technical-overview.md) — public software, methods and instructions.
-
-LittleRainbowRights is part of **Global Rights Index Monitoring**.

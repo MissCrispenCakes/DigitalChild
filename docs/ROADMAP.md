@@ -10,6 +10,8 @@ DigitalChild provides the document pipeline and LittleRainbowRights research too
 
 **Deferred or prospective:** NLP extraction, expanded document-source and language coverage, additional analytics and deployment automation. The current browser tools use a static interface; a framework-based dashboard remains deferred.
 
+The current API defines **12 GET routes**. The historical phase notes below retain their original endpoint and test counts; use the [endpoint reference](api/reference.md) for the current interface.
+
 ## Reading the development record
 
 The phase record below traces DigitalChild development through June 2026, including completed milestones, test results and outstanding work. The API is available for self-hosting.
@@ -169,7 +171,7 @@ ______________________________________________________________________
 - [x] Scorecard indicator displays ✅ **LIVE**
 - [x] Interactive filters (region, indicator, score, search) ✅ **LIVE** (Data Explorer)
 - [x] Export/download access for datasets ✅ (CSV exports + published static JSON)
-- [ ] Mobile-responsive design *(charts responsive; full audit pending)*
+- [ ] Further mobile dashboard work beyond the responsive static site
 - [ ] API integration with authentication
 - [ ] Real-time data updates
 
@@ -263,7 +265,7 @@ ______________________________________________________________________
 
 - Review and maintain the shipped static exploration tools; a framework dashboard remains deferred
 - 🎯 Source reliability scoring
-- 🎯 Continue scorecard maintenance (Phases 2-4: 41 remaining stale entries)
+- 🎯 Continue scorecard maintenance through country-level source review
 - 🎯 NLP-based recommendations extraction (advanced features)
 
 ______________________________________________________________________

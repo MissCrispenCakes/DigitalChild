@@ -20,7 +20,7 @@ ______________________________________________________________________
 
 - All documents are normalized into text.
 - Metadata field `"doc_type"` should capture type (if identified).
-- Future processors may add automatic classification rules.
+- The current rule-based classifier identifies document types; unmatched cases retain their available metadata.
 
 ______________________________________________________________________
 

@@ -356,7 +356,7 @@ ORCID: 0000-0002-3359-2810
 
 ### Are there published papers using this?
 
-Check the project website at [grimdata.org](https://grimdata.org) for latest publications.
+The [SGBV-UPR article](website/projects/sgbv/index.md#publications), [LittleRainbowRights conference contribution](website/projects/littlerainbowrights/index.md#key-publications) and [DigitalChild software release](docs/technical-overview.md#citation) are described separately.
 
 ### Can I use this for my thesis/dissertation?
 
@@ -368,13 +368,7 @@ Yes. Cite the relevant software or research record and identify the output versi
 
 ### What features are planned?
 
-See [ROADMAP.md](ROADMAP.md) for the full roadmap. Highlights:
-
-- Recommendations extraction (NLP-based)
-- Timeline visualizations
-- Comparison analytics
-- Interactive research dashboard
-- Global expansion (Europe, Asia, Americas)
+See the [software roadmap](ROADMAP.md) for implementation work and [Research directions](research-directions/index.md) for the programme's next investigations.
 
 ### When will the research dashboard be ready?
 

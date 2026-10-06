@@ -34,13 +34,7 @@ Interactive visualization of human rights indicators across 194 countries.
 
 ## Accessing Data
 
-### Via self-hosted REST API {#via-rest-api}
-
-Get scorecard data programmatically via the REST API — the copy-paste examples (health
-check, per-country, statistics, filtering) live in the API Quick Start:
-
-[:octicons-rocket-24: API Quick Start](../api/quickstart.md){ .md-button .md-button--primary }
-[:octicons-book-24: Full API Docs](../api/reference.md){ .md-button }
+<span id="via-rest-api"></span>
 
 ### Interactive Visualizations
 
@@ -94,7 +88,7 @@ Explore the scorecard interactively below. Charts are rendered in your browser f
 The scorecard tracks **10 indicators** spanning data protection, child online safety, LGBTQ+
 rights, AI policy, and digital identification. The full definition, sources, and per-category
 (0/1/2) rubric for every indicator live on the **[Scorecard Design & Methodology](design.md#the-10-indicators)**
-page — the single source of truth, so the numbers here and the definitions there can't drift apart.
+page.
 
 ## Composite Scores
 
@@ -122,17 +116,19 @@ In addition to the 10 individual indicators, the scorecard calculates composite 
 
 ### Data Completeness
 
-**Formula:** (Number of known indicators / 10) × 100
+**Formula:** (Indicators with written justifications / 10) × 100
 
 - **Maximum:** 100% (all 10 indicators have data)
 - **Minimum:** 0% (no indicator data available)
-- **Interpretation:** Percentage of metrics with verified data for the country
+- **Interpretation:** Percentage of indicators with written justifications in the published visualization snapshot
 
 Use the completeness measure to identify countries where more source research is needed before comparison.
 
 ## Exporting Data
 
 ### Via self-hosted REST API or CSV {#via-rest-api-or-csv}
+
+Start your own instance using the [API Quick Start](../api/quickstart.md). The API queries local pipeline inputs; the downloadable browser snapshot is a separate scored output.
 
 Access scorecard data programmatically (REST API) or as CSV exports — every method, with
 copy-paste examples in cURL / Python / R, is documented on the **[Data Access](data-access.md)** page.
@@ -145,12 +141,7 @@ Run the scorecard export workflow:
 python pipeline_runner.py --mode scorecard --scorecard-action export
 ```
 
-This generates:
-
-- `scorecard_summary.csv` - Countries × Indicators table
-- `scorecard_sources.csv` - All source URLs with validation status
-- `scorecard_by_indicator.csv` - Grouped by indicator
-- `scorecard_by_region.csv` - Regional aggregations
+The standard export generates `scorecard_summary.csv`, `scorecard_sources.csv` and `scorecard_indicator_counts.csv`. Regional and individual-indicator exports are [separate operations](data-access.md#generated-files).
 
 ### CSV Format
 
@@ -163,9 +154,9 @@ This generates:
 
 **scorecard_sources.csv:**
 
-| Country | Indicator | Value     | Source_URL  | Validated | Last_Checked |
-| ------- | --------- | --------- | ----------- | --------- | ------------ |
-| Kenya   | AI_Policy | Framework | https://... | ✅        | 2026-01-15   |
+| country | indicator | url |
+| --- | --- | --- |
+| Kenya | AI_Policy_Status | Source URL extracted from the workbook |
 
 ## Data Explorer
 
@@ -177,7 +168,7 @@ Want to filter by region or indicator, search for a country, sort the full table
 
 ### URL Validation
 
-All 2,543 source URLs are automatically validated:
+Run URL checks on the pipeline source register:
 
 ```bash
 python pipeline_runner.py --mode scorecard --scorecard-action validate
@@ -201,9 +192,9 @@ python processors/scorecard_diff.py
 Detects:
 
 - Content changes (via hashing)
-- Policy updates
+- Page changes requiring policy review
 - Broken links
-- New data available
+- Changed access or content requiring review
 
 ### Data Quality
 
@@ -237,25 +228,26 @@ Record the country, indicator, existing value, proposed correction and source. A
 
 ## Citing Scorecard Data
 
-When using scorecard data in publications:
+Identify *LittleRainbowRights Scorecard*, the snapshot generation date (**26 June 2026**), your access date and the particular assessments used. Record the **9 September 2025** source-verification stamp when discussing evidence freshness. Link to the [published downloads](data-access.md#published-snapshot-downloads) and relevant original sources.
 
-<div class="language-bibtex highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nc">@misc</span><span class="p">{</span><span class="nl">littlerainbowrights2025scorecard</span><span class="p">,</span>
-</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators}</span><span class="p">,</span>
-</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Vollmer, D.T. and Vollmer, S.C.}</span><span class="p">,</span>
-</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2025}</span><span class="p">,</span>
-</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{10.5281/zenodo.18318098}</span><span class="p">,</span>
-</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">  </span><span class="na">howpublished</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{\url{https://grimdata.org/scorecard/}}</span><span class="p">,</span>
-</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Licensed under CC BY 4.0. ORCID: 0000-0002-5035-3395 (D.T. Vollmer), 0000-0002-3359-2810 (S.C. Vollmer)}</span>
-</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="p">}</span>
-</span></code></pre></div>
+Cite [DigitalChild v2.1.0](https://doi.org/10.5281/zenodo.20950631) separately for the software.
 
-Or:
-
-> Vollmer, D.T., & Vollmer, S.C. (2025). *LittleRainbowRights Scorecard: Child and LGBTQ+ Digital Rights Indicators*.
-> DOI: 10.5281/zenodo.18318098. Available at: https://grimdata.org/scorecard/.
-> Licensed under CC BY 4.0.
-> ORCID: [0000-0002-5035-3395](https://orcid.org/0000-0002-5035-3395) (D.T. Vollmer), [0000-0002-3359-2810](https://orcid.org/0000-0002-3359-2810) (S.C. Vollmer)
-
+<span id="__span-4-1"></span>
+<span id="__codelineno-4-1"></span>
+<span id="__span-4-2"></span>
+<span id="__codelineno-4-2"></span>
+<span id="__span-4-3"></span>
+<span id="__codelineno-4-3"></span>
+<span id="__span-4-4"></span>
+<span id="__codelineno-4-4"></span>
+<span id="__span-4-5"></span>
+<span id="__codelineno-4-5"></span>
+<span id="__span-4-6"></span>
+<span id="__codelineno-4-6"></span>
+<span id="__span-4-7"></span>
+<span id="__codelineno-4-7"></span>
+<span id="__span-4-8"></span>
+<span id="__codelineno-4-8"></span>
 <span id="__span-5-1"></span>
 <span id="__codelineno-5-1"></span>
 <span id="__span-5-2"></span>
@@ -285,7 +277,7 @@ Planned features (see [Roadmap](../ROADMAP.md)):
 - [x] **Interactive choropleth map, indicator & regional charts** ✅ **LIVE** (Plotly.js, this page)
 - [x] **Country comparison tool** ✅ **LIVE** (radar comparison in the [Data Explorer](explorer.md))
 - [ ] Time-series tracking of policy changes
-- [x] **API for programmatic access** ✅ **COMPLETE** (14 endpoints implemented for self-hosting, see [API docs](../api/index.md))
+- [x] **API for programmatic access** ✅ **COMPLETE** (12 endpoints implemented for self-hosting, see [API docs](../api/index.md))
 - [ ] Real-time source monitoring alerts
 - [ ] Expanded indicators (15-20 total)
 - [ ] Sub-national data (states/provinces)
