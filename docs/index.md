@@ -1,6 +1,6 @@
 ---
 title: GRIMdata — Evidence, rights, and public accountability
-description: Research on rights, public decisions and research continuity. Explore published work, source-linked assessments, tools and methods.
+description: Research on rights, public decisions, and research continuity. Explore published work, source-linked assessments, tools and methods.
 hide:
   - navigation
   - toc
