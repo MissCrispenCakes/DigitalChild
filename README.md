@@ -15,7 +15,7 @@
 Scrape, process, tag, and analyze policy documents from international organizations. Track 10 human rights indicators across 194 countries. Support evidence-based advocacy and research.
 
 🌍 **Website:** [GRIMdata.org](https://grimdata.org) | [LittleRainbowRights.com](https://littlerainbowrights.com)
-📖 **Documentation:** [docs/](docs/index.md)
+📖 **Documentation:** [GRIMdata documentation](https://grimdata.org/docs/)
 💬 **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
 
 ______________________________________________________________________
@@ -45,7 +45,7 @@ ______________________________________________________________________
 
 ### 🔒 Security & Validation
 
-- **68 validator tests** - Comprehensive input validation
+- **Input validation** - Covered by the automated test suite
 - **Path traversal protection** - Prevent malicious file access
 - **URL validation** - Block javascript:, file:, and other dangerous patterns
 - **File size limits** - Protect against file bombs
@@ -53,15 +53,15 @@ ______________________________________________________________________
 ### 📈 Export & Research
 
 - **CSV exports** - Tags summaries, scorecard data, analysis results
-- **Metadata tracking** - Complete provenance for every document
+- **Metadata tracking** - Source URLs, dates and processing history
 - **Reproducible** - Version-controlled configs and timestamps
-- **REST API** - 14 production-ready endpoints for programmatic data access (Flask backend)
+- **REST API** - 12 GET routes for a self-hosted API for programmatic data access (Flask backend)
   - Documents: list with filters, pagination, sorting, detail view
   - Scorecard: countries summary, indicators, statistics
   - Tags: frequency analysis, version management, filtering
   - Timeline: temporal analysis of tags over time
   - Export: CSV downloads with SPDX license headers
-  - API key authentication, dynamic rate limiting (100-2000 req/hr)
+  - API key authentication, dynamic rate limiting (100/1000 req/hr by default)
   - Docker deployment with Redis caching and Nginx reverse proxy
 
 ______________________________________________________________________
@@ -80,7 +80,7 @@ Digital systems (AI, surveillance, biometric identification, identity verificati
 
 This pipeline tracks digital rights deployments across 194 countries, enabling evidence-based decisions BEFORE consequences become irreversible.
 
-**Research approach:** We document facts and analyze enforcement mechanisms without imposing Western-centric values. Our methodology recognizes cultural context while focusing on protecting vulnerable populations' autonomy. See [Data Governance](docs/DATA_GOVERNANCE.md#-cultural-sensitivity-research-stance) for our cultural sensitivity framework.
+**Research approach:** We document facts and analyze enforcement mechanisms without imposing Western-centric values. Our methodology recognizes cultural context while focusing on protecting vulnerable populations' autonomy. See [Data Governance](docs/DATA_GOVERNANCE.md#cultural-sensitivity-research-stance) for our cultural sensitivity framework.
 
 **Methodological foundation:** [Research Context](docs/RESEARCH_CONTEXT.md) | **Published work:** [Vollmer & Vollmer (2022)](https://doi.org/10.47348/SLR/2022/i1a1)
 
@@ -130,9 +130,9 @@ python pipeline_runner.py --mode scorecard --scorecard-action all
 
 Exports appear in `data/exports/` as CSV files ready for analysis.
 
-### 🆕 Using the API (Alternative to Pipeline)
+### Using the self-hosted API
 
-**Don't want to run the pipeline?** Access data via REST API:
+The API serves local pipeline data. Install and run your own instance:
 
 ```bash
 # Install API dependencies
@@ -185,7 +185,7 @@ with open("scorecard.csv", "wb") as f:
     f.write(response.content)
 ```
 
-**14 endpoints available:**
+**12 GET routes available:**
 
 - **Documents:** list, filter, detail (with pagination and sorting)
 - **Scorecard:** summary, country detail, statistics
@@ -206,47 +206,15 @@ ______________________________________________________________________
 
 ## 📋 Project Status
 
-**Phase 1-2 Complete:**
+DigitalChild provides the LittleRainbowRights document pipeline, scorecard, self-hosted API, interactive country explorer, maps and charts, and Source Transparency Watch.
 
-- ✅ Core pipeline (scraping, processing, tagging) - Multiple sources: 6 automated scrapers + direct URL tracking
-- ✅ Scorecard system - 194 countries, 10 indicators, 2,543 source URLs tracked
-- ✅ Validation & security framework - 170 tests passing (68 validator tests)
-- ✅ Recommendations extraction system - Regex-based with versioning and history tracking
-- ✅ Timeline exports - Global, by-country, and by-region analysis over time
-- ✅ Comparison analytics - Compare tags and recommendations across versions
+GRIMdata also presents the published SGBV-UPR research and its planned renewal, the planned Canadian Projects & Environmental Oversight stream, and proposed Research Provenance & Institutional Continuity research.
 
-**Phase 3 Complete (8/9 tasks):** Advanced processing features operational
+- [Explore the public tools](https://grimdata.org/explore/)
+- [Research projects](https://grimdata.org/projects/) and [future directions](docs/research-directions/index.md)
+- [Software development roadmap](docs/ROADMAP.md) and [API documentation](docs/api/index.md)
 
-- ✅ ISO 3166-1 alpha-2 country code mapping - 194 countries fully mapped
-- ✅ Document type classifier - Multi-stage rules-based classification
-- ✅ Scorecard maintenance system - Phase 1 critical updates completed (6 countries, 18 fields updated)
-- ✅ Multi-format scorecard exports - CSV, XLSX, ODS, Google Sheets JSON
-
-**Phase 4 Complete (5/5 weeks):** REST API backend operational
-
-- ✅ **Flask API backend (Week 1-2)** - Foundation and core endpoints
-  - App factory pattern, configuration management, extensions
-  - Documents API (list, filter, detail) with pagination and sorting
-  - Scorecard API (countries, indicators, statistics)
-  - Health and system info endpoints
-  - Request validation, caching (15min-1hr TTLs), error handling
-- ✅ **Extended APIs (Week 3)** - Tags, Timeline, Export endpoints
-  - Tags API: frequency analysis, version management, filtering
-  - Timeline API: temporal analysis (year × tag matrices)
-  - Export API: CSV downloads with SPDX license headers
-- ✅ **Authentication & Rate Limiting (Week 4)** - Security features
-  - API key authentication via X-API-Key header
-  - Dynamic rate limiting (100/1000 req/hr public/authenticated)
-  - Custom limits for expensive operations (exports, search)
-- ✅ **Production Deployment (Week 5)** - Infrastructure ready
-  - Docker + docker-compose configuration
-  - Redis caching and rate limiting storage
-  - Nginx reverse proxy with SSL/TLS
-  - Complete deployment guide (678 lines)
-- ✅ **Testing & Quality** - 104 tests passing (100% success rate)
-- ⏳ **Interactive dashboard frontend** - Planned for Phase 5
-
-See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed roadmap and [docs/api/index.md](docs/api/index.md) for API documentation.
+The CI badge above links to current test results. The public website serves static data snapshots; the Flask API is run separately.
 
 ______________________________________________________________________
 
@@ -343,18 +311,18 @@ ______________________________________________________________________
 If you use this project in your research, please cite it:
 
 ```bibtex
-@software{digitalchild2025,
+@software{digitalchild2026,
   title = {DigitalChild: Human Rights Data Pipeline for Child and LGBTQ+ Digital Protection},
   author = {Vollmer, S.C. and Vollmer, D.T.},
-  year = {2025},
+  year = {2026},
   version = {2.1.0},
-  doi = {10.5281/zenodo.18318098},
+  doi = {10.5281/zenodo.20950631},
   url = {https://github.com/MissCrispenCakes/DigitalChild},
   note = {Available at https://grimdata.org. ORCID: 0000-0002-3359-2810 (S.C. Vollmer), 0000-0002-5035-3395 (D.T. Vollmer)}
 }
 ```
 
-Or use the format in [CITATION.cff](CITATION.cff).
+Version 2.1.0 is cited above. The [software series DOI](https://doi.org/10.5281/zenodo.18318098) covers all versions. See [CITATION.cff](CITATION.cff) for the software citation and related outputs.
 
 **For the scorecard data specifically:**
 
@@ -383,7 +351,7 @@ This project analyzes publicly available human rights documents from:
 - African Union (AU Policy, ACERWC, ACHPR)
 - UNESCO, UNCTAD, ILGA World, and other authoritative sources
 
-Data sources tracked with 2,543 validated URLs ensuring transparency and verification.
+The scorecard records source URLs alongside indicator values; availability and policy content can change over time.
 
 **Built with:**
 
@@ -392,23 +360,8 @@ Data sources tracked with 2,543 validated URLs ensuring transparency and verific
 - GitHub Pages for documentation
 - MkDocs Material for website
 
-**Maintained by:** PhD student (passion project, please be patient with response times!)
+**Research platform:** [GRIMdata](https://grimdata.org/website/)
 
 ______________________________________________________________________
 
-## 📞 Contact & Support
-
-- **Issues:** [GitHub Issues](https://github.com/MissCrispenCakes/DigitalChild/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/MissCrispenCakes/DigitalChild/discussions)
-- **Website:** [GRIMdata.org](https://grimdata.org)
-
-Support the project:
-
-- ⭐ Star this repository
-- 📢 Share with researchers and advocates
-- 💻 Contribute code or documentation
-- 📝 Cite in your publications
-
-______________________________________________________________________
-
-**Last updated:** June 2026
+**Last updated:** October 2026

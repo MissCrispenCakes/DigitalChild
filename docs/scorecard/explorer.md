@@ -75,7 +75,7 @@ Add up to five countries to compare their indicator profiles (0–2 on each of t
 
 ## Other ways to access the data
 
-The explorer above reads the same underlying scored dataset you can pull programmatically.
+Download the scored snapshot used by this explorer below. The pipeline exports and self-hosted API use the separate canonical workbook; see Data Access for the distinction.
 
 [Download this snapshot as JSON or CSV](data-access.md#published-snapshot-downloads){ .md-button }
 
