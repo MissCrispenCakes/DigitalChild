@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """Build the "Source Transparency Watch" dataset for the GRIMdata site.
 
 Tracks whether peer organisations (the aggregators behind our scorecard

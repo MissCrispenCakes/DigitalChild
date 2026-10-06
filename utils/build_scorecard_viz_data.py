@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """Build the static scorecard dataset that powers the GRIMdata.org visualizations.
 
 READ-ONLY w.r.t. all canonical/source files. This script reads the designated

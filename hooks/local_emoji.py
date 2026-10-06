@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """Render bundled Material icons and Unicode emoji without remote images."""
 
 from material.extensions import emoji as material_emoji

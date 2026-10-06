@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 GRIMdata / LittleRainbowRights
+# SPDX-License-Identifier: MIT
+
 """Check a built MkDocs site's local links/assets and optional old anchor inventory."""
 
 import argparse
